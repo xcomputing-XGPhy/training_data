@@ -1,0 +1,400 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Sep 18 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    flink-tm (AVX512, FMA3, 31 GB RAM)
+Command: /storage/tranthanhvan235/difficulty-prediction-training-data/iqtree3/build/iqtree3 -s /storage/tranthanhvan235/DIU_TRAINING_DATA/data2/prot_M3810_55_271.phy -pre results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand -seed 0 -t RANDOM -T 1 -redo -n 3 -ninit 20 -xgphy -xgphy_nni_count 3 -nt AUTO
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Sep 21 20:16:45 2025
+Kernel:  AVX+FMA - auto-detect threads (6 CPU cores detected)
+
+Reading alignment file /storage/tranthanhvan235/DIU_TRAINING_DATA/data2/prot_M3810_55_271.phy ... Phylip format detected
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.099306 secs using 1.527% CPU
+Alignment has 55 sequences with 271 columns, 266 distinct patterns
+215 parsimony-informative, 21 singleton sites, 35 constant sites
+                                Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000210946 secs using 59.73% CPU
+   1  Arabidopsis_thaliana_14          23.99%    passed     84.41%
+   2  Arabidopsis_thaliana_23          26.20%    passed     77.69%
+   3  Arabidopsis_thaliana_25          25.09%    passed     83.65%
+   4  Arabidopsis_thaliana_27           9.59%    passed     30.72%
+   5  Arabidopsis_thaliana_30           9.96%    passed     36.08%
+   6  Arabidopsis_thaliana_34          11.44%    passed     95.34%
+   7  Arabidopsis_thaliana_44          11.81%    passed     99.73%
+   8  Arachis_hypogaea_35              11.44%    passed     94.38%
+   9  Beta_vulgaris_10                 24.35%    passed     70.78%
+  10  Beta_vulgaris_11                 25.46%    passed     30.94%
+  11  Betula_pendula_15                49.82%    passed     17.85%
+  12  Betula_pendula_16                51.66%    passed     59.06%
+  13  Betula_pendula_28                22.14%    passed     11.23%
+  14  Betula_pendula_29                32.10%    passed     63.60%
+  15  Betula_pendula_45                44.65%    passed     90.01%
+  16  Betula_pendula_46                32.47%    passed     59.66%
+  17  Betula_pendula_52                26.20%    passed     97.13%
+  18  Betula_pendula_53                28.41%    passed     63.97%
+  19  Betula_pendula_54                26.94%    passed     99.04%
+  20  Betula_pendula_55                22.51%    passed     98.94%
+  21  Brassica_napus_22                26.20%    passed     45.38%
+  22  Burkholderia_gladioli_2          30.26%    passed     76.62%
+  23  Cynodon_dactylon_31              11.44%    passed     90.99%
+  24  Glycine_max_51                   12.55%    passed     95.25%
+  25  Nicotiana_tabacum_43             11.81%    passed     49.96%
+  26  Nicotiana_tabacum_49             18.08%    passed     88.04%
+  27  Nocardiopsis_prasina_7           22.88%    passed     75.33%
+  28  Oryza_japonica_26                11.07%    passed     30.84%
+  29  Oryza_sativa_20                  24.35%    passed     84.56%
+  30  Oryza_sativa_21                  24.35%    passed     83.77%
+  31  Oryza_sativa_33                  13.28%    passed     82.64%
+  32  Oryza_sativa_37                  11.07%    passed     99.73%
+  33  Oryza_sativa_38                  13.28%    passed     89.53%
+  34  Oryza_sativa1BAA9_32              7.38%    passed     76.71%
+  35  Persea_americana_42              11.81%    passed     99.42%
+  36  Phaseolus_vulgaris_12            23.99%    passed     94.06%
+  37  Phaseolus_vulgaris_47            12.55%    passed     95.18%
+  38  Phytophthora_infestans_1         29.52%    passed     83.47%
+  39  Picea_glauca_9                   23.99%    failed      2.35%
+  40  Pinus_strobus_36                 16.97%    passed     94.06%
+  41  Pisum_sativum_50                 12.18%    passed     99.61%
+  42  Poa_pratensis_39                 12.92%    passed     99.45%
+  43  Saccharum_officinale_19          25.46%    passed     92.46%
+  44  Secale_cereale_40                11.81%    passed     99.46%
+  45  Streptomyces_coelicolor_4        22.88%    passed     83.57%
+  46  Streptomyces_griseus_8           22.88%    passed     82.66%
+  47  Streptomyces_lavendulae_3        22.88%    passed     57.87%
+  48  Streptomyces_olivaceoviridis_5   22.88%    passed     78.78%
+  49  Streptomyces_thermoviolaceus_6   22.88%    passed     74.85%
+  50  Triticum_aestivum_24             24.35%    passed     86.63%
+  51  Triticum_aestivum_41             11.81%    passed     99.19%
+  52  Vigna_sesquipedalis_48           12.18%    passed     94.95%
+  53  Vigna_unguiculata_13             24.35%    passed     59.06%
+  54  Zea_mays_17                      24.72%    passed     80.73%
+  55  Zea_mays_18                      24.72%    passed     83.39%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                            21.31%  1 sequences failed composition chi2 test (p-value<5%; df=19)
+Checking for duplicate sequences: done in 0.098398 secs using 0.5833% CPU
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 1.999 seconds
+Measuring multi-threading efficiency up to 6 CPU cores
+2 trees examined
+Threads: 1 / Time: 26.502 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -17192
+Threads: 2 / Time: 30.202 sec / Speedup: 0.877 / Efficiency: 44% / LogL: -17192
+Determining AUTO threadcount: done in 57.0022 secs using 2.815% CPU
+BEST NUMBER OF THREADS: 1
+
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -11085.223
+Optimal log-likelihood: -11085.184
+Proportion of invariable sites: 0.032
+Gamma shape alpha: 1.279
+Parameters optimization took 1 rounds (40.998 sec)
+Time for fast ML tree search: 419.700 seconds
+
+NOTE: ModelFinder requires 24 MB RAM!
+ModelFinder will test up to 1232 protein models (sample size: 271 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            11505.032    107 23224.064    23365.856    23609.491
+  2  LG+I          11426.690    108 23069.379    23214.713    23458.408
+  3  LG+G4         11087.135    108 22390.271    22535.604    22779.300
+  4  LG+I+G4       11085.186    109 22388.372    22537.316    22781.002
+  5  LG+R2         11143.176    109 22504.351    22653.295    22896.982
+  6  LG+R3         11093.622    111 22409.245    22565.622    22809.080
+  7  LG+R4         11078.434    113 22382.869    22546.971    22789.908
+  8  LG+R5         11078.446    115 22386.892    22559.022    22801.136
+ 14  LG+I+R2       11126.276    110 22472.552    22625.177    22868.785
+ 15  LG+I+R3       11092.674    112 22409.348    22569.551    22812.786
+ 16  LG+I+R4       11078.358    114 22384.716    22552.793    22795.357
+ 17  LG+I+R5       11078.413    116 22388.826    22565.086    22806.672
+ 25  LG+F+G4       11077.106    127 22408.211    22635.568    22865.680
+ 26  LG+F+I+G4     11073.969    128 22403.939    22636.502    22865.010
+ 47  WAG+G4        11086.611    108 22389.222    22534.555    22778.251
+ 48  WAG+I+G4      11083.306    109 22384.612    22533.556    22777.243
+ 69  WAG+F+G4      11058.625    127 22371.249    22598.606    22828.718
+ 70  WAG+F+I+G4    11054.306    128 22364.611    22597.175    22825.683
+ 91  JTT+G4        11159.240    108 22534.480    22679.813    22923.508
+ 92  JTT+I+G4      11157.121    109 22532.243    22681.187    22924.874
+113  JTT+F+G4      11161.916    127 22577.831    22805.188    23035.300
+114  JTT+F+I+G4    11159.480    128 22574.960    22807.524    23036.032
+135  Q.PFAM+G4     11073.382    108 22362.764    22508.098    22751.793
+136  Q.PFAM+I+G4   11071.508    109 22361.016    22509.960    22753.647
+157  Q.PFAM+F+G4   11086.654    127 22427.308    22654.664    22884.777
+158  Q.PFAM+F+I+G4 11083.622    128 22423.243    22655.807    22884.314
+179  Q.BIRD+G4     11506.491    108 23228.982    23374.316    23618.011
+180  Q.BIRD+I+G4   11504.903    109 23227.805    23376.749    23620.436
+201  Q.BIRD+F+G4   11492.034    127 23238.069    23465.425    23695.538
+202  Q.BIRD+F+I+G4 11491.357    128 23238.715    23471.278    23699.786
+223  Q.MAMMAL+G4   11392.358    108 23000.716    23146.049    23389.745
+224  Q.MAMMAL+I+G4 11390.285    109 22998.571    23147.515    23391.202
+245  Q.MAMMAL+F+G4 11379.056    127 23012.112    23239.468    23469.581
+246  Q.MAMMAL+F+I+G4 11377.745    128 23011.490    23244.054    23472.562
+267  Q.INSECT+G4   11150.885    108 22517.769    22663.103    22906.798
+268  Q.INSECT+I+G4 11148.913    109 22515.826    22664.770    22908.457
+289  Q.INSECT+F+G4 11153.500    127 22561.000    22788.356    23018.469
+290  Q.INSECT+F+I+G4 11150.221    128 22556.442    22789.005    23017.513
+311  Q.PLANT+G4    11250.979    108 22717.957    22863.291    23106.986
+312  Q.PLANT+I+G4  11249.515    109 22717.031    22865.975    23109.661
+333  Q.PLANT+F+G4  11239.614    127 22733.228    22960.584    23190.697
+334  Q.PLANT+F+I+G4 11236.842    128 22729.684    22962.247    23190.755
+355  Q.YEAST+G4    11125.627    108 22467.255    22612.588    22856.284
+356  Q.YEAST+I+G4  11123.873    109 22465.746    22614.690    22858.377
+377  Q.YEAST+F+G4  11125.881    127 22505.761    22733.118    22963.230
+378  Q.YEAST+F+I+G4 11122.930    128 22501.860    22734.423    22962.931
+399  JTTDCMUT+G4   11150.558    108 22517.116    22662.449    22906.145
+400  JTTDCMUT+I+G4 11148.380    109 22514.760    22663.704    22907.391
+421  JTTDCMUT+F+G4 11151.937    127 22557.874    22785.231    23015.343
+422  JTTDCMUT+F+I+G4 11149.466    128 22554.932    22787.495    23016.003
+443  DCMUT+G4      11208.227    108 22632.455    22777.788    23021.483
+444  DCMUT+I+G4    11204.906    109 22627.813    22776.757    23020.444
+465  DCMUT+F+G4    11194.256    127 22642.512    22869.869    23099.981
+466  DCMUT+F+I+G4  11190.389    128 22636.778    22869.342    23097.850
+487  VT+G4         11137.936    108 22491.872    22637.206    22880.901
+488  VT+I+G4       11135.770    109 22489.540    22638.484    22882.171
+509  VT+F+G4       11133.955    127 22521.910    22749.267    22979.379
+510  VT+F+I+G4     11131.019    128 22518.037    22750.601    22979.108
+531  PMB+G4        11245.607    108 22707.214    22852.548    23096.243
+532  PMB+I+G4      11242.925    109 22703.851    22852.795    23096.482
+553  PMB+F+G4      11195.143    127 22644.286    22871.642    23101.755
+554  PMB+F+I+G4    11191.507    128 22639.014    22871.578    23100.086
+575  BLOSUM62+G4   11236.012    108 22688.024    22833.357    23077.053
+576  BLOSUM62+I+G4 11233.868    109 22685.735    22834.679    23078.366
+597  BLOSUM62+F+G4 11189.702    127 22633.403    22860.760    23090.872
+598  BLOSUM62+F+I+G4 11186.588    128 22629.175    22861.739    23090.246
+619  DAYHOFF+G4    11208.046    108 22632.093    22777.426    23021.121
+620  DAYHOFF+I+G4  11204.719    109 22627.438    22776.382    23020.069
+641  DAYHOFF+F+G4  11194.072    127 22642.143    22869.500    23099.613
+642  DAYHOFF+F+I+G4 11190.197    128 22636.394    22868.958    23097.466
+663  MTREV+G4      11804.929    108 23825.858    23971.191    24214.887
+664  MTREV+I+G4    11805.104    109 23828.207    23977.151    24220.838
+685  MTREV+F+G4    11413.539    127 23081.077    23308.434    23538.546
+686  MTREV+F+I+G4  11412.536    128 23081.072    23313.636    23542.144
+707  MTART+G4      12039.648    108 24295.296    24440.630    24684.325
+708  MTART+I+G4    12039.460    109 24296.920    24445.864    24689.551
+729  MTART+F+G4    11613.573    127 23481.146    23708.502    23938.615
+730  MTART+F+I+G4  11612.243    128 23480.485    23713.049    23941.557
+751  MTZOA+G4      11708.588    108 23633.176    23778.509    24022.205
+752  MTZOA+I+G4    11708.805    109 23635.610    23784.554    24028.241
+773  MTZOA+F+G4    11396.450    127 23046.900    23274.257    23504.369
+774  MTZOA+F+I+G4  11395.376    128 23046.752    23279.316    23507.823
+795  MTMET+G4      11871.284    108 23958.567    24103.901    24347.596
+796  MTMET+I+G4    11871.418    109 23960.837    24109.781    24353.467
+817  MTMET+F+G4    11453.788    127 23161.575    23388.932    23619.044
+818  MTMET+F+I+G4  11453.351    128 23162.702    23395.266    23623.773
+839  MTVER+G4      11947.977    108 24111.954    24257.287    24500.983
+840  MTVER+I+G4    11947.861    109 24113.722    24262.666    24506.353
+861  MTVER+F+G4    11612.727    127 23479.454    23706.811    23936.923
+862  MTVER+F+I+G4  11610.760    128 23477.520    23710.084    23938.591
+883  MTINV+G4      11925.733    108 24067.466    24212.799    24456.494
+884  MTINV+I+G4    11925.702    109 24069.405    24218.349    24462.036
+905  MTINV+F+G4    11343.829    127 22941.658    23169.015    23399.127
+906  MTINV+F+I+G4  11342.464    128 22940.928    23173.491    23401.999
+927  MTMAM+G4      12144.907    108 24505.814    24651.148    24894.843
+928  MTMAM+I+G4    12145.126    109 24508.252    24657.196    24900.883
+949  MTMAM+F+G4    11738.425    127 23730.850    23958.206    24188.319
+950  MTMAM+F+I+G4  11738.085    128 23732.171    23964.734    24193.242
+971  FLAVI+G4      11759.901    108 23735.801    23881.135    24124.830
+972  FLAVI+I+G4    11759.440    109 23736.879    23885.823    24129.510
+993  FLAVI+F+G4    11630.858    127 23515.717    23743.073    23973.186
+994  FLAVI+F+I+G4  11629.407    128 23514.814    23747.378    23975.886
+1015  HIVB+G4       11507.466    108 23230.931    23376.265    23619.960
+1016  HIVB+I+G4     11506.507    109 23231.015    23379.959    23623.646
+1037  HIVB+F+G4     11478.009    127 23210.018    23437.374    23667.487
+1038  HIVB+F+I+G4   11477.392    128 23210.784    23443.347    23671.855
+1059  HIVW+G4       11907.257    108 24030.514    24175.847    24419.542
+1060  HIVW+I+G4     11904.716    109 24027.433    24176.377    24420.064
+1081  HIVW+F+G4     11733.907    127 23721.814    23949.170    24179.283
+1082  HIVW+F+I+G4   11731.476    128 23718.952    23951.515    24180.023
+1103  FLU+G4        11342.289    108 22900.578    23045.911    23289.606
+1104  FLU+I+G4      11341.145    109 22900.290    23049.234    23292.921
+1125  FLU+F+G4      11245.890    127 22745.781    22973.137    23203.250
+1126  FLU+F+I+G4    11244.537    128 22745.073    22977.637    23206.144
+1147  RTREV+G4      11215.164    108 22646.327    22791.661    23035.356
+1148  RTREV+I+G4    11212.914    109 22643.827    22792.771    23036.458
+1169  RTREV+F+G4    11171.793    127 22597.585    22824.942    23055.055
+1170  RTREV+F+I+G4  11168.836    128 22593.672    22826.236    23054.744
+1191  CPREV+G4      11170.007    108 22556.014    22701.348    22945.043
+1192  CPREV+I+G4    11167.246    109 22552.493    22701.437    22945.124
+1213  CPREV+F+G4    11155.570    127 22565.140    22792.497    23022.609
+1214  CPREV+F+I+G4  11151.819    128 22559.638    22792.201    23020.709
+Akaike Information Criterion:           Q.PFAM+I+G4
+Corrected Akaike Information Criterion: Q.PFAM+G4
+Bayesian Information Criterion:         Q.PFAM+G4
+Best-fit model: Q.PFAM+G4 chosen according to BIC
+
+All model information printed to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand.model.gz
+CPU time for ModelFinder: 286.559 seconds (0h:4m:46s)
+Wall-clock time for ModelFinder: 7551.304 seconds (2h:5m:51s)
+
+NOTE: 9 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -11076.404
+2. Current log-likelihood: -11073.454
+Optimal log-likelihood: -11073.379
+Gamma shape alpha: 1.123
+Parameters optimization took 2 rounds (45.498 sec)
+Log-likelihood of random tree: -17442.644
+IN UPDATE: new tree with score = -17442.644
+IN UPDATE: new tree with score = -17442.644
+Wrote distance file to... 
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Number of numNNITrees: 3
+Number of processes: 1
+Number of trees per process: 19
+Number of trees in candidate set: 1
+Total number of trees to be generated: 20
+Generating 19 random trees... Initial candidate tree set size: 1
+2.000 second
+Each tree will doNNISearch 3 times.
+Computing log-likelihood of 19 initial trees ... Estimate model parameters (epsilon = 0.100)
+Estimate model parameters (epsilon = 0.100)
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -11066.739
+BETTER TREE FOUND at iteration 1: -11066.739
+IN UPDATE: oldScore = -11066.739, newScore = -11066.739
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree0_xgphy.log
+21 unique trees added to candidate set. 0 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -11167.517
+IN UPDATE: oldScore = -11167.517, newScore = -11167.517
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree1_xgphy.log
+22 unique trees added to candidate set. 1 trees had branch lengths optimized.
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -11060.430
+BETTER TREE FOUND at iteration 5: -11060.430
+IN UPDATE: oldScore = -11060.430, newScore = -11060.430
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree2_xgphy.log
+23 unique trees added to candidate set. 2 trees had branch lengths optimized.
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -11058.175
+BETTER TREE FOUND at iteration 7: -11058.175
+IN UPDATE: oldScore = -11058.175, newScore = -11058.175
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree3_xgphy.log
+24 unique trees added to candidate set. 3 trees had branch lengths optimized.
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -11054.256
+BETTER TREE FOUND at iteration 9: -11054.256
+IN UPDATE: oldScore = -11054.256, newScore = -11054.256
+Iteration 10 / LogL: -11054.256 / Time: 4h:19m:53s
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree4_xgphy.log
+25 unique trees added to candidate set. 4 trees had branch lengths optimized.
+IN UPDATE: oldScore = -11054.256, newScore = -11054.387
+IN UPDATE: oldScore = -11054.256, newScore = -11054.387
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree5_xgphy.log
+25 unique trees added to candidate set. 5 trees had branch lengths optimized.
+IN UPDATE: oldScore = -11054.256, newScore = -11054.283
+IN UPDATE: oldScore = -11054.256, newScore = -11054.283
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree6_xgphy.log
+25 unique trees added to candidate set. 6 trees had branch lengths optimized.
+IN UPDATE: oldScore = -11054.256, newScore = -11054.358
+IN UPDATE: oldScore = -11054.256, newScore = -11054.358
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree7_xgphy.log
+25 unique trees added to candidate set. 7 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -11056.365
+IN UPDATE: oldScore = -11056.365, newScore = -11056.365
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree8_xgphy.log
+26 unique trees added to candidate set. 8 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -11054.496
+IN UPDATE: oldScore = -11054.496, newScore = -11054.496
+Iteration 20 / LogL: -11054.496 / Time: 4h:40m:59s
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree9_xgphy.log
+27 unique trees added to candidate set. 9 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -11054.658
+IN UPDATE: oldScore = -11054.658, newScore = -11054.658
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree10_xgphy.log
+28 unique trees added to candidate set. 10 trees had branch lengths optimized.
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -11052.406
+BETTER TREE FOUND at iteration 23: -11052.406
+IN UPDATE: oldScore = -11052.406, newScore = -11052.406
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree11_xgphy.log
+29 unique trees added to candidate set. 11 trees had branch lengths optimized.
+IN UPDATE: oldScore = -11054.256, newScore = -11054.267
+IN UPDATE: oldScore = -11054.256, newScore = -11054.267
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree12_xgphy.log
+29 unique trees added to candidate set. 12 trees had branch lengths optimized.
+IN UPDATE: oldScore = -11052.406, newScore = -11052.479
+IN UPDATE: oldScore = -11052.406, newScore = -11052.479
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree13_xgphy.log
+29 unique trees added to candidate set. 13 trees had branch lengths optimized.
+IN UPDATE: oldScore = -11054.256, newScore = -11054.361
+IN UPDATE: oldScore = -11054.256, newScore = -11054.361
+Iteration 30 / LogL: -11054.361 / Time: 5h:1m:36s (-2h:-43m:-38s left)
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree14_xgphy.log
+29 unique trees added to candidate set. 14 trees had branch lengths optimized.
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -11052.271
+BETTER TREE FOUND at iteration 31: -11052.271
+IN UPDATE: oldScore = -11052.271, newScore = -11052.271
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree15_xgphy.log
+30 unique trees added to candidate set. 15 trees had branch lengths optimized.
+IN UPDATE: oldScore = -11052.406, newScore = -11052.690
+IN UPDATE: oldScore = -11052.406, newScore = -11052.690
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree16_xgphy.log
+30 unique trees added to candidate set. 16 trees had branch lengths optimized.
+IN UPDATE: oldScore = -11054.256, newScore = -11054.276
+IN UPDATE: oldScore = -11054.256, newScore = -11054.276
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree17_xgphy.log
+30 unique trees added to candidate set. 17 trees had branch lengths optimized.
+IN UPDATE: oldScore = -11054.256, newScore = -11054.283
+IN UPDATE: oldScore = -11054.256, newScore = -11054.283
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree18_xgphy.log
+30 unique trees added to candidate set. 18 trees had branch lengths optimized.
+IN UPDATE: oldScore = -11052.271, newScore = -11052.284
+IN UPDATE: oldScore = -11052.271, newScore = -11052.284
+Iteration 40 / LogL: -11052.284 / Time: 5h:24m:27s (-3h:-8m:-25s left)
+Saved xgphy tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_tree19_xgphy.log
+30 unique trees added to candidate set. 19 trees had branch lengths optimized.
+11862.999 seconds
+Current best score: -11052.271
+3.Score of best tree in CandidateSet: -11052.271
+2.Score of best tree in CandidateSet: -11052.406
+1.Score of best tree in CandidateSet: -11054.256
+
+Do NNI search on 3 best initial trees
+1
+Estimate model parameters (epsilon = 0.100)
+Saved xgphy best tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_bestTreeInitTree0_xgphy.treefile
+IN UPDATE: new tree with score = -11052.269
+BETTER TREE FOUND at iteration 1: -11052.269
+2
+Saved xgphy best tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_bestTreeInitTree1_xgphy.treefile
+IN UPDATE: new tree with score = -11052.428
+3
+Saved xgphy best tree to results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand_bestTreeInitTree2_xgphy.treefile
+IN UPDATE: new tree with score = -11054.267
+1.Score of best tree in CandidateSet: -11052.269
+Finish initializing candidate tree set (3)
+Current best tree score: -11052.269 / CPU time: 12009.996
+Number of iterations: 3
+TREE SEARCH COMPLETED AFTER 3 ITERATIONS / Time: 5h:26m:52s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -11052.269
+Optimal log-likelihood: -11052.269
+Gamma shape alpha: 1.091
+Parameters optimization took 1 rounds (22.699 sec)
+IN UPDATE: oldScore = -11052.269, newScore = -11052.269
+BEST SCORE FOUND : -11052.269
+Total tree length: 14.622
+
+Total number of iterations: 3
+CPU time used for tree search: 448.109 sec (0h:7m:28s)
+Wall-clock time used for tree search: 12010.101 sec (3h:20m:10s)
+Total CPU time used: 737.319 sec (0h:12m:17s)
+Total wall-clock time used: 19635.104 sec (5h:27m:15s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand.iqtree
+  Maximum-likelihood tree:       results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand.treefile
+  Screen log file:               results/prot_M3810_55_271.phy/output_files/iqtree/inference/rand.log
+
+Date and Time: Mon Sep 22 01:44:01 2025
