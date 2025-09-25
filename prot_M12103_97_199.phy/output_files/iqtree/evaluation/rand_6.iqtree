@@ -1,0 +1,334 @@
+IQ-TREE 3.0.1 built Sep 14 2025
+
+Input file name: /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data5/prot_M12103_97_199.phy
+User tree file name: training_data/prot_M12103_97_199.phy/output_files/iqtree/inference/rand_tree6_xgphy.treefile
+Type of analysis: tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 97 sequences with 199 amino-acid sites
+Number of constant sites: 17 (= 8.54271% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 17 (= 8.54271% of all sites)
+Number of parsimony informative sites: 173
+Number of distinct site patterns: 191
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+FO+G4
+
+State frequencies: (estimated with maximum likelihood)
+
+  pi(A) = 0.1190
+  pi(R) = 0.0425
+  pi(N) = 0.0492
+  pi(D) = 0.0389
+  pi(C) = 0.0013
+  pi(Q) = 0.0401
+  pi(E) = 0.0781
+  pi(G) = 0.0507
+  pi(H) = 0.0064
+  pi(I) = 0.0813
+  pi(L) = 0.0752
+  pi(K) = 0.0710
+  pi(M) = 0.0211
+  pi(F) = 0.0511
+  pi(P) = 0.0459
+  pi(S) = 0.0616
+  pi(T) = 0.0535
+  pi(W) = 0.0023
+  pi(Y) = 0.0443
+  pi(V) = 0.0664
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.7660
+
+ Category  Relative_rate  Proportion
+  1         0.0883         0.2500
+  2         0.3931         0.2500
+  3         0.9471         0.2500
+  4         2.5716         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+USER TREE
+---------
+
+Log-likelihood of the tree: -17864.4064 (s.e. 836.4993)
+Unconstrained log-likelihood (without tree): -1038.9815
+Number of free parameters (#branches + #model parameters): 211
+Akaike information criterion (AIC) score: 36150.8127
+Corrected Akaike information criterion (AICc) score: 125614.8127
+Bayesian information criterion (BIC) score: 36845.7000
+
+**************************** WARNING ****************************
+Number of parameters (K, model parameters and branch lengths): 211
+Sample size (n, alignment length): 199
+
+Given that K>=n, the parameter estimates might be inaccurate.
+Thus, phylogenetic estimates should be interpreted with caution.
+
+Ideally, it is desirable that n >> K. When selecting optimal models,
+1. use AIC or BIC if n > 40K;
+2. use AICc or BIC if 40K >= n > K;
+3. be extremely cautious if n <= K
+
+To improve the situation (3), consider the following options:
+  1. Increase the sample size (n)
+  2. Decrease the number of parameters (K) to be estimated. If
+     possible:
+     a. Remove the least important sequences from the alignment
+     b. Specify some of the parameter values for the substitution
+        model (e.g., the nucleotide or amino acid frequencies)
+     c. Specify some of the parameter values for the rates-across-
+        sites model (e.g., the shape parameter for the discrete
+        Gamma distribution, the proportion of invariable sites, or
+        the rates of change for different rate categories under
+        the FreeRate model)
+
+Reference:
+Burnham KR, Anderson DR (2002). Model Selection and Multimodel
+Inference: A Practical Information-Theoretic Approach. Springer,
+New York.
+************************ END OF WARNING ***********************
+
+Total tree length (sum of branch lengths): 26.6114
+Sum of internal branch lengths: 6.9775 (26.2198% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Acaryochloris_marina_MBIC11017_158333405' is drawn at root
+
++---Acaryochloris_marina_MBIC11017_158333405
+|
++-----Acaryochloris_marina_MBIC11017_158341427
+|
+|                   +---------------Aeromicrobium_marinum_DSM_15272_311743232
+|                +--|
+|                |  |        +--------------------Conexibacter_woesei_DSM_14684_284045940
+|                |  |     +--|
+|                |  |     |  +---------Streptomyces_roseosporus_NRRL_11379_239992251
+|                |  |  +--|
+|                |  |  |  |         +--Salinispora_arenicola_CNS-205_159035998
+|                |  |  |  +---------|
+|                |  |  |            +--Salinispora_tropica_CNB-440_145592852
+|                |  +--|
+|                |     +----------Rhodococcus_opacus_B4_226349695
+|             +--|
+|             |  +------------------------Nocardioides_sp._JS614_119714459
+|          +--|
+|          |  +------------Synechococcus_sp._PCC_7335_254421495
+|       +--|
+|       |  +--------------Synechococcus_elongatus_PCC_6301_56751671
++-------|
+        |                                      +---------Alkaliphilus_oremlandii_OhILAs_158320151
+        |                                   +--|
+        |                                   |  |   +---------Paenibacillus_curdlanolyticus_YK9_304407967
+        |                                   |  +---|
+        |                                   |      |         +--Paenibacillus_sp._Y412MC10_261408697
+        |                                   |      +---------|
+        |                                   |                +--Paenibacillus_vortex_V453_315648815
+        |                                +--|
+        |                                |  |           +-----Anoxybacillus_flavithermus_WK1_212638722
+        |                                |  +-----------|
+        |                                |              +-------Geobacillus_thermodenitrificans_NG80-2_138896034
+        |                             +--|
+        |                             |  |             +--Clostridium_cellulolyticum_H10_220929517
+        |                             |  |     +-------|
+        |                             |  |     |       +--Clostridium_papyrosolvens_DSM_2782_326204676
+        |                             |  |  +--|
+        |                             |  |  |  +------------------Symbiobacterium_thermophilum_IAM_14863_51891902
+        |                             |  +--|
+        |                             |     |  +---------------Planctomyces_limnophilus_DSM_3776_296121744
+        |                             |     +--|
+        |                             |        +----------------Sebaldella_termitidis_ATCC_33386_269122666
+        |                          +--|
+        |                          |  +-------Thermosediminibacter_oceani_DSM_16646_302388937
+        |                       +--|
+        |                       |  |  +----------------Bacillus_sp._NRRL_B-14911_89099173
+        |                       |  +--|
+        |                       |     +--------------------Haliangium_ochraceum_DSM_14365_262197757
+        |                    +--|
+        |                    |  |                         +---Archaeoglobus_fulgidus_DSM_4304_11498952
+        |                    |  |                     +---|
+        |                    |  |                     |   +--Ferroglobus_placidus_DSM_10642_288931341
+        |                    |  |            +--------|
+        |                    |  |            |        +---------------Spirochaeta_thermophila_DSM_6192_307718240
+        |                    |  |    +-------|
+        |                    |  |    |       +----------------Methanohalobium_evestigatum_Z-7303_298674020
+        |                    |  +----|
+        |                    |       |  +----------Marinithermus_hydrothermalis_DSM_14884_328450442
+        |                    |       +--|
+        |                    |          +----------------Thermus_aquaticus_Y51MC23_218295963
+        |                 +--|
+        |                 |  +----------------Planctomyces_maris_DSM_8797_149178900
+        |              +--|
+        |              |  |  +-----------------Cytophaga_hutchinsonii_ATCC_33406_110640183
+        |              |  +--|
+        |              |     +--------Maribacter_sp._HTCC2170_305665601
+        |           +--|
+        |           |  |                   +--Chloroflexus_aggregans_DSM_9485_219847437
+        |           |  |              +----|
+        |           |  |              |    +------Chloroflexus_aurantiacus_J-10-fl_163849117
+        |           |  |         +----|
+        |           |  |         |    +--------------Oscillochloris_trichoides_DG6_309791213
+        |           |  |  +------|
+        |           |  |  |      |             +-----Roseiflexus_castenholzii_DSM_13941_156744215
+        |           |  |  |      +-------------|
+        |           |  |  |                    +--Roseiflexus_sp._RS-1_148657710
+        |           |  +--|
+        |           |     |    +--------Rhodothermus_marinus_DSM_4252_268317381
+        |           |     +----|
+        |           |          +----------Salinibacter_ruber_DSM_13855_83816189
+        |        +--|
+        |        |  |               +---------------Candidatus_Caldiarchaeum_subterraneum_315426896
+        |        |  |        +------|
+        |        |  |        |      +-------------------------Spirochaeta_thermophila_DSM_6578_315186297
+        |        |  |     +--|
+        |        |  |     |  +--------Thermomicrobium_roseum_DSM_5159_221633805
+        |        |  |  +--|
+        |        |  |  |  +-----------Xanthobacter_autotrophicus_Py2_154247879
+        |        |  +--|
+        |        |     +-----------beta_proteobacterium_KB13_254467856
+        |     +--|
+        |     |  |                         +--Anabaena_variabilis_ATCC_29413_75909920
+        |     |  |                  +------|
+        |     |  |                  |      +--Nostoc_sp._PCC_7120_17228589
+        |     |  |               +--|
+        |     |  |               |  +----Nodularia_spumigena_CCY9414_119512464
+        |     |  |            +--|
+        |     |  |            |  |             +--------Cyanothece_sp._ATCC_51142_172036774
+        |     |  |            |  |        +----|
+        |     |  |            |  |        |    +----------Synechocystis_sp._PCC_6803_16331544
+        |     |  |            |  |     +--|
+        |     |  |            |  |     |  |     +-----------Cyanothece_sp._ATCC_51142_172055282
+        |     |  |            |  |     |  |  +--|
+        |     |  |            |  |     |  |  |  +---------Cyanothece_sp._PCC_7425_220906108
+        |     |  |            |  |     |  +--|
+        |     |  |            |  |     |     |  +------------Cyanothece_sp._PCC_7424_218439749
+        |     |  |            |  |     |     +--|
+        |     |  |            |  |     |        +----------Lyngbya_sp._PCC_8106_119485723
+        |     |  |            |  |  +--|
+        |     |  |            |  |  |  +--------Cylindrospermopsis_raciborskii_CS-505_282899650
+        |     |  |            |  +--|
+        |     |  |            |     |  +-------Microcoleus_chthonoplastes_PCC_7420_254409461
+        |     |  |            |     +--|
+        |     |  |            |        +-------------------Synechococcus_sp._PCC_7335_254421481
+        |     |  |         +--|
+        |     |  |         |  +----------Oscillatoria_sp._PCC_6506_300869540
+        |     |  |     +---|
+        |     |  |     |   |         +---Gloeobacter_violaceus_PCC_7421_37519581
+        |     |  |     |   +---------|
+        |     |  |     |             +--Gloeobacter_violaceus_PCC_7421_37519584
+        |     |  |  +--|
+        |     |  |  |  |                       +---------Aromatoleum_aromaticum_EbN1_56478170
+        |     |  |  |  |                    +--|
+        |     |  |  |  |                    |  |     +--Dechloromonas_aromatica_RCB_71908105
+        |     |  |  |  |                    |  |  +--|
+        |     |  |  |  |                    |  |  |  +--Dechloromonas_aromatica_RCB_71909174
+        |     |  |  |  |                    |  +--|
+        |     |  |  |  |                    |     |  +--------Herminiimonas_arsenicoxydans_134093760
+        |     |  |  |  |                    |     +--|
+        |     |  |  |  |                    |        +----Leptothrix_cholodnii_SP-6_171058337
+        |     |  |  |  |                 +--|
+        |     |  |  |  |                 |  |  +--Geobacter_sulfurreducens_KN400_298505213
+        |     |  |  |  |                 |  +--|
+        |     |  |  |  |                 |     +**Geobacter_sulfurreducens_PCA_39996201
+        |     |  |  |  |              +--|
+        |     |  |  |  |              |  |  +-----Methylobacillus_flagellatus_KT_91775148
+        |     |  |  |  |              |  +--|
+        |     |  |  |  |              |     +---Methylovorus_sp._MP688_313201600
+        |     |  |  |  |           +--|
+        |     |  |  |  |           |  |        
+Analysis results written to: 
+  IQ-TREE report:                training_data/prot_M12103_97_199.phy/output_files/iqtree/evaluation/rand_6.iqtree
+  Maximum-likelihood tree:       training_data/prot_M12103_97_199.phy/output_files/iqtree/evaluation/rand_6.treefile
+  Screen log file:               training_data/prot_M12103_97_199.phy/output_files/iqtree/evaluation/rand_6.log
+
+Date and Time: Sun Sep 21 22:50:18 2025
+       |     +--Cyanothece_sp._CCY0110_126660068
+        |     |  |  |  |        |  |     +--|
+        |     |  |  |  |        |  |     |  +-----Lyngbya_sp._PCC_8106_119485718
+        |     |  |  |  |        |  |  +--|
+        |     |  |  |  |        |  |  |  +------Microcystis_aeruginosa_PCC_7806_159030672
+        |     |  |  |  |        |  +--|
+        |     |  |  |  |        |     +------Oscillatoria_sp._PCC_6506_300868504
+        |     |  |  |  |     +--|
+        |     |  |  |  |     |  |     +--------Bdellovibrio_bacteriovorus_HD100_42523158
+        |     |  |  |  |     |  |  +--|
+        |     |  |  |  |     |  |  |  +--------------Thermus_thermophilus_HB8_55980228
+        |     |  |  |  |     |  +--|
+        |     |  |  |  |     |     +------Methylotenera_mobilis_JLW8_253997057
+        |     |  |  |  |  +--|
+        |     |  |  |  |  |  |      +------Candidatus_Accumulibacter_phosphatis_clade_IIA_str._UW-1_257093589
+        |     |  |  |  |  |  |   +--|
+        |     |  |  |  |  |  |   |  |            +--Nitrosomonas_europaea_ATCC_19718_30248546
+        |     |  |  |  |  |  |   |  |        +---|
+        |     |  |  |  |  |  |   |  |        |   +--Nitrosomonas_eutropha_C91_114331003
+        |     |  |  |  |  |  |   |  |     +--|
+        |     |  |  |  |  |  |   |  |     |  +----Nitrosomonas_sp._AL212_325982675
+        |     |  |  |  |  |  |   |  |  +--|
+        |     |  |  |  |  |  |   |  |  |  +----------Nitrosomonas_sp._AL212_325982887
+        |     |  |  |  |  |  |   |  +--|
+        |     |  |  |  |  |  |   |     +--Nitrosospira_multiformis_ATCC_25196_82701620
+        |     |  |  |  |  |  +---|
+        |     |  |  |  |  |      +----Nitrosospira_multiformis_ATCC_25196_82702026
+        |     |  |  |  +--|
+        |     |  |  |     |     +--Gloeobacter_violaceus_PCC_7421_37519577
+        |     |  |  |     |  +--|
+        |     |  |  |     |  |  +--Gloeobacter_violaceus_PCC_7421_37519583
+        |     |  |  |     +--|
+        |     |  |  |        |  +----------------Synechococcus_sp._PCC_7002_170078880
+        |     |  |  |        +--|
+        |     |  |  |           |  +--------Thauera_sp._MZ1T_217968822
+        |     |  |  |           +--|
+        |     |  |  |              +------Thermosynechococcus_elongatus_BP-1_22299707
+        |     |  +--|
+        |     |     +------------------------Herpetosiphon_aurantiacus_ATCC_23779_159901417
+        |  +--|
+        |  |  |            +--Chloroflexus_aggregans_DSM_9485_219850474
+        |  |  |    +-------|
+        |  |  |    |       +--Chloroflexus_aurantiacus_J-10-fl_163845864
+        |  |  +----|
+        |  |       +-------Thermus_thermophilus_HB27_46200028
+        +--|
+           +-------------Pirellula_staleyi_DSM_6068_283780576
+
+Tree in newick format:
+
+(Acaryochloris_marina_MBIC11017_158333405:0.0897177754,Acaryochloris_marina_MBIC11017_158341427:0.1352839608,(((((Aeromicrobium_marinum_DSM_15272_311743232:0.3704087626,(((Conexibacter_woesei_DSM_14684_284045940:0.4789576691,Streptomyces_roseosporus_NRRL_11379_239992251:0.2288245418):0.0596670134,(Salinispora_arenicola_CNS-205_159035998:0.0322264047,Salinispora_tropica_CNB-440_145592852:0.0320571885):0.2317277194):0.0305287798,Rhodococcus_opacus_B4_226349695:0.2460421368):0.0444422617):0.0592718231,Nocardioides_sp._JS614_119714459:0.5556333704):0.0783605636,Synechococcus_sp._PCC_7335_254421495:0.3045704862):0.0265236234,Synechococcus_elongatus_PCC_6301_56751671:0.3327815931):0.0640021753,(((((((((((((Alkaliphilus_oremlandii_OhILAs_158320151:0.2336363318,(Paenibacillus_curdlanolyticus_YK9_304407967:0.2196355171,(Paenibacillus_sp._Y412MC10_261408697:0.0321555912,Paenibacillus_vortex_V453_315648815:0.0272542289):0.2401505502):0.1049185180):0.0208131785,(Anoxybacillus_flavithermus_WK1_212638722:0.1416510683,Geobacillus_thermodenitrificans_NG80-2_138896034:0.1923693213):0.2672017378):0.0131822524,(((Clostridium_cellulolyticum_H10_220929517:0.0456588852,Clostridium_papyrosolvens_DSM_2782_326204676:0.0428594058):0.1820341174,Symbiobacterium_thermophilum_IAM_14863_51891902:0.4319087807):0.0867395317,(Planctomyces_limnophilus_DSM_3776_296121744:0.3680215587,Sebaldella_termitidis_ATCC_33386_269122666:0.3834495390):0.0375907613):0.0360449017):0.0203148633,Thermosediminibacter_oceani_DSM_16646_302388937:0.1805455834):0.0193228032,(Bacillus_sp._NRRL_B-14911_89099173:0.3828785363,Haliangium_ochraceum_DSM_14365_262197757:0.4691169528):0.0278334364):0.0340796038,((((Archaeoglobus_fulgidus_DSM_4304_11498952:0.0912530555,Ferroglobus_placidus_DSM_10642_288931341:0.0769666301):0.1080508973,Spirochaeta_thermophila_DSM_6192_307718240:0.3571088403):0.1991106879,Methanohalobium_evestigatum_Z-7303_298674020:0.3855493147):0.1776881042,(Marinithermus_hydrothermalis_DSM_14884_328450442:0.2446990977,Thermus_aquaticus_Y51MC23_218295963:0.3782532669):0.0681742345):0.1165128684):0.0167568528,Planctomyces_maris_DSM_8797_149178900:0.3730210457):0.0358961856,(Cytophaga_hutchinsonii_ATCC_33406_110640183:0.4115484865,Maribacter_sp._HTCC2170_305665601:0.2012573770):0.0821838129):0.0287861924,((((Chloroflexus_aggregans_DSM_9485_219847437:0.0669021443,Chloroflexus_aurantiacus_J-10-fl_163849117:0.1622996847):0.1113132232,Oscillochloris_trichoides_DG6_309791213:0.3340047537):0.1253633883,(Roseiflexus_castenholzii_DSM_13941_156744215:0.1420781038,Roseiflexus_sp._RS-1_148657710:0.0439747351):0.3083292855):0.1562012528,(Rhodothermus_marinus_DSM_4252_268317381:0.2033801493,Salinibacter_ruber_DSM_13855_83816189:0.2589858413):0.1164593028):0.0397344797):0.0258243030,((((Candidatus_Caldiarchaeum_subterraneum_315426896:0.3623758620,Spirochaeta_thermophila_DSM_6578_315186297:0.5805170564):0.1657924137,Thermomicrobium_roseum_DSM_5159_221633805:0.2034785624):0.0423123969,Xanthobacter_autotrophicus_Py2_154247879:0.2660371698):0.0144304650,beta_proteobacterium_KB13_254467856:0.2680216311):0.0256776344):0.0297142790,(((((((Anabaena_variabilis_ATCC_29413_75909920:0.0147957890,Nostoc_sp._PCC_7120_17228589:0.0114723010):0.1631276009,Nodularia_spumigena_CCY9414_119512464:0.1251599868):0.0480976632,((((Cyanothece_sp._ATCC_51142_172036774:0.2064651371,Synechocystis_sp._PCC_6803_16331544:0.2469134469):0.1115614861,((Cyanothece_sp._ATCC_51142_172055282:0.2668510663,Cyanothece_sp._PCC_7425_220906108:0.2351035860):0.0720352750,(Cyanothece_sp._PCC_7424_218439749:0.2895782443,Lyngbya_sp._PCC_8106_119485723:0.2413645585):0.0399244244):0.0209071311):0.0268599936,Cylindrospermopsis_raciborskii_CS-505_282899650:0.2058918445):0.0133834019,(Microcoleus_chthonoplastes_PCC_7420_254409461:0.1964225008,Synechococcus_sp._PCC_7335_254421481:0.4492827061):0.0673886399):0.0190492157):0.0313622775,Oscillatoria_sp._PCC_6506_300869540:0.2596693053):0.0409110560,(Gloeobacter_violaceus_PCC_7421_37519581:0.0915364503,Gloeobacter_violaceus_PCC_7421_37519584:0.0782094655):0.2250767016):0.1064975295,((((((((Aromatoleum_aromaticum_EbN1_56478170:0.2227924771,((Dechloromonas_aromatica_RCB_71908105:0.0777368477,Dechloromonas_aromatica_RCB_71909174:0.0652619347):0.0846179820,(Herminiimonas_arsenicoxydans_134093760:0.1993881065,Leptothrix_cholodnii_SP-6_171058337:0.1311593591):0.0148653515):0.0273530474):0.0527455921,(Geobacter_sulfurreducens_KN400_298505213:0.0052417519,Geobacter_sulfurreducens_PCA_39996201:0.0000028145):0.0762962382):0.0321731110,(Methylobacillus_flagellatus_KT_91775148:0.1369475607,Methylovorus_sp._MP688_313201600:0.0994935059):0.0582606463):0.0195919056,(Cyanothece_sp._PCC_7424_218440272:0.2471730307,Microcystis_aeruginosa_PCC_7806_159030676:0.1337680463):0.2929866009):0.0151740238,((((Cyanothece_sp._ATCC_51142_172036078:0.0131246282,Cyanothece_sp._CCY0110_126660068:0.0450108727):0.1439213330,Lyngbya_sp._PCC_8106_119485718:0.1457341416):0.0360329202,Microcystis_aeruginosa_PCC_7806_159030672:0.1659906507):0.0626531016,Oscillatoria_sp._PCC_6506_300868504:0.1704782364):0.0534396604):0.0165558508,((Bdellovibrio_bacteriovorus_HD100_42523158:0.2072988554,Thermus_thermophilus_HB8_55980228:0.3333486348):0.0694405882,Methylotenera_mobilis_JLW8_253997057:0.1660574750):0.0429669757):0.0186162232,((Candidatus_Accumulibacter_phosphatis_clade_IIA_str._UW-1_257093589:0.1659233578,((((Nitrosomonas_europaea_ATCC_19718_30248546:0.0379689026,Nitrosomonas_eutropha_C91_114331003:0.0223773134):0.1037211493,Nitrosomonas_sp._AL212_325982675:0.1227130665):0.0385511523,Nitrosomonas_sp._AL212_325982887:0.2566911432):0.0169711960,Nitrosospira_multiformis_ATCC_25196_82701620:0.0568635621):0.0306599699):0.0240503766,Nitrosospira_multiformis_ATCC_25196_82702026:0.1131143245):0.0972969112):0.0116142487,((Gloeobacter_violaceus_PCC_7421_37519577:0.0446746702,Gloeobacter_violaceus_PCC_7421_37519583:0.0792414205):0.0780722818,(Synechococcus_sp._PCC_7002_170078880:0.3785997583,(Thauera_sp._MZ1T_217968822:0.2047532886,Thermosynechococcus_elongatus_BP-1_22299707:0.1557705028):0.0253815463):0.0133180536):0.0340807244):0.0237731503):0.0329340377,Herpetosiphon_aurantiacus_ATCC_23779_159901417:0.5532643385):0.0292718207):0.0202980885,((Chloroflexus_aggregans_DSM_9485_219850474:0.0485602432,Chloroflexus_aurantiacus_J-10-fl_163845864:0.0294572029):0.1954857346,Thermus_thermophilus_HB27_46200028:0.1922418570):0.1103703800):0.0322035828,Pirellula_staleyi_DSM_6068_283780576:0.3176610257):0.0795237018):0.1969557983);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t training_data/prot_M12103_97_199.phy/output_files/iqtree/evaluation/rand_6.treefile -m "LG+FO{0.119021,0.0425498,0.0491546,0.0389072,0.00132344,0.0401,0.0780944,0.0506959,0.00642495,0.0813376,0.0751537,0.0709578,0.021119,0.0510674,0.0458839,0.0616293,0.0535449,0.002323,0.044349,0.0663628}+G4{0.765996}" --length 199
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data5/prot_M12103_97_199.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data5/prot_M12103_97_199.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Sep 21 22:50:18 2025
+Total CPU time used: 108.854 seconds (0h:1m:48s)
+Total wall-clock time used: 67.3403 seconds (0h:1m:7s)
+

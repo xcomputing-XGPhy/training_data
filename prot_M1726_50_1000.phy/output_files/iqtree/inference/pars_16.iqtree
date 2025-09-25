@@ -1,0 +1,357 @@
+IQ-TREE 3.0.1 built Sep 14 2025
+
+Input file name: /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data1/prot_M1726_50_1000.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 16
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 50 sequences with 1000 amino-acid sites
+Number of constant sites: 114 (= 11.4% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 114 (= 11.4% of all sites)
+Number of parsimony informative sites: 760
+Number of distinct site patterns: 956
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.PFAM+F+R6
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+Q.PFAM+F+R6      -67134.657  134521.314 +    0.381  134557.973 +    0.456  135139.691 +    0.877
+Q.PFAM+F+I+R6    -67133.170  134520.340 +    0.619  134557.624 +    0.544  135143.625 +    0.123
+VT+F+R6          -67170.430  134592.861 - 1.11e-16  134629.521 - 1.33e-16  135211.238 - 2.55e-16
+VT+F+I+R6        -67169.720  134593.440 - 8.29e-17  134630.724 - 7.27e-17  135216.725 - 1.64e-17
+LG+F+R6          -67177.984  134607.967 - 5.81e-20  134644.627 - 6.96e-20  135226.345 - 1.34e-19
+LG+F+I+R6        -67176.919  134607.839 - 6.19e-20  134645.123 - 5.43e-20  135231.124 - 1.23e-20
+RTREV+F+R6       -67199.427  134650.854 - 2.83e-29  134687.514 - 3.39e-29  135269.232 - 6.51e-29
+RTREV+F+I+R6     -67198.396  134650.792 - 2.91e-29  134688.077 - 2.56e-29  135274.077 - 5.77e-30
+BLOSUM62+F+R6    -67225.927  134703.855 - 8.75e-41  134740.515 - 1.05e-40  135322.232 - 2.02e-40
+BLOSUM62+F+I+R6  -67225.052  134704.104 - 7.73e-41  134741.388 - 6.78e-41  135327.389 - 1.53e-41
+WAG+F+R6         -67237.432  134726.864 - 8.83e-46  134763.523 - 1.06e-45  135345.241 - 2.03e-45
+WAG+F+I+R6       -67236.343  134726.687 - 9.64e-46  134763.971 - 8.46e-46  135349.972 - 1.91e-46
+Q.YEAST+F+R6     -67254.488  134760.975 - 3.46e-53  134797.635 - 4.14e-53  135379.353 - 7.97e-53
+Q.YEAST+F+I+R6   -67252.567  134759.134 - 8.68e-53  134796.418 - 7.62e-53  135382.418 - 1.72e-53
+PMB+F+R6         -67285.500  134823.000 - 1.18e-66  134859.660 - 1.41e-66  135441.377 - 2.71e-66
+PMB+F+I+R6       -67284.085  134822.170 - 1.78e-66  134859.454 - 1.56e-66  135445.455 - 3.53e-67
+Q.INSECT+F+R6    -67361.861  134975.722 - 8.07e-100  135012.382 - 9.68e-100  135594.099 - 1.86e-99
+Q.INSECT+F+I+R6  -67360.826  134975.652 - 8.36e-100  135012.936 - 7.34e-100  135598.936 - 1.66e-100
+CPREV+F+R6       -67586.972  135425.944 - 1.39e-197  135462.604 - 1.66e-197  136044.321 - 3.2e-197
+CPREV+F+I+R6     -67585.380  135424.759 - 2.51e-197  135462.044 - 2.2e-197  136048.044 - 4.97e-198
+JTT+F+R6         -67607.614  135467.229 - 1.51e-206  135503.889 - 1.81e-206  136085.606 - 3.47e-206
+JTT+F+I+R6       -67607.084  135468.167 - 9.42e-207  135505.451 - 8.26e-207  136091.452 - 1.87e-207
+JTTDCMUT+F+R6    -67615.098  135482.197 - 8.46e-210  135518.857 - 1.01e-209  136100.574 - 1.95e-209
+JTTDCMUT+F+I+R6  -67614.486  135482.973 - 5.74e-210  135520.257 - 5.04e-210  136106.258 - 1.14e-210
+Q.YEAST+R6       -67713.229  135640.458 - 3.64e-244  135666.369 - 9.43e-242  136165.588 - 1.49e-223
+Q.YEAST+I+R6     -67712.347  135640.694 - 3.24e-244  135667.118 - 6.48e-242  136170.731 - 1.14e-224
+VT+R6            -67720.801  135655.603 - 1.87e-247  135681.513 - 4.85e-245  136180.732 - 7.65e-227
+VT+I+R6          -67720.292  135656.583 - 1.15e-247  135683.008 - 2.3e-245  136186.621 - 4.03e-228
+DCMUT+F+R6       -67673.540  135599.080 - 3.52e-235  135635.740 - 4.22e-235  136217.457 - 8.11e-235
+DAYHOFF+F+R6     -67674.432  135600.864 - 1.44e-235  135637.523 - 1.73e-235  136219.241 - 3.33e-235
+DCMUT+F+I+R6     -67673.248  135600.496 - 1.73e-235  135637.780 - 1.52e-235  136223.781 - 3.44e-236
+DAYHOFF+F+I+R6   -67674.215  135602.429 - 6.59e-236  135639.714 - 5.79e-236  136225.714 - 1.31e-236
+MTINV+F+R6       -67700.791  135653.581 - 5.15e-247  135690.241 - 6.17e-247  136271.958 - 1.19e-246
+MTINV+F+I+R6     -67699.890  135653.780 - 4.66e-247  135691.064 - 4.09e-247  136277.065 - 9.24e-248
+Q.INSECT+R6      -67771.676  135757.352 - 1.51e-269  135783.263 - 3.9e-267  136282.482 - 6.15e-249
+Q.INSECT+I+R6    -67770.885  135757.770 - 1.22e-269  135784.194 - 2.45e-267  136287.807 - 4.29e-250
+LG+R6            -67811.145  135836.291 - 1.09e-286  135862.201 - 2.82e-284  136361.420 - 4.45e-266
+LG+I+R6          -67810.248  135836.496 - 9.82e-287  135862.920 - 1.97e-284  136366.533 - 3.45e-267
+LG+I+R5          -67819.739  135851.479 - 5.48e-290  135876.881 - 1.83e-287  136371.701 - 2.6e-268
+LG+R7            -67810.380  135838.760 - 3.17e-287  135865.704 - 4.89e-285  136373.705 - 9.56e-269
+LG+R5            -67825.930  135861.859 - 3.05e-292  135886.759 - 1.31e-289  136377.174 - 1.69e-269
+LG+I+R7          -67809.179  135838.359 - 3.87e-287  135865.828 - 4.6e-285  136378.212 -   1e-269
+LG+I+R4          -67838.499  135884.999 - 2.88e-297  135909.401 - 1.59e-294  136395.405 - 1.85e-273
+LG+R4            -67848.653  135903.306 - 3.05e-301  135927.217 - 2.15e-298  136408.805 - 2.28e-276
+BLOSUM62+R6      -67855.537  135925.074 - 5.73e-306  135950.984 - 1.48e-303  136450.204 - 2.34e-285
+BLOSUM62+I+R6    -67854.601  135925.202 - 5.37e-306  135951.627 - 1.08e-303  136455.240 - 1.88e-286
+RTREV+R6         -67860.082  135934.164 - 6.08e-308  135960.074 - 1.57e-305  136459.294 - 2.48e-287
+RTREV+I+R6       -67859.473  135934.946 - 4.11e-308  135961.370 - 8.23e-306  136464.984 - 1.44e-288
+LG+I+R3          -67900.485  136004.970 - 2.47e-323  136028.394 - 2.3e-320  136505.561 - 2.23e-297
+Q.PFAM+R6        -67889.552  135993.103 - 9.67e-321  136019.014 - 2.5e-318  136518.233 - 3.95e-300
+Q.PFAM+I+R6      -67888.418  135992.837 - 1.1e-320  136019.261 - 2.21e-318  136522.874 - 3.88e-301
+PMB+R6           -67898.189  136010.377 - 4.94e-324  136036.288 - 4.45e-322  136535.507 - 7.01e-304
+LG+R3            -67919.315  136040.631 -        0  136063.575 -        0  136536.314 - 4.68e-304
+PMB+I+R6         -67896.793  136009.586 - 4.94e-324  136036.010 - 5.09e-322  136539.623 - 8.95e-305
+Q.PLANT+F+R6     -67841.199  135934.397 - 5.41e-308  135971.057 - 6.49e-308  136552.774 - 1.25e-307
+Q.PLANT+F+I+R6   -67839.768  135933.537 - 8.32e-308  135970.821 - 7.3e-308  136556.822 - 1.65e-308
+LG+I+G4          -67959.792  136117.585 -        0  136139.585 -        0  136603.452 - 1.23e-318
+LG+G4            -67988.008  136172.016 -        0  136193.552 -        0  136652.976 -        0
+MTZOA+F+R6       -67899.014  136050.028 -        0  136086.687 -        0  136668.405 -        0
+MTZOA+F+I+R6     -67897.986  136049.971 -        0  136087.256 -        0  136673.256 -        0
+WAG+R6           -68000.362  136214.723 -        0  136240.634 -        0  136739.853 -        0
+WAG+I+R6         -67999.471  136214.942 -        0  136241.366 -        0  136744.979 -        0
+CPREV+R6         -68097.884  136409.769 -        0  136435.679 -        0  136934.898 -        0
+CPREV+I+R6       -68095.599  136407.198 -        0  136433.622 -        0  136937.235 -        0
+MTMET+F+R6       -68054.588  136361.175 -        0  136397.835 -        0  136979.552 -        0
+MTMET+F+I+R6     -68053.232  136360.464 -        0  136397.748 -        0  136983.748 -        0
+Q.MAMMAL+F+R6    -68111.648  136475.295 -        0  136511.955 -        0  137093.672 -        0
+Q.MAMMAL+F+I+R6  -68110.762  136475.524 -        0  136512.809 -        0  137098.809 -        0
+MTREV+F+R6       -68162.866  136577.733 -        0  136614.392 -        0  137196.110 -        0
+MTREV+F+I+R6     -68161.593  136577.186 -        0  136614.470 -        0  137200.471 -        0
+LG+I+R2          -68261.279  136722.557 -        0  136745.027 -        0  137213.333 -        0
+JTT+R6           -68300.306  136814.613 -        0  136840.523 -        0  137339.743 -        0
+JTT+I+R6         -68300.013  136816.027 -        0  136842.451 -        0  137346.065 -        0
+LG+R2            -68333.498  136864.996 -        0  136886.996 -        0  137350.864 -        0
+JTTDCMUT+R6      -68306.967  136827.935 -        0  136853.845 -        0  137353.065 -        0
+JTTDCMUT+I+R6    -68306.627  136829.253 -        0  136855.678 -        0  137359.291 -        0
+FLU+F+R6         -68346.854  136945.709 -        0  136982.369 -        0  137564.086 -        0
+FLU+F+I+R6       -68345.267  136944.533 -        0  136981.818 -        0  137567.818 -        0
+MTART+F+R6       -68378.174  137008.348 -        0  137045.008 -        0  137626.725 -        0
+MTART+F+I+R6     -68376.341  137006.683 -        0  137043.967 -        0  137629.968 -        0
+Q.BIRD+F+R6      -68454.167  137160.334 -        0  137196.994 -        0  137778.712 -        0
+Q.BIRD+F+I+R6    -68453.648  137161.296 -        0  137198.580 -        0  137784.581 -        0
+HIVB+F+I+R6      -68458.451  137170.903 -        0  137208.187 -        0  137794.188 -        0
+HIVB+F+R6        -68462.050  137176.100 -        0  137212.760 -        0  137794.477 -        0
+Q.PLANT+R6       -68555.411  137324.821 -        0  137350.732 -        0  137849.951 -        0
+Q.PLANT+I+R6     -68554.254  137324.508 -        0  137350.932 -        0  137854.546 -        0
+DCMUT+R6         -68676.111  137566.222 -        0  137592.132 -        0  138091.352 -        0
+DAYHOFF+R6       -68678.566  137571.132 -        0  137597.042 -        0  138096.262 -        0
+DCMUT+I+R6       -68675.947  137567.894 -        0  137594.318 -        0  138097.931 -        0
+DAYHOFF+I+R6     -68678.390  137572.780 -        0  137599.204 -        0  138102.817 -        0
+FLU+R6           -68704.705  137623.411 -        0  137649.321 -        0  138148.540 -        0
+FLU+I+R6         -68703.294  137622.588 -        0  137649.012 -        0  138152.626 -        0
+MTVER+F+R6       -68720.519  137693.039 -        0  137729.699 -        0  138311.416 -        0
+MTVER+F+I+R6     -68718.988  137691.977 -        0  137729.261 -        0  138315.262 -        0
+Q.MAMMAL+R6      -68956.247  138126.495 -        0  138152.405 -        0  138651.625 -        0
+Q.MAMMAL+I+R6    -68955.141  138126.282 -        0  138152.706 -        0  138656.319 -        0
+HIVB+I+R6        -69026.806  138269.612 -        0  138296.037 -        0  138799.650 -        0
+HIVB+R6          -69030.372  138274.745 -        0  138300.655 -        0  138799.875 -        0
+MTMAM+F+R6       -69079.343  138410.685 -        0  138447.345 -        0  139029.062 -        0
+MTMAM+F+I+R6     -69076.472  138406.943 -        0  138444.228 -        0  139030.228 -        0
+Q.BIRD+R6        -69275.872  138765.744 -        0  138791.654 -        0  139290.873 -        0
+Q.BIRD+I+R6      -69275.221  138766.442 -        0  138792.867 -        0  139296.480 -        0
+FLAVI+F+I+R6     -69423.085  139100.171 -        0  139137.455 -        0  139723.456 -        0
+FLAVI+F+R6       -69427.598  139107.197 -        0  139143.856 -        0  139725.574 -        0
+HIVW+F+R6        -69776.611  139805.221 -        0  139841.881 -        0  140423.598 -        0
+HIVW+F+I+R6      -69775.974  139805.948 -        0  139843.232 -        0  140429.233 -        0
+LG+I             -70249.744  140695.488 -        0  140717.024 -        0  141176.448 -        0
+MTZOA+R6         -70317.869  140849.739 -        0  140875.649 -        0  141374.868 -        0
+MTZOA+I+R6       -70316.364  140848.728 -        0  140875.152 -        0  141378.765 -        0
+LG               -70494.156  141182.311 -        0  141203.389 -        0  141658.364 -        0
+FLAVI+I+R6       -70501.594  141219.188 -        0  141245.613 -        0  141749.226 -        0
+FLAVI+R6         -70505.435  141224.869 -        0  141250.780 -        0  141749.999 -        0
+MTMET+R6         -70559.487  141332.974 -        0  141358.885 -        0  141858.104 -        0
+MTMET+I+R6       -70557.693  141331.385 -        0  141357.809 -        0  141861.423 -        0
+MTREV+R6         -70601.924  141417.847 -        0  141443.758 -        0  141942.977 -        0
+MTREV+I+R6       -70604.348  141424.697 -        0  141451.121 -        0  141954.734 -        0
+HIVW+R6          -70667.025  141548.051 -        0  141573.961 -        0  142073.180 -        0
+HIVW+I+R6        -70669.005  141554.009 -        0  141580.433 -        0  142084.047 -        0
+MTVER+R6         -71046.460  142306.919 -        0  142332.830 -        0  142832.049 -        0
+MTVER+I+R6       -71046.135  142308.269 -        0  142334.694 -        0  142838.307 -        0
+MTINV+R6         -71057.381  142328.762 -        0  142354.672 -        0  142853.891 -        0
+MTINV+I+R6       -71054.205  142324.410 -        0  142350.834 -        0  142854.448 -        0
+MTART+R6         -71483.884  143181.768 -        0  143207.679 -        0  143706.898 -        0
+MTART+I+R6       -71480.737  143177.473 -        0  143203.897 -        0  143707.511 -        0
+MTMAM+R6         -71569.632  143353.264 -        0  143379.174 -        0  143878.394 -        0
+MTMAM+I+R6       -71568.594  143353.188 -        0  143379.612 -        0  143883.226 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.PFAM+F+R6
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0432
+  pi(R) = 0.0593
+  pi(N) = 0.0615
+  pi(D) = 0.0500
+  pi(C) = 0.0178
+  pi(Q) = 0.0365
+  pi(E) = 0.0528
+  pi(G) = 0.0373
+  pi(H) = 0.0329
+  pi(I) = 0.0733
+  pi(L) = 0.0993
+  pi(K) = 0.0827
+  pi(M) = 0.0162
+  pi(F) = 0.0467
+  pi(P) = 0.0526
+  pi(S) = 0.0724
+  pi(T) = 0.0695
+  pi(W) = 0.0090
+  pi(Y) = 0.0363
+  pi(V) = 0.0507
+
+Model of rate heterogeneity: FreeRate with 6 categories
+Site proportion and rates:  (0.0378,0.0289) (0.0609,0.1242) (0.1324,0.3237) (0.2094,0.6294) (0.4490,1.2618) (0.1105,2.2640)
+
+ Category  Relative_rate  Proportion
+  1         0.0289         0.0378
+  2         0.1242         0.0609
+  3         0.3237         0.1324
+  4         0.6294         0.2094
+  5         1.2618         0.4490
+  6         2.2640         0.1105
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -67134.5579 (s.e. 1354.8615)
+Unconstrained log-likelihood (without tree): -6830.2970
+Number of free parameters (#branches + #model parameters): 126
+Akaike information criterion (AIC) score: 134521.1157
+Corrected Akaike information criterion (AICc) score: 134557.7755
+Bayesian information criterion (BIC) score: 135139.4929
+
+Total tree length (sum of branch lengths): 70.7055
+Sum of internal branch lengths: 16.0695 (22.7274% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Cercyon_ex_Schistosoma_japonicum' is drawn at root
+
++---------------------Cercyon_ex_Schistosoma_japonicum
+|
+|        +-------------Cercyon_ex_Schistosoma_mansoni
+|     +--|
+|     |  +---------Poseidon_ex_Oryzias_latipes
+|  +--|
+|  |  |                                                     +-----Nematis_ex_Caenorhabditis_briggsae
+|  |  |                                                  +--|
+|  |  |                                                  |  +-----Nematis_ex_Caenorhabditis_sp4
+|  |  |                                            +-----|
+|  |  |                                            |     +---Nematis_ex_Caenorhabditis_remanei
+|  |  |                        +-------------------|
+|  |  |                        |                   +--------Nematis_ex_Pristionchus_pacificus
+|  |  |                     +--|
+|  |  |                     |  +------------Neptune_ex_Hydra_magnipapillata
+|  |  |                  +--|
+|  |  |                  |  |     +---------------Neptune_ex_Acropora_palmata
+|  |  |                  |  |  +--|
+|  |  |                  |  |  |  +--------Neptune_ex_Nematostella_vectensis
+|  |  |                  |  +--|
+|  |  |                  |     |     +-----------Neptune1_ex_Danio_rerio
+|  |  |                  |     |  +--|
+|  |  |                  |     |  |  |  +-----Neptune2_ex_Danio_rerio
+|  |  |                  |     |  |  +--|
+|  |  |                  |     |  |     +-----------Neptune2_ex_Xenopus_tropicalis
+|  |  |                  |     +--|
+|  |  |                  |        |      +----------Neptune1_ex_Xenopus_tropicalis
+|  |  |                  |        |   +--|
+|  |  |                  |        |   |  +--------Neptune4_ex_Xenopus_tropicalis
+|  |  |                  |        +---|
+|  |  |                  |            +-----------Neptune3_ex_Xenopus_tropicalis
+|  |  |               +--|
+|  |  |               |  |               +------Neptune_ex_Fugu_rubripes
+|  |  |               |  |            +--|
+|  |  |               |  |            |  |    +--Neptune_ex_Oryzias_latipes
+|  |  |               |  |            |  +----|
+|  |  |               |  |            |       +---Neptune2_ex_Fugu_rubripes
+|  |  |               |  |     +------|
+|  |  |               |  |     |      |  +----------Neptune1_ex_Reniera_sp_JGI2005
+|  |  |               |  |     |      +--|
+|  |  |               |  |     |         +-------Neptune3_ex_Fugu_rubripes
+|  |  |               |  |  +--|
+|  |  |               |  |  |  |       +-------------------------------PLE_ex_Phaeodactilum_tricornutum
+|  |  |               |  |  |  +-------|
+|  |  |               |  |  |          +------------PLE_ex_Selaginella_moellendorffii
+|  |  |               |  +--|
+|  |  |               |     +-------------Neptune2_ex_Reniera_sp_JGI2005
+|  |  |        +------|
+|  |  |        |      |           +--Neptune_ex_Anolis_carolinensis
+|  |  |        |      |  +--------|
+|  |  |        |      |  |        +---Neptune_ex_Anolis_sagrei
+|  |  |        |      +--|
+|  |  |        |         +-----------------------Neptune_ex_Sphenodon_punctatus
+|  |  |     +--|
+|  |  |     |  |     +-----Poseidon_ex_Anolis_carolinensis
+|  |  |     |  |  +--|
+|  |  |     |  |  |  +---------------Poseidon_ex_Eptatretus_burgeri
+|  |  |     |  +--|
+|  |  |     |     +--------Poseidon_ex_Petromyzon_marinus
+|  |  |  +--|
+|  |  |  |  |        +----------------------Osiris_ex_Penaeus_monodon
+|  |  |  |  |     +--|
+|  |  |  |  |     |  |     +--------------Osiris_ex_Tribolium_castaneum
+|  |  |  |  |     |  |  +--|
+|  |  |  |  |     |  |  |  |  +-----------OsirisB_ex_Aedes_aegypti
+|  |  |  |  |     |  |  |  +--|
+|  |  |  |  |     |  |  |     |         +--OsirisC_ex_Aedes_aegypti
+|  |  |  |  |     |  |  |     |      +--|
+|  |  |  |  |     |  |  |     |      |  +--OsirisD_ex_Aedes_aegypti
+|  |  |  |  |     |  |  |     +------|
+|  |  |  |  |     |  |  |            +---OsirisE_ex_Aedes_aegypti
+|  |  |  |  |     |  +--|
+|  |  |  |  |     |     +------------------------Poseidon_ex_Hydra_magnipapillata
+|  |  |  |  |  +--|
+|  |  |  |  |  |  |           +-----------Perere_ex_Euprymna_scolopes
+|  |  |  |  |  |  |        +--|
+|  |  |  |  |  |  |        |  +--------------Perere10_ex_Schistosoma_mansoni
+|  |  |  |  |  |  |   +----|
+|  |  |  |  |  |  |   |    +----------------Perere_ex_Schmidtea_mediterranea
+|  |  |  |  |  |  +---|
+|  |  |  |  |  |      +------------------------------------Poseidon_ex_Oikopleura_dioica
+|  |  |  |  +--|
+|  |  |  |     |        +----------Penelope_ex_Aedes_aegypti
+|  |  |  |     |     +--|
+|  |  |  |     |     |  +----------Penelope_ex_Bombyx_mori
+|  |  |  |     +-----|
+|  |  |  |           |       +--Penelope_ex_Drosophila_virilis
+|  |  |  |           +-------|
+|  |  |  |                   +--Penelope_ex_Drosphila_willistoni
+|  |  +--|
+|  |     +-----------Poseidon_ex_Ciona_intestinalis
++--|
+|  +--------Poseidon_ex_Strongylocentrotus_purpuratus
+|
+|  +------Poseidon_ex_Branchiostoma_floridae
++--|
+   |  +--Poseidon_ex_Fugu_rubripes
+   +--|
+      +--Poseidon_ex_Xenopus_tropicalis
+
+Tree in newick format:
+
+(Cercyon_ex_Schistosoma_japonicum:2.1207058082,(((Cercyon_ex_Schistosoma_mansoni:1.3696959736,Poseidon_ex_Oryzias_latipes:1.0077872002):0.1190915123,((((((((((Nematis_ex_Caenorhabditis_briggsae:0.6225255239,Nematis_ex_Caenorhabditis_sp4:0.6149075476):0.1362152917,Nematis_ex_Caenorhabditis_remanei:0.4449991218):0.6462449016,Nematis_ex_Pristionchus_pacificus:0.9219321610):1.9900487357,Neptune_ex_Hydra_magnipapillata:1.2802813125):0.2161474153,((Neptune_ex_Acropora_palmata:1.6054083198,Neptune_ex_Nematostella_vectensis:0.8768101133):0.2969703159,((Neptune1_ex_Danio_rerio:1.1728452816,(Neptune2_ex_Danio_rerio:0.6119907221,Neptune2_ex_Xenopus_tropicalis:1.1907687519):0.3291775207):0.1140666451,((Neptune1_ex_Xenopus_tropicalis:1.0532064187,Neptune4_ex_Xenopus_tropicalis:0.9250242775):0.3670905221,Neptune3_ex_Xenopus_tropicalis:1.1710587699):0.4011918199):0.3393448935):0.1759832620):0.0672347525,((((Neptune_ex_Fugu_rubripes:0.7369829668,(Neptune_ex_Oryzias_latipes:0.3196166371,Neptune2_ex_Fugu_rubripes:0.4556986072):0.5028852583):0.1374728854,(Neptune1_ex_Reniera_sp_JGI2005:1.0544824728,Neptune3_ex_Fugu_rubripes:0.7876013978):0.1515291008):0.7147762818,(PLE_ex_Phaeodactilum_tricornutum:3.1147286473,PLE_ex_Selaginella_moellendorffii:1.2711250462):0.8180409471):0.1334995976,Neptune2_ex_Reniera_sp_JGI2005:1.4001343821):0.1494496336):0.3161473002,((Neptune_ex_Anolis_carolinensis:0.3588465333,Neptune_ex_Anolis_sagrei:0.4601345572):0.8724666620,Neptune_ex_Sphenodon_punctatus:2.2817349161):0.2924119290):0.7189936962,((Poseidon_ex_Anolis_carolinensis:0.5942093313,Poseidon_ex_Eptatretus_burgeri:1.5694685655):0.0282484361,Poseidon_ex_Petromyzon_marinus:0.9049875331):0.2503644158):0.1079901895,(((Osiris_ex_Penaeus_monodon:2.2617171904,((Osiris_ex_Tribolium_castaneum:1.5130777801,(OsirisB_ex_Aedes_aegypti:1.2249737463,((OsirisC_ex_Aedes_aegypti:0.3397159076,OsirisD_ex_Aedes_aegypti:0.2438037721):0.1800530159,OsirisE_ex_Aedes_aegypti:0.4139112935):0.6961626174):0.2924762469):0.3415205815,Poseidon_ex_Hydra_magnipapillata:2.3865728847):0.0912942771):0.1030434626,(((Perere_ex_Euprymna_scolopes:1.1745999566,Perere10_ex_Schistosoma_mansoni:1.4886927322):0.1418348885,Perere_ex_Schmidtea_mediterranea:1.6204524293):0.5332788021,Poseidon_ex_Oikopleura_dioica:3.5780590416):0.3821643721):0.1362200718,((Penelope_ex_Aedes_aegypti:1.1094631992,Penelope_ex_Bombyx_mori:1.0540503029):0.2951830489,(Penelope_ex_Drosophila_virilis:0.2487257559,Penelope_ex_Drosphila_willistoni:0.3222523070):0.7710638590):0.6542233756):0.1317097419):0.0534608939,Poseidon_ex_Ciona_intestinalis:1.1611390621):0.1313118946):0.0912907225,Poseidon_ex_Strongylocentrotus_purpuratus:0.8919155861):0.0654440962,(Poseidon_ex_Branchiostoma_floridae:0.7143672141,(Poseidon_ex_Fugu_rubripes:0.3015858469,Poseidon_ex_Xenopus_tropicalis:0.2871828545):0.2795270752):0.3051760423);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t training_data/prot_M1726_50_1000.phy/output_files/iqtree/inference/pars_16.treefile -m "Q.PFAM+F+R6{0.0378378,0.0288923,0.0608998,0.124204,0.132364,0.32371,0.209428,0.629406,0.448969,1.2618,0.110502,2.26397}" --length 1000
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data1/prot_M1726_50_1000.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data1/prot_M1726_50_1000.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Sep 19 00:34:57 2025
+Total CPU time used: 3148.47 seconds (0h:52m:28s)
+Total wall-clock time used: 3163.8 seconds (0h:52m:43s)
+

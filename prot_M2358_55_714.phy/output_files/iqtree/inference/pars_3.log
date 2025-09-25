@@ -1,0 +1,197 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Sep 12 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    vanvan-Latitude-9520 (AVX512, FMA3, 31 GB RAM)
+Command: /usr/local/bin/iqtree3 -s /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data1/prot_M2358_55_714.phy -pre training_data/prot_M2358_55_714.phy/output_files/iqtree/inference/pars_3 -seed 3 -ninit 1 -T 1 -redo -n 0
+Seed:    3 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Sep 19 05:50:28 2025
+Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data1/prot_M2358_55_714.phy ... Phylip format detected
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.00122262 secs using 71.57% CPU
+Alignment has 55 sequences with 714 columns, 560 distinct patterns
+358 parsimony-informative, 124 singleton sites, 232 constant sites
+                             Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000115494 secs using 99.57% CPU
+   1  Absidia                        2.66%    passed    100.00%
+   2  Achlya                        62.32%    passed     92.06%
+   3  Aeropyrum                     41.88%    passed     27.30%
+   4  Arabidopsis                    4.06%    passed     99.96%
+   5  Ashbya                         3.64%    passed    100.00%
+   6  Aspergillus                    2.66%    passed     99.68%
+   7  Caenorhabditis                 2.38%    passed    100.00%
+   8  Calanus                       62.32%    passed     58.44%
+   9  Candida                        2.66%    passed    100.00%
+  10  Chlorella                     62.32%    passed     89.28%
+  11  Coleochaete                   62.32%    passed     86.66%
+  12  Coprinus                      62.32%    passed     34.95%
+  13  Costaria                      62.32%    passed     98.94%
+  14  Cryptococcus                   2.66%    passed     99.97%
+  15  Cunninghamella                 2.66%    passed    100.00%
+  16  Cyanophora                     4.34%    passed    100.00%
+  17  Desulfurococcus               41.88%    passed     47.12%
+  18  Dictyostelium                  3.64%    passed    100.00%
+  19  Drosophila                     2.38%    passed     99.99%
+  20  Echinosporangium               5.88%    passed    100.00%
+  21  Entamoeba                      4.20%    passed     99.67%
+  22  Gallus                         2.38%    passed    100.00%
+  23  Glycine                        4.20%    passed     99.94%
+  24  Halobacterium                 43.14%    failed      0.06%
+  25  Histoplasma_capsulatum         2.66%    passed     99.83%
+  26  Homo                           2.38%    passed    100.00%
+  27  Hydra                          2.24%    passed     99.98%
+  28  Mesostigma                    62.46%    passed     69.90%
+  29  Micromucor                     2.66%    passed    100.00%
+  30  Mortierella_chlamydospora      2.66%    passed    100.00%
+  31  Mortierella_multidivaricata    2.66%    passed    100.00%
+  32  Mortierella_polycephala        2.66%    passed    100.00%
+  33  Mortierella_wolfii            62.32%    passed     82.67%
+  34  Mucor                          2.66%    passed    100.00%
+  35  Neurospora                     2.66%    passed    100.00%
+  36  Phaffia                       62.32%    passed     78.19%
+  37  Physarum                       6.16%    passed     99.95%
+  38  Phytophthora                   4.34%    passed    100.00%
+  39  Puccinia                       2.80%    passed     99.99%
+  40  Pyrococcus                    42.44%    passed      9.21%
+  41  Pythium                       62.32%    passed     93.19%
+  42  Rhizomucor                     2.66%    passed    100.00%
+  43  Rhizopus                       3.92%    passed    100.00%
+  44  Rhodotorula                   44.26%    passed     83.81%
+  45  Saccharomyces                  2.66%    passed    100.00%
+  46  Schizophyllum                  2.66%    passed     99.89%
+  47  Schizosaccharomyces            2.52%    passed    100.00%
+  48  Suillus                       62.32%    passed     79.10%
+  49  Sulfolobus                    41.88%    passed     45.45%
+  50  Thermococcus                  42.44%    failed      2.54%
+  51  Thermoplasma                  42.86%    passed     43.62%
+  52  Trichoderma                    2.38%    passed     99.92%
+  53  Umbelopsis                     2.66%    passed    100.00%
+  54  Yarrowia                       2.52%    passed     99.98%
+  55  Zea                            3.92%    passed     98.94%
+WARNING: 11 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                         20.72%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Checking for duplicate sequences: done in 0.000219106 secs using 90.37% CPU
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.027 seconds
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -14550.160
+Optimal log-likelihood: -14549.879
+Proportion of invariable sites: 0.129
+Gamma shape alpha: 0.697
+Parameters optimization took 1 rounds (0.464 sec)
+Time for fast ML tree search: 4.015 seconds
+
+NOTE: ModelFinder requires 49 MB RAM!
+ModelFinder will test up to 1232 protein models (sample size: 714 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            15468.503    107 31151.005    31189.144    31640.090
+  2  LG+I          15091.671    108 30399.343    30438.259    30892.998
+  3  LG+G4         14552.053    108 29320.105    29359.021    29813.761
+  4  LG+I+G4       14549.417    109 29316.834    29356.536    29815.060
+  5  LG+R2         14630.781    109 29479.563    29519.264    29977.789
+  6  LG+R3         14524.352    111 29270.705    29312.007    29778.073
+  7  LG+R4         14506.190    113 29238.380    29281.320    29754.890
+  8  LG+R5         14501.936    115 29233.871    29278.486    29759.523
+ 14  LG+I+R2       14579.091    110 29378.183    29418.680    29880.980
+ 15  LG+I+R3       14512.075    112 29248.150    29290.267    29760.089
+ 16  LG+I+R4       14497.470    114 29222.941    29266.714    29744.021
+ 17  LG+I+R5       14497.265    116 29226.530    29271.997    29756.752
+ 38  LG+F+I+R4     14474.981    133 29215.963    29277.418    29823.890
+ 60  WAG+I+R4      14636.683    114 29501.366    29545.139    30022.447
+ 82  WAG+F+I+R4    14636.471    133 29538.943    29600.398    30146.870
+104  JTT+I+R4      14780.420    114 29788.840    29832.613    30309.921
+126  JTT+F+I+R4    14789.716    133 29845.432    29906.887    30453.359
+148  Q.PFAM+I+R4   14532.649    114 29293.298    29337.071    29814.378
+170  Q.PFAM+F+I+R4 14515.663    133 29297.326    29358.781    29905.253
+192  Q.BIRD+I+R4   15243.420    114 30714.840    30758.613    31235.921
+214  Q.BIRD+F+I+R4 15296.798    133 30859.595    30921.051    31467.523
+236  Q.MAMMAL+I+R4 15077.740    114 30383.479    30427.252    30904.560
+258  Q.MAMMAL+F+I+R4 15119.011    133 30504.022    30565.477    31111.949
+280  Q.INSECT+I+R4 14529.846    114 29287.693    29331.466    29808.774
+302  Q.INSECT+F+I+R4 14548.952    133 29363.904    29425.359    29971.831
+324  Q.PLANT+I+R4  14773.364    114 29774.729    29818.502    30295.809
+346  Q.PLANT+F+I+R4 14793.647    133 29853.293    29914.748    30461.220
+368  Q.YEAST+I+R4  14502.867    114 29233.733    29277.506    29754.814
+390  Q.YEAST+F+I+R4 14493.410    133 29252.821    29314.276    29860.748
+412  JTTDCMUT+I+R4 14773.165    114 29774.331    29818.104    30295.412
+434  JTTDCMUT+F+I+R4 14781.412    133 29828.825    29890.280    30436.752
+456  DCMUT+I+R4    14778.482    114 29784.965    29828.738    30306.045
+478  DCMUT+F+I+R4  14754.281    133 29774.562    29836.017    30382.490
+500  VT+I+R4       14721.303    114 29670.605    29714.378    30191.686
+522  VT+F+I+R4     14719.969    133 29705.938    29767.393    30313.865
+544  PMB+I+R4      14798.149    114 29824.297    29868.070    30345.378
+566  PMB+F+I+R4    14781.812    133 29829.623    29891.078    30437.551
+588  BLOSUM62+I+R4 14774.656    114 29777.313    29821.086    30298.393
+610  BLOSUM62+F+I+R4 14760.101    133 29786.203    29847.658    30394.130
+632  DAYHOFF+I+R4  14776.331    114 29780.663    29824.436    30301.743
+654  DAYHOFF+F+I+R4 14752.209    133 29770.418    29831.874    30378.346
+676  MTREV+I+R4    15401.957    114 31031.914    31075.687    31552.995
+698  MTREV+F+I+R4  14937.770    133 30141.539    30202.994    30749.467
+720  MTART+I+R4    15228.501    114 30685.001    30728.774    31206.082
+742  MTART+F+I+R4  14815.822    133 29897.643    29959.099    30505.571
+764  MTZOA+I+R4    14977.952    114 30183.905    30227.678    30704.985
+786  MTZOA+F+I+R4  14681.765    133 29629.529    29690.984    30237.456
+808  MTMET+I+R4    15333.363    114 30894.725    30938.498    31415.806
+830  MTMET+F+I+R4  14942.956    133 30151.911    30213.366    30759.839
+852  MTVER+I+R4    15611.968    114 31451.936    31495.709    31973.017
+874  MTVER+F+I+R4  15218.068    133 30702.137    30763.592    31310.064
+896  MTINV+I+R4    15284.031    114 30796.062    30839.835    31317.143
+918  MTINV+F+I+R4  14756.602    133 29779.205    29840.660    30387.132
+940  MTMAM+I+R4    15841.615    114 31911.231    31955.004    32432.311
+962  MTMAM+F+I+R4  15398.163    133 31062.325    31123.780    31670.253
+984  FLAVI+I+R4    15712.496    114 31652.993    31696.765    32174.073
+1006  FLAVI+F+I+R4  15694.809    133 31655.619    31717.074    32263.546
+1028  HIVB+I+R4     15446.209    114 31120.417    31164.190    31641.498
+1050  HIVB+F+I+R4   15371.019    133 31008.038    31069.493    31615.965
+1072  HIVW+I+R4     16082.808    114 32393.616    32437.389    32914.697
+1094  HIVW+F+I+R4   15941.070    133 32148.140    32209.595    32756.067
+1116  FLU+I+R4      15159.161    114 30546.321    30590.094    31067.402
+1138  FLU+F+I+R4    15155.057    133 30576.114    30637.569    31184.041
+1160  RTREV+I+R4    14618.297    114 29464.595    29508.368    29985.675
+1182  RTREV+F+I+R4  14507.031    133 29280.062    29341.517    29887.990
+1204  CPREV+I+R4    14802.243    114 29832.487    29876.260    30353.567
+1226  CPREV+F+I+R4  14753.365    133 29772.729    29834.184    30380.657
+Akaike Information Criterion:           LG+F+I+R4
+Corrected Akaike Information Criterion: LG+I+R4
+Bayesian Information Criterion:         LG+I+R4
+Best-fit model: LG+I+R4 chosen according to BIC
+
+All model information printed to training_data/prot_M2358_55_714.phy/output_files/iqtree/inference/pars_3.model.gz
+CPU time for ModelFinder: 307.261 seconds (0h:5m:7s)
+Wall-clock time for ModelFinder: 307.488 seconds (0h:5m:7s)
+
+NOTE: 19 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -14499.199
+2. Current log-likelihood: -14497.226
+3. Current log-likelihood: -14497.214
+Optimal log-likelihood: -14497.212
+Proportion of invariable sites: 0.149
+Site proportion and rates:  (0.494,0.309) (0.229,1.317) (0.104,3.344) (0.025,8.070)
+Parameters optimization took 3 rounds (3.696 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -14497.212
+Total tree length: 5.869
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 310.997 sec (0h:5m:10s)
+Total wall-clock time used: 311.226 sec (0h:5m:11s)
+
+Analysis results written to: 
+  IQ-TREE report:                training_data/prot_M2358_55_714.phy/output_files/iqtree/inference/pars_3.iqtree
+  Maximum-likelihood tree:       training_data/prot_M2358_55_714.phy/output_files/iqtree/inference/pars_3.treefile
+  Screen log file:               training_data/prot_M2358_55_714.phy/output_files/iqtree/inference/pars_3.log
+
+Date and Time: Fri Sep 19 05:55:40 2025

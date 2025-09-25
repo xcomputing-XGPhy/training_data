@@ -1,0 +1,442 @@
+IQ-TREE 3.0.1 built Sep 14 2025
+
+Input file name: /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data5/prot_M11342_91_323.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 6
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 91 sequences with 323 amino-acid sites
+Number of constant sites: 24 (= 7.43034% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 24 (= 7.43034% of all sites)
+Number of parsimony informative sites: 292
+Number of distinct site patterns: 310
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG+F+I+R5
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+LG+F+I+R5        -23337.715   47089.430 +    0.589   47838.230 +    0.999   47871.404 +    0.904
+LG+F+R6          -23337.073   47090.147 +    0.411   47852.813 - 0.000681   47875.898 +   0.0956
+Q.YEAST+F+I+R5   -23360.040   47134.080 - 1.19e-10   47882.880 - 2.01e-10   47916.054 - 1.82e-10
+Q.YEAST+F+R6     -23359.108   47134.216 - 1.11e-10   47896.882 - 1.83e-13   47919.967 - 2.58e-11
+Q.PFAM+F+I+R5    -23387.727   47189.455 - 1.12e-22   47938.255 -  1.9e-22   47971.429 - 1.72e-22
+Q.PFAM+F+R6      -23389.122   47194.244 - 1.02e-23   47956.911 - 1.69e-26   47979.996 - 2.38e-24
+Q.INSECT+F+I+R5  -23415.959   47245.917 - 6.15e-35   47994.717 - 1.04e-34   48027.891 - 9.45e-35
+Q.INSECT+F+R6    -23414.821   47245.643 - 7.06e-35   48008.310 - 1.17e-37   48031.395 - 1.64e-35
+MTZOA+F+R6       -23441.813   47299.625 - 1.34e-46   48062.292 - 2.21e-49   48085.377 - 3.11e-47
+MTZOA+F+I+R5     -23446.299   47306.597 -  4.1e-48   48055.397 - 6.96e-48   48088.572 - 6.29e-48
+RTREV+F+R6       -23469.947   47355.894 - 8.09e-59   48118.561 - 1.34e-61   48141.646 - 1.88e-59
+RTREV+F+I+R5     -23473.551   47361.101 - 5.99e-60   48109.901 - 1.02e-59   48143.075 -  9.2e-60
+MTINV+F+R6       -23477.600   47371.200 - 3.84e-62   48133.867 - 6.35e-65   48156.952 - 8.92e-63
+MTINV+F+I+R5     -23482.787   47379.573 - 5.83e-64   48128.373 -  9.9e-64   48161.547 - 8.96e-64
+WAG+F+I+R5       -23532.246   47478.492 - 1.93e-85   48227.292 - 3.28e-85   48260.466 - 2.97e-85
+Q.PLANT+F+I+R5   -23536.810   47487.619 - 2.01e-87   48236.419 - 3.42e-87   48269.593 - 3.09e-87
+WAG+F+R6         -23534.149   47484.298 - 1.06e-86   48246.965 - 1.75e-89   48270.050 - 2.46e-87
+Q.PLANT+F+R6     -23534.957   47485.914 - 4.73e-87   48248.580 - 7.82e-90   48271.665 -  1.1e-87
+MTZOA+I+R5       -23635.990   47647.981 - 3.03e-122   48178.309 - 1.42e-74   48358.180 - 1.8e-106
+MTZOA+R6         -23635.329   47648.658 - 2.16e-122   48188.658 - 8.04e-77   48362.634 - 1.94e-107
+CPREV+F+R6       -23601.579   47619.159 - 5.5e-116   48381.825 - 9.11e-119   48404.910 - 1.28e-116
+CPREV+F+I+R5     -23605.319   47624.638 - 3.55e-117   48373.438 - 6.03e-117   48406.612 - 5.46e-117
+JTTDCMUT+F+I+R5  -23630.136   47674.272 - 5.93e-128   48423.072 - 1.01e-127   48456.246 - 9.11e-128
+Q.PFAM+I+R5      -23685.027   47746.054 - 1.53e-143   48276.382 - 7.18e-96   48456.252 - 9.08e-128
+JTTDCMUT+F+R6    -23628.396   47672.791 - 1.24e-127   48435.458 - 2.06e-130   48458.543 - 2.89e-128
+Q.PFAM+R6        -23684.858   47747.715 - 6.68e-144   48287.715 - 2.48e-98   48461.692 - 5.98e-129
+JTT+F+I+R5       -23634.810   47683.621 - 5.53e-130   48432.421 - 9.39e-130   48465.595 - 8.5e-130
+JTT+F+R6         -23634.022   47684.043 - 4.48e-130   48446.710 - 7.41e-133   48469.795 - 1.04e-130
+DAYHOFF+F+I+R5   -23639.095   47692.189 - 7.63e-132   48440.989 - 1.29e-131   48474.163 - 1.17e-131
+DAYHOFF+F+R6     -23637.685   47691.371 - 1.15e-131   48454.037 - 1.9e-134   48477.122 - 2.67e-132
+DCMUT+F+I+R5     -23641.872   47697.744 - 4.74e-133   48446.544 - 8.05e-133   48479.718 - 7.29e-133
+DCMUT+F+R6       -23640.897   47697.794 - 4.63e-133   48460.461 - 7.66e-136   48483.546 - 1.08e-133
+VT+F+I+R5        -23645.382   47704.765 - 1.42e-134   48453.565 - 2.41e-134   48486.739 - 2.18e-134
+VT+F+R6          -23643.997   47703.993 - 2.08e-134   48466.660 - 3.45e-137   48489.745 - 4.84e-135
+LG+I+R5          -23703.532   47783.064 - 1.41e-151   48313.393 - 6.6e-104   48493.263 - 8.34e-136
+LG+R6            -23703.491   47784.982 - 5.4e-152   48324.982 - 2.01e-106   48498.959 - 4.84e-137
+LG+I+R6          -23703.055   47786.110 - 3.07e-152   48335.958 - 8.31e-109   48503.864 - 4.16e-138
+LG+R7            -23703.090   47788.180 - 1.09e-152   48348.057 - 1.96e-111   48509.711 - 2.24e-139
+LG+R5            -23715.433   47804.866 - 2.6e-156   48325.696 - 1.41e-106   48511.287 - 1.02e-139
+LG+I+G4          -23740.556   47843.113 - 1.29e-164   48310.375 - 2.98e-103   48526.868 - 4.21e-143
+LG+I+R4          -23726.773   47825.547 - 8.4e-161   48337.047 - 4.82e-109   48528.190 - 2.17e-143
+MTMET+F+R6       -23674.295   47764.591 - 1.45e-147   48527.257 - 2.39e-150   48550.342 - 3.36e-148
+MTMET+F+I+R5     -23678.847   47771.695 - 4.15e-149   48520.495 - 7.04e-149   48553.669 - 6.37e-149
+LG+R4            -23746.855   47863.710 - 4.34e-169   48366.045 - 2.43e-115   48562.575 - 7.42e-151
+LG+G4            -23767.154   47894.308 - 9.83e-176   48353.181 - 1.51e-112   48574.285 - 2.13e-153
+LG+I+R3          -23765.333   47898.666 - 1.11e-176   48391.999 - 5.63e-121   48593.754 - 1.26e-157
+MTART+F+R6       -23698.436   47812.873 - 4.74e-158   48575.539 - 7.85e-161   48598.624 - 1.1e-158
+MTART+F+I+R5     -23702.443   47818.887 - 2.35e-159   48567.687 - 3.98e-159   48600.861 - 3.6e-159
+LG+R3            -23811.648   47989.297 - 2.32e-196   48473.786 - 9.78e-139   48680.607 - 1.74e-176
+BLOSUM62+F+I+R5  -23745.834   47905.668 - 3.36e-178   48654.468 - 5.7e-178   48687.642 - 5.16e-178
+BLOSUM62+F+R6    -23745.165   47906.331 - 2.41e-178   48668.997 - 3.99e-181   48692.082 - 5.6e-179
+MTREV+F+I+R5     -23753.747   47921.494 - 1.23e-181   48670.294 - 2.09e-181   48703.469 - 1.89e-181
+MTREV+F+R6       -23751.611   47919.223 - 3.83e-181   48681.889 - 6.33e-184   48704.974 - 8.89e-182
+Q.PLANT+I+R5     -23812.341   48000.682 - 7.83e-199   48531.010 - 3.67e-151   48710.881 - 4.64e-183
+Q.PLANT+R6       -23812.632   48003.265 - 2.15e-199   48543.265 -   8e-154   48717.241 - 1.93e-184
+Q.INSECT+I+R5    -23855.749   48087.499 - 1.1e-217   48617.827 - 5.16e-170   48797.697 - 6.52e-202
+Q.INSECT+R6      -23855.288   48088.575 - 6.43e-218   48628.575 - 2.39e-172   48802.552 - 5.76e-203
+PMB+F+I+R5       -23816.828   48047.655 - 4.94e-209   48796.455 - 8.39e-209   48829.629 - 7.59e-209
+PMB+F+R6         -23815.525   48047.050 - 6.69e-209   48809.716 - 1.11e-211   48832.801 - 1.55e-209
+Q.YEAST+I+R5     -23888.692   48153.385 - 5.43e-232   48683.713 - 2.54e-184   48863.583 - 3.22e-216
+Q.YEAST+R6       -23888.211   48154.423 - 3.23e-232   48694.423 - 1.2e-186   48868.399 - 2.89e-217
+LG+I+R2          -23940.422   48244.844 - 7.5e-252   48720.644 - 2.43e-192   48932.376 - 3.71e-231
+Q.MAMMAL+F+I+R5  -23928.014   48270.028 - 2.55e-257   49018.828 - 4.33e-257   49052.002 - 3.92e-257
+FLU+F+I+R5       -23932.173   48278.347 - 3.98e-259   49027.147 - 6.76e-259   49060.321 - 6.11e-259
+Q.MAMMAL+F+R6    -23929.966   48275.933 - 1.33e-258   49038.600 - 2.2e-261   49061.685 - 3.09e-259
+FLU+F+R6         -23931.671   48279.341 - 2.42e-259   49042.008 - 4.01e-262   49065.093 - 5.62e-260
+MTVER+F+I+R5     -23946.523   48307.046 - 2.33e-265   49055.846 - 3.96e-265   49089.020 - 3.58e-265
+MTVER+F+R6       -23944.236   48304.472 - 8.45e-265   49067.138 - 1.4e-267   49090.223 - 1.96e-265
+LG+R2            -24028.212   48418.424 - 1.52e-289   48885.687 - 3.53e-228   49102.179 - 4.98e-268
+WAG+I+R5         -24013.900   48403.800 - 2.28e-286   48934.128 - 1.07e-238   49113.999 - 1.35e-270
+WAG+R6           -24016.853   48411.706 - 4.38e-288   48951.706 - 1.63e-242   49125.682 - 3.92e-273
+JTT+I+R5         -24038.032   48452.064 - 7.54e-297   48982.393 - 3.53e-249   49162.263 - 4.47e-281
+JTTDCMUT+I+R5    -24040.252   48456.504 - 8.19e-298   48986.832 - 3.84e-250   49166.702 - 4.85e-282
+JTT+R6           -24039.710   48457.421 - 5.18e-298   48997.421 - 1.93e-252   49171.397 - 4.64e-283
+JTTDCMUT+R6      -24040.940   48459.879 - 1.52e-298   48999.879 - 5.63e-253   49173.856 - 1.36e-283
+CPREV+I+R5       -24059.586   48495.171 - 3.29e-306   49025.500 - 1.54e-258   49205.370 - 1.95e-290
+CPREV+R6         -24061.895   48501.790 - 1.2e-307   49041.790 - 4.47e-262   49215.766 - 1.08e-292
+VT+I+R5          -24102.226   48580.453 -        0   49110.781 - 4.66e-277   49290.651 - 5.9e-309
+VT+R6            -24102.703   48583.405 -        0   49123.405 - 8.46e-280   49297.381 - 2.04e-310
+BLOSUM62+I+R5    -24129.221   48634.441 -        0   49164.770 - 8.82e-289   49344.640 - 1.12e-320
+BLOSUM62+R6      -24128.835   48635.670 -        0   49175.670 - 3.79e-291   49349.646 - 9.09e-322
+PMB+I+R5         -24147.569   48671.139 -        0   49201.467 - 9.47e-297   49381.338 -        0
+Q.BIRD+F+I+R5    -24095.391   48604.781 -        0   49353.581 -        0   49386.755 -        0
+PMB+R6           -24147.575   48673.151 -        0   49213.151 - 2.75e-299   49387.127 -        0
+Q.BIRD+F+R6      -24096.004   48608.009 -        0   49370.675 -        0   49393.760 -        0
+RTREV+R6         -24160.658   48699.316 -        0   49239.316 - 5.72e-305   49413.292 -        0
+RTREV+I+R5       -24166.320   48708.641 -        0   49238.969 - 6.81e-305   49418.839 -        0
+MTART+I+R5       -24207.782   48791.564 -        0   49321.892 - 6.92e-323   49501.762 -        0
+MTART+R6         -24210.669   48799.337 -        0   49339.337 -        0   49513.314 -        0
+MTMAM+F+R6       -24167.663   48751.326 -        0   49513.992 -        0   49537.077 -        0
+MTMAM+F+I+R5     -24173.435   48760.870 -        0   49509.670 -        0   49542.844 -        0
+DAYHOFF+R6       -24226.649   48831.299 -        0   49371.299 -        0   49545.275 -        0
+DAYHOFF+I+R5     -24230.472   48836.944 -        0   49367.273 -        0   49547.143 -        0
+DCMUT+R6         -24230.355   48838.709 -        0   49378.709 -        0   49552.686 -        0
+DCMUT+I+R5       -24233.861   48843.722 -        0   49374.050 -        0   49553.920 -        0
+MTMET+I+R5       -24255.904   48887.808 -        0   49418.136 -        0   49598.006 -        0
+MTMET+R6         -24256.426   48890.851 -        0   49430.851 -        0   49604.828 -        0
+Q.MAMMAL+I+R5    -24266.978   48909.955 -        0   49440.284 -        0   49620.154 -        0
+Q.MAMMAL+R6      -24268.597   48915.194 -        0   49455.194 -        0   49629.171 -        0
+MTINV+I+R5       -24300.543   48977.085 -        0   49507.413 -        0   49687.284 -        0
+MTINV+R6         -24300.819   48979.637 -        0   49519.637 -        0   49693.614 -        0
+HIVB+F+R6        -24263.885   48943.769 -        0   49706.436 -        0   49729.521 -        0
+HIVB+F+I+R5      -24270.383   48954.766 -        0   49703.566 -        0   49736.740 -        0
+Q.BIRD+I+R5      -24387.322   49150.643 -        0   49680.972 -        0   49860.842 -        0
+Q.BIRD+R6        -24388.283   49154.566 -        0   49694.566 -        0   49868.542 -        0
+MTREV+I+R5       -24391.354   49158.707 -        0   49689.036 -        0   49868.906 -        0
+MTREV+R6         -24390.212   49158.424 -        0   49698.424 -        0   49872.401 -        0
+MTVER+I+R5       -24514.602   49405.204 -        0   49935.533 -        0   50115.403 -        0
+MTVER+R6         -24514.649   49407.298 -        0   49947.298 -        0   50121.275 -        0
+FLU+I+R5         -24550.095   49476.190 -        0   50006.519 -        0   50186.389 -        0
+FLU+R6           -24554.469   49486.938 -        0   50026.938 -        0   50200.914 -        0
+LG+I             -24760.559   49881.118 -        0   50339.991 -        0   50561.095 -        0
+MTMAM+I+R5       -24740.324   49856.648 -        0   50386.976 -        0   50566.846 -        0
+MTMAM+R6         -24742.409   49862.817 -        0   50402.817 -        0   50576.793 -        0
+FLAVI+F+R6       -24720.752   49857.504 -        0   50620.171 -        0   50643.256 -        0
+FLAVI+F+I+R5     -24723.986   49861.972 -        0   50610.772 -        0   50643.946 -        0
+HIVB+R6          -24783.901   49945.801 -        0   50485.801 -        0   50659.777 -        0
+HIVB+I+R5        -24786.939   49949.879 -        0   50480.207 -        0   50660.077 -        0
+FLAVI+I+R5       -24825.147   50026.294 -        0   50556.622 -        0   50736.492 -        0
+FLAVI+R6         -24823.900   50025.800 -        0   50565.800 -        0   50739.776 -        0
+LG               -25029.839   50417.679 -        0   50868.308 -        0   51093.879 -        0
+HIVW+F+I+R5      -25012.103   50438.206 -        0   51187.006 -        0   51220.180 -        0
+HIVW+F+R6        -25009.307   50434.614 -        0   51197.281 -        0   51220.366 -        0
+HIVW+I+R5        -25981.317   52338.634 -        0   52868.962 -        0   53048.833 -        0
+HIVW+R6          -25983.552   52345.104 -        0   52885.104 -        0   53059.080 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+F+I+R5
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.1253
+  pi(R) = 0.0218
+  pi(N) = 0.0169
+  pi(D) = 0.0162
+  pi(C) = 0.0019
+  pi(Q) = 0.0183
+  pi(E) = 0.0159
+  pi(G) = 0.0960
+  pi(H) = 0.0141
+  pi(I) = 0.0734
+  pi(L) = 0.1689
+  pi(K) = 0.0228
+  pi(M) = 0.0348
+  pi(F) = 0.0745
+  pi(P) = 0.0385
+  pi(S) = 0.0584
+  pi(T) = 0.0565
+  pi(W) = 0.0178
+  pi(Y) = 0.0340
+  pi(V) = 0.0939
+
+Model of rate heterogeneity: Invar+FreeRate with 5 categories
+Proportion of invariable sites: 0.0585
+Site proportion and rates:  (0.2291,0.1930) (0.2647,0.5501) (0.2794,1.0800) (0.1239,2.3025) (0.0443,5.0334)
+
+ Category  Relative_rate  Proportion
+  0         0              0.0585
+  1         0.1930         0.2291
+  2         0.5501         0.2647
+  3         1.0800         0.2794
+  4         2.3025         0.1239
+  5         5.0334         0.0443
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -23337.4515 (s.e. 843.6820)
+Unconstrained log-likelihood (without tree): -1845.2038
+Number of free parameters (#branches + #model parameters): 207
+Akaike information criterion (AIC) score: 47088.9030
+Corrected Akaike information criterion (AICc) score: 47837.7030
+Bayesian information criterion (BIC) score: 47870.8770
+
+Total tree length (sum of branch lengths): 23.6953
+Sum of internal branch lengths: 7.9181 (33.4162% of tree length)
+
+WARNING: 3 near-zero internal branches (<0.0031) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Actinomyces_urogenitalis_DSM_15434' is drawn at root
+
++----Actinomyces_urogenitalis_DSM_15434
+|
+|                                                +-------Aeromicrobium_marinum_DSM_15272
+|                                             +--|
+|                                             |  +-----Jannaschia_sp._CCS1
+|                                          +--|
+|                                          |  |        +--Bacillus_pseudofirmus_OF4
+|                                          |  |     +--|
+|                                          |  |     |  +---synthetic_construct
+|                                          |  |  +--|
+|                                          |  |  |  +---------Myxococcus_xanthus_DK_1622
+|                                          |  +--|
+|                                          |     |  +--Coraliomargarita_akajimensis_DSM_45221
+|                                          |     +--|
+|                                          |        |    +--Dinoroseobacter_shibae_DFL_12
+|                                          |        +----|
+|                                          |             +--Marinobacter_sp._ELB17
+|                                      +---|
+|                                      |   |                      +--Bacillus_clausii_KSM-K16
+|                                      |   |                   +--|
+|                                      |   |                   |  +**Geobacter_sulfurreducens_KN400
+|                                      |   |                +--|
+|                                      |   |                |  +---Waddlia_chondrophila_WSU_86-1044
+|                                      |   |           +----|
+|                                      |   |           |    |  +--Mycobacterium_gilvum_PYR-GCK
+|                                      |   |           |    +--|
+|                                      |   |           |       |  +--Prosthecochloris_vibrioformis_DSM_265
+|                                      |   |           |       +--|
+|                                      |   |           |          +--Symbiobacterium_thermophilum_IAM_14863
+|                                      |   |        +--|
+|                                      |   |        |  +--Thioalkalivibrio_sp._K90mix
+|                                      |   |     +--|
+|                                      |   |     |  |  +--Chlorobium_phaeobacteroides_BS1
+|                                      |   |     |  +--|
+|                                      |   |     |     |  +--Planctomyces_brasiliensis_DSM_5305
+|                                      |   |     |     +--|
+|                                      |   |     |        +--Roseobacter_sp._CCS2
+|                                      |   |  +--|
+|                                      |   |  |  |     +--Chlorobium_limicola_DSM_245
+|                                      |   |  |  |  +--|
+|                                      |   |  |  |  |  +**Halorhodospira_halophila_SL1
+|                                      |   |  |  +--|
+|                                      |   |  |     +--Marivirga_tractuosa_DSM_4126
+|                                      |   +--|
+|                                      |      +---Roseiflexus_castenholzii_DSM_13941
+|                              +-------|
+|                              |       +---------Halomonas_elongata_DSM_2581
+|                          +---|
+|                          |   |                           +--Alkalilimnicola_ehrlichii_MLHE-1
+|                          |   |                        +--|
+|                          |   |                        |  +--marine_bacterium_HP15
+|                          |   |                     +--|
+|                          |   |                     |  +-------Bacillus_halodurans_C-125
+|                          |   |                  +--|
+|                          |   |                  |  |     +-----Corynebacterium_ammoniagenes_DSM_20306
+|                          |   |                  |  |  +--|
+|                          |   |                  |  |  |  +---Jonesia_denitrificans_DSM_20603
+|                          |   |                  |  +--|
+|                          |   |                  |     +----Dietzia_cinnamea_P4-A
+|                          |   |               +--|
+|                          |   |               |  |     +-------Corynebacterium_efficiens_YS-314-A
+|                          |   |               |  |  +--|
+|                          |   |               |  |  |  |           +------Geodermatophilus_obscurus_DSM_43160
+|                          |   |               |  |  |  |      +----|
+|                          |   |               |  |  |  |      |    +--------Salinispora_arenicola_CNS-205
+|                          |   |               |  |  |  +------|
+|                          |   |               |  |  |         +--------------Salinispora_tropica_CNB-440
+|                          |   |               |  +--|
+|                          |   |               |     +----Marinobacter_aquaeolei_VT8
+|                          |   |        +------|
+|                          |   |        |      +----Thioalkalivibrio_sp._HL-EbGR7
+|                          |   +--------|
+|                          |            |              +--Corynebacterium_lipophiloflavum_DSM_44291
+|                          |            |  +-----------|
+|                          |            |  |           +--Sanguibacter_keddieii_DSM_10542-A
+|                          |            +--|
+|                          |               +------Nocardiopsis_dassonvillei_subsp._dassonvillei_DSM_43111
+|                       +--|
+|                       |  |              +----Anaerolinea_thermophila_UNI-1
+|                       |  |           +--|
+|                       |  |           |  +-----Sanguibacter_keddieii_DSM_10542
+|                       |  |        +--|
+|                       |  |        |  |     +--Kineococcus_radiotolerans_SRS30216
+|                       |  |        |  |  +--|
+|                       |  |        |  |  |  +---Prosthecochloris_aestuarii_DSM_271
+|                       |  |        |  +--|
+|                       |  |        |     +--Mycobacterium_vanbaalenii_PYR-1
+|                       |  |   +----|
+|                       |  |   |    +--Thermomicrobium_roseum_DSM_5159
+|                       |  +---|
+|                       |      +-----------Vibrio_metschnikovii_CIP_69.14
+|                    +--|
+|                    |  +--------------Pelobacter_propionicus_DSM_2379
+|                 +--|
+|                 |  |         +---Arthrobacter_phenanthrenivorans_Sphe3
+|                 |  |     +---|
+|                 |  |     |   |  +**Bacillus_selenitireducens_MLS10
+|                 |  |     |   +--|
+|                 |  |     |      +--Labrenzia_alexandrii_DFL-11
+|                 |  |  +--|
+|                 |  |  |  +--------Vibrio_cholerae_623-39
+|                 |  +--|
+|                 |     |   +---Nakamurella_multipartita_DSM_44233
+|                 |     +---|
+|                 |         +--------Vibrio_cholerae_MZO-2
+|              +--|
+|              |  +------------Vibrio_cholerae_O395
+|           +--|
+|           |  |  +---------Bacillus_cellulosilyticus_DSM_2522
+|           |  +--|
+|           |     +--------------Vibrio_cholerae_RC385
+|        +--|
+|        |  |           +--Dietzia_cinnamea_P4
+|        |  |        +--|
+|        |  |        |  +--Vibrio_alginolyticus_40B
+|        |  |     +--|
+|        |  |     |  +--Vibrio_cholerae_V52
+|        |  |  +--|
+|        |  |  |  +---Oceanobacillus_iheyensis_HTE831
+|        |  +--|
+|        |     +--Truepera_radiovictrix_DSM_17093
+|     +--|
+|     |  +--------Sorangium_cellulosum_So_ce_56
+|  +--|
+|  |  |              +--Arthrobacter_aurescens_TC1
+|  |  |           +--|
+|  |  |           |  +--Vibrio_shilonii_AK1
+|  |  |        +--|
+|  |  |        |  +-------Cellulomonas_flavigena_DSM_20109
+|  |  |     +--|
+|  |  |     |  |                    +**Chlorobaculum_parvum_NCIB_8327
+|  |  |     |  |                 +--|
+|  |  |     |  |                 |  +--Vibrio_sp._Ex25
+|  |  |     |  |              +**|
+|  |  |     |  |              |  |     +**Chloroflexus_aurantiacus_J-10-fl
+|  |  |     |  |              |  |  +**|
+|  |  |     |  |              |  |  |  +--Rhodococcus_opacus_B4
+|  |  |     |  |              |  +**|
+|  |  |     |  |              |     +--Vibrio_parahaemolyticus_16
+|  |  |     |  |           +--|
+|  |  |     |  |           |  +--Vibrio_cholerae_O1_biovar_eltor_str._N16961
+|  |  |     |  |        +--|
+|  |  |     |  |        |  |     +--Corynebacterium_pseudotuberculosis_FRC41
+|  |  |     |  |        |  |  +--|
+|  |  |     |  |        |  |  |  +--Corynebacterium_pseudotuberculosis_I19
+|  |  |     |  |        |  +--|
+|  |  |     |  |        |     +--Geobacter_sulfurreducens_PCA
+|  |  |     |  |  +-----|
+|  |  |     |  |  |     |  +---Stigmatella_aurantiaca_DW4_3-1
+|  |  |     |  |  |     +--|
+|  |  |     |  |  |        |  +--Vibrio_cholerae_TM_11079-80
+|  |  |     |  |  |        +--|
+|  |  |     |  |  |           +--Vibrio_cholerae_TMA_21
+|  |  |     |  +--|
+|  |  |     |     +--------Vibrio_cholerae_1587
+|  |  |  +--|
+|  |  |  |  |              +--Brevibacterium_linens_BL2
+|  |  |  |  |           +--|
+|  |  |  |  |           |  +--Corynebacterium_diphtheriae_NCTC_13129
+|  |  |  |  |        +--|
+|  |  |  |  |        |  |     +--Corynebacterium_amycolatum_SK46
+|  |  |  |  |        |  |  +--|
+|  |  |  |  |        |  |  |  +--Frankia_sp._EAN1pec
+|  |  |  |  |        |  +--|
+|  |  |  |  |        |     +--Corynebacterium_glucuronolyticum_ATCC_51866
+|  |  |  |  |     +--|
+|  |  |  |  |     |  |  +--Corynebacterium_glutamicum_R
+|  |  |  |  |     |  +--|
+|  |  |  |  |     |     +--Nocardia_farcinica_IFM_10152
+|  |  |  |  |  +--|
+|  |  |  |  |  |  +--Brevibacterium_mcbrellneri_ATCC_49030
+|  |  |  |  +--|
+|  |  |  |     +--------Micrococcus_luteus_SK58
+|  |  +--|
+|  |     |    +--Corynebacterium_glucuronolyticum_ATCC_51867
+|  |     +----|
+|  |          +--Vibrio_harveyi_1DA3
++--|
+|  +-----Rhodococcus_equi_103S
+|
++-------Corynebacterium_efficiens_YS-314
+
+Tree in newick format:
+
+(Actinomyces_urogenitalis_DSM_15434:0.2415756989,((((((((((((((Aeromicrobium_marinum_DSM_15272:0.3512826546,Jannaschia_sp._CCS1:0.2670558602):0.0812138169,(((Bacillus_pseudofirmus_OF4:0.1073781351,synthetic_construct:0.1784611307):0.0565854979,Myxococcus_xanthus_DK_1622:0.4420359060):0.0171546694,(Coraliomargarita_akajimensis_DSM_45221:0.1287463904,(Dinoroseobacter_shibae_DFL_12:0.0712688526,Marinobacter_sp._ELB17:0.0153618514):0.2136897250):0.0557397453):0.0576221928):0.0600308099,(((((((Bacillus_clausii_KSM-K16:0.0060951670,Geobacter_sulfurreducens_KN400:0.0000016244):0.1114241459,Waddlia_chondrophila_WSU_86-1044:0.1856837523):0.0284172714,(Mycobacterium_gilvum_PYR-GCK:0.0981086813,(Prosthecochloris_vibrioformis_DSM_265:0.0354359572,Symbiobacterium_thermophilum_IAM_14863:0.0483866577):0.0633701171):0.0357142369):0.2098389977,Thioalkalivibrio_sp._K90mix:0.1511218036):0.0655655457,(Chlorobium_phaeobacteroides_BS1:0.0643404285,(Planctomyces_brasiliensis_DSM_5305:0.0267243217,Roseobacter_sp._CCS2:0.0114693790):0.0421077191):0.1178258235):0.0130407104,((Chlorobium_limicola_DSM_245:0.0092994028,Halorhodospira_halophila_SL1:0.0000026424):0.0233897558,Marivirga_tractuosa_DSM_4126:0.0492148554):0.0349774176):0.0319176840,Roseiflexus_castenholzii_DSM_13941:0.1720142266):0.1079413624):0.1652509823,Halomonas_elongata_DSM_2581:0.4415136728):0.3343907531,((((((Alkalilimnicola_ehrlichii_MLHE-1:0.1610062553,marine_bacterium_HP15:0.1043967906):0.0241796862,Bacillus_halodurans_C-125:0.3420123130):0.0413366130,((Corynebacterium_ammoniagenes_DSM_20306:0.2452036376,Jonesia_denitrificans_DSM_20603:0.1926184373):0.1377681385,Dietzia_cinnamea_P4-A:0.2158255717):0.0620457951):0.0155086395,((Corynebacterium_efficiens_YS-314-A:0.3616804716,((Geodermatophilus_obscurus_DSM_43160:0.3178946019,Salinispora_arenicola_CNS-205:0.3650036345):0.2263010431,Salinispora_tropica_CNB-440:0.6362143979):0.2968366577):0.1129738634,Marinobacter_aquaeolei_VT8:0.2309198970):0.0575298386):0.0884291440,Thioalkalivibrio_sp._HL-EbGR7:0.2144814598):0.3014945832,((Corynebacterium_lipophiloflavum_DSM_44291:0.0350527342,Sanguibacter_keddieii_DSM_10542-A:0.0253891280):0.4902227648,Nocardiopsis_dassonvillei_subsp._dassonvillei_DSM_43111:0.2978259734):0.1151929358):0.3760808431):0.1789787090,((((Anaerolinea_thermophila_UNI-1:0.2193838652,Sanguibacter_keddieii_DSM_10542:0.2777366586):0.1322428014,((Kineococcus_radiotolerans_SRS30216:0.0356097693,Prosthecochloris_aestuarii_DSM_271:0.1749771972):0.0250345194,Mycobacterium_vanbaalenii_PYR-1:0.0622086607):0.0166312285):0.0165521463,Thermomicrobium_roseum_DSM_5159:0.1350687248):0.2116402019,Vibrio_metschnikovii_CIP_69.14:0.4884643927):0.1983179389):0.0498048719,Pelobacter_propionicus_DSM_2379:0.6453708360):0.0743749717,(((Arthrobacter_phenanthrenivorans_Sphe3:0.2021078463,(Bacillus_selenitireducens_MLS10:0.0000028343,Labrenzia_alexandrii_DFL-11:0.0204954149):0.1133897607):0.1928213075,Vibrio_cholerae_623-39:0.3717304587):0.0284328254,(Nakamurella_multipartita_DSM_44233:0.1993246648,Vibrio_cholerae_MZO-2:0.3928598792):0.1872193595):0.0488876940):0.0399838854,Vibrio_cholerae_O395:0.5506742230):0.0456352661,(Bacillus_cellulosilyticus_DSM_2522:0.4091368787,Vibrio_cholerae_RC385:0.6257003431):0.0948740570):0.0279931949,((((Dietzia_cinnamea_P4:0.1400723833,Vibrio_alginolyticus_40B:0.1244938274):0.0384620908,Vibrio_cholerae_V52:0.1463691238):0.0746724930,Oceanobacillus_iheyensis_HTE831:0.1926159684):0.0596855675,Truepera_radiovictrix_DSM_17093:0.1502136358):0.1416983495):0.0119013177,Sorangium_cellulosum_So_ce_56:0.3995890739):0.0345306646,(((((Arthrobacter_aurescens_TC1:0.1364688274,Vibrio_shilonii_AK1:0.0939146965):0.0620953126,Cellulomonas_flavigena_DSM_20109:0.3453681703):0.0752562807,((((((Chlorobaculum_parvum_NCIB_8327:0.0000016244,Vibrio_sp._Ex25:0.0032571827):0.0032505146,((Chloroflexus_aurantiacus_J-10-fl:0.0000016244,Rhodococcus_opacus_B4:0.0032547563):0.0000016242,Vibrio_parahaemolyticus_16:0.0065088644):0.0000016242):0.0000016242,Vibrio_cholerae_O1_biovar_eltor_str._N16961:0.0032446321):0.1525549168,((Corynebacterium_pseudotuberculosis_FRC41:0.0031918252,Corynebacterium_pseudotuberculosis_I19:0.0100640206):0.0317902672,Geobacter_sulfurreducens_PCA:0.0565292989):0.0186611670):0.0146659956,(Stigmatella_aurantiaca_DW4_3-1:0.1817585281,(Vibrio_cholerae_TM_11079-80:0.0187124160,Vibrio_cholerae_TMA_21:0.0153851882):0.0291730852):0.0185841437):0.2672524629,Vibrio_cholerae_1587:0.3829215307):0.0424556975):0.0918778063,(((((Brevibacterium_linens_BL2:0.1561880006,Corynebacterium_diphtheriae_NCTC_13129:0.0714338045):0.0338716034,((Corynebacterium_amycolatum_SK46:0.0106422790,Frankia_sp._EAN1pec:0.0223656204):0.0270294436,Corynebacterium_glucuronolyticum_ATCC_51866:0.0601196035):0.0883968810):0.0307025835,(Corynebacterium_glutamicum_R:0.1295694631,Nocardia_farcinica_IFM_10152:0.0842799278):0.0595196232):0.0320127141,Brevibacterium_mcbrellneri_ATCC_49030:0.1208677370):0.0703942418,Micrococcus_luteus_SK58:0.3659347216):0.0757907783):0.0327521198,(Corynebacterium_glucuronolyticum_ATCC_51867:0.0397993424,Vibrio_harveyi_1DA3:0.0378128448):0.2068030254):0.0381405550):0.0465621759,Rhodococcus_equi_103S:0.2475700501):0.0516126979,Corynebacterium_efficiens_YS-314:0.3577689678);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t training_data/prot_M11342_91_323.phy/output_files/iqtree/inference/pars_6.treefile -m "LG+F+I{0.0585041}+R5{0.229141,0.192968,0.264715,0.550078,0.27939,1.08004,0.123933,2.30249,0.0443165,5.0334}" --length 323
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data5/prot_M11342_91_323.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data5/prot_M11342_91_323.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon Sep 22 19:39:17 2025
+Total CPU time used: 2324.68 seconds (0h:38m:44s)
+Total wall-clock time used: 1367.32 seconds (0h:22m:47s)
+

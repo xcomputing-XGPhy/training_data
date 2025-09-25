@@ -1,0 +1,290 @@
+IQ-TREE 3.0.1 built Sep 14 2025
+
+Input file name: /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data1/prot_M2358_55_714.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 55 sequences with 714 amino-acid sites
+Number of constant sites: 232 (= 32.493% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 232 (= 32.493% of all sites)
+Number of parsimony informative sites: 358
+Number of distinct site patterns: 560
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG+I+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+LG+I+R4          -14493.613   29215.225 -  0.00694   29258.998 +    0.917   29736.306 +    0.991
+LG+R4            -14502.055   29230.109 - 4.06e-06   29273.049 - 0.000815   29746.619 -  0.00571
+LG+I+R5          -14493.489   29218.979 -  0.00106   29264.446 +   0.0602   29749.201 -  0.00157
+Q.YEAST+I+R4     -14500.266   29228.532 - 8.94e-06   29272.305 -  0.00118   29749.613 -  0.00128
+LG+I+R3          -14508.150   29240.300 - 2.49e-08   29282.417 - 7.54e-06   29752.239 - 0.000344
+LG+R5            -14498.453   29226.906 - 2.02e-05   29271.522 -  0.00175   29752.558 - 0.000293
+LG+R3            -14519.833   29261.665 - 5.71e-13   29302.968 -  2.6e-10   29769.033 - 7.75e-08
+Q.INSECT+I+R4    -14527.034   29282.068 - 2.12e-17   29325.841 -  2.8e-15   29803.149 - 3.03e-15
+LG+G4            -14547.913   29311.827 - 7.32e-24   29350.743 -  1.1e-20   29805.482 - 9.43e-16
+Q.PFAM+I+R4      -14528.961   29285.922 - 3.09e-18   29329.695 - 4.08e-16   29807.003 - 4.41e-16
+LG+I+G4          -14545.531   29309.063 - 2.91e-23   29348.765 - 2.95e-20   29807.289 - 3.82e-16
+LG+F+I+R4        -14469.649   29205.299 +    0.992   29266.754 -    0.019   29813.226 - 1.96e-17
+Q.YEAST+F+I+R4   -14486.834   29239.668 - 3.41e-08   29301.123 - 6.53e-10   29847.596 - 6.76e-25
+LG+I+R2          -14575.076   29370.153 - 1.58e-36   29410.650 - 1.08e-33   29872.950 - 2.11e-30
+RTREV+F+I+R4     -14504.853   29275.705 - 5.11e-16   29337.160 - 9.77e-18   29883.632 - 1.01e-32
+Q.PFAM+F+I+R4    -14509.023   29284.045 - 7.89e-18   29345.500 - 1.51e-19   29891.973 - 1.56e-34
+Q.INSECT+F+I+R4  -14541.881   29349.761 - 4.24e-32   29411.217 -  8.1e-34   29957.689 - 8.38e-49
+RTREV+I+R4       -14614.943   29457.886 - 1.41e-55   29501.659 - 1.86e-53   29978.967 - 2.01e-53
+LG+R2            -14632.558   29483.116 - 4.67e-61   29522.818 - 4.73e-58   29981.342 - 6.12e-54
+WAG+I+R4         -14628.754   29485.508 - 1.41e-61   29529.281 - 1.87e-59   30006.588 - 2.02e-59
+WAG+F+I+R4       -14626.208   29518.416 - 1.01e-68   29579.871 - 1.93e-70   30126.343 -    2e-85
+VT+I+R4          -14711.511   29651.022 - 1.62e-97   29694.795 - 2.14e-95   30172.103 - 2.31e-95
+MTZOA+F+I+R4     -14679.563   29625.126 -  6.8e-92   29686.581 -  1.3e-93   30233.053 - 1.34e-108
+JTTDCMUT+I+R4    -14765.443   29758.886 - 6.12e-121   29802.659 - 8.09e-119   30279.967 - 8.74e-119
+BLOSUM62+I+R4    -14766.029   29760.059 - 3.4e-121   29803.832 - 4.5e-119   30281.140 - 4.86e-119
+DAYHOFF+I+R4     -14768.646   29765.293 - 2.49e-122   29809.066 - 3.29e-120   30286.374 - 3.55e-120
+DCMUT+I+R4       -14770.844   29769.687 - 2.76e-123   29813.460 - 3.65e-121   30290.768 - 3.95e-121
+VT+F+I+R4        -14708.654   29683.308 - 1.58e-104   29744.764 - 3.02e-106   30291.236 - 3.12e-121
+Q.PLANT+I+R4     -14771.853   29771.707 - 1.01e-123   29815.480 - 1.33e-121   30292.787 - 1.44e-121
+JTT+I+R4         -14772.924   29773.847 - 3.45e-124   29817.620 - 4.56e-122   30294.928 - 4.93e-122
+PMB+I+R4         -14789.464   29806.929 - 2.26e-131   29850.702 - 2.99e-129   30328.009 - 3.23e-129
+CPREV+I+R4       -14796.436   29820.872 - 2.12e-134   29864.645 - 2.8e-132   30341.953 - 3.03e-132
+DAYHOFF+F+I+R4   -14742.219   29750.439 - 4.18e-119   29811.894 - 7.99e-121   30358.366 - 8.27e-136
+DCMUT+F+I+R4     -14744.338   29754.676 - 5.02e-120   29816.131 - 9.61e-122   30362.603 - 9.94e-137
+CPREV+F+I+R4     -14745.814   29757.628 - 1.15e-120   29819.083 - 2.2e-122   30365.556 - 2.27e-137
+BLOSUM62+F+I+R4  -14750.176   29766.353 - 1.46e-122   29827.808 - 2.8e-124   30374.280 - 2.89e-139
+MTINV+F+I+R4     -14753.214   29772.428 - 7.02e-124   29833.883 - 1.34e-125   30380.355 - 1.39e-140
+PMB+F+I+R4       -14770.713   29807.427 - 1.76e-131   29868.882 - 3.37e-133   30415.354 - 3.49e-148
+JTTDCMUT+F+I+R4  -14772.591   29811.181 - 2.7e-132   29872.637 - 5.16e-134   30419.109 - 5.34e-149
+JTT+F+I+R4       -14781.180   29828.360 - 5.02e-136   29889.816 - 9.6e-138   30436.288 - 9.93e-153
+Q.PLANT+F+I+R4   -14788.859   29843.717 - 2.32e-139   29905.172 - 4.44e-141   30451.645 - 4.59e-156
+MTART+F+I+R4     -14817.026   29900.051 - 1.36e-151   29961.507 - 2.6e-153   30507.979 - 2.69e-168
+MTZOA+I+R4       -14982.830   30193.661 - 2.38e-215   30237.434 - 3.15e-213   30714.741 - 3.4e-213
+MTREV+F+I+R4     -14931.866   30129.731 - 1.81e-201   30191.186 - 3.47e-203   30737.658 - 3.59e-218
+MTMET+F+I+R4     -14939.724   30145.447 - 7.01e-205   30206.902 - 1.34e-206   30753.375 - 1.39e-221
+Q.MAMMAL+I+R4    -15071.048   30370.095 - 1.16e-253   30413.868 - 1.53e-251   30891.176 - 1.66e-251
+LG+I             -15092.312   30400.625 - 2.72e-260   30439.540 - 4.08e-257   30894.280 - 3.51e-252
+FLU+I+R4         -15147.365   30522.729 - 8.32e-287   30566.502 - 1.1e-284   31043.810 - 1.19e-284
+Q.MAMMAL+F+I+R4  -15110.765   30487.530 - 3.66e-279   30548.985 -   7e-281   31095.457 - 7.25e-296
+FLU+F+I+R4       -15144.229   30554.457 - 1.07e-293   30615.913 - 2.05e-295   31162.385 - 2.12e-310
+MTART+I+R4       -15234.251   30696.502 -        0   30740.275 - 2.03e-322   31217.583 - 2.22e-322
+Q.BIRD+I+R4      -15236.324   30700.647 -        0   30744.420 - 2.96e-323   31221.728 - 2.96e-323
+MTVER+F+I+R4     -15215.560   30697.120 -        0   30758.575 -        0   31305.047 -        0
+MTINV+I+R4       -15286.622   30801.244 -        0   30845.017 -        0   31322.324 -        0
+MTMET+I+R4       -15334.574   30897.148 -        0   30940.921 -        0   31418.229 -        0
+Q.BIRD+F+I+R4    -15289.450   30844.900 -        0   30906.355 -        0   31452.827 -        0
+MTREV+I+R4       -15401.027   31030.053 -        0   31073.826 -        0   31551.134 -        0
+HIVB+F+I+R4      -15362.058   30990.116 -        0   31051.571 -        0   31598.043 -        0
+HIVB+I+R4        -15434.745   31097.490 -        0   31141.263 -        0   31618.571 -        0
+LG               -15467.374   31148.748 -        0   31186.886 -        0   31637.832 -        0
+MTMAM+F+I+R4     -15395.155   31056.311 -        0   31117.766 -        0   31664.238 -        0
+MTVER+I+R4       -15612.665   31453.329 -        0   31497.102 -        0   31974.410 -        0
+FLAVI+I+R4       -15709.519   31647.037 -        0   31690.810 -        0   32168.118 -        0
+FLAVI+F+I+R4     -15689.609   31645.218 -        0   31706.673 -        0   32253.146 -        0
+MTMAM+I+R4       -15841.360   31910.720 -        0   31954.493 -        0   32431.800 -        0
+HIVW+F+I+R4      -15932.853   32131.706 -        0   32193.161 -        0   32739.633 -        0
+HIVW+I+R4        -16069.780   32367.560 -        0   32411.332 -        0   32888.640 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+I+R4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Invar+FreeRate with 4 categories
+Proportion of invariable sites: 0.1475
+Site proportion and rates:  (0.4900,0.3037) (0.2331,1.2797) (0.1030,3.3368) (0.0264,7.9187)
+
+ Category  Relative_rate  Proportion
+  0         0              0.1475
+  1         0.3037         0.4900
+  2         1.2797         0.2331
+  3         3.3368         0.1030
+  4         7.9187         0.0264
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -14493.4479 (s.e. 534.2526)
+Unconstrained log-likelihood (without tree): -4344.5840
+Number of free parameters (#branches + #model parameters): 114
+Akaike information criterion (AIC) score: 29214.8959
+Corrected Akaike information criterion (AICc) score: 29258.6688
+Bayesian information criterion (BIC) score: 29735.9765
+
+Total tree length (sum of branch lengths): 5.8823
+Sum of internal branch lengths: 2.3537 (40.0132% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0014) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Absidia' is drawn at root
+
++--Absidia
+|
+|                              +--Achlya
+|                           +**|
+|                           |  +--Pythium
+|                        +--|
+|                        |  +--Phytophthora
+|                    +---|
+|                    |   +--Costaria
+|                 +--|
+|                 |  |              +--Arabidopsis
+|                 |  |           +--|
+|                 |  |           |  +--Glycine
+|                 |  |        +--|
+|                 |  |        |  +--Zea
+|                 |  |     +--|
+|                 |  |     |  +--Mesostigma
+|                 |  |  +--|
+|                 |  |  |  +---Chlorella
+|                 |  +--|
+|                 |     +--Coleochaete
+|              +--|
+|              |  +--Cyanophora
+|           +--|
+|           |  |                               +------Aeropyrum
+|           |  |                        +------|
+|           |  |                        |      |  +-----Desulfurococcus
+|           |  |                        |      +--|
+|           |  |                        |         +--------Sulfolobus
+|           |  |     +------------------|
+|           |  |     |                  |       +-------------------Halobacterium
+|           |  |     |                  |    +--|
+|           |  |     |                  |    |  +-----------Thermoplasma
+|           |  |     |                  +----|
+|           |  |     |                       |       +--Pyrococcus
+|           |  |     |                       +-------|
+|           |  |     |                               +--Thermococcus
+|           |  |  +--|
+|           |  |  |  +-----Entamoeba
+|           |  +--|
+|           |     |  +--Dictyostelium
+|           |     +--|
+|           |        +--Physarum
+|        +--|
+|        |  |     +--Caenorhabditis
+|        |  |  +--|
+|        |  |  |  |     +--Calanus
+|        |  |  |  |  +--|
+|        |  |  |  |  |  +--Drosophila
+|        |  |  |  +--|
+|        |  |  |     |  +--Gallus
+|        |  |  |     +--|
+|        |  |  |        +--Homo
+|        |  +--|
+|        |     +---Hydra
+|     +--|
+|     |  |                    +--Ashbya
+|     |  |                 +--|
+|     |  |                 |  +--Saccharomyces
+|     |  |              +--|
+|     |  |              |  +--Candida
+|     |  |           +--|
+|     |  |           |  +--Yarrowia
+|     |  |        +--|
+|     |  |        |  |     +--Aspergillus
+|     |  |        |  |  +--|
+|     |  |        |  |  |  +--Histoplasma_capsulatum
+|     |  |        |  +--|
+|     |  |        |     |  +--Neurospora
+|     |  |        |     +--|
+|     |  |        |        +--Trichoderma
+|     |  |     +--|
+|     |  |     |  +--Schizosaccharomyces
+|     |  |  +--|
+|     |  |  |  |           +--Coprinus
+|     |  |  |  |        +--|
+|     |  |  |  |        |  |  +--Schizophyllum
+|     |  |  |  |        |  +--|
+|     |  |  |  |        |     +--Suillus
+|     |  |  |  |     +--|
+|     |  |  |  |     |  +--Phaffia
+|     |  |  |  |  +--|
+|     |  |  |  |  |  +--Cryptococcus
+|     |  |  |  +--|
+|     |  |  |     |  +--Puccinia
+|     |  |  |     +--|
+|     |  |  |        +--Rhodotorula
+|     |  +--|
+|     |     |     +--Echinosporangium
+|     |     |  +--|
+|     |     |  |  |  +--Mortierella_chlamydospora
+|     |     |  |  +--|
+|     |     |  |     |  +--Mortierella_multidivaricata
+|     |     |  |     +--|
+|     |     |  |        +--Mortierella_polycephala
+|     |     +--|
+|     |        +--Mortierella_wolfii
+|  +--|
+|  |  |  +--Micromucor
+|  |  +--|
+|  |     +--Umbelopsis
++--|
+|  |  +--Cunninghamella
+|  +--|
+|     |  +--Mucor
+|     +--|
+|        +--Rhizomucor
+|
++--Rhizopus
+
+Tree in newick format:
+
+(Absidia:0.0162553571,((((((((((Achlya:0.0158021807,Pythium:0.0054999615):0.0000016713,Phytophthora:0.0094141232):0.0513622908,Costaria:0.0395151392):0.1189108998,(((((Arabidopsis:0.0308317403,Glycine:0.0653228665):0.0039586066,Zea:0.0544317786):0.0504731918,Mesostigma:0.0499451484):0.0256718215,Chlorella:0.1036602582):0.0130027178,Coleochaete:0.0386715128):0.0258698484):0.0259905717,Cyanophora:0.0817214684):0.0282902174,((((Aeropyrum:0.1780922807,(Desulfurococcus:0.1472577924,Sulfolobus:0.2214241656):0.0662898083):0.1860274575,((Halobacterium:0.4981707562,Thermoplasma:0.2903744343):0.0956010632,(Pyrococcus:0.0518969151,Thermococcus:0.0551955440):0.2093922790):0.1349506937):0.4721790083,Entamoeba:0.1523519301):0.0677278700,(Dictyostelium:0.0824911796,Physarum:0.0423506625):0.0557940201):0.0234583066):0.0279899986,((Caenorhabditis:0.0864430614,((Calanus:0.0640474424,Drosophila:0.0470273688):0.0435558967,(Gallus:0.0027869467,Homo:0.0015597696):0.0427612861):0.0166959873):0.0076163815,Hydra:0.1191998864):0.0224522815):0.0720998270,(((((((Ashbya:0.0168667353,Saccharomyces:0.0238912243):0.0260320977,Candida:0.0426804842):0.0324133147,Yarrowia:0.0780887935):0.0167676650,((Aspergillus:0.0315029494,Histoplasma_capsulatum:0.0493545914):0.0270450311,(Neurospora:0.0152325658,Trichoderma:0.0552487552):0.0217042622):0.0343695662):0.0208273913,Schizosaccharomyces:0.0800172852):0.0172502155,((((Coprinus:0.0341342673,(Schizophyllum:0.0027663470,Suillus:0.0631934245):0.0111420514):0.0314934060,Phaffia:0.0283896541):0.0167693893,Cryptococcus:0.0814119720):0.0102240377,(Puccinia:0.0381585514,Rhodotorula:0.0674247134):0.0236775963):0.0184991887):0.0082410652,((Echinosporangium:0.0265407201,(Mortierella_chlamydospora:0.0071355387,(Mortierella_multidivaricata:0.0104385605,Mortierella_polycephala:0.0230280644):0.0045276875):0.0076270432):0.0137437181,Mortierella_wolfii:0.0575118773):0.0313682183):0.0131994993):0.0246506458,(Micromucor:0.0046809963,Umbelopsis:0.0066744191):0.0253713674):0.0031434312,(Cunninghamella:0.0318037097,(Mucor:0.0315199231,Rhizomucor:0.0384945290):0.0075157345):0.0033786648):0.0146011129,Rhizopus:0.0306891624);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t training_data/prot_M2358_55_714.phy/output_files/iqtree/inference/pars_0.treefile -m "LG+I{0.147537}+R4{0.489985,0.303657,0.23307,1.27966,0.102965,3.3368,0.0264425,7.91866}" --length 714
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data1/prot_M2358_55_714.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data1/prot_M2358_55_714.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Sep 19 05:33:55 2025
+Total CPU time used: 308.897 seconds (0h:5m:8s)
+Total wall-clock time used: 309.185 seconds (0h:5m:9s)
+
