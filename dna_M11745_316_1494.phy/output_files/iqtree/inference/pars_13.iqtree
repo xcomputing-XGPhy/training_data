@@ -1,0 +1,864 @@
+IQ-TREE 3.0.1 built Sep 18 2025
+
+Input file name: Data/dna_M11745_316_1494.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 13
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 316 sequences with 1494 nucleotide sites
+Number of constant sites: 825 (= 55.2209% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 825 (= 55.2209% of all sites)
+Number of parsimony informative sites: 465
+Number of distinct site patterns: 1030
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM3+F+I+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TIM3+F+I+R4      -18926.934   39137.868 -   0.0448   40108.034 +    0.656   42546.382 +    0.713
+TIM3+F+R4        -18931.890   39145.780 - 0.000856   40111.794 +      0.1   42548.985 +    0.194
+GTR+F+I+R4       -18921.893   39131.785 +    0.937   40110.301 +    0.211   42550.918 +   0.0738
+GTR+F+R4         -18926.861   39139.722 -   0.0177   40114.056 -   0.0323   42553.546 -   0.0198
+TIM3+I+R4        -18951.316   39180.632 - 2.32e-11   40138.384 - 1.69e-07   42573.219 - 1.06e-06
+TIM3e+I+R4       -18951.335   39180.670 - 2.27e-11   40138.421 - 1.65e-07   42573.256 - 1.04e-06
+TIM3e+I+R4       -18951.335   39180.670 - 2.27e-11   40138.421 - 1.65e-07   42573.256 - 1.04e-06
+GTR+I+R4         -18944.486   39170.971 -  2.9e-09   40136.985 - 3.39e-07   42574.176 - 6.57e-07
+SYM+I+R4         -18944.488   39170.976 - 2.89e-09   40136.990 - 3.38e-07   42574.181 - 6.55e-07
+SYM+I+R4         -18944.488   39170.976 - 2.89e-09   40136.990 - 3.38e-07   42574.181 - 6.55e-07
+TIM2+F+R4        -18946.626   39175.252 - 3.41e-10   40141.267 - 3.99e-08   42578.458 - 7.72e-08
+TIM2+F+I+R4      -18943.132   39170.264 - 4.13e-09   40140.430 - 6.06e-08   42578.778 - 6.58e-08
+TN+F+R4          -18950.629   39181.259 - 1.69e-11   40143.134 - 1.57e-08   42579.154 - 5.45e-08
+TN+F+I+R4        -18947.052   39176.105 - 2.23e-10   40142.119 -  2.6e-08   42579.310 - 5.04e-08
+TIM3+R4          -18959.208   39194.417 - 2.35e-14   40148.059 - 1.34e-09   42581.694 - 1.53e-08
+TIM3e+R4         -18959.254   39194.508 - 2.25e-14   40148.151 - 1.28e-09   42581.786 - 1.46e-08
+TIM3e+R4         -18959.254   39194.508 - 2.25e-14   40148.151 - 1.28e-09   42581.786 - 1.46e-08
+GTR+R4           -18952.411   39184.822 - 2.85e-12   40146.697 - 2.64e-09   42582.718 - 9.18e-09
+SYM+R4           -18952.413   39184.826 - 2.84e-12   40146.702 - 2.63e-09   42582.722 - 9.15e-09
+SYM+R4           -18952.413   39184.826 - 2.84e-12   40146.702 - 2.63e-09   42582.722 - 9.15e-09
+TPM3u+I+R4       -18959.743   39195.486 - 1.38e-14   40149.128 - 7.83e-10   42582.763 - 8.97e-09
+TPM3+I+R4        -18959.769   39195.539 - 1.34e-14   40149.181 - 7.62e-10   42582.816 - 8.73e-09
+TPM3+I+R4        -18959.769   39195.539 - 1.34e-14   40149.181 - 7.62e-10   42582.816 - 8.73e-09
+TVM+I+R4         -18953.152   39186.304 - 1.36e-12   40148.180 - 1.26e-09   42584.200 - 4.37e-09
+TVMe+I+R4        -18953.198   39186.395 -  1.3e-12   40148.271 -  1.2e-09   42584.291 - 4.18e-09
+TVMe+I+R4        -18953.198   39186.395 -  1.3e-12   40148.271 -  1.2e-09   42584.291 - 4.18e-09
+TIM+F+R4         -18950.531   39183.061 - 6.87e-12   40149.075 - 8.04e-10   42586.266 - 1.56e-09
+TIM+F+I+R4       -18946.956   39177.911 - 9.03e-11   40148.078 - 1.32e-09   42586.425 - 1.44e-09
+TPM3u+R4         -18966.916   39207.833 - 2.87e-17   40157.379 - 1.26e-11   42589.801 - 2.66e-10
+TPM3+R4          -18966.935   39207.871 - 2.82e-17   40157.417 - 1.24e-11   42589.839 - 2.61e-10
+TPM3+R4          -18966.935   39207.871 - 2.82e-17   40157.417 - 1.24e-11   42589.839 - 2.61e-10
+TVM+R4           -18960.534   39199.068 -  2.3e-15   40156.820 - 1.67e-11   42591.655 - 1.05e-10
+TVMe+R4          -18960.603   39199.206 - 2.14e-15   40156.958 - 1.56e-11   42591.793 - 9.82e-11
+TVMe+R4          -18960.603   39199.206 - 2.14e-15   40156.958 - 1.56e-11   42591.793 - 9.82e-11
+TPM3u+F+I+R4     -18977.516   39237.032 - 1.31e-23   40203.046 - 1.53e-21   42640.237 - 2.97e-21
+TPM3u+F+R4       -18981.931   39243.862 - 4.31e-25   40205.738 - 3.99e-22   42641.758 - 1.39e-21
+TVM+F+I+R4       -18973.022   39232.043 - 1.59e-22   40206.377 -  2.9e-22   42645.867 - 1.78e-22
+TVM+F+R4         -18977.345   39238.689 - 5.72e-24   40208.856 - 8.39e-23   42647.203 - 9.11e-23
+TIM2+I+R4        -18992.826   39263.653 - 2.17e-29   40221.404 - 1.58e-25   42656.239 - 9.94e-25
+TIM2e+I+R4       -18992.894   39263.789 - 2.03e-29   40221.540 - 1.48e-25   42656.375 - 9.29e-25
+TIM2e+I+R4       -18992.894   39263.789 - 2.03e-29   40221.540 - 1.48e-25   42656.375 - 9.29e-25
+TN+I+R4          -18998.249   39272.498 - 2.61e-31   40226.140 - 1.48e-26   42659.776 -  1.7e-25
+TNe+I+R4         -18998.286   39272.572 - 2.51e-31   40226.214 - 1.43e-26   42659.849 - 1.64e-25
+TNe+I+R4         -18998.286   39272.572 - 2.51e-31   40226.214 - 1.43e-26   42659.849 - 1.64e-25
+TIM2+R4          -18998.583   39273.167 - 1.87e-31   40226.809 - 1.06e-26   42660.444 - 1.21e-25
+TIM2e+R4         -18998.617   39273.234 -  1.8e-31   40226.876 - 1.03e-26   42660.512 - 1.17e-25
+TIM2e+R4         -18998.617   39273.234 -  1.8e-31   40226.876 - 1.03e-26   42660.512 - 1.17e-25
+TPM2u+I+R4       -18999.100   39274.201 - 1.11e-31   40227.843 - 6.33e-27   42661.478 - 7.24e-26
+TPM2+I+R4        -18999.145   39274.289 - 1.06e-31   40227.931 - 6.05e-27   42661.567 - 6.93e-26
+TPM2+I+R4        -18999.145   39274.289 - 1.06e-31   40227.931 - 6.05e-27   42661.567 - 6.93e-26
+TN+R4            -19003.992   39281.984 - 2.27e-33   40231.531 -    1e-27   42663.953 -  2.1e-26
+TNe+R4           -19004.014   39282.028 - 2.22e-33   40231.575 - 9.79e-28   42663.996 - 2.06e-26
+TNe+R4           -19004.014   39282.028 - 2.22e-33   40231.575 - 9.79e-28   42663.996 - 2.06e-26
+TPM2u+R4         -19004.193   39282.386 - 1.86e-33   40231.932 - 8.19e-28   42664.354 - 1.72e-26
+TPM2+R4          -19004.214   39282.429 - 1.82e-33   40231.975 - 8.01e-28   42664.397 - 1.68e-26
+TPM2+R4          -19004.214   39282.429 - 1.82e-33   40231.975 - 8.01e-28   42664.397 - 1.68e-26
+HKY+I+R4         -19004.629   39283.257 -  1.2e-33   40232.804 - 5.29e-28   42665.225 - 1.11e-26
+K2P+I+R4         -19004.672   39283.345 - 1.15e-33   40232.891 - 5.07e-28   42665.313 - 1.06e-26
+K2P+I+R4         -19004.672   39283.345 - 1.15e-33   40232.891 - 5.07e-28   42665.313 - 1.06e-26
+TIM+I+R4         -18998.144   39274.289 - 1.07e-31   40232.040 - 7.75e-28   42666.875 - 4.88e-27
+TIMe+I+R4        -18998.178   39274.357 - 1.03e-31   40232.108 - 7.49e-28   42666.943 - 4.71e-27
+TIMe+I+R4        -18998.178   39274.357 - 1.03e-31   40232.108 - 7.49e-28   42666.943 - 4.71e-27
+HKY+R4           -19009.355   39290.711 - 2.89e-35   40236.176 - 9.81e-29   42667.370 - 3.81e-27
+K2P+R4           -19009.387   39290.775 -  2.8e-35   40236.240 -  9.5e-29   42667.434 - 3.69e-27
+K2P+R4           -19009.387   39290.775 -  2.8e-35   40236.240 -  9.5e-29   42667.434 - 3.69e-27
+TIM+R4           -19003.905   39283.810 - 9.12e-34   40237.453 - 5.18e-29   42671.088 - 5.93e-28
+TIMe+R4          -19003.916   39283.832 - 9.02e-34   40237.475 - 5.12e-29   42671.110 - 5.87e-28
+TIMe+R4          -19003.916   39283.832 - 9.02e-34   40237.475 - 5.12e-29   42671.110 - 5.87e-28
+K3Pu+I+R4        -19004.211   39284.422 - 6.71e-34   40238.064 - 3.82e-29   42671.699 - 4.37e-28
+K3P+I+R4         -19004.238   39284.475 - 6.54e-34   40238.117 - 3.71e-29   42671.753 - 4.26e-28
+K3P+I+R4         -19004.238   39284.475 - 6.54e-34   40238.117 - 3.71e-29   42671.753 - 4.26e-28
+HKY+F+R4         -19000.745   39279.490 - 7.91e-33   40237.242 - 5.76e-29   42672.077 - 3.62e-28
+HKY+F+I+R4       -18997.466   39274.931 - 7.72e-32   40236.807 - 7.15e-29   42672.827 - 2.49e-28
+TPM2u+F+R4       -18997.658   39275.316 - 6.37e-32   40237.192 -  5.9e-29   42673.212 - 2.05e-28
+TPM2u+F+I+R4     -18994.073   39270.146 - 8.45e-31   40236.160 - 9.89e-29   42673.351 - 1.91e-28
+K3Pu+R4          -19009.170   39292.340 - 1.28e-35   40241.886 - 5.64e-30   42674.308 - 1.19e-28
+K3P+R4           -19009.184   39292.367 - 1.26e-35   40241.914 - 5.57e-30   42674.336 - 1.17e-28
+K3P+R4           -19009.184   39292.367 - 1.26e-35   40241.914 - 5.57e-30   42674.336 - 1.17e-28
+K3Pu+F+R4        -19000.724   39281.448 - 2.97e-33   40243.324 - 2.75e-30   42679.344 - 9.56e-30
+K3Pu+F+I+R4      -18997.395   39276.791 - 3.05e-32   40242.805 - 3.57e-30   42679.996 -  6.9e-30
+F81+I+R4         -20158.044   41588.088 -        0   42533.553 -        0   44964.747 -        0
+JC+I+R4          -20158.511   41589.023 -        0   42534.488 -        0   44965.682 -        0
+JC+I+R4          -20158.511   41589.023 -        0   42534.488 -        0   44965.682 -        0
+F81+R4           -20162.229   41594.458 -        0   42535.857 -        0   44965.808 -        0
+JC+R4            -20162.406   41594.813 -        0   42536.211 -        0   44966.163 -        0
+JC+R4            -20162.406   41594.813 -        0   42536.211 -        0   44966.163 -        0
+JC+R5            -20160.325   41594.649 -        0   42544.196 -        0   44976.617 -        0
+JC+I+R5          -20158.072   41592.145 -        0   42545.787 -        0   44979.422 -        0
+JC+I+R3          -20179.724   41627.449 -        0   42564.794 -        0   44993.489 -        0
+JC+R3            -20195.259   41656.518 -        0   42589.825 -        0   45017.249 -        0
+JC+I+G4          -20235.591   41733.183 -        0   42658.454 -        0   45083.296 -        0
+F81+F+I+R4       -20207.371   41692.741 -        0   42650.493 -        0   45085.328 -        0
+F81+F+R4         -20211.128   41698.256 -        0   42651.898 -        0   45085.534 -        0
+JC+G4            -20281.418   41822.836 -        0   42744.110 -        0   45167.640 -        0
+JC+I+R2          -20276.273   41816.547 -        0   42745.829 -        0   45171.969 -        0
+JC+R2            -20388.484   42038.969 -        0   42964.240 -        0   45389.082 -        0
+JC+I             -21229.220   43718.440 -        0   44639.715 -        0   47063.244 -        0
+JC               -22625.528   46509.057 -        0   47426.348 -        0   49848.551 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM3+F+I+R4
+
+Rate parameter R:
+
+  A-C: 0.5738
+  A-G: 3.7342
+  A-T: 1.0000
+  C-G: 0.5738
+  C-T: 7.1873
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2888
+  pi(C) = 0.184
+  pi(G) = 0.2782
+  pi(T) = 0.249
+
+Rate matrix Q:
+
+  A   -0.8392   0.06356    0.6257    0.1499
+  C   0.09979    -1.274   0.09614     1.078
+  G    0.6494   0.06356   -0.8629    0.1499
+  T    0.1739    0.7961    0.1675    -1.138
+
+Model of rate heterogeneity: Invar+FreeRate with 4 categories
+Proportion of invariable sites: 0.2799
+Site proportion and rates:  (0.4588,0.2461) (0.1399,1.628) (0.0845,4.267) (0.03686,8.104)
+
+ Category  Relative_rate  Proportion
+  0         0              0.2799
+  1         0.2461         0.4588
+  2         1.628          0.1399
+  3         4.267          0.0845
+  4         8.104          0.03686
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -18926.8082 (s.e. 744.8492)
+Unconstrained log-likelihood (without tree): -9810.6312
+Number of free parameters (#branches + #model parameters): 642
+Akaike information criterion (AIC) score: 39137.6163
+Corrected Akaike information criterion (AICc) score: 40107.7832
+Bayesian information criterion (BIC) score: 42546.1307
+
+Total tree length (sum of branch lengths): 4.0395
+Sum of internal branch lengths: 1.8223 (45.1129% of tree length)
+
+WARNING: 102 near-zero internal branches (<0.0007) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Anomoporia_bombycina_GU187564' is drawn at root
+
++---Anomoporia_bombycina_GU187564
+|
+|  +--Anomoporia_kamtschatica_DQ144615
++--|
+|  +--------Podoserpula_pusio_EF535271
+|
+|                                            +--Camarophyllopsis_aff._foetens_ECV4175_HQ877678
+|                                         +--|
+|                                         |  +--Camarophyllopsis_atropuncta_EF535270
+|                                      +--|
+|                                      |  |   +**Camarophyllopsis_hymenocephala_DQ457679
+|                                      |  +---|
+|                                      |      +**Camarophyllopsis_hymenocephala_EF561628
+|                                   +--|
+|                                   |  +-------Clavaria_pullei_AY586646
+|                                +--|
+|                                |  |                      +**uncultured_Basidiomycota_DQ341973
+|                                |  |                   +--|
+|                                |  |                   |  |  +--uncultured_Basidiomycota_DQ341974
+|                                |  |                   |  +**|
+|                                |  |                   |     +--uncultured_Basidiomycota_DQ341998
+|                                |  |                +--|
+|                                |  |                |  |     +--uncultured_fungus_GU174319
+|                                |  |                |  |  +**|
+|                                |  |                |  |  |  +**uncultured_soil_fungus_GU375891
+|                                |  |                |  +**|
+|                                |  |                |     +**uncultured_soil_fungus_GU376129
+|                                |  |     +----------|
+|                                |  |     |          +--uncultured_Basidiomycota_GU328580
+|                                |  |  +--|
+|                                |  |  |  +--uncultured_Basidiomycota_FJ567454
+|                                |  +--|
+|                                |     |  +--uncultured_Basidiomycota_GU328506
+|                                |     +--|
+|                                |        +-------uncultured_fungus_EU522881
+|                             +--|
+|                             |  |                       +**Clavaria_acuta_AY228353
+|                             |  |                    +--|
+|                             |  |                    |  +--uncultured_Basidiomycota_FJ565706
+|                             |  |                 +--|
+|                             |  |                 |  |  +**Clavaria_straminea_EF535267
+|                             |  |                 |  +**|
+|                             |  |                 |     |  +**uncultured_Basidiomycota_FJ566676
+|                             |  |                 |     +**|
+|                             |  |                 |        |  +**uncultured_Basidiomycota_FJ5679531
+|                             |  |                 |        +**|
+|                             |  |                 |           +--uncultured_soil_fungus_EU692436
+|                             |  |              +--|
+|                             |  |              |  +--uncultured_Basidiomycota_GU328564
+|                             |  |           +--|
+|                             |  |           |  |  +--Clavaria_argillacea_AY463395
+|                             |  |           |  +--|
+|                             |  |           |     |     +--Clavaria_argillacea_HQ877683
+|                             |  |           |     |  +--|
+|                             |  |           |     |  |  |     +--uncultured_fungus_EF433981
+|                             |  |           |     |  |  |  +--|
+|                             |  |           |     |  |  |  |  +**uncultured_fungus_EU292666
+|                             |  |           |     |  |  +--|
+|                             |  |           |     |  |     |  +--uncultured_fungus_EF434098
+|                             |  |           |     |  |     +**|
+|                             |  |           |     |  |        +--uncultured_fungus_EU292494
+|                             |  |           |     +--|
+|                             |  |           |        +--uncultured_Agaricales_FM997944
+|                             |  |        +--|
+|                             |  |        |  |     +---uncultured_Basidiomycota_DQ341678
+|                             |  |        |  |  +--|
+|                             |  |        |  |  |  |                          +--uncultured_Basidiomycota_DQ341705
+|                             |  |        |  |  |  |                       +--|
+|                             |  |        |  |  |  |                       |  +**uncultured_Basidiomycota_DQ341744
+|                             |  |        |  |  |  |                    +--|
+|                             |  |        |  |  |  |                    |  +--uncultured_Basidiomycota_DQ341967
+|                             |  |        |  |  |  |                 +--|
+|                             |  |        |  |  |  |                 |  |  +**uncultured_Basidiomycota_DQ341747
+|                             |  |        |  |  |  |                 |  +**|
+|                             |  |        |  |  |  |                 |     +**uncultured_Basidiomycota_DQ341968
+|                             |  |        |  |  |  |              +--|
+|                             |  |        |  |  |  |              |  |                 +--uncultured_Basidiomycota_DQ341739
+|                             |  |        |  |  |  |              |  |              +--|
+|                             |  |        |  |  |  |              |  |              |  +**uncultured_Basidiomycota_FJ566405
+|                             |  |        |  |  |  |              |  |           +**|
+|                             |  |        |  |  |  |              |  |           |  |        +**uncultured_Basidiomycota_DQ341743
+|                             |  |        |  |  |  |              |  |           |  |     +--|
+|                             |  |        |  |  |  |              |  |           |  |     |  +--uncultured_Basidiomycota_FJ566486
+|                             |  |        |  |  |  |              |  |           |  |  +**|
+|                             |  |        |  |  |  |              |  |           |  |  |  +--uncultured_Basidiomycota_DQ341756
+|                             |  |        |  |  |  |              |  |           |  +**|
+|                             |  |        |  |  |  |              |  |           |     +--uncultured_Basidiomycota_DQ341780
+|                             |  |        |  |  |  |              |  |        +--|
+|                             |  |        |  |  |  |              |  |        |  +**uncultured_Basidiomycota_FJ565719
+|                             |  |        |  |  |  |              |  |     +**|
+|                             |  |        |  |  |  |              |  |     |  +--uncultured_Basidiomycota_DQ342007
+|                             |  |        |  |  |  |              |  |  +--|
+|                             |  |        |  |  |  |              |  |  |  +--uncultured_Basidiomycota_DQ342008
+|                             |  |        |  |  |  |              |  +--|
+|                             |  |        |  |  |  |              |     +--uncultured_Basidiomycota_DQ341783
+|                             |  |        |  |  |  |           +**|
+|                             |  |        |  |  |  |           |  |        +--uncultured_Basidiomycota_FJ565800
+|                             |  |        |  |  |  |           |  |     +--|
+|                             |  |        |  |  |  |           |  |     |  |     +**uncultured_Basidiomycota_FJ566718
+|                             |  |        |  |  |  |           |  |     |  |  +**|
+|                             |  |        |  |  |  |           |  |     |  |  |  +**uncultured_Basidiomycota_FJ566779
+|                             |  |        |  |  |  |           |  |     |  +--|
+|                             |  |        |  |  |  |           |  |     |     +--uncultured_Basidiomycota_FJ566838
+|                             |  |        |  |  |  |           |  |  +**|
+|                             |  |        |  |  |  |           |  |  |  +--uncultured_Basidiomycota_FJ567794
+|                             |  |        |  |  |  |           |  +--|
+|                             |  |        |  |  |  |           |     |           +--uncultured_Basidiomycota_FJ566579
+|                             |  |        |  |  |  |           |     |        +**|
+|                             |  |        |  |  |  |           |     |        |  |  +--uncultured_Basidiomycota_FJ567582
+|                             |  |        |  |  |  |           |     |        |  +**|
+|                             |  |        |  |  |  |           |     |        |     +--uncultured_Basidiomycota_FJ567740
+|                             |  |        |  |  |  |           |     |     +**|
+|                             |  |        |  |  |  |           |     |     |  +--uncultured_Basidiomycota_FJ566666
+|                             |  |        |  |  |  |           |     |  +**|
+|                             |  |        |  |  |  |           |     |  |  +**uncultured_Basidiomycota_FJ566613
+|                             |  |        |  |  |  |           |     +**|
+|                             |  |        |  |  |  |           |        +**uncultured_Basidiomycota_FJ566894
+|                             |  |        |  |  |  |        +**|
+|                             |  |        |  |  |  |        |  +--uncultured_Basidiomycota_DQ342009
+|                             |  |        |  |  |  |     +**|
+|                             |  |        |  |  |  |     |  +**uncultured_Basidiomycota_DQ341857
+|                             |  |        |  |  |  |  +**|
+|                             |  |        |  |  |  |  |  +**uncultured_Basidiomycota_DQ341997
+|                             |  |        |  |  |  +--|
+|                             |  |        |  |  |     +--uncultured_Basidiomycota_DQ342001
+|                             |  |        |  +--|
+|                             |  |        |     +--uncultured_fungus_GU174361
+|                             |  |     +--|
+|                             |  |     |  +--Clavaria_citrinorubra_HQ877686
+|                             |  |  +**|
+|                             |  |  |  |                          +--Clavaria_acuta_HQ877679
+|                             |  |  |  |                       +--|
+|                             |  |  |  |                       |  +**Clavaria_acuta_HQ877680
+|                             |  |  |  |                    +--|
+|                             |  |  |  |                    |  |  +--uncultured_Basidiomycota_DQ341947
+|                             |  |  |  |                    |  +--|
+|                             |  |  |  |                    |     +--uncultured_Basidiomycota_DQ341949
+|                             |  |  |  |                 +--|
+|                             |  |  |  |                 |  |     +--Clavaria_aff._acuta_GG_AB05-32_EF535278
+|                             |  |  |  |                 |  |  +--|
+|                             |  |  |  |                 |  |  |  |  +--Clavaria_cf._subacuta_RHP2322_HQ877699
+|                             |  |  |  |                 |  |  |  +--|
+|                             |  |  |  |                 |  |  |     +--uncultured_Basidiomycota_DQ341946
+|                             |  |  |  |                 |  +--|
+|                             |  |  |  |                 |     +--uncultured_fungus_GQ159940
+|                             |  |  |  |              +--|
+|                             |  |  |  |              |  |  +--uncultured_Basidiomycota_DQ341679
+|                             |  |  |  |              |  +--|
+|                             |  |  |  |              |     |     +**uncultured_Basidiomycota_DQ341751
+|                             |  |  |  |              |     |  +--|
+|                             |  |  |  |              |     |  |  +--uncultured_Basidiomycota_DQ341791
+|                             |  |  |  |              |     +**|
+|                             |  |  |  |              |        |     +**uncultured_Basidiomycota_DQ341855
+|                             |  |  |  |              |        |  +**|
+|                             |  |  |  |              |        |  |  +--uncultured_fungus_GU174286
+|                             |  |  |  |              |        +--|
+|                             |  |  |  |              |           +--uncultured_Basidiomycota_DQ341858
+|                             |  |  |  |           +--|
+|                             |  |  |  |           |  +--Clavaria_redoleoalii_DQ284906
+|                             |  |  |  |        +--|
+|                             |  |  |  |        |  +--uncultured_Basidiomycota_FJ566148
+|                             |  |  |  |     +--|
+|                             |  |  |  |     |  |  +--Clavaria_alboglobospora_HQ877682
+|                             |  |  |  |     |  +**|
+|                             |  |  |  |     |     |     +--Clavaria_fuscata_HQ877681X
+|                             |  |  |  |     |     +-----|
+|                             |  |  |  |     |           +**uncultured_fungus_EU522902
+|                             |  |  |  |  +--|
+|                             |  |  |  |  |  |     +--Clavaria_cf._acuta_RHP55840_HQ877681
+|                             |  |  |  |  |  |  +--|
+|                             |  |  |  |  |  |  |  |     +--uncultured_Basidiomycota_DQ341676
+|                             |  |  |  |  |  |  |  |  +**|
+|                             |  |  |  |  |  |  |  |  |  +--uncultured_Basidiomycota_DQ341692
+|                             |  |  |  |  |  |  |  +--|
+|                             |  |  |  |  |  |  |     |  +--uncultured_Basidiomycota_DQ341970
+|                             |  |  |  |  |  |  |     +**|
+|                             |  |  |  |  |  |  |        +--uncultured_Basidiomycota_DQ341971
+|                             |  |  |  |  |  +--|
+|                             |  |  |  |  |     +--Clavaria_stegasauroides_HQ877698
+|                             |  |  |  +--|
+|                             |  |  |     |     +-----uncultured_Basidiomycota_FJ567731
+|                             |  |  |     |  +--|
+|                             |  |  |     |  |  +--uncultured_fungus_EU522869
+|                             |  |  |     +--|
+|                             |  |  |        +-------uncultured_Basidiomycota_GU328631
+|                             |  +--|
+|                             |     |    +**Clavicorona_taxophila_AF115333
+|                             |     +----|
+|                             |          +**Clavicorona_taxophila_HQ877701
+|                          +--|
+|                          |  |                    +--uncultured_Basidiomycota_DQ341702
+|                          |  |                 +**|
+|                          |  |                 |  +--uncultured_Basidiomycota_DQ341963
+|                          |  |              +--|
+|                          |  |              |  +--uncultured_Basidiomycota_DQ341921
+|                          |  |  +-----------|
+|                          |  |  |           +--uncultured_Basidiomycota_DQ341923
+|                          |  +--|
+|                          |     +--uncultured_Basidiomycota_GU328545
+|                       +--|
+|                       |  |                           +---Camarophyllopsis_schulzeri_AM946415
+|                       |  |                        +--|
+|                       |  |                        |  |     +--uncultured_Basidiomycota_DQ341950
+|                       |  |                        |  |  +**|
+|                       |  |                        |  |  |  +--uncultured_Basidiomycota_DQ341972
+|                       |  |                        |  +--|
+|                       |  |                        |     +--uncultured_Basidiomycota_DQ341951
+|                       |  |                     +--|
+|                       |  |                     |  |               +**uncultured_Basidiomycota_FJ565714
+|                       |  |                     |  |            +**|
+|                       |  |                     |  |            |  +**uncultured_Basidiomycota_FJ565744
+|                       |  |                     |  |         +**|
+|                       |  |                     |  |         |  |  +--uncultured_Basidiomycota_FJ566444
+|                       |  |                     |  |         |  +**|
+|                       |  |                     |  |         |     +**uncultured_Basidiomycota_FJ567914
+|                       |  |                     |  |      +--|
+|                       |  |                     |  |      |  +--uncultured_Basidiomycota_FJ566394
+|                       |  |                     |  |   +--|
+|                       |  |                     |  |   |  |        +--uncultured_Basidiomycota_FJ565747
+|                       |  |                     |  |   |  |     +**|
+|                       |  |                     |  |   |  |     |  +**uncultured_Basidiomycota_FJ566427
+|                       |  |                     |  |   |  |  +--|
+|                       |  |                     |  |   |  |  |  +--uncultured_Basidiomycota_FJ565805
+|                       |  |                     |  |   |  +--|
+|                       |  |                     |  |   |     +--uncultured_Basidiomycota_FJ565777
+|                       |  |                     |  +---|
+|                       |  |                     |      |                    +**uncultured_Basidiomycota_FJ565734
+|                       |  |                     |      |                 +**|
+|                       |  |                     |      |                 |  |  +--uncultured_Basidiomycota_FJ565854
+|                       |  |                     |      |                 |  +**|
+|                       |  |                     |      |                 |     +--uncultured_Basidiomycota_FJ566369
+|                       |  |                     |      |              +**|
+|                       |  |                     |      |              |  +**uncultured_Basidiomycota_FJ567831
+|                       |  |                     |      |           +**|
+|                       |  |                     |      |           |  +**uncultured_Basidiomycota_FJ565858
+|                       |  |                     |      |        +**|
+|                       |  |                     |      |        |  +--uncultured_Basidiomycota_FJ565753
+|                       |  |                     |      |     +**|
+|                       |  |                     |      |     |  +--uncultured_Basidiomycota_FJ565799
+|                       |  |                     |      |  +**|
+|                       |  |                     |      |  |  +**uncultured_Basidiomycota_FJ566901
+|                       |  |                     |      +--|
+|                       |  |                     |         |  +--uncultured_Basidiomycota_FJ565834
+|                       |  |                     |         +--|
+|                       |  |                     |            +--uncultured_Basidiomycota_FJ567864
+|                       |  |                  +--|
+|                       |  |                  |  +----Camarophyllopsis_schulzeri_EF537888
+|                       |  |        +---------|
+|                       |  |        |         +----uncultured_Basidiomycota_GU328638
+|                       |  |     +--|
+|                       |  |     |  |            +--Clavaria_cf._rubicundula_JMB10061005_HQ877690
+|                       |  |     |  |         +--|
+|                       |  |     |  |         |  |        +**Clavaria_cf._rubicundula_MR00170_HQ877696
+|                       |  |     |  |         |  |     +--|
+|                       |  |     |  |         |  |     |  +**Clavaria_cf._rubicundula_SAT09-217-18_HQ877695
+|                       |  |     |  |         |  |  +--|
+|                       |  |     |  |         |  |  |  +--Clavaria_fumosa_EF535268
+|                       |  |     |  |         |  +--|
+|                       |  |     |  |         |     +--Clavaria_cf._rubicundula_TENN043695_HQ877697
+|                       |  |     |  |  +------|
+|                       |  |     |  |  |      |  +---------------Clavaria_inaequalis_AY745693
+|                       |  |     |  |  |      +--|
+|                       |  |     |  |  |         |     +--Clavaria_zollingeri_AY639882
+|                       |  |     |  |  |         |  +--|
+|                       |  |     |  |  |         |  |  +--Clavaria_zollingeri_HQ877700
+|                       |  |     |  |  |         +--|
+|                       |  |     |  |  |            |  +--uncultured_Basidiomycota_GU328577
+|                       |  |     |  |  |            +--|
+|                       |  |     |  |  |               +--uncultured_Basidiomycota_GU328581
+|                       |  |     |  +--|
+|                       |  |     |     |                         +--uncultured_Basidiomycota_FJ565731
+|                       |  |     |     |                      +**|
+|                       |  |     |     |                      |  +**uncultured_Basidiomycota_FJ565739
+|                       |  |     |     |                   +**|
+|                       |  |     |     |                   |  +--uncultured_Basidiomycota_FJ566321
+|                       |  |     |     |                +**|
+|                       |  |     |     |                |  +**uncultured_Basidiomycota_FJ566278
+|                       |  |     |     |             +--|
+|                       |  |     |     |             |  |  +**uncultured_Basidiomycota_FJ565765
+|                       |  |     |     |             |  +--|
+|                       |  |     |     |             |     +**uncultured_Basidiomycota_FJ566343
+|                       |  |     |     |          +**|
+|                       |  |     |     |          |  +--uncultured_Basidiomycota_FJ565779
+|                       |  |     |     |  +-------|
+|                       |  |     |     |  |       |  +--uncultured_Basidiomycota_FJ565754
+|                       |  |     |     |  |       +**|
+|                       |  |     |     |  |          |        +--uncultured_Basidiomycota_FJ565771
+|                       |  |     |     |  |          |     +**|
+|                       |  |     |     |  |          |     |  |  +--uncultured_Basidiomycota_FJ565807
+|                       |  |     |     |  |          |     |  +**|
+|                       |  |     |     |  |          |     |     +--uncultured_Basidiomycota_FJ565846
+|                       |  |     |     |  |          |  +**|
+|                       |  |     |     |  |          |  |  +**uncultured_Basidiomycota_FJ566387
+|                       |  |     |     |  |          +**|
+|                       |  |     |     |  |             +**uncultured_Basidiomycota_FJ566339
+|                       |  |     |     +--|
+|                       |  |     |        |         +**uncultured_fungus_GU174390
+|                       |  |     |        +---------|
+|                       |  |     |                  +--uncultured_fungus_GU174429
+|                       |  |  +--|
+|                       |  |  |  |            +--Clavaria_aff._fragilis_ADW0128_HQ877687
+|                       |  |  |  |         +--|
+|                       |  |  |  |         |  |  +**uncultured_fungus_GU174373
+|                       |  |  |  |         |  +--|
+|                       |  |  |  |         |     +--uncultured_fungus_GU174394
+|                       |  |  |  |      +--|
+|                       |  |  |  |      |  +--Clavaria_aff._fragilis_JMB08171003_HQ877689
+|                       |  |  |  |   +--|
+|                       |  |  |  |   |  |        +--Clavaria_aff._fragilis_SAT98-349-01_HQ877688
+|                       |  |  |  |   |  |     +--|
+|                       |  |  |  |   |  |     |  +--Clavaria_vermicularis_DQ284907
+|                       |  |  |  |   |  |  +--|
+|                       |  |  |  |   |  |  |  +--Clavaria_rosea_HQ877694
+|                       |  |  |  |   |  +--|
+|                       |  |  |  |   |     +--Clavaria_sp._TFB11835_HQ877692
+|                       |  |  |  +---|
+|                       |  |  |      |        +--uncultured_Basidiomycota_DQ341992
+|                       |  |  |      |     +**|
+|                       |  |  |      |     |  +--uncultured_fungus_GU174395
+|                       |  |  |      |  +--|
+|                       |  |  |      |  |  +--uncultured_Basidiomycota_DQ341996
+|                       |  |  |      +--|
+|                       |  |  |         +--uncultured_Basidiomycota_FJ565804
+|                       |  +**|
+|                       |     |                  +--Clavaria_australiana_HQ877685
+|                       |     |               +--|
+|                       |     |               |  |  +--uncultured_Basidiomycota_DQ341809
+|                       |     |               |  +--|
+|                       |     |               |     |  +--uncultured_Basidiomycota_FJ566609
+|                       |     |               |     +--|
+|                       |     |               |        +**uncultured_Basidiomycota_FJ566659
+|                       |     |        +------|
+|                       |     |        |      |     +**Clavaria_sp._JMB10061001_HQ877684
+|                       |     |        |      |  +--|
+|                       |     |        |      |  |  +--uncultured_Basidiomycota_DQ341797
+|                       |     |        |      +--|
+|                       |     |        |         +--uncultured_fungus_GU174274
+|                       |     |     +--|
+|                       |     |     |  |               +--uncultured_Basidiomycota_DQ341977
+|                       |     |     |  |        +------|
+|                       |     |     |  |        |      +**uncultured_Basidiomycota_DQ341990
+|                       |     |     |  |     +--|
+|                       |     |     |  |     |  +----uncultured_Basidiomycota_DQ342010
+|                       |     |     |  |  +--|
+|                       |     |     |  |  |  +---uncultured_Basidiomycota_FJ568269
+|                       |     |     |  +--|
+|                       |     |     |     +------uncultured_Basidiomycota_FJ567301
+|                       |     |  +--|
+|                       |     |  |  +--------uncultured_Basidiomycota_FJ568036
+|                       |     +--|
+|                       |        |                    +--uncultured_Basidiomycota_DQ341956
+|                       |        |                 +**|
+|                       |        |                 |  +--uncultured_soil_fungus_EU861799
+|                       |        |              +--|
+|                       |        |              |  +--uncultured_soil_fungus_EU861758
+|                       |        |           +--|
+|                       |        |           |  +**uncultured_soil_fungus_EU861814
+|                       |        |        +--|
+|                       |        |        |  |  +--uncultured_Basidiomycota_FJ566090
+|                       |        |        |  +--|
+|                       |        |        |     +--uncultured_Basidiomycota_FJ566110
+|                       |        |     +--|
+|                       |        |     |  +-------------uncultured_Basidiomycota_DQ341993
+|                       |        |  +--|
+|                       |        |  |  |     +**uncultured_Basidiomycota_FJ566930
+|                       |        |  |  |  +--|
+|                       |        |  |  |  |  |     +--uncultured_Basidiomycota_FJ566947
+|                       |        |  |  |  |  |  +--|
+|                       |        |  |  |  |  |  |  +--uncultured_Basidiomycota_FJ566950
+|                       |        |  |  |  |  +--|
+|                       |        |  |  |  |     +--uncultured_Basidiomycota_FJ566966
+|                       |        |  |  +--|
+|                       |        |  |     |  +**uncultured_Basidiomycota_FJ566992
+|                       |        |  |     +**|
+|                       |        |  |        +**uncultured_Basidiomycota_FJ566998
+|                       |        +--|
+|                       |           |            +--uncultured_Basidiomycota_FJ567313
+|                       |           |         +--|
+|                       |           |         |  +--uncultured_Basidiomycota_FJ567630
+|                       |           |  +------|
+|                       |           |  |      |  +**uncultured_Basidiomycota_FJ568205
+|                       |           |  |      +--|
+|                       |           |  |         +--uncultured_Basidiomycota_FJ568259
+|                       |           +--|
+|                       |              +----------------uncultured_Basidiomycota_GU328628
+|                   +---|
+|                   |   |  +------uncultured_Basidiomycota_DQ341800
+|                   |   +--|
+|                   |      |  +-----uncultured_Basidiomycota_GU328617
+|                   |      +--|
+|                   |         +--------------uncultured_fungus_EF434000
+|                +--|
+|                |  +-------------------Hyphodontiella_multiseptata_EU118634
+|     +----------|
+|     |          |                          +---Clavaria_novozealandica_HQ877693
+|     |          |                       +--|
+|     |          |                       |  |        +**Clavulinopsis_aff._aurantiocinnabarina_JMB08171004_HQ877704
+|     |          |                       |  |     +--|
+|     |          |                       |  |     |  +**Clavulinopsis_aff._aurantiocinnabarina_JMB08240901_HQ877703
+|     |          |                       |  |  +--|
+|     |          |                       |  |  |  +--Clavulinopsis_aff._aurantiocinnabarina_JMB08171006_HQ877705
+|     |          |                       |  +--|
+|     |          |                       |     |  +--Clavulinopsis_aff._aurantiocinnabarina_PBM3010_HQ877706
+|     |          |                       |     +--|
+|     |          |                       |        |  +**Clavulinopsis_sulcata_DQ284904
+|     |          |                       |        +--|
+|     |          |                       |           +--Clavulinopsis_sulcata_HQ877709
+|     |          |                    +--|
+|     |          |                    |  |   +**uncultured_Basidiomycota_DQ341957
+|     |          |                    |  +---|
+|     |          |                    |      +**uncultured_fungus_AB520598
+|     |          |           +--------|
+|     |          |           |        |     +**uncultured_Basidiomycota_DQ341745
+|     |          |           |        |  +**|
+|     |          |           |        |  |  |  +--uncultured_Basidiomycota_DQ341778
+|     |          |           |        |  |  +**|
+|     |          |           |        |  |     +**uncultured_fungus_GQ159938
+|     |          |           |        +--|
+|     |          |           |           +**uncultured_Basidiomycota_DQ341757
+|     |          |        +--|
+|     |          |        |  |     +**uncultured_Basidiomycota_DQ341736
+|     |          |        |  |  +--|
+|     |          |        |  |  |  |                    +--uncultured_Basidiomycota_FJ566662
+|     |          |        |  |  |  |                 +**|
+|     |          |        |  |  |  |                 |  +--uncultured_Basidiomycota_FJ567962
+|     |          |        |  |  |  |              +**|
+|     |          |        |  |  |  |              |  +**uncultured_Basidiomycota_FJ567818
+|     |          |        |  |  |  |           +**|
+|     |          |        |  |  |  |           |  |                    +**uncultured_Basidiomycota_FJ566699
+|     |          |        |  |  |  |           |  |                 +**|
+|     |          |        |  |  |  |           |  |                 |  |  +**uncultured_Basidiomycota_FJ566767
+|     |          |        |  |  |  |           |  |                 |  +--|
+|     |          |        |  |  |  |           |  |                 |     |  +**uncultured_Basidiomycota_FJ566811
+|     |          |        |  |  |  |           |  |                 |     +**|
+|     |          |        |  |  |  |           |  |                 |        |     +--uncultured_Basidiomycota_FJ567721
+|     |          |        |  |  |  |           |  |                 |        |  +**|
+|     |          |        |  |  |  |           |  |                 |        |  |  +--uncultured_Basidiomycota_FJ567894
+|     |          |        |  |  |  |           |  |                 |        +**|
+|     |          |        |  |  |  |           |  |                 |           +**uncultured_Basidiomycota_FJ567754
+|     |          |        |  |  |  |           |  |              +**|
+|     |          |        |  |  |  |           |  |              |  +--uncultured_Basidiomycota_FJ567635
+|     |          |        |  |  |  |           |  |           +**|
+|     |          |        |  |  |  |           |  |           |  +**uncultured_Basidiomycota_FJ567893
+|     |          |        |  |  |  |           |  |        +**|
+|     |          |        |  |  |  |           |  |        |  +**uncultured_Basidiomycota_FJ567787
+|     |          |        |  |  |  |           |  |     +**|
+|     |          |        |  |  |  |           |  |     |  +--uncultured_Basidiomycota_FJ566737
+|     |          |        |  |  |  |           |  |  +**|
+|     |          |        |  |  |  |           |  |  |  +--uncultured_Basidiomycota_FJ566893
+|     |          |        |  |  |  |           |  +**|
+|     |          |        |  |  |  |           |     +**uncultured_Basidiomycota_FJ566846
+|     |          |        |  |  |  |        +**|
+|     |          |        |  |  |  |        |  +**uncultured_Basidiomycota_FJ566792
+|     |          |        |  |  |  |     +**|
+|     |          |        |  |  |  |     |  |  +**uncultured_Basidiomycota_FJ566681
+|     |          |        |  |  |  |     |  +**|
+|     |          |        |  |  |  |     |     |     +**uncultured_Basidiomycota_FJ566694
+|     |          |        |  |  |  |     |     |  +**|
+|     |          |        |  |  |  |     |     |  |  |     +--uncultured_Basidiomycota_FJ567641
+|     |          |        |  |  |  |     |     |  |  |  +**|
+|     |          |        |  |  |  |     |     |  |  |  |  +--uncultured_Basidiomycota_FJ567778
+|     |          |        |  |  |  |     |     |  |  +**|
+|     |          |        |  |  |  |     |     |  |     |     +**uncultured_Basidiomycota_FJ567840
+|     |          |        |  |  |  |     |     |  |     |  +**|
+|     |          |        |  |  |  |     |     |  |     |  |  +--uncultured_Basidiomycota_FJ567901
+|     |          |        |  |  |  |     |     |  |     +**|
+|     |          |        |  |  |  |     |     |  |        +**uncultured_Basidiomycota_FJ567873
+|     |          |        |  |  |  |     |     +**|
+|     |          |        |  |  |  |     |        +--uncultured_Basidiomycota_FJ566753
+|     |          |        |  |  |  |  +--|
+|     |          |        |  |  |  |  |  +--uncultured_Basidiomycota_FJ567725
+|     |          |        |  |  |  +--|
+|     |          |        |  |  |     +--uncultured_Basidiomycota_FJ567913
+|     |          |        |  +--|
+|     |          |        |     |     +--uncultured_Basidiomycota_DQ341983
+|     |          |        |     |  +--|
+|     |          |        |     |  |  +**uncultured_Basidiomycota_DQ341984
+|     |          |        |     +--|
+|     |          |        |        +--uncultured_Basidiomycota_FJ567184
+|     |          |     +--|
+|     |          |     |  |              +--Clavulinopsis_fusiformis_EF535273
+|     |          |     |  |           +--|
+|     |          |     |  |           |  +--Clavulinopsis_fusiformis_HQ877717
+|     |          |     |  |        +**|
+|     |          |     |  |        |  |     +**Ramariopsis_helvola_AY586647
+|     |          |     |  |        |  |  +--|
+|     |          |     |  |        |  |  |  +**Ramariopsis_helvola_EU118617
+|     |          |     |  |        |  +--|
+|     |          |     |  |        |     |  +**Ramariopsis_laeticolor_EU118618
+|     |          |     |  |        |     +--|
+|     |          |     |  |        |        +--uncultured_fungus_EU522887
+|     |          |     |  |     +--|
+|     |          |     |  |     |  +--uncultured_Basidiomycota_DQ341728
+|     |          |     |  |  +--|
+|     |          |     |  |  |  +--Ramariopsis_aurantio-olivacea_HQ877711
+|     |          |     |  +--|
+|     |          |     |     |        +**Clavulinopsis_gracillima_HQ877708
+|     |          |     |     |     +**|
+|     |          |     |     |     |  +--uncultured_Basidiomycota_DQ341696
+|     |          |     |     |  +--|
+|     |          |     |     |  |  +**uncultured_fungus_GQ159936
+|     |          |     |     +**|
+|     |          |     |        +----uncultured_Basidiomycota_DQ341988
+|     |          |  +--|
+|     |          |  |  |     +--Clavulinopsis_amoena_HQ877702
+|     |          |  |  |  +--|
+|     |          |  |  |  |  +--Ramariopsis_antillarum_HQ877710
+|     |          |  |  +--|
+|     |          |  |     +--Clavulinopsis_corallinorosacea_HQ877707
+|     |          +--|
+|     |             |                 +--Ictalurus_punctatus_HQ677718
+|     |             |              +--|
+|     |             |              |  +--uncultured_fungus_AB520595
+|     |             |           +--|
+|     |             |           |  |       +**Ramariopsis_cremicolor_HQ877714
+|     |             |           |  |  +----|
+|     |             |           |  |  |    +--Ramariopsis_sp._DJM1049_DQ284903
+|     |             |           |  +--|
+|     |             |           |     +--Ramariopsis_kunzei_DQ284902
+|     |             |        +--|
+|     |             |        |  |        +---Ramariopsis_aff._kunzei_Marr5064_HQ877719
+|     |             |        |  |     +--|
+|     |             |        |  |     |  |     +--uncultured_fungus_EF434027
+|     |             |        |  |     |  |  +--|
+|     |             |        |  |     |  |  |  +**uncultured_fungus_EF434153
+|     |             |        |  |     |  +**|
+|     |             |        |  |     |     |     +--uncultured_fungus_GQ159931
+|     |             |        |  |     |     |  +**|
+|     |             |        |  |     |     |  |  +--uncultured_fungus_GQ159935
+|     |             |        |  |     |     +--|
+|     |             |        |  |     |        +**uncultured_fungus_GQ159934
+|     |             |        |  |  +--|
+|     |             |        |  |  |  |  +**uncultured_Basidiomycota_DQ341729
+|     |             |        |  |  |  +--|
+|     |             |        |  |  |     +--uncultured_Basidiomycota_DQ341735
+|     |             |        |  +--|
+|     |             |        |     |           +**Ramariopsis_biformis_HQ877712
+|     |             |        |     |        +--|
+|     |             |        |     |        |  |  +**Ramariopsis_sp._JMB-2011_HQ877722
+|     |             |        |     |        |  +**|
+|     |             |        |     |        |     +--uncultured_fungus_GQ159933
+|     |             |        |     |     +**|
+|     |             |        |     |     |  +--Ramariopsis_pseudosubtilis_HQ877723
+|     |             |        |     |  +--|
+|     |             |        |     |  |  +--Ramariopsis_kunzei_EF561638
+|     |             |        |     +--|
+|     |             |        |        |                       +--uncultured_Russulaceae_EU712188
+|     |             |        |        |                    +--|
+|     |             |        |        |                    |  +--uncultured_fungus_GQ159930
+|     |             |        |        |                 +**|
+|     |             |        |        |                 |  +--uncultured_fungus_EU292560
+|     |             |        |        |              +**|
+|     |             |        |        |              |  |                 +**uncultured_fungus_EU292241
+|     |             |        |        |              |  |              +--|
+|     |             |        |        |              |  |              |  |  +**uncultured_fungus_EU292385
+|     |             |        |        |              |  |              |  +**|
+|     |             |        |        |              |  |              |     +--uncultured_fungus_EU292568
+|     |             |        |        |              |  |           +**|
+|     |             |        |        |              |  |           |  +--uncultured_fungus_EU292270
+|     |             |        |        |              |  |        +**|
+|     |             |        |        |              |  |        |  +--uncultured_fungus_EU292660
+|     |             |        |        |              |  |     +**|
+|     |             |        |        |              |  |     |  +**uncultured_fungus_EU292406
+|     |             |        |        |              |  |  +**|
+|     |             |        |        |              |  |  |  +--uncultured_fungus_EU292526
+|     |             |        |        |              |  +--|
+|     |             |        |        |              |     +**uncultured_fungus_EU292273
+|     |             |        |        |           +**|
+|     |             |        |        |           |  +--uncultured_fungus_EF434069
+|     |             |        |        |        +**|
+|     |             |        |        |        |  +--uncultured_fungus_EF434030
+|     |             |        |        |     +--|
+|     |             |        |        |     |  +--uncultured_fungus_EU292234
+|     |             |        |        |  +--|
+|     |             |        |        |  |  +--uncultured_fungus_AB520597
+|     |             |        |        +--|
+|     |             |        |           |  +--uncultured_fungus_EU292224
+|     |             |        |           +--|
+|     |             |        |              |  +**uncultured_fungus_EU292320
+|     |             |        |              +**|
+|     |             |        |                 +--uncultured_fungus_EU292586
+|     |             |     +**|
+|     |             |     |  |               +**Ramariopsis_aff._kunzei_JMB10071005_HQ877721
+|     |             |     |  |            +**|
+|     |             |     |  |            |  +**uncultured_Basidiomycota_DQ341683
+|     |             |     |  |         +--|
+|     |             |     |  |         |  +**Ramariopsis_aff._kunzei_MR00183_HQ877720
+|     |             |     |  |     +---|
+|     |             |     |  |     |   +--uncultured_fungus_GQ159937
+|     |             |     |  |  +--|
+|     |             |     |  |  |  |  +----Ramariopsis_tenuiramosa_EF535269
+|     |             |     |  |  |  +--|
+|     |             |     |  |  |     +--uncultured_Basidiomycota_DQ341694
+|     |             |     |  +--|
+|     |             |     |     |     +--Ramariopsis_crocea_HQ877715
+|     |             |     |     |  +--|
+|     |             |     |     |  |  |  +--Ramariopsis_crocea_f._conspicua_HQ877716
+|     |             |     |     |  |  +**|
+|     |             |     |     |  |     +--uncultured_Basidiomycota_FJ566027
+|     |             |     |     +--|
+|     |             |     |        +--uncultured_Basidiomycota_FJ568024
+|     |             |  +**|
+|     |             |  |  +--uncultured_fungus_AB520596
+|     |             +--|
+|     |                |          +--uncultured_Basidiomycota_DQ341741
+|     |                |       +**|
+|     |                |       |  +**uncultured_fungus_EF434117
+|     |                +-------|
+|     |                        |           +**uncultured_Basidiomycota_HQ433218
+|     |                        |        +**|
+|     |                        |        |  +--uncultured_soil_fungus_EU861817
+|     |                        |  +-----|
+|     |                        |  |     +--uncultured_soil_fungus_EU691875
+|     |                        +--|
+|     |                           +**uncultured_fungus_GQ159939
+|  +--|
+|  |  |               +------Mucronella_aff._calva_KHL10317_AY586690
+|  |  |            +--|
+|  |  |            |  +--Mucronella_sp._KUC8367_FJ471546
+|  |  |         +--|
+|  |  |         |  +------Mucronella_calva_AJ406588
+|  |  |   +-----|
+|  |  |   |     +--Mucronella_calva_AY586689
+|  |  +---|
+|  |      |     +---------------Mucronella_bresadolae_DQ384591
+|  |      |  +--|
+|  |      |  |  +--Mucronella_pendula_HQ829921
+|  |      +--|
+|  |         +--------Mucronella_fusiformis_DQ284905
++--|
+   +------Plicaturopsis_crispa_AY293203
+
+Tree in newick format:
+
+(Anomoporia_bombycina_GU187564:0.0202367649,(Anomoporia_kamtschatica_DQ144615:0.0150852083,Podoserpula_pusio_EF535271:0.0451039877):0.0056924644,((((((((((((Camarophyllopsis_aff._foetens_ECV4175_HQ877678:0.0113992321,Camarophyllopsis_atropuncta_EF535270:0.0143574842):0.0037670958,(Camarophyllopsis_hymenocephala_DQ457679:0.0000015166,Camarophyllopsis_hymenocephala_EF561628:0.0000015166):0.0225535647):0.0183096354,Clavaria_pullei_AY586646:0.0408204104):0.0059924013,(((((uncultured_Basidiomycota_DQ341973:0.0000015166,(uncultured_Basidiomycota_DQ341974:0.0027333148,uncultured_Basidiomycota_DQ341998:0.0013662932):0.0000016824):0.0027940600,((uncultured_fungus_GU174319:0.0026974518,uncultured_soil_fungus_GU375891:0.0000015166):0.0000024114,uncultured_soil_fungus_GU376129:0.0000015166):0.0000015164):0.0148710918,uncultured_Basidiomycota_GU328580:0.0055103370):0.0546809180,uncultured_Basidiomycota_FJ567454:0.0028127891):0.0085492911,(uncultured_Basidiomycota_GU328506:0.0157880691,uncultured_fungus_EU522881:0.0400965501):0.0023560525):0.0129836878):0.0038136572,((((((((Clavaria_acuta_AY228353:0.0004568325,uncultured_Basidiomycota_FJ565706:0.0094889805):0.0012265646,(Clavaria_straminea_EF535267:0.0000015166,(uncultured_Basidiomycota_FJ566676:0.0000015166,(uncultured_Basidiomycota_FJ5679531:0.0000015166,uncultured_soil_fungus_EU692436:0.0022562385):0.0000015164):0.0000015164):0.0000015164):0.0030104944,uncultured_Basidiomycota_GU328564:0.0061649107):0.0034092943,(Clavaria_argillacea_AY463395:0.0022014904,((Clavaria_argillacea_HQ877683:0.0010449016,((uncultured_fungus_EF433981:0.0013602779,uncultured_fungus_EU292666:0.0000015166):0.0013543364,(uncultured_fungus_EF434098:0.0027280490,uncultured_fungus_EU292494:0.0013625842):0.0000015164):0.0013672143):0.0015898892,uncultured_Agaricales_FM997944:0.0049070183):0.0010903912):0.0071681486):0.0062444199,((uncultured_Basidiomycota_DQ341678:0.0229237587,(((((((((uncultured_Basidiomycota_DQ341705:0.0042481615,uncultured_Basidiomycota_DQ341744:0.0000015166):0.0013951861,uncultured_Basidiomycota_DQ341967:0.0028580787):0.0013450213,(uncultured_Basidiomycota_DQ341747:0.0000015166,uncultured_Basidiomycota_DQ341968:0.0000015166):0.0000015164):0.0013692657,((((((uncultured_Basidiomycota_DQ341739:0.0054670751,uncultured_Basidiomycota_FJ566405:0.0000017633):0.0030588325,(((uncultured_Basidiomycota_DQ341743:0.0000018058,uncultured_Basidiomycota_FJ566486:0.0025453641):0.0029867427,uncultured_Basidiomycota_DQ341756:0.0013953658):0.0000015164,uncultured_Basidiomycota_DQ341780:0.0013625936):0.0000015164):0.0000017530,uncultured_Basidiomycota_FJ565719:0.0000015166):0.0015486443,uncultured_Basidiomycota_DQ342007:0.0027982177):0.0000015164,uncultured_Basidiomycota_DQ342008:0.0028704135):0.0015163979,uncultured_Basidiomycota_DQ341783:0.0028118643):0.0031603638):0.0015890238,(((uncultured_Basidiomycota_FJ565800:0.0017452928,((uncultured_Basidiomycota_FJ566718:0.0000015166,uncultured_Basidiomycota_FJ566779:0.0000015166):0.0000015164,uncultured_Basidiomycota_FJ566838:0.0013796928):0.0011957112):0.0012685546,uncultured_Basidiomycota_FJ567794:0.0025501027):0.0000015164,((((uncultured_Basidiomycota_FJ566579:0.0013022012,(uncultured_Basidiomycota_FJ567582:0.0012340497,uncultured_Basidiomycota_FJ567740:0.0013754843):0.0000858310):0.0000015164,uncultured_Basidiomycota_FJ566666:0.0012982705):0.0000015164,uncultured_Basidiomycota_FJ566613:0.0000015166):0.0000015164,uncultured_Basidiomycota_FJ566894:0.0000015166):0.0000015164):0.0010408824):0.0000020247,uncultured_Basidiomycota_DQ342009:0.0014088193):0.0000015164,uncultured_Basidiomycota_DQ341857:0.0000015166):0.0000015164,uncultured_Basidiomycota_DQ341997:0.0000015166):0.0000015164,uncultured_Basidiomycota_DQ342001:0.0027686673):0.0019827199):0.0030765214,uncultured_fungus_GU174361:0.0085150595):0.0038025807):0.0020178277,Clavaria_citrinorubra_HQ877686:0.0057121679):0.0148534666,(((((((((Clavaria_acuta_HQ877679:0.0007973762,Clavaria_acuta_HQ877680:0.0000015166):0.0022849843,(uncultured_Basidiomycota_DQ341947:0.0071783535,uncultured_Basidiomycota_DQ341949:0.0027710381):0.0061619447):0.0018747688,((Clavaria_aff._acuta_GG_AB05-32_EF535278:0.0021587596,(Clavaria_cf._subacuta_RHP2322_HQ877699:0.0071194844,uncultured_Basidiomycota_DQ341946:0.0013714732):0.0011528328):0.0029991161,uncultured_fungus_GQ159940:0.0077971965):0.0008403340):0.0038415063,(uncultured_Basidiomycota_DQ341679:0.0013717729,((uncultured_Basidiomycota_DQ341751:0.0000015166,uncultured_Basidiomycota_DQ341791:0.0013469432):0.0013390754,((uncultured_Basidiomycota_DQ341855:0.0000015166,uncultured_fungus_GU174286:0.0044527966):0.0000015164,uncultured_Basidiomycota_DQ341858:0.0013324865):0.0043296759):0.0000015164):0.0085654250):0.0060145110,Clavaria_redoleoalii_DQ284906:0.0071480734):0.0014911529,uncultured_Basidiomycota_FJ566148:0.0064342265):0.0013075215,(Clavaria_alboglobospora_HQ877682:0.0054773866,(Clavaria_fuscata_HQ877681X:0.0009272236,uncultured_fungus_EU522902:0.0000015166):0.0311069175):0.0002851646):0.0016510522,((Clavaria_cf._acuta_RHP55840_HQ877681:0.0094981025,((uncultured_Basidiomycota_DQ341676:0.0041072661,uncultured_Basidiomycota_DQ341692:0.0027279875):0.0000015164,(uncultured_Basidiomycota_DQ341970:0.0137567059,uncultured_Basidiomycota_DQ341971:0.0086135683):0.0000015164):0.0057990697):0.0059733475,Clavaria_stegasauroides_HQ877698:0.0113879253):0.0037763679):0.0078552308,((uncultured_Basidiomycota_FJ567731:0.0291822453,uncultured_fungus_EU522869:0.0110416055):0.0021799259,uncultured_Basidiomycota_GU328631:0.0404963571):0.0075405929):0.0079959490):0.0000017564,(Clavicorona_taxophila_AF115333:0.0000015166,Clavicorona_taxophila_HQ877701:0.0000015166):0.0278492964):0.0049274542):0.0048632721,((((uncultured_Basidiomycota_DQ341702:0.0013436332,uncultured_Basidiomycota_DQ341963:0.0101568860):0.0000015164,uncultured_Basidiomycota_DQ341921:0.0013641536):0.0009237278,uncultured_Basidiomycota_DQ341923:0.0060291365):0.0563126352,uncultured_Basidiomycota_GU328545:0.0117156962):0.0046388426):0.0064183573,(((((((Camarophyllopsis_schulzeri_AM946415:0.0187218902,((uncultured_Basidiomycota_DQ341950:0.0028068124,uncultured_Basidiomycota_DQ341972:0.0013968999):0.0005230134,uncultured_Basidiomycota_DQ341951:0.0052311903):0.0165214095):0.0114648269,(((((uncultured_Basidiomycota_FJ565714:0.0000015166,uncultured_Basidiomycota_FJ565744:0.0000015166):0.0000015164,(uncultured_Basidiomycota_FJ566444:0.0017283520,uncultured_Basidiomycota_FJ567914:0.0000015166):0.0000026277):0.0000015164,uncultured_Basidiomycota_FJ566394:0.0017251568):0.0026067963,(((uncultured_Basidiomycota_FJ565747:0.0095487731,uncultured_Basidiomycota_FJ566427:0.0000015166):0.0000015164,uncultured_Basidiomycota_FJ565805:0.0094930632):0.0029398476,uncultured_Basidiomycota_FJ565777:0.0022562648):0.0021770015):0.0031348977,(((((((uncultured_Basidiomycota_FJ565734:0.0000015166,(uncultured_Basidiomycota_FJ565854:0.0018184073,uncultured_Basidiomycota_FJ566369:0.0029773450):0.0000019489):0.0000015164,uncultured_Basidiomycota_FJ567831:0.0000015166):0.0000015164,uncultured_Basidiomycota_FJ565858:0.0000015166):0.0000015164,uncultured_Basidiomycota_FJ565753:0.0029278940):0.0000015164,uncultured_Basidiomycota_FJ565799:0.0013383938):0.0000016102,uncultured_Basidiomycota_FJ566901:0.0000015166):0.0000015164,(uncultured_Basidiomycota_FJ565834:0.0029527964,uncultured_Basidiomycota_FJ567864:0.0010658830):0.0006788214):0.0007649905):0.0202870265):0.0035942149,Camarophyllopsis_schulzeri_EF537888:0.0263467819):0.0122554924,uncultured_Basidiomycota_GU328638:0.0269180888):0.0509967290,(((Clavaria_cf._rubicundula_JMB10061005_HQ877690:0.0071716792,(((Clavaria_cf._rubicundula_MR00170_HQ877696:0.0000015166,Clavaria_cf._rubicundula_SAT09-217-18_HQ877695:0.0000015166):0.0022313843,Clavaria_fumosa_EF535268:0.0035855196):0.0034420283,Clavaria_cf._rubicundula_TENN043695_HQ877697:0.0079910207):0.0016748768):0.0130770356,(Clavaria_inaequalis_AY745693:0.0783624863,((Clavaria_zollingeri_AY639882:0.0081935316,Clavaria_zollingeri_HQ877700:0.0030560664):0.0027404960,(uncultured_Basidiomycota_GU328577:0.0073174535,uncultured_Basidiomycota_GU328581:0.0048471958):0.0052447620):0.0175106900):0.0059760776):0.0332832794,(((((((uncultured_Basidiomycota_FJ565731:0.0029842007,uncultured_Basidiomycota_FJ565739:0.0000015166):0.0000015164,uncultured_Basidiomycota_FJ566321:0.0017011540):0.0000015164,uncultured_Basidiomycota_FJ566278:0.0000015166):0.0000015164,(uncultured_Basidiomycota_FJ565765:0.0000015166,uncultured_Basidiomycota_FJ566343:0.0000015166):0.0016359843):0.0013679323,uncultured_Basidiomycota_FJ565779:0.0028989265):0.0000015164,(uncultured_Basidiomycota_FJ565754:0.0025930098,(((uncultured_Basidiomycota_FJ565771:0.0014480563,(uncultured_Basidiomycota_FJ565807:0.0028889728,uncultured_Basidiomycota_FJ565846:0.0014218189):0.0000025729):0.0000021435,uncultured_Basidiomycota_FJ566387:0.0000015166):0.0000015164,uncultured_Basidiomycota_FJ566339:0.0000015166):0.0000015164):0.0000015164):0.0409870804,(uncultured_fungus_GU174390:0.0000015166,uncultured_fungus_GU174429:0.0091976764):0.0499451432):0.0145480409):0.0149124397):0.0132024516,((((Clavaria_aff._fragilis_ADW0128_HQ877687:0.0041555406,(uncultured_fungus_GU174373:0.0000015166,uncultured_fungus_GU174394:0.0013128129):0.0020336184):0.0076882853,Clavaria_aff._fragilis_JMB08171003_HQ877689:0.0166456829):0.0062502495,(((Clavaria_aff._fragilis_SAT98-349-01_HQ877688:0.0038952191,Clavaria_vermicularis_DQ284907:0.0166784320):0.0045076065,Clavaria_rosea_HQ877694:0.0170608851):0.0012586796,Clavaria_sp._TFB11835_HQ877692:0.0040788540):0.0077674379):0.0055396712,(((uncultured_Basidiomycota_DQ341992:0.0026054576,uncultured_fungus_GU174395:0.0025494424):0.0000015164,uncultured_Basidiomycota_DQ341996:0.0012691353):0.0016461276,uncultured_Basidiomycota_FJ565804:0.0080921194):0.0162437179):0.0205155589):0.0105777683,(((((Clavaria_australiana_HQ877685:0.0175865087,(uncultured_Basidiomycota_DQ341809:0.0061148807,(uncultured_Basidiomycota_FJ566609:0.0025976611,uncultured_Basidiomycota_FJ566659:0.0000015166):0.0066647054):0.0131686264):0.0022798738,((Clavaria_sp._JMB10061001_HQ877684:0.0000017473,uncultured_Basidiomycota_DQ341797:0.0110269768):0.0038843867,uncultured_fungus_GU174274:0.0064412815):0.0163650641):0.0356214974,((((uncultured_Basidiomycota_DQ341977:0.0012728154,uncultured_Basidiomycota_DQ341990:0.0000015166):0.0365717694,uncultured_Basidiomycota_DQ342010:0.0240773828):0.0129870151,uncultured_Basidiomycota_FJ568269:0.0191372918):0.0037766141,uncultured_Basidiomycota_FJ567301:0.0328201673):0.0116229547):0.0059143756,uncultured_Basidiomycota_FJ568036:0.0450087335):0.0083705248,(((((((uncultured_Basidiomycota_DQ341956:0.0058579085,uncultured_soil_fungus_EU861799:0.0033339937):0.0000015164,uncultured_soil_fungus_EU861758:0.0033395508):0.0023066191,uncultured_soil_fungus_EU861814:0.0000015166):0.0103003458,(uncultured_Basidiomycota_FJ566090:0.0036696263,uncultured_Basidiomycota_FJ566110:0.0029645805):0.0067190424):0.0086209529,uncultured_Basidiomycota_DQ341993:0.0660219466):0.0111535330,((uncultured_Basidiomycota_FJ566930:0.0000015166,((uncultured_Basidiomycota_FJ566947:0.0025351850,uncultured_Basidiomycota_FJ566950:0.0012723727):0.0012529884,uncultured_Basidiomycota_FJ566966:0.0012573830):0.0012483154):0.0012484740,(uncultured_Basidiomycota_FJ566992:0.0000015166,uncultured_Basidiomycota_FJ566998:0.0000015166):0.0000015164):0.0153453954):0.0097086455,(((uncultured_Basidiomycota_FJ567313:0.0014004601,uncultured_Basidiomycota_FJ567630:0.0035579433):0.0018765528,(uncultured_Basidiomycota_FJ568205:0.0000015166,uncultured_Basidiomycota_FJ568259:0.0112370378):0.0014695096):0.0368664211,uncultured_Basidiomycota_GU328628:0.0794638644):0.0052367235):0.0133629555):0.0014362469):0.0000023010):0.0071222170,(uncultured_Basidiomycota_DQ341800:0.0343808058,(uncultured_Basidiomycota_GU328617:0.0312378129,uncultured_fungus_EF434000:0.0711076259):0.0026406855):0.0123342500):0.0206645305,Hyphodontiella_multiseptata_EU118634:0.0965933971):0.0075647118,(((((((Clavaria_novozealandica_HQ877693:0.0190420096,(((Clavulinopsis_aff._aurantiocinnabarina_JMB08171004_HQ877704:0.0000015166,Clavulinopsis_aff._aurantiocinnabarina_JMB08240901_HQ877703:0.0000015166):0.0119030444,Clavulinopsis_aff._aurantiocinnabarina_JMB08171006_HQ877705:0.0162473942):0.0075813666,(Clavulinopsis_aff._aurantiocinnabarina_PBM3010_HQ877706:0.0078915042,(Clavulinopsis_sulcata_DQ284904:0.0000015166,Clavulinopsis_sulcata_HQ877709:0.0009424785):0.0049630624):0.0159936171):0.0045927163):0.0050619476,(uncultured_Basidiomycota_DQ341957:0.0000015166,uncultured_fungus_AB520598:0.0000015166):0.0206766747):0.0148632615,((uncultured_Basidiomycota_DQ341745:0.0000015166,(uncultured_Basidiomycota_DQ341778:0.0040292593,uncultured_fungus_GQ159938:0.0000015166):0.0000015164):0.0000015164,uncultured_Basidiomycota_DQ341757:0.0000015166):0.0062435858):0.0423834869,((uncultured_Basidiomycota_DQ341736:0.0000018423,(((((((uncultured_Basidiomycota_FJ566662:0.0037940145,uncultured_Basidiomycota_FJ567962:0.0013103127):0.0000021751,uncultured_Basidiomycota_FJ567818:0.0000015166):0.0000021226,(((((((uncultured_Basidiomycota_FJ566699:0.0000015166,(uncultured_Basidiomycota_FJ566767:0.0000015166,(uncultured_Basidiomycota_FJ566811:0.0000015166,((uncultured_Basidiomycota_FJ567721:0.0067005390,uncultured_Basidiomycota_FJ567894:0.0016974252):0.0000015164,uncultured_Basidiomycota_FJ567754:0.0000015166):0.0000015164):0.0000015164):0.0015394440):0.0000015164,uncultured_Basidiomycota_FJ567635:0.0014698747):0.0000015164,uncultured_Basidiomycota_FJ567893:0.0000015166):0.0000015164,uncultured_Basidiomycota_FJ567787:0.0000015166):0.0000015164,uncultured_Basidiomycota_FJ566737:0.0012669741):0.0000015164,uncultured_Basidiomycota_FJ566893:0.0012600150):0.0000015164,uncultured_Basidiomycota_FJ566846:0.0000015166):0.0000015164):0.0000015164,uncultured_Basidiomycota_FJ566792:0.0000015166):0.0000015164,(uncultured_Basidiomycota_FJ566681:0.0000015166,((uncultured_Basidiomycota_FJ566694:0.0000015166,((uncultured_Basidiomycota_FJ567641:0.0021164827,uncultured_Basidiomycota_FJ567778:0.0013403228):0.0003275785,((uncultured_Basidiomycota_FJ567840:0.0000015166,uncultured_Basidiomycota_FJ567901:0.0045135491):0.0000015164,uncultured_Basidiomycota_FJ567873:0.0000015166):0.0000015164):0.0000015164):0.0000015164,uncultured_Basidiomycota_FJ566753:0.0012535966):0.0000015164):0.0000015164):0.0000016543,uncultured_Basidiomycota_FJ567725:0.0013787079):0.0008937491,uncultured_Basidiomycota_FJ567913:0.0056895540):0.0015334528):0.0061657098,((uncultured_Basidiomycota_DQ341983:0.0013679486,uncultured_Basidiomycota_DQ341984:0.0000015166):0.0060652100,uncultured_Basidiomycota_FJ567184:0.0015802839):0.0039309309):0.0139301246):0.0045965530,(((((Clavulinopsis_fusiformis_EF535273:0.0035551912,Clavulinopsis_fusiformis_HQ877717:0.0114796572):0.0059986130,((Ramariopsis_helvola_AY586647:0.0000015166,Ramariopsis_helvola_EU118617:0.0000015166):0.0059165721,(Ramariopsis_laeticolor_EU118618:0.0000015166,uncultured_fungus_EU522887:0.0021755992):0.0051843327):0.0023386120):0.0000015478,uncultured_Basidiomycota_DQ341728:0.0075581934):0.0037523609,Ramariopsis_aurantio-olivacea_HQ877711:0.0136935726):0.0074181572,(((Clavulinopsis_gracillima_HQ877708:0.0000015166,uncultured_Basidiomycota_DQ341696:0.0013467724):0.0000015164,uncultured_fungus_GQ159936:0.0000015166):0.0039511523,uncultured_Basidiomycota_DQ341988:0.0248685191):0.0000026056):0.0040312569):0.0020877044,((Clavulinopsis_amoena_HQ877702:0.0069108100,Ramariopsis_antillarum_HQ877710:0.0060583494):0.0040889239,Clavulinopsis_corallinorosacea_HQ877707:0.0058834650):0.0059627683):0.0118144651,((((((Ictalurus_punctatus_HQ677718:0.0091981309,uncultured_fungus_AB520595:0.0110639704):0.0057927006,((Ramariopsis_cremicolor_HQ877714:0.0005420275,Ramariopsis_sp._DJM1049_DQ284903:0.0031349776):0.0261329455,Ramariopsis_kunzei_DQ284902:0.0126675355):0.0041138122):0.0040386748,(((Ramariopsis_aff._kunzei_Marr5064_HQ877719:0.0216911445,((uncultured_fungus_EF434027:0.0015357538,uncultured_fungus_EF434153:0.0000015166):0.0095524649,((uncultured_fungus_GQ159931:0.0072400210,uncultured_fungus_GQ159935:0.0011470199):0.0002424836,uncultured_fungus_GQ159934:0.0000015166):0.0033728483):0.0004774384):0.0089696134,(uncultured_Basidiomycota_DQ341729:0.0000015166,uncultured_Basidiomycota_DQ341735:0.0013561661):0.0115446802):0.0017593715,((((Ramariopsis_biformis_HQ877712:0.0000015166,(Ramariopsis_sp._JMB-2011_HQ877722:0.0000015166,uncultured_fungus_GQ159933:0.0013996204):0.0000015164):0.0079832935,Ramariopsis_pseudosubtilis_HQ877723:0.0166377466):0.0005620602,Ramariopsis_kunzei_EF561638:0.0035536921):0.0067432240,((((((((uncultured_Russulaceae_EU712188:0.0013823084,uncultured_fungus_GQ159930:0.0014213412):0.0027687828,uncultured_fungus_EU292560:0.0027717975):0.0000015164,((((((uncultured_fungus_EU292241:0.0000015166,(uncultured_fungus_EU292385:0.0000015166,uncultured_fungus_EU292568:0.0027621162):0.0000015164):0.0013657780,uncultured_fungus_EU292270:0.0013649947):0.0000015164,uncultured_fungus_EU292660:0.0013658151):0.0000015164,uncultured_fungus_EU292406:0.0000015166):0.0000015164,uncultured_fungus_EU292526:0.0013651801):0.0000015164,uncultured_fungus_EU292273:0.0000015166):0.0112591865):0.0000015164,uncultured_fungus_EF434069:0.0027378140):0.0000015164,uncultured_fungus_EF434030:0.0013685114):0.0000015164,uncultured_fungus_EU292234:0.0013628555):0.0030839641,uncultured_fungus_AB520597:0.0076424988):0.0061523384,(uncultured_fungus_EU292224:0.0013493830,(uncultured_fungus_EU292320:0.0000015166,uncultured_fungus_EU292586:0.0013501006):0.0000015164):0.0038597094):0.0071467271):0.0032041741):0.0035059696):0.0026314090,(((((Ramariopsis_aff._kunzei_JMB10071005_HQ877721:0.0000015166,uncultured_Basidiomycota_DQ341683:0.0000016884):0.0000015164,Ramariopsis_aff._kunzei_MR00183_HQ877720:0.0000015166):0.0019439612,uncultured_fungus_GQ159937:0.0036962125):0.0218861388,(Ramariopsis_tenuiramosa_EF535269:0.0240885398,uncultured_Basidiomycota_DQ341694:0.0178241106):0.0047881548):0.0043841602,((Ramariopsis_crocea_HQ877715:0.0041461096,(Ramariopsis_crocea_f._conspicua_HQ877716:0.0013330545,uncultured_Basidiomycota_FJ566027:0.0013214196):0.0000015164):0.0086799011,uncultured_Basidiomycota_FJ568024:0.0026147207):0.0054913859):0.0034389997):0.0000016635,uncultured_fungus_AB520596:0.0178641909):0.0000022241,((uncultured_Basidiomycota_DQ341741:0.0100612283,uncultured_fungus_EF434117:0.0000015166):0.0000015164,(((uncultured_Basidiomycota_HQ433218:0.0000015166,uncultured_soil_fungus_EU861817:0.0035504509):0.0000015164,uncultured_soil_fungus_EU691875:0.0071717097):0.0315027705,uncultured_fungus_GQ159939:0.0000015166):0.0035394675):0.0390915070):0.0098726002):0.0137684611):0.0541019337,((((Mucronella_aff._calva_KHL10317_AY586690:0.0347646031,Mucronella_sp._KUC8367_FJ471546:0.0113564934):0.0087771906,Mucronella_calva_AJ406588:0.0336821030):0.0065527169,Mucronella_calva_AY586689:0.0180605943):0.0283807724,((Mucronella_bresadolae_DQ384591:0.0764254204,Mucronella_pendula_HQ829921:0.0103643466):0.0115170234,Mucronella_fusiformis_DQ284905:0.0430449951):0.0104992967):0.0202271963):0.0161546755,Plicaturopsis_crispa_AY293203:0.0368428192):0.0183518274);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t data_training/dna_M11745_316_1494.phy/output_files/iqtree/inference/pars_13.treefile -m "TIM3{0.573787,3.7342,7.18731}+F{0.288817,0.183951,0.278239,0.248992}+I{0.279935}+R4{0.458774,0.246069,0.13993,1.62825,0.0845015,4.26689,0.0368598,8.10396}" --length 1494
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s Data/dna_M11745_316_1494.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s Data/dna_M11745_316_1494.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Sep 25 09:38:03 2025
+Total CPU time used: 439.797 seconds (0h:7m:19s)
+Total wall-clock time used: 415.118 seconds (0h:6m:55s)
+

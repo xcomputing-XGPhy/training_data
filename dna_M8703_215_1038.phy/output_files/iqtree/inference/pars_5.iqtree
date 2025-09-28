@@ -1,0 +1,705 @@
+IQ-TREE 3.0.1 built Sep 18 2025
+
+Input file name: Data/dna_M8703_215_1038.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 5
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 215 sequences with 1038 nucleotide sites
+Number of constant sites: 427 (= 41.1368% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 427 (= 41.1368% of all sites)
+Number of parsimony informative sites: 525
+Number of distinct site patterns: 621
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TN+F+I+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TN+F+I+R4        -17375.843   35629.686 +   0.0989   36275.706 +    0.476   37800.563 +    0.532
+TIM2+F+I+R4      -17373.391   35626.781 +    0.423   36276.832 +    0.271   37802.604 +    0.192
+TN+F+R4          -17380.742   35637.483 -  0.00201   36279.493 +   0.0716   37803.416 +    0.128
+TIM2+F+R4        -17378.163   35634.327 -  0.00972   36280.347 -   0.0467   37805.204 +   0.0523
+TN+F+R5          -17375.207   35630.414 +   0.0687   36280.464 -   0.0441   37806.236 -   0.0312
+TIM3+F+I+R4      -17375.430   35630.861 +    0.055   36280.911 -   0.0352   37806.683 -    0.025
+TIM+F+I+R4       -17375.668   35631.335 -   0.0434   36281.385 -   0.0278   37807.158 -   0.0197
+TIM3+F+R4        -17380.219   35638.439 -  0.00124   36284.459 -  0.00598   37809.316 -  0.00669
+TIM2+F+R5        -17373.469   35628.939 +    0.144   36283.039 -   0.0122   37809.706 -  0.00551
+TIM+F+R4         -17380.442   35638.883 - 0.000996   36284.903 -  0.00479   37809.761 -  0.00536
+TIM+F+R5         -17374.947   35631.893 -   0.0328   36285.994 -  0.00277   37812.661 -  0.00126
+TIM3+F+R5        -17375.634   35633.269 -   0.0165   36287.369 -  0.00139   37814.036 - 0.000632
+GTR+F+I+R4       -17373.109   35630.218 +   0.0758   36288.389 - 0.000838   37815.930 - 0.000245
+GTR+F+R4         -17377.897   35637.793 -  0.00172   36291.894 - 0.000145   37818.561 - 6.58e-05
+GTR+F+R5         -17373.156   35632.311 -   0.0266   36294.574 -  3.8e-05   37822.969 - 7.26e-06
+HKY+F+I+R4       -17438.187   35752.373 - 2.26e-28   36394.383 - 8.07e-27   37918.306 - 1.44e-26
+TPM2u+F+I+R4     -17435.508   35749.016 - 1.21e-27   36395.036 - 5.82e-27   37919.893 - 6.52e-27
+K3Pu+F+I+R4      -17437.799   35753.598 - 1.22e-28   36399.618 - 5.89e-28   37924.476 - 6.59e-28
+TPM3u+F+I+R4     -17438.253   35754.506 - 7.78e-29   36400.526 - 3.74e-28   37925.383 - 4.19e-28
+HKY+F+R5         -17440.568   35759.137 - 7.68e-30   36405.157 - 3.69e-29   37930.014 - 4.13e-29
+TPM2u+F+R5       -17437.136   35754.271 - 8.75e-29   36404.321 - 5.61e-29   37930.094 - 3.97e-29
+TVM+F+I+R4       -17435.399   35752.797 - 1.83e-28   36406.898 - 1.55e-29   37933.565 -    7e-30
+HKY+F+R4         -17449.764   35773.527 - 5.76e-33   36411.547 - 1.51e-30   37934.514 - 4.36e-30
+K3Pu+F+R5        -17439.439   35758.879 - 8.74e-30   36408.929 -  5.6e-30   37934.701 - 3.97e-30
+TPM3u+F+R5       -17439.936   35759.871 - 5.32e-30   36409.922 - 3.41e-30   37935.694 - 2.41e-30
+TPM2u+F+R4       -17447.292   35770.583 - 2.51e-32   36412.593 - 8.97e-31   37936.515 -  1.6e-30
+K3Pu+F+R4        -17449.641   35775.282 -  2.4e-33   36417.292 - 8.56e-32   37941.214 - 1.53e-31
+TPM3u+F+R4       -17450.129   35776.257 - 1.47e-33   36418.267 - 5.25e-32   37942.190 - 9.38e-32
+TVM+F+R5         -17437.164   35758.327 - 1.15e-29   36416.498 - 1.27e-31   37944.040 - 3.72e-32
+TVM+F+R4         -17446.354   35772.709 - 8.68e-33   36422.759 - 5.56e-33   37948.531 - 3.94e-33
+GTR+I+R4         -17754.943   36387.886 - 2.26e-166   37033.906 - 1.09e-165   38558.763 - 1.22e-165
+SYM+I+R4         -17754.952   36387.904 - 2.24e-166   37033.924 - 1.08e-165   38558.782 - 1.21e-165
+SYM+I+R4         -17754.952   36387.904 - 2.24e-166   37033.924 - 1.08e-165   38558.782 - 1.21e-165
+GTR+R5           -17753.646   36387.293 - 3.04e-166   37037.343 - 1.95e-166   38563.115 - 1.38e-166
+SYM+R5           -17753.765   36387.530 - 2.7e-166   37037.580 - 1.73e-166   38563.352 - 1.23e-166
+SYM+R5           -17753.765   36387.530 - 2.7e-166   37037.580 - 1.73e-166   38563.352 - 1.23e-166
+TVM+I+R4         -17760.713   36397.426 - 1.92e-168   37039.436 - 6.84e-167   38563.358 - 1.22e-166
+TVMe+I+R4        -17760.768   36397.535 - 1.82e-168   37039.545 - 6.48e-167   38563.467 - 1.16e-166
+TVMe+I+R4        -17760.768   36397.535 - 1.82e-168   37039.545 - 6.48e-167   38563.467 - 1.16e-166
+TVM+R5           -17758.403   36394.805 - 7.11e-168   37040.826 - 3.42e-167   38565.683 - 3.82e-167
+TVMe+R5          -17758.416   36394.833 - 7.01e-168   37040.853 - 3.37e-167   38565.710 - 3.77e-167
+TVMe+R5          -17758.416   36394.833 - 7.01e-168   37040.853 - 3.37e-167   38565.710 - 3.77e-167
+GTR+R4           -17762.232   36400.465 - 4.2e-169   37042.475 - 1.5e-167   38566.397 - 2.68e-167
+SYM+R4           -17762.244   36400.488 - 4.15e-169   37042.498 - 1.48e-167   38566.420 - 2.64e-167
+SYM+R4           -17762.244   36400.488 - 4.15e-169   37042.498 - 1.48e-167   38566.420 - 2.64e-167
+TVM+R4           -17768.164   36410.328 - 3.03e-171   37048.348 - 7.94e-169   38571.316 - 2.29e-168
+TVMe+R4          -17768.226   36410.452 - 2.85e-171   37048.472 - 7.47e-169   38571.439 - 2.15e-168
+TVMe+R4          -17768.226   36410.452 - 2.85e-171   37048.472 - 7.47e-169   38571.439 - 2.15e-168
+TIM2+I+R4        -17770.439   36414.878 - 3.11e-172   37052.898 - 8.17e-170   38575.865 - 2.35e-169
+TIM2e+I+R4       -17770.503   36415.006 - 2.92e-172   37053.026 - 7.66e-170   38575.993 - 2.21e-169
+TIM2e+I+R4       -17770.503   36415.006 - 2.92e-172   37053.026 - 7.66e-170   38575.993 - 2.21e-169
+TPM2u+I+R4       -17774.376   36420.753 - 1.65e-173   37054.803 - 3.15e-170   38576.795 - 1.48e-169
+TPM2+I+R4        -17774.387   36420.775 - 1.63e-173   37054.825 - 3.12e-170   38576.817 - 1.46e-169
+TPM2+I+R4        -17774.387   36420.775 - 1.63e-173   37054.825 - 3.12e-170   38576.817 - 1.46e-169
+TIM2+R5          -17768.550   36413.099 - 7.57e-172   37055.109 - 2.7e-170   38579.032 - 4.83e-170
+TIM2e+R5         -17768.574   36413.149 - 7.39e-172   37055.159 - 2.64e-170   38579.081 - 4.71e-170
+TIM2e+R5         -17768.574   36413.149 - 7.39e-172   37055.159 - 2.64e-170   38579.081 - 4.71e-170
+TPM2u+R5         -17772.108   36418.217 - 5.86e-173   37056.237 - 1.54e-170   38579.204 - 4.43e-170
+TPM2+R5          -17772.217   36418.435 - 5.26e-173   37056.455 - 1.38e-170   38579.422 - 3.97e-170
+TPM2+R5          -17772.217   36418.435 - 5.26e-173   37056.455 - 1.38e-170   38579.422 - 3.97e-170
+TIM2+R4          -17777.170   36426.341 - 1.01e-174   37060.391 - 1.93e-171   38582.383 - 9.04e-171
+TIM2e+R4         -17777.278   36426.556 - 9.06e-175   37060.606 - 1.73e-171   38582.598 - 8.12e-171
+TIM2e+R4         -17777.278   36426.556 - 9.06e-175   37060.606 - 1.73e-171   38582.598 - 8.12e-171
+TPM2u+R4         -17782.054   36434.108 - 2.08e-176   37064.208 - 2.86e-172   38585.205 - 2.2e-171
+TPM2+R4          -17782.120   36434.240 - 1.94e-176   37064.339 - 2.68e-172   38585.337 - 2.06e-171
+TPM2+R4          -17782.120   36434.240 - 1.94e-176   37064.339 - 2.68e-172   38585.337 - 2.06e-171
+TIM+I+R4         -17831.048   36536.095 - 1.48e-198   37174.115 - 3.89e-196   38697.082 - 1.12e-195
+TIMe+I+R4        -17831.124   36536.247 - 1.37e-198   37174.267 - 3.61e-196   38697.235 - 1.04e-195
+TIMe+I+R4        -17831.124   36536.247 - 1.37e-198   37174.267 - 3.61e-196   38697.235 - 1.04e-195
+TIM+R5           -17829.901   36535.803 - 1.72e-198   37177.813 - 6.13e-197   38701.735 - 1.09e-196
+TIMe+R5          -17830.029   36536.057 - 1.51e-198   37178.067 - 5.4e-197   38701.989 - 9.64e-197
+TIMe+R5          -17830.029   36536.057 - 1.51e-198   37178.067 - 5.4e-197   38701.989 - 9.64e-197
+TIM+R4           -17837.351   36546.702 - 7.38e-201   37180.752 - 1.41e-197   38702.744 - 6.61e-197
+TIMe+R4          -17837.372   36546.743 - 7.23e-201   37180.793 - 1.38e-197   38702.785 - 6.47e-197
+TIMe+R4          -17837.372   36546.743 - 7.23e-201   37180.793 - 1.38e-197   38702.785 - 6.47e-197
+K3P+I+R4         -17841.867   36555.735 - 8.06e-203   37189.785 - 1.54e-199   38711.777 - 7.22e-199
+K3P+I+R4         -17841.867   36555.735 - 8.06e-203   37189.785 - 1.54e-199   38711.777 - 7.22e-199
+K3Pu+I+R4        -17841.868   36555.737 - 8.05e-203   37189.787 - 1.54e-199   38711.779 - 7.21e-199
+K3Pu+R5          -17839.892   36553.784 - 2.14e-202   37191.804 - 5.61e-200   38714.771 - 1.62e-199
+K3P+R5           -17839.905   36553.809 - 2.11e-202   37191.829 - 5.54e-200   38714.797 - 1.6e-199
+K3P+R5           -17839.905   36553.809 - 2.11e-202   37191.829 - 5.54e-200   38714.797 - 1.6e-199
+K3Pu+R4          -17850.031   36570.062 - 6.24e-206   37200.161 - 8.6e-202   38721.159 - 6.63e-201
+K3P+R4           -17850.039   36570.078 - 6.19e-206   37200.178 - 8.53e-202   38721.175 - 6.57e-201
+K3P+R4           -17850.039   36570.078 - 6.19e-206   37200.178 - 8.53e-202   38721.175 - 6.57e-201
+TIM3+I+R4        -17861.114   36596.229 - 1.3e-211   37234.249 - 3.41e-209   38757.216 - 9.81e-209
+TIM3e+I+R4       -17861.185   36596.369 - 1.21e-211   37234.389 - 3.18e-209   38757.356 - 9.14e-209
+TIM3e+I+R4       -17861.185   36596.369 - 1.21e-211   37234.389 - 3.18e-209   38757.356 - 9.14e-209
+TIM3+R5          -17860.176   36596.353 - 1.22e-211   37238.363 - 4.35e-210   38762.285 - 7.78e-210
+TIM3e+R5         -17860.252   36596.503 - 1.13e-211   37238.513 - 4.04e-210   38762.435 - 7.22e-210
+TIM3e+R5         -17860.252   36596.503 - 1.13e-211   37238.513 - 4.04e-210   38762.435 - 7.22e-210
+TIM3+R4          -17867.821   36607.642 - 4.31e-214   37241.692 - 8.24e-211   38763.684 - 3.87e-210
+TIM3e+R4         -17867.838   36607.677 - 4.24e-214   37241.727 - 8.1e-211   38763.719 - 3.8e-210
+TIM3e+R4         -17867.838   36607.677 - 4.24e-214   37241.727 - 8.1e-211   38763.719 - 3.8e-210
+TN+I+R4          -17869.891   36611.782 - 5.44e-215   37245.832 - 1.04e-211   38767.824 - 4.88e-211
+TNe+I+R4         -17869.961   36611.921 - 5.08e-215   37245.971 - 9.7e-212   38767.963 - 4.55e-211
+TNe+I+R4         -17869.961   36611.921 - 5.08e-215   37245.971 - 9.7e-212   38767.963 - 4.55e-211
+TN+R5            -17868.799   36611.599 - 5.97e-215   37249.619 - 1.57e-212   38772.586 - 4.51e-212
+TNe+R5           -17868.931   36611.862 - 5.23e-215   37249.882 - 1.37e-212   38772.849 - 3.95e-212
+TNe+R5           -17868.931   36611.862 - 5.23e-215   37249.882 - 1.37e-212   38772.849 - 3.95e-212
+TN+R4            -17876.281   36622.561 - 2.48e-217   37252.661 - 3.42e-213   38773.659 - 2.64e-212
+TNe+R4           -17876.297   36622.595 - 2.44e-217   37252.694 - 3.36e-213   38773.692 - 2.59e-212
+TNe+R4           -17876.297   36622.595 - 2.44e-217   37252.694 - 3.36e-213   38773.692 - 2.59e-212
+TPM3u+I+R4       -17873.312   36618.623 - 1.78e-216   37252.673 - 3.4e-213   38774.666 - 1.59e-212
+TPM3+I+R4        -17873.313   36618.625 - 1.78e-216   37252.675 - 3.4e-213   38774.668 - 1.59e-212
+TPM3+I+R4        -17873.313   36618.625 - 1.78e-216   37252.675 - 3.4e-213   38774.668 - 1.59e-212
+TPM3u+R5         -17871.584   36617.167 - 3.69e-216   37255.187 - 9.67e-214   38778.154 - 2.79e-213
+TPM3+R5          -17871.680   36617.361 - 3.35e-216   37255.381 - 8.78e-214   38778.348 - 2.53e-213
+TPM3+R5          -17871.680   36617.361 - 3.35e-216   37255.381 - 8.78e-214   38778.348 - 2.53e-213
+HKY+I+R4         -17880.008   36630.015 - 5.98e-219   37260.115 - 8.23e-215   38781.113 - 6.35e-214
+K2P+I+R4         -17880.016   36630.032 - 5.93e-219   37260.131 - 8.17e-215   38781.129 - 6.3e-214
+K2P+I+R4         -17880.016   36630.032 - 5.93e-219   37260.131 - 8.17e-215   38781.129 - 6.3e-214
+TPM3u+R4         -17881.714   36633.429 - 1.08e-219   37263.528 - 1.49e-215   38784.526 - 1.15e-214
+TPM3+R4          -17881.730   36633.460 - 1.07e-219   37263.560 - 1.47e-215   38784.558 - 1.13e-214
+TPM3+R4          -17881.730   36633.460 - 1.07e-219   37263.560 - 1.47e-215   38784.558 - 1.13e-214
+HKY+R5           -17880.086   36632.172 - 2.03e-219   37266.222 - 3.89e-216   38788.214 - 1.82e-215
+K2P+R5           -17880.289   36632.579 - 1.66e-219   37266.629 - 3.17e-216   38788.621 - 1.49e-215
+K2P+R5           -17880.289   36632.579 - 1.66e-219   37266.629 - 3.17e-216   38788.621 - 1.49e-215
+HKY+R4           -17888.029   36644.057 - 5.34e-222   37270.226 - 5.25e-217   38790.209 - 6.72e-216
+K2P+R4           -17888.035   36644.069 - 5.31e-222   37270.239 - 5.21e-217   38790.222 - 6.68e-216
+K2P+R4           -17888.035   36644.069 - 5.31e-222   37270.239 - 5.21e-217   38790.222 - 6.68e-216
+F81+I+R4         -19275.396   39418.792 -        0   40044.961 -        0   41564.944 -        0
+JC+I+R4          -19275.449   39418.899 -        0   40045.068 -        0   41565.051 -        0
+JC+I+R4          -19275.449   39418.899 -        0   40045.068 -        0   41565.051 -        0
+F81+R4           -19282.469   39430.937 -        0   40053.196 -        0   41572.144 -        0
+JC+R4            -19282.578   39431.157 -        0   40053.415 -        0   41572.364 -        0
+JC+R4            -19282.578   39431.157 -        0   40053.415 -        0   41572.364 -        0
+F81+R5           -19276.044   39422.089 -        0   40052.189 -        0   41573.186 -        0
+JC+R5            -19276.236   39422.471 -        0   40052.571 -        0   41573.568 -        0
+JC+R5            -19276.236   39422.471 -        0   40052.571 -        0   41573.568 -        0
+JC+I+G4          -19299.074   39456.148 -        0   40062.957 -        0   41577.575 -        0
+JC+I+R3          -19288.921   39441.843 -        0   40060.210 -        0   41578.105 -        0
+JC+I+R5          -19275.238   39422.475 -        0   40056.525 -        0   41578.517 -        0
+JC+R3            -19303.640   39469.280 -        0   40083.775 -        0   41600.597 -        0
+JC+G4            -19333.229   39522.459 -        0   40125.454 -        0   41638.940 -        0
+JC+I+R2          -19327.854   39515.707 -        0   40126.350 -        0   41642.079 -        0
+F81+F+I+R4       -19366.559   39607.117 -        0   40245.137 -        0   41768.105 -        0
+F81+F+R4         -19373.929   39619.858 -        0   40253.908 -        0   41775.901 -        0
+F81+F+R5         -19367.896   39611.791 -        0   40253.801 -        0   41777.724 -        0
+JC+R2            -19429.211   39716.422 -        0   40323.231 -        0   41837.849 -        0
+JC+I             -19706.545   40269.089 -        0   40872.084 -        0   42385.571 -        0
+JC               -20787.129   42428.258 -        0   43027.458 -        0   44539.794 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TN+F+I+R4
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 20.0697
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 9.2337
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3433
+  pi(C) = 0.354
+  pi(G) = 0.09176
+  pi(T) = 0.211
+
+Rate matrix Q:
+
+  A   -0.7676    0.1129    0.5874   0.06729
+  C    0.1095   -0.7601   0.02927    0.6213
+  G     2.198    0.1129    -2.378   0.06729
+  T    0.1095     1.043   0.02927    -1.181
+
+Model of rate heterogeneity: Invar+FreeRate with 4 categories
+Proportion of invariable sites: 0.3189
+Site proportion and rates:  (0.2291,0.1908) (0.2112,1.005) (0.199,2.607) (0.04178,5.39)
+
+ Category  Relative_rate  Proportion
+  0         0              0.3189
+  1         0.1908         0.2291
+  2         1.005          0.2112
+  3         2.607          0.199
+  4         5.39           0.04178
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -17375.2722 (s.e. 561.8554)
+Unconstrained log-likelihood (without tree): -5541.8352
+Number of free parameters (#branches + #model parameters): 439
+Akaike information criterion (AIC) score: 35628.5445
+Corrected Akaike information criterion (AICc) score: 36274.5645
+Bayesian information criterion (BIC) score: 37799.4219
+
+Total tree length (sum of branch lengths): 4.9265
+Sum of internal branch lengths: 2.5242 (51.2361% of tree length)
+
+WARNING: 45 near-zero internal branches (<0.0010) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Dixonius_vietnamensis_HQ646374' is drawn at root
+
++-----------------------------------------------------------Dixonius_vietnamensis_HQ646374
+|
+|                                 +--Heteronotia_binoei_ABTC32829
+|                              +--|
+|                              |  +--Heteronotia_binoei_DQ000698
+|                           +--|
+|                           |  |        +--Heteronotia_binoei_DQ000730
+|                           |  |     +**|
+|                           |  |     |  +--Heteronotia_binoei_DQ000743
+|                           |  |  +--|
+|                           |  |  |  +--Heteronotia_binoei_HQ132905
+|                           |  +--|
+|                           |     |  +--Heteronotia_binoei_HQ132899
+|                           |     +--|
+|                           |        +--Heteronotia_binoei_MKF432
+|                        +--|
+|                        |  |          +--Heteronotia_binoei_DQ000689
+|                        |  |       +--|
+|                        |  |       |  +--Heteronotia_binoei_DQ000727
+|                        |  |    +**|
+|                        |  |    |  +**Heteronotia_binoei_DQ000690
+|                        |  +----|
+|                        |       |  +**Heteronotia_binoei_DQ000701
+|                        |       +--|
+|                        |          +--Heteronotia_binoei_HQ132879
+|                     +--|
+|                     |  |                    +--Heteronotia_binoei_DQ000674
+|                     |  |                 +--|
+|                     |  |                 |  +--Heteronotia_binoei_DQ000691
+|                     |  |              +--|
+|                     |  |              |  |           +**Heteronotia_binoei_DQ000688
+|                     |  |              |  |        +--|
+|                     |  |              |  |        |  +--Heteronotia_binoei_DQ000739
+|                     |  |              |  |     +--|
+|                     |  |              |  |     |  +--Heteronotia_binoei_DQ000738
+|                     |  |              |  |  +--|
+|                     |  |              |  |  |  |  +--Heteronotia_binoei_DQ000692
+|                     |  |              |  |  |  +--|
+|                     |  |              |  |  |     +--Heteronotia_binoei_DQ000737
+|                     |  |              |  +--|
+|                     |  |              |     +**Heteronotia_binoei_DQ000740
+|                     |  |           +--|
+|                     |  |           |  |              +--Heteronotia_binoei_HQ132846
+|                     |  |           |  |           +--|
+|                     |  |           |  |           |  +--Heteronotia_binoei_HQ132855
+|                     |  |           |  |        +**|
+|                     |  |           |  |        |  +--Heteronotia_binoei_HQ132858
+|                     |  |           |  |     +**|
+|                     |  |           |  |     |  +--Heteronotia_binoei_HQ132874
+|                     |  |           |  |  +--|
+|                     |  |           |  |  |  +--Heteronotia_binoei_HQ132849
+|                     |  |           |  +--|
+|                     |  |           |     +--Heteronotia_binoei_HQ132850
+|                     |  |        +--|
+|                     |  |        |  |     +--Heteronotia_binoei_DQ287602
+|                     |  |        |  |  +--|
+|                     |  |        |  |  |  |        +**Heteronotia_binoei_DQ287646
+|                     |  |        |  |  |  |     +--|
+|                     |  |        |  |  |  |     |  |  +--Heteronotia_binoei_DQ287651
+|                     |  |        |  |  |  |     |  +**|
+|                     |  |        |  |  |  |     |     +--Heteronotia_binoei_DQ287654
+|                     |  |        |  |  |  |  +**|
+|                     |  |        |  |  |  |  |  |     +--Heteronotia_binoei_DQ287649
+|                     |  |        |  |  |  |  |  |  +--|
+|                     |  |        |  |  |  |  |  |  |  +--Heteronotia_binoei_DQ287661
+|                     |  |        |  |  |  |  |  +--|
+|                     |  |        |  |  |  |  |     +--Heteronotia_binoei_DQ287687
+|                     |  |        |  |  |  +**|
+|                     |  |        |  |  |     +--Heteronotia_binoei_DQ287655
+|                     |  |        |  +--|
+|                     |  |        |     +--Heteronotia_binoei_DQ287648
+|                     |  |     +--|
+|                     |  |     |  |  +--Heteronotia_binoei_DQ000713
+|                     |  |     |  +--|
+|                     |  |     |     |     +--Heteronotia_binoei_DQ000728
+|                     |  |     |     |  +--|
+|                     |  |     |     |  |  +--Heteronotia_binoei_HQ132914
+|                     |  |     |     +--|
+|                     |  |     |        +--Heteronotia_binoei_DQ000729
+|                     |  |  +--|
+|                     |  |  |  |           +--Heteronotia_binoei_DQ000677
+|                     |  |  |  |        +--|
+|                     |  |  |  |        |  +--Heteronotia_binoei_DQ000680
+|                     |  |  |  |     +--|
+|                     |  |  |  |     |  |  +--Heteronotia_binoei_DQ000700
+|                     |  |  |  |     |  +--|
+|                     |  |  |  |     |     +--Heteronotia_binoei_DQ000702
+|                     |  |  |  |  +--|
+|                     |  |  |  |  |  |        +--Heteronotia_binoei_DQ000678
+|                     |  |  |  |  |  |     +--|
+|                     |  |  |  |  |  |     |  +--Heteronotia_binoei_DQ000706
+|                     |  |  |  |  |  |  +**|
+|                     |  |  |  |  |  |  |  |  +--Heteronotia_binoei_DQ000707
+|                     |  |  |  |  |  |  |  +--|
+|                     |  |  |  |  |  |  |     +--Heteronotia_binoei_DQ000710
+|                     |  |  |  |  |  +--|
+|                     |  |  |  |  |     |        +--Heteronotia_binoei_DQ000687
+|                     |  |  |  |  |     |     +**|
+|                     |  |  |  |  |     |     |  +**Heteronotia_binoei_DQ000724
+|                     |  |  |  |  |     |  +--|
+|                     |  |  |  |  |     |  |  +--Heteronotia_binoei_DQ000723
+|                     |  |  |  |  |     +--|
+|                     |  |  |  |  |        +--Heteronotia_binoei_DQ000721
+|                     |  |  |  +--|
+|                     |  |  |     +--Heteronotia_binoei_DQ000681
+|                     |  +--|
+|                     |     |        +--Heteronotia_binoei_DQ000683
+|                     |     |     +--|
+|                     |     |     |  |  +--Heteronotia_binoei_DQ000685
+|                     |     |     |  +--|
+|                     |     |     |     +--Heteronotia_binoei_DQ000762
+|                     |     |  +--|
+|                     |     |  |  |  +--Heteronotia_binoei_DQ000695
+|                     |     |  |  +--|
+|                     |     |  |     +--Heteronotia_binoei_DQ000704
+|                     |     +--|
+|                     |        +--Heteronotia_binoei_DQ000684
+|                  +--|
+|                  |  |      +---Heteronotia_binoei_DQ000679
+|                  |  |   +--|
+|                  |  |   |  |  +---Heteronotia_binoei_GU388234
+|                  |  |   |  +--|
+|                  |  |   |     +---Heteronotia_binoei_GU388236
+|                  |  +---|
+|                  |      |  +--Heteronotia_binoei_GU388237
+|                  |      +--|
+|                  |         |     +--Heteronotia_binoei_GU388238
+|                  |         |  +**|
+|                  |         |  |  +--Heteronotia_binoei_HQ132799
+|                  |         +--|
+|                  |            +--Heteronotia_binoei_HQ132800
+|               +--|
+|               |  |        +--Heteronotia_binoei_GU388254
+|               |  |  +-----|
+|               |  |  |     +**Heteronotia_binoei_GU388255
+|               |  +--|
+|               |     +-----Heteronotia_binoei_GU388256
+|            +--|
+|            |  |    +---Heteronotia_binoei_DQ000694
+|            |  +----|
+|            |       |           +--Heteronotia_binoei_DQ000696
+|            |       |        +**|
+|            |       |        |  +--Heteronotia_binoei_DQ000761
+|            |       |     +--|
+|            |       |     |  +--Heteronotia_binoei_DQ000697
+|            |       |  +--|
+|            |       |  |  |     +--Heteronotia_binoei_DQ000749
+|            |       |  |  |  +--|
+|            |       |  |  |  |  +--Heteronotia_binoei_DQ000763
+|            |       |  |  +--|
+|            |       |  |     |  +--Heteronotia_binoei_DQ000753
+|            |       |  |     +--|
+|            |       |  |        +--Heteronotia_binoei_DQ000760
+|            |       +--|
+|            |          |                 +--Heteronotia_binoei_DQ000717
+|            |          |              +**|
+|            |          |              |  +--Heteronotia_binoei_DQ000755
+|            |          |           +**|
+|            |          |           |  |     +--Heteronotia_binoei_DQ000765
+|            |          |           |  |  +--|
+|            |          |           |  |  |  +--Heteronotia_binoei_GU388243
+|            |          |           |  +--|
+|            |          |           |     +**Heteronotia_binoei_DQ000766
+|            |          |        +**|
+|            |          |        |  +--Heteronotia_binoei_DQ000754
+|            |          |     +--|
+|            |          |     |  +--Heteronotia_binoei_DQ000720
+|            |          |  +--|
+|            |          |  |  |           +--Heteronotia_binoei_DQ000719
+|            |          |  |  |        +--|
+|            |          |  |  |        |  +**Heteronotia_binoei_DQ000756
+|            |          |  |  |     +--|
+|            |          |  |  |     |  +--Heteronotia_binoei_HQ132918
+|            |          |  |  |  +--|
+|            |          |  |  |  |  +--Heteronotia_binoei_DQ000757
+|            |          |  |  +--|
+|            |          |  |     |  +--Heteronotia_binoei_GU388248
+|            |          |  |     +**|
+|            |          |  |        |  +--Heteronotia_binoei_GU388249
+|            |          |  |        +--|
+|            |          |  |           +--Heteronotia_binoei_HQ132840
+|            |          +--|
+|            |             +--Heteronotia_binoei_GU388252
+|         +--|
+|         |  |               +--Heteronotia_binoei_GU388207
+|         |  |            +--|
+|         |  |            |  +--Heteronotia_binoei_HQ132915
+|         |  |  +---------|
+|         |  |  |         |  +--Heteronotia_binoei_GU388208
+|         |  |  |         +--|
+|         |  |  |            |  +**Heteronotia_binoei_HQ132827
+|         |  |  |            +--|
+|         |  |  |               +--Heteronotia_binoei_HQ132828
+|         |  +--|
+|         |     |                   +--Heteronotia_binoei_GU388209
+|         |     |                +--|
+|         |     |                |  +--Heteronotia_binoei_HQ132835
+|         |     |             +--|
+|         |     |             |  |     +--Heteronotia_binoei_GU388210
+|         |     |             |  |  +**|
+|         |     |             |  |  |  +--Heteronotia_binoei_GU388212
+|         |     |             |  +**|
+|         |     |             |     +--Heteronotia_binoei_HQ132917
+|         |     |          +--|
+|         |     |          |  +--Heteronotia_binoei_GU388211
+|         |     |     +----|
+|         |     |     |    |        +--Heteronotia_binoei_GU388213
+|         |     |     |    |     +--|
+|         |     |     |    |     |  |  +--Heteronotia_binoei_GU388214
+|         |     |     |    |     |  +**|
+|         |     |     |    |     |     +--Heteronotia_binoei_GU388216
+|         |     |     |    |  +--|
+|         |     |     |    |  |  +--Heteronotia_binoei_GU388217
+|         |     |     |    +--|
+|         |     |     |       +--Heteronotia_binoei_GU388220
+|         |     +-----|
+|         |           |      +--Heteronotia_binoei_GU388222
+|         |           |   +--|
+|         |           |   |  +**Heteronotia_binoei_HQ132839
+|         |           +---|
+|         |               +--Heteronotia_binoei_GU388224
+|      +--|
+|      |  |                                                  +--Heteronotia_binoei_ABTC52488
+|      |  |                                               +**|
+|      |  |                                               |  |  +--Heteronotia_binoei_GU388301
+|      |  |                                               |  +--|
+|      |  |                                               |     +**Heteronotia_binoei_GU388302
+|      |  |                                            +**|
+|      |  |                                            |  |  +--Heteronotia_binoei_HQ132831
+|      |  |                                            |  +**|
+|      |  |                                            |     +--Heteronotia_binoei_HQ132832
+|      |  |                                         +**|
+|      |  |                                         |  +**Heteronotia_binoei_GU388201
+|      |  |                                      +**|
+|      |  |                                      |  +--Heteronotia_binoei_GU388299
+|      |  |                                   +**|
+|      |  |                                   |  +--Heteronotia_binoei_HQ132833
+|      |  |                                +**|
+|      |  |                                |  +--Heteronotia_binoei_GU388298
+|      |  |                             +--|
+|      |  |                             |  +--Heteronotia_binoei_GU388200
+|      |  |                          +--|
+|      |  |                          |  |  +--Heteronotia_binoei_DQ000908
+|      |  |                          |  +--|
+|      |  |                          |     +**Heteronotia_binoei_DQ000909
+|      |  |                       +--|
+|      |  |                       |  +--Heteronotia_binoei_GU388296
+|      |  |                    +--|
+|      |  |                    |  |  +--Heteronotia_binoei_DQ000890
+|      |  |                    |  +--|
+|      |  |                    |     +--Heteronotia_binoei_HQ132841
+|      |  |                 +--|
+|      |  |                 |  |              +**Heteronotia_binoei_DQ000860
+|      |  |                 |  |           +**|
+|      |  |                 |  |           |  +--Heteronotia_binoei_DQ000869
+|      |  |                 |  |        +--|
+|      |  |                 |  |        |  +--Heteronotia_binoei_DQ000880
+|      |  |                 |  |     +--|
+|      |  |                 |  |     |  +--Heteronotia_binoei_DQ000887
+|      |  |                 |  |  +--|
+|      |  |                 |  |  |  |  +--Heteronotia_binoei_DQ000866
+|      |  |                 |  |  |  +--|
+|      |  |                 |  |  |     +--Heteronotia_binoei_DQ000882
+|      |  |                 |  +--|
+|      |  |                 |     +--Heteronotia_binoei_DQ000888
+|      |  |              +--|
+|      |  |              |  |     +--Heteronotia_binoei_DQ287370
+|      |  |              |  |  +--|
+|      |  |              |  |  |  |              +--Heteronotia_binoei_DQ287401
+|      |  |              |  |  |  |           +**|
+|      |  |              |  |  |  |           |  +--Heteronotia_binoei_DQ287582
+|      |  |              |  |  |  |        +**|
+|      |  |              |  |  |  |        |  +--Heteronotia_binoei_DQ287504
+|      |  |              |  |  |  |     +**|
+|      |  |              |  |  |  |     |  |  +--Heteronotia_binoei_DQ287522
+|      |  |              |  |  |  |     |  +**|
+|      |  |              |  |  |  |     |     +--Heteronotia_binoei_DQ287556
+|      |  |              |  |  |  |  +--|
+|      |  |              |  |  |  |  |  +--Heteronotia_binoei_DQ287573
+|      |  |              |  |  |  +**|
+|      |  |              |  |  |     |  +--Heteronotia_binoei_DQ287448
+|      |  |              |  |  |     +--|
+|      |  |              |  |  |        +--Heteronotia_binoei_DQ287492
+|      |  |              |  +--|
+|      |  |              |     +**Heteronotia_binoei_DQ287378
+|      |  |           +--|
+|      |  |           |  |                          +--Heteronotia_binoei_DQ000863
+|      |  |           |  |                       +--|
+|      |  |           |  |                       |  +--Heteronotia_binoei_HQ132881
+|      |  |           |  |                    +--|
+|      |  |           |  |                    |  +--Heteronotia_binoei_DQ000879
+|      |  |           |  |                 +**|
+|      |  |           |  |                 |  |  +--Heteronotia_binoei_DQ000873
+|      |  |           |  |                 |  +--|
+|      |  |           |  |                 |     +--Heteronotia_binoei_DQ000924
+|      |  |           |  |              +**|
+|      |  |           |  |              |  |           +--Heteronotia_binoei_DQ000895
+|      |  |           |  |              |  |        +**|
+|      |  |           |  |              |  |        |  +--Heteronotia_binoei_HQ132904
+|      |  |           |  |              |  |     +**|
+|      |  |           |  |              |  |     |  +**Heteronotia_binoei_DQ000897
+|      |  |           |  |              |  |  +**|
+|      |  |           |  |              |  |  |  |     +**Heteronotia_binoei_DQ000900
+|      |  |           |  |              |  |  |  |  +--|
+|      |  |           |  |              |  |  |  |  |  +**Heteronotia_binoei_HQ132883
+|      |  |           |  |              |  |  |  +--|
+|      |  |           |  |              |  |  |     +**Heteronotia_binoei_HQ132891
+|      |  |           |  |              |  +--|
+|      |  |           |  |              |     +--Heteronotia_binoei_DQ000910
+|      |  |           |  |           +**|
+|      |  |           |  |           |  |        +--Heteronotia_binoei_DQ000877
+|      |  |           |  |           |  |     +**|
+|      |  |           |  |           |  |     |  +--Heteronotia_binoei_DQ000921
+|      |  |           |  |           |  |  +--|
+|      |  |           |  |           |  |  |  +--Heteronotia_binoei_DQ000929
+|      |  |           |  |           |  +**|
+|      |  |           |  |           |     +--Heteronotia_binoei_DQ000915
+|      |  |           |  |        +**|
+|      |  |           |  |        |  |     +--Heteronotia_binoei_DQ000875
+|      |  |           |  |        |  |  +--|
+|      |  |           |  |        |  |  |  +--Heteronotia_binoei_DQ000905
+|      |  |           |  |        |  +**|
+|      |  |           |  |        |     +--Heteronotia_binoei_DQ000903
+|      |  |           |  |     +--|
+|      |  |           |  |     |  +--Heteronotia_binoei_DQ000874
+|      |  |           |  |  +--|
+|      |  |           |  |  |  +--Heteronotia_binoei_DQ000893
+|      |  |           |  +--|
+|      |  |           |     |     +--Heteronotia_binoei_DQ000872
+|      |  |           |     |  +--|
+|      |  |           |     |  |  |  +--Heteronotia_binoei_DQ000876
+|      |  |           |     |  |  +--|
+|      |  |           |     |  |     |        +--Heteronotia_binoei_HQ132818
+|      |  |           |     |  |     |     +--|
+|      |  |           |     |  |     |     |  |  +--Heteronotia_binoei_HQ132865
+|      |  |           |     |  |     |     |  +**|
+|      |  |           |     |  |     |     |     +--Heteronotia_binoei_HQ132910
+|      |  |           |     |  |     |  +**|
+|      |  |           |     |  |     |  |  +--Heteronotia_binoei_HQ132861
+|      |  |           |     |  |     +--|
+|      |  |           |     |  |        +--Heteronotia_binoei_HQ132863
+|      |  |           |     +--|
+|      |  |           |        |     +--Heteronotia_binoei_DQ000916
+|      |  |           |        |  +**|
+|      |  |           |        |  |  +--Heteronotia_binoei_DQ000926
+|      |  |           |        +--|
+|      |  |           |           +--Heteronotia_binoei_DQ000923
+|      |  |        +--|
+|      |  |        |  +--Heteronotia_binoei_DQ000871
+|      |  |     +--|
+|      |  |     |  +-----Heteronotia_binoei_GU388283
+|      |  |  +--|
+|      |  |  |  |                             +--Heteronotia_binoei_DQ000790
+|      |  |  |  |                          +--|
+|      |  |  |  |                          |  |     +--Heteronotia_binoei_DQ000791
+|      |  |  |  |                          |  |  +--|
+|      |  |  |  |                          |  |  |  +--Heteronotia_binoei_DQ000794
+|      |  |  |  |                          |  +--|
+|      |  |  |  |                          |     +--Heteronotia_binoei_DQ000792
+|      |  |  |  |                       +--|
+|      |  |  |  |                       |  +--Heteronotia_binoei_HQ132889
+|      |  |  |  |                    +--|
+|      |  |  |  |                    |  +--Heteronotia_binoei_GU388271
+|      |  |  |  |                 +--|
+|      |  |  |  |                 |  |  +**Heteronotia_binoei_HQ132845
+|      |  |  |  |                 |  +--|
+|      |  |  |  |                 |     +--Heteronotia_binoei_HQ646373
+|      |  |  |  |              +--|
+|      |  |  |  |              |  |  +--Heteronotia_binoei_GU388274
+|      |  |  |  |              |  +--|
+|      |  |  |  |              |     |  +--Heteronotia_binoei_GU388275
+|      |  |  |  |              |     +--|
+|      |  |  |  |              |        +--Heteronotia_binoei_HQ132838
+|      |  |  |  |           +--|
+|      |  |  |  |           |  +--Heteronotia_binoei_GU388269
+|      |  |  |  |        +--|
+|      |  |  |  |        |  |  +-----Heteronotia_binoei_GU388268
+|      |  |  |  |        |  +--|
+|      |  |  |  |        |     +--Heteronotia_binoei_GU388270
+|      |  |  |  |     +--|
+|      |  |  |  |     |  +--Heteronotia_binoei_GU388276
+|      |  |  |  |  +--|
+|      |  |  |  |  |  |                 +--Heteronotia_binoei_GU388277
+|      |  |  |  |  |  |              +--|
+|      |  |  |  |  |  |              |  +--Heteronotia_binoei_HQ132814
+|      |  |  |  |  |  |           +--|
+|      |  |  |  |  |  |           |  +--Heteronotia_binoei_HQ132837
+|      |  |  |  |  |  |        +--|
+|      |  |  |  |  |  |        |  +--Heteronotia_binoei_HQ132919
+|      |  |  |  |  |  |     +--|
+|      |  |  |  |  |  |     |  +--Heteronotia_binoei_GU388280
+|      |  |  |  |  |  |  +--|
+|      |  |  |  |  |  |  |  +--Heteronotia_binoei_GU388281
+|      |  |  |  |  |  +--|
+|      |  |  |  |  |     +--Heteronotia_binoei_GU388282
+|      |  |  |  +--|
+|      |  |  |     |       +--Heteronotia_binoei_GU388265
+|      |  |  |     |  +----|
+|      |  |  |     |  |    +--Heteronotia_binoei_HQ646375
+|      |  |  |     +--|
+|      |  |  |        |   +--Heteronotia_binoei_GU388266
+|      |  |  |        +---|
+|      |  |  |            +--Heteronotia_binoei_GU388267
+|      |  +--|
+|      |     |            +--Heteronotia_binoei_GU388204
+|      |     |         +--|
+|      |     |         |  +--Heteronotia_binoei_HQ132916
+|      |     +---------|
+|      |               +--Heteronotia_binoei_GU388205
++------|
+|      |       +----Heteronotia_binoei_GU388257
+|      |  +----|
+|      |  |    |     +--Heteronotia_binoei_GU388258
+|      |  |    +-----|
+|      |  |          +--Heteronotia_binoei_HQ132825
+|      +--|
+|         |           +--Heteronotia_binoei_GU388261
+|         |        +--|
+|         |        |  +--Heteronotia_binoei_HQ132803
+|         +--------|
+|                  |     +--Heteronotia_binoei_HQ132797
+|                  |  +--|
+|                  |  |  |  +--Heteronotia_binoei_HQ132802
+|                  |  |  +**|
+|                  |  |     +--Heteronotia_binoei_HQ132823
+|                  +--|
+|                     +--Heteronotia_binoei_HQ132830
+|
++-------------------Heteronotia_planiceps_HQ132796
+
+Tree in newick format:
+
+(Dixonius_vietnamensis_HQ646374:0.6859760401,((((((((((Heteronotia_binoei_ABTC32829:0.0044094551,Heteronotia_binoei_DQ000698:0.0065514991):0.0164813423,(((Heteronotia_binoei_DQ000730:0.0031573576,Heteronotia_binoei_DQ000743:0.0010565605):0.0008940719,Heteronotia_binoei_HQ132905:0.0033490580):0.0051573435,(Heteronotia_binoei_HQ132899:0.0021604420,Heteronotia_binoei_MKF432:0.0055727927):0.0014738655):0.0115202531):0.0412990471,(((Heteronotia_binoei_DQ000689:0.0042444291,Heteronotia_binoei_DQ000727:0.0021057953):0.0010580927,Heteronotia_binoei_DQ000690:0.0000013706):0.0000013706,(Heteronotia_binoei_DQ000701:0.0000013706,Heteronotia_binoei_HQ132879:0.0052983539):0.0010494321):0.0573202146):0.0109713202,(((((((Heteronotia_binoei_DQ000674:0.0031898508,Heteronotia_binoei_DQ000691:0.0053472407):0.0053957030,((((Heteronotia_binoei_DQ000688:0.0000013706,Heteronotia_binoei_DQ000739:0.0021006625):0.0075178506,Heteronotia_binoei_DQ000738:0.0021421826):0.0010199887,(Heteronotia_binoei_DQ000692:0.0010485449,Heteronotia_binoei_DQ000737:0.0010396695):0.0010566848):0.0010460084,Heteronotia_binoei_DQ000740:0.0000013706):0.0032040499):0.0011180464,(((((Heteronotia_binoei_HQ132846:0.0010596359,Heteronotia_binoei_HQ132855:0.0010578852):0.0021106117,Heteronotia_binoei_HQ132858:0.0031847577):0.0000013706,Heteronotia_binoei_HQ132874:0.0010544157):0.0000013706,Heteronotia_binoei_HQ132849:0.0031834686):0.0010887694,Heteronotia_binoei_HQ132850:0.0010180578):0.0052909748):0.0059433156,((Heteronotia_binoei_DQ287602:0.0010697071,(((Heteronotia_binoei_DQ287646:0.0000013706,(Heteronotia_binoei_DQ287651:0.0010718741,Heteronotia_binoei_DQ287654:0.0021606188):0.0000013706):0.0010756208,((Heteronotia_binoei_DQ287649:0.0010728692,Heteronotia_binoei_DQ287661:0.0010725496):0.0010742445,Heteronotia_binoei_DQ287687:0.0021506824):0.0010793870):0.0000013706,Heteronotia_binoei_DQ287655:0.0010721844):0.0000013706):0.0010787214,Heteronotia_binoei_DQ287648:0.0021665063):0.0094891903):0.0193572292,(Heteronotia_binoei_DQ000713:0.0072421326,((Heteronotia_binoei_DQ000728:0.0041886076,Heteronotia_binoei_HQ132914:0.0009744177):0.0063577738,Heteronotia_binoei_DQ000729:0.0020384682):0.0012852915):0.0225666312):0.0081227060,((((Heteronotia_binoei_DQ000677:0.0064187019,Heteronotia_binoei_DQ000680:0.0032346929):0.0009725517,(Heteronotia_binoei_DQ000700:0.0097746747,Heteronotia_binoei_DQ000702:0.0021553622):0.0055167190):0.0022733376,(((Heteronotia_binoei_DQ000678:0.0101028562,Heteronotia_binoei_DQ000706:0.0126228710):0.0027014649,(Heteronotia_binoei_DQ000707:0.0032447020,Heteronotia_binoei_DQ000710:0.0019554756):0.0053058165):0.0000013706,(((Heteronotia_binoei_DQ000687:0.0010332978,Heteronotia_binoei_DQ000724:0.0000013706):0.0000013706,Heteronotia_binoei_DQ000723:0.0010354612):0.0031478868,Heteronotia_binoei_DQ000721:0.0020980714):0.0064898719):0.0022316633):0.0014951561,Heteronotia_binoei_DQ000681:0.0083475892):0.0134250865):0.0186013904,(((Heteronotia_binoei_DQ000683:0.0021543253,(Heteronotia_binoei_DQ000685:0.0010352271,Heteronotia_binoei_DQ000762:0.0020633884):0.0020347564):0.0009726508,(Heteronotia_binoei_DQ000695:0.0042625168,Heteronotia_binoei_DQ000704:0.0063698768):0.0032573268):0.0070541006,Heteronotia_binoei_DQ000684:0.0060156764):0.0368908042):0.0061785009):0.0297075117,((Heteronotia_binoei_DQ000679:0.0551657494,(Heteronotia_binoei_GU388234:0.0474064236,Heteronotia_binoei_GU388236:0.0522368801):0.0157061820):0.0109578243,(Heteronotia_binoei_GU388237:0.0428895602,((Heteronotia_binoei_GU388238:0.0010692127,Heteronotia_binoei_HQ132799:0.0010690777):0.0000013706,Heteronotia_binoei_HQ132800:0.0010702470):0.0405502697):0.0297846544):0.0468307902):0.0217605480,((Heteronotia_binoei_GU388254:0.0030180402,Heteronotia_binoei_GU388255:0.0000013706):0.0708007318,Heteronotia_binoei_GU388256:0.0756508755):0.0444519634):0.0054299603,(Heteronotia_binoei_DQ000694:0.0486854737,((((Heteronotia_binoei_DQ000696:0.0010694168,Heteronotia_binoei_DQ000761:0.0032213023):0.0000013706,Heteronotia_binoei_DQ000697:0.0010554396):0.0116070359,((Heteronotia_binoei_DQ000749:0.0020904501,Heteronotia_binoei_DQ000763:0.0033000432):0.0034508743,(Heteronotia_binoei_DQ000753:0.0042872342,Heteronotia_binoei_DQ000760:0.0020994405):0.0055172158):0.0052550034):0.0140364815,((((((Heteronotia_binoei_DQ000717:0.0010389778,Heteronotia_binoei_DQ000755:0.0010323253):0.0000013706,((Heteronotia_binoei_DQ000765:0.0010383944,Heteronotia_binoei_GU388243:0.0010362821):0.0020836608,Heteronotia_binoei_DQ000766:0.0000013706):0.0010380694):0.0000013706,Heteronotia_binoei_DQ000754:0.0010410555):0.0000013706,Heteronotia_binoei_DQ000720:0.0031434149):0.0034087963,((((Heteronotia_binoei_DQ000719:0.0020929166,Heteronotia_binoei_DQ000756:0.0000013706):0.0021513035,Heteronotia_binoei_HQ132918:0.0021439890):0.0009935466,Heteronotia_binoei_DQ000757:0.0010457665):0.0032311030,(Heteronotia_binoei_GU388248:0.0054285387,(Heteronotia_binoei_GU388249:0.0010418694,Heteronotia_binoei_HQ132840:0.0010309692):0.0022620633):0.0008981689):0.0039448703):0.0011595806,Heteronotia_binoei_GU388252:0.0045678596):0.0208223512):0.0114504187):0.0653274305):0.0276281489,(((Heteronotia_binoei_GU388207:0.0349815354,Heteronotia_binoei_HQ132915:0.0236436374):0.0030340893,(Heteronotia_binoei_GU388208:0.0062175324,(Heteronotia_binoei_HQ132827:0.0000013706,Heteronotia_binoei_HQ132828:0.0021317523):0.0034092560):0.0396615782):0.1252564582,(((((Heteronotia_binoei_GU388209:0.0032744189,Heteronotia_binoei_HQ132835:0.0010311344):0.0011038969,((Heteronotia_binoei_GU388210:0.0021438766,Heteronotia_binoei_GU388212:0.0062782834):0.0000013706,Heteronotia_binoei_HQ132917:0.0043167122):0.0000013706):0.0033845918,Heteronotia_binoei_GU388211:0.0097001126):0.0081862368,(((Heteronotia_binoei_GU388213:0.0021469074,(Heteronotia_binoei_GU388214:0.0010733167,Heteronotia_binoei_GU388216:0.0010709178):0.0000013706):0.0010203081,Heteronotia_binoei_GU388217:0.0044339986):0.0114807660,Heteronotia_binoei_GU388220:0.0148710235):0.0072938938):0.0595677131,((Heteronotia_binoei_GU388222:0.0031048424,Heteronotia_binoei_HQ132839:0.0000013706):0.0138182167,Heteronotia_binoei_GU388224:0.0059551342):0.0548547246):0.0793387790):0.0071545175):0.0151922373,(((((((((((((((((Heteronotia_binoei_ABTC52488:0.0031239681,(Heteronotia_binoei_GU388301:0.0010394904,Heteronotia_binoei_GU388302:0.0000013706):0.0010352494):0.0000013706,(Heteronotia_binoei_HQ132831:0.0020808627,Heteronotia_binoei_HQ132832:0.0031244655):0.0000013706):0.0000013706,Heteronotia_binoei_GU388201:0.0000013706):0.0000013706,Heteronotia_binoei_GU388299:0.0010324918):0.0000013706,Heteronotia_binoei_HQ132833:0.0010328743):0.0000013706,Heteronotia_binoei_GU388298:0.0010342293):0.0000013706,Heteronotia_binoei_GU388200:0.0020645094):0.0047840909,(Heteronotia_binoei_DQ000908:0.0020750862,Heteronotia_binoei_DQ000909:0.0000013706):0.0025664932):0.0158747687,Heteronotia_binoei_GU388296:0.0250888800):0.0023688105,(Heteronotia_binoei_DQ000890:0.0011858033,Heteronotia_binoei_HQ132841:0.0019825713):0.0272504576):0.0194935178,(((((Heteronotia_binoei_DQ000860:0.0000013706,Heteronotia_binoei_DQ000869:0.0021260419):0.0000013706,Heteronotia_binoei_DQ000880:0.0021205461):0.0040959908,Heteronotia_binoei_DQ000887:0.0034409317):0.0021417352,(Heteronotia_binoei_DQ000866:0.0010702483,Heteronotia_binoei_DQ000882:0.0010749174):0.0035008763):0.0174980634,Heteronotia_binoei_DQ000888:0.0280012966):0.0055174252):0.0133158041,((Heteronotia_binoei_DQ287370:0.0010958890,(((((Heteronotia_binoei_DQ287401:0.0010985682,Heteronotia_binoei_DQ287582:0.0022145946):0.0000013706,Heteronotia_binoei_DQ287504:0.0011007716):0.0000013706,(Heteronotia_binoei_DQ287522:0.0010991560,Heteronotia_binoei_DQ287556:0.0011012061):0.0000013706):0.0000013706,Heteronotia_binoei_DQ287573:0.0022037613):0.0033107797,(Heteronotia_binoei_DQ287448:0.0010955426,Heteronotia_binoei_DQ287492:0.0010987327):0.0011017707):0.0000013706):0.0010962241,Heteronotia_binoei_DQ287378:0.0000013706):0.0294207523):0.0017033380,(((((((((Heteronotia_binoei_DQ000863:0.0032487814,Heteronotia_binoei_HQ132881:0.0010738533):0.0010154735,Heteronotia_binoei_DQ000879:0.0044098765):0.0033488709,(Heteronotia_binoei_DQ000873:0.0010773305,Heteronotia_binoei_DQ000924:0.0021760776):0.0010862666):0.0000013706,((((Heteronotia_binoei_DQ000895:0.0021690142,Heteronotia_binoei_HQ132904:0.0010840413):0.0000013706,Heteronotia_binoei_DQ000897:0.0000013706):0.0000013706,((Heteronotia_binoei_DQ000900:0.0000013706,Heteronotia_binoei_HQ132883:0.0000013706):0.0010831199,Heteronotia_binoei_HQ132891:0.0000013706):0.0010808704):0.0000013706,Heteronotia_binoei_DQ000910:0.0021583547):0.0010827449):0.0000013706,(((Heteronotia_binoei_DQ000877:0.0021720919,Heteronotia_binoei_DQ000921:0.0021750346):0.0000013706,Heteronotia_binoei_DQ000929:0.0010819254):0.0010812585,Heteronotia_binoei_DQ000915:0.0021710194):0.0000013706):0.0000013706,((Heteronotia_binoei_DQ000875:0.0055437903,Heteronotia_binoei_DQ000905:0.0044221304):0.0010452052,Heteronotia_binoei_DQ000903:0.0010818235):0.0000013706):0.0000027543,Heteronotia_binoei_DQ000874:0.0032626056):0.0027110223,Heteronotia_binoei_DQ000893:0.0016523093):0.0179181634,((Heteronotia_binoei_DQ000872:0.0029084423,(Heteronotia_binoei_DQ000876:0.0094120684,(((Heteronotia_binoei_HQ132818:0.0010524946,(Heteronotia_binoei_HQ132865:0.0010518622,Heteronotia_binoei_HQ132910:0.0010529123):0.0000013706):0.0010486754,Heteronotia_binoei_HQ132861:0.0021256414):0.0000013706,Heteronotia_binoei_HQ132863:0.0010445396):0.0169920812):0.0058537124):0.0048941043,((Heteronotia_binoei_DQ000916:0.0031213756,Heteronotia_binoei_DQ000926:0.0010338786):0.0000013706,Heteronotia_binoei_DQ000923:0.0031251497):0.0029350342):0.0128808596):0.0156953082):0.0154580233,Heteronotia_binoei_DQ000871:0.0313514047):0.0179010915,Heteronotia_binoei_GU388283:0.0699760210):0.0392502235,((((((((((Heteronotia_binoei_DQ000790:0.0104721480,((Heteronotia_binoei_DQ000791:0.0042909133,Heteronotia_binoei_DQ000794:0.0020808534):0.0035172327,Heteronotia_binoei_DQ000792:0.0096806989):0.0040961038):0.0031849687,Heteronotia_binoei_HQ132889:0.0087906242):0.0011538450,Heteronotia_binoei_GU388271:0.0062502990):0.0024417404,(Heteronotia_binoei_HQ132845:0.0000013706,Heteronotia_binoei_HQ646373:0.0021679521):0.0156135817):0.0162305450,(Heteronotia_binoei_GU388274:0.0011676306,(Heteronotia_binoei_GU388275:0.0011206608,Heteronotia_binoei_HQ132838:0.0020156879):0.0052942762):0.0159176838):0.0150671258,Heteronotia_binoei_GU388269:0.0305492312):0.0025378132,(Heteronotia_binoei_GU388268:0.0706165590,Heteronotia_binoei_GU388270:0.0441129936):0.0034971399):0.0073268228,Heteronotia_binoei_GU388276:0.0448827318):0.0099946439,((((((Heteronotia_binoei_GU388277:0.0022377227,Heteronotia_binoei_HQ132814:0.0010820092):0.0038859237,Heteronotia_binoei_HQ132837:0.0039099663):0.0141144249,Heteronotia_binoei_HQ132919:0.0073910359):0.0028526138,Heteronotia_binoei_GU388280:0.0143421821):0.0180145833,Heteronotia_binoei_GU388281:0.0212244985):0.0078211224,Heteronotia_binoei_GU388282:0.0275108060):0.0227792754):0.0298338869,((Heteronotia_binoei_GU388265:0.0295534080,Heteronotia_binoei_HQ646375:0.0319640176):0.0601334158,(Heteronotia_binoei_GU388266:0.0171887148,Heteronotia_binoei_GU388267:0.0305937300):0.0538485297):0.0352725860):0.0184730242):0.0060720509,((Heteronotia_binoei_GU388204:0.0314912563,Heteronotia_binoei_HQ132916:0.0031971273):0.0011661748,Heteronotia_binoei_GU388205:0.0021671719):0.1146125052):0.0052800424):0.0225013853,((Heteronotia_binoei_GU388257:0.0675687467,(Heteronotia_binoei_GU388258:0.0028749817,Heteronotia_binoei_HQ132825:0.0015421522):0.0696187778):0.0619137963,((Heteronotia_binoei_GU388261:0.0021661190,Heteronotia_binoei_HQ132803:0.0021936131):0.0111835231,((Heteronotia_binoei_HQ132797:0.0032414897,(Heteronotia_binoei_HQ132802:0.0010796740,Heteronotia_binoei_HQ132823:0.0010833696):0.0000013706):0.0015379350,Heteronotia_binoei_HQ132830:0.0073304205):0.0257875612):0.1139669495):0.0094397565):0.0807044550,Heteronotia_planiceps_HQ132796:0.2301428990);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t data_training/dna_M8703_215_1038.phy/output_files/iqtree/inference/pars_5.treefile -m "TN{20.0697,9.23369}+F{0.343283,0.354003,0.091761,0.210954}+I{0.318896}+R4{0.229105,0.190844,0.211166,1.00499,0.199048,2.60664,0.0417849,5.38976}" --length 1038
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s Data/dna_M8703_215_1038.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s Data/dna_M8703_215_1038.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed Sep 24 11:56:16 2025
+Total CPU time used: 563.84 seconds (0h:9m:23s)
+Total wall-clock time used: 566.439 seconds (0h:9m:26s)
+

@@ -1,0 +1,700 @@
+IQ-TREE 3.0.1 built Sep 18 2025
+
+Input file name: Data/dna_M9142_235_1854.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 235 sequences with 1854 nucleotide sites
+Number of constant sites: 972 (= 52.4272% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 972 (= 52.4272% of all sites)
+Number of parsimony informative sites: 500
+Number of distinct site patterns: 1033
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TVM+F+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TVM+F+R4         -18824.574   38609.147 +   0.0556   38945.462 +    0.161   41261.196 +    0.653
+TVM+F+I+R4       -18821.991   38605.982 +    0.271   38943.944 +    0.345   41263.555 +    0.201
+GTR+F+R4         -18822.483   38606.966 +    0.165   38944.928 +    0.211   41264.539 +    0.123
+GTR+F+I+R4       -18820.360   38604.720 +    0.508   38944.334 +    0.283   41267.818 -   0.0238
+K3Pu+F+R4        -18863.749   38683.499 - 3.98e-18   39016.534 - 5.95e-17   41324.497 - 1.17e-14
+K3Pu+F+I+R4      -18861.151   38680.303 - 1.97e-17   39014.975 -  1.3e-16   41326.826 - 3.66e-15
+TIM+F+R4         -18861.232   38680.464 - 1.81e-17   39015.136 -  1.2e-16   41326.987 - 3.38e-15
+TIM+F+I+R4       -18859.292   38678.584 - 4.64e-17   39014.898 - 1.35e-16   41330.632 - 5.46e-16
+TPM3u+F+R4       -18867.862   38691.725 - 6.51e-20   39024.760 - 9.73e-19   41332.723 - 1.92e-16
+TPM3u+F+I+R4     -18864.950   38687.901 -  4.4e-19   39022.573 - 2.91e-18   41334.424 - 8.19e-17
+TIM3+F+R4        -18865.729   38689.458 - 2.02e-19   39024.130 - 1.33e-18   41335.981 - 3.76e-17
+TIM3+F+I+R4      -18863.301   38686.603 - 8.43e-19   39022.917 - 2.45e-18   41338.651 -  9.9e-18
+HKY+F+R4         -18933.872   38821.744 -  3.8e-48   39153.148 - 1.29e-46   41457.217 - 1.78e-43
+HKY+F+I+R4       -18931.241   38818.483 - 1.94e-47   39151.519 -  2.9e-46   41459.481 - 5.72e-44
+TN+F+R4          -18931.427   38818.855 - 1.61e-47   39151.890 - 2.41e-46   41459.853 - 4.75e-44
+TVM+R4           -18935.840   38825.681 - 5.31e-49   39157.085 -  1.8e-47   41461.154 - 2.48e-44
+TVMe+R4          -18935.883   38825.765 - 5.09e-49   39157.170 - 1.72e-47   41461.238 - 2.38e-44
+TVMe+R4          -18935.883   38825.765 - 5.09e-49   39157.170 - 1.72e-47   41461.238 - 2.38e-44
+TVM+I+R4         -18932.562   38821.125 - 5.18e-48   39154.160 - 7.75e-47   41462.123 - 1.53e-44
+TVMe+I+R4        -18932.576   38821.153 - 5.11e-48   39154.188 - 7.64e-47   41462.151 - 1.51e-44
+TVMe+I+R4        -18932.576   38821.153 - 5.11e-48   39154.188 - 7.64e-47   41462.151 - 1.51e-44
+TPM2u+F+R4       -18932.632   38821.264 - 4.83e-48   39154.299 - 7.23e-47   41462.262 - 1.43e-44
+TN+F+I+R4        -18929.338   38816.676 - 4.79e-47   39151.348 - 3.16e-46   41463.199 - 8.92e-45
+TPM2u+F+I+R4     -18929.910   38817.820 -  2.7e-47   39152.493 - 1.78e-46   41464.344 - 5.03e-45
+TIM2+F+R4        -18929.958   38817.917 - 2.58e-47   39152.589 -  1.7e-46   41464.440 -  4.8e-45
+TIM2+F+I+R4      -18927.961   38815.923 - 6.98e-47   39152.237 - 2.03e-46   41467.971 - 8.21e-46
+GTR+R4           -18935.778   38827.555 - 2.08e-49   39160.591 - 3.11e-48   41468.553 - 6.13e-46
+SYM+R4           -18935.783   38827.566 - 2.07e-49   39160.602 - 3.09e-48   41468.564 -  6.1e-46
+SYM+R4           -18935.783   38827.566 - 2.07e-49   39160.602 - 3.09e-48   41468.564 -  6.1e-46
+GTR+I+R4         -18932.536   38823.071 - 1.96e-48   39157.744 - 1.29e-47   41469.595 - 3.64e-46
+SYM+I+R4         -18932.539   38823.079 - 1.95e-48   39157.751 - 1.29e-47   41469.602 - 3.63e-46
+SYM+I+R4         -18932.539   38823.079 - 1.95e-48   39157.751 - 1.29e-47   41469.602 - 3.63e-46
+K3Pu+R4          -18949.926   38849.852 -    3e-54   39178.009 - 5.14e-52   41474.275 - 3.51e-47
+K3P+R4           -18949.932   38849.865 - 2.98e-54   39178.022 -  5.1e-52   41474.288 - 3.49e-47
+K3P+R4           -18949.932   38849.865 - 2.98e-54   39178.022 -  5.1e-52   41474.288 - 3.49e-47
+K3Pu+I+R4        -18947.408   38846.817 - 1.37e-53   39176.595 - 1.04e-51   41476.765 - 1.01e-47
+K3P+I+R4         -18947.414   38846.829 - 1.36e-53   39176.606 - 1.04e-51   41476.777 -    1e-47
+K3P+I+R4         -18947.414   38846.829 - 1.36e-53   39176.606 - 1.04e-51   41476.777 -    1e-47
+TIM+R4           -18949.787   38851.575 - 1.27e-54   39181.352 - 9.65e-53   41481.523 - 9.36e-49
+TIMe+R4          -18949.832   38851.665 - 1.21e-54   39181.443 - 9.23e-53   41481.613 - 8.95e-49
+TIMe+R4          -18949.832   38851.665 - 1.21e-54   39181.443 - 9.23e-53   41481.613 - 8.95e-49
+TIM+I+R4         -18947.237   38848.474 - 5.97e-54   39179.878 - 2.02e-52   41483.947 - 2.79e-49
+TIMe+I+R4        -18947.240   38848.480 - 5.95e-54   39179.884 - 2.01e-52   41483.953 - 2.78e-49
+TIMe+I+R4        -18947.240   38848.480 - 5.95e-54   39179.884 - 2.01e-52   41483.953 - 2.78e-49
+TPM3+R4          -18981.235   38912.469 - 7.57e-68   39240.626 -  1.3e-65   41536.892 - 8.87e-61
+TPM3+R4          -18981.235   38912.469 - 7.57e-68   39240.626 -  1.3e-65   41536.892 - 8.87e-61
+TPM3u+R4         -18981.239   38912.477 - 7.54e-68   39240.634 - 1.29e-65   41536.900 - 8.84e-61
+TPM3u+I+R4       -18978.269   38908.538 - 5.41e-67   39238.315 - 4.12e-65   41538.485 -    4e-61
+TPM3+I+R4        -18978.270   38908.540 -  5.4e-67   39238.317 - 4.12e-65   41538.488 -    4e-61
+TPM3+I+R4        -18978.270   38908.540 -  5.4e-67   39238.317 - 4.12e-65   41538.488 -    4e-61
+TIM3+R4          -18981.197   38914.394 - 2.89e-68   39244.171 - 2.21e-66   41544.342 - 2.14e-62
+TIM3e+R4         -18981.314   38914.628 - 2.57e-68   39244.406 - 1.96e-66   41544.576 -  1.9e-62
+TIM3e+R4         -18981.314   38914.628 - 2.57e-68   39244.406 - 1.96e-66   41544.576 -  1.9e-62
+TIM3+I+R4        -18978.232   38910.465 - 2.06e-67   39241.869 - 6.98e-66   41545.938 - 9.63e-63
+TIM3e+I+R4       -18978.267   38910.534 - 1.99e-67   39241.938 - 6.74e-66   41546.007 - 9.31e-63
+TIM3e+I+R4       -18978.267   38910.534 - 1.99e-67   39241.938 - 6.74e-66   41546.007 - 9.31e-63
+TPM2+R4          -18990.396   38930.792 - 7.95e-72   39258.948 - 1.36e-69   41555.215 - 9.32e-65
+TPM2+R4          -18990.396   38930.792 - 7.95e-72   39258.948 - 1.36e-69   41555.215 - 9.32e-65
+TPM2u+R4         -18990.397   38930.794 - 7.94e-72   39258.951 - 1.36e-69   41555.217 - 9.31e-65
+TPM2+I+R4        -18987.351   38926.702 - 6.15e-71   39256.479 - 4.69e-69   41556.650 - 4.55e-65
+TPM2+I+R4        -18987.351   38926.702 - 6.15e-71   39256.479 - 4.69e-69   41556.650 - 4.55e-65
+TPM2u+I+R4       -18987.355   38926.709 - 6.12e-71   39256.487 - 4.67e-69   41556.657 - 4.53e-65
+HKY+R4           -18995.945   38939.891 - 8.41e-74   39266.432 - 3.24e-71   41558.788 - 1.56e-65
+K2P+R4           -18995.961   38939.921 - 8.28e-74   39266.462 - 3.19e-71   41558.819 - 1.54e-65
+K2P+R4           -18995.961   38939.921 - 8.28e-74   39266.462 - 3.19e-71   41558.819 - 1.54e-65
+HKY+I+R4         -18993.295   38936.590 - 4.38e-73   39264.747 - 7.51e-71   41561.013 - 5.13e-66
+K2P+I+R4         -18993.308   38936.616 - 4.32e-73   39264.772 - 7.42e-71   41561.039 - 5.07e-66
+K2P+I+R4         -18993.308   38936.616 - 4.32e-73   39264.772 - 7.42e-71   41561.039 - 5.07e-66
+TIM2+R4          -18990.371   38932.742 -    3e-72   39262.520 - 2.29e-70   41562.690 - 2.22e-66
+TIM2e+R4         -18990.428   38932.856 - 2.83e-72   39262.634 - 2.16e-70   41562.804 -  2.1e-66
+TIM2e+R4         -18990.428   38932.856 - 2.83e-72   39262.634 - 2.16e-70   41562.804 -  2.1e-66
+TIM2+I+R4        -18987.282   38928.565 - 2.42e-71   39259.969 - 8.19e-70   41564.038 - 1.13e-66
+TIM2e+I+R4       -18987.358   38928.717 - 2.24e-71   39260.121 - 7.59e-70   41564.190 - 1.05e-66
+TIM2e+I+R4       -18987.358   38928.717 - 2.24e-71   39260.121 - 7.59e-70   41564.190 - 1.05e-66
+TN+R4            -18995.764   38941.529 - 3.71e-74   39269.685 - 6.36e-72   41565.951 - 4.34e-67
+TNe+R4           -18995.799   38941.599 - 3.58e-74   39269.756 - 6.14e-72   41566.022 - 4.19e-67
+TNe+R4           -18995.799   38941.599 - 3.58e-74   39269.756 - 6.14e-72   41566.022 - 4.19e-67
+TN+I+R4          -18993.131   38938.261 -  1.9e-73   39268.039 - 1.45e-71   41568.209 -  1.4e-67
+TNe+I+R4         -18993.140   38938.279 - 1.88e-73   39268.057 - 1.44e-71   41568.227 - 1.39e-67
+TNe+I+R4         -18993.140   38938.279 - 1.88e-73   39268.057 - 1.44e-71   41568.227 - 1.39e-67
+F81+R4           -20309.574   41565.147 -        0   41890.078 -        0   44178.520 -        0
+JC+R4            -20309.668   41565.336 -        0   41890.267 -        0   44178.709 -        0
+JC+R4            -20309.668   41565.336 -        0   41890.267 -        0   44178.709 -        0
+F81+I+R4         -20306.990   41561.979 -        0   41888.520 -        0   44180.877 -        0
+JC+I+R4          -20307.023   41562.047 -        0   41888.588 -        0   44180.945 -        0
+JC+I+R4          -20307.023   41562.047 -        0   41888.588 -        0   44180.945 -        0
+JC+R5            -20308.470   41566.939 -        0   41895.096 -        0   44191.362 -        0
+JC+I+R3          -20320.288   41584.576 -        0   41907.901 -        0   44192.424 -        0
+JC+I+R5          -20306.795   41565.589 -        0   41895.367 -        0   44195.537 -        0
+JC+R3            -20336.987   41615.973 -        0   41937.698 -        0   44218.296 -        0
+F81+F+R4         -20356.366   41664.733 -        0   41994.510 -        0   44294.681 -        0
+F81+F+I+R4       -20354.010   41662.020 -        0   41993.424 -        0   44297.493 -        0
+JC+I+R2          -20405.825   41751.649 -        0   42071.779 -        0   44348.446 -        0
+JC+R2            -20540.187   42018.374 -        0   42336.914 -        0   44609.646 -        0
+JC+I+G4          -20551.063   42040.126 -        0   42358.667 -        0   44631.398 -        0
+JC+G4            -20586.076   42108.152 -        0   42425.108 -        0   44693.899 -        0
+JC+I             -21220.312   43376.625 -        0   43693.581 -        0   45962.372 -        0
+JC               -21982.364   44898.729 -        0   45214.105 -        0   47478.951 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TVM+F+R4
+
+Rate parameter R:
+
+  A-C: 2.0026
+  A-G: 8.9054
+  A-T: 0.3014
+  C-G: 1.0150
+  C-T: 8.9054
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3258
+  pi(C) = 0.1709
+  pi(G) = 0.1843
+  pi(T) = 0.319
+
+Rate matrix Q:
+
+  A   -0.8294    0.1365    0.6546   0.03835
+  C    0.2602    -1.468    0.0746     1.133
+  G     1.157   0.06917    -1.353    0.1272
+  T   0.03916    0.6069    0.0735   -0.7196
+
+Model of rate heterogeneity: FreeRate with 4 categories
+Site proportion and rates:  (0.6412,0.1799) (0.2674,1.186) (0.0691,4.508) (0.02223,11.51)
+
+ Category  Relative_rate  Proportion
+  1         0.1799         0.6412
+  2         1.186          0.2674
+  3         4.508          0.0691
+  4         11.51          0.02223
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -18824.3294 (s.e. 646.7584)
+Unconstrained log-likelihood (without tree): -10591.9483
+Number of free parameters (#branches + #model parameters): 480
+Akaike information criterion (AIC) score: 38608.6588
+Corrected Akaike information criterion (AICc) score: 38944.9735
+Bayesian information criterion (BIC) score: 41260.7072
+
+Total tree length (sum of branch lengths): 1.9182
+Sum of internal branch lengths: 0.4185 (21.8163% of tree length)
+
+WARNING: 57 near-zero internal branches (<0.0005) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Abietinella_abietina' is drawn at root
+
++--Abietinella_abietina
+|
+|                                               +--Acrocladium_auriculatum
+|                                            +--|
+|                                            |  +--Oxyrrhynchium_rugosipes
+|                                         +--|
+|                                         |  |     +---Baldwiniella_kealeensis
+|                                         |  |  +--|
+|                                         |  |  |  |     +--Catagonium_nitens
+|                                         |  |  |  |  +--|
+|                                         |  |  |  |  |  |  +--Fauriella_tenuis
+|                                         |  |  |  |  |  +--|
+|                                         |  |  |  |  |     +--Isocladiella_surcularis
+|                                         |  |  |  +**|
+|                                         |  |  |     |     +--Eurhynchiella_acanthophylla
+|                                         |  |  |     |  +**|
+|                                         |  |  |     |  |  +--Stereophyllum_radiculosum
+|                                         |  |  |     +--|
+|                                         |  |  |        +--Lembophyllum_divulsum
+|                                         |  +**|
+|                                         |     +--Pseudotrachypus_martinicensis
+|                                      +--|
+|                                      |  +--Pterobryella_praenitens
+|                                   +--|
+|                                   |  |     +----Chaetomitriopsis_glaucocarpa
+|                                   |  |  +--|
+|                                   |  |  |  |     +--Pseudoleskea_andina
+|                                   |  |  |  |  +--|
+|                                   |  |  |  |  |  +--Sauloma_tenella
+|                                   |  |  |  +--|
+|                                   |  |  |     +------Trachyloma_planifolium
+|                                   |  +**|
+|                                   |     |        +--Cyptodontopsis_obtusifolia
+|                                   |     |     +--|
+|                                   |     |     |  +--Pseudoleskeella_tectorum
+|                                   |     |  +--|
+|                                   |     |  |  |     +--Cyrto-hypnum_schistocalyx
+|                                   |     |  |  |  +--|
+|                                   |     |  |  |  |  +--Spiridentopsis_longissima
+|                                   |     |  |  +**|
+|                                   |     |  |     +--Dendropogonella_rufescens
+|                                   |     +--|
+|                                   |        |  +--Dendrocryphaea_cuspidata
+|                                   |        +**|
+|                                   |           +--Leucomium_strumosum
+|                                +**|
+|                                |  |     +**Anomodon_viticulosus
+|                                |  |  +--|
+|                                |  |  |  +--Helodium_blandowii
+|                                |  +--|
+|                                |     |  +--Calliergonella_cuspidata
+|                                |     +--|
+|                                |        +--Leptopterigynandrum_austro-alpinum
+|                             +**|
+|                             |  |                    +-------------Benitotania_elimbata
+|                             |  |                 +--|
+|                             |  |                 |  +-------------Cryptoleptodon_longisetus
+|                             |  |              +--|
+|                             |  |              |  |     +---------Horikawaea_redfearnii
+|                             |  |              |  |  +--|
+|                             |  |              |  |  |  |     +----------Levierella_fabroniacea
+|                             |  |              |  |  |  +-----|
+|                             |  |              |  |  |        +---------Thamniopsis_incurva
+|                             |  |              |  +--|
+|                             |  |              |     +----Schofieldiella_micans_Isolate
+|                             |  |           +--|
+|                             |  |           |  +--------------------------Schimperobryum_splendidissimum
+|                             |  |        +--|
+|                             |  |        |  |           +-----Brotherella_recurvans
+|                             |  |        |  |        +--|
+|                             |  |        |  |        |  |  +------Pterobryopsis_stolonacea
+|                             |  |        |  |        |  +--|
+|                             |  |        |  |        |     +-------Radulina_borbonica
+|                             |  |        |  |     +--|
+|                             |  |        |  |     |  |     +----------------------------------------Clastobryopsis_planula
+|                             |  |        |  |     |  |  +--|
+|                             |  |        |  |     |  |  |  +-----Pylaisia_polyantha
+|                             |  |        |  |     |  +--|
+|                             |  |        |  |     |     |     +------------Hypnobartlettia_fontana
+|                             |  |        |  |     |     |  +--|
+|                             |  |        |  |     |     |  |  +------------Rhynchostegium_serrulatum
+|                             |  |        |  |     |     +--|
+|                             |  |        |  |     |        +--------Mesonodon_flavescens
+|                             |  |        |  |  +--|
+|                             |  |        |  |  |  |   +-------------------------------------Gradsteinia_andicola
+|                             |  |        |  |  |  +---|
+|                             |  |        |  |  |      +-------Orthostichella_pentasticha
+|                             |  |        |  +--|
+|                             |  |        |     +--------------Cyptodon_muelleri
+|                             |  |     +--|
+|                             |  |     |  |      +--Brachelyma_subulatum
+|                             |  |     |  |  +---|
+|                             |  |     |  |  |   +--Dimerodontium_balansae
+|                             |  |     |  +--|
+|                             |  |     |     +--Hamatocaulis_vernicosus
+|                             |  |  +--|
+|                             |  |  |  |                 +--Camptochaete_arbuscula
+|                             |  |  |  |              +--|
+|                             |  |  |  |              |  +--Pterogonidium_pulchellum
+|                             |  |  |  |           +--|
+|                             |  |  |  |           |  +----Orthostichopsis_tetragona
+|                             |  |  |  |        +--|
+|                             |  |  |  |        |  +--Horridohypnum_mexicanum
+|                             |  |  |  |     +--|
+|                             |  |  |  |     |  |  +---Juratzkaeella_sinensis
+|                             |  |  |  |     |  +--|
+|                             |  |  |  |     |     +------Symphysodontella_cylindracea
+|                             |  |  |  |  +**|
+|                             |  |  |  |  |  +--Pinnatella_piniformis
+|                             |  |  |  +--|
+|                             |  |  |     |  +--Myurium_hochstetteri
+|                             |  |  |     +--|
+|                             |  |  |        +---Noguchiodendron_sphaerocarpum
+|                             |  +--|
+|                             |     |  +---Dichelyma_falcatum
+|                             |     +--|
+|                             |        |     +--Herpetineuron_toccoae
+|                             |        |  +--|
+|                             |        |  |  |     +--Orthotheciella_varia
+|                             |        |  |  |  +--|
+|                             |        |  |  |  |  +**Steerecleus_serrulatus
+|                             |        |  |  +**|
+|                             |        |  |     +--Plagiothecium_cavifolium
+|                             |        +--|
+|                             |           +--Pilotrichopsis_dentata
+|                          +--|
+|                          |  |                          +--Amblystegium_serpens
+|                          |  |                       +**|
+|                          |  |                       |  +--Erythrodontium_longisetum
+|                          |  |                    +**|
+|                          |  |                    |  +**Orthothecium_chryseum
+|                          |  |                 +**|
+|                          |  |                 |  |  +**Crosbya_straminea
+|                          |  |                 |  +--|
+|                          |  |                 |     +--Hypnum_cupressiforme
+|                          |  |              +--|
+|                          |  |              |  +--Vittia_pachyloma
+|                          |  |           +--|
+|                          |  |           |  |  +--Habrodon_perpusillus
+|                          |  |           |  +--|
+|                          |  |           |     +--Pseudocryphaea_domingensis
+|                          |  |        +--|
+|                          |  |        |  +--Campylophyllum_halleri
+|                          |  |     +--|
+|                          |  |     |  +--Cratoneuropsis_relaxa
+|                          |  |  +--|
+|                          |  |  |  |  +--Taxiphyllopsis_iwatsukii
+|                          |  |  |  +--|
+|                          |  |  |     +--Tomentypnum_falcifolium
+|                          |  +--|
+|                          |     +--Caribaeohypnum_polypterum
+|                       +--|
+|                       |  |                                             +---Acroporium_pungens
+|                       |  |                                          +--|
+|                       |  |                                          |  |        +--Aptychopsis_pyrrophylla
+|                       |  |                                          |  |     +**|
+|                       |  |                                          |  |     |  |     +--Cirriphyllum_cirrosum
+|                       |  |                                          |  |     |  |  +--|
+|                       |  |                                          |  |     |  |  |  |        +--Conardia_compacta
+|                       |  |                                          |  |     |  |  |  |     +--|
+|                       |  |                                          |  |     |  |  |  |     |  +--Hygrohypnum_smithii
+|                       |  |                                          |  |     |  |  |  |  +--|
+|                       |  |                                          |  |     |  |  |  |  |  +--Penzigiella_cordata
+|                       |  |                                          |  |     |  |  |  +--|
+|                       |  |                                          |  |     |  |  |     +--Dozya_japonica
+|                       |  |                                          |  |     |  +**|
+|                       |  |                                          |  |     |     +---Warburgiella_leucocytus
+|                       |  |                                          |  |  +**|
+|                       |  |                                          |  |  |  |  +--Schwetschkea_grateloupii
+|                       |  |                                          |  |  |  +--|
+|                       |  |                                          |  |  |     +--Sphaerotheciella_sphaerocarpa
+|                       |  |                                          |  +--|
+|                       |  |                                          |     +--Pterogonium_gracile
+|                       |  |                                      +---|
+|                       |  |                                      |   |        +------Paranapiacabaea_paulista
+|                       |  |                                      |   |     +**|
+|                       |  |                                      |   |     |  +-------Pseudocalliergon_angustifolium
+|                       |  |                                      |   |  +--|
+|                       |  |                                      |   |  |  +-----Rhizogonium_pennatum
+|                       |  |                                      |   +--|
+|                       |  |                                      |      +-------------Rauiella_lagoensis
+|                       |  |                                   +--|
+|                       |  |                                   |  |     +--Isodrepanium_lentulum
+|                       |  |                                   |  |  +--|
+|                       |  |                                   |  |  |  +--Wijkia_extenuata
+|                       |  |                                   |  +--|
+|                       |  |                                   |     +----Pterigynandrum_filiforme
+|                       |  |                                +--|
+|                       |  |                                |  |  +--Circulifolium_microdendron
+|                       |  |                                |  +--|
+|                       |  |                                |     +-----Rhaphidostichum_schwaneckeanum
+|                       |  |                             +--|
+|                       |  |                             |  +----Rutenbergia_madagassa
+|                       |  |                          +**|
+|                       |  |                          |  |               +--Aptychella_proligera
+|                       |  |                          |  |           +---|
+|                       |  |                          |  |           |   +--Clastobryum_tenuirameum
+|                       |  |                          |  |        +--|
+|                       |  |                          |  |        |  +----------Colobodontium_vulpinum
+|                       |  |                          |  |     +--|
+|                       |  |                          |  |     |  |  +-------Bryoandersonia_illecebra
+|                       |  |                          |  |     |  +--|
+|                       |  |                          |  |     |     |   +---Foreauella_orthothecia
+|                       |  |                          |  |     |     +---|
+|                       |  |                          |  |     |         +-----Pterogoniopsis_cylindrica
+|                       |  |                          |  |  +--|
+|                       |  |                          |  |  |  +--Schroeterella_zygodonta
+|                       |  |                          |  +--|
+|                       |  |                          |     +-----Trachyphyllum_gastrodes
+|                       |  |                       +--|
+|                       |  |                       |  +--Platyhypnidium_riparioides
+|                       |  |                    +--|
+|                       |  |                    |  |                    +--Alsia_californica
+|                       |  |                    |  |                 +**|
+|                       |  |                    |  |                 |  +--Meteoridium_remotifolium
+|                       |  |                    |  |              +--|
+|                       |  |                    |  |              |  +--Neodicladiella_pendula
+|                       |  |                    |  |           +--|
+|                       |  |                    |  |           |  |  +--Cryptopapillaria_penicillata
+|                       |  |                    |  |           |  +--|
+|                       |  |                    |  |           |     |  +---Ectropothecium_leptochaeton
+|                       |  |                    |  |           |     +--|
+|                       |  |                    |  |           |        +--Garovaglia_elegans
+|                       |  |                    |  |        +--|
+|                       |  |                    |  |        |  |           +**Cyathophorum_bulbosum
+|                       |  |                    |  |        |  |        +--|
+|                       |  |                    |  |        |  |        |  +--Taiwanobryum_speciosum
+|                       |  |                    |  |        |  |     +--|
+|                       |  |                    |  |        |  |     |  |        +--Haplohymenium_triste
+|                       |  |                    |  |        |  |     |  |     +--|
+|                       |  |                    |  |        |  |     |  |     |  +--Homalia_trichomanoides
+|                       |  |                    |  |        |  |     |  |  +**|
+|                       |  |                    |  |        |  |     |  |  |  +---Oedicladium_doii
+|                       |  |                    |  |        |  |     |  +**|
+|                       |  |                    |  |        |  |     |     +--Hookeria_acutifolia
+|                       |  |                    |  |        |  |  +--|
+|                       |  |                    |  |        |  |  |  +--Homaliodendron_flabellatum
+|                       |  |                    |  |        |  +--|
+|                       |  |                    |  |        |     |  +--Porotrichodendron_nitidum
+|                       |  |                    |  |        |     +--|
+|                       |  |                    |  |        |        |     +--Porotrichopsis_flacca
+|                       |  |                    |  |        |        |  +--|
+|                       |  |                    |  |        |        |  |  +**Potamium_lonchophyllum
+|                       |  |                    |  |        |        +--|
+|                       |  |                    |  |        |           +--Porotrichum_longirostre
+|                       |  |                    |  |     +--|
+|                       |  |                    |  |     |  |     +--Orthostichidium_involutifolium
+|                       |  |                    |  |     |  |  +--|
+|                       |  |                    |  |     |  |  |  +--Pireella_angustifolia
+|                       |  |                    |  |     |  +**|
+|                       |  |                    |  |     |     +--Phyllodon_truncatulus
+|                       |  |                    |  |  +**|
+|                       |  |                    |  |  |  +--Dolichomitra_cymbifolia
+|                       |  |                    |  +--|
+|                       |  |                    |     |           +--Campyliadelphus_stellatus
+|                       |  |                    |     |        +--|
+|                       |  |                    |     |        |  |     +--Leptodictyum_riparium
+|                       |  |                    |     |        |  |  +--|
+|                       |  |                    |     |        |  |  |  +--Weymouthia_mollis
+|                       |  |                    |     |        |  +**|
+|                       |  |                    |     |        |     +--Rozea_pterogonioides
+|                       |  |                    |     |     +**|
+|                       |  |                    |     |     |  +--Donnellia_commutata
+|                       |  |                    |     |  +**|
+|                       |  |                    |     |  |  |  +--Jaegerina_scariosa
+|                       |  |                    |     |  |  +--|
+|                       |  |                    |     |  |     +**Tripterocladium_leucocladulum
+|                       |  |                    |     +--|
+|                       |  |                    |        +--Rhacopilopsis_trinitensis
+|                       |  |                 +**|
+|                       |  |                 |  |                                      +--Aerobryidium_aureonitens
+|                       |  |                 |  |                                   +**|
+|                       |  |                 |  |                                   |  +--Pseudotrismegistia_perundulata
+|                       |  |                 |  |                                +**|
+|                       |  |                 |  |                                |  +--Trachypodopsis_serrulata
+|                       |  |                 |  |                             +**|
+|                       |  |                 |  |                             |  +--Neodolichomitra_yunnanensis
+|                       |  |                 |  |                          +--|
+|                       |  |                 |  |                          |  +--Barbellopsis_trichophora
+|                       |  |                 |  |                       +--|
+|                       |  |                 |  |                       |  +--Toloxis_imponderosa
+|                       |  |                 |  |                    +--|
+|                       |  |                 |  |                    |  |     +--Catagoniopsis_berteroana
+|                       |  |                 |  |                    |  |  +--|
+|                       |  |                 |  |                    |  |  |  |  +--Muellerobryum_whiteleggei
+|                       |  |                 |  |                    |  |  |  +--|
+|                       |  |                 |  |                    |  |  |     +--Pulchrinodus_inflatus
+|                       |  |                 |  |                    |  +--|
+|                       |  |                 |  |                    |     +---Hydropogon_fontinaloides
+|                       |  |                 |  |                 +**|
+|                       |  |                 |  |                 |  +--Curvicladium_kurzii
+|                       |  |                 |  |              +--|
+|                       |  |                 |  |              |  +--Hylocomiopsis_cylindracarpa
+|                       |  |                 |  |           +**|
+|                       |  |                 |  |           |  |  +--Ctenidium_molluscum
+|                       |  |                 |  |           |  +--|
+|                       |  |                 |  |           |     |  +--Mittenothamnium_reptans
+|                       |  |                 |  |           |     +**|
+|                       |  |                 |  |           |        +--Trachypus_bicolor
+|                       |  |                 |  |        +**|
+|                       |  |                 |  |        |  |                 +--Aerobryum_speciosum
+|                       |  |                 |  |        |  |              +**|
+|                       |  |                 |  |        |  |              |  |     +--Eurohypnum_leptothallum
+|                       |  |                 |  |        |  |              |  |  +--|
+|                       |  |                 |  |        |  |              |  |  |  |  +--Platylomella_lescurii
+|                       |  |                 |  |        |  |              |  |  |  +--|
+|                       |  |                 |  |        |  |              |  |  |     +--Rhytidiadelphus_triquetrus
+|                       |  |                 |  |        |  |              |  +--|
+|                       |  |                 |  |        |  |              |     +--Palisadula_chrysophylla
+|                       |  |                 |  |        |  |           +--|
+|                       |  |                 |  |        |  |           |  +--Neolindbergia_cladomnioides
+|                       |  |                 |  |        |  |        +**|
+|                       |  |                 |  |        |  |        |  |                    +--Aerolindigia_capillacea
+|                       |  |                 |  |        |  |        |  |                 +--|
+|                       |  |                 |  |        |  |        |  |                 |  +--Loeskeobryum_brevirostre
+|                       |  |                 |  |        |  |        |  |              +--|
+|                       |  |                 |  |        |  |        |  |              |  +--Stenocarpidiopsis_salicicola
+|                       |  |                 |  |        |  |        |  |           +--|
+|                       |  |                 |  |        |  |        |  |           |  +--Scleropodium_obtusifolium
+|                       |  |                 |  |        |  |        |  |        +--|
+|                       |  |                 |  |        |  |        |  |        |  +--Meteoriella_soluta
+|                       |  |                 |  |        |  |        |  |     +--|
+|                       |  |                 |  |        |  |        |  |     |  +--Palamocladium_leskeoides
+|                       |  |                 |  |        |  |        |  |  +--|
+|                       |  |                 |  |        |  |        |  |  |  |           +--Braithwaitea_sulcata
+|                       |  |                 |  |        |  |        |  |  |  |        +--|
+|                       |  |                 |  |        |  |        |  |  |  |        |  +--Trachybryum_megaptilum
+|                       |  |                 |  |        |  |        |  |  |  |     +--|
+|                       |  |                 |  |        |  |        |  |  |  |     |  +--Neckera_pennata
+|                       |  |                 |  |        |  |        |  |  |  |  +--|
+|                       |  |                 |  |        |  |        |  |  |  |  |  +--Claopodium_whippleanum
+|                       |  |                 |  |        |  |        |  |  |  +--|
+|                       |  |                 |  |        |  |        |  |  |     |  +**Hylocomiastrum_pyrenaicum
+|                       |  |                 |  |        |  |        |  |  |     +--|
+|                       |  |                 |  |        |  |        |  |  |        +**Scorpidium_scorpioides
+|                       |  |                 |  |        |  |        |  +--|
+|                       |  |                 |  |        |  |        |     +--Orthorrhynchium_elegans
+|                       |  |                 |  |        |  |     +--|
+|                       |  |                 |  |        |  |     |  +--Bryocrumia_andersonii
+|                       |  |                 |  |        |  |  +--|
+|                       |  |                 |  |        |  |  |  |        +--Macrothamnium_macrocarpum
+|                       |  |                 |  |        |  |  |  |     +--|
+|                       |  |                 |  |        |  |  |  |     |  +--Meteorium_illecebrum
+|                       |  |                 |  |        |  |  |  |  +--|
+|                       |  |                 |  |        |  |  |  |  |  +--Rhytidium_rugosum
+|                       |  |                 |  |        |  |  |  +--|
+|                       |  |                 |  |        |  |  |     +--Porothamnium_arbusculans
+|                       |  |                 |  |        |  +--|
+|                       |  |                 |  |        |     +--Clastobryophilum_bogoricum
+|                       |  |                 |  |     +**|
+|                       |  |                 |  |     |  |  +--Hymenodon_pilifer
+|                       |  |                 |  |     |  +--|
+|                       |  |                 |  |     |     |  +--Leskeadelphus_bolivianus
+|                       |  |                 |  |     |     +--|
+|                       |  |                 |  |     |        +--Puiggariopsis_aurifolia
+|                       |  |                 |  |  +**|
+|                       |  |                 |  |  |  |  +--Andoa_berthelotiana
+|                       |  |                 |  |  |  +--|
+|                       |  |                 |  |  |     +**Myuroclada_maximowiczii
+|                       |  |                 |  +--|
+|                       |  |                 |     |        +---Lepyrodontopsis_trichophylla
+|                       |  |                 |     |     +--|
+|                       |  |                 |     |     |  +------Platygyriella_aurea
+|                       |  |                 |     |  +--|
+|                       |  |                 |     |  |  +--Ptychodium_plicatum
+|                       |  |                 |     +--|
+|                       |  |                 |        |  +--Okamuraea_hakoniensis
+|                       |  |                 |        +--|
+|                       |  |                 |           +--Papillidiopsis_complanata
+|                       |  |              +**|
+|                       |  |              |  |        +--Bissetia_lingulata
+|                       |  |              |  |     +--|
+|                       |  |              |  |     |  |   +--Elmeriobryum_philippinense
+|                       |  |              |  |     |  +---|
+|                       |  |              |  |     |      +--Vesicularia_vesicularis
+|                       |  |              |  |  +**|
+|                       |  |              |  |  |  +--Bryostreimannia_turgida
+|                       |  |              |  +--|
+|                       |  |              |     +--Heterophyllium_affine
+|                       |  |           +**|
+|                       |  |           |  |     +--Bryonorrisia_acutifolia
+|                       |  |           |  |  +--|
+|                       |  |           |  |  |  +--Symphyodon_imbricatifolius
+|                       |  |           |  +--|
+|                       |  |           |     |        +**Chaetomitrium_borneense
+|                       |  |           |     |     +--|
+|                       |  |           |     |     |  +--Chionostomum_rostratum
+|                       |  |           |     |  +--|
+|                       |  |           |     |  |  +---Dixonia_thamnioides
+|                       |  |           |     +--|
+|                       |  |           |        +--Phyllogonium_fulgens
+|                       |  |        +**|
+|                       |  |        |  |  +---Isothecium_myosuroides
+|                       |  |        |  +--|
+|                       |  |        |     +--Lescuraea_radicosa
+|                       |  |     +**|
+|                       |  |     |  +--Calliergon_cordifolium
+|                       |  |  +**|
+|                       |  |  |  +--Lindbergia_brachyptera
+|                       |  +**|
+|                       |     +---Cratoneuron_filicinum
+|                    +**|
+|                    |  |     +--Fabronia_pusilla
+|                    |  |  +--|
+|                    |  |  |  +--Ischyrodon_lepturus
+|                    |  +**|
+|                    |     +--Pleurozium_schreberi
+|                 +--|
+|                 |  +--Rigodium_toxarion
+|              +--|
+|              |  |        +--Dimorphocladon_borneense
+|              |  |     +**|
+|              |  |     |  +--Lindigia_aciculata
+|              |  |  +--|
+|              |  |  |  |  +--Pseudoleskeopsis_imbricata
+|              |  |  |  +--|
+|              |  |  |     +**Rigodiadelphus_robustus
+|              |  +--|
+|              |     |  +--Renauldia_mexicana
+|              |     +--|
+|              |        +--Yunnanobryon_sp.
+|           +--|
+|           |  |        +--Calyptothecium_praelongum
+|           |  |     +**|
+|           |  |     |  +--Dolichomitriopsis_diversiformis
+|           |  |  +**|
+|           |  |  |  |        +--Eulacophyllum_cultelliforme
+|           |  |  |  |     +--|
+|           |  |  |  |     |  +--Metaneckera_menziesii
+|           |  |  |  |  +--|
+|           |  |  |  |  |  +--Limbella_tricosta
+|           |  |  |  +**|
+|           |  |  |     |  +--Handeliobryum_sikkimense
+|           |  |  |     +--|
+|           |  |  |        +--Sematophyllum_demissum
+|           |  +--|
+|           |     |  +--Leucodon_sciuroides
+|           |     +--|
+|           |        |     +--Mesochaete_undulata
+|           |        +-----|
+|           |              +--Struckia_argentata
+|        +**|
+|        |  +--Racopilum_cuspidigerum
+|     +**|
+|     |  |     +--Eriodon_conostomus
+|     |  |  +--|
+|     |  |  |  +--Mahua_enervis
+|     |  +--|
+|     |     |  +----Forsstroemia_trichomitria
+|     |     +--|
+|     |        +--Regmatodon_declinatus
+|  +--|
+|  |  +--Callicladium_haldanianum
++**|
+|  +--Henicodium_geniculatum
+|
+|        +--Actinothuidium_hookeri
+|     +--|
+|     |  |  +--Dendroalsia_abietina
+|     |  +--|
+|     |     +--Thuidiopsis_furfurosa
+|  +--|
+|  |  +--Pleuroziopsis_ruthenica
++**|
+   |  +--Boulaya_mitteni
+   +**|
+      |  +--Hylocomium_splendens
+      +**|
+         +---Pseudotaxiphyllum_elegans
+
+Tree in newick format:
+
+(Abietinella_abietina:0.0025973406,((((((((((((((((Acrocladium_auriculatum:0.0054173541,Oxyrrhynchium_rugosipes:0.0046429495):0.0011822011,((Baldwiniella_kealeensis:0.0085153274,((Catagonium_nitens:0.0032553478,(Fauriella_tenuis:0.0066063297,Isocladiella_surcularis:0.0032961593):0.0019386937):0.0005904012,((Eurhynchiella_acanthophylla:0.0045590926,Stereophyllum_radiculosum:0.0049149466):0.0000015528,Lembophyllum_divulsum:0.0045838788):0.0055353587):0.0000015528):0.0007046936,Pseudotrachypus_martinicensis:0.0059698149):0.0000027862):0.0006462808,Pterobryella_praenitens:0.0026118867):0.0006912150,((Chaetomitriopsis_glaucocarpa:0.0100635585,((Pseudoleskea_andina:0.0024972767,Sauloma_tenella:0.0059638570):0.0014255785,Trachyloma_planifolium:0.0153598571):0.0030488557):0.0023054350,(((Cyptodontopsis_obtusifolia:0.0053639147,Pseudoleskeella_tectorum:0.0014521557):0.0005603600,((Cyrto-hypnum_schistocalyx:0.0019787380,Spiridentopsis_longissima:0.0006633133):0.0006349866,Dendropogonella_rufescens:0.0039071061):0.0000015528):0.0025907605,(Dendrocryphaea_cuspidata:0.0025800351,Leucomium_strumosum:0.0019332592):0.0000015528):0.0006363994):0.0000015528):0.0006820334,((Anomodon_viticulosus:0.0000015526,Helodium_blandowii:0.0045584653):0.0016703678,(Calliergonella_cuspidata:0.0019886030,Leptopterigynandrum_austro-alpinum:0.0012883473):0.0033277770):0.0007177807):0.0000015528,(((((((Benitotania_elimbata:0.0299025054,Cryptoleptodon_longisetus:0.0295601508):0.0047684308,((Horikawaea_redfearnii:0.0205080110,(Levierella_fabroniacea:0.0234316198,Thamniopsis_incurva:0.0213057334):0.0129761774):0.0039622861,Schofieldiella_micans_Isolate:0.0114463204):0.0048007935):0.0069432942,Schimperobryum_splendidissimum:0.0542177734):0.0034069531,((((Brotherella_recurvans:0.0126955929,(Pterobryopsis_stolonacea:0.0145586863,Radulina_borbonica:0.0179246066):0.0007023691):0.0061158732,((Clastobryopsis_planula:0.0824957518,Pylaisia_polyantha:0.0136915050):0.0071634311,((Hypnobartlettia_fontana:0.0274637697,Rhynchostegium_serrulatum:0.0277118863):0.0016306398,Mesonodon_flavescens:0.0187179093):0.0015084529):0.0056925799):0.0069107420,(Gradsteinia_andicola:0.0772164505,Orthostichella_pentasticha:0.0177911435):0.0080939621):0.0052868910,Cyptodon_muelleri:0.0308219452):0.0006294102):0.0042647709,((Brachelyma_subulatum:0.0061634805,Dimerodontium_balansae:0.0072280493):0.0087692519,Hamatocaulis_vernicosus:0.0047298533):0.0006720206):0.0007471233,((((((Camptochaete_arbuscula:0.0050624619,Pterogonidium_pulchellum:0.0020923717):0.0021834859,Orthostichopsis_tetragona:0.0115794546):0.0006487243,Horridohypnum_mexicanum:0.0074738043):0.0007467772,(Juratzkaeella_sinensis:0.0089327845,Symphysodontella_cylindracea:0.0143531641):0.0007374892):0.0020907225,Pinnatella_piniformis:0.0046379011):0.0000015528,(Myurium_hochstetteri:0.0047208923,Noguchiodendron_sphaerocarpum:0.0081301541):0.0018163552):0.0014374491):0.0007529593,(Dichelyma_falcatum:0.0079915437,((Herpetineuron_toccoae:0.0046147589,((Orthotheciella_varia:0.0032638311,Steerecleus_serrulatus:0.0000015526):0.0006461392,Plagiothecium_cavifolium:0.0025897339):0.0000015528):0.0019393950,Pilotrichopsis_dentata:0.0013419555):0.0013275723):0.0006359693):0.0006899396):0.0000015528,(((((((((Amblystegium_serpens:0.0019402770,Erythrodontium_longisetum:0.0019813283):0.0000015528,Orthothecium_chryseum:0.0000015526):0.0000015528,(Crosbya_straminea:0.0000015526,Hypnum_cupressiforme:0.0006351352):0.0012758228):0.0000015528,Vittia_pachyloma:0.0025604185):0.0005909124,(Habrodon_perpusillus:0.0012652667,Pseudocryphaea_domingensis:0.0006431803):0.0019591408):0.0012773986,Campylophyllum_halleri:0.0032667695):0.0012573438,Cratoneuropsis_relaxa:0.0067598225):0.0018959345,(Taxiphyllopsis_iwatsukii:0.0067337553,Tomentypnum_falcifolium:0.0019878076):0.0012493291):0.0006495052,Caribaeohypnum_polypterum:0.0045224822):0.0012718738):0.0008385242,(((((((((((((((Acroporium_pungens:0.0088188166,(((Aptychopsis_pyrrophylla:0.0006498179,((Cirriphyllum_cirrosum:0.0061286715,(((Conardia_compacta:0.0020813372,Hygrohypnum_smithii:0.0064016608):0.0023171229,Penzigiella_cordata:0.0062792226):0.0033281732,Dozya_japonica:0.0035206033):0.0017886711):0.0007874370,Warburgiella_leucocytus:0.0096431401):0.0001990344):0.0000023772,(Schwetschkea_grateloupii:0.0025899254,Sphaerotheciella_sphaerocarpa:0.0026009448):0.0026153237):0.0003945210,Pterogonium_gracile:0.0008750537):0.0053596631):0.0053008292,(((Paranapiacabaea_paulista:0.0148901918,Pseudocalliergon_angustifolium:0.0172378951):0.0004629417,Rhizogonium_pennatum:0.0134542507):0.0022975262,Rauiella_lagoensis:0.0294121829):0.0049514873):0.0090066009,((Isodrepanium_lentulum:0.0012707473,Wijkia_extenuata:0.0006030546):0.0023159147,Pterigynandrum_filiforme:0.0114476497):0.0021941776):0.0046552700,(Circulifolium_microdendron:0.0048576559,Rhaphidostichum_schwaneckeanum:0.0129621530):0.0007673021):0.0045076467,Rutenbergia_madagassa:0.0118206828):0.0013156732,(((((Aptychella_proligera:0.0073783919,Clastobryum_tenuirameum:0.0053111738):0.0083974140,Colobodontium_vulpinum:0.0225199675):0.0015498514,(Bryoandersonia_illecebra:0.0167951590,(Foreauella_orthothecia:0.0083922537,Pterogoniopsis_cylindrica:0.0130113070):0.0090803364):0.0031986058):0.0016956772,Schroeterella_zygodonta:0.0027769956):0.0015016742,Trachyphyllum_gastrodes:0.0129881604):0.0024352944):0.0000493983,Platyhypnidium_riparioides:0.0045679796):0.0016552582,(((((((Alsia_californica:0.0045017041,Meteoridium_remotifolium:0.0006355181):0.0000015528,Neodicladiella_pendula:0.0012726649):0.0006030367,(Cryptopapillaria_penicillata:0.0019412587,(Ectropothecium_leptochaeton:0.0085149277,Garovaglia_elegans:0.0012691368):0.0012562947):0.0012935269):0.0055882900,((((Cyathophorum_bulbosum:0.0000015526,Taiwanobryum_speciosum:0.0057383793):0.0006281833,(((Haplohymenium_triste:0.0076434361,Homalia_trichomanoides:0.0026025164):0.0013796763,Oedicladium_doii:0.0094111260):0.0000015528,Hookeria_acutifolia:0.0038163189):0.0000015528):0.0012333377,Homaliodendron_flabellatum:0.0038991144):0.0009887020,(Porotrichodendron_nitidum:0.0011827122,((Porotrichopsis_flacca:0.0038237412,Potamium_lonchophyllum:0.0000015526):0.0006074112,Porotrichum_longirostre:0.0019101944):0.0026561497):0.0036667722):0.0033110465):0.0017304952,((Orthostichidium_involutifolium:0.0032242128,Pireella_angustifolia:0.0006369972):0.0012901598,Phyllodon_truncatulus:0.0006404797):0.0000015528):0.0006381783,Dolichomitra_cymbifolia:0.0039397939):0.0000015528,((((Campyliadelphus_stellatus:0.0012939645,((Leptodictyum_riparium:0.0012682083,Weymouthia_mollis:0.0019655885):0.0006356627,Rozea_pterogonioides:0.0019150832):0.0000015528):0.0012769480,Donnellia_commutata:0.0019078176):0.0000015528,(Jaegerina_scariosa:0.0019069279,Tripterocladium_leucocladulum:0.0000015526):0.0012742782):0.0000015528,Rhacopilopsis_trinitensis:0.0051823503):0.0019112395):0.0006364116):0.0007861769,(((((((((((((Aerobryidium_aureonitens:0.0031937980,Pseudotrismegistia_perundulata:0.0006554999):0.0000015528,Trachypodopsis_serrulata:0.0006419967):0.0000015528,Neodolichomitra_yunnanensis:0.0012519500):0.0000015528,Barbellopsis_trichophora:0.0037872465):0.0026389350,Toloxis_imponderosa:0.0032284688):0.0019116419,((Catagoniopsis_berteroana:0.0056879138,(Muellerobryum_whiteleggei:0.0061216316,Pulchrinodus_inflatus:0.0030386996):0.0019819692):0.0007896993,Hydropogon_fontinaloides:0.0080931549):0.0040666658):0.0007066226,Curvicladium_kurzii:0.0039287299):0.0000015528,Hylocomiopsis_cylindracarpa:0.0065488700):0.0006458839,(Ctenidium_molluscum:0.0006387120,(Mittenothamnium_reptans:0.0025754870,Trachypus_bicolor:0.0065195023):0.0000015528):0.0014102749):0.0000015528,((((((Aerobryum_speciosum:0.0018891464,((Eurohypnum_leptothallum:0.0013306892,(Platylomella_lescurii:0.0018993222,Rhytidiadelphus_triquetrus:0.0025394307):0.0012382699):0.0006687420,Palisadula_chrysophylla:0.0025225840):0.0006544831):0.0000015528,Neolindbergia_cladomnioides:0.0018794110):0.0033737669,(((((((Aerolindigia_capillacea:0.0006272080,Loeskeobryum_brevirostre:0.0006335041):0.0030010606,Stenocarpidiopsis_salicicola:0.0020107309):0.0014305542,Scleropodium_obtusifolium:0.0019001107):0.0019892781,Meteoriella_soluta:0.0056223349):0.0006228404,Palamocladium_leskeoides:0.0044457912):0.0006784503,((((Braithwaitea_sulcata:0.0026338622,Trachybryum_megaptilum:0.0025250640):0.0019203105,Neckera_pennata:0.0031561124):0.0012506334,Claopodium_whippleanum:0.0007225494):0.0031524143,(Hylocomiastrum_pyrenaicum:0.0000015526,Scorpidium_scorpioides:0.0000015526):0.0045081688):0.0011777483):0.0006356220,Orthorrhynchium_elegans:0.0042057822):0.0025973265):0.0000015528,Bryocrumia_andersonii:0.0025626610):0.0033873022,(((Macrothamnium_macrocarpum:0.0036678811,Meteorium_illecebrum:0.0019849338):0.0021656794,Rhytidium_rugosum:0.0019223699):0.0026161954,Porothamnium_arbusculans:0.0066612565):0.0020083365):0.0005720956,Clastobryophilum_bogoricum:0.0032240688):0.0006805406):0.0000015528,(Hymenodon_pilifer:0.0051339763,(Leskeadelphus_bolivianus:0.0027285230,Puiggariopsis_aurifolia:0.0044656469):0.0019142580):0.0007436021):0.0000015528,(Andoa_berthelotiana:0.0006419584,Myuroclada_maximowiczii:0.0000015526):0.0019289424):0.0000015528,(((Lepyrodontopsis_trichophylla:0.0088445644,Platygyriella_aurea:0.0147040686):0.0020938216,Ptychodium_plicatum:0.0052094079):0.0019955037,(Okamuraea_hakoniensis:0.0033773753,Papillidiopsis_complanata:0.0059526830):0.0053416445):0.0005716162):0.0006686095):0.0000015528,(((Bissetia_lingulata:0.0070565669,(Elmeriobryum_philippinense:0.0011098417,Vesicularia_vesicularis:0.0068313093):0.0094182583):0.0007481671,Bryostreimannia_turgida:0.0013152867):0.0000015528,Heterophyllium_affine:0.0039240604):0.0006533261):0.0000015528,((Bryonorrisia_acutifolia:0.0065954309,Symphyodon_imbricatifolius:0.0059282178):0.0006332715,(((Chaetomitrium_borneense:0.0000015526,Chionostomum_rostratum:0.0039077631):0.0055629367,Dixonia_thamnioides:0.0098320538):0.0045119931,Phyllogonium_fulgens:0.0056240916):0.0073516789):0.0019274376):0.0000015528,(Isothecium_myosuroides:0.0094576568,Lescuraea_radicosa:0.0068316880):0.0045896527):0.0000015528,Calliergon_cordifolium:0.0051880704):0.0000015528,Lindbergia_brachyptera:0.0058932762):0.0000015528,Cratoneuron_filicinum:0.0079987417):0.0000015528):0.0006175414,((Fabronia_pusilla:0.0025412843,Ischyrodon_lepturus:0.0019279794):0.0019118868,Pleurozium_schreberi:0.0045198846):0.0000015528):0.0000015528,Rigodium_toxarion:0.0038488217):0.0012604865,(((Dimorphocladon_borneense:0.0012833467,Lindigia_aciculata:0.0006412989):0.0000015528,(Pseudoleskeopsis_imbricata:0.0006392262,Rigodiadelphus_robustus:0.0000015526):0.0012835432):0.0012728959,(Renauldia_mexicana:0.0038888286,Yunnanobryon_sp.:0.0065248744):0.0013056526):0.0012947117):0.0006132015,(((Calyptothecium_praelongum:0.0046556190,Dolichomitriopsis_diversiformis:0.0040064992):0.0005090365,(((Eulacophyllum_cultelliforme:0.0024982903,Metaneckera_menziesii:0.0053043625):0.0033793110,Limbella_tricosta:0.0024957180):0.0031534443,(Handeliobryum_sikkimense:0.0040751279,Sematophyllum_demissum:0.0010964488):0.0045693478):0.0001811943):0.0000015528,(Leucodon_sciuroides:0.0033568471,(Mesochaete_undulata:0.0012212611,Struckia_argentata:0.0038561013):0.0137077706):0.0018298968):0.0006281017):0.0006357533,Racopilum_cuspidigerum:0.0020198763):0.0000015528,((Eriodon_conostomus:0.0019285163,Mahua_enervis:0.0019174192):0.0006419518,(Forsstroemia_trichomitria:0.0101445516,Regmatodon_declinatus:0.0051635720):0.0007485538):0.0006368432):0.0000015528,Callicladium_haldanianum:0.0032059593):0.0012651408,Henicodium_geniculatum:0.0032177621):0.0000015528,(((Actinothuidium_hookeri:0.0006414260,(Dendroalsia_abietina:0.0052474245,Thuidiopsis_furfurosa:0.0031239498):0.0046403544):0.0012870466,Pleuroziopsis_ruthenica:0.0051949197):0.0006041135,(Boulaya_mitteni:0.0012631561,(Hylocomium_splendens:0.0021502242,Pseudotaxiphyllum_elegans:0.0079993134):0.0004198494):0.0000015528):0.0000015528);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t data_training/dna_M9142_235_1854.phy/output_files/iqtree/inference/pars_0.treefile -m "TVM{2.00261,8.9054,0.301448,1.01495}+F{0.325772,0.170893,0.184314,0.319021}+R4{0.641229,0.179933,0.267437,1.18602,0.0691016,4.50755,0.0222326,11.5127}" --length 1854
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s Data/dna_M9142_235_1854.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s Data/dna_M9142_235_1854.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Sep 25 00:07:41 2025
+Total CPU time used: 326.323 seconds (0h:5m:26s)
+Total wall-clock time used: 314.785 seconds (0h:5m:14s)
+

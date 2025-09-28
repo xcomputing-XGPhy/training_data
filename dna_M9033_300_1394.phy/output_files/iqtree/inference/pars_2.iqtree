@@ -1,0 +1,875 @@
+IQ-TREE 3.0.1 built Sep 18 2025
+
+Input file name: Data/dna_M9033_300_1394.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 2
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 300 sequences with 1394 nucleotide sites
+Number of constant sites: 769 (= 55.165% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 769 (= 55.165% of all sites)
+Number of parsimony informative sites: 514
+Number of distinct site patterns: 771
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+R5
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+R5         -23793.938   48813.876 +    0.958   49778.958 +    0.721   52025.955 +    0.626
+GTR+F+I+R4       -23798.074   48820.147 -   0.0417   49780.854 +    0.279   52026.986 +    0.374
+GTR+F+R4         -23809.158   48840.317 - 1.74e-06   49796.665 - 0.000103   52041.916 - 0.000214
+TIM3+F+R5        -23811.885   48845.770 - 1.14e-07   49802.118 - 6.74e-06   52047.369 -  1.4e-05
+TIM3+F+I+R4      -23815.663   48851.326 - 7.07e-09   49803.331 - 3.67e-06   52047.685 -  1.2e-05
+TIM3+F+R4        -23828.100   48874.200 - 7.62e-14   49821.879 - 3.45e-10   52065.319 - 1.77e-09
+TIM+F+I+R4       -23829.201   48878.401 - 9.33e-15   49830.407 - 4.85e-12   52074.760 - 1.58e-11
+TIM+F+R5         -23825.800   48873.600 - 1.03e-13   49829.948 -  6.1e-12   52075.199 - 1.27e-11
+TIM2+F+R5        -23826.966   48875.932 - 3.21e-14   49832.280 -  1.9e-12   52077.531 - 3.95e-12
+TIM2+F+I+R4      -23831.069   48882.138 - 1.44e-15   49834.143 - 7.49e-13   52078.497 - 2.44e-12
+TIM+F+R4         -23842.752   48903.504 -  3.3e-20   49851.182 - 1.49e-16   52094.623 - 7.68e-16
+TIM2+F+R4        -23842.864   48903.729 - 2.95e-20   49851.407 - 1.34e-16   52094.848 - 6.86e-16
+TN+F+I+R4        -23845.661   48909.322 -  1.8e-21   49857.000 - 8.15e-18   52100.441 - 4.19e-17
+TN+F+R5          -23843.372   48906.743 - 6.54e-21   49858.748 -  3.4e-18   52103.102 - 1.11e-17
+TN+F+R4          -23859.323   48934.646 - 5.71e-27   49878.014 - 2.23e-22   52120.525 - 1.82e-21
+GTR+R5           -23891.449   49002.898 - 8.63e-42   49954.903 - 4.48e-39   52199.257 - 1.46e-38
+SYM+R5           -23891.565   49003.130 - 7.68e-42   49955.136 - 3.99e-39   52199.489 -  1.3e-38
+SYM+R5           -23891.565   49003.130 - 7.68e-42   49955.136 - 3.99e-39   52199.489 -  1.3e-38
+GTR+I+R4         -23897.231   49012.462 - 7.23e-44   49960.140 - 3.27e-40   52203.581 - 1.68e-39
+SYM+I+R4         -23897.248   49012.497 -  7.1e-44   49960.175 - 3.21e-40   52203.616 - 1.65e-39
+SYM+I+R4         -23897.248   49012.497 -  7.1e-44   49960.175 - 3.21e-40   52203.616 - 1.65e-39
+GTR+R4           -23903.322   49022.644 - 4.45e-46   49966.012 - 1.74e-41   52208.523 - 1.42e-40
+SYM+R4           -23903.448   49022.896 - 3.92e-46   49966.264 - 1.53e-41   52208.775 - 1.25e-40
+SYM+R4           -23903.448   49022.896 - 3.92e-46   49966.264 - 1.53e-41   52208.775 - 1.25e-40
+TVM+F+I+R4       -23911.687   49045.375 - 5.15e-51   50001.723 - 3.05e-49   52246.974 - 6.35e-49
+TVM+F+R5         -23909.283   49042.566 -  2.1e-50   50003.273 - 1.41e-49   52249.405 - 1.88e-49
+TVM+F+R4         -23920.388   49060.775 - 2.33e-54   50012.780 - 1.21e-51   52257.134 - 3.95e-51
+TIM3+R5          -23928.133   49072.266 - 7.46e-57   50015.635 - 2.91e-52   52258.145 - 2.38e-51
+TIM3e+R5         -23928.202   49072.404 - 6.96e-57   50015.772 - 2.72e-52   52258.283 - 2.22e-51
+TIM3e+R5         -23928.202   49072.404 - 6.96e-57   50015.772 - 2.72e-52   52258.283 - 2.22e-51
+TIM3+I+R4        -23933.850   49081.700 - 6.67e-59   50020.774 - 2.23e-53   52262.339 - 2.93e-52
+TIM3e+I+R4       -23933.898   49081.797 - 6.36e-59   50020.871 - 2.12e-53   52262.436 - 2.79e-52
+TIM3e+I+R4       -23933.898   49081.797 - 6.36e-59   50020.871 - 2.12e-53   52262.436 - 2.79e-52
+TIM3+R4          -23940.703   49093.406 - 1.92e-61   50028.202 - 5.43e-55   52268.805 - 1.15e-53
+TIM3e+R4         -23940.783   49093.566 - 1.77e-61   50028.361 - 5.02e-55   52268.965 - 1.07e-53
+TIM3e+R4         -23940.783   49093.566 - 1.77e-61   50028.361 - 5.02e-55   52268.965 - 1.07e-53
+TPM3u+F+I+R4     -23930.085   49078.171 -  3.9e-58   50025.849 - 1.76e-54   52269.290 - 9.06e-54
+TPM3u+F+R5       -23928.413   49076.827 - 7.63e-58   50028.832 - 3.97e-55   52273.186 - 1.29e-54
+TPM3u+F+R4       -23939.127   49094.254 - 1.25e-61   50037.622 - 4.89e-57   52280.133 -    4e-56
+TVM+I+R4         -23946.204   49108.407 - 1.06e-64   50051.775 - 4.13e-60   52294.286 - 3.38e-59
+TVMe+I+R4        -23946.296   49108.592 - 9.65e-65   50051.960 - 3.77e-60   52294.471 - 3.08e-59
+TVMe+I+R4        -23946.296   49108.592 - 9.65e-65   50051.960 - 3.77e-60   52294.471 - 3.08e-59
+TVM+R5           -23944.240   49106.480 - 2.78e-64   50054.158 - 1.26e-60   52297.599 - 6.45e-60
+TVMe+R5          -23944.267   49106.534 -  2.7e-64   50054.213 - 1.22e-60   52297.653 - 6.28e-60
+TVMe+R5          -23944.267   49106.534 -  2.7e-64   50054.213 - 1.22e-60   52297.653 - 6.28e-60
+K3Pu+F+I+R4      -23945.464   49108.928 - 8.16e-65   50056.607 - 3.69e-61   52300.047 -  1.9e-60
+TPM2u+F+I+R4     -23946.732   49111.463 -  2.3e-65   50059.142 - 1.04e-61   52302.582 - 5.34e-61
+TVM+R4           -23954.022   49122.043 - 1.16e-67   50061.117 - 3.87e-62   52302.682 - 5.08e-61
+TVMe+R4          -23954.077   49122.154 -  1.1e-67   50061.228 - 3.66e-62   52302.793 - 4.81e-61
+TVMe+R4          -23954.077   49122.154 -  1.1e-67   50061.228 - 3.66e-62   52302.793 - 4.81e-61
+K3Pu+F+R5        -23943.653   49107.307 - 1.84e-64   50059.312 - 9.54e-62   52303.666 - 3.11e-61
+TPM2u+F+R5       -23943.813   49107.625 - 1.57e-64   50059.630 - 8.14e-62   52303.984 - 2.65e-61
+K3Pu+F+R4        -23954.170   49124.339 - 3.68e-68   50067.707 - 1.43e-63   52310.218 - 1.17e-62
+TPM2u+F+R4       -23955.234   49126.468 - 1.27e-68   50069.837 - 4.95e-64   52312.347 - 4.05e-63
+HKY+F+I+R4       -23962.433   49140.867 - 9.47e-72   50084.235 -  3.7e-67   52326.746 - 3.02e-66
+HKY+F+R5         -23961.794   49141.588 -  6.6e-72   50089.266 - 2.99e-68   52332.707 - 1.54e-67
+HKY+F+R4         -23971.178   49156.356 -  4.1e-75   50095.430 - 1.37e-69   52336.995 -  1.8e-68
+TPM3u+I+R4       -23984.819   49181.638 - 1.33e-80   50116.433 - 3.77e-74   52357.037 -    8e-73
+TPM3+I+R4        -23984.901   49181.801 - 1.22e-80   50116.597 - 3.47e-74   52357.200 - 7.37e-73
+TPM3+I+R4        -23984.901   49181.801 - 1.22e-80   50116.597 - 3.47e-74   52357.200 - 7.37e-73
+TIM+R5           -23978.545   49173.090 - 9.53e-79   50116.458 - 3.72e-74   52358.969 - 3.04e-73
+TIMe+R5          -23978.620   49173.240 - 8.84e-79   50116.608 - 3.45e-74   52359.119 - 2.82e-73
+TIMe+R5          -23978.620   49173.240 - 8.84e-79   50116.608 - 3.45e-74   52359.119 - 2.82e-73
+TIM2+R5          -23978.630   49173.261 - 8.75e-79   50116.629 - 3.41e-74   52359.140 - 2.79e-73
+TIM2e+R5         -23978.734   49173.468 - 7.89e-79   50116.836 - 3.08e-74   52359.347 - 2.52e-73
+TIM2e+R5         -23978.734   49173.468 - 7.89e-79   50116.836 - 3.08e-74   52359.347 - 2.52e-73
+TIM+I+R4         -23983.050   49180.101 - 2.86e-80   50119.174 - 9.56e-75   52360.740 - 1.26e-73
+TIMe+I+R4        -23983.235   49180.471 - 2.38e-80   50119.544 - 7.95e-75   52361.110 - 1.04e-73
+TIMe+I+R4        -23983.235   49180.471 - 2.38e-80   50119.544 - 7.95e-75   52361.110 - 1.04e-73
+TIM2+I+R4        -23983.660   49181.320 - 1.56e-80   50120.394 -  5.2e-75   52361.959 - 6.83e-74
+TIM2e+I+R4       -23983.768   49181.536 -  1.4e-80   50120.610 - 4.67e-75   52362.175 - 6.13e-74
+TIM2e+I+R4       -23983.768   49181.536 -  1.4e-80   50120.610 - 4.67e-75   52362.175 - 6.13e-74
+TPM3u+R5         -23983.886   49181.773 - 1.24e-80   50120.846 - 4.15e-75   52362.412 - 5.44e-74
+TPM3+R5          -23983.914   49181.828 - 1.21e-80   50120.901 - 4.03e-75   52362.467 -  5.3e-74
+TPM3+R5          -23983.914   49181.828 - 1.21e-80   50120.901 - 4.03e-75   52362.467 -  5.3e-74
+TPM3u+R4         -23993.120   49196.240 - 8.96e-84   50126.773 - 2.14e-76   52366.399 - 7.41e-75
+TPM3+R4          -23993.253   49196.506 - 7.84e-84   50127.039 - 1.87e-76   52366.665 - 6.49e-75
+TPM3+R4          -23993.253   49196.506 - 7.84e-84   50127.039 - 1.87e-76   52366.665 - 6.49e-75
+TIM2+R4          -23990.319   49192.638 - 5.42e-83   50127.433 - 1.54e-76   52368.037 - 3.27e-75
+TIM2e+R4         -23990.405   49192.809 - 4.98e-83   50127.605 - 1.41e-76   52368.209 -    3e-75
+TIM2e+R4         -23990.405   49192.809 - 4.98e-83   50127.605 - 1.41e-76   52368.209 -    3e-75
+TIM+R4           -23991.020   49194.040 - 2.69e-83   50128.836 - 7.63e-77   52369.439 - 1.62e-75
+TIMe+R4          -23991.147   49194.294 - 2.37e-83   50129.090 - 6.72e-77   52369.693 - 1.43e-75
+TIMe+R4          -23991.147   49194.294 - 2.37e-83   50129.090 - 6.72e-77   52369.693 - 1.43e-75
+TN+I+R4          -24013.992   49239.984 - 2.84e-93   50174.780 - 8.06e-87   52415.383 - 1.71e-85
+TN+R5            -24010.448   49234.895 - 3.62e-92   50173.969 - 1.21e-86   52415.534 - 1.59e-85
+TNe+I+R4         -24014.176   49240.352 - 2.36e-93   50175.147 -  6.7e-87   52415.751 - 1.42e-85
+TNe+I+R4         -24014.176   49240.352 - 2.36e-93   50175.147 -  6.7e-87   52415.751 - 1.42e-85
+TNe+R5           -24010.666   49235.332 - 2.91e-92   50174.406 - 9.71e-87   52415.971 - 1.28e-85
+TNe+R5           -24010.666   49235.332 - 2.91e-92   50174.406 - 9.71e-87   52415.971 - 1.28e-85
+TN+R4            -24021.777   49253.554 - 3.21e-96   50184.087 - 7.67e-89   52423.714 - 2.66e-87
+TNe+R4           -24021.862   49253.723 - 2.95e-96   50184.256 - 7.05e-89   52423.882 - 2.44e-87
+TNe+R4           -24021.862   49253.723 - 2.95e-96   50184.256 - 7.05e-89   52423.882 - 2.44e-87
+TPM2+I+R4        -24031.378   49274.755 - 7.99e-101   50209.551 - 2.27e-94   52450.155 - 4.82e-93
+TPM2+I+R4        -24031.378   49274.755 - 7.99e-101   50209.551 - 2.27e-94   52450.155 - 4.82e-93
+TPM2u+I+R4       -24031.385   49274.771 - 7.93e-101   50209.566 - 2.25e-94   52450.170 - 4.78e-93
+TPM2u+R5         -24028.042   49270.083 - 8.27e-100   50209.157 - 2.76e-94   52450.722 - 3.63e-93
+TPM2+R5          -24028.119   49270.238 - 7.65e-100   50209.312 - 2.56e-94   52450.877 - 3.36e-93
+TPM2+R5          -24028.119   49270.238 - 7.65e-100   50209.312 - 2.56e-94   52450.877 - 3.36e-93
+K3P+I+R4         -24032.107   49276.213 - 3.86e-101   50211.009 - 1.09e-94   52451.612 - 2.32e-93
+K3P+I+R4         -24032.107   49276.213 - 3.86e-101   50211.009 - 1.09e-94   52451.612 - 2.32e-93
+K3Pu+I+R4        -24032.107   49276.215 - 3.85e-101   50211.010 - 1.09e-94   52451.614 - 2.32e-93
+K3Pu+R5          -24030.189   49274.378 - 9.65e-101   50213.452 - 3.23e-95   52455.017 - 4.23e-94
+K3P+R5           -24030.277   49274.554 - 8.84e-101   50213.627 - 2.95e-95   52455.193 - 3.88e-94
+K3P+R5           -24030.277   49274.554 - 8.84e-101   50213.627 - 2.95e-95   52455.193 - 3.88e-94
+TPM2u+R4         -24039.179   49288.358 - 8.89e-104   50218.891 - 2.13e-96   52458.517 - 7.36e-95
+TPM2+R4          -24039.319   49288.638 - 7.73e-104   50219.171 - 1.85e-96   52458.797 -  6.4e-95
+TPM2+R4          -24039.319   49288.638 - 7.73e-104   50219.171 - 1.85e-96   52458.797 -  6.4e-95
+K3Pu+R4          -24040.359   49290.718 - 2.73e-104   50221.251 - 6.53e-97   52460.878 - 2.26e-95
+K3P+R4           -24040.486   49290.971 - 2.41e-104   50221.504 - 5.75e-97   52461.130 - 1.99e-95
+K3P+R4           -24040.486   49290.971 - 2.41e-104   50221.504 - 5.75e-97   52461.130 - 1.99e-95
+HKY+I+R4         -24063.608   49337.216 - 2.19e-114   50267.749 - 5.23e-107   52507.375 - 1.81e-105
+K2P+I+R4         -24063.633   49337.265 - 2.13e-114   50267.798 - 5.1e-107   52507.425 - 1.76e-105
+K2P+I+R4         -24063.633   49337.265 - 2.13e-114   50267.798 - 5.1e-107   52507.425 - 1.76e-105
+HKY+R5           -24062.701   49337.402 - 1.99e-114   50272.197 - 5.65e-108   52512.801 - 1.2e-106
+K2P+R5           -24062.928   49337.857 - 1.59e-114   50272.652 - 4.5e-108   52513.256 - 9.56e-107
+K2P+R5           -24062.928   49337.857 - 1.59e-114   50272.652 - 4.5e-108   52513.256 - 9.56e-107
+HKY+R4           -24071.853   49351.705 - 1.56e-117   50277.992 - 3.12e-109   52516.625 - 1.77e-107
+K2P+R4           -24072.010   49352.021 - 1.33e-117   50278.307 - 2.66e-109   52516.940 - 1.52e-107
+K2P+R4           -24072.010   49352.021 - 1.33e-117   50278.307 - 2.66e-109   52516.940 - 1.52e-107
+F81+I+R4         -24981.969   51171.939 -        0   52098.225 -        0   54336.858 -        0
+JC+I+R4          -24982.532   51173.065 -        0   52099.351 -        0   54337.984 -        0
+JC+I+R4          -24982.532   51173.065 -        0   52099.351 -        0   54337.984 -        0
+F81+R5           -24982.127   51174.253 -        0   52104.786 -        0   54344.412 -        0
+JC+R5            -24982.685   51175.370 -        0   52105.903 -        0   54345.529 -        0
+JC+R5            -24982.685   51175.370 -        0   52105.903 -        0   54345.529 -        0
+F81+R4           -24990.106   51186.212 -        0   52108.268 -        0   54345.892 -        0
+JC+R4            -24990.598   51187.196 -        0   52109.252 -        0   54346.876 -        0
+JC+R4            -24990.598   51187.196 -        0   52109.252 -        0   54346.876 -        0
+JC+I+R5          -24982.108   51176.216 -        0   52111.011 -        0   54351.615 -        0
+JC+I+R3          -24999.462   51202.925 -        0   52120.765 -        0   54357.364 -        0
+JC+R6            -24981.802   51177.603 -        0   52116.677 -        0   54358.242 -        0
+F81+F+I+R4       -24990.787   51195.573 -        0   52134.647 -        0   54376.212 -        0
+F81+F+R5         -24990.890   51197.780 -        0   52141.148 -        0   54383.659 -        0
+F81+F+R4         -24999.595   51211.190 -        0   52145.986 -        0   54386.590 -        0
+JC+I+G4          -25040.279   51278.557 -        0   52183.847 -        0   54417.277 -        0
+JC+R3            -25077.532   51357.064 -        0   52270.705 -        0   54506.263 -        0
+JC+G4            -25137.254   51470.508 -        0   52371.645 -        0   54603.988 -        0
+JC+I+R2          -25138.072   51476.144 -        0   52385.602 -        0   54620.104 -        0
+JC+R2            -25324.276   51846.552 -        0   52751.842 -        0   54985.272 -        0
+JC+I             -26253.976   53703.953 -        0   54605.090 -        0   56837.433 -        0
+JC               -28979.471   59152.942 -        0   60049.942 -        0   62281.182 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+R5
+
+Rate parameter R:
+
+  A-C: 0.4612
+  A-G: 2.0626
+  A-T: 0.6354
+  C-G: 0.5055
+  C-T: 4.5667
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2457
+  pi(C) = 0.1843
+  pi(G) = 0.3001
+  pi(T) = 0.2699
+
+Rate matrix Q:
+
+  A    -0.794   0.07711    0.5614    0.1555
+  C    0.1028    -1.358    0.1376     1.118
+  G    0.4597   0.08453   -0.7891    0.2448
+  T    0.1416    0.7635    0.2722    -1.177
+
+Model of rate heterogeneity: FreeRate with 5 categories
+Site proportion and rates:  (0.5846,0.0254) (0.1616,0.4736) (0.1339,2.129) (0.09679,4.408) (0.02308,8.529)
+
+ Category  Relative_rate  Proportion
+  1         0.0254         0.5846
+  2         0.4736         0.1616
+  3         2.129          0.1339
+  4         4.408          0.09679
+  5         8.529          0.02308
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -23793.8568 (s.e. 926.8347)
+Unconstrained log-likelihood (without tree): -7971.0373
+Number of free parameters (#branches + #model parameters): 613
+Akaike information criterion (AIC) score: 48813.7136
+Corrected Akaike information criterion (AICc) score: 49778.7957
+Bayesian information criterion (BIC) score: 52025.7923
+
+Total tree length (sum of branch lengths): 5.2488
+Sum of internal branch lengths: 2.6956 (51.3566% of tree length)
+
+WARNING: 48 near-zero internal branches (<0.0007) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Albugo_candida_AC2V' is drawn at root
+
++--Albugo_candida_AC2V
+|
++--Albugo_candida_AC7A
+|
+|                            +**Aphanomyces_cladogamus_CBS10829
+|                         +--|
+|                         |  |  +--Aphanomyces_cochlioides_CBS47771
+|                         |  +--|
+|                         |     |     +**Aphanomyces_euteiches_CBS15473
+|                         |     |  +--|
+|                         |     |  |  +--Aphanomyces_euteiches_CBS15673
+|                         |     +--|
+|                         |        +--Aphanomyces_iridis_CBS52487
+|                      +--|
+|                      |  +--Plectospira_myriandra_CBS52387
+|                   +--|
+|                   |  |  +--Aphanomyces_laevis_CBS47871
+|                   |  +--|
+|                   |     +--Aphanomyces_sp_CBS58385
+|              +----|
+|              |    |              +--Brevilegnia_unisperma_var_delica_CBS14352
+|              |    |           +--|
+|              |    |           |  +--Brevilegnia_variabilis_CBS110006
+|              |    |        +--|
+|              |    |        |  +**Thraustotheca_clavata_CBS34333
+|              |    |     +--|
+|              |    |     |  |  +**Saprolegnia_turfosa_CBS31381
+|              |    |     |  +--|
+|              |    |     |     +**Saprolegnia_turfosa_CBS32735
+|              |    |  +--|
+|              |    |  |  |     +--Protoachlya_paradoxa_CBS15845
+|              |    |  |  |  +--|
+|              |    |  |  |  |  +--Saprolegnia_monoica_CBS53967
+|              |    |  |  +--|
+|              |    |  |     |        +--Saprolegnia_asterophora_CBS53167
+|              |    |  |     |     +--|
+|              |    |  |     |     |  |              +--Saprolegnia_delica_CBS34562
+|              |    |  |     |     |  |           +--|
+|              |    |  |     |     |  |           |  +--Saprolegnia_parasitica_CBS30256
+|              |    |  |     |     |  |        +**|
+|              |    |  |     |     |  |        |  |     +**Saprolegnia_diclina_CBS32635
+|              |    |  |     |     |  |        |  |  +--|
+|              |    |  |     |     |  |        |  |  |  +**Saprolegnia_mixta_CBS14965
+|              |    |  |     |     |  |        |  +**|
+|              |    |  |     |     |  |        |     |     +**Saprolegnia_hypogyna_CBS86972
+|              |    |  |     |     |  |        |     |  +--|
+|              |    |  |     |     |  |        |     |  |  +**Saprolegnia_parasitica_CBS113187
+|              |    |  |     |     |  |        |     +--|
+|              |    |  |     |     |  |        |        |  +--Saprolegnia_litoralis_CBS53567
+|              |    |  |     |     |  |        |        +--|
+|              |    |  |     |     |  |        |           +--Saprolegnia_parasitica_CBS54067
+|              |    |  |     |     |  |     +--|
+|              |    |  |     |     |  |     |  +--Saprolegnia_diclina_CBS53667
+|              |    |  |     |     |  |  +--|
+|              |    |  |     |     |  |  |  |  +**Saprolegnia_rodrigueziana_CBS119354
+|              |    |  |     |     |  |  |  +--|
+|              |    |  |     |     |  |  |     +--Saprolegnia_subterranea_CBS113343
+|              |    |  |     |     |  +--|
+|              |    |  |     |     |     |     +--Saprolegnia_monilifera_CBS55267
+|              |    |  |     |     |     |  +--|
+|              |    |  |     |     |     |  |  +**Saprolegnia_monilifera_CBS55867
+|              |    |  |     |     |     +--|
+|              |    |  |     |     |        +--Saprolegnia_terrestris_CBS110063
+|              |    |  |     |  +--|
+|              |    |  |     |  |  +--Saprolegnia_megasperma_CBS53267
+|              |    |  |     +--|
+|              |    |  |        |  +--Saprolegnia_eccentrica_CBS19938
+|              |    |  |        +--|
+|              |    |  |           +--Saprolegnia_litoralis_CBS110062
+|              |    +--|
+|              |       |  +--Leptolegnia_caudata_CBS68069
+|              |       +--|
+|              |          +--Leptolegnia_sp_CBS58285
+|          +---|
+|          |   +-------------------------------------------Eurychasma_dicksonii_Ex98b2
++----------|
+           |                                   +--Basidiophora_entospora_HV123_AY035513
+           |                                +--|
+           |                                |  |  +**Plasmoverna_anemones_ranunculoidis_HV101
+           |                                |  +--|
+           |                                |     +**Plasmoverna_anemones_ranunculoidis_HV125
+           |                             +--|
+           |                             |  |  +--Plasmopara_euphrasiae_HV2226_EF553465
+           |                             |  +--|
+           |                             |     +--Plasmopara_pusilla_HV140_DQ148402
+           |                          +--|
+           |                          |  |     +--Hyaloperonospora_nesliae_HV203_EU054892
+           |                          |  |  +--|
+           |                          |  |  |  +--Hyaloperonospora_sisymbrii_sophiae_HV276_EU054910
+           |                          |  +--|
+           |                          |     +--Peronospora_conglomerata_HV27_AY035489
+           |                       +--|
+           |                       |  +--Pseudoperonospora_cubensis_HV221h_AY035496
+           |                    +--|
+           |                    |  +--Peronospora_calotheca_HV83_AY035483
+           |                 +--|
+           |                 |  |                    +--Phytophthora_cactorum_P0714
+           |                 |  |                 +**|
+           |                 |  |                 |  +**Phytophthora_pseudotsugae_CBS44484
+           |                 |  |              +**|
+           |                 |  |              |  +**Phytophthora_pseudotsugae_P10218
+           |                 |  |           +--|
+           |                 |  |           |  +--Phytophthora_pseudotsugae_P10339
+           |                 |  |        +--|
+           |                 |  |        |  +--Phytophthora_idaei_P6767
+           |                 |  |     +**|
+           |                 |  |     |  |     +**Phytophthora_infestans_CBS36651
+           |                 |  |     |  |  +**|
+           |                 |  |     |  |  |  |  +**Phytophthora_mirabilis_CBS67885
+           |                 |  |     |  |  |  +**|
+           |                 |  |     |  |  |     +--Phytophthora_phaseoli_CBS55688
+           |                 |  |     |  +--|
+           |                 |  |     |     |  +**Phytophthora_ipomoeae_P10225
+           |                 |  |     |     +--|
+           |                 |  |     |        |  +**Phytophthora_ipomoeae_P10226
+           |                 |  |     |        +**|
+           |                 |  |     |           +**Phytophthora_ipomoeae_P10227
+           |                 |  |  +--|
+           |                 |  |  |  |        +--Phytophthora_clandestina_P3942
+           |                 |  |  |  |     +--|
+           |                 |  |  |  |     |  +--Phytophthora_iranica_CBS37472
+           |                 |  |  |  |  +--|
+           |                 |  |  |  |  |  +--Phytophthora_tentaculata_CBS55296
+           |                 |  |  |  +--|
+           |                 |  |  |     |  +--Phytophthora_nicotianae_P7146
+           |                 |  |  |     +--|
+           |                 |  |  |        +**Phytophthora_tabaci_CBS30529
+           |                 |  +--|
+           |                 |     |  +**Phytophthora_quercina_P10334
+           |                 |     +--|
+           |                 |        +**Phytophthora_quercina_P10441
+           |              +--|
+           |              |  |                 +--Phytophthora_arecae_CBS30562
+           |              |  |              +**|
+           |              |  |              |  +**Phytophthora_palmivora_P0255
+           |              |  |           +--|
+           |              |  |           |  +**Phytophthora_palmivora_P0113
+           |              |  |        +--|
+           |              |  |        |  +--Phytophthora_megakarya_P8516
+           |              |  |     +--|
+           |              |  |     |  |     +--Phytophthora_heveae_CBS29629
+           |              |  |     |  |  +--|
+           |              |  |     |  |  |  +**Phytophthora_heveae_P0578
+           |              |  |     |  +--|
+           |              |  |     |     |  +--Phytophthora_katsurae_CBS58785
+           |              |  |     |     +--|
+           |              |  |     |        +**Phytophthora_sp_novaeguinea_P3389
+           |              |  |  +--|
+           |              |  |  |  |     +--Phytophthora_ilicis_P3939
+           |              |  |  |  |  +--|
+           |              |  |  |  |  |  +**Phytophthora_nemorosa_P10288
+           |              |  |  |  +--|
+           |              |  |  |     +**Phytophthora_pseudosyringae_P10443
+           |              |  +--|
+           |              |     |           +--Phytophthora_bisheria_P10117
+           |              |     |        +--|
+           |              |     |        |  |                             +--Phytophthora_botryosa_P6945
+           |              |     |        |  |                          +**|
+           |              |     |        |  |                          |  |  +--Phytophthora_colocasiae_P6290
+           |              |     |        |  |                          |  +--|
+           |              |     |        |  |                          |     +**Phytophthora_meadii_CBS21988
+           |              |     |        |  |                       +**|
+           |              |     |        |  |                       |  +**Phytophthora_meadii_P6128
+           |              |     |        |  |                    +--|
+           |              |     |        |  |                    |  |  +--Phytophthora_citrophthora_CBS95087
+           |              |     |        |  |                    |  +**|
+           |              |     |        |  |                    |     +**Phytophthora_citrophthora_P10341
+           |              |     |        |  |                 +--|
+           |              |     |        |  |                 |  |  +--Phytophthora_citricola_CBS22188
+           |              |     |        |  |                 |  +**|
+           |              |     |        |  |                 |     +**Phytophthora_multivora_P7902
+           |              |     |        |  |              +--|
+           |              |     |        |  |              |  +--Phytophthora_siskiyouensis_P15122
+           |              |     |        |  |           +**|
+           |              |     |        |  |           |  +--Phytophthora_sp_glovera_P10618
+           |              |     |        |  |        +**|
+           |              |     |        |  |        |  +**Phytophthora_capsici_P10386
+           |              |     |        |  |     +--|
+           |              |     |        |  |     |  +**Phytophthora_capsici_CBS12823
+           |              |     |        |  |  +**|
+           |              |     |        |  |  |  +--Phytophthora_capsici_CBS55488
+           |              |     |        |  +**|
+           |              |     |        |     +--Phytophthora_mexicana_P0646
+           |              |     |     +--|
+           |              |     |     |  +--Phytophthora_multivesiculata_CBS54596
+           |              |     |  +--|
+           |              |     |  |  |        +**Phytophthora_cajani_P3105
+           |              |     |  |  |     +**|
+           |              |     |  |  |     |  |              +**Phytophthora_cambivora_P0592
+           |              |     |  |  |     |  |           +--|
+           |              |     |  |  |     |  |           |  +**Phytophthora_fragariae_CBS20946
+           |              |     |  |  |     |  |        +--|
+           |              |     |  |  |     |  |        |  |  +--Phytophthora_europaea_P10324
+           |              |     |  |  |     |  |        |  +--|
+           |              |     |  |  |     |  |        |     +--Phytophthora_uliginosa_P10328
+           |              |     |  |  |     |  |     +--|
+           |              |     |  |  |     |  |     |  |           +--Phytophthora_gonapodyides_CBS36379
+           |              |     |  |  |     |  |     |  |        +**|
+           |              |     |  |  |     |  |     |  |        |  +--Phytophthora_sp_canalensis_P10456
+           |              |     |  |  |     |  |     |  |     +--|
+           |              |     |  |  |     |  |     |  |     |  |     +**Phytophthora_megasperma_CBS30636
+           |              |     |  |  |     |  |     |  |     |  |  +--|
+           |              |     |  |  |     |  |     |  |     |  |  |  +**Phytophthora_megasperma_P10340
+           |              |     |  |  |     |  |     |  |     |  +--|
+           |              |     |  |  |     |  |     |  |     |     |  +**Phytophthora_megasperma_CBS40272
+           |              |     |  |  |     |  |     |  |     |     +--|
+           |              |     |  |  |     |  |     |  |     |        +**Phytophthora_megasperma_P1679
+           |              |     |  |  |     |  |     |  |  +--|
+           |              |     |  |  |     |  |     |  |  |  |  +--Phytophthora_humicola_CBS20081
+           |              |     |  |  |     |  |     |  |  |  +--|
+           |              |     |  |  |     |  |     |  |  |     +--Phytophthora_sp_nov_P10337
+           |              |     |  |  |     |  |     |  +--|
+           |              |     |  |  |     |  |     |     +--Phytophthora_sp_sulawesiensis_P6306
+           |              |     |  |  |     |  |  +--|
+           |              |     |  |  |     |  |  |  |     +**Phytophthora_cinnamomi_CBS14422
+           |              |     |  |  |     |  |  |  |  +--|
+           |              |     |  |  |     |  |  |  |  |  +**Phytophthora_cinnamomi_P3232
+           |              |     |  |  |     |  |  |  +--|
+           |              |     |  |  |     |  |  |     +**Phytophthora_cinnamomi_var_parvispora_CBS41196
+           |              |     |  |  |     |  +**|
+           |              |     |  |  |     |     +--Phytophthora_sp_niederhauserii_P10616
+           |              |     |  |  |  +--|
+           |              |     |  |  |  |  +--Phytophthora_pistaciae_P6196
+           |              |     |  |  +--|
+           |              |     |  |     +**Phytophthora_melonis_CBS58269
+           |              |     +**|
+           |              |        |                 +--Phytophthora_boehmeriae_CBS29129
+           |              |        |              +--|
+           |              |        |              |  |  +--Phytophthora_kernoviae_P10671
+           |              |        |              |  +--|
+           |              |        |              |     +**Phytophthora_kernoviae_P10681
+           |              |        |           +--|
+           |              |        |           |  |  +--Phytophthora_captiosa_P10719
+           |              |        |           |  +--|
+           |              |        |           |     +--Phytophthora_fallax_P10723
+           |              |        |        +--|
+           |              |        |        |  |        +**Phytophthora_macrochlamydospora_P10267
+           |              |        |        |  |     +--|
+           |              |        |        |  |     |  +--Phytophthora_macrochlamydospora_P8017
+           |              |        |        |  |  +--|
+           |              |        |        |  |  |  +--Phytophthora_quininea_CBS40748
+           |              |        |        |  +--|
+           |              |        |        |     |     +**Phytophthora_sp_cuyabensis_P8213
+           |              |        |        |     |  +--|
+           |              |        |        |     |  |  +**Phytophthora_sp_cuyabensis_P8218
+           |              |        |        |     +--|
+           |              |        |        |        |  +--Phytophthora_sp_lagoariana_P8220
+           |              |        |        |        +--|
+           |              |        |        |           +**Phytophthora_sp_thermophilum_P10457
+           |              |        |     +--|
+           |              |        |     |  |     +**Phytophthora_insolita_P6195
+           |              |        |     |  |  +--|
+           |              |        |     |  |  |  +**Phytophthora_insolita_P6703
+           |              |        |     |  +--|
+           |              |        |     |     +--Phytophthora_polonica_P15004
+           |              |        |  +**|
+           |              |        |  |  |                 +--Phytophthora_brassicae_CBS17887
+           |              |        |  |  |              +--|
+           |              |        |  |  |              |  +--Phytophthora_primulae_P10220
+           |              |        |  |  |           +--|
+           |              |        |  |  |           |  |  +--Phytophthora_sp_nov_P10728
+           |              |        |  |  |           |  +--|
+           |              |        |  |  |           |     +**Phytophthora_sp_nov_P6207
+           |              |        |  |  |        +--|
+           |              |        |  |  |        |  |  +**Phytophthora_syringae_CBS13223
+           |              |        |  |  |        |  +--|
+           |              |        |  |  |        |     +--Phytophthora_syringae_P10330
+           |              |        |  |  |     +--|
+           |              |        |  |  |     |  |  +--Phytophthora_hibernalis_P3822
+           |              |        |  |  |     |  +--|
+           |              |        |  |  |     |     +--Phytophthora_ramorum_CBS101553
+           |              |        |  |  |  +--|
+           |              |        |  |  |  |  +--Phytophthora_foliorum_P10969
+           |              |        |  |  +--|
+           |              |        |  |     |           +**Phytophthora_cryptogea_CBS11319
+           |              |        |  |     |        +--|
+           |              |        |  |     |        |  +--Phytophthora_erythroseptica_P10382
+           |              |        |  |     |     +**|
+           |              |        |  |     |     |  +--Phytophthora_drechsleri_P10331
+           |              |        |  |     |  +--|
+           |              |        |  |     |  |  |  +**Phytophthora_cryptogea_P3103
+           |              |        |  |     |  |  +**|
+           |              |        |  |     |  |     +**Phytophthora_cryptogea_f_sp_begoniae_CBS46881
+           |              |        |  |     +--|
+           |              |        |  |        |  +--Phytophthora_sansomeana_P3163
+           |              |        |  |        +--|
+           |              |        |  |           +--Phytophthora_trifolii_P1462
+           |              |        +--|
+           |              |           +--Phytophthora_sp_asparagi_P10690
+           |           +--|
+           |           |  |     +--Phytophthora_avicenniae_CBS18885
+           |           |  |  +--|
+           |           |  |  |  +--Phytophthora_batemanensis_CBS67984
+           |           |  +--|
+           |           |     +--Phytophthora_polymorphica_CBS68084
+           |        +--|
+           |        |  +--Halophytophthora_exoprolifera_CBS25293
+           |     +--|
+           |     |  |              +--Halophytophthora_kandelii_CBS11191
+           |     |  |           +--|
+           |     |  |           |  +**Halophytophthora_kandelii_CBS11391
+           |     |  |        +--|
+           |     |  |        |  +--Phytopythium_oedochilum_CBS29237
+           |     |  |     +--|
+           |     |  |     |  |           +**Phytopythium_boreale_CBS55188
+           |     |  |     |  |        +--|
+           |     |  |     |  |        |  +**Phytopythium_megacarpum_CBS112351
+           |     |  |     |  |     +--|
+           |     |  |     |  |     |  +--Phytopythium_ostracodes_CBS76873
+           |     |  |     |  |  +--|
+           |     |  |     |  |  |  +--Phytopythium_sindhum_DAOM238986
+           |     |  |     |  +--|
+           |     |  |     |     |        +--Phytopythium_carbonicum_CBS112544
+           |     |  |     |     |     +--|
+           |     |  |     |     |     |  +**Phytopythium_montanum_CBS111349
+           |     |  |     |     |  +**|
+           |     |  |     |     |  |  +--Phytopythium_litorale_CBS118360
+           |     |  |     |     +--|
+           |     |  |     |        +--Phytopythium_citrinum_CBS119171
+           |     |  |  +--|
+           |     |  |  |  |  +--Phytopythium_chamaehyphon_CBS25930
+           |     |  |  |  +--|
+           |     |  |  |     +--Phytopythium_helicoides_CBS28631
+           |     |  +--|
+           |     |     |        +--Phytopythium_aff_vexans_CBS26130
+           |     |     |     +--|
+           |     |     |     |  +**Phytopythium_cucurbitacearum_CBS74896
+           |     |     |  +--|
+           |     |     |  |  +--Phytopythium_vexans_CBS11980
+           |     |     +--|
+           |     |        +**Phytopythium_vexans_P3980
+           |  +--|
+           |  |  |                          +--Brevilegnia_gracilis_CBS13137
+           |  |  |                       +--|
+           |  |  |                       |  +--Pythium_ultimum_var_ultimum_CBS39851
+           |  |  |                    +--|
+           |  |  |                    |  |  +--Pythium_ultimum_var_sporangiiferum_CBS21965
+           |  |  |                    |  +--|
+           |  |  |                    |     +--Pythium_ultimum_var_ultimum_CBS122650
+           |  |  |                 +--|
+           |  |  |                 |  +--Pythium_splendens_CBS46248
+           |  |  |              +--|
+           |  |  |              |  +--Pythium_violae_CBS17886
+           |  |  |           +--|
+           |  |  |           |  |        +**Pythium_glomeratum_CBS119165
+           |  |  |           |  |     +**|
+           |  |  |           |  |     |  +**Pythium_heterothallicum_CBS45067
+           |  |  |           |  |  +--|
+           |  |  |           |  |  |  +--Pythium_glomeratum_CBS120914
+           |  |  |           |  +--|
+           |  |  |           |     |     +**Pythium_glomeratum_CBS122644
+           |  |  |           |     |  +**|
+           |  |  |           |     |  |  +**Pythium_heterothallicum_CBS122655
+           |  |  |           |     +**|
+           |  |  |           |        +**Pythium_glomeratum_CBS122651
+           |  |  |        +--|
+           |  |  |        |  |  +--Pythium_anandrum_CBS28531
+           |  |  |        |  +--|
+           |  |  |        |     |     +**Pythium_dimorphum_CBS40672
+           |  |  |        |     |  +--|
+           |  |  |        |     |  |  +--Pythium_undulatum_CBS15769
+           |  |  |        |     +--|
+           |  |  |        |        |     +--Pythium_helicandrum_CBS39354
+           |  |  |        |        |  +--|
+           |  |  |        |        |  |  +--Pythium_prolatum_CBS84568
+           |  |  |        |        +**|
+           |  |  |        |           +**Pythium_senticosum_CBS122490
+           |  |  |     +--|
+           |  |  |     |  |                 +--Pythium_acanthophoron_CBS33729
+           |  |  |     |  |              +--|
+           |  |  |     |  |              |  +--Pythium_nodosum_CBS102274
+           |  |  |     |  |           +--|
+           |  |  |     |  |           |  +--Pythium_cystogenes_CBS67585
+           |  |  |     |  |        +--|
+           |  |  |     |  |        |  +--Pythium_perplexum_CBS67485
+           |  |  |     |  |     +--|
+           |  |  |     |  |     |  |  +--Pythium_nunn_CBS80896
+           |  |  |     |  |     |  +--|
+           |  |  |     |  |     |     +--Pythium_orthogonon_CBS37672
+           |  |  |     |  |  +--|
+           |  |  |     |  |  |  |        +--Pythium_buismaniae_CBS28831
+           |  |  |     |  |  |  |     +--|
+           |  |  |     |  |  |  |     |  +--Pythium_mastophorum_CBS37572
+           |  |  |     |  |  |  |  +--|
+           |  |  |     |  |  |  |  |  +--Pythium_uncinulatum_CBS51877
+           |  |  |     |  |  |  +--|
+           |  |  |     |  |  |     +--Pythium_sp_jasmonium_CBS101876
+           |  |  |     |  +--|
+           |  |  |     |     |                    +--Pythium_acrogynum_CBS54988
+           |  |  |     |     |                 +--|
+           |  |  |     |     |                 |  +**Pythium_hypogynum_CBS23494
+           |  |  |     |     |              +--|
+           |  |  |     |     |              |  |  +--Pythium_apiculatum_CBS120945
+           |  |  |     |     |              |  +**|
+           |  |  |     |     |              |     |     +**Pythium_carolinianum_CBS122658
+           |  |  |     |     |              |     |  +--|
+           |  |  |     |     |              |     |  |  +**Pythium_carolinianum_CBS122659
+           |  |  |     |     |              |     +**|
+           |  |  |     |     |              |        |           +**Pythium_echinulatum_CBS28164
+           |  |  |     |     |              |        |        +**|
+           |  |  |     |     |              |        |        |  +**Pythium_ornacarpum_CBS112350
+           |  |  |     |     |              |        |     +--|
+           |  |  |     |     |              |        |     |  +**Pythium_erinaceus_CBS50580
+           |  |  |     |     |              |        |  +--|
+           |  |  |     |     |              |        |  |  +--Pythium_radiosum_CBS21794
+           |  |  |     |     |              |        +--|
+           |  |  |     |     |              |           +--Pythium_papilogynum_CBS122648
+           |  |  |     |     |           +--|
+           |  |  |     |     |           |  |     +**Pythium_longandrum_CBS112355
+           |  |  |     |     |           |  |  +--|
+           |  |  |     |     |           |  |  |  +--Pythium_longisporangium_CBS122646
+           |  |  |     |     |           |  +--|
+           |  |  |     |     |           |     +--Pythium_longandrum_CBS122660
+           |  |  |     |     |        +--|
+           |  |  |     |     |        |  +--Pythium_segnitium_CBS112354
+           |  |  |     |     |     +--|
+           |  |  |     |     |     |  +--Pythium_marsipium_CBS77381
+           |  |  |     |     |  +--|
+           |  |  |     |     |  |  |                    +--Pythium_middletonii_CBS52874
+           |  |  |     |     |  |  |                 +--|
+           |  |  |     |     |  |  |                 |  +--Pythium_multisporum_CBS47050
+           |  |  |     |     |  |  |              +--|
+           |  |  |     |     |  |  |              |  +**Pythium_takayamanum_CBS122491
+           |  |  |     |     |  |  |           +**|
+           |  |  |     |     |  |  |           |  +--Pythium_takayamanum_CBS122492
+           |  |  |     |     |  |  |        +--|
+           |  |  |     |     |  |  |        |  +--Pythium_rhizosaccharum_CBS112356
+           |  |  |     |     |  |  |     +**|
+           |  |  |     |     |  |  |     |  |     +**Pythium_minus_CBS122657
+           |  |  |     |     |  |  |     |  |  +--|
+           |  |  |     |     |  |  |     |  |  |  |  +--Pythium_minus_CBS22688
+           |  |  |     |     |  |  |     |  |  |  +**|
+           |  |  |     |     |  |  |     |  |  |     +**Pythium_pleroticum_CBS77681
+           |  |  |     |     |  |  |     |  +**|
+           |  |  |     |     |  |  |     |     +--Pythium_parvum_CBS22588
+           |  |  |     |     |  |  |  +--|
+           |  |  |     |     |  |  |  |  +--Pythium_rhizosaccharum_CBS122652
+           |  |  |     |     |  |  +--|
+           |  |  |     |     |  |     +--Pythium_rhizosaccharum_CBS122654
+           |  |  |     |     +--|
+           |  |  |     |        |  +--Pythium_rostratifingens_CBS115464
+           |  |  |     |        +--|
+           |  |  |     |           +--Pythium_rostratum_CBS53374
+           |  |  |  +--|
+           |  |  |  |  |           +--Brevilegnia_macrospora_CBS13237
+           |  |  |  |  |        +--|
+           |  |  |  |  |        |  |  +--Pythium_abappressorium_CBS110198
+           |  |  |  |  |        |  +--|
+           |  |  |  |  |        |     |  +--Pythium_debaryanum_CBS75296
+           |  |  |  |  |        |     +**|
+           |  |  |  |  |        |        +--Pythium_lucens_CBS113342
+           |  |  |  |  |     +--|
+           |  |  |  |  |     |  |              +--Pythium_attrantheridium_DAOM230383
+           |  |  |  |  |     |  |           +**|
+           |  |  |  |  |     |  |           |  +--Pythium_sp_CBS113341
+           |  |  |  |  |     |  |        +--|
+           |  |  |  |  |     |  |        |  +--Pythium_sp_balticum_CBS122649
+           |  |  |  |  |     |  |     +--|
+           |  |  |  |  |     |  |     |  +**Pythium_intermedium_CBS26638
+           |  |  |  |  |     |  |  +--|
+           |  |  |  |  |     |  |  |  |                       +**Pythium_cryptoirregulare_CBS118731
+           |  |  |  |  |     |  |  |  |                    +--|
+           |  |  |  |  |     |  |  |  |                    |  +**Pythium_irregulare_ADC0838
+           |  |  |  |  |     |  |  |  |                 +--|
+           |  |  |  |  |     |  |  |  |                 |  +--Pythium_irregulare_CBS25028
+           |  |  |  |  |     |  |  |  |              +--|
+           |  |  |  |  |     |  |  |  |              |  +**Pythium_cylindrosporum_CBS21894
+           |  |  |  |  |     |  |  |  |           +--|
+           |  |  |  |  |     |  |  |  |           |  +**Pythium_paroecandrum_CBS15764
+           |  |  |  |  |     |  |  |  |        +--|
+           |  |  |  |  |     |  |  |  |        |  |  +**Pythium_mamillatum_CBS25128
+           |  |  |  |  |     |  |  |  |        |  +--|
+           |  |  |  |  |     |  |  |  |        |     +--Pythium_spiculum_CBS122645
+           |  |  |  |  |     |  |  |  |     +**|
+           |  |  |  |  |     |  |  |  |     |  +--Pythium_sylvaticum_CBS45367
+           |  |  |  |  |     |  |  |  |  +--|
+           |  |  |  |  |     |  |  |  |  |  +**Pythium_terrestris_CBS112352
+           |  |  |  |  |     |  |  |  +--|
+           |  |  |  |  |     |  |  |     |     +**Pythium_kunmingense_CBS55088
+           |  |  |  |  |     |  |  |     |  +--|
+           |  |  |  |  |     |  |  |     |  |  +**Pythium_spinosum_CBS122663
+           |  |  |  |  |     |  |  |     +--|
+           |  |  |  |  |     |  |  |        +--Pythium_spinosum_CBS27567
+           |  |  |  |  |     |  +--|
+           |  |  |  |  |     |     +--Pythium_macrosporum_CBS57480
+           |  |  |  |  |  +--|
+           |  |  |  |  |  |  +--Pythium_nagaii_CBS77996
+           |  |  |  |  +--|
+           |  |  |  |     |     +**Pythium_canariense_CBS112353
+           |  |  |  |     |  +--|
+           |  |  |  |     |  |  |  +--Pythium_iwayamai_CBS15664
+           |  |  |  |     |  |  +**|
+           |  |  |  |     |  |     +**Pythium_violae_CBS15964
+           |  |  |  |     +--|
+           |  |  |  |        |  +--Pythium_okanoganense_CBS31581
+           |  |  |  |        +--|
+           |  |  |  |           +--Pythium_paddicum_CBS69883
+           |  |  +--|
+           |  |     |                       +**Lagenidium_caudatum_CBS58485
+           |  |     |                    +--|
+           |  |     |                    |  +**Pythium_capillosum_CBS22294
+           |  |     |                 +--|
+           |  |     |                 |  |        +**Pythium_apleroticum_CBS77281
+           |  |     |                 |  |     +--|
+           |  |     |                 |  |     |  +--Pythium_pachycaule_CBS22788
+           |  |     |                 |  |  +--|
+           |  |     |                 |  |  |  +**Pythium_sukuiense_CBS110030
+           |  |     |                 |  +--|
+           |  |     |                 |     |        +**Pythium_coloratum_CBS15464
+           |  |     |                 |     |     +--|
+           |  |     |                 |     |     |  +**Pythium_dissotocum_CBS16668
+           |  |     |                 |     |  +**|
+           |  |     |                 |     |  |  |  +--Pythium_lutarium_CBS22288
+           |  |     |                 |     |  |  +**|
+           |  |     |                 |     |  |     +**Pythium_sp_CBS75096
+           |  |     |                 |     +--|
+           |  |     |                 |        +**Pythium_diclinum_CBS66479
+           |  |     |              +--|
+           |  |     |              |  +--Pythium_pyrilobum_CBS15864
+           |  |     |           +--|
+           |  |     |           |  |           +--Pythium_angustatum_CBS52274
+           |  |     |           |  |        +--|
+           |  |     |           |  |        |  |  +--Pythium_catenulatum_CBS84268
+           |  |     |           |  |        |  +--|
+           |  |     |           |  |        |     |  +--Pythium_folliculosum_CBS22094
+           |  |     |           |  |        |     +**|
+           |  |     |           |  |        |        +**Pythium_torulosum_CBS31633
+           |  |     |           |  |     +--|
+           |  |     |           |  |     |  |           +**Pythium_aristosporum_CBS26338
+           |  |     |           |  |     |  |        +--|
+           |  |     |           |  |     |  |        |  +**Pythium_arrhenomanes_CBS32462
+           |  |     |           |  |     |  |     +--|
+           |  |     |           |  |     |  |     |  +--Pythium_phragmitis_CBS117104
+           |  |     |           |  |     |  |  +--|
+           |  |     |           |  |     |  |  |  +--Pythium_volutum_CBS69983
+           |  |     |           |  |     |  +--|
+           |  |     |           |  |     |     |           +**Pythium_conidiophorum_CBS22388
+           |  |     |           |  |     |     |        +--|
+           |  |     |           |  |     |     |        |  +--Pythium_salpingophorum_CBS47150
+           |  |     |           |  |     |     |     +--|
+           |  |     |           |  |     |     |     |  +**Pythium_tracheiphilum_CBS32365
+           |  |     |           |  |     |     |  +--|
+           |  |     |           |  |     |     |  |  +--Pythium_vanterpoolii_CBS29537
+           |  |     |           |  |     |     +--|
+           |  |     |           |  |     |        |           +--Pythium_contiguanum_CBS22194
+           |  |     |           |  |     |        |        +**|
+           |  |     |           |  |     |        |        |  |     +**Pythium_myriotylum_CBS25470
+           |  |     |           |  |     |        |        |  |  +--|
+           |  |     |           |  |     |        |        |  |  |  +**Pythium_zingiberis_CBS21682
+           |  |     |           |  |     |        |        |  +--|
+           |  |     |           |  |     |        |        |     +--Pythium_sulcatum_CBS60373
+           |  |     |           |  |     |        |     +--|
+           |  |     |           |  |     |        |     |  +--Pythium_scleroteichum_CBS29437
+           |  |     |           |  |     |        |  +--|
+           |  |     |           |  |     |        |  |  +--Pythium_dissimile_CBS15564
+           |  |     |           |  |     |        +--|
+           |  |     |           |  |     |           |  +**Pythium_graminicola_CBS32762
+           |  |     |           |  |     |           +--|
+           |  |     |           |  |     |              +**Pythium_periilum_CBS16968
+           |  |     |           |  |  +--|
+           |  |     |           |  |  |  +--Pythium_inflatum_CBS16868
+           |  |     |           |  +--|
+           |  |     |           |     |  +--Pythium_kashmirense_CBS122908
+           |  |     |           |     +--|
+           |  |     |           |        +--Pythium_plurisporium_CBS100530
+           |  |     |        +--|
+           |  |     |        |  |           +--Pythium_adhaerens_CBS52074
+           |  |     |        |  |        +**|
+           |  |     |        |  |        |  +**Pythium_chondricola_CBS20385
+           |  |     |        |  |     +--|
+           |  |     |        |  |     |  +--Pythium_porphyrae_CBS36979
+           |  |     |        |  |  +--|
+           |  |     |        |  |  |  +--Pythium_monospermum_CBS15873
+           |  |     |        |  +--|
+           |  |     |        |     |  +--Pythium_aphanidermatum_CBS11880
+           |  |     |        |     +--|
+           |  |     |        |        +--Pythium_deliense_CBS31433
+           |  |     |     +--|
+           |  |     |     |  |  +--Pythium_grandisporangium_CBS28679
+           |  |     |     |  +--|
+           |  |     |     |     +--Pythium_insidiosum_CBS57485
+           |  |     |  +--|
+           |  |     |  |  +---Pythiogeton_zeae_Lev3132
+           |  |     +--|
+           |  |        |           +--Pythium_acanthicum_CBS37734
+           |  |        |        +--|
+           |  |        |        |  +**Pythium_sp_spiculacarpum_CBS122647
+           |  |        |     +--|
+           |  |        |     |  |     +**Pythium_amasculinum_CBS55288
+           |  |        |     |  |  +**|
+           |  |        |     |  |  |  +**Pythium_ornamentatum_CBS122665
+           |  |        |     |  +**|
+           |  |        |     |     +**Pythium_hydnosporum_CBS25360
+           |  |        |  +**|
+           |  |        |  |  +--Pythium_periplocum_CBS122664
+           |  |        +--|
+           |  |           +--Pythium_periplocum_CBS28931
+           +--|
+              +----Phytophthora_epistomium_CBS59085
+
+Tree in newick format:
+
+(Albugo_candida_AC2V:0.0015575436,Albugo_candida_AC7A:0.0016766997,((((((Aphanomyces_cladogamus_CBS10829:0.0000024022,(Aphanomyces_cochlioides_CBS47771:0.0030074848,((Aphanomyces_euteiches_CBS15473:0.0000024022,Aphanomyces_euteiches_CBS15673:0.0009786429):0.0009520474,Aphanomyces_iridis_CBS52487:0.0091516806):0.0030670931):0.0050242171):0.0079558865,Plectospira_myriandra_CBS52387:0.0437594332):0.0287547116,(Aphanomyces_laevis_CBS47871:0.0060972058,Aphanomyces_sp_CBS58385:0.0029954490):0.0346570056):0.0323700716,(((((Brevilegnia_unisperma_var_delica_CBS14352:0.0187921982,Brevilegnia_variabilis_CBS110006:0.0210566149):0.0572818990,Thraustotheca_clavata_CBS34333:0.0000025105):0.0659300602,(Saprolegnia_turfosa_CBS31381:0.0000024022,Saprolegnia_turfosa_CBS32735:0.0000024022):0.0041588627):0.0131423868,((Protoachlya_paradoxa_CBS15845:0.0176905702,Saprolegnia_monoica_CBS53967:0.0127657051):0.0107890006,(((Saprolegnia_asterophora_CBS53167:0.0280085484,(((((Saprolegnia_delica_CBS34562:0.0029475949,Saprolegnia_parasitica_CBS30256:0.0019428638):0.0009678246,((Saprolegnia_diclina_CBS32635:0.0000024022,Saprolegnia_mixta_CBS14965:0.0000024022):0.0009677118,((Saprolegnia_hypogyna_CBS86972:0.0000024022,Saprolegnia_parasitica_CBS113187:0.0000024022):0.0047994610,(Saprolegnia_litoralis_CBS53567:0.0062327564,Saprolegnia_parasitica_CBS54067:0.0128953302):0.0040175221):0.0020943494):0.0000024016):0.0003886894,Saprolegnia_diclina_CBS53667:0.0029136155):0.0062864503,(Saprolegnia_rodrigueziana_CBS119354:0.0000024022,Saprolegnia_subterranea_CBS113343:0.0010431573):0.0242426620):0.0036600651,((Saprolegnia_monilifera_CBS55267:0.0012002881,Saprolegnia_monilifera_CBS55867:0.0000024022):0.0046875389,Saprolegnia_terrestris_CBS110063:0.0041825914):0.0030590319):0.0233066857):0.0040511256,Saprolegnia_megasperma_CBS53267:0.0091547036):0.0016477609,(Saprolegnia_eccentrica_CBS19938:0.0068733328,Saprolegnia_litoralis_CBS110062:0.0087988167):0.0062711890):0.0009937780):0.0064338812):0.0076050287,(Leptolegnia_caudata_CBS68069:0.0104815214,Leptolegnia_sp_CBS58285:0.0181720590):0.0067961004):0.0348411331):0.1134025286,Eurychasma_dicksonii_Ex98b2:0.9489876202):0.0972022486,((((((((((((Basidiophora_entospora_HV123_AY035513:0.0639549569,(Plasmoverna_anemones_ranunculoidis_HV101:0.0000024022,Plasmoverna_anemones_ranunculoidis_HV125:0.0000024022):0.0289824213):0.0078546483,(Plasmopara_euphrasiae_HV2226_EF553465:0.0114356429,Plasmopara_pusilla_HV140_DQ148402:0.0487623424):0.0108958391):0.0134838124,((Hyaloperonospora_nesliae_HV203_EU054892:0.0078894064,Hyaloperonospora_sisymbrii_sophiae_HV276_EU054910:0.0230413161):0.0442523441,Peronospora_conglomerata_HV27_AY035489:0.0443096698):0.0059164677):0.0070070757,Pseudoperonospora_cubensis_HV221h_AY035496:0.0050787448):0.0042429427,Peronospora_calotheca_HV83_AY035483:0.0152151472):0.0043443292,(((((((Phytophthora_cactorum_P0714:0.0007627178,Phytophthora_pseudotsugae_CBS44484:0.0000024022):0.0000024016,Phytophthora_pseudotsugae_P10218:0.0000024022):0.0000024016,Phytophthora_pseudotsugae_P10339:0.0007574716):0.0007638607,Phytophthora_idaei_P6767:0.0008010759):0.0032782506,((Phytophthora_infestans_CBS36651:0.0000024022,(Phytophthora_mirabilis_CBS67885:0.0000024022,Phytophthora_phaseoli_CBS55688:0.0007548761):0.0000024016):0.0000024016,(Phytophthora_ipomoeae_P10225:0.0000024022,(Phytophthora_ipomoeae_P10226:0.0000024022,Phytophthora_ipomoeae_P10227:0.0000024022):0.0000024016):0.0007541950):0.0100636979):0.0000024016,(((Phytophthora_clandestina_P3942:0.0048810996,Phytophthora_iranica_CBS37472:0.0012441715):0.0015189196,Phytophthora_tentaculata_CBS55296:0.0020987765):0.0056368519,(Phytophthora_nicotianae_P7146:0.0007559532,Phytophthora_tabaci_CBS30529:0.0000024022):0.0046545739):0.0014970122):0.0056937331,(Phytophthora_quercina_P10334:0.0000024022,Phytophthora_quercina_P10441:0.0000024022):0.0023653744):0.0018497032):0.0010658238,((((((Phytophthora_arecae_CBS30562:0.0007544078,Phytophthora_palmivora_P0255:0.0000024022):0.0000020478,Phytophthora_palmivora_P0113:0.0000024022):0.0014857622,Phytophthora_megakarya_P8516:0.0078035965):0.0023698589,((Phytophthora_heveae_CBS29629:0.0007510299,Phytophthora_heveae_P0578:0.0000024022):0.0015084802,(Phytophthora_katsurae_CBS58785:0.0007512368,Phytophthora_sp_novaeguinea_P3389:0.0000024022):0.0007515735):0.0007978054):0.0030161368,((Phytophthora_ilicis_P3939:0.0014999154,Phytophthora_nemorosa_P10288:0.0000024022):0.0007455204,Phytophthora_pseudosyringae_P10443:0.0000029418):0.0053207373):0.0007566247,((((Phytophthora_bisheria_P10117:0.0118358004,((((((((((Phytophthora_botryosa_P6945:0.0007531827,(Phytophthora_colocasiae_P6290:0.0007544761,Phytophthora_meadii_CBS21988:0.0000024022):0.0015089764):0.0000024016,Phytophthora_meadii_P6128:0.0000024022):0.0000024016,(Phytophthora_citrophthora_CBS95087:0.0007505686,Phytophthora_citrophthora_P10341:0.0000024022):0.0000020485):0.0015202814,(Phytophthora_citricola_CBS22188:0.0007485343,Phytophthora_multivora_P7902:0.0000024022):0.0000024016):0.0015202327,Phytophthora_siskiyouensis_P15122:0.0015247453):0.0022646405,Phytophthora_sp_glovera_P10618:0.0007476408):0.0000024016,Phytophthora_capsici_P10386:0.0000024022):0.0000023468,Phytophthora_capsici_CBS12823:0.0000024022):0.0007459405,Phytophthora_capsici_CBS55488:0.0007488102):0.0000024016,Phytophthora_mexicana_P0646:0.0007487539):0.0006799842):0.0015664022,Phytophthora_multivesiculata_CBS54596:0.0053952691):0.0038475651,(((Phytophthora_cajani_P3105:0.0000024022,(((((Phytophthora_cambivora_P0592:0.0000024022,Phytophthora_fragariae_CBS20946:0.0000024022):0.0008093427,(Phytophthora_europaea_P10324:0.0007479473,Phytophthora_uliginosa_P10328:0.0007499353):0.0007683984):0.0014550133,((((Phytophthora_gonapodyides_CBS36379:0.0007484279,Phytophthora_sp_canalensis_P10456:0.0045671793):0.0000024016,((Phytophthora_megasperma_CBS30636:0.0000024022,Phytophthora_megasperma_P10340:0.0000024022):0.0022595087,(Phytophthora_megasperma_CBS40272:0.0000024022,Phytophthora_megasperma_P1679:0.0000024022):0.0015197902):0.0030503063):0.0007595785,(Phytophthora_humicola_CBS20081:0.0053472813,Phytophthora_sp_nov_P10337:0.0015045902):0.0007489172):0.0030198888,Phytophthora_sp_sulawesiensis_P6306:0.0030694967):0.0031112263):0.0010805406,((Phytophthora_cinnamomi_CBS14422:0.0000024022,Phytophthora_cinnamomi_P3232:0.0000024022):0.0014997873,Phytophthora_cinnamomi_var_parvispora_CBS41196:0.0000024022):0.0015138414):0.0008369275,Phytophthora_sp_niederhauserii_P10616:0.0007496690):0.0000024016):0.0000024016,Phytophthora_pistaciae_P6196:0.0007493190):0.0008296271,Phytophthora_melonis_CBS58269:0.0000024022):0.0016669904):0.0008447543,((((((Phytophthora_boehmeriae_CBS29129:0.0040510444,(Phytophthora_kernoviae_P10671:0.0007583873,Phytophthora_kernoviae_P10681:0.0000024022):0.0088423053):0.0190452743,(Phytophthora_captiosa_P10719:0.0008576593,Phytophthora_fallax_P10723:0.0037512514):0.0280586485):0.0042577233,(((Phytophthora_macrochlamydospora_P10267:0.0000024022,Phytophthora_macrochlamydospora_P8017:0.0014991149):0.0017061857,Phytophthora_quininea_CBS40748:0.0021446327):0.0272102347,((Phytophthora_sp_cuyabensis_P8213:0.0000024022,Phytophthora_sp_cuyabensis_P8218:0.0000024022):0.0096657614,(Phytophthora_sp_lagoariana_P8220:0.0061387926,Phytophthora_sp_thermophilum_P10457:0.0000024022):0.0027285861):0.0143295966):0.0091900616):0.0038365634,((Phytophthora_insolita_P6195:0.0000024022,Phytophthora_insolita_P6703:0.0000024022):0.0104154947,Phytophthora_polonica_P15004:0.0115511626):0.0172699888):0.0258782447,((((((Phytophthora_brassicae_CBS17887:0.0030644294,Phytophthora_primulae_P10220:0.0069614498):0.0015319833,(Phytophthora_sp_nov_P10728:0.0038002381,Phytophthora_sp_nov_P6207:0.0000024022):0.0007711120):0.0228781423,(Phytophthora_syringae_CBS13223:0.0000024022,Phytophthora_syringae_P10330:0.0007491115):0.0037871059):0.0025313174,(Phytophthora_hibernalis_P3822:0.0211583143,Phytophthora_ramorum_CBS101553:0.0044301707):0.0047522123):0.0008341573,Phytophthora_foliorum_P10969:0.0025588957):0.0019769921,((((Phytophthora_cryptogea_CBS11319:0.0000024022,Phytophthora_erythroseptica_P10382:0.0007552884):0.0015635456,Phytophthora_drechsleri_P10331:0.0077431589):0.0007069379,(Phytophthora_cryptogea_P3103:0.0006688615,Phytophthora_cryptogea_f_sp_begoniae_CBS46881:0.0000024022):0.0000877929):0.0015353130,(Phytophthora_sansomeana_P3163:0.0015121696,Phytophthora_trifolii_P1462:0.0030375484):0.0015130450):0.0023163038):0.0037645237):0.0000016799,Phytophthora_sp_asparagi_P10690:0.0076656313):0.0023094023):0.0000024016):0.0018929454):0.0399312455,((Phytophthora_avicenniae_CBS18885:0.0056991643,Phytophthora_batemanensis_CBS67984:0.0126886408):0.0092024297,Phytophthora_polymorphica_CBS68084:0.0202559858):0.0680447984):0.0283693436,Halophytophthora_exoprolifera_CBS25293:0.0666451668):0.0246371944,(((((Halophytophthora_kandelii_CBS11191:0.0056597750,Halophytophthora_kandelii_CBS11391:0.0006395103):0.0542477355,Phytopythium_oedochilum_CBS29237:0.0113509416):0.0112410415,((((Phytopythium_boreale_CBS55188:0.0000024022,Phytopythium_megacarpum_CBS112351:0.0000024022):0.0126414478,Phytopythium_ostracodes_CBS76873:0.0045197616):0.0035277188,Phytopythium_sindhum_DAOM238986:0.0091896320):0.0073622063,(((Phytopythium_carbonicum_CBS112544:0.0088986812,Phytopythium_montanum_CBS111349:0.0006621184):0.0243573120,Phytopythium_litorale_CBS118360:0.0024162835):0.0005121296,Phytopythium_citrinum_CBS119171:0.0017788165):0.0104352204):0.0133545290):0.0216612385,(Phytopythium_chamaehyphon_CBS25930:0.0120383510,Phytopythium_helicoides_CBS28631:0.0123168503):0.0618585546):0.0167093530,(((Phytopythium_aff_vexans_CBS26130:0.0007859919,Phytopythium_cucurbitacearum_CBS74896:0.0000024022):0.0031738918,Phytopythium_vexans_CBS11980:0.0007972200):0.0007826761,Phytopythium_vexans_P3980:0.0000024022):0.0472142136):0.0349337209):0.0268662455,(((((((((Brevilegnia_gracilis_CBS13137:0.0008137621,Pythium_ultimum_var_ultimum_CBS39851:0.0016061615):0.0035208288,(Pythium_ultimum_var_sporangiiferum_CBS21965:0.0068078484,Pythium_ultimum_var_ultimum_CBS122650:0.0057817200):0.0046048137):0.0039336225,Pythium_splendens_CBS46248:0.0073126446):0.0313816401,Pythium_violae_CBS17886:0.0185782501):0.0127755257,(((Pythium_glomeratum_CBS119165:0.0000024022,Pythium_heterothallicum_CBS45067:0.0000024022):0.0000024016,Pythium_glomeratum_CBS120914:0.0007978760):0.0011690743,((Pythium_glomeratum_CBS122644:0.0000024022,Pythium_heterothallicum_CBS122655:0.0000024022):0.0000024778,Pythium_glomeratum_CBS122651:0.0000024022):0.0004277897):0.0162042340):0.0082711594,(Pythium_anandrum_CBS28531:0.0053619670,((Pythium_dimorphum_CBS40672:0.0000024022,Pythium_undulatum_CBS15769:0.0007984684):0.0078225658,((Pythium_helicandrum_CBS39354:0.0027959585,Pythium_prolatum_CBS84568:0.0036240831):0.0016104349,Pythium_senticosum_CBS122490:0.0007049564):0.0000028341):0.0033592766):0.0449355514):0.0114664919,((((((Pythium_acanthophoron_CBS33729:0.0099816200,Pythium_nodosum_CBS102274:0.0023273325):0.0038712941,Pythium_cystogenes_CBS67585:0.0060103365):0.0017830716,Pythium_perplexum_CBS67485:0.0069323175):0.0025508921,(Pythium_nunn_CBS80896:0.0007872751,Pythium_orthogonon_CBS37672:0.0007796189):0.0140203522):0.0084933544,(((Pythium_buismaniae_CBS28831:0.0040203626,Pythium_mastophorum_CBS37572:0.0230884326):0.0035901582,Pythium_uncinulatum_CBS51877:0.0010068065):0.0176424785,Pythium_sp_jasmonium_CBS101876:0.0108861188):0.0172762855):0.0498999411,(((((((Pythium_acrogynum_CBS54988:0.0007913345,Pythium_hypogynum_CBS23494:0.0000024022):0.0023982942,(Pythium_apiculatum_CBS120945:0.0048228814,((Pythium_carolinianum_CBS122658:0.0000024022,Pythium_carolinianum_CBS122659:0.0000024022):0.0023960945,((((Pythium_echinulatum_CBS28164:0.0000024022,Pythium_ornacarpum_CBS112350:0.0000024022):0.0000024016,Pythium_erinaceus_CBS50580:0.0000024022):0.0015902905,Pythium_radiosum_CBS21794:0.0032340341):0.0007901388,Pythium_papilogynum_CBS122648:0.0008097508):0.0007914530):0.0000024016):0.0000024016):0.0081840378,((Pythium_longandrum_CBS112355:0.0000024022,Pythium_longisporangium_CBS122646:0.0016015105):0.0020081937,Pythium_longandrum_CBS122660:0.0020176924):0.0093835654):0.0102886778,Pythium_segnitium_CBS112354:0.0042833703):0.0038883682,Pythium_marsipium_CBS77381:0.0416750145):0.0037119139,(((((((Pythium_middletonii_CBS52874:0.0020466014,Pythium_multisporum_CBS47050:0.0020120737):0.0040691965,Pythium_takayamanum_CBS122491:0.0000024022):0.0007968559,Pythium_takayamanum_CBS122492:0.0007998482):0.0000024016,Pythium_rhizosaccharum_CBS112356:0.0015913246):0.0007944528,((Pythium_minus_CBS122657:0.0000024022,(Pythium_minus_CBS22688:0.0040197384,Pythium_pleroticum_CBS77681:0.0000024022):0.0000024016):0.0007948743,Pythium_parvum_CBS22588:0.0015925621):0.0000024016):0.0000024184,Pythium_rhizosaccharum_CBS122652:0.0034317467):0.0021990528,Pythium_rhizosaccharum_CBS122654:0.0018149724):0.0092230884):0.0030604480,(Pythium_rostratifingens_CBS115464:0.0223624737,Pythium_rostratum_CBS53374:0.0143661718):0.0507130129):0.0117938493):0.0145603094):0.0088996098,((((Brevilegnia_macrospora_CBS13237:0.0015699787,(Pythium_abappressorium_CBS110198:0.0039266195,(Pythium_debaryanum_CBS75296:0.0015684128,Pythium_lucens_CBS113342:0.0015570143):0.0000024016):0.0007742145):0.0044080782,(((((Pythium_attrantheridium_DAOM230383:0.0015534665,Pythium_sp_CBS113341:0.0007729478):0.0000023104,Pythium_sp_balticum_CBS122649:0.0023548082):0.0031417411,Pythium_intermedium_CBS26638:0.0000024022):0.0057905839,((((((((Pythium_cryptoirregulare_CBS118731:0.0000024022,Pythium_irregulare_ADC0838:0.0000024022):0.0007806454,Pythium_irregulare_CBS25028:0.0007775843):0.0007761512,Pythium_cylindrosporum_CBS21894:0.0000019985):0.0023380222,Pythium_paroecandrum_CBS15764:0.0000020695):0.0015628165,(Pythium_mamillatum_CBS25128:0.0000025610,Pythium_spiculum_CBS122645:0.0007760416):0.0015640915):0.0007793222,Pythium_sylvaticum_CBS45367:0.0007785389):0.0000029394,Pythium_terrestris_CBS112352:0.0000024022):0.0008043982,((Pythium_kunmingense_CBS55088:0.0000024022,Pythium_spinosum_CBS122663:0.0000024022):0.0007727127,Pythium_spinosum_CBS27567:0.0016065591):0.0047623441):0.0013984657):0.0047848796,Pythium_macrosporum_CBS57480:0.0065975235):0.0091823447):0.0259438906,Pythium_nagaii_CBS77996:0.0244798632):0.0075734823,((Pythium_canariense_CBS112353:0.0000024022,(Pythium_iwayamai_CBS15664:0.0007823691,Pythium_violae_CBS15964:0.0000024022):0.0000024016):0.0025003645,(Pythium_okanoganense_CBS31581:0.0073125496,Pythium_paddicum_CBS69883:0.0031105528):0.0083556873):0.0308636697):0.0192420713):0.0234292347,((((((((Lagenidium_caudatum_CBS58485:0.0000024022,Pythium_capillosum_CBS22294:0.0000024022):0.0062452390,(((Pythium_apleroticum_CBS77281:0.0000024022,Pythium_pachycaule_CBS22788:0.0024158893):0.0024277535,Pythium_sukuiense_CBS110030:0.0000024022):0.0023430282,(((Pythium_coloratum_CBS15464:0.0000024022,Pythium_dissotocum_CBS16668:0.0000024022):0.0008010203,(Pythium_lutarium_CBS22288:0.0032253593,Pythium_sp_CBS75096:0.0000024022):0.0000024016):0.0000024016,Pythium_diclinum_CBS66479:0.0000024022):0.0025058050):0.0070711824):0.0106869966,Pythium_pyrilobum_CBS15864:0.0099061022):0.0049697359,((((Pythium_angustatum_CBS52274:0.0084140909,(Pythium_catenulatum_CBS84268:0.0016165319,(Pythium_folliculosum_CBS22094:0.0040492394,Pythium_torulosum_CBS31633:0.0000024022):0.0000024016):0.0064352833):0.0034303102,((((Pythium_aristosporum_CBS26338:0.0000024022,Pythium_arrhenomanes_CBS32462:0.0000024022):0.0008113386,Pythium_phragmitis_CBS117104:0.0016213339):0.0032658808,Pythium_volutum_CBS69983:0.0049769991):0.0025160156,((((Pythium_conidiophorum_CBS22388:0.0000024022,Pythium_salpingophorum_CBS47150:0.0017850217):0.0081416603,Pythium_tracheiphilum_CBS32365:0.0000024022):0.0095398621,Pythium_vanterpoolii_CBS29537:0.0192713045):0.0031265610,((((Pythium_contiguanum_CBS22194:0.0020246322,((Pythium_myriotylum_CBS25470:0.0000024022,Pythium_zingiberis_CBS21682:0.0000024022):0.0028514503,Pythium_sulcatum_CBS60373:0.0028576069):0.0024500613):0.0000025808,Pythium_scleroteichum_CBS29437:0.0036415277):0.0016513131,Pythium_dissimile_CBS15564:0.0036799003):0.0011876491,(Pythium_graminicola_CBS32762:0.0000024022,Pythium_periilum_CBS16968:0.0000024022):0.0058278156):0.0015706942):0.0008557688):0.0008013499):0.0007761107,Pythium_inflatum_CBS16868:0.0033565898):0.0021494155,(Pythium_kashmirense_CBS122908:0.0086570202,Pythium_plurisporium_CBS100530:0.0084725783):0.0026035587):0.0019375367):0.0157700469,((((Pythium_adhaerens_CBS52074:0.0008011519,Pythium_chondricola_CBS20385:0.0000024022):0.0000024016,Pythium_porphyrae_CBS36979:0.0008007798):0.0167233827,Pythium_monospermum_CBS15873:0.0114512890):0.0091476254,(Pythium_aphanidermatum_CBS11880:0.0049787391,Pythium_deliense_CBS31433:0.0015434432):0.0067080986):0.0087755434):0.0099124381,(Pythium_grandisporangium_CBS28679:0.0365486780,Pythium_insidiosum_CBS57485:0.0385962950):0.0128712189):0.0058764430,Pythiogeton_zeae_Lev3132:0.0874362858):0.0069838036,((((Pythium_acanthicum_CBS37734:0.0016199427,Pythium_sp_spiculacarpum_CBS122647:0.0000024022):0.0040629914,((Pythium_amasculinum_CBS55288:0.0000024022,Pythium_ornamentatum_CBS122665:0.0000024022):0.0000024016,Pythium_hydnosporum_CBS25360:0.0000024022):0.0000024016):0.0008113156,Pythium_periplocum_CBS122664:0.0008025727):0.0000024016,Pythium_periplocum_CBS28931:0.0024223997):0.0546605720):0.0435913920):0.0082924079):0.0127163590,Phytophthora_epistomium_CBS59085:0.1188140877):0.0612830033):0.2349572530);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t data_training/dna_M9033_300_1394.phy/output_files/iqtree/inference/pars_2.treefile -m "GTR{0.461169,2.06262,0.63538,0.505543,4.56673}+F{0.24573,0.184328,0.300067,0.269875}+R5{0.584617,0.0254026,0.161563,0.473605,0.133944,2.12852,0.0967927,4.40784,0.0230828,8.52935}" --length 1394
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s Data/dna_M9033_300_1394.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s Data/dna_M9033_300_1394.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed Sep 24 20:24:55 2025
+Total CPU time used: 499.071 seconds (0h:8m:19s)
+Total wall-clock time used: 484.766 seconds (0h:8m:4s)
+
