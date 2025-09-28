@@ -1,0 +1,661 @@
+IQ-TREE 3.0.1 built Sep 14 2025
+
+Input file name: /home/suny/Downloads/VAN_TRAINING_DATA/data3/dna_M4938_213_1250.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 213 sequences with 1250 nucleotide sites
+Number of constant sites: 526 (= 42.08% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 526 (= 42.08% of all sites)
+Number of parsimony informative sites: 696
+Number of distinct site patterns: 775
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+R5
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+I+R5       -35968.690   72817.380 +        1   73297.083 +        1   75074.975 +        1
+TIM2+F+I+R5      -35994.164   72864.328 - 6.39e-11   73338.513 - 1.01e-09   75111.661 - 1.08e-08
+GTR+F+I+R4       -35998.182   72872.364 - 1.15e-12   73346.549 - 1.81e-11   75119.698 - 1.94e-10
+TIM2+F+I+R4      -36019.832   72911.663 - 3.36e-21   73380.377 - 8.18e-19   75148.735 - 9.62e-17
+GTR+I+R5         -36072.721   73019.441 - 1.33e-44   73490.885 - 8.25e-43   75261.644 - 2.92e-41
+SYM+I+R5         -36073.193   73020.386 - 8.28e-45   73491.829 - 5.15e-43   75262.589 - 1.82e-41
+SYM+I+R5         -36073.193   73020.386 - 8.28e-45   73491.829 - 5.15e-43   75262.589 - 1.82e-41
+GTR+I+R4         -36106.132   73082.265 - 3.03e-58   73548.260 - 2.87e-55   75314.206 - 1.13e-52
+SYM+I+R4         -36106.194   73082.387 - 2.85e-58   73548.382 -  2.7e-55   75314.328 - 1.06e-52
+SYM+I+R4         -36106.194   73082.387 - 2.85e-58   73548.382 -  2.7e-55   75314.328 - 1.06e-52
+TIM2+I+R5        -36107.393   73084.785 - 8.58e-59   73550.780 - 8.13e-56   75316.726 - 3.19e-53
+TIM2e+I+R5       -36107.528   73085.057 - 7.49e-59   73551.052 -  7.1e-56   75316.998 - 2.79e-53
+TIM2e+I+R5       -36107.528   73085.057 - 7.49e-59   73551.052 -  7.1e-56   75316.998 - 2.79e-53
+TVM+F+I+R5       -36098.683   73075.366 - 9.53e-57   73552.304 -  3.8e-56   75327.830 - 1.24e-55
+TVM+F+I+R4       -36120.843   73115.685 - 1.67e-65   73587.129 - 1.04e-63   75357.888 - 3.68e-62
+TIM2+I+R4        -36136.408   73138.817 - 1.59e-70   73599.410 - 2.24e-66   75360.496 -    1e-62
+TIM2e+I+R4       -36136.551   73139.102 - 1.38e-70   73599.695 - 1.94e-66   75360.781 - 8.67e-63
+TIM2e+I+R4       -36136.551   73139.102 - 1.38e-70   73599.695 - 1.94e-66   75360.781 - 8.67e-63
+TPM2u+F+I+R5     -36127.612   73129.224 - 1.92e-68   73600.667 -  1.2e-66   75371.427 - 4.23e-65
+TPM2u+F+I+R4     -36145.026   73160.051 - 3.89e-75   73626.046 - 3.69e-72   75391.992 - 1.45e-69
+TIM3+F+I+R5      -36235.517   73347.034 - 9.7e-116   73821.219 - 1.53e-114   75594.368 - 1.64e-113
+TIM+F+I+R5       -36251.530   73379.059 - 1.08e-122   73853.244 - 1.7e-121   75626.393 - 1.82e-120
+TN+F+I+R5        -36262.065   73398.130 - 7.79e-127   73869.573 - 4.85e-125   75640.332 - 1.71e-123
+TIM3+F+I+R4      -36265.730   73403.459 - 5.43e-128   73872.173 - 1.32e-125   75640.531 - 1.55e-123
+TIM+F+I+R4       -36277.577   73427.154 - 3.88e-133   73895.867 - 9.46e-131   75664.225 - 1.11e-128
+TN+F+I+R4        -36286.724   73443.449 - 1.12e-136   73909.444 - 1.07e-133   75675.390 - 4.18e-131
+TPM3u+F+I+R5     -36320.960   73515.921 - 2.06e-152   73987.364 - 1.28e-150   75758.124 - 4.53e-149
+TPM3u+F+I+R4     -36345.257   73560.513 - 4.27e-162   74026.508 - 4.05e-159   75792.454 - 1.59e-156
+K3Pu+F+I+R5      -36338.492   73550.984 - 5.01e-160   74022.428 - 3.11e-158   75793.187 - 1.1e-156
+HKY+F+I+R5       -36349.287   73570.573 - 2.79e-164   74039.287 - 6.8e-162   75807.645 - 7.99e-160
+K3Pu+F+I+R4      -36360.124   73590.248 - 1.49e-168   74056.243 - 1.41e-165   75822.189 - 5.55e-163
+HKY+F+I+R4       -36368.926   73605.851 - 6.1e-172   74069.140 - 2.24e-168   75832.662 - 2.95e-165
+TVM+I+R5         -36420.163   73712.325 - 4.62e-195   74181.039 - 1.13e-192   75949.397 - 1.32e-190
+TVMe+I+R5        -36420.183   73712.366 - 4.53e-195   74181.080 - 1.1e-192   75949.438 - 1.3e-190
+TVMe+I+R5        -36420.183   73712.366 - 4.53e-195   74181.080 - 1.1e-192   75949.438 - 1.3e-190
+TVM+I+R4         -36441.173   73750.346 - 2.56e-203   74213.634 - 9.41e-200   75977.156 - 1.24e-196
+TVMe+I+R4        -36441.228   73750.456 - 2.43e-203   74213.744 - 8.9e-200   75977.266 - 1.17e-196
+TVMe+I+R4        -36441.228   73750.456 - 2.43e-203   74213.744 - 8.9e-200   75977.266 - 1.17e-196
+TPM2u+I+R5       -36458.592   73785.183 - 6.98e-211   74248.472 - 2.56e-207   76011.993 - 3.38e-204
+TPM2+I+R5        -36458.665   73785.331 - 6.49e-211   74248.619 - 2.38e-207   76012.141 - 3.14e-204
+TPM2+I+R5        -36458.665   73785.331 - 6.49e-211   74248.619 - 2.38e-207   76012.141 - 3.14e-204
+TPM2+I+R4        -36475.924   73815.847 - 1.53e-217   74273.757 - 8.28e-213   76032.395 - 1.26e-208
+TPM2+I+R4        -36475.924   73815.847 - 1.53e-217   74273.757 - 8.28e-213   76032.395 - 1.26e-208
+TPM2u+I+R4       -36476.008   73816.015 - 1.41e-217   74273.925 - 7.61e-213   76032.563 - 1.15e-208
+TIM3+I+R5        -36585.984   74041.968 - 1.21e-266   74507.963 - 1.15e-263   76273.909 - 4.52e-261
+TIM3e+I+R5       -36586.276   74042.553 - 9.06e-267   74508.548 - 8.59e-264   76274.493 - 3.37e-261
+TIM3e+I+R5       -36586.276   74042.553 - 9.06e-267   74508.548 - 8.59e-264   76274.493 - 3.37e-261
+TIM+I+R5         -36605.967   74081.935 - 2.54e-275   74547.930 - 2.41e-272   76313.876 - 9.47e-270
+TIMe+I+R5        -36606.426   74082.851 - 1.61e-275   74548.846 - 1.52e-272   76314.792 - 5.99e-270
+TIMe+I+R5        -36606.426   74082.851 - 1.61e-275   74548.846 - 1.52e-272   76314.792 - 5.99e-270
+TN+I+R5          -36620.936   74109.872 - 2.18e-281   74573.160 -   8e-278   76336.682 - 1.06e-274
+TNe+I+R5         -36621.404   74110.808 - 1.37e-281   74574.097 - 5.01e-278   76337.618 - 6.61e-275
+TNe+I+R5         -36621.404   74110.808 - 1.37e-281   74574.097 - 5.01e-278   76337.618 - 6.61e-275
+TIM3+I+R4        -36625.052   74116.105 - 9.67e-283   74576.698 - 1.37e-278   76337.784 - 6.09e-275
+TIM3e+I+R4       -36625.222   74116.444 - 8.16e-283   74577.037 - 1.15e-278   76338.123 - 5.14e-275
+TIM3e+I+R4       -36625.222   74116.444 - 8.16e-283   74577.037 - 1.15e-278   76338.123 - 5.14e-275
+TIM+I+R4         -36640.410   74146.820 - 2.07e-289   74607.413 - 2.92e-285   76368.499 - 1.3e-281
+TIMe+I+R4        -36640.457   74146.915 - 1.97e-289   74607.508 - 2.79e-285   76368.594 - 1.24e-281
+TIMe+I+R4        -36640.457   74146.915 - 1.97e-289   74607.508 - 2.79e-285   76368.594 - 1.24e-281
+TN+I+R4          -36653.256   74170.513 - 1.48e-294   74628.422 - 8.01e-290   76387.061 - 1.21e-285
+TNe+I+R4         -36653.393   74170.785 - 1.29e-294   74628.695 - 6.99e-290   76387.334 - 1.06e-285
+TNe+I+R4         -36653.393   74170.785 - 1.29e-294   74628.695 - 6.99e-290   76387.334 - 1.06e-285
+TPM3u+I+R5       -36895.698   74659.395 -        0   75122.684 -        0   76886.205 -        0
+TPM3+I+R5        -36895.748   74659.496 -        0   75122.785 -        0   76886.306 -        0
+TPM3+I+R5        -36895.748   74659.496 -        0   75122.785 -        0   76886.306 -        0
+TPM3+I+R4        -36918.147   74700.294 -        0   75158.204 -        0   76916.843 -        0
+TPM3+I+R4        -36918.147   74700.294 -        0   75158.204 -        0   76916.843 -        0
+TPM3u+I+R4       -36918.155   74700.309 -        0   75158.219 -        0   76916.858 -        0
+K3Pu+I+R5        -36916.548   74701.095 -        0   75164.383 -        0   76927.905 -        0
+K3P+I+R5         -36916.601   74701.203 -        0   75164.491 -        0   76928.013 -        0
+K3P+I+R5         -36916.601   74701.203 -        0   75164.491 -        0   76928.013 -        0
+HKY+I+R5         -36931.161   74728.322 -        0   75188.916 -        0   76950.002 -        0
+K2P+I+R5         -36931.750   74729.500 -        0   75190.093 -        0   76951.179 -        0
+K2P+I+R5         -36931.750   74729.500 -        0   75190.093 -        0   76951.179 -        0
+K3Pu+I+R4        -36936.189   74736.379 -        0   75194.288 -        0   76952.927 -        0
+K3P+I+R4         -36936.269   74736.538 -        0   75194.447 -        0   76953.086 -        0
+K3P+I+R4         -36936.269   74736.538 -        0   75194.447 -        0   76953.086 -        0
+HKY+I+R4         -36949.360   74760.721 -        0   75215.958 -        0   76972.138 -        0
+K2P+I+R4         -36949.552   74761.104 -        0   75216.341 -        0   76972.522 -        0
+K2P+I+R4         -36949.552   74761.104 -        0   75216.341 -        0   76972.522 -        0
+F81+F+I+R4       -38651.353   78168.706 -        0   78629.299 -        0   80390.385 -        0
+F81+F+I+R5       -38645.365   78160.729 -        0   78626.724 -        0   80392.670 -        0
+F81+I+R4         -39150.710   79161.420 -        0   79613.996 -        0   81367.706 -        0
+JC+I+R4          -39151.020   79162.041 -        0   79614.617 -        0   81368.327 -        0
+JC+I+R4          -39151.020   79162.041 -        0   79614.617 -        0   81368.327 -        0
+F81+I+R5         -39145.847   79155.694 -        0   79613.603 -        0   81372.242 -        0
+JC+I+R5          -39146.054   79156.107 -        0   79614.016 -        0   81372.655 -        0
+JC+I+R5          -39146.054   79156.107 -        0   79614.016 -        0   81372.655 -        0
+JC+R6            -39153.589   79173.178 -        0   79633.771 -        0   81394.857 -        0
+JC+R7            -39152.534   79175.069 -        0   79641.064 -        0   81407.010 -        0
+JC+I+G4          -39197.897   79245.794 -        0   79685.236 -        0   81426.426 -        0
+JC+R5            -39179.465   79220.929 -        0   79676.167 -        0   81432.347 -        0
+JC+I+R3          -39218.482   79292.963 -        0   79740.252 -        0   81488.988 -        0
+JC+R4            -39245.548   79349.096 -        0   79799.023 -        0   81550.252 -        0
+JC+G4            -39427.247   79702.494 -        0   80139.342 -        0   81877.995 -        0
+JC+R3            -39431.930   79717.860 -        0   80162.522 -        0   81908.754 -        0
+JC+I+R2          -39494.354   79840.708 -        0   80282.754 -        0   82026.471 -        0
+JC+R2            -40041.557   80933.114 -        0   81372.555 -        0   83113.746 -        0
+JC+I             -41997.260   84842.521 -        0   85279.369 -        0   87018.022 -        0
+JC               -46985.949   94817.899 -        0   95252.165 -        0   96988.269 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+R5
+
+Rate parameter R:
+
+  A-C: 3.1948
+  A-G: 12.3310
+  A-T: 5.9613
+  C-G: 0.5580
+  C-T: 27.2449
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2674
+  pi(C) = 0.2636
+  pi(G) = 0.1875
+  pi(T) = 0.2815
+
+Rate matrix Q:
+
+  A   -0.7119    0.1241    0.3406    0.2472
+  C    0.1258    -1.271   0.01541      1.13
+  G    0.4857   0.02167   -0.5489   0.04147
+  T    0.2348     1.058   0.02762     -1.32
+
+Model of rate heterogeneity: Invar+FreeRate with 5 categories
+Proportion of invariable sites: 0.3778
+Site proportion and rates:  (0.1688,0.09296) (0.1131,0.4098) (0.1755,1.316) (0.09812,2.965) (0.06667,6.24)
+
+ Category  Relative_rate  Proportion
+  0         0              0.3778
+  1         0.09296        0.1688
+  2         0.4098         0.1131
+  3         1.316          0.1755
+  4         2.965          0.09812
+  5         6.24           0.06667
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -35967.8288 (s.e. 1124.1250)
+Unconstrained log-likelihood (without tree): -6999.6884
+Number of free parameters (#branches + #model parameters): 440
+Akaike information criterion (AIC) score: 72815.6577
+Corrected Akaike information criterion (AICc) score: 73295.3610
+Bayesian information criterion (BIC) score: 75073.2532
+
+Total tree length (sum of branch lengths): 17.4183
+Sum of internal branch lengths: 12.7570 (73.2394% of tree length)
+
+WARNING: 46 near-zero internal branches (<0.0008) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Agalychnis_callidryas_KRL0917' is drawn at root
+
++**Agalychnis_callidryas_KRL0917
+|
++--Agalychnis_callidryas_TOE1
+|
+|  +**Agalychnis_callidryas_TOE4
++--|
+   |                                            +--Allobates_talamancae_KRL0796
+   |                                +-----------|
+   |                                |           +**Allobates_talamancae_KRL0905
+   |                             +--|
+   |                             |  |                 +--Colostethus_panamansis_KRL0953
+   |                             |  |              +**|
+   |                             |  |              |  +**Colostethus_panamansis_KRL1332
+   |                             |  |           +**|
+   |                             |  |           |  +**Colostethus_panamansis_KRL1338
+   |                             |  |        +--|
+   |                             |  |        |  +**Colostethus_panamansis_KRL1390
+   |                             |  |     +--|
+   |                             |  |     |  |   +--Colostethus_pratti_KRL0732
+   |                             |  |     |  +---|
+   |                             |  |     |      +**Colostethus_pratti_KRL1217
+   |                             |  |  +--|
+   |                             |  |  |  |       +--Silverstoneia_flotator_KRL0734
+   |                             |  |  |  |  +----|
+   |                             |  |  |  |  |    |  +**Silverstoneia_flotator_KRL0847
+   |                             |  |  |  |  |    +--|
+   |                             |  |  |  |  |       +**Silverstoneia_flotator_KRL0958
+   |                             |  |  |  +--|
+   |                             |  |  |     |        +**Silverstoneia_nubicola_A_KRL0897
+   |                             |  |  |     |     +**|
+   |                             |  |  |     |     |  +**Silverstoneia_nubicola_A_KRL1560
+   |                             |  |  |     |  +--|
+   |                             |  |  |     |  |  +**Silverstoneia_nubicola_A_KRL1561
+   |                             |  |  |     +--|
+   |                             |  |  |        |        +**Silverstoneia_nubicola_KRL0822
+   |                             |  |  |        |     +**|
+   |                             |  |  |        |     |  +**Silverstoneia_nubicola_KRL0945
+   |                             |  |  |        |  +**|
+   |                             |  |  |        |  |  |  +**Silverstoneia_nubicola_KRL1095
+   |                             |  |  |        |  |  +--|
+   |                             |  |  |        |  |     +**Silverstoneia_nubicola_KRL1460
+   |                             |  |  |        +--|
+   |                             |  |  |           +--Silverstoneia_nubicola_KRL1385
+   |                             |  +--|
+   |                             |     |          +--Dendrobates_auratus_Bocas_CH6605
+   |                             |     |     +----|
+   |                             |     |     |    +**Dendrobates_auratus_RioChico_AJC1999
+   |                             |     |  +--|
+   |                             |     |  |  |  +-----Oophaga_vicentei_Cope_GBKRL_0789
+   |                             |     |  |  +--|
+   |                             |     |  |     +------Ranitomeya_minuta_Cope_GBKRL_0790
+   |                             |     +--|
+   |                             |        +------Phyllobates_lugubris_KRL1735
+   |                          +--|
+   |                          |  |                               +--Bolitoglossa_colonnea_Bocas_CH6526
+   |                          |  |                   +-----------|
+   |                          |  |                   |           +---Bolitoglossa_schizodactyla_KRL1179
+   |                          |  |      +------------|
+   |                          |  |      |            |          +--------Oedipina_collaris_H08896GBSIUC
+   |                          |  |      |            +----------|
+   |                          |  |      |                       +--Oedipina_parvipes_CerroAzl_AJC1786
+   |                          |  |  +---|
+   |                          |  |  |   +----------------------------------Caecilia_volcani_KRL0797
+   |                          |  +--|
+   |                          |     |            +---Lithobates_aff_warszewitschii_KRL0823
+   |                          |     +------------|
+   |                          |                  |  +**Lithobates_warszewitschii_KRL1008
+   |                          |                  +--|
+   |                          |                     +**Lithobates_warszewitschii_KRL1540
+   |                       +--|
+   |                       |  |             +--Engystomops_pustulosus_KRL0867
+   |                       |  |          +--|
+   |                       |  |          |  |  +--Engystomops_pustulosus_KRL0915
+   |                       |  |          |  +--|
+   |                       |  |          |     +--Engystomops_pustulosus_KRL1169
+   |                       |  +----------|
+   |                       |             +**Engystomops_pustulosus_KRL0916
+   |                    +--|
+   |                    |  |                                 +**Craugastor_aff_azueroensis_KRL0629
+   |                    |  |                              +--|
+   |                    |  |                              |  +--Craugastor_aff_azueroensis_KRL0630
+   |                    |  |                          +---|
+   |                    |  |                          |   |  +**Craugastor_aff_azueroensis_KRL0680
+   |                    |  |                          |   +--|
+   |                    |  |                          |      +**Craugastor_aff_azueroensis_KRL0835
+   |                    |  |                       +--|
+   |                    |  |                       |  +---Craugastor_megacephalus_KRL0618
+   |                    |  |                +------|
+   |                    |  |                |      |        +**Craugastor_punctariolus_KRL0682
+   |                    |  |                |      |     +--|
+   |                    |  |                |      |     |  +**Craugastor_punctariolus_KRL0863
+   |                    |  |                |      |  +--|
+   |                    |  |                |      |  |  |     +**Craugastor_punctariolus_KRL0870
+   |                    |  |                |      |  |  |  +**|
+   |                    |  |                |      |  |  |  |  +--Craugastor_punctariolus_KRL1180
+   |                    |  |                |      |  |  +--|
+   |                    |  |                |      |  |     +**Craugastor_punctariolus_KRL1198
+   |                    |  |                |      +--|
+   |                    |  |                |         +**Craugastor_punctariolus_KRL0872
+   |                    |  |             +--|
+   |                    |  |             |  |            +--Craugastor_crassidigitus_KRL0129
+   |                    |  |             |  |         +--|
+   |                    |  |             |  |         |  |     +**Craugastor_crassidigitus_KRL0664
+   |                    |  |             |  |         |  |  +**|
+   |                    |  |             |  |         |  |  |  |  +--Craugastor_crassidigitus_KRL0665
+   |                    |  |             |  |         |  |  |  +**|
+   |                    |  |             |  |         |  |  |     +**Craugastor_crassidigitus_KRL0858
+   |                    |  |             |  |         |  +--|
+   |                    |  |             |  |         |     |  +--Craugastor_crassidigitus_KRL0675
+   |                    |  |             |  |         |     +**|
+   |                    |  |             |  |         |        +**Craugastor_crassidigitus_KRL0843
+   |                    |  |             |  |      +--|
+   |                    |  |             |  |      |  |       +**Craugastor_talamancae_KRL1087
+   |                    |  |             |  |      |  |    +**|
+   |                    |  |             |  |      |  |    |  |  +**Craugastor_talamancae_KRL1342
+   |                    |  |             |  |      |  |    |  +**|
+   |                    |  |             |  |      |  |    |     +**Craugastor_talamancae_KRL1409
+   |                    |  |             |  |      |  +----|
+   |                    |  |             |  |      |       |     +**Craugastor_talamancae_KRL1363
+   |                    |  |             |  |      |       |  +**|
+   |                    |  |             |  |      |       |  |  +**Craugastor_talamancae_KRL1454
+   |                    |  |             |  |      |       +--|
+   |                    |  |             |  |      |          +--Craugastor_talamancae_KRL1520
+   |                    |  |             |  |   +--|
+   |                    |  |             |  |   |  +----Craugastor_fitzingeri_KRL0693
+   |                    |  |             |  +---|
+   |                    |  |             |      |              +**Craugastor_sp_nov_pn_KRL0708
+   |                    |  |             |      |           +**|
+   |                    |  |             |      |           |  +**Craugastor_sp_nov_pn_KRL1399
+   |                    |  |             |      |  +--------|
+   |                    |  |             |      |  |        |  +--Craugastor_sp_nov_pn_KRL1473
+   |                    |  |             |      |  |        +**|
+   |                    |  |             |      |  |           +**Craugastor_sp_nov_pn_KRL1480
+   |                    |  |             |      +--|
+   |                    |  |             |         |        +--Craugastor_tabasarae_KRL0706
+   |                    |  |             |         |     +--|
+   |                    |  |             |         |     |  +--Craugastor_tabasarae_KRL1373
+   |                    |  |             |         +-----|
+   |                    |  |             |               +**Craugastor_tabasarae_KRL1387
+   |                    |  |        +----|
+   |                    |  |        |    |                            +**Craugastor_bransfordii_KRL0696
+   |                    |  |        |    |                         +**|
+   |                    |  |        |    |                         |  +**Craugastor_bransfordii_KRL0751
+   |                    |  |        |    |                      +**|
+   |                    |  |        |    |                      |  +**Craugastor_bransfordii_KRL0802
+   |                    |  |        |    |                   +--|
+   |                    |  |        |    |                   |  +**Craugastor_bransfordii_KRL0904
+   |                    |  |        |    |   +---------------|
+   |                    |  |        |    |   |               +**Craugastor_bransfordii_KRL1244
+   |                    |  |        |    +---|
+   |                    |  |        |        |            +**Craugastor_gollmeri_KRL0701
+   |                    |  |        |        |     +------|
+   |                    |  |        |        |     |      |  +**Craugastor_gollmeri_KRL0737
+   |                    |  |        |        |     |      +--|
+   |                    |  |        |        |     |         +--Craugastor_gollmeri_KRL0860
+   |                    |  |        |        +-----|
+   |                    |  |        |              |   +**Craugastor_noblei_KRL0780
+   |                    |  |        |              +---|
+   |                    |  |        |                  +--Craugastor_noblei_KRL1381
+   |                    |  |     +--|
+   |                    |  |     |  |                                 +--Diasporus_aff_diastema_orange_KRL0694
+   |                    |  |     |  |                             +---|
+   |                    |  |     |  |                             |   +**Diasporus_aff_diastema_orange_KRL0840
+   |                    |  |     |  |                       +-----|
+   |                    |  |     |  |                       |     |  +--Diasporus_quidditus_KRL0647
+   |                    |  |     |  |                       |     +--|
+   |                    |  |     |  |                       |        +**Diasporus_quidditus_KRL0856
+   |                    |  |     |  |     +-----------------|
+   |                    |  |     |  |     |                 |  +--Diasporus_sp_nov_KRL0782
+   |                    |  |     |  |     |                 +--|
+   |                    |  |     |  |     |                    +**Diasporus_sp_nov_KRL0831
+   |                    |  |     |  |  +--|
+   |                    |  |     |  |  |  |                 +--Strabomantis_bufoniformis_KRL0862
+   |                    |  |     |  |  |  |              +**|
+   |                    |  |     |  |  |  |              |  +**Strabomantis_bufoniformis_KRL1078
+   |                    |  |     |  |  |  |           +**|
+   |                    |  |     |  |  |  |           |  +--Strabomantis_bufoniformis_KRL1186
+   |                    |  |     |  |  |  +-----------|
+   |                    |  |     |  |  |              |     +**Strabomantis_bufoniformis_KRL0962
+   |                    |  |     |  |  |              |  +**|
+   |                    |  |     |  |  |              |  |  +**Strabomantis_bufoniformis_KRL1412
+   |                    |  |     |  |  |              +**|
+   |                    |  |     |  |  |                 +**Strabomantis_bufoniformis_KRL1562
+   |                    |  |     |  +--|
+   |                    |  |     |     |                           +--Pristimantis_caryophyllaceus_A_KRL0844
+   |                    |  |     |     |                      +----|
+   |                    |  |     |     |                      |    |  +**Pristimantis_caryophyllaceus_A_KRL0898
+   |                    |  |     |     |                      |    +**|
+   |                    |  |     |     |                      |       +**Pristimantis_caryophyllaceus_A_KRL1744
+   |                    |  |     |     |                   +--|
+   |                    |  |     |     |                   |  +--Pristimantis_caryophyllaceus_B_KRL1210
+   |                    |  |     |     |              +----|
+   |                    |  |     |     |              |    |  +**Pristimantis_caryophyllaceus_C_KRL0801
+   |                    |  |     |     |              |    +--|
+   |                    |  |     |     |              |       +--Pristimantis_caryophyllaceus_C_KRL1151
+   |                    |  |     |     |           +--|
+   |                    |  |     |     |           |  |            +--Pristimantis_cerasinus_KRL0828
+   |                    |  |     |     |           |  |         +**|
+   |                    |  |     |     |           |  |         |  +**Pristimantis_cerasinus_KRL0832
+   |                    |  |     |     |           |  |  +------|
+   |                    |  |     |     |           |  |  |      +**Pristimantis_cerasinus_KRL1292
+   |                    |  |     |     |           |  +--|
+   |                    |  |     |     |           |     |           +**Pristimantis_museosus_KRL0699
+   |                    |  |     |     |           |     |        +**|
+   |                    |  |     |     |           |     |        |  +**Pristimantis_museosus_KRL1554
+   |                    |  |     |     |           |     |     +**|
+   |                    |  |     |     |           |     |     |  +**Pristimantis_museosus_KRL0909
+   |                    |  |     |     |           |     +-----|
+   |                    |  |     |     |           |           +**Pristimantis_museosus_KRL0983
+   |                    |  |     |     |        +--|
+   |                    |  |     |     |        |  |              +--Pristimantis_cruentus_KRL0811
+   |                    |  |     |     |        |  |           +**|
+   |                    |  |     |     |        |  |           |  +**Pristimantis_cruentus_KRL1333
+   |                    |  |     |     |        |  |        +--|
+   |                    |  |     |     |        |  |        |  +--Pristimantis_cruentus_KRL1528
+   |                    |  |     |     |        |  |     +--|
+   |                    |  |     |     |        |  |     |  +--Pristimantis_cruentus_KRL1420
+   |                    |  |     |     |        |  +-----|
+   |                    |  |     |     |        |        |  +**Pristimantis_museosus_A_KRL0683
+   |                    |  |     |     |        |        +--|
+   |                    |  |     |     |        |           +**Pristimantis_museosus_A_KRL0739
+   |                    |  |     |     |     +--|
+   |                    |  |     |     |     |  |        +**Pristimantis_ridens_A_KRL0829
+   |                    |  |     |     |     |  |    +---|
+   |                    |  |     |     |     |  |    |   +--Pristimantis_ridens_A_KRL0830
+   |                    |  |     |     |     |  +----|
+   |                    |  |     |     |     |       |  +**Pristimantis_ridens_B_KRL0845
+   |                    |  |     |     |     |       +--|
+   |                    |  |     |     |     |          +--Pristimantis_ridens_B_KRL0846
+   |                    |  |     |     |  +--|
+   |                    |  |     |     |  |  |            +--Pristimantis_gaigeae_KRL0825
+   |                    |  |     |     |  |  |         +--|
+   |                    |  |     |     |  |  |         |  +**Pristimantis_gaigeae_KRL1079
+   |                    |  |     |     |  |  +---------|
+   |                    |  |     |     |  |            +--Pristimantis_gaigeae_KRL1202
+   |                    |  |     |     +--|
+   |                    |  |     |        |                  +**Pristimantis_pardalis_KRL0690
+   |                    |  |     |        |               +**|
+   |                    |  |     |        |               |  +**Pristimantis_pardalis_KRL0765
+   |                    |  |     |        |            +--|
+   |                    |  |     |        |            |  |  +**Pristimantis_pardalis_KRL0826
+   |                    |  |     |        |            |  +**|
+   |                    |  |     |        |            |     +--Pristimantis_pardalis_KRL1745
+   |                    |  |     |        +------------|
+   |                    |  |     |                     +**Pristimantis_pardalis_KRL0857
+   |                    |  |  +--|
+   |                    |  |  |  |               +**Leptodactylus_fragilis_KRL0678
+   |                    |  |  |  |            +**|
+   |                    |  |  |  |            |  +**Leptodactylus_fragilis_KRL0869
+   |                    |  |  |  |        +---|
+   |                    |  |  |  |        |   +--Leptodactylus_fragilis_KRL1290
+   |                    |  |  |  |     +--|
+   |                    |  |  |  |     |  +----Leptodactylus_poecilochilus_KRL0118
+   |                    |  |  |  |  +--|
+   |                    |  |  |  |  |  +------Leptodactylus_savagei_KRL0838
+   |                    |  |  |  +--|
+   |                    |  |  |     +-----Leptodactylus_insularum_KRL1114
+   |                    |  +--|
+   |                    |     |                                  +--Hyloscirtus_colymba_KRL0812
+   |                    |     |                               +**|
+   |                    |     |                               |  +**Hyloscirtus_colymba_KRL1329
+   |                    |     |                            +--|
+   |                    |     |                            |  +**Hyloscirtus_colymba_KRL1631
+   |                    |     |                         +--|
+   |                    |     |                         |  +--Hyloscirtus_colymba_KRL1544
+   |                    |     |                      +--|
+   |                    |     |                      |  +**Hyloscirtus_colymba_KRL1623
+   |                    |     |             +--------|
+   |                    |     |             |        +**Hyloscirtus_colymba_KRL1723
+   |                    |     |     +-------|
+   |                    |     |     |       |          +**Hyloscirtus_palmeri_KRL1038
+   |                    |     |     |       +----------|
+   |                    |     |     |                  +**Hyloscirtus_palmeri_KRL1336
+   |                    |     |  +--|
+   |                    |     |  |  |         +--Hypsiboas_rufitelus_KRL0798
+   |                    |     |  |  +---------|
+   |                    |     |  |            +**Hypsiboas_rufitelus_KRL1191
+   |                    |     +--|
+   |                    |        |                  +--Incilius_coniferus_KRL0809
+   |                    |        |               +**|
+   |                    |        |               |  +--Incilius_coniferus_KRL0939
+   |                    |        |            +--|
+   |                    |        |            |  |  +--Incilius_coniferus_KRL0820
+   |                    |        |            |  +--|
+   |                    |        |            |     +--Incilius_coniferus_KRL1728
+   |                    |        |       +----|
+   |                    |        |       |    +**Incilius_coniferus_TOE140
+   |                    |        |    +--|
+   |                    |        |    |  |                   +**Rhaebo_haematiticus_KRL0855
+   |                    |        |    |  |                +--|
+   |                    |        |    |  |                |  +**Rhaebo_haematiticus_KRL1555
+   |                    |        |    |  |             +**|
+   |                    |        |    |  |             |  +--Rhaebo_haematiticus_KRL0903
+   |                    |        |    |  |          +**|
+   |                    |        |    |  |          |  +**Rhaebo_haematiticus_KRL0926
+   |                    |        |    |  |       +**|
+   |                    |        |    |  |       |  +--Rhaebo_haematiticus_KRL0965
+   |                    |        |    |  +-------|
+   |                    |        |    |          +--Rhaebo_haematiticus_TOE120
+   |                    |        +----|
+   |                    |             +-----Rhinella_marina_KRL0744
+   |                 +--|
+   |                 |  |                         +**Atelopus_zeteki_KRL1519
+   |                 |  |                      +**|
+   |                 |  |                      |  +**Atelopus_zeteki_KRL1525
+   |                 |  |                   +**|
+   |                 |  |                   |  +--Atelopus_zeteki_KRL1539
+   |                 |  |        +----------|
+   |                 |  |        |          +--Atelopus_zeteki_KRL1521
+   |                 |  |     +--|
+   |                 |  |     |  +-----------Ecnomiohyla_miliaria_KRL0758
+   |                 |  |  +--|
+   |                 |  |  |  |                          +**Cochranella_euknemos_KRL0803
+   |                 |  |  |  |                       +**|
+   |                 |  |  |  |                       |  +**Cochranella_euknemos_KRL0937
+   |                 |  |  |  |                    +**|
+   |                 |  |  |  |                    |  +--Cochranella_euknemos_KRL1054
+   |                 |  |  |  |                 +--|
+   |                 |  |  |  |                 |  +--Cochranella_euknemos_KRL1055
+   |                 |  |  |  |              +--|
+   |                 |  |  |  |              |  +--Cochranella_euknemos_KRL0841
+   |                 |  |  |  |           +--|
+   |                 |  |  |  |           |  +--Cochranella_granulosa_KRL1011
+   |                 |  |  |  |        +--|
+   |                 |  |  |  |        |  |     +--Espadarana_prosoblepon_KRL0761
+   |                 |  |  |  |        |  |  +--|
+   |                 |  |  |  |        |  |  |  |     +**Espadarana_prosoblepon_KRL0875
+   |                 |  |  |  |        |  |  |  |  +**|
+   |                 |  |  |  |        |  |  |  |  |  +--Espadarana_prosoblepon_TOE2301
+   |                 |  |  |  |        |  |  |  +--|
+   |                 |  |  |  |        |  |  |     +**Espadarana_prosoblepon_TOE2333
+   |                 |  |  |  |        |  +--|
+   |                 |  |  |  |        |     |  +**Espadarana_prosoblepon_KRL0762
+   |                 |  |  |  |        |     +--|
+   |                 |  |  |  |        |        +**Espadarana_prosoblepon_TOE2253
+   |                 |  |  |  |     +--|
+   |                 |  |  |  |     |  |          +**Teratohyla_spinosa_KRL0677
+   |                 |  |  |  |     |  |       +--|
+   |                 |  |  |  |     |  |       |  +**Teratohyla_spinosa_KRL0729
+   |                 |  |  |  |     |  |    +--|
+   |                 |  |  |  |     |  |    |  +**Teratohyla_spinosa_KRL0759
+   |                 |  |  |  |     |  +----|
+   |                 |  |  |  |     |       +**Teratohyla_spinosa_KRL1170
+   |                 |  |  |  |  +--|
+   |                 |  |  |  |  |  |        +--Sachatamia_albomaculata_KRL0834
+   |                 |  |  |  |  |  |     +--|
+   |                 |  |  |  |  |  |     |  |  +**Sachatamia_albomaculata_KRL0957
+   |                 |  |  |  |  |  |     |  +**|
+   |                 |  |  |  |  |  |     |     |  +**Sachatamia_albomaculata_KRL1090
+   |                 |  |  |  |  |  |     |     +**|
+   |                 |  |  |  |  |  |     |        +**Sachatamia_albomaculata_KRL1135
+   |                 |  |  |  |  |  |  +--|
+   |                 |  |  |  |  |  |  |  |     +--Sachatamia_albomaculata_KRL0929
+   |                 |  |  |  |  |  |  |  |  +--|
+   |                 |  |  |  |  |  |  |  |  |  +**Sachatamia_albomaculata_KRL1158
+   |                 |  |  |  |  |  |  |  +--|
+   |                 |  |  |  |  |  |  |     +--Sachatamia_albomaculata_KRL1530
+   |                 |  |  |  |  |  +--|
+   |                 |  |  |  |  |     |              +--Sachatamia_ilex_KRL0854
+   |                 |  |  |  |  |     |           +--|
+   |                 |  |  |  |  |     |           |  +**Sachatamia_ilex_KRL1628
+   |                 |  |  |  |  |     |        +**|
+   |                 |  |  |  |  |     |        |  |  +**Sachatamia_ilex_KRL1701
+   |                 |  |  |  |  |     |        |  +--|
+   |                 |  |  |  |  |     |        |     +**Sachatamia_ilex_KRL1720
+   |                 |  |  |  |  |     |     +--|
+   |                 |  |  |  |  |     |     |  +--Sachatamia_ilex_KRL1712
+   |                 |  |  |  |  |     |  +**|
+   |                 |  |  |  |  |     |  |  +--Sachatamia_ilex_KRL1736
+   |                 |  |  |  |  |     +--|
+   |                 |  |  |  |  |        +--Sachatamia_ilex_KRL1714
+   |                 |  |  |  +--|
+   |                 |  |  |     |                 +**Hyalinobatrachium_colymbiphyllum_KRL0726
+   |                 |  |  |     |              +**|
+   |                 |  |  |     |              |  +**Hyalinobatrachium_colymbiphyllum_KRL0727
+   |                 |  |  |     |           +**|
+   |                 |  |  |     |           |  +--Hyalinobatrachium_colymbiphyllum_KRL0756
+   |                 |  |  |     |        +--|
+   |                 |  |  |     |        |  +**Hyalinobatrachium_colymbiphyllum_KRL1159
+   |                 |  |  |     |     +--|
+   |                 |  |  |     |     |  |  +--Hyalinobatrachium_colymbiphyllum_KRL0852
+   |                 |  |  |     |     |  +--|
+   |                 |  |  |     |     |     +**Hyalinobatrachium_colymbiphyllum_KRL1424
+   |                 |  |  |     |  +--|
+   |                 |  |  |     |  |  |  +**Hyalinobatrachium_colymbiphyllum_KRL0769
+   |                 |  |  |     |  |  +--|
+   |                 |  |  |     |  |     +--Hyalinobatrachium_colymbiphyllum_KRL1557
+   |                 |  |  |     +--|
+   |                 |  |  |        +--Hyalinobatrachium_talamancae_KRL1175
+   |                 |  +--|
+   |                 |     |   +-----Smilisca_phaeota_KRL0865
+   |                 |     +---|
+   |                 |         |   +**Smilisca_sila_Frog1000
+   |                 |         +---|
+   |                 |             +--Smilisca_sila_KRL1641
+   |              +--|
+   |              |  |            +--Elachistocleis_ovalis_KRL1136
+   |              |  |     +------|
+   |              |  |     |      +**Elachistocleis_ovalis_KRL1137
+   |              |  +-----|
+   |              |        |       +**Nelsonophryne_aterrima_KRL1400
+   |              |        +-------|
+   |              |                +--Nelsonophryne_aterrima_KRL1598
+   |           +--|
+   |           |  |            +--Gastrotheca_cornuta_KRL0799
+   |           |  +------------|
+   |           |               +--Gastrotheca_cornuta_KRL1163
+   |        +--|
+   |        |  +-----------Hemiphractus_fasciatus_KRL1162
+   |     +--|
+   |     |  |    +--Cruziohyla_calcarifer_A_KRL0781
+   |     |  +----|
+   |     |       |  +**Cruziohyla_calcarifer_B_KRL0800
+   |     |       +--|
+   |     |          +**Cruziohyla_calcarifer_B_KRL1218
+   +-----|
+         |             +--Hylomantis_lemur_KRL0742
+         |          +--|
+         |          |  +**Hylomantis_lemur_KRL0928
+         |       +**|
+         |       |  +--Hylomantis_lemur_KRL0940
+         |    +**|
+         |    |  +**Hylomantis_lemur_TOE134
+         +----|
+              +**Hylomantis_lemur_TOE142
+
+Tree in newick format:
+
+(Agalychnis_callidryas_KRL0917:0.0000013838,Agalychnis_callidryas_TOE1:0.0037970718,(Agalychnis_callidryas_TOE4:0.0000027914,(((((((((((Allobates_talamancae_KRL0796:0.0050090323,Allobates_talamancae_KRL0905:0.0000027533):0.3038229481,((((((Colostethus_panamansis_KRL0953:0.0008025147,Colostethus_panamansis_KRL1332:0.0000022550):0.0000022549,Colostethus_panamansis_KRL1338:0.0000022550):0.0000022549,Colostethus_panamansis_KRL1390:0.0000022550):0.0926064303,(Colostethus_pratti_KRL0732:0.0008133705,Colostethus_pratti_KRL1217:0.0000024148):0.0944472998):0.0869552979,((Silverstoneia_flotator_KRL0734:0.0090190626,(Silverstoneia_flotator_KRL0847:0.0000022550,Silverstoneia_flotator_KRL0958:0.0000022550):0.0041171610):0.1273221885,(((Silverstoneia_nubicola_A_KRL0897:0.0000022550,Silverstoneia_nubicola_A_KRL1560:0.0000022550):0.0000022549,Silverstoneia_nubicola_A_KRL1561:0.0000022550):0.0393751251,(((Silverstoneia_nubicola_KRL0822:0.0000022550,Silverstoneia_nubicola_KRL0945:0.0000022550):0.0000022549,(Silverstoneia_nubicola_KRL1095:0.0000022550,Silverstoneia_nubicola_KRL1460:0.0000022550):0.0008287209):0.0007101650,Silverstoneia_nubicola_KRL1385:0.0009496123):0.0335225630):0.0776713133):0.0384492292):0.0612129498,(((Dendrobates_auratus_Bocas_CH6605:0.0008168637,Dendrobates_auratus_RioChico_AJC1999:0.0000022550):0.1173318721,(Oophaga_vicentei_Cope_GBKRL_0789:0.1426634976,Ranitomeya_minuta_Cope_GBKRL_0790:0.1718488608):0.0210982102):0.0295283721,Phyllobates_lugubris_KRL1735:0.1832012931):0.0404524848):0.0272035164):0.0820699729,((((Bolitoglossa_colonnea_Bocas_CH6526:0.0791710021,Bolitoglossa_schizodactyla_KRL1179:0.1072750589):0.2976923553,(Oedipina_collaris_H08896GBSIUC:0.2126712348,Oedipina_parvipes_CerroAzl_AJC1786:0.0857746004):0.2757181008):0.3167113261,Caecilia_volcani_KRL0797:0.8205444292):0.1100127683,(Lithobates_aff_warszewitschii_KRL0823:0.1000677208,(Lithobates_warszewitschii_KRL1008:0.0000022550,Lithobates_warszewitschii_KRL1540:0.0000022550):0.0699127272):0.3139923922):0.0744383621):0.0238070235,((Engystomops_pustulosus_KRL0867:0.0025920054,(Engystomops_pustulosus_KRL0915:0.0094326348,Engystomops_pustulosus_KRL1169:0.0030051435):0.0011494514):0.0008368350,Engystomops_pustulosus_KRL0916:0.0000024170):0.2625762288):0.0342529556,(((((((((Craugastor_aff_azueroensis_KRL0629:0.0000022550,Craugastor_aff_azueroensis_KRL0630:0.0016176748):0.0030429597,(Craugastor_aff_azueroensis_KRL0680:0.0000022550,Craugastor_aff_azueroensis_KRL0835:0.0000022550):0.0130129438):0.0947837108,Craugastor_megacephalus_KRL0618:0.1134105222):0.0215255585,(((Craugastor_punctariolus_KRL0682:0.0000022550,Craugastor_punctariolus_KRL0863:0.0000022550):0.0008371221,((Craugastor_punctariolus_KRL0870:0.0000022550,Craugastor_punctariolus_KRL1180:0.0008360770):0.0000022549,Craugastor_punctariolus_KRL1198:0.0000022550):0.0008369065):0.0008405993,Craugastor_punctariolus_KRL0872:0.0000031938):0.0610162074):0.1656559388,((((Craugastor_crassidigitus_KRL0129:0.0130163317,((Craugastor_crassidigitus_KRL0664:0.0000022550,(Craugastor_crassidigitus_KRL0665:0.0008750264,Craugastor_crassidigitus_KRL0858:0.0000022550):0.0000022549):0.0000022549,(Craugastor_crassidigitus_KRL0675:0.0008689319,Craugastor_crassidigitus_KRL0843:0.0000022550):0.0000028081):0.0158908771):0.0764306103,((Craugastor_talamancae_KRL1087:0.0000022550,(Craugastor_talamancae_KRL1342:0.0000022550,Craugastor_talamancae_KRL1409:0.0000022550):0.0000022549):0.0000022481,((Craugastor_talamancae_KRL1363:0.0000022550,Craugastor_talamancae_KRL1454:0.0000022550):0.0000022549,Craugastor_talamancae_KRL1520:0.0025368006):0.0042505564):0.1384254235):0.0270443019,Craugastor_fitzingeri_KRL0693:0.1399137024):0.0722183558,(((Craugastor_sp_nov_pn_KRL0708:0.0000022550,Craugastor_sp_nov_pn_KRL1399:0.0000022550):0.0000022549,(Craugastor_sp_nov_pn_KRL1473:0.0008529836,Craugastor_sp_nov_pn_KRL1480:0.0000022550):0.0000011200):0.2182618981,((Craugastor_tabasarae_KRL0706:0.0008462464,Craugastor_tabasarae_KRL1373:0.0017036476):0.0034263817,Craugastor_tabasarae_KRL1387:0.0000022475):0.1461438958):0.0457394284):0.1036837044):0.0482402386,(((((Craugastor_bransfordii_KRL0696:0.0000022550,Craugastor_bransfordii_KRL0751:0.0000022550):0.0000022549,Craugastor_bransfordii_KRL0802:0.0000022550):0.0000022549,Craugastor_bransfordii_KRL0904:0.0000022550):0.0008629113,Craugastor_bransfordii_KRL1244:0.0000028861):0.3873838613,((Craugastor_gollmeri_KRL0701:0.0000025120,(Craugastor_gollmeri_KRL0737:0.0000022550,Craugastor_gollmeri_KRL0860:0.0017558289):0.0017536130):0.1824383800,(Craugastor_noblei_KRL0780:0.0000022550,Craugastor_noblei_KRL1381:0.0008747750):0.1004049258):0.1483024055):0.0939682266):0.1257895512,(((((Diasporus_aff_diastema_orange_KRL0694:0.0035797110,Diasporus_aff_diastema_orange_KRL0840:0.0000022550):0.0954321213,(Diasporus_quidditus_KRL0647:0.0036490209,Diasporus_quidditus_KRL0856:0.0000022550):0.0685318668):0.1425461123,(Diasporus_sp_nov_KRL0782:0.0018591909,Diasporus_sp_nov_KRL0831:0.0000022550):0.0852287436):0.4210262811,(((Strabomantis_bufoniformis_KRL0862:0.0008201071,Strabomantis_bufoniformis_KRL1078:0.0000022550):0.0000011593,Strabomantis_bufoniformis_KRL1186:0.0027495235):0.0000012965,((Strabomantis_bufoniformis_KRL0962:0.0000022550,Strabomantis_bufoniformis_KRL1412:0.0000022550):0.0000022549,Strabomantis_bufoniformis_KRL1562:0.0000022550):0.0000022549):0.2962547693):0.0467087433,((((((((Pristimantis_caryophyllaceus_A_KRL0844:0.0128267081,(Pristimantis_caryophyllaceus_A_KRL0898:0.0000022550,Pristimantis_caryophyllaceus_A_KRL1744:0.0000022550):0.0000024866):0.1182714225,Pristimantis_caryophyllaceus_B_KRL1210:0.0680551625):0.0319330105,(Pristimantis_caryophyllaceus_C_KRL0801:0.0007693049,Pristimantis_caryophyllaceus_C_KRL1151:0.0017129901):0.0749206475):0.1187288137,(((Pristimantis_cerasinus_KRL0828:0.0016487496,Pristimantis_cerasinus_KRL0832:0.0000022550):0.0000022549,Pristimantis_cerasinus_KRL1292:0.0000022550):0.1685987119,(((Pristimantis_museosus_KRL0699:0.0000022550,Pristimantis_museosus_KRL1554:0.0000022550):0.0000022549,Pristimantis_museosus_KRL0909:0.0000022550):0.0000022549,Pristimantis_museosus_KRL0983:0.0000022550):0.1604902417):0.0452213417):0.0189976918,((((Pristimantis_cruentus_KRL0811:0.0016231774,Pristimantis_cruentus_KRL1333:0.0000022550):0.0000022549,Pristimantis_cruentus_KRL1528:0.0008094368):0.0008009254,Pristimantis_cruentus_KRL1420:0.0008215015):0.0649268201,(Pristimantis_museosus_A_KRL0683:0.0000022550,Pristimantis_museosus_A_KRL0739:0.0000022550):0.0704953878):0.1410886384):0.0379254282,((Pristimantis_ridens_A_KRL0829:0.0000022550,Pristimantis_ridens_A_KRL0830:0.0008599063):0.0944305607,(Pristimantis_ridens_B_KRL0845:0.0000024218,Pristimantis_ridens_B_KRL0846:0.0008336517):0.0922636379):0.1381677409):0.0500284653,((Pristimantis_gaigeae_KRL0825:0.0008721484,Pristimantis_gaigeae_KRL1079:0.0000022550):0.0014157405,Pristimantis_gaigeae_KRL1202:0.0066667446):0.2541003447):0.0416544031,(((Pristimantis_pardalis_KRL0690:0.0000022550,Pristimantis_pardalis_KRL0765:0.0000022550):0.0000022549,(Pristimantis_pardalis_KRL0826:0.0000022550,Pristimantis_pardalis_KRL1745:0.0008236873):0.0000022549):0.0016507654,Pristimantis_pardalis_KRL0857:0.0000023818):0.3125737237):0.0482100792):0.0207137881):0.0847944126,(((((Leptodactylus_fragilis_KRL0678:0.0000022550,Leptodactylus_fragilis_KRL0869:0.0000022550):0.0006303142,Leptodactylus_fragilis_KRL1290:0.0010532783):0.0939003286,Leptodactylus_poecilochilus_KRL0118:0.1287980809):0.0779273646,Leptodactylus_savagei_KRL0838:0.1794892802):0.0303386244,Leptodactylus_insularum_KRL1114:0.1518312044):0.0722944305):0.0156654980,((((((((Hyloscirtus_colymba_KRL0812:0.0008813775,Hyloscirtus_colymba_KRL1329:0.0000022550):0.0000022549,Hyloscirtus_colymba_KRL1631:0.0000022550):0.0008862474,Hyloscirtus_colymba_KRL1544:0.0035705820):0.0008768942,Hyloscirtus_colymba_KRL1623:0.0000022550):0.0008792185,Hyloscirtus_colymba_KRL1723:0.0000022816):0.2287629932,(Hyloscirtus_palmeri_KRL1038:0.0000022550,Hyloscirtus_palmeri_KRL1336:0.0000022550):0.2766453906):0.1917208821,(Hypsiboas_rufitelus_KRL0798:0.0034336431,Hypsiboas_rufitelus_KRL1191:0.0000022492):0.2526369297):0.0484941832,(((((Incilius_coniferus_KRL0809:0.0008458786,Incilius_coniferus_KRL0939:0.0008451560):0.0000022549,(Incilius_coniferus_KRL0820:0.0008244987,Incilius_coniferus_KRL1728:0.0017241152):0.0025735718):0.0008445373,Incilius_coniferus_TOE140:0.0000029128):0.1216923178,(((((Rhaebo_haematiticus_KRL0855:0.0000022550,Rhaebo_haematiticus_KRL1555:0.0000022550):0.0008250802,Rhaebo_haematiticus_KRL0903:0.0024891433):0.0000022549,Rhaebo_haematiticus_KRL0926:0.0000022550):0.0000022549,Rhaebo_haematiticus_KRL0965:0.0008251975):0.0000022549,Rhaebo_haematiticus_TOE120:0.0016541427):0.1971908577):0.0423689135,Rhinella_marina_KRL0744:0.1459570510):0.1284107202):0.0208363043):0.0251359496):0.0151247998,((((((Atelopus_zeteki_KRL1519:0.0000022550,Atelopus_zeteki_KRL1525:0.0000022550):0.0000022549,Atelopus_zeteki_KRL1539:0.0025890467):0.0000022839,Atelopus_zeteki_KRL1521:0.0052197828):0.2707706647,Ecnomiohyla_miliaria_KRL0758:0.2874461207):0.0074666497,(((((((((Cochranella_euknemos_KRL0803:0.0000022550,Cochranella_euknemos_KRL0937:0.0000022550):0.0000022549,Cochranella_euknemos_KRL1054:0.0016838005):0.0000022549,Cochranella_euknemos_KRL1055:0.0025453877):0.0251381090,Cochranella_euknemos_KRL0841:0.0136320125):0.0340265436,Cochranella_granulosa_KRL1011:0.0698462150):0.0542472502,((Espadarana_prosoblepon_KRL0761:0.0017108707,((Espadarana_prosoblepon_KRL0875:0.0000022550,Espadarana_prosoblepon_TOE2301:0.0017144457):0.0000014530,Espadarana_prosoblepon_TOE2333:0.0000022550):0.0008441902):0.0008614174,(Espadarana_prosoblepon_KRL0762:0.0000022550,Espadarana_prosoblepon_TOE2253:0.0000022550):0.0008500593):0.0668520216):0.0023646610,(((Teratohyla_spinosa_KRL0677:0.0000022550,Teratohyla_spinosa_KRL0729:0.0000022550):0.0017229144,Teratohyla_spinosa_KRL0759:0.0000022550):0.0017463412,Teratohyla_spinosa_KRL1170:0.0000022492):0.1227746023):0.0143967836,(((Sachatamia_albomaculata_KRL0834:0.0034545363,(Sachatamia_albomaculata_KRL0957:0.0000022550,(Sachatamia_albomaculata_KRL1090:0.0000022550,Sachatamia_albomaculata_KRL1135:0.0000022550):0.0000022549):0.0000022549):0.0009318065,((Sachatamia_albomaculata_KRL0929:0.0008590662,Sachatamia_albomaculata_KRL1158:0.0000022550):0.0008473991,Sachatamia_albomaculata_KRL1530:0.0017343294):0.0008080363):0.0785688279,(((((Sachatamia_ilex_KRL0854:0.0008526271,Sachatamia_ilex_KRL1628:0.0000022550):0.0017070529,(Sachatamia_ilex_KRL1701:0.0000022550,Sachatamia_ilex_KRL1720:0.0000022550):0.0008510242):0.0000029153,Sachatamia_ilex_KRL1712:0.0008525476):0.0017124331,Sachatamia_ilex_KRL1736:0.0025931165):0.0000029992,Sachatamia_ilex_KRL1714:0.0017140833):0.0760726255):0.0480121439):0.0442636092,((((((Hyalinobatrachium_colymbiphyllum_KRL0726:0.0000022550,Hyalinobatrachium_colymbiphyllum_KRL0727:0.0000022550):0.0000022549,Hyalinobatrachium_colymbiphyllum_KRL0756:0.0008742714):0.0000022549,Hyalinobatrachium_colymbiphyllum_KRL1159:0.0000022550):0.0008751602,(Hyalinobatrachium_colymbiphyllum_KRL0852:0.0008709980,Hyalinobatrachium_colymbiphyllum_KRL1424:0.0000022550):0.0071054979):0.0236781028,(Hyalinobatrachium_colymbiphyllum_KRL0769:0.0000022550,Hyalinobatrachium_colymbiphyllum_KRL1557:0.0008717654):0.0144647652):0.0713768755,Hyalinobatrachium_talamancae_KRL1175:0.0777132307):0.0752187988):0.0886927760):0.0314036641,(Smilisca_phaeota_KRL0865:0.1582832123,(Smilisca_sila_Frog1000:0.0000029127,Smilisca_sila_KRL1641:0.0008357449):0.1124653215):0.1008625400):0.0366699326):0.0279825675,((Elachistocleis_ovalis_KRL1136:0.0044644731,Elachistocleis_ovalis_KRL1137:0.0000025230):0.1796151578,(Nelsonophryne_aterrima_KRL1400:0.0000022550,Nelsonophryne_aterrima_KRL1598:0.0008743598):0.1954243277):0.1605922132):0.0094472443,(Gastrotheca_cornuta_KRL0799:0.0017321704,Gastrotheca_cornuta_KRL1163:0.0016790531):0.3186498451):0.0239299414,Hemiphractus_fasciatus_KRL1162:0.2853703898):0.0461534256,(Cruziohyla_calcarifer_A_KRL0781:0.0513410497,(Cruziohyla_calcarifer_B_KRL0800:0.0000022550,Cruziohyla_calcarifer_B_KRL1218:0.0000022550):0.0803832507):0.1221386528):0.0589832076,((((Hylomantis_lemur_KRL0742:0.0008464920,Hylomantis_lemur_KRL0928:0.0000022550):0.0014446133,Hylomantis_lemur_KRL0940:0.0011065168):0.0000022549,Hylomantis_lemur_TOE134:0.0000022550):0.0000022549,Hylomantis_lemur_TOE142:0.0000022550):0.1184560797):0.1572851822):0.0008561546);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/dna_M4938_213_1250.phy/output_files/iqtree/inference/pars_0.treefile -m "GTR{3.19478,12.331,5.96132,0.558004,27.2449}+F{0.267398,0.2636,0.187517,0.281484}+I{0.377824}+R5{0.168772,0.0929622,0.113119,0.409786,0.175496,1.31647,0.0981218,2.96504,0.0666667,6.23978}" --length 1250
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data3/dna_M4938_213_1250.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data3/dna_M4938_213_1250.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Sep 23 00:10:49 2025
+Total CPU time used: 452.989 seconds (0h:7m:32s)
+Total wall-clock time used: 453.923 seconds (0h:7m:33s)
+

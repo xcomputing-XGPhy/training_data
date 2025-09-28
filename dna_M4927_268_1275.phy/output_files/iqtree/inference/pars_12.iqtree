@@ -1,0 +1,812 @@
+IQ-TREE 3.0.1 built Sep 14 2025
+
+Input file name: /home/suny/Downloads/VAN_TRAINING_DATA/data3/dna_M4927_268_1275.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 12
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 268 sequences with 1275 nucleotide sites
+Number of constant sites: 799 (= 62.6667% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 799 (= 62.6667% of all sites)
+Number of parsimony informative sites: 315
+Number of distinct site patterns: 614
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM+F+I+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TIM+F+I+R4       -15226.704   31545.408 -   0.0163   32365.908 +    0.711   34357.691 +    0.853
+TIM+F+R5         -15225.740   31545.480 -   0.0157   32370.118 +   0.0867   34362.914 +   0.0626
+GTR+F+I+R4       -15222.297   31540.594 +     0.18   32369.388 +    0.125   34363.179 +   0.0548
+TIM+F+I+R5       -15223.227   31542.454 +   0.0712   32371.247 -   0.0493   34365.038 -   0.0216
+GTR+F+R5         -15220.958   31539.915 +    0.253   32372.881 -   0.0218   34367.650 -  0.00586
+GTR+F+I+R5       -15219.354   31538.707 +    0.463   32375.862 -   0.0049   34371.593 - 0.000816
+TN+F+I+R4        -15237.318   31564.636 - 1.09e-06   32381.015 - 0.000373   34371.769 - 0.000748
+TIM2+F+I+R4      -15234.337   31560.675 - 7.87e-06   32381.175 - 0.000344   34372.958 - 0.000413
+TIM3+F+I+R4      -15235.008   31562.015 - 4.02e-06   32382.515 - 0.000176   34374.298 - 0.000211
+TN+F+R5          -15236.554   31565.107 - 8.57e-07   32385.607 - 3.75e-05   34377.390 -  4.5e-05
+TIM2+F+R5        -15233.490   31560.979 - 6.75e-06   32385.618 - 3.73e-05   34378.413 -  2.7e-05
+TIM3+F+R5        -15233.754   31561.508 - 5.19e-06   32386.146 - 2.87e-05   34378.941 - 2.07e-05
+TN+F+I+R5        -15234.048   31562.095 - 3.87e-06   32386.734 - 2.14e-05   34379.529 - 1.54e-05
+TIM2+F+I+R5      -15230.891   31557.783 - 3.34e-05   32386.576 - 2.31e-05   34380.367 - 1.02e-05
+TIM3+F+I+R5      -15231.941   31559.882 - 1.17e-05   32388.676 - 8.09e-06   34382.467 - 3.55e-06
+GTR+I+R4         -15243.271   31576.542 - 2.82e-09   32392.921 - 9.69e-07   34383.674 - 1.94e-06
+SYM+I+R4         -15243.273   31576.545 - 2.81e-09   32392.924 - 9.68e-07   34383.677 - 1.94e-06
+SYM+I+R4         -15243.273   31576.545 - 2.81e-09   32392.924 - 9.68e-07   34383.677 - 1.94e-06
+GTR+I+R5         -15237.713   31569.425 -  9.9e-08   32394.063 - 5.47e-07   34386.859 - 3.95e-07
+SYM+I+R5         -15237.802   31569.604 - 9.05e-08   32394.242 -    5e-07   34387.038 - 3.62e-07
+SYM+I+R5         -15237.802   31569.604 - 9.05e-08   32394.242 -    5e-07   34387.038 - 3.62e-07
+GTR+R5           -15241.793   31575.586 - 4.55e-09   32396.086 - 1.99e-07   34387.869 - 2.39e-07
+SYM+R5           -15241.831   31575.661 - 4.38e-09   32396.161 - 1.92e-07   34387.944 -  2.3e-07
+SYM+R5           -15241.831   31575.661 - 4.38e-09   32396.161 - 1.92e-07   34387.944 -  2.3e-07
+TIM2+I+R4        -15253.554   31593.108 - 7.13e-13   32401.294 - 1.47e-08   34389.939 - 8.48e-08
+TIM2e+I+R4       -15253.571   31593.142 - 7.01e-13   32401.328 - 1.45e-08   34389.972 - 8.34e-08
+TIM2e+I+R4       -15253.571   31593.142 - 7.01e-13   32401.328 - 1.45e-08   34389.972 - 8.34e-08
+TIM+I+R4         -15254.839   31595.679 - 1.97e-13   32403.865 - 4.07e-09   34392.509 - 2.34e-08
+TIMe+I+R4        -15254.877   31595.754 -  1.9e-13   32403.941 - 3.92e-09   34392.585 - 2.26e-08
+TIMe+I+R4        -15254.877   31595.754 -  1.9e-13   32403.941 - 3.92e-09   34392.585 - 2.26e-08
+TIM2+I+R5        -15247.865   31585.731 - 2.85e-11   32402.109 -  9.8e-09   34392.863 - 1.96e-08
+TIM2e+I+R5       -15247.870   31585.739 - 2.84e-11   32402.118 - 9.75e-09   34392.872 - 1.96e-08
+TIM2e+I+R5       -15247.870   31585.739 - 2.84e-11   32402.118 - 9.75e-09   34392.872 - 1.96e-08
+TIM+I+R5         -15248.720   31587.440 - 1.21e-11   32403.819 - 4.17e-09   34394.572 - 8.36e-09
+TIM2+R5          -15252.395   31592.790 - 8.35e-13   32405.064 - 2.24e-09   34394.772 - 7.56e-09
+TIMe+I+R5        -15248.867   31587.734 - 1.05e-11   32404.113 -  3.6e-09   34394.866 - 7.21e-09
+TIMe+I+R5        -15248.867   31587.734 - 1.05e-11   32404.113 -  3.6e-09   34394.866 - 7.21e-09
+TIM2e+R5         -15252.448   31592.896 - 7.93e-13   32405.170 - 2.12e-09   34394.877 - 7.18e-09
+TIM2e+R5         -15252.448   31592.896 - 7.93e-13   32405.170 - 2.12e-09   34394.877 - 7.18e-09
+TIM+R5           -15253.655   31595.311 - 2.37e-13   32407.585 - 6.34e-10   34397.292 - 2.15e-09
+TIMe+R5          -15253.702   31595.404 - 2.26e-13   32407.678 - 6.05e-10   34397.386 - 2.05e-09
+TIMe+R5          -15253.702   31595.404 - 2.26e-13   32407.678 - 6.05e-10   34397.386 - 2.05e-09
+TN+I+R4          -15264.043   31612.086 - 5.39e-17   32416.201 - 8.53e-12   34403.766 - 8.43e-11
+TNe+I+R4         -15264.077   31612.154 - 5.21e-17   32416.268 - 8.25e-12   34403.834 - 8.15e-11
+TNe+I+R4         -15264.077   31612.154 - 5.21e-17   32416.268 - 8.25e-12   34403.834 - 8.15e-11
+TN+I+R5          -15258.464   31604.928 - 1.93e-15   32417.202 - 5.17e-12   34406.910 - 1.75e-11
+TNe+I+R5         -15258.610   31605.221 - 1.67e-15   32417.495 - 4.47e-12   34407.202 - 1.51e-11
+TNe+I+R5         -15258.610   31605.221 - 1.67e-15   32417.495 - 4.47e-12   34407.202 - 1.51e-11
+TIM3+I+R4        -15262.972   31611.944 - 5.79e-17   32420.130 -  1.2e-12   34408.775 - 6.89e-12
+TIM3e+I+R4       -15262.990   31611.980 - 5.69e-17   32420.166 - 1.18e-12   34408.811 - 6.76e-12
+TIM3e+I+R4       -15262.990   31611.980 - 5.69e-17   32420.166 - 1.18e-12   34408.811 - 6.76e-12
+TN+R5            -15262.998   31611.997 - 5.64e-17   32420.183 - 1.17e-12   34408.828 - 6.71e-12
+TNe+R5           -15263.071   31612.142 - 5.24e-17   32420.328 - 1.08e-12   34408.973 - 6.24e-12
+TNe+R5           -15263.071   31612.142 - 5.24e-17   32420.328 - 1.08e-12   34408.973 - 6.24e-12
+TIM3+I+R5        -15257.383   31604.765 -  2.1e-15   32421.144 - 7.21e-13   34411.898 - 1.45e-12
+TIM3e+I+R5       -15257.395   31604.790 - 2.07e-15   32421.169 - 7.12e-13   34411.922 - 1.43e-12
+TIM3e+I+R5       -15257.395   31604.790 - 2.07e-15   32421.169 - 7.12e-13   34411.922 - 1.43e-12
+TIM3+R5          -15261.658   31611.316 - 7.93e-17   32423.590 - 2.12e-13   34413.298 - 7.18e-13
+TIM3e+R5         -15261.704   31611.408 - 7.57e-17   32423.682 - 2.03e-13   34413.390 - 6.85e-13
+TIM3e+R5         -15261.704   31611.408 - 7.57e-17   32423.682 - 2.03e-13   34413.390 - 6.85e-13
+TVMe+I+R4        -15287.432   31662.865 - 5.07e-28   32475.139 - 1.36e-24   34464.846 -  4.6e-24
+TVMe+I+R4        -15287.432   31662.865 - 5.07e-28   32475.139 - 1.36e-24   34464.846 -  4.6e-24
+TVM+I+R4         -15287.434   31662.868 - 5.07e-28   32475.142 - 1.36e-24   34464.849 - 4.59e-24
+TVM+I+R5         -15281.484   31654.967 - 2.63e-26   32475.467 - 1.15e-24   34467.250 - 1.38e-24
+TVMe+I+R5        -15281.555   31655.109 - 2.45e-26   32475.609 - 1.07e-24   34467.392 - 1.29e-24
+TVMe+I+R5        -15281.555   31655.109 - 2.45e-26   32475.609 - 1.07e-24   34467.392 - 1.29e-24
+TVM+R5           -15286.464   31662.928 - 4.92e-28   32479.307 - 1.69e-25   34470.061 - 3.39e-25
+TVMe+R5          -15286.631   31663.263 - 4.16e-28   32479.641 - 1.43e-25   34470.395 - 2.87e-25
+TVMe+R5          -15286.631   31663.263 - 4.16e-28   32479.641 - 1.43e-25   34470.395 - 2.87e-25
+TPM2+I+R4        -15298.198   31680.396 - 7.91e-32   32484.511 - 1.25e-26   34472.077 - 1.24e-25
+TPM2+I+R4        -15298.198   31680.396 - 7.91e-32   32484.511 - 1.25e-26   34472.077 - 1.24e-25
+TPM2u+I+R4       -15298.199   31680.399 -  7.9e-32   32484.514 - 1.25e-26   34472.079 - 1.24e-25
+TPM2u+I+R5       -15292.280   31672.560 - 3.98e-30   32484.834 - 1.07e-26   34474.542 - 3.61e-26
+TPM2+I+R5        -15292.293   31672.586 - 3.93e-30   32484.860 - 1.05e-26   34474.567 - 3.56e-26
+TPM2+I+R5        -15292.293   31672.586 - 3.93e-30   32484.860 - 1.05e-26   34474.567 - 3.56e-26
+K3P+I+R4         -15300.895   31685.791 - 5.33e-33   32489.906 - 8.44e-28   34477.471 - 8.33e-27
+K3P+I+R4         -15300.895   31685.791 - 5.33e-33   32489.906 - 8.44e-28   34477.471 - 8.33e-27
+K3Pu+I+R4        -15300.899   31685.798 - 5.32e-33   32489.912 - 8.41e-28   34477.478 - 8.31e-27
+TPM2u+R5         -15297.335   31680.671 -  6.9e-32   32488.857 - 1.43e-27   34477.502 - 8.21e-27
+TPM2+R5          -15297.379   31680.758 - 6.61e-32   32488.944 - 1.37e-27   34477.589 - 7.86e-27
+TPM2+R5          -15297.379   31680.758 - 6.61e-32   32488.944 - 1.37e-27   34477.589 - 7.86e-27
+K3Pu+I+R5        -15294.071   31676.143 - 6.64e-31   32488.417 - 1.78e-27   34478.124 - 6.01e-27
+K3P+I+R5         -15294.140   31676.281 -  6.2e-31   32488.555 - 1.66e-27   34478.262 - 5.61e-27
+K3P+I+R5         -15294.140   31676.281 -  6.2e-31   32488.555 - 1.66e-27   34478.262 - 5.61e-27
+K3Pu+R5          -15298.738   31683.476 -  1.7e-32   32491.662 - 3.51e-28   34480.307 - 2.02e-27
+K3P+R5           -15298.773   31683.547 - 1.64e-32   32491.733 - 3.39e-28   34480.378 - 1.95e-27
+K3P+R5           -15298.773   31683.547 - 1.64e-32   32491.733 - 3.39e-28   34480.378 - 1.95e-27
+HKY+I+R4         -15310.149   31702.297 - 1.39e-36   32502.357 - 1.67e-30   34488.827 - 2.85e-29
+K2P+I+R4         -15310.170   31702.339 - 1.36e-36   32502.399 - 1.63e-30   34488.869 - 2.79e-29
+K2P+I+R4         -15310.170   31702.339 - 1.36e-36   32502.399 - 1.63e-30   34488.869 - 2.79e-29
+HKY+I+R5         -15303.904   31693.807 - 9.69e-35   32501.993 -    2e-30   34490.638 - 1.15e-29
+K2P+I+R5         -15303.963   31693.926 - 9.13e-35   32502.112 - 1.89e-30   34490.757 - 1.09e-29
+K2P+I+R5         -15303.963   31693.926 - 9.13e-35   32502.112 - 1.89e-30   34490.757 - 1.09e-29
+HKY+R5           -15308.308   31700.616 - 3.22e-36   32504.731 - 5.09e-31   34492.297 - 5.03e-30
+K2P+R5           -15308.377   31700.755 -    3e-36   32504.869 - 4.75e-31   34492.435 - 4.69e-30
+K2P+R5           -15308.377   31700.755 -    3e-36   32504.869 - 4.75e-31   34492.435 - 4.69e-30
+TPM3+I+R4        -15308.590   31701.180 - 2.43e-36   32505.294 - 3.84e-31   34492.860 -  3.8e-30
+TPM3+I+R4        -15308.590   31701.180 - 2.43e-36   32505.294 - 3.84e-31   34492.860 -  3.8e-30
+TPM3u+I+R4       -15308.590   31701.180 - 2.43e-36   32505.295 - 3.84e-31   34492.860 - 3.79e-30
+TPM3u+I+R5       -15301.773   31691.546 -    3e-34   32503.820 - 8.03e-31   34493.527 - 2.72e-30
+TPM3+I+R5        -15301.774   31691.548 -    3e-34   32503.822 - 8.03e-31   34493.529 - 2.72e-30
+TPM3+I+R5        -15301.774   31691.548 -    3e-34   32503.822 - 8.03e-31   34493.529 - 2.72e-30
+TPM3u+R5         -15306.275   31698.550 - 9.05e-36   32506.736 - 1.87e-31   34495.381 - 1.08e-30
+TPM3+R5          -15306.320   31698.640 - 8.65e-36   32506.826 - 1.79e-31   34495.470 - 1.03e-30
+TPM3+R5          -15306.320   31698.640 - 8.65e-36   32506.826 - 1.79e-31   34495.470 - 1.03e-30
+K3Pu+F+I+R5      -15329.321   31752.642 - 1.62e-47   32577.280 - 8.98e-47   34570.075 - 6.49e-47
+K3Pu+F+R5        -15333.231   31758.463 - 8.84e-49   32578.963 - 3.87e-47   34570.746 - 4.64e-47
+K3Pu+F+I+R4      -15337.365   31764.730 - 3.85e-50   32581.108 - 1.32e-47   34571.862 - 2.66e-47
+TVM+F+I+R5       -15324.538   31747.076 - 2.62e-46   32580.042 - 2.26e-47   34574.812 - 6.08e-48
+TVM+F+R5         -15328.164   31752.328 -  1.9e-47   32581.121 - 1.32e-47   34574.912 - 5.78e-48
+TVM+F+I+R4       -15332.026   31758.052 - 1.09e-48   32582.690 -    6e-48   34575.486 - 4.34e-48
+HKY+F+I+R5       -15340.381   31772.763 - 6.94e-52   32593.263 - 3.04e-50   34585.046 - 3.64e-50
+TPM3u+F+I+R5     -15336.872   31767.745 - 8.53e-51   32592.383 - 4.72e-50   34585.179 - 3.41e-50
+TPM3u+F+R5       -15340.710   31773.421 - 4.99e-52   32593.921 - 2.19e-50   34585.704 - 2.62e-50
+HKY+F+R5         -15344.302   31778.605 - 3.74e-53   32594.984 - 1.29e-50   34585.737 - 2.58e-50
+TPM2u+F+I+R5     -15337.267   31768.535 - 5.75e-51   32593.173 - 3.18e-50   34585.969 -  2.3e-50
+HKY+F+I+R4       -15348.010   31784.021 - 2.49e-54   32596.295 - 6.67e-51   34586.002 - 2.26e-50
+TPM2u+F+I+R4     -15344.659   31779.318 - 2.62e-53   32595.696 -    9e-51   34586.450 -  1.8e-50
+TPM2u+F+R5       -15341.485   31774.969 -  2.3e-52   32595.469 - 1.01e-50   34587.252 - 1.21e-50
+TPM3u+F+I+R4     -15345.126   31780.252 - 1.64e-53   32596.631 - 5.64e-51   34587.384 - 1.13e-50
+F81+I+R4         -15912.448   32904.896 -   1e-297   33700.918 - 9.09e-291   35686.275 - 2.71e-289
+JC+I+R4          -15912.621   32905.243 - 8.44e-298   33701.265 - 7.64e-291   35686.622 - 2.28e-289
+JC+I+R4          -15912.621   32905.243 - 8.44e-298   33701.265 - 7.64e-291   35686.622 - 2.28e-289
+F81+I+R5         -15906.322   32896.645 - 6.22e-296   33700.760 - 9.84e-291   35688.325 - 9.71e-290
+JC+I+R5          -15906.431   32896.863 - 5.57e-296   33700.977 - 8.82e-291   35688.543 - 8.71e-290
+JC+I+R5          -15906.431   32896.863 - 5.57e-296   33700.977 - 8.82e-291   35688.543 - 8.71e-290
+F81+R5           -15910.900   32903.801 - 1.74e-297   33703.861 - 2.09e-291   35690.330 - 3.56e-290
+JC+R5            -15911.103   32904.207 - 1.42e-297   33704.267 - 1.7e-291   35690.736 - 2.91e-290
+JC+R5            -15911.103   32904.207 - 1.42e-297   33704.267 - 1.7e-291   35690.736 - 2.91e-290
+JC+R6            -15908.512   32903.025 - 2.56e-297   33711.211 - 5.29e-293   35699.856 - 3.04e-292
+JC+R4            -15927.312   32932.623 - 9.57e-304   33724.623 - 6.47e-296   35708.851 - 3.39e-294
+JC+I+R3          -15935.396   32946.791 - 8.02e-307   33734.786 - 4.02e-298   35717.868 - 3.73e-296
+JC+R3            -15971.154   33016.308 - 6.42e-322   33800.313 - 2.37e-312   35782.235 - 3.94e-310
+JC+I+G4          -15993.833   33057.666 -        0   33833.741 - 1.31e-319   35813.291 - 7.1e-317
+F81+F+I+R4       -16008.167   33102.333 -        0   33910.519 -        0   35899.164 -        0
+F81+F+I+R5       -16001.600   33093.199 -        0   33909.578 -        0   35900.332 -        0
+F81+F+R5         -16005.487   33098.973 -        0   33911.247 -        0   35900.955 -        0
+JC+G4            -16098.020   33264.039 -        0   34036.175 -        0   36014.514 -        0
+JC+I+R2          -16109.077   33290.154 -        0   34070.187 -        0   36050.930 -        0
+JC+R2            -16242.568   33555.136 -        0   34331.212 -        0   36310.761 -        0
+JC+I             -16996.219   35060.438 -        0   35832.573 -        0   37810.912 -        0
+JC               -18454.233   37974.466 -        0   38742.677 -        0   40719.790 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM+F+I+R4
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 1.9360
+  A-T: 0.6810
+  C-G: 0.6810
+  C-T: 6.0214
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2537
+  pi(C) = 0.224
+  pi(G) = 0.3088
+  pi(T) = 0.2135
+
+Rate matrix Q:
+
+  A   -0.7482    0.1733    0.4625    0.1125
+  C    0.1963    -1.353    0.1627    0.9945
+  G    0.3799     0.118   -0.6631    0.1652
+  T    0.1336     1.043    0.2389    -1.416
+
+Model of rate heterogeneity: Invar+FreeRate with 4 categories
+Proportion of invariable sites: 0.3322
+Site proportion and rates:  (0.3952,0.2265) (0.1622,1.578) (0.09235,4.805) (0.01797,11.72)
+
+ Category  Relative_rate  Proportion
+  0         0              0.3322
+  1         0.2265         0.3952
+  2         1.578          0.1622
+  3         4.805          0.09235
+  4         11.72          0.01797
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -15226.7008 (s.e. 820.4049)
+Unconstrained log-likelihood (without tree): -6641.1503
+Number of free parameters (#branches + #model parameters): 546
+Akaike information criterion (AIC) score: 31545.4016
+Corrected Akaike information criterion (AICc) score: 32365.9016
+Bayesian information criterion (BIC) score: 34357.6846
+
+Total tree length (sum of branch lengths): 4.1182
+Sum of internal branch lengths: 1.6873 (40.9717% of tree length)
+
+WARNING: 42 near-zero internal branches (<0.0008) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Anisomeridium_consobrinum' is drawn at root
+
++--Anisomeridium_consobrinum
+|
+|                                      +--Antennariella_placitae
+|                                   +--|
+|                                   |  +**Microxyphium_theae
+|                               +---|
+|                               |   |        +--Capnodium_coffeae
+|                               |   |     +--|
+|                               |   |     |  |  +**Condioxyphium_gardeniorum
+|                               |   |     |  +--|
+|                               |   |     |     +--Microxyphium_aciculiforme
+|                               |   |  +--|
+|                               |   |  |  |     +--Leptoxyphium_fumago
+|                               |   |  |  |  +--|
+|                               |   |  |  |  |  +--Microxyphium_citri
+|                               |   |  |  +--|
+|                               |   |  |     +--Leptoxyphium_madagascariensis
+|                               |   +**|
+|                               |      +--Polychaeton_citri
+|                            +--|
+|                            |  |                                     +**Cladosporium_bruhnei
+|                            |  |                                  +**|
+|                            |  |                                  |  +**Sphaerulina_polyspora
+|                            |  |                               +**|
+|                            |  |                               |  +--Davidiella_allicina
+|                            |  |                            +--|
+|                            |  |                            |  +**Davidiella_macrospora
+|                            |  |                       +----|
+|                            |  |                       |    |  +**Cladosporium_cladosporioides
+|                            |  |                       |    +--|
+|                            |  |                       |       |  +**Cladosporium_sp._CPC_15513
+|                            |  |                       |       +**|
+|                            |  |                       |          |  +**Cladosporium_sp._CPC_15516
+|                            |  |                       |          +**|
+|                            |  |                       |             |  +--Cladosporium_sp._FJ790289
+|                            |  |                       |             +--|
+|                            |  |                       |                +--Melanodothis_caricis
+|                            |  |                    +--|
+|                            |  |                    |  +--Toxicocladosporium_chlamydosporum
+|                            |  |                 +--|
+|                            |  |                 |  +--Toxicocladosporium_irritans
+|                            |  |              +--|
+|                            |  |              |  +--Toxicocladosporium_rubrigenum
+|                            |  |           +--|
+|                            |  |           |  +--Verrucocladosporium_dirinae
+|                            |  |        +--|
+|                            |  |        |  +--Graphiopsis_chlorocephala
+|                            |  |     +--|
+|                            |  |     |  |  +--Rachicladosporium_cboliae
+|                            |  |     |  +--|
+|                            |  |     |     +--Rachicladosporium_luculiae
+|                            |  |  +--|
+|                            |  |  |  +--Scorias_spongiosa
+|                            |  +--|
+|                            |     +--Fumagospora_capnodioides
+|                        +---|
+|                        |   |     +------Comminutispora_agavaciensis
+|                        |   |  +**|
+|                        |   |  |  |    +------------------------------------Dothidea_insculpta
+|                        |   |  |  +----|
+|                        |   |  |       +--Phaeotheca_triangularis
+|                        |   +--|
+|                        |      |  +--Phaeotheca_fissurella
+|                        |      +--|
+|                        |         |       +--Racodium_rupestre_EU048575
+|                        |         |    +--|
+|                        |         |    |  +--Racodium_rupestre_EU048577
+|                        |         +----|
+|                        |              +--Racodium_rupestre_EU048576
+|                     +**|
+|                     |  +-------------Mycosphaerella_eurypotami
+|                  +--|
+|                  |  |                             +**Aulographina_pinorum_CBS_174.90
+|                  |  |                          +--|
+|                  |  |                          |  |     +**Aulographina_pinorum_CBS_302.71
+|                  |  |                          |  |  +**|
+|                  |  |                          |  |  |  +**Catenulostroma_microsporum_EU019255
+|                  |  |                          |  +**|
+|                  |  |                          |     +**Catenulostroma_abietis
+|                  |  |                       +--|
+|                  |  |                       |  |  +-----Devriesia_staurophora
+|                  |  |                       |  +--|
+|                  |  |                       |     +------Penidiella_strumelloidea
+|                  |  |                    +--|
+|                  |  |                    |  +--Xenomeris_juniperi
+|                  |  |                 +--|
+|                  |  |                 |  |  +--Teratosphaeria_jonkershoekensis
+|                  |  |                 |  +--|
+|                  |  |                 |     +----Teratosphaeria_parva
+|                  |  |              +--|
+|                  |  |              |  |     +--Catenulostroma_elginense
+|                  |  |              |  |  +--|
+|                  |  |              |  |  |  |  +--Meristema_sp._1172
+|                  |  |              |  |  |  +--|
+|                  |  |              |  |  |     +--Meristema_sp._1173
+|                  |  |              |  +--|
+|                  |  |              |     |     +**Catenulostroma_protearum_CPC_15368
+|                  |  |              |     |  +--|
+|                  |  |              |     |  |  +--Catenulostroma_protearum_CPC_15369
+|                  |  |              |     +--|
+|                  |  |              |        +--Catenulostroma_protearum_CPC_15370
+|                  |  |           +--|
+|                  |  |           |  |  +--Penidiella_pseudotasmaniensis
+|                  |  |           |  +--|
+|                  |  |           |     +--Phacellium_paspali
+|                  |  |        +--|
+|                  |  |        |  |  +--Meristema_sp._1170
+|                  |  |        |  +--|
+|                  |  |        |     |        +**Phaeothecoidea_eucalypti
+|                  |  |        |     |     +--|
+|                  |  |        |     |     |  +--Phaeothecoidea_minutispora
+|                  |  |        |     |  +--|
+|                  |  |        |     |  |  +--Phaeothecoidea_intermedia
+|                  |  |        |     +--|
+|                  |  |        |        |  +--Teratosphaeria_mexicana
+|                  |  |        |        +--|
+|                  |  |        |           |  +--Teratosphaeria_pseudosuberosa
+|                  |  |        |           +--|
+|                  |  |        |              |  +**Teratosphaeria_suberosa_CPC_11032
+|                  |  |        |              +--|
+|                  |  |        |                 +**Teratosphaeria_suberosa_DQ246235
+|                  |  |     +--|
+|                  |  |     |  |     +------------Baudoinia_compniacensis
+|                  |  |     |  |  +--|
+|                  |  |     |  |  |  |                   +**Piedraia_hortae
+|                  |  |     |  |  |  |                +**|
+|                  |  |     |  |  |  |                |  +**Piedraia_hortae_var._hortae_CBS_375.71
+|                  |  |     |  |  |  |         +------|
+|                  |  |     |  |  |  |         |      +--Piedraia_hortae_var._hortae_CBS_374.71
+|                  |  |     |  |  |  |  +------|
+|                  |  |     |  |  |  |  |      +---------Piedraia_quintanilhae
+|                  |  |     |  |  |  +--|
+|                  |  |     |  |  |     |                  +--Readeriella_angustia
+|                  |  |     |  |  |     |               +--|
+|                  |  |     |  |  |     |               |  +**Readeriella_minutispora
+|                  |  |     |  |  |     |            +--|
+|                  |  |     |  |  |     |            |  |        +--Readeriella_callista
+|                  |  |     |  |  |     |            |  |     +--|
+|                  |  |     |  |  |     |            |  |     |  +**Readeriella_pseudocallista
+|                  |  |     |  |  |     |            |  |  +**|
+|                  |  |     |  |  |     |            |  |  |  +**Readeriella_eucalypti
+|                  |  |     |  |  |     |            |  +--|
+|                  |  |     |  |  |     |            |     +--Readeriellaa_readeriellophora
+|                  |  |     |  |  |     |         +--|
+|                  |  |     |  |  |     |         |  +**Readeriella_dimorphospora
+|                  |  |     |  |  |     |      +--|
+|                  |  |     |  |  |     |      |  +--Readeriella_eucalyptigena
+|                  |  |     |  |  |     |   +--|
+|                  |  |     |  |  |     |   |  |        +--Readeriella_dendritica
+|                  |  |     |  |  |     |   |  |     +--|
+|                  |  |     |  |  |     |   |  |     |  |  +**Readeriella_patrickii
+|                  |  |     |  |  |     |   |  |     |  +**|
+|                  |  |     |  |  |     |   |  |     |     +--Readeriella_tasmanica
+|                  |  |     |  |  |     |   |  |  +--|
+|                  |  |     |  |  |     |   |  |  |  +--Readeriella_novaezelandiae
+|                  |  |     |  |  |     |   |  +**|
+|                  |  |     |  |  |     |   |     +--Readeriella_mirabilis
+|                  |  |     |  |  |     +---|
+|                  |  |     |  |  |         +--Readeriella_menaiensis
+|                  |  |     |  +--|
+|                  |  |     |     |        +--Hortaea_thailandica
+|                  |  |     |     |     +--|
+|                  |  |     |     |     |  +--Stenella_araguata
+|                  |  |     |     |  +--|
+|                  |  |     |     |  |  |        +--Hortaea_werneckii_1027_Conrad
+|                  |  |     |     |  |  |     +**|
+|                  |  |     |     |  |  |     |  +--Hortaea_werneckii_EU019270
+|                  |  |     |     |  |  |  +--|
+|                  |  |     |     |  |  |  |  +--Hortaea_werneckii_1098_Conrad
+|                  |  |     |     |  |  +--|
+|                  |  |     |     |  |     +--Penidiella_venezuelensis
+|                  |  |     |     +--|
+|                  |  |     |        |  +---Penidiella_columbiana
+|                  |  |     |        +--|
+|                  |  |     |           |  +**Penidiella_eucalypti
+|                  |  |     |           +--|
+|                  |  |     |              +--Penidiella_tenuiramis
+|                  |  |  +--|
+|                  |  |  |  |     +--Batcheloromyces_proteae
+|                  |  |  |  |  +--|
+|                  |  |  |  |  |  |     +--Teratosphaeria_flexuosa
+|                  |  |  |  |  |  |  +--|
+|                  |  |  |  |  |  |  |  |  +--Teratosphaeria_ohnowa
+|                  |  |  |  |  |  |  |  +**|
+|                  |  |  |  |  |  |  |     +**Teratosphaeria_secundaria
+|                  |  |  |  |  |  +--|
+|                  |  |  |  |  |     +--Teratosphaeria_sp._EU019307
+|                  |  |  |  +--|
+|                  |  |  |     |        +**Mycosphaerella_cryptica
+|                  |  |  |     |     +--|
+|                  |  |  |     |     |  +--Teratosphaeria_cryptica
+|                  |  |  |     |  +--|
+|                  |  |  |     |  |  |              +--Teratosphaeria_alboconidia
+|                  |  |  |     |  |  |           +--|
+|                  |  |  |     |  |  |           |  |                    +--Teratosphaeria_blakelyi
+|                  |  |  |     |  |  |           |  |                 +--|
+|                  |  |  |     |  |  |           |  |                 |  +-------------Teratosphaeria_suttonii
+|                  |  |  |     |  |  |           |  |              +--|
+|                  |  |  |     |  |  |           |  |              |  +--Teratosphaeria_zuluensis
+|                  |  |  |     |  |  |           |  |           +**|
+|                  |  |  |     |  |  |           |  |           |  |  +--Teratosphaeria_considenianae
+|                  |  |  |     |  |  |           |  |           |  +--|
+|                  |  |  |     |  |  |           |  |           |     +**Teratosphaeria_majorizuluensis
+|                  |  |  |     |  |  |           |  |        +--|
+|                  |  |  |     |  |  |           |  |        |  +**Teratosphaeria_gauchensis
+|                  |  |  |     |  |  |           |  |     +--|
+|                  |  |  |     |  |  |           |  |     |  |  +**Teratosphaeria_stellenboschiana_EU019295
+|                  |  |  |     |  |  |           |  |     |  +**|
+|                  |  |  |     |  |  |           |  |     |     +**Teratosphaeria_stellenboschiana_GQ852716
+|                  |  |  |     |  |  |           |  |  +--|
+|                  |  |  |     |  |  |           |  |  |  |  +--Teratosphaeria_corymbiae
+|                  |  |  |     |  |  |           |  |  |  +--|
+|                  |  |  |     |  |  |           |  |  |     +--Teratosphaeria_nubilosa
+|                  |  |  |     |  |  |           |  +--|
+|                  |  |  |     |  |  |           |     |           +**Teratosphaeria_destructans
+|                  |  |  |     |  |  |           |     |        +**|
+|                  |  |  |     |  |  |           |     |        |  +--Teratosphaeria_viscidus
+|                  |  |  |     |  |  |           |     |     +--|
+|                  |  |  |     |  |  |           |     |     |  +--Teratosphaeria_eucalypti
+|                  |  |  |     |  |  |           |     |  +--|
+|                  |  |  |     |  |  |           |     |  |  +--Teratosphaeria_toledana
+|                  |  |  |     |  |  |           |     +**|
+|                  |  |  |     |  |  |           |        |     +**Teratosphaeria_dimorpha
+|                  |  |  |     |  |  |           |        |  +**|
+|                  |  |  |     |  |  |           |        |  |  |           +**Teratosphaeria_fibrillosa_CBS_121707
+|                  |  |  |     |  |  |           |        |  |  |        +--|
+|                  |  |  |     |  |  |           |        |  |  |        |  +**Teratosphaeria_fibrillosa_EU019282
+|                  |  |  |     |  |  |           |        |  |  |     +--|
+|                  |  |  |     |  |  |           |        |  |  |     |  +**Teratosphaeria_proteae-arboreae
+|                  |  |  |     |  |  |           |        |  |  |  +--|
+|                  |  |  |     |  |  |           |        |  |  |  |  +--Teratosphaeria_maculiformis
+|                  |  |  |     |  |  |           |        |  |  +--|
+|                  |  |  |     |  |  |           |        |  |     |  +--Teratosphaeria_macowanii
+|                  |  |  |     |  |  |           |        |  |     +--|
+|                  |  |  |     |  |  |           |        |  |        +--Teratosphaeria_maxii
+|                  |  |  |     |  |  |           |        +--|
+|                  |  |  |     |  |  |           |           |  +--Teratosphaeria_molleriana
+|                  |  |  |     |  |  |           |           +--|
+|                  |  |  |     |  |  |           |              +--Teratosphaeria_sp._FJ493202
+|                  |  |  |     |  |  |        +--|
+|                  |  |  |     |  |  |        |  +--Teratosphaeria_brunneotingens
+|                  |  |  |     |  |  |     +**|
+|                  |  |  |     |  |  |     |  +--Teratosphaeria_complicata
+|                  |  |  |     |  |  |  +**|
+|                  |  |  |     |  |  |  |  |  +--Teratosphaeria_angophorae
+|                  |  |  |     |  |  |  |  +--|
+|                  |  |  |     |  |  |  |     |     +--Teratosphaeria_juvenalis
+|                  |  |  |     |  |  |  |     |  +--|
+|                  |  |  |     |  |  |  |     |  |  +--Teratosphaeria_verrucosa
+|                  |  |  |     |  |  |  |     +--|
+|                  |  |  |     |  |  |  |        +--Teratosphaeria_veloci
+|                  |  |  |     |  |  +--|
+|                  |  |  |     |  |     |             +**Teratosphaeria_hortaea_FJ790299
+|                  |  |  |     |  |     |          +--|
+|                  |  |  |     |  |     |          |  +**Teratosphaeria_hortaea_FJ790300
+|                  |  |  |     |  |     +----------|
+|                  |  |  |     |  |                +**Teratosphaeria_miniata
+|                  |  |  |     +--|
+|                  |  |  |        |  +--Teratosphaeria_ovata
+|                  |  |  |        +**|
+|                  |  |  |           +**Teratosphaeria_sp._GQ852713
+|                  |  +--|
+|                  |     |                          +--Brunneosphaerella_protearum_CPC_13905
+|                  |     |                       +--|
+|                  |     |                       |  |     +**Brunneosphaerella_protearum_CPC_13914
+|                  |     |                       |  |  +--|
+|                  |     |                       |  |  |  +**Brunneosphaerella_protearum_CPC_15231
+|                  |     |                       |  +**|
+|                  |     |                       |     +**Brunneosphaerella_protearum_CPC_16338
+|                  |     |                    +--|
+|                  |     |                    |  +--Phaeophleospora_concentrica
+|                  |     |                 +--|
+|                  |     |                 |  |     +**Mycosphaerella_intermedia
+|                  |     |                 |  |  +--|
+|                  |     |                 |  |  |  +----Mycosphaerella_marksii
+|                  |     |                 |  +--|
+|                  |     |                 |     +--Mycosphaerella_rosigena
+|                  |     |              +--|
+|                  |     |              |  +--Zasmidium_aerohyalinosporum
+|                  |     |           +--|
+|                  |     |           |  |              +**Mycosphaerella_madeirae
+|                  |     |           |  |           +**|
+|                  |     |           |  |           |  +--Pseudocercosporella_sp.
+|                  |     |           |  |        +--|
+|                  |     |           |  |        |  |           +**Polythrincium_trifolii_EU167610
+|                  |     |           |  |        |  +-----------|
+|                  |     |           |  |        |              +**Polythrincium_trifolii_EU167612
+|                  |     |           |  |     +--|
+|                  |     |           |  |     |  +--Mycosphaerella_parkii
+|                  |     |           |  |  +--|
+|                  |     |           |  |  |  +--Zasmidium_nabiacense
+|                  |     |           |  +--|
+|                  |     |           |     +--Passalora_vaginae
+|                  |     |        +--|
+|                  |     |        |  |                 +--Dothistroma_pini
+|                  |     |        |  |              +--|
+|                  |     |        |  |              |  |     +--Dothistroma_septosporum_CBS_383.74
+|                  |     |        |  |              |  |  +**|
+|                  |     |        |  |              |  |  |  +**Dothistroma_septosporum_CBS_543.74
+|                  |     |        |  |              |  +**|
+|                  |     |        |  |              |     +**Dothistroma_septosporum_GQ852597
+|                  |     |        |  |           +--|
+|                  |     |        |  |           |  |                 +--Mycosphaerella_africana
+|                  |     |        |  |           |  |              +--|
+|                  |     |        |  |           |  |              |  +**Mycosphaerella_aurantia
+|                  |     |        |  |           |  |           +--|
+|                  |     |        |  |           |  |           |  +**Passalora_brachycarpa
+|                  |     |        |  |           |  |        +--|
+|                  |     |        |  |           |  |        |  +--Mycosphaerella_keniensis
+|                  |     |        |  |           |  |     +--|
+|                  |     |        |  |           |  |     |  |  +**Mycosphaerella_microsora
+|                  |     |        |  |           |  |     |  +--|
+|                  |     |        |  |           |  |     |     +--Passalora_bellynckii
+|                  |     |        |  |           |  |  +--|
+|                  |     |        |  |           |  |  |  +--Passalora_fulva
+|                  |     |        |  |           |  +**|
+|                  |     |        |  |           |     +**Passalora_ageratinae
+|                  |     |        |  |        +**|
+|                  |     |        |  |        |  +**Passalora_sp._GQ852623
+|                  |     |        |  |     +--|
+|                  |     |        |  |     |  +--Passalora_daleae
+|                  |     |        |  |  +--|
+|                  |     |        |  |  |  |        +--Lecanosticta_acicola
+|                  |     |        |  |  |  |     +--|
+|                  |     |        |  |  |  |     |  +**Phaeophleospora_eugeniae
+|                  |     |        |  |  |  |  +--|
+|                  |     |        |  |  |  |  |  +--Phaeophleospora_eugeniicola
+|                  |     |        |  |  |  +--|
+|                  |     |        |  |  |     |  +**Mycosphaerella_endophytica_DQ246255
+|                  |     |        |  |  |     +**|
+|                  |     |        |  |  |        +**Mycosphaerella_pseudoendophytica
+|                  |     |        |  +--|
+|                  |     |        |     |     +---Mycosphaerella_graminicola_1615
+|                  |     |        |     |  +--|
+|                  |     |        |     |  |  +--Mycosphaerella_graminicola_CBS_115943
+|                  |     |        |     +--|
+|                  |     |        |        |        +--Ramularia_aplospora
+|                  |     |        |        |     +--|
+|                  |     |        |        |     |  +--Ramularia_endophylla
+|                  |     |        |        |  +--|
+|                  |     |        |        |  |  |  +--Ramularia_brunnea
+|                  |     |        |        |  |  +--|
+|                  |     |        |        |  |     |  +**Ramularia_miae
+|                  |     |        |        |  |     +--|
+|                  |     |        |        |  |        +--Ramularia_pratensis_var._pratensis
+|                  |     |        |        +--|
+|                  |     |        |           +--Ramularia_nagornyi
+|                  |     |     +--|
+|                  |     |     |  |                             +--Cercospora_apii
+|                  |     |     |  |                          +--|
+|                  |     |     |  |                          |  |  +--Mycosphaerella_coacervata
+|                  |     |     |  |                          |  +--|
+|                  |     |     |  |                          |     +**Mycosphaerella_linorum
+|                  |     |     |  |                       +--|
+|                  |     |     |  |                       |  |     +--Septoria_apiicola
+|                  |     |     |  |                       |  |  +**|
+|                  |     |     |  |                       |  |  |  |  +--Septoria_convolvuli
+|                  |     |     |  |                       |  |  |  +**|
+|                  |     |     |  |                       |  |  |     +--Septoria_rubi
+|                  |     |     |  |                       |  +**|
+|                  |     |     |  |                       |     +**Septoria_senecionis
+|                  |     |     |  |                    +--|
+|                  |     |     |  |                    |  +**Septoria_leucanthemi
+|                  |     |     |  |                 +--|
+|                  |     |     |  |                 |  |        +--Mycosphaerella_flageoletiana
+|                  |     |     |  |                 |  |     +--|
+|                  |     |     |  |                 |  |     |  +**Mycosphaerella_harthensis
+|                  |     |     |  |                 |  |  +--|
+|                  |     |     |  |                 |  |  |  |  +--Mycosphaerella_ribis
+|                  |     |     |  |                 |  |  |  +--|
+|                  |     |     |  |                 |  |  |     +**Septoria_berberidis
+|                  |     |     |  |                 |  +--|
+|                  |     |     |  |                 |     |  +**Mycosphaerella_latebrosa
+|                  |     |     |  |                 |     +**|
+|                  |     |     |  |                 |        |  +**Septoria_aceris
+|                  |     |     |  |                 |        +**|
+|                  |     |     |  |                 |           +--Septoria_populicola
+|                  |     |     |  |              +--|
+|                  |     |     |  |              |  +--Ramulispora_sorghi
+|                  |     |     |  |           +--|
+|                  |     |     |  |           |  |  +--Cercosporella_virgaureae
+|                  |     |     |  |           |  +--|
+|                  |     |     |  |           |     +-------Passalora_dalbergiae
+|                  |     |     |  |        +--|
+|                  |     |     |  |        |  |                    +--Mycosphaerella_milleri
+|                  |     |     |  |        |  |                 +--|
+|                  |     |     |  |        |  |                 |  +--Pseudocercospora_punctata
+|                  |     |     |  |        |  |              +--|
+|                  |     |     |  |        |  |              |  |     +--Mycosphaerella_pyri
+|                  |     |     |  |        |  |              |  |  +--|
+|                  |     |     |  |        |  |              |  |  |  |  +**Pseudocercospora_griseola_f._griseola_CPC_10461
+|                  |     |     |  |        |  |              |  |  |  +--|
+|                  |     |     |  |        |  |              |  |  |     +**Pseudocercospora_griseola_f._griseola_GQ852633
+|                  |     |     |  |        |  |              |  +**|
+|                  |     |     |  |        |  |              |     |        +**Pseudocercospora_basiramifera
+|                  |     |     |  |        |  |              |     |     +--|
+|                  |     |     |  |        |  |              |     |     |  |  +--Pseudocercospora_paraguayensis
+|                  |     |     |  |        |  |              |     |     |  +--|
+|                  |     |     |  |        |  |              |     |     |     +--Pseudocercospora_tereticornis
+|                  |     |     |  |        |  |              |     |  +**|
+|                  |     |     |  |        |  |              |     |  |  +**Pseudocercospora_schizolobii
+|                  |     |     |  |        |  |              |     +--|
+|                  |     |     |  |        |  |              |        +--Pseudocercospora_fijiensis
+|                  |     |     |  |        |  |           +--|
+|                  |     |     |  |        |  |           |  +--Pseudocercospora_platani
+|                  |     |     |  |        |  |        +--|
+|                  |     |     |  |        |  |        |  |        +--Pseudocercospora_basitruncata
+|                  |     |     |  |        |  |        |  |     +--|
+|                  |     |     |  |        |  |        |  |     |  +**Pseudocercospora_crousii
+|                  |     |     |  |        |  |        |  |  +**|
+|                  |     |     |  |        |  |        |  |  |  +**Pseudocercospora_eucalyptorum
+|                  |     |     |  |        |  |        |  +**|
+|                  |     |     |  |        |  |        |     +--Pseudocercospora_bixae
+|                  |     |     |  |        |  |     +--|
+|                  |     |     |  |        |  |     |  +--Pseudocercospora_sphaerulinae
+|                  |     |     |  |        |  |  +--|
+|                  |     |     |  |        |  |  |  +**Pseudocercospora_vitis
+|                  |     |     |  |        |  +--|
+|                  |     |     |  |        |     +--Passalora_eucalypti
+|                  |     |     |  |     +--|
+|                  |     |     |  |     |  +--Passalora_graminis
+|                  |     |     |  |  +--|
+|                  |     |     |  |  |  |              +**Mycosphaerella_acaciigena
+|                  |     |     |  |  |  |           +--|
+|                  |     |     |  |  |  |           |  +--Mycosphaerella_heimii
+|                  |     |     |  |  |  |        +--|
+|                  |     |     |  |  |  |        |  +**Mycosphaerella_irregulariramosa
+|                  |     |     |  |  |  |     +--|
+|                  |     |     |  |  |  |     |  |  +--Mycosphaerella_colombiensis
+|                  |     |     |  |  |  |     |  +--|
+|                  |     |     |  |  |  |     |     +--Phaeocryptopus_gaeumannii
+|                  |     |     |  |  |  |  +--|
+|                  |     |     |  |  |  |  |  |  +**Phaeophleospora_atkinsonii_CBS_124565
+|                  |     |     |  |  |  |  |  +--|
+|                  |     |     |  |  |  |  |     +**Phaeophleospora_atkinsonii_CBS_124566
+|                  |     |     |  |  |  +--|
+|                  |     |     |  |  |     |  +--Sonderhenia_eucalypticola
+|                  |     |     |  |  |     +--|
+|                  |     |     |  |  |        +--Sonderhenia_eucalyptorum
+|                  |     |     |  +**|
+|                  |     |     |     |                                   +**Mycosphaerella_aleuritidis
+|                  |     |     |     |                                +--|
+|                  |     |     |     |                                |  +--Zasmidium_nocoxi
+|                  |     |     |     |                             +**|
+|                  |     |     |     |                             |  +--Ramichloridium_cerophilum
+|                  |     |     |     |                          +--|
+|                  |     |     |     |                          |  +--Zasmidium_cellare
+|                  |     |     |     |                       +--|
+|                  |     |     |     |                       |  +--Zasmidium_anthuriicola
+|                  |     |     |     |                    +--|
+|                  |     |     |     |                    |  +--Ramichloridium_strelitziae
+|                  |     |     |     |                 +--|
+|                  |     |     |     |                 |  +--Ramichloridium_australiense
+|                  |     |     |     |              +--|
+|                  |     |     |     |              |  +--Ramichloridium_musae
+|                  |     |     |     |           +--|
+|                  |     |     |     |           |  +--Ramichloridium_biverticillatum
+|                  |     |     |     |        +--|
+|                  |     |     |     |        |  +--Verrucisporota_proteacearum
+|                  |     |     |     |     +--|
+|                  |     |     |     |     |  +---Penidiella_nectandrae
+|                  |     |     |     |  +--|
+|                  |     |     |     |  |  |     +--Periconiella_arcuata
+|                  |     |     |     |  |  |  +--|
+|                  |     |     |     |  |  |  |  |  +--Periconiella_velutina
+|                  |     |     |     |  |  |  |  +--|
+|                  |     |     |     |  |  |  |     +--Rasutoria_pseudotsugae
+|                  |     |     |     |  |  +--|
+|                  |     |     |     |  |     +--Verrucisporota_daviesiae
+|                  |     |     |     +--|
+|                  |     |     |        +------Ramichloridium_pini
+|                  |     |  +--|
+|                  |     |  |  |       +--Schizothyrium_pomi
+|                  |     |  |  |    +**|
+|                  |     |  |  |    |  +--Zygophiala_cryptogama
+|                  |     |  |  +----|
+|                  |     |  |       +--Zygophiala_sp.
+|                  |     +--|
+|                  |        |            +**Dissoconium_aciculare_CBS_204.89
+|                  |        |         +--|
+|                  |        |         |  +**Dissoconium_aciculare_EU019266
+|                  |        |      +--|
+|                  |        |      |  |  +**Dissoconium_australiensis
+|                  |        |      |  +--|
+|                  |        |      |     |     +--Dissoconium_commune_CBS_110747
+|                  |        |      |     |  +--|
+|                  |        |      |     |  |  +**Dissoconium_commune_EU019267
+|                  |        |      |     +--|
+|                  |        |      |        |  +**Dissonium_dekkeri_CBS_111282
+|                  |        |      |        +--|
+|                  |        |      |           +--Dissonium_dekkeri_DQ204768
+|                  |        +------|
+|                  |               |  +**Ramichloridium_apiculatum_CBS_400.76
+|                  |               +--|
+|                  |                  +**Ramichloridium_apiculatum_EU041848
+|               +--|
+|               |  |       +--Capnobotryella_renispora_CBS215.90
+|               |  +-------|
+|               |          +--Capnobotryella_renispora_EU019248
+|            +--|
+|            |  |           +--Devriesia_hilliana
+|            |  |        +--|
+|            |  |        |  |          +----Devriesia_lagerstroemiae
+|            |  |        |  |       +--|
+|            |  |        |  |       |  +--Devriesia_strelitziae
+|            |  |        |  |  +----|
+|            |  |        |  |  |    +--Teratosphaeria_knoxdavesii
+|            |  |        |  +--|
+|            |  |        |     +**Passalora_sp._GQ852622
+|            |  |     +--|
+|            |  |     |  +--Tripospermum_myrti
+|            |  |  +--|
+|            |  |  |  +--Meristema_sp._1169
+|            |  +--|
+|            |     +------Teratosphaeria_sp._GQ852712
+|         +--|
+|         |  |              +**Cystocoleus_ebeneus_EU048571
+|         |  +--------------|
+|         |                 +**Cystocoleus_ebeneus_EU048573
+|      +--|
+|      |  +--------Hortaea_acidophila
+|   +--|
+|   |  +-----Sporidesmium_pachyanthicola
++---|
+|   |         +--Meristema_sp._1166
+|   |      +--|
+|   |      |  |  +---Meristema_sp._1168
+|   |      |  +--|
+|   |      |     +----Staninwardia_suttonii
+|   |  +---|
+|   |  |   +--Ramichloridium_brasilianum
+|   +--|
+|      +-----Meristema_sp._1167
+|
++----Devriesia_strelitziicola
+
+Tree in newick format:
+
+(Anisomeridium_consobrinum:0.0214753533,((((((((((((Antennariella_placitae:0.0094221997,Microxyphium_theae:0.0000025750):0.0064048955,(((Capnodium_coffeae:0.0012370666,(Condioxyphium_gardeniorum:0.0000025750,Microxyphium_aciculiforme:0.0010604583):0.0008695943):0.0048734161,((Leptoxyphium_fumago:0.0040097084,Microxyphium_citri:0.0009794819):0.0033885888,Leptoxyphium_madagascariensis:0.0055696775):0.0187367363):0.0028405544,Polychaeton_citri:0.0026765320):0.0001187872):0.0273809341,((((((((((((Cladosporium_bruhnei:0.0000025750,Sphaerulina_polyspora:0.0000025750):0.0000025750,Davidiella_allicina:0.0012960911):0.0000025750,Davidiella_macrospora:0.0000025750):0.0012193665,(Cladosporium_cladosporioides:0.0000025750,(Cladosporium_sp._CPC_15513:0.0000025750,(Cladosporium_sp._CPC_15516:0.0000025750,(Cladosporium_sp._FJ790289:0.0011866117,Melanodothis_caricis:0.0054486140):0.0039061231):0.0000025750):0.0000025750):0.0025466112):0.0288136564,Toxicocladosporium_chlamydosporum:0.0083194505):0.0058561764,Toxicocladosporium_irritans:0.0029657319):0.0031700272,Toxicocladosporium_rubrigenum:0.0090889856):0.0186963925,Verrucocladosporium_dirinae:0.0052445726):0.0036515128,Graphiopsis_chlorocephala:0.0018708870):0.0016717039,(Rachicladosporium_cboliae:0.0056346006,Rachicladosporium_luculiae:0.0036827707):0.0102543285):0.0128049019,Scorias_spongiosa:0.0196041316):0.0038893199,Fumagospora_capnodioides:0.0170616896):0.0028569973):0.0090059450,((Comminutispora_agavaciensis:0.0394742264,(Dothidea_insculpta:0.2081528934,Phaeotheca_triangularis:0.0176149245):0.0322207482):0.0003474047,(Phaeotheca_fissurella:0.0134035306,((Racodium_rupestre_EU048575:0.0041134607,Racodium_rupestre_EU048577:0.0032581711):0.0041075836,Racodium_rupestre_EU048576:0.0044848352):0.0298795393):0.0103886909):0.0071471781):0.0247501490,Mycosphaerella_eurypotami:0.0825232213):0.0000021519,((((((((((Aulographina_pinorum_CBS_174.90:0.0000025750,((Aulographina_pinorum_CBS_302.71:0.0000025750,Catenulostroma_microsporum_EU019255:0.0000025750):0.0000025750,Catenulostroma_abietis:0.0000025750):0.0000025750):0.0179770852,(Devriesia_staurophora:0.0346739124,Penidiella_strumelloidea:0.0415123638):0.0167853139):0.0081142090,Xenomeris_juniperi:0.0089720374):0.0054608252,(Teratosphaeria_jonkershoekensis:0.0147929241,Teratosphaeria_parva:0.0300371814):0.0156116458):0.0068037387,((Catenulostroma_elginense:0.0107965794,(Meristema_sp._1172:0.0114625740,Meristema_sp._1173:0.0063244683):0.0066161481):0.0017240352,((Catenulostroma_protearum_CPC_15368:0.0000025750,Catenulostroma_protearum_CPC_15369:0.0012910586):0.0029659098,Catenulostroma_protearum_CPC_15370:0.0035420561):0.0198508190):0.0066594871):0.0069571657,(Penidiella_pseudotasmaniensis:0.0180382150,Phacellium_paspali:0.0163563732):0.0171311088):0.0053260433,(Meristema_sp._1170:0.0067612281,(((Phaeothecoidea_eucalypti:0.0000025750,Phaeothecoidea_minutispora:0.0014198196):0.0043171081,Phaeothecoidea_intermedia:0.0029020906):0.0012569097,(Teratosphaeria_mexicana:0.0101569047,(Teratosphaeria_pseudosuberosa:0.0049222004,(Teratosphaeria_suberosa_CPC_11032:0.0000025750,Teratosphaeria_suberosa_DQ246235:0.0000025750):0.0023829518):0.0015932119):0.0115907457):0.0166582600):0.0070208297):0.0016375544,((Baudoinia_compniacensis:0.0752686163,((((Piedraia_hortae:0.0000025750,Piedraia_hortae_var._hortae_CBS_375.71:0.0000025750):0.0000025750,Piedraia_hortae_var._hortae_CBS_374.71:0.0013330076):0.0427219637,Piedraia_quintanilhae:0.0563952432):0.0440265896,((((((Readeriella_angustia:0.0014554229,Readeriella_minutispora:0.0000025750):0.0014620634,(((Readeriella_callista:0.0014522419,Readeriella_pseudocallista:0.0000025750):0.0014516729,Readeriella_eucalypti:0.0000025750):0.0000025750,Readeriellaa_readeriellophora:0.0014508591):0.0058894221):0.0014879047,Readeriella_dimorphospora:0.0000025750):0.0044273322,Readeriella_eucalyptigena:0.0014399288):0.0029428421,(((Readeriella_dendritica:0.0014569206,(Readeriella_patrickii:0.0000025750,Readeriella_tasmanica:0.0029261619):0.0000025750):0.0044711253,Readeriella_novaezelandiae:0.0029525032):0.0060298216,Readeriella_mirabilis:0.0014512699):0.0000026491):0.0059903510,Readeriella_menaiensis:0.0014149715):0.0254833800):0.0064670171):0.0023101344,(((Hortaea_thailandica:0.0054998165,Stenella_araguata:0.0163063981):0.0078658136,(((Hortaea_werneckii_1027_Conrad:0.0015077499,Hortaea_werneckii_EU019270:0.0013775433):0.0000029446,Hortaea_werneckii_1098_Conrad:0.0013664633):0.0167994209,Penidiella_venezuelensis:0.0064262032):0.0026008998):0.0018492811,(Penidiella_columbiana:0.0236048339,(Penidiella_eucalypti:0.0000026501,Penidiella_tenuiramis:0.0058923506):0.0119693114):0.0055925499):0.0033171810):0.0076434634):0.0030938099,((Batcheloromyces_proteae:0.0126725995,((Teratosphaeria_flexuosa:0.0029455756,(Teratosphaeria_ohnowa:0.0014667917,Teratosphaeria_secundaria:0.0000025750):0.0000025750):0.0029868361,Teratosphaeria_sp._EU019307:0.0062140444):0.0145788126):0.0026973353,(((Mycosphaerella_cryptica:0.0000025750,Teratosphaeria_cryptica:0.0029102243):0.0084785240,(((((Teratosphaeria_alboconidia:0.0044882581,(((((((Teratosphaeria_blakelyi:0.0076420506,Teratosphaeria_suttonii:0.0803809346):0.0078119368,Teratosphaeria_zuluensis:0.0013934755):0.0015198874,(Teratosphaeria_considenianae:0.0014653924,Teratosphaeria_majorizuluensis:0.0000029178):0.0029154755):0.0000025750,Teratosphaeria_gauchensis:0.0000025750):0.0014614427,(Teratosphaeria_stellenboschiana_EU019295:0.0000025750,Teratosphaeria_stellenboschiana_GQ852716:0.0000025750):0.0000025750):0.0014018485,(Teratosphaeria_corymbiae:0.0096186149,Teratosphaeria_nubilosa:0.0049656128):0.0009399190):0.0013975524,((((Teratosphaeria_destructans:0.0000025750,Teratosphaeria_viscidus:0.0029413037):0.0000025750,Teratosphaeria_eucalypti:0.0014646130):0.0106065965,Teratosphaeria_toledana:0.0092541181):0.0030643465,((Teratosphaeria_dimorpha:0.0000025750,((((Teratosphaeria_fibrillosa_CBS_121707:0.0000025750,Teratosphaeria_fibrillosa_EU019282:0.0000025750):0.0155974047,Teratosphaeria_proteae-arboreae:0.0000026501):0.0113170956,Teratosphaeria_maculiformis:0.0209935240):0.0137905807,(Teratosphaeria_macowanii:0.0029487204,Teratosphaeria_maxii:0.0030168654):0.0011022078):0.0054420767):0.0000025750,(Teratosphaeria_molleriana:0.0030922865,Teratosphaeria_sp._FJ493202:0.0028604238):0.0045555550):0.0032853697):0.0000025750):0.0028251076):0.0013694961,Teratosphaeria_brunneotingens:0.0014625989):0.0013719395,Teratosphaeria_complicata:0.0014531938):0.0000025750,(Teratosphaeria_angophorae:0.0110846086,((Teratosphaeria_juvenalis:0.0140760170,Teratosphaeria_verrucosa:0.0044463452):0.0093596052,Teratosphaeria_veloci:0.0090523430):0.0048883663):0.0012251478):0.0000026491,((Teratosphaeria_hortaea_FJ790299:0.0000025750,Teratosphaeria_hortaea_FJ790300:0.0000025750):0.0144539322,Teratosphaeria_miniata:0.0000023324):0.0623567576):0.0013538861):0.0013559930,(Teratosphaeria_ovata:0.0014577222,Teratosphaeria_sp._GQ852713:0.0000025750):0.0000025750):0.0080832492):0.0031911530):0.0125143201,(((((((((Brunneosphaerella_protearum_CPC_13905:0.0041576758,((Brunneosphaerella_protearum_CPC_13914:0.0000025750,Brunneosphaerella_protearum_CPC_15231:0.0000025750):0.0038934697,Brunneosphaerella_protearum_CPC_16338:0.0000025750):0.0000026491):0.0076596420,Phaeophleospora_concentrica:0.0073131110):0.0059448328,((Mycosphaerella_intermedia:0.0000026405,Mycosphaerella_marksii:0.0276883258):0.0032805960,Mycosphaerella_rosigena:0.0170513728):0.0071707917):0.0024561989,Zasmidium_aerohyalinosporum:0.0071518907):0.0017432771,(((((Mycosphaerella_madeirae:0.0000025750,Pseudocercosporella_sp.:0.0110128495):0.0000028950,(Polythrincium_trifolii_EU167610:0.0000025750,Polythrincium_trifolii_EU167612:0.0000025750):0.0669076979):0.0036503391,Mycosphaerella_parkii:0.0194611297):0.0042335756,Zasmidium_nabiacense:0.0133779003):0.0041742589,Passalora_vaginae:0.0100396598):0.0012612007):0.0088715614,((((((Dothistroma_pini:0.0014139435,((Dothistroma_septosporum_CBS_383.74:0.0027656976,Dothistroma_septosporum_CBS_543.74:0.0000025750):0.0000025750,Dothistroma_septosporum_GQ852597:0.0000025750):0.0000025750):0.0027539520,((((((Mycosphaerella_africana:0.0014045748,Mycosphaerella_aurantia:0.0000025750):0.0014652712,Passalora_brachycarpa:0.0000025750):0.0015573999,Mycosphaerella_keniensis:0.0074450204):0.0013455315,(Mycosphaerella_microsora:0.0000025750,Passalora_bellynckii:0.0014156203):0.0014571293):0.0030768285,Passalora_fulva:0.0028450809):0.0014763953,Passalora_ageratinae:0.0000025750):0.0000025750):0.0013895302,Passalora_sp._GQ852623:0.0000025750):0.0000025750,Passalora_daleae:0.0014109623):0.0149378788,(((Lecanosticta_acicola:0.0181608243,Phaeophleospora_eugeniae:0.0000025750):0.0044739246,Phaeophleospora_eugeniicola:0.0013327921):0.0030185644,(Mycosphaerella_endophytica_DQ246255:0.0000025750,Mycosphaerella_pseudoendophytica:0.0000025750):0.0000025750):0.0209939034):0.0082954636,((Mycosphaerella_graminicola_1615:0.0261194466,Mycosphaerella_graminicola_CBS_115943:0.0020877607):0.0158597788,(((Ramularia_aplospora:0.0028955485,Ramularia_endophylla:0.0132990869):0.0014032022,(Ramularia_brunnea:0.0154481777,(Ramularia_miae:0.0000025750,Ramularia_pratensis_var._pratensis:0.0027985387):0.0014099013):0.0029692353):0.0016980998,Ramularia_nagornyi:0.0038544584):0.0058848026):0.0136508611):0.0145117465):0.0034791206,((((((((((Cercospora_apii:0.0090779450,(Mycosphaerella_coacervata:0.0013970340,Mycosphaerella_linorum:0.0000025750):0.0072568095):0.0013607801,((Septoria_apiicola:0.0057539120,(Septoria_convolvuli:0.0014174200,Septoria_rubi:0.0014168586):0.0000025750):0.0000025750,Septoria_senecionis:0.0000025750):0.0000025750):0.0014176894,Septoria_leucanthemi:0.0000025750):0.0024998646,(((Mycosphaerella_flageoletiana:0.0071841690,Mycosphaerella_harthensis:0.0000025750):0.0014760832,(Mycosphaerella_ribis:0.0013998057,Septoria_berberidis:0.0000025750):0.0013374252):0.0043955231,(Mycosphaerella_latebrosa:0.0000025750,(Septoria_aceris:0.0000025750,Septoria_populicola:0.0116830049):0.0000025750):0.0000028915):0.0087780524):0.0057364128,Ramulispora_sorghi:0.0204601593):0.0085674259,(Cercosporella_virgaureae:0.0021884848,Passalora_dalbergiae:0.0490369130):0.0063515430):0.0090310932,(((((((Mycosphaerella_milleri:0.0069345733,Pseudocercospora_punctata:0.0086196810):0.0014412928,((Mycosphaerella_pyri:0.0113608225,(Pseudocercospora_griseola_f._griseola_CPC_10461:0.0000025750,Pseudocercospora_griseola_f._griseola_GQ852633:0.0000025750):0.0095730339):0.0042109843,(((Pseudocercospora_basiramifera:0.0000020629,(Pseudocercospora_paraguayensis:0.0014084451,Pseudocercospora_tereticornis:0.0013594515):0.0013948933):0.0013770941,Pseudocercospora_schizolobii:0.0000025750):0.0000020606,Pseudocercospora_fijiensis:0.0086195664):0.0056542218):0.0000026269):0.0028650837,Pseudocercospora_platani:0.0057720393):0.0013159959,(((Pseudocercospora_basitruncata:0.0013678532,Pseudocercospora_crousii:0.0000025750):0.0013682852,Pseudocercospora_eucalyptorum:0.0000025750):0.0000025750,Pseudocercospora_bixae:0.0027459689):0.0000025750):0.0013188472,Pseudocercospora_sphaerulinae:0.0070893195):0.0026544560,Pseudocercospora_vitis:0.0000025750):0.0070919150,Passalora_eucalypti:0.0208484292):0.0146079016):0.0075160897,Passalora_graminis:0.0208640490):0.0009712404,(((((Mycosphaerella_acaciigena:0.0000025750,Mycosphaerella_heimii:0.0028167029):0.0014013159,Mycosphaerella_irregulariramosa:0.0000025750):0.0027961819,(Mycosphaerella_colombiensis:0.0114615214,Phaeocryptopus_gaeumannii:0.0049300143):0.0011260817):0.0043161237,(Phaeophleospora_atkinsonii_CBS_124565:0.0000025750,Phaeophleospora_atkinsonii_CBS_124566:0.0000025750):0.0118945616):0.0145630616,(Sonderhenia_eucalypticola:0.0013198266,Sonderhenia_eucalyptorum:0.0015202329):0.0032502204):0.0078098912):0.0132212424,((((((((((((Mycosphaerella_aleuritidis:0.0000025750,Zasmidium_nocoxi:0.0044159701):0.0039519164,Ramichloridium_cerophilum:0.0068294282):0.0000020902,Zasmidium_cellare:0.0202174519):0.0096121762,Zasmidium_anthuriicola:0.0076538345):0.0078161590,Ramichloridium_strelitziae:0.0064997605):0.0061333751,Ramichloridium_australiense:0.0082110856):0.0042396172,Ramichloridium_musae:0.0087908691):0.0096494395,Ramichloridium_biverticillatum:0.0060804340):0.0016064538,Verrucisporota_proteacearum:0.0078113913):0.0026521596,Penidiella_nectandrae:0.0256264652):0.0027760014,((Periconiella_arcuata:0.0029628369,(Periconiella_velutina:0.0030939690,Rasutoria_pseudotsugae:0.0076895958):0.0013745821):0.0010401516,Verrucisporota_daviesiae:0.0082745297):0.0039815411):0.0177054311,Ramichloridium_pini:0.0430587022):0.0031434480):0.0000029027):0.0139564745,((Schizothyrium_pomi:0.0014525996,Zygophiala_cryptogama:0.0039430990):0.0000022033,Zygophiala_sp.:0.0025876910):0.0310679784):0.0103368053,(((Dissoconium_aciculare_CBS_204.89:0.0000025750,Dissoconium_aciculare_EU019266:0.0000025750):0.0181972124,(Dissoconium_australiensis:0.0000025750,((Dissoconium_commune_CBS_110747:0.0013569156,Dissoconium_commune_EU019267:0.0000025750):0.0070350358,(Dissonium_dekkeri_CBS_111282:0.0000025750,Dissonium_dekkeri_DQ204768:0.0014164868):0.0027257127):0.0056225173):0.0111258577):0.0049219358,(Ramichloridium_apiculatum_CBS_400.76:0.0000025750,Ramichloridium_apiculatum_EU041848:0.0000025750):0.0064345991):0.0388328707):0.0153889065):0.0019978026):0.0067090056,(Capnobotryella_renispora_CBS215.90:0.0026402327,Capnobotryella_renispora_EU019248:0.0014496110):0.0478305364):0.0074352661,((((Devriesia_hilliana:0.0053272050,(((Devriesia_lagerstroemiae:0.0309070543,Devriesia_strelitziae:0.0199940535):0.0034509242,Teratosphaeria_knoxdavesii:0.0035094800):0.0290247360,Passalora_sp._GQ852622:0.0003360381):0.0090628167):0.0085238396,Tripospermum_myrti:0.0090060494):0.0075700154,Meristema_sp._1169:0.0185987149):0.0086218416,Teratosphaeria_sp._GQ852712:0.0437728907):0.0188295015):0.0014678417,(Cystocoleus_ebeneus_EU048571:0.0000025750,Cystocoleus_ebeneus_EU048573:0.0000025750):0.0854233739):0.0062740461,Hortaea_acidophila:0.0530010326):0.0033906398,Sporidesmium_pachyanthicola:0.0372469410):0.0092825084,(((Meristema_sp._1166:0.0147841479,(Meristema_sp._1168:0.0274823897,Staninwardia_suttonii:0.0328598446):0.0123327114):0.0143697405,Ramichloridium_brasilianum:0.0192841880):0.0248977939,Meristema_sp._1167:0.0378993796):0.0164274499):0.0239484218,Devriesia_strelitziicola:0.0282757334);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/dna_M4927_268_1275.phy/output_files/iqtree/inference/pars_12.treefile -m "TIM{1.93597,0.680979,6.02145}+F{0.253703,0.223972,0.308824,0.213501}+I{0.332234}+R4{0.395212,0.226509,0.162237,1.57837,0.0923472,4.80525,0.0179698,11.723}" --length 1275
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data3/dna_M4927_268_1275.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data3/dna_M4927_268_1275.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Sep 23 20:11:31 2025
+Total CPU time used: 339.662 seconds (0h:5m:39s)
+Total wall-clock time used: 340.542 seconds (0h:5m:40s)
+

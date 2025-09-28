@@ -1,0 +1,899 @@
+IQ-TREE 3.0.1 built Sep 14 2025
+
+Input file name: /home/suny/Downloads/VAN_TRAINING_DATA/data3/dna_M4727_350_6464.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 5
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 350 sequences with 6464 nucleotide sites
+Number of constant sites: 2486 (= 38.4592% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 2486 (= 38.4592% of all sites)
+Number of parsimony informative sites: 3152
+Number of distinct site patterns: 5059
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+R8
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+R8        -204140.637  409719.275 +        1  409899.525 +        1  414589.783 +        1
+GTR+R8          -204164.814  409761.628 - 6.35e-10  409940.285 - 1.41e-09  414611.815 - 1.64e-05
+SYM+R8          -204164.868  409761.735 - 6.02e-10  409940.393 - 1.34e-09  414611.922 - 1.56e-05
+SYM+R8          -204164.868  409761.735 - 6.02e-10  409940.393 - 1.34e-09  414611.922 - 1.56e-05
+TIM2+F+R8       -204182.220  409798.441 - 6.45e-18  409977.629 -  1.1e-17  414655.402 - 5.64e-15
+TIM2+R8         -204231.499  409890.997 - 5.14e-38  410068.597 - 1.93e-37  414727.636 - 1.16e-30
+TIM2e+R8        -204231.541  409891.082 - 4.93e-38  410068.681 - 1.85e-37  414727.720 - 1.12e-30
+TIM2e+R8        -204231.541  409891.082 - 4.93e-38  410068.681 - 1.85e-37  414727.720 - 1.12e-30
+TIM3+R8         -204236.069  409900.138 - 5.32e-40  410077.737 -    2e-39  414736.776 -  1.2e-32
+TIM3e+R8        -204236.137  409900.274 - 4.97e-40  410077.874 - 1.87e-39  414736.913 - 1.13e-32
+TIM3e+R8        -204236.137  409900.274 - 4.97e-40  410077.874 - 1.87e-39  414736.913 - 1.13e-32
+TIM3+F+R8       -204244.234  409922.468 - 7.54e-45  410101.655 - 1.28e-44  414779.428 - 6.59e-42
+TN+F+R8         -204285.532  410003.063 - 2.38e-62  410181.721 - 5.27e-62  414853.250 - 6.15e-58
+TN+R8           -204301.068  410028.136 - 8.54e-68  410205.208 - 4.19e-67  414858.000 - 5.72e-59
+TNe+R8          -204301.151  410028.302 - 7.86e-68  410205.374 - 3.85e-67  414858.167 - 5.26e-59
+TNe+R8          -204301.151  410028.302 - 7.86e-68  410205.374 - 3.85e-67  414858.167 - 5.26e-59
+TIM+F+R8        -204285.185  410004.370 - 1.24e-62  410183.558 -  2.1e-62  414861.331 - 1.08e-59
+TIM+R8          -204300.382  410028.763 - 6.24e-68  410206.363 - 2.35e-67  414865.402 - 1.41e-60
+TIMe+R8         -204300.455  410028.910 -  5.8e-68  410206.509 - 2.18e-67  414865.548 - 1.31e-60
+TIMe+R8         -204300.455  410028.910 -  5.8e-68  410206.509 - 2.18e-67  414865.548 - 1.31e-60
+TVM+R8          -204559.741  410549.482 - 5.28e-181  410727.610 - 1.53e-180  415392.895 - 4.04e-175
+TVMe+R8         -204559.799  410549.599 - 4.98e-181  410727.727 - 1.44e-180  415393.011 - 3.81e-175
+TVMe+R8         -204559.799  410549.599 - 4.98e-181  410727.727 - 1.44e-180  415393.011 - 3.81e-175
+TPM2u+R8        -204616.158  410658.317 - 1.23e-204  410835.389 - 6.02e-204  415488.181 - 8.23e-196
+TPM2+R8         -204616.278  410658.556 - 1.09e-204  410835.628 - 5.34e-204  415488.421 - 7.3e-196
+TPM2+R8         -204616.278  410658.556 - 1.09e-204  410835.628 - 5.34e-204  415488.421 - 7.3e-196
+TPM3u+R8        -204638.327  410702.654 - 2.9e-214  410879.726 - 1.42e-213  415532.519 - 1.94e-205
+TPM3+R8         -204638.451  410702.901 - 2.56e-214  410879.973 - 1.25e-213  415532.766 - 1.71e-205
+TPM3+R8         -204638.451  410702.901 - 2.56e-214  410879.973 - 1.25e-213  415532.766 - 1.71e-205
+HKY+R8          -204692.164  410808.328 - 3.27e-237  410984.873 - 2.09e-236  415631.419 - 6.48e-227
+K2P+R8          -204692.407  410808.814 - 2.57e-237  410985.360 - 1.64e-236  415631.905 - 5.08e-227
+K2P+R8          -204692.407  410808.814 - 2.57e-237  410985.360 - 1.64e-236  415631.905 - 5.08e-227
+K3Pu+R8         -204691.575  410809.149 - 2.17e-237  410986.221 - 1.06e-236  415639.014 - 1.45e-228
+K3P+R8          -204691.692  410809.384 - 1.93e-237  410986.456 - 9.46e-237  415639.249 - 1.29e-228
+K3P+R8          -204691.692  410809.384 - 1.93e-237  410986.456 - 9.46e-237  415639.249 - 1.29e-228
+TVM+F+R8        -204816.878  411069.755 - 5.58e-294  411249.474 - 7.28e-294  415933.490 - 1.65e-292
+TPM2u+F+R8      -204849.841  411131.683 - 1.99e-307  411310.340 - 4.42e-307  415981.869 - 5.16e-303
+TPM3u+F+R8      -204932.446  411296.893 -        0  411475.550 -        0  416147.080 -        0
+HKY+F+R8        -204964.751  411359.502 -        0  411537.630 -        0  416202.915 -        0
+K3Pu+F+R8       -204963.563  411359.125 -        0  411537.783 -        0  416209.312 -        0
+F81+R8          -212909.394  427240.788 -        0  427416.807 -        0  432057.105 -        0
+JC+R8           -212909.777  427241.553 -        0  427417.572 -        0  432057.870 -        0
+JC+R8           -212909.777  427241.553 -        0  427417.572 -        0  432057.870 -        0
+JC+R9           -212907.543  427241.086 -        0  427418.158 -        0  432070.950 -        0
+JC+R7           -212935.299  427288.599 -        0  427463.569 -        0  432091.367 -        0
+JC+I+R8         -212925.524  427275.048 -        0  427451.593 -        0  432098.138 -        0
+JC+I+R9         -212923.266  427274.532 -        0  427452.132 -        0  432111.171 -        0
+JC+I+R7         -212944.627  427309.254 -        0  427484.749 -        0  432118.797 -        0
+JC+I+R6         -212979.367  427374.735 -        0  427549.182 -        0  432170.730 -        0
+JC+R6           -212992.559  427399.117 -        0  427573.042 -        0  432188.338 -        0
+JC+I+R5         -213122.794  427657.588 -        0  427830.991 -        0  432440.034 -        0
+JC+R5           -213237.952  427885.903 -        0  428058.786 -        0  432661.576 -        0
+JC+I+R4         -213431.766  428271.532 -        0  428443.896 -        0  433040.431 -        0
+F81+F+R8        -213583.567  428595.135 -        0  428772.734 -        0  433431.773 -        0
+JC+I+G4         -213772.195  428942.389 -        0  429112.167 -        0  433677.418 -        0
+JC+R4           -213878.038  429162.075 -        0  429333.920 -        0  433924.200 -        0
+JC+I+R3         -214390.801  430185.603 -        0  430356.929 -        0  434940.953 -        0
+JC+G4           -214884.386  431164.772 -        0  431334.036 -        0  435893.027 -        0
+JC+R3           -215565.972  432533.944 -        0  432704.753 -        0  437282.520 -        0
+JC+I+R2         -218353.322  438106.644 -        0  438276.937 -        0  442848.446 -        0
+JC+R2           -221136.950  443671.900 -        0  443841.678 -        0  448406.928 -        0
+JC+I            -241479.604  484355.209 -        0  484524.472 -        0  489083.463 -        0
+JC              -262847.920  527089.841 -        0  527258.591 -        0  531811.321 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+R8
+
+Rate parameter R:
+
+  A-C: 1.6934
+  A-G: 3.8783
+  A-T: 1.4493
+  C-G: 1.3340
+  C-T: 7.9437
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2562
+  pi(C) = 0.2412
+  pi(G) = 0.271
+  pi(T) = 0.2316
+
+Rate matrix Q:
+
+  A   -0.8519    0.1938    0.4988    0.1593
+  C    0.2059    -1.251    0.1716    0.8732
+  G    0.4716    0.1527   -0.7341    0.1099
+  T    0.1762    0.9091    0.1286    -1.214
+
+Model of rate heterogeneity: FreeRate with 8 categories
+Site proportion and rates:  (0.4455,0.01386) (0.1684,0.1533) (0.1077,0.5302) (0.08601,1.138) (0.07317,2.011) (0.04983,3.41) (0.04263,5.641) (0.02683,9.52)
+
+ Category  Relative_rate  Proportion
+  1         0.01386        0.4455
+  2         0.1533         0.1684
+  3         0.5302         0.1077
+  4         1.138          0.08601
+  5         2.011          0.07317
+  6         3.41           0.04983
+  7         5.641          0.04263
+  8         9.52           0.02683
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -204140.6298 (s.e. 3509.7040)
+Unconstrained log-likelihood (without tree): -53422.6583
+Number of free parameters (#branches + #model parameters): 719
+Akaike information criterion (AIC) score: 409719.2596
+Corrected Akaike information criterion (AICc) score: 409899.5103
+Bayesian information criterion (BIC) score: 414589.7682
+
+Total tree length (sum of branch lengths): 28.9759
+Sum of internal branch lengths: 12.2700 (42.3456% of tree length)
+
+WARNING: 5 near-zero internal branches (<0.0002) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Acanthostigma_perpusillum_UAMH' is drawn at root
+
++--Acanthostigma_perpusillum_UAMH
+|
+|                    +**Acrogenospora_sphaerocephala_CBS_164_76
+|             +------|
+|             |      +**Farlowiella_carmichaeliana_CBS_179_73
+|          +--|
+|          |  |            +--Aliquandostipite_khaoyaiensis_CBS_118232
+|          |  |         +--|
+|          |  |         |  |    +--Jahnula_bipileata_F49_1
+|          |  |         |  +----|
+|          |  |         |       +--Jahnula_seychellensis_SS2113_1
+|          |  +---------|
+|          |            +---Jahnula_aquatica_R68_1
+|  +-------|
+|  |       |                     +--Aglaospora_profusa_CBS_123109
+|  |       |                 +---|
+|  |       |                 |   +--Massaria_anomia_CBS_591_78
+|  |       |              +--|
+|  |       |              |  |           +--Delitschia_cf_chaetomioides_GKM_1283
+|  |       |              |  |     +-----|
+|  |       |              |  |     |     +--Delitschia_cf_chaetomioides_GKM_3253_2
+|  |       |              |  |  +--|
+|  |       |              |  |  |  |  +**Delitschia_didyma_UME_31411
+|  |       |              |  |  |  +--|
+|  |       |              |  |  |     +**Delitschia_didyma_UME_31411v2
+|  |       |              |  +--|
+|  |       |              |     +---Zopfia_rhizophila_CBS_207_26
+|  |       |           +--|
+|  |       |           |  |                    +**Aigialus_grandis_2Q
+|  |       |           |  |                 +--|
+|  |       |           |  |                 |  +**Aigialus_grandis_JK_5244A
+|  |       |           |  |              +--|
+|  |       |           |  |              |  +--Aigialus_parvus_A6
+|  |       |           |  |           +--|
+|  |       |           |  |           |  +--Ascocratera_manglicola_JK_5262C
+|  |       |           |  |        +--|
+|  |       |           |  |        |  +--Rimora_mangrovei_JK_5246A
+|  |       |           |  |     +--|
+|  |       |           |  |     |  +--Astrosphaeriella_aggregata_MAFF_239486
+|  |       |           |  |  +--|
+|  |       |           |  |  |  +----Astrosphaeriella_bakeriana_CBS_115556
+|  |       |           |  +--|
+|  |       |           |     |                                                  +--Alternaria_alternata_CBS_916_96
+|  |       |           |     |                                               +--|
+|  |       |           |     |                                               |  |  +--Pyrenophora_phaeocomes_DAOM_222769
+|  |       |           |     |                                               |  +--|
+|  |       |           |     |                                               |     |  +--Pyrenophora_triticirepentis_CBS_328_53
+|  |       |           |     |                                               |     +--|
+|  |       |           |     |                                               |        +--Pyrenophora_triticirepentis_OSC_100066
+|  |       |           |     |                                            +--|
+|  |       |           |     |                                            |  |        +--Cochliobolus_heterostrophus_CBS_134_39
+|  |       |           |     |                                            |  |     +--|
+|  |       |           |     |                                            |  |     |  +--Cochliobolus_sativus_DAOM_226212
+|  |       |           |     |                                            |  |  +--|
+|  |       |           |     |                                            |  |  |  +--Setosphaeria_monoceras_AY016368
+|  |       |           |     |                                            |  +--|
+|  |       |           |     |                                            |     +--Pleospora_herbarum_CBS_191_86
+|  |       |           |     |                                         +--|
+|  |       |           |     |                                         |  +--Pleospora_ambigua_CBS_113979
+|  |       |           |     |                                      +--|
+|  |       |           |     |                                      |  +--Phoma_betae_CBS_109410
+|  |       |           |     |                                   +--|
+|  |       |           |     |                                   |  +---Clathrospora_elynae_CBS_196_54
+|  |       |           |     |                                +--|
+|  |       |           |     |                                |  |           +--Camarosporium_quaternatum_CBS_483_95
+|  |       |           |     |                                |  |        +--|
+|  |       |           |     |                                |  |        |  +--Coniothyrium_palmarum_CBS_400_71
+|  |       |           |     |                                |  |     +--|
+|  |       |           |     |                                |  |     |  +--Pyrenochaeta_nobilis_CBS_407_76
+|  |       |           |     |                                |  |  +--|
+|  |       |           |     |                                |  |  |  +--Neophaeosphaeria_filamentosa_CBS_102202
+|  |       |           |     |                                |  +--|
+|  |       |           |     |                                |     |        +--Leptosphaeria_biglobosa_CBS_303_51
+|  |       |           |     |                                |     |     +--|
+|  |       |           |     |                                |     |     |  +--Leptosphearia_maculans_DAOM_229267
+|  |       |           |     |                                |     |  +--|
+|  |       |           |     |                                |     |  |  |  +--Leptosphaeria_doliolum_CBS_505_75
+|  |       |           |     |                                |     |  |  +--|
+|  |       |           |     |                                |     |  |     +--Leptosphaeria_dryadis_CBS_643_86
+|  |       |           |     |                                |     +--|
+|  |       |           |     |                                |        +--Phoma_heteromorphospora_CBS_115_96
+|  |       |           |     |                             +--|
+|  |       |           |     |                             |  |              +--Chaetosphaeronema_hispidulum_CBS_216_75
+|  |       |           |     |                             |  |           +--|
+|  |       |           |     |                             |  |           |  +--Entodesmium_rude_CBS_650_86
+|  |       |           |     |                             |  |        +--|
+|  |       |           |     |                             |  |        |  +--Loratospora_aestuarii_JK_5535B
+|  |       |           |     |                             |  |     +--|
+|  |       |           |     |                             |  |     |  +--Phaeosphaeria_juncicola_CBS_595_86
+|  |       |           |     |                             |  |  +--|
+|  |       |           |     |                             |  |  |  +--Phoma_radicina_CBS_111_79
+|  |       |           |     |                             |  +--|
+|  |       |           |     |                             |     |        +--Ophiosphaerella_herpotricha_CBS_620_86
+|  |       |           |     |                             |     |     +--|
+|  |       |           |     |                             |     |     |  |     +--Phaeosphaeria_ammophilae_CBS_114595
+|  |       |           |     |                             |     |     |  |  +--|
+|  |       |           |     |                             |     |     |  |  |  +--Phaeosphaeria_caricis_CBS_120249
+|  |       |           |     |                             |     |     |  +--|
+|  |       |           |     |                             |     |     |     +--Phaeosphaeria_luctuosa_CBS_308_79
+|  |       |           |     |                             |     |  +--|
+|  |       |           |     |                             |     |  |  |     +--Phaeosphaeria_avenaria_DAOM_226215
+|  |       |           |     |                             |     |  |  |  +--|
+|  |       |           |     |                             |     |  |  |  |  +**Phaeosphaeria_eustoma_CBS_573_86
+|  |       |           |     |                             |     |  |  +--|
+|  |       |           |     |                             |     |  |     +--Phaeosphaeria_nodorum_Broad
+|  |       |           |     |                             |     +--|
+|  |       |           |     |                             |        |  +--Phaeosphaeriopsis_musae_CBS_120026
+|  |       |           |     |                             |        +--|
+|  |       |           |     |                             |           +--Setomelanomma_holmii_CBS_110217
+|  |       |           |     |                          +--|
+|  |       |           |     |                          |  |        +--Ascochyta_pisi_CBS_126_54
+|  |       |           |     |                          |  |     +--|
+|  |       |           |     |                          |  |     |  |           +--Leptosphaerulina_argentinensis_CBS_569_94
+|  |       |           |     |                          |  |     |  |        +--|
+|  |       |           |     |                          |  |     |  |        |  +--Saccothecium_sepincola_CBS_278_32
+|  |       |           |     |                          |  |     |  |     +--|
+|  |       |           |     |                          |  |     |  |     |  +--Leptosphaerulina_australis_CBS_317_83
+|  |       |           |     |                          |  |     |  |  +--|
+|  |       |           |     |                          |  |     |  |  |  +--Phoma_complanata_CBS_268_92
+|  |       |           |     |                          |  |     |  +--|
+|  |       |           |     |                          |  |     |     |  +--Monascostroma_innumerosum_CBS_345_50
+|  |       |           |     |                          |  |     |     +--|
+|  |       |           |     |                          |  |     |        +--Phoma_herbarum_CBS_276_37
+|  |       |           |     |                          |  |  +--|
+|  |       |           |     |                          |  |  |  |  +--Didymella_exigua_CBS_183_55
+|  |       |           |     |                          |  |  |  +--|
+|  |       |           |     |                          |  |  |     |  +--Phoma_glomerata_CBS_528_66
+|  |       |           |     |                          |  |  |     +--|
+|  |       |           |     |                          |  |  |        +--Phoma_zeaemaydis_CBS_588_69
+|  |       |           |     |                          |  +--|
+|  |       |           |     |                          |     |  +--Didymella_bryoniae_CBS_133_96
+|  |       |           |     |                          |     +--|
+|  |       |           |     |                          |        +--Phoma_exigua_CBS_431_74
+|  |       |           |     |                       +--|
+|  |       |           |     |                       |  |                 +---Asteromassaria_pulchra_CBS_124082
+|  |       |           |     |                       |  |              +--|
+|  |       |           |     |                       |  |              |  |       +**Falciformispora_lignatilis_BCC_21117
+|  |       |           |     |                       |  |              |  |  +----|
+|  |       |           |     |                       |  |              |  |  |    +--Falciformispora_lignatilis_BCC_21118
+|  |       |           |     |                       |  |              |  +--|
+|  |       |           |     |                       |  |              |     |  +-------Halomassarina_thalassiae_JK_5262D
+|  |       |           |     |                       |  |              |     +--|
+|  |       |           |     |                       |  |              |        +--Trematosphaeria_pertusa_CBS_122371
+|  |       |           |     |                       |  |           +--|
+|  |       |           |     |                       |  |           |  |  +---Kirschsteiniothelia_elaterascus_HKUCC_7769
+|  |       |           |     |                       |  |           |  +--|
+|  |       |           |     |                       |  |           |     |   +**Morosphaeria_ramunculicola_BCC_18404
+|  |       |           |     |                       |  |           |     +---|
+|  |       |           |     |                       |  |           |         +**Morosphaeria_ramunculicola_BCC_18405
+|  |       |           |     |                       |  |        +--|
+|  |       |           |     |                       |  |        |  +---Massaria_platani_CBS_221_37
+|  |       |           |     |                       |  |     +--|
+|  |       |           |     |                       |  |     |  |           +--Katumotoa_bambusicola_MAFF_239641
+|  |       |           |     |                       |  |     |  |        +--|
+|  |       |           |     |                       |  |     |  |        |  +--Ophiosphaerella_sasicola_MAFF_239644
+|  |       |           |     |                       |  |     |  |     +--|
+|  |       |           |     |                       |  |     |  |     |  |     +--Lentithecium_arundinaceum_CBS_619_86
+|  |       |           |     |                       |  |     |  |     |  |  +--|
+|  |       |           |     |                       |  |     |  |     |  |  |  +--Stagonospora_macropycnidia_CBS_114202
+|  |       |           |     |                       |  |     |  |     |  +--|
+|  |       |           |     |                       |  |     |  |     |     +--Wettsteinina_lacustris_CBS_618_86
+|  |       |           |     |                       |  |     |  |  +--|
+|  |       |           |     |                       |  |     |  |  |  |  +--Lentithecium_aquaticum_CBS_123099
+|  |       |           |     |                       |  |     |  |  |  +--|
+|  |       |           |     |                       |  |     |  |  |     +--Lentithecium_fluviatile_CBS_122367
+|  |       |           |     |                       |  |     |  +--|
+|  |       |           |     |                       |  |     |     +--Keissleriella_cladophila_CBS_104_55
+|  |       |           |     |                       |  |  +--|
+|  |       |           |     |                       |  |  |  |        +--Byssothecium_circinans_CBS_675_92
+|  |       |           |     |                       |  |  |  |     +--|
+|  |       |           |     |                       |  |  |  |     |  +--Corynespora_olivacea_CBS_114450
+|  |       |           |     |                       |  |  |  |  +--|
+|  |       |           |     |                       |  |  |  |  |  |  +--Massarina_eburnea_CBS_473_64
+|  |       |           |     |                       |  |  |  |  |  +--|
+|  |       |           |     |                       |  |  |  |  |     +--Neottiosporina_paspali_CBS_331_37
+|  |       |           |     |                       |  |  |  +--|
+|  |       |           |     |                       |  |  |     +-----Massarina_igniaria_CBS_845_96
+|  |       |           |     |                       |  +--|
+|  |       |           |     |                       |     |                    +--Bimuria_novaezelandiae_CBS_107_79
+|  |       |           |     |                       |     |                 +--|
+|  |       |           |     |                       |     |                 |  +---Tremoteia_halophila_JK_5517J
+|  |       |           |     |                       |     |              +--|
+|  |       |           |     |                       |     |              |  +--Phaeodothis_winteri_CBS_182_58
+|  |       |           |     |                       |     |           +--|
+|  |       |           |     |                       |     |           |  |     +--Kalmusia_scabrispora_MAFF_239517
+|  |       |           |     |                       |     |           |  |  +--|
+|  |       |           |     |                       |     |           |  |  |  +--Kalmusia_scabrispora_NBRC_106237
+|  |       |           |     |                       |     |           |  +--|
+|  |       |           |     |                       |     |           |     |  +**Phaeosphaeria_brevispora_MAFF_239276
+|  |       |           |     |                       |     |           |     +--|
+|  |       |           |     |                       |     |           |        +--Phaeosphaeria_brevispora_NBRC_106240
+|  |       |           |     |                       |     |        +--|
+|  |       |           |     |                       |     |        |  +--Didymocrea_sadasivanii_CBS_438_65
+|  |       |           |     |                       |     |     +--|
+|  |       |           |     |                       |     |     |  +--Montagnula_opulenta_CBS_168_34
+|  |       |           |     |                       |     |  +--|
+|  |       |           |     |                       |     |  |  |  +--Letendraea_helminthicola_CBS_884_85
+|  |       |           |     |                       |     |  |  +--|
+|  |       |           |     |                       |     |  |     +**Letendraea_padouk_CBS_485_70
+|  |       |           |     |                       |     +--|
+|  |       |           |     |                       |        |  +--Karstenula_rhodostoma_CBS_690_94
+|  |       |           |     |                       |        +--|
+|  |       |           |     |                       |           +--Paraconiothyrium_minitans_CBS_122788
+|  |       |           |     |                    +--|
+|  |       |           |     |                    |  |     +--Corynespora_cassiicola_CBS_100822
+|  |       |           |     |                    |  |  +**|
+|  |       |           |     |                    |  |  |  +--Corynespora_smithii_CABI_5649b
+|  |       |           |     |                    |  +--|
+|  |       |           |     |                    |     +**Corynespora_cassiicola_CCP
+|  |       |           |     |                 +--|
+|  |       |           |     |                 |  |         +--Julella_avicenniae_BCC_18422
+|  |       |           |     |                 |  +---------|
+|  |       |           |     |                 |            +--Julella_avicenniae_BCC_20173
+|  |       |           |     |              +--|
+|  |       |           |     |              |  |  +----Massariosphaeria_phaeospora_CBS_611_86
+|  |       |           |     |              |  +--|
+|  |       |           |     |              |     +---Thyridaria_rubronotata_CBS_419_85
+|  |       |           |     |           +--|
+|  |       |           |     |           |  |     +--Beverwykella_pulmonaria_CBS_283_53
+|  |       |           |     |           |  |  +--|
+|  |       |           |     |           |  |  |  |        +--Melanomma_pulvispyrius_CBS_371_75
+|  |       |           |     |           |  |  |  |     +--|
+|  |       |           |     |           |  |  |  |     |  +--Melanomma_rhododendri_ANM_73
+|  |       |           |     |           |  |  |  |  +--|
+|  |       |           |     |           |  |  |  |  |  +**Melanomma_pulvispyrius_SMH_3291
+|  |       |           |     |           |  |  |  +--|
+|  |       |           |     |           |  |  |     +--Monotosporella_tuberculata_CBS_256_84
+|  |       |           |     |           |  +--|
+|  |       |           |     |           |     +---Pleomassaria_siparia_CBS_279_74
+|  |       |           |     |        +--|
+|  |       |           |     |        |  |     +-----Floricola_striata_JK_5678I
+|  |       |           |     |        |  |  +--|
+|  |       |           |     |        |  |  |  |     +--Lophiostoma_alpigenum_GKM_1091b
+|  |       |           |     |        |  |  |  |  +--|
+|  |       |           |     |        |  |  |  |  |  +--Lophiostoma_fuckelii_GKM_1063
+|  |       |           |     |        |  |  |  +--|
+|  |       |           |     |        |  |  |     |     +--Lophiostoma_arundinis_CBS_621_86
+|  |       |           |     |        |  |  |     |  +--|
+|  |       |           |     |        |  |  |     |  |  +--Lophiostoma_caulium_CBS_624_86
+|  |       |           |     |        |  |  |     +--|
+|  |       |           |     |        |  |  |        |     +--Lophiostoma_caulium_CBS_623_86
+|  |       |           |     |        |  |  |        |  +--|
+|  |       |           |     |        |  |  |        |  |  +--Lophiostoma_compressum_IFRD_2014
+|  |       |           |     |        |  |  |        +--|
+|  |       |           |     |        |  |  |           +--Lophiostoma_crenatum_CBS_629_86
+|  |       |           |     |        |  +--|
+|  |       |           |     |        |     |         +--Preussia_funiculata_CBS_659_74
+|  |       |           |     |        |     |     +---|
+|  |       |           |     |        |     |     |   +--Preussia_terricola_DAOM_230091
+|  |       |           |     |        |     |  +--|
+|  |       |           |     |        |     |  |  |  +---Preussia_lignicola_CBS_264_69
+|  |       |           |     |        |     |  |  +--|
+|  |       |           |     |        |     |  |     +---Sporormiella_minima_CBS_524_50
+|  |       |           |     |        |     +--|
+|  |       |           |     |        |        |     +--Westerdykella_angulata_CBS_610_74
+|  |       |           |     |        |        |  +--|
+|  |       |           |     |        |        |  |  +--Westerdykella_ornata_CBS_379_55
+|  |       |           |     |        |        +--|
+|  |       |           |     |        |           +---Westerdykella_cylindrica_CBS_454_72
+|  |       |           |     |     +--|
+|  |       |           |     |     |  |            +--Amniculicola_parva_CBS_123092
+|  |       |           |     |     |  |         +--|
+|  |       |           |     |     |  |         |  +--Massariosphaeria_typhicola_CBS_123126
+|  |       |           |     |     |  |     +---|
+|  |       |           |     |     |  |     |   +--Massariosphaeria_grandispora_CBS_613_86
+|  |       |           |     |     |  |  +--|
+|  |       |           |     |     |  |  |  +---------Delitschia_winteri_CBS_225_62
+|  |       |           |     |     |  +--|
+|  |       |           |     |     |     |                          +--Anteaglonium_abbreviatum_ANM_925_1
+|  |       |           |     |     |     |                       +--|
+|  |       |           |     |     |     |                       |  +--Anteaglonium_abbreviatum_GKM_1029
+|  |       |           |     |     |     |                    +--|
+|  |       |           |     |     |     |                    |  +--Anteaglonium_parvulum_SMH_5210
+|  |       |           |     |     |     |                 +--|
+|  |       |           |     |     |     |                 |  |  +**Anteaglonium_globosum_ANM_925_2
+|  |       |           |     |     |     |                 |  +--|
+|  |       |           |     |     |     |                 |     +**Anteaglonium_globosum_SMH_5283
+|  |       |           |     |     |     |              +--|
+|  |       |           |     |     |     |              |  +--Anteaglonium_latirostrum_L100N_2
+|  |       |           |     |     |     |           +--|
+|  |       |           |     |     |     |           |  |  +--Lophiotrema_bruneusporum_CBS_123095
+|  |       |           |     |     |     |           |  +--|
+|  |       |           |     |     |     |           |     |     +--Lophiotrema_lignicola_CBS_122364
+|  |       |           |     |     |     |           |     |  +--|
+|  |       |           |     |     |     |           |     |  |  +--Lophiotrema_nucula_CBS_627_86
+|  |       |           |     |     |     |           |     +--|
+|  |       |           |     |     |     |           |        |  +--Massarina_arundinariae_MAFF_239461
+|  |       |           |     |     |     |           |        +--|
+|  |       |           |     |     |     |           |           +--Massarina_arundinariae_NBRC_106238
+|  |       |           |     |     |     |        +--|
+|  |       |           |     |     |     |        |  +--Byssolophis_sphaerioides_IFRDCC2053
+|  |       |           |     |     |     |     +--|
+|  |       |           |     |     |     |     |  |        +--Polyplosphaeria_fusca_MAFF_239685
+|  |       |           |     |     |     |     |  |     +--|
+|  |       |           |     |     |     |     |  |     |  +--Triplosphaeria_maxima_MAFF_239682
+|  |       |           |     |     |     |     |  |  +--|
+|  |       |           |     |     |     |     |  |  |  |  +--Pseudotetraploa_curviappendiculata_MAFF_239495
+|  |       |           |     |     |     |     |  |  |  +--|
+|  |       |           |     |     |     |     |  |  |     +--Tetraplosphaeria_sasicola_MAFF_239677
+|  |       |           |     |     |     |     |  +--|
+|  |       |           |     |     |     |     |     +--Quadricrura_septentrionalis_CBS_125429
+|  |       |           |     |     |     |  +--|
+|  |       |           |     |     |     |  |  |     +--Lepidosphaeria_nicotiae_CBS_101341
+|  |       |           |     |     |     |  |  |  +--|
+|  |       |           |     |     |     |  |  |  |  |  +--Ulospora_bilgramii_CBS_110020
+|  |       |           |     |     |     |  |  |  |  +--|
+|  |       |           |     |     |     |  |  |  |     +--Verruculina_enalia_JK_5253A
+|  |       |           |     |     |     |  |  +--|
+|  |       |           |     |     |     |  |     +----Quintaria_lignatilis_CBS_117700
+|  |       |           |     |     |     +--|
+|  |       |           |     |     |        |       +--Arthopyrenia_salicis_1994_Coppins
+|  |       |           |     |     |        |    +--|
+|  |       |           |     |     |        |    |  +--Arthopyrenia_salicis_CBS_368_94
+|  |       |           |     |     |        +----|
+|  |       |           |     |     |             |        +--Roussoella_hysterioides_CBS_125434
+|  |       |           |     |     |             |     +--|
+|  |       |           |     |     |             |     |  +--Roussoella_hysterioides_MAFF_239636
+|  |       |           |     |     |             |  +--|
+|  |       |           |     |     |             |  |  +--Roussoellopsis_sp_MAFF_239638
+|  |       |           |     |     |             +--|
+|  |       |           |     |     |                +--Roussoella_pustulans_MAFF_239637
+|  |       |           |     |  +--|
+|  |       |           |     |  |  |     +--Lindgomyces_breviappendiculata_HHUF_28193
+|  |       |           |     |  |  |  +--|
+|  |       |           |     |  |  |  |  |  +--Lindgomyces_ingoldianus_ATCC_200398
+|  |       |           |     |  |  |  |  +--|
+|  |       |           |     |  |  |  |     +--Lindgomyces_rotundatus_HHUF_27999
+|  |       |           |     |  |  +--|
+|  |       |           |     |  |     +--Massariosphaeria_typhicola_KT_797
+|  |       |           |     +--|
+|  |       |           |        |          +--Mauritiania_rhizophorae_BCC_28866
+|  |       |           |        |     +----|
+|  |       |           |        |     |    +--Mauritiania_rhizophorae_BCC_28867
+|  |       |           |        |  +--|
+|  |       |           |        |  |  +---Quintaria_submersa_CBS_115553
+|  |       |           |        +--|
+|  |       |           |           |  +--Wicklowia_aquatica_AF289_1
+|  |       |           |           +--|
+|  |       |           |              +--Wicklowia_aquatica_CBS_125634
+|  |       |        +--|
+|  |       |        |  |              +--Gloniopsis_arciformis_GKM_L166A
+|  |       |        |  |           +--|
+|  |       |        |  |           |  |  +--Rhytidhysteron_rufulum_CBS_306_38
+|  |       |        |  |           |  +--|
+|  |       |        |  |           |     +--Rhytidhysteron_rufulum_GKM_361A
+|  |       |        |  |        +--|
+|  |       |        |  |        |  +--Hysterobrevium_mori_GKM_1013
+|  |       |        |  |     +--|
+|  |       |        |  |     |  |     +--Gloniopsis_praelonga_CBS_112415
+|  |       |        |  |     |  |  +--|
+|  |       |        |  |     |  |  |  +--Gloniopsis_praelonga_CBS_123337
+|  |       |        |  |     |  +--|
+|  |       |        |  |     |     +--Gloniopsis_subrugosa_CBS_123346
+|  |       |        |  |  +--|
+|  |       |        |  |  |  |      +--Oedohysterium_insidens_ANM_1443
+|  |       |        |  |  |  |   +--|
+|  |       |        |  |  |  |   |  +--Oedohysterium_insidens_CBS_238_34
+|  |       |        |  |  |  +---|
+|  |       |        |  |  |      +--Oedohysterium_sinense_CBS_123345
+|  |       |        |  +--|
+|  |       |        |     |     +--Hysterium_angustatum_CBS_123334
+|  |       |        |     |  +--|
+|  |       |        |     |  |  |      +**Hysterium_barrianum_ANM_1442
+|  |       |        |     |  |  +------|
+|  |       |        |     |  |         +--Hysterium_barrianum_ANM_1495
+|  |       |        |     +--|
+|  |       |        |        |        +--Hysterobrevium_mori_CBS_123336
+|  |       |        |        |     +--|
+|  |       |        |        |     |  +--Hysterobrevium_mori_SMH_5273
+|  |       |        |        |  +--|
+|  |       |        |        |  |  |  +--Hysterobrevium_smilacis_CBS_114601
+|  |       |        |        |  |  +--|
+|  |       |        |        |  |     +--Hysterobrevium_smilacis_SMH_5280
+|  |       |        |        +--|
+|  |       |        |           |     +--Psiloglonium_araucanum_CBS_112412
+|  |       |        |           |  +--|
+|  |       |        |           |  |  +--Psiloglonium_simulans_CBS_206_34
+|  |       |        |           +--|
+|  |       |        |              |  +--Psiloglonium_clavisporum_CBS_123338
+|  |       |        |              +--|
+|  |       |        |                 +--Psiloglonium_clavisporum_GKM_L172A
+|  |       |     +--|
+|  |       |     |  |        +**Cenococcum_geophilum_10
+|  |       |     |  |     +--|
+|  |       |     |  |     |  +**Cenococcum_geophilum_CGMONT
+|  |       |     |  |  +--|
+|  |       |     |  |  |  |  +--Cenococcum_geophilum_HUNT_A1
+|  |       |     |  |  |  +**|
+|  |       |     |  |  |     |     +**Glonium_circumserpens_CBS_123342
+|  |       |     |  |  |     |  +--|
+|  |       |     |  |  |     |  |  +**Glonium_circumserpens_CBS_123343
+|  |       |     |  |  |     +--|
+|  |       |     |  |  |        +--Glonium_stellatum_CBS_207_34
+|  |       |     |  +--|
+|  |       |     |     |      +--Kirschsteiniothelia_maritima_CBS_221_60
+|  |       |     |     |   +--|
+|  |       |     |     |   |  |  +--Lophium_elegans_EB_0366
+|  |       |     |     |   |  +--|
+|  |       |     |     |   |     |           +--Mytilinidion_acicola_EB_0349
+|  |       |     |     |   |     |        +--|
+|  |       |     |     |   |     |        |  +--Mytilinidion_tortile_EB_0377
+|  |       |     |     |   |     |     +--|
+|  |       |     |     |   |     |     |  |  +--Mytilinidion_andinense_CBS_123562
+|  |       |     |     |   |     |     |  +--|
+|  |       |     |     |   |     |     |     +--Mytilinidion_thujarum_EB_0268
+|  |       |     |     |   |     |  +--|
+|  |       |     |     |   |     |  |  +--Mytilinidion_californicum_EB_0385
+|  |       |     |     |   |     +--|
+|  |       |     |     |   |        +--Mytilinidion_mytilinellum_CBS_303_34
+|  |       |     |     +---|
+|  |       |     |         |     +--Lophium_mytilinum_CBS_114111
+|  |       |     |         |  +--|
+|  |       |     |         |  |  +--Lophium_mytilinum_CBS_269_34
+|  |       |     |         +--|
+|  |       |     |            |     +**Mytilinidion_resinicola_CBS_304_34
+|  |       |     |            |  +--|
+|  |       |     |            |  |  +--Mytilinidion_rhenanum_EB_0341
+|  |       |     |            +--|
+|  |       |     |               +--Mytilinidion_scolecosporum_CBS_305_34
+|  |       |  +--|
+|  |       |  |  |     +--Bagnisiella_examinans_CBS_551_66
+|  |       |  |  |  +--|
+|  |       |  |  |  |  |           +--Botryosphaeria_dothidea_CBS_115476
+|  |       |  |  |  |  |        +--|
+|  |       |  |  |  |  |        |  +--Macrophomina_phaseolina_CBS_227_33
+|  |       |  |  |  |  |     +--|
+|  |       |  |  |  |  |     |  |  +--Neofusicoccum_ribis_CBS_115475
+|  |       |  |  |  |  |     |  +--|
+|  |       |  |  |  |  |     |     |     +**Otthia_spiraeae_CBS_113091
+|  |       |  |  |  |  |     |     |  +--|
+|  |       |  |  |  |  |     |     |  |  +--Otthia_spiraeae_CBS_114124
+|  |       |  |  |  |  |     |     +--|
+|  |       |  |  |  |  |     |        +--Spencermartinsia_viticola_CBS_117009
+|  |       |  |  |  |  |  +--|
+|  |       |  |  |  |  |  |  |     +--Botryosphaeria_tsugae_CBS_418_64
+|  |       |  |  |  |  |  |  |  +--|
+|  |       |  |  |  |  |  |  |  |  +--Diplodia_mutila_CBS_431_82
+|  |       |  |  |  |  |  |  +--|
+|  |       |  |  |  |  |  |     |  +--Macrovalsaria_megalospora_178149
+|  |       |  |  |  |  |  |     +--|
+|  |       |  |  |  |  |  |        +**Macrovalsaria_megalospora_178150
+|  |       |  |  |  |  +--|
+|  |       |  |  |  |     |      +--Guignardia_bidwellii_CBS_237_48
+|  |       |  |  |  |     |   +--|
+|  |       |  |  |  |     |   |  +--Guignardia_gaultheriae_CBS_447_70
+|  |       |  |  |  |     +---|
+|  |       |  |  |  |         +--Guignardia_citricarpa_CBS_102374
+|  |       |  |  +--|
+|  |       |  |     +------Saccharata_proteae_CBS_115206
+|  |       +--|
+|  |          |                             +--Apiosporina_collinsii_CBS_118973
+|  |          |                          +--|
+|  |          |                          |  +--Apiosporina_morbosa_dimosp
+|  |          |                       +--|
+|  |          |                       |  |     +**Venturia_inaequalis_CBS_176_42
+|  |          |                       |  |  +--|
+|  |          |                       |  |  |  +--Venturia_populina_CBS_256_38
+|  |          |                       |  +--|
+|  |          |                       |     |  +**Venturia_inaequalis_CBS_594_70
+|  |          |                       |     +--|
+|  |          |                       |        +--Venturia_inaequalis_CBS_815_69
+|  |          |                    +--|
+|  |          |                    |  +--Gibbera_conferta_CBS_191_53
+|  |          |              +-----|
+|  |          |              |     +--Tyrannosorus_pinicola_CBS_124_88
+|  |          |           +--|
+|  |          |           |  |  +------------------------Microthyrium_microscopicum_CBS_115976
+|  |          |           |  +--|
+|  |          |           |     |   +---Phaeotrichum_benjaminii_CBS_541_72
+|  |          |           |     +---|
+|  |          |           |         |     +**Trichodelitschia_bisporula_CBS_262_69
+|  |          |           |         |  +--|
+|  |          |           |         |  |  +**Trichodelitschia_bisporula_CBS_262_69v2
+|  |          |           |         +--|
+|  |          |           |            +--Trichodelitschia_munkii_Kruys201
+|  |          |        +--|
+|  |          |        |  |                                           +--Astrothelium_cinnamomeum_DUKE_0000007
+|  |          |        |  |                                        +--|
+|  |          |        |  |                                        |  +--Cryptothelium_amazonum_47
+|  |          |        |  |                                     +--|
+|  |          |        |  |                                     |  +----Cryptothelium_pulchrum_63C
+|  |          |        |  |                                  +--|
+|  |          |        |  |                                  |  +---Trypethelium_nitidiusculum_139
+|  |          |        |  |                               +--|
+|  |          |        |  |                               |  +--Trypethelium_nitidiusculum_AFTOL_2099
+|  |          |        |  |                 +-------------|
+|  |          |        |  |                 |             +--Laurera_megasperma_AFTOL_2094
+|  |          |        |  +-----------------|
+|  |          |        |                    +----------Trypethelium_tropicum_25
+|  |          |     +--|
+|  |          |     |  |       +------------------Opegrapha_dolomitica_DUKE_0047528
+|  |          |     |  +-------|
+|  |          |     |          +--------------Schismatomma_decolorans_DUKE_0047570
+|  |          |  +--|
+|  |          |  |  |                                         +**Aulographina_pinorum_CBS_174_90
+|  |          |  |  |                                      +--|
+|  |          |  |  |                                      |  +**Aulographina_pinorum_CBS_302_71
+|  |          |  |  |                                   +--|
+|  |          |  |  |                                   |  +--Catenulostroma_abietis_CBS_459_93
+|  |          |  |  |                                +--|
+|  |          |  |  |                                |  |           +--Catenulostroma_elginense_CBS_111030
+|  |          |  |  |                                |  |        +--|
+|  |          |  |  |                                |  |        |  +--Davidiellaceae_sp_TRN_43
+|  |          |  |  |                                |  |     +--|
+|  |          |  |  |                                |  |     |  |     +--Friedmanniomyces_endolithicus_CCFEE_522
+|  |          |  |  |                                |  |     |  |  +--|
+|  |          |  |  |                                |  |     |  |  |  +**Teratosphaeriaceae_sp_TRN_211
+|  |          |  |  |                                |  |     |  +--|
+|  |          |  |  |                                |  |     |     +--Friedmanniomyces_simplex_CBS_116775
+|  |          |  |  |                                |  |  +--|
+|  |          |  |  |                                |  |  |  +--Teratosphaeriaceae_sp_TRN_123
+|  |          |  |  |                                |  +--|
+|  |          |  |  |                                |     +--Teratosphaeria_suberosa_CPC_11032
+|  |          |  |  |                             +--|
+|  |          |  |  |                             |  |  +--Devriesia_staurophora_CBS_375_81
+|  |          |  |  |                             |  +--|
+|  |          |  |  |                             |     +--Teratosphaeria_associata_CBS_112224
+|  |          |  |  |                          +--|
+|  |          |  |  |                          |  |  +--Batcheloromyces_proteae_CBS_110696
+|  |          |  |  |                          |  +--|
+|  |          |  |  |                          |     |  +----------Piedraia_hortae_CBS_480_64
+|  |          |  |  |                          |     +--|
+|  |          |  |  |                          |        |  +--Teratosphaeria_cryptica_CBS_110975
+|  |          |  |  |                          |        +**|
+|  |          |  |  |                          |           |      +--Teratosphaeria_fibrillosa_CBS_121707
+|  |          |  |  |                          |           |  +---|
+|  |          |  |  |                          |           |  |   +--Teratosphaeria_fibrillosa_CPC_1876
+|  |          |  |  |                          |           +--|
+|  |          |  |  |                          |              +**Teratosphaeria_stellenboschiana_CBS_116428
+|  |          |  |  |                       +--|
+|  |          |  |  |                       |  |    +--Hortaea_werneckii_CBS_100496
+|  |          |  |  |                       |  +----|
+|  |          |  |  |                       |       +--Hortaea_werneckii_CBS_708_76
+|  |          |  |  |                    +--|
+|  |          |  |  |                    |  |  +---Capnobotryella_renispora_CBS_215_90
+|  |          |  |  |                    |  +--|
+|  |          |  |  |                    |     +---Phacellium_paspali_CBS_113093
+|  |          |  |  |                 +--|
+|  |          |  |  |                 |  |              +---Capnodiales_sp_TRN_111
+|  |          |  |  |                 |  |           +--|
+|  |          |  |  |                 |  |           |  +--Capnodiales_sp_TRN_137
+|  |          |  |  |                 |  |        +--|
+|  |          |  |  |                 |  |        |  +----Capnodiales_sp_TRN_138
+|  |          |  |  |                 |  |     +--|
+|  |          |  |  |                 |  |     |  +-----Hortaea_acidophila_CBS_113389
+|  |          |  |  |                 |  |  +--|
+|  |          |  |  |                 |  |  |  |  +-------Cystocoleus_ebeneus_L315
+|  |          |  |  |                 |  |  |  +--|
+|  |          |  |  |                 |  |  |     +-----Mycosphaerella_eurypotami_JK_5586J
+|  |          |  |  |                 |  +--|
+|  |          |  |  |                 |     |  +--Capnodiales_sp_TRN_152
+|  |          |  |  |                 |     +--|
+|  |          |  |  |                 |        +--Devriesia_strelitziae_CBS_122379
+|  |          |  |  |              +--|
+|  |          |  |  |              |  |                       +--Cercospora_beticola_CBS_116456
+|  |          |  |  |              |  |                    +--|
+|  |          |  |  |              |  |                    |  +--Mycosphaerella_latebrosa_CBS_687_94
+|  |          |  |  |              |  |                 +--|
+|  |          |  |  |              |  |                 |  |  +--Mycosphaerella_heimii_CBS_110682
+|  |          |  |  |              |  |                 |  +--|
+|  |          |  |  |              |  |                 |     |  +--Phaeocryptopus_gaeumannii_CBS_244_38
+|  |          |  |  |              |  |                 |     +--|
+|  |          |  |  |              |  |                 |        +**Phaeocryptopus_gaeumannii_CBS_267_37
+|  |          |  |  |              |  |              +--|
+|  |          |  |  |              |  |              |  |     +--Pseudocercospora_fijiensis_OSC_100622
+|  |          |  |  |              |  |              |  |  +--|
+|  |          |  |  |              |  |              |  |  |  +--Pseudocercospora_vitis_CPC_11595
+|  |          |  |  |              |  |              |  +--|
+|  |          |  |  |              |  |              |     +--Pseudocercospora_griseola_f_griseola_CPC_10461
+|  |          |  |  |              |  |           +--|
+|  |          |  |  |              |  |           |  |       +--Dissoconium_aciculare_CBS_204_89
+|  |          |  |  |              |  |           |  |    +**|
+|  |          |  |  |              |  |           |  |    |  +----Ramichloridium_apiculatum_CBS_156_59
+|  |          |  |  |              |  |           |  +----|
+|  |          |  |  |              |  |           |       |  +--Dissoconium_commune_CBS_110747
+|  |          |  |  |              |  |           |       +--|
+|  |          |  |  |              |  |           |          +--Dissoconium_dekkeri_CBS_111282
+|  |          |  |  |              |  |        +--|
+|  |          |  |  |              |  |        |  |     +--Ramichloridium_cerophilum_CBS_103_59
+|  |          |  |  |              |  |        |  |  +--|
+|  |          |  |  |              |  |        |  |  |  +--Zasmidium_cellare_CBS_146_36
+|  |          |  |  |              |  |        |  +--|
+|  |          |  |  |              |  |        |     |  +--Rasutoria_tsugae_ratstk
+|  |          |  |  |              |  |        |     +--|
+|  |          |  |  |              |  |        |        +--Verrucisporota_daviesiae_CBS_116002
+|  |          |  |  |              |  |     +--|
+|  |          |  |  |              |  |     |  |           +--Dothistroma_septosporum_CBS_112498
+|  |          |  |  |              |  |     |  |        +--|
+|  |          |  |  |              |  |     |  |        |  +--Dothistroma_septosporum_CBS_543_74
+|  |          |  |  |              |  |     |  |     +--|
+|  |          |  |  |              |  |     |  |     |  +--Mycosphaerella_endophytica_CBS_114662
+|  |          |  |  |              |  |     |  |  +--|
+|  |          |  |  |              |  |     |  |  |  |      +--Mycosphaerella_graminicola_CBS_115943
+|  |          |  |  |              |  |     |  |  |  |   +--|
+|  |          |  |  |              |  |     |  |  |  |   |  +--Mycosphaerella_graminicola_CBS_292_38
+|  |          |  |  |              |  |     |  |  |  +---|
+|  |          |  |  |              |  |     |  |  |      +----Mycosphaerella_punctiformis_CBS_113265
+|  |          |  |  |              |  |     |  +--|
+|  |          |  |  |              |  |     |     +---Mycosphaerella_marksii_CBS_110942
+|  |          |  |  |              |  |  +--|
+|  |          |  |  |              |  |  |  +------Polythrincium_trifolii_133
+|  |          |  |  |              |  +--|
+|  |          |  |  |              |     |       +--Schizothyrium_pomi_CBS_228_57
+|  |          |  |  |              |     |    +**|
+|  |          |  |  |              |     |    |  +**Schizothyrium_pomi_CBS_486_50
+|  |          |  |  |              |     +----|
+|  |          |  |  |              |          +--Schizothyrium_pomi_CBS_406_61
+|  |          |  |  |           +--|
+|  |          |  |  |           |  |         +--Capnodium_coffeae_CBS_147_52
+|  |          |  |  |           |  |      +--|
+|  |          |  |  |           |  |      |  |  +--Condioxyphium_gardeniorum_CPC_14327
+|  |          |  |  |           |  |      |  +--|
+|  |          |  |  |           |  |      |     +--Microxyphium_aciculiforme_CBS_892_73
+|  |          |  |  |           |  |  +---|
+|  |          |  |  |           |  |  |   |     +--Leptoxyphium_fumago_CBS_123_26
+|  |          |  |  |           |  |  |   |  +--|
+|  |          |  |  |           |  |  |   |  |  +--Microxyphium_citri_CBS_451_66
+|  |          |  |  |           |  |  |   +--|
+|  |          |  |  |           |  |  |      +--Microxyphium_theae_CBS_202_30
+|  |          |  |  |           |  +--|
+|  |          |  |  |           |     |  +--Capnodium_salicinum_CBS_131_34
+|  |          |  |  |           |     +--|
+|  |          |  |  |           |        +---Scorias_spongiosa_CBS_325_33
+|  |          |  |  |        +--|
+|  |          |  |  |        |  |     +--Cladosporium_cladosporioides_CBS_170_54
+|  |          |  |  |        |  +-----|
+|  |          |  |  |        |        |  +**Cladosporium_herbarum_CBS_399_80
+|  |          |  |  |        |        +--|
+|  |          |  |  |        |           +**Cladosporium_iridis_CBS_138_40
+|  |          |  |  |     +--|
+|  |          |  |  |     |  |  +---Comminutispora_agavaciensis_CBS_619_95
+|  |          |  |  |     |  +--|
+|  |          |  |  |     |     |  +-----Cystocoleus_ebeneus_L348
+|  |          |  |  |     |     +--|
+|  |          |  |  |     |        |  +--Racodium_rupestre_L423
+|  |          |  |  |     |        +--|
+|  |          |  |  |     |           +--Racodium_rupestre_L424
+|  |          |  |  |  +--|
+|  |          |  |  |  |  |           +**Aureobasidium_pullulans_CBS_584_75
+|  |          |  |  |  |  |        +--|
+|  |          |  |  |  |  |        |  +--Columnosphaeria_fagi_CBS_171_93
+|  |          |  |  |  |  |     +--|
+|  |          |  |  |  |  |     |  +--Kabatiella_caulivora_CBS_242_64
+|  |          |  |  |  |  |  +--|
+|  |          |  |  |  |  |  |  |        +--Delphinella_strobiligena_CBS_735_71
+|  |          |  |  |  |  |  |  |     +--|
+|  |          |  |  |  |  |  |  |     |  +--Sydowia_polyspora_CBS_116_29
+|  |          |  |  |  |  |  |  |  +--|
+|  |          |  |  |  |  |  |  |  |  |           +--Dothidea_hippophaes_CBS_188_58
+|  |          |  |  |  |  |  |  |  |  |        +--|
+|  |          |  |  |  |  |  |  |  |  |        |  +--Stylodothis_puccinioides_CBS_193_58
+|  |          |  |  |  |  |  |  |  |  |     +--|
+|  |          |  |  |  |  |  |  |  |  |     |  +--Dothidea_insculpta_CBS_189_58
+|  |          |  |  |  |  |  |  |  |  |  +--|
+|  |          |  |  |  |  |  |  |  |  |  |  +--Dothidea_sambuci_DAOM_231303
+|  |          |  |  |  |  |  |  |  |  +--|
+|  |          |  |  |  |  |  |  |  |     |  +--Dothiora_cannabinae_CBS_737_71
+|  |          |  |  |  |  |  |  |  |     +--|
+|  |          |  |  |  |  |  |  |  |        +--Dothiora_ellyptica_CBS_736_71
+|  |          |  |  |  |  |  |  +--|
+|  |          |  |  |  |  |  |     +--Phaeocryptopus_nudus_CBS_268_37
+|  |          |  |  |  |  +--|
+|  |          |  |  |  |     |                 +--Elsinoe_centrolobi_CBS_222_50
+|  |          |  |  |  |     |              +--|
+|  |          |  |  |  |     |              |  +--Elsinoe_phaseoli_CBS_165_31
+|  |          |  |  |  |     |           +--|
+|  |          |  |  |  |     |           |  +--Elsinoe_veneta_CBS_150_27
+|  |          |  |  |  |     |        +--|
+|  |          |  |  |  |     |        |  |   +--Myriangium_duriaei_CBS_260_36
+|  |          |  |  |  |     |        |  +---|
+|  |          |  |  |  |     |        |      +----Myriangium_hispanicum_CBS_247_33
+|  |          |  |  |  |     |     +--|
+|  |          |  |  |  |     |     |  +---Myriangiales_sp_TRN_235
+|  |          |  |  |  |     |  +--|
+|  |          |  |  |  |     |  |  |  +--Endosporium_aviarium_UAMH_10530
+|  |          |  |  |  |     |  |  +--|
+|  |          |  |  |  |     |  |     +--Endosporium_populitremuloidis_UAMH_10529
+|  |          |  |  |  |     +--|
+|  |          |  |  |  |        +---Phaeosclera_dematioides_CBS_157_81
+|  |          |  |  +--|
+|  |          |  |     +------------Catinella_olivacea_UAMH_10679
+|  |          +--|
+|  |             |     +--Hysteropatella_clavispora_CBS_247_34
+|  |             |  +--|
+|  |             |  |  +--Hysteropatella_elliptica_CBS_958_97
+|  |             +--|
+|  |                |       +--Patellaria_atrata_CBS_958_97
+|  |                +-------|
+|  |                        |  +--Patellaria_cf_atrata_BCC_28876
+|  |                        +--|
+|  |                           +--Patellaria_cf_atrata_BCC_28877
++--|
+|  |     +--Helicomyces_roseus_CBS_283_51
+|  |  +--|
+|  |  |  +--Tubeufia_paludosa_CBS_120503
+|  +--|
+|     +--Tubeufia_paludosa_CBS_245_49
+|
++-----Tubeufia_cerea_CBS_254_75
+
+Tree in newick format:
+
+(Acanthostigma_perpusillum_UAMH:0.0776058077,((((Acrogenospora_sphaerocephala_CBS_164_76:0.0000021622,Farlowiella_carmichaeliana_CBS_179_73:0.0000021622):0.1714525431,((Aliquandostipite_khaoyaiensis_CBS_118232:0.0852445761,(Jahnula_bipileata_F49_1:0.0746718342,Jahnula_seychellensis_SS2113_1:0.0626677908):0.1167270175):0.0094632011,Jahnula_aquatica_R68_1:0.1086711837):0.2460096386):0.0385621313,(((((((Aglaospora_profusa_CBS_123109:0.0460051826,Massaria_anomia_CBS_591_78:0.0259305583):0.1100164156,(((Delitschia_cf_chaetomioides_GKM_1283:0.0709072898,Delitschia_cf_chaetomioides_GKM_3253_2:0.0370515195):0.1572694912,(Delitschia_didyma_UME_31411:0.0000021622,Delitschia_didyma_UME_31411v2:0.0000021622):0.0470915167):0.0576966982,Zopfia_rhizophila_CBS_207_26:0.0952601137):0.0283731130):0.0085298227,(((((((Aigialus_grandis_2Q:0.0000021622,Aigialus_grandis_JK_5244A:0.0000021622):0.0317688683,Aigialus_parvus_A6:0.0263196334):0.0488596497,Ascocratera_manglicola_JK_5262C:0.0581677787):0.0057194046,Rimora_mangrovei_JK_5246A:0.0055575998):0.0511052123,Astrosphaeriella_aggregata_MAFF_239486:0.0922420085):0.0461633219,Astrosphaeriella_bakeriana_CBS_115556:0.1172829934):0.0277107901,(((((((((((((((((Alternaria_alternata_CBS_916_96:0.0473680793,(Pyrenophora_phaeocomes_DAOM_222769:0.0686849303,(Pyrenophora_triticirepentis_CBS_328_53:0.0131088450,Pyrenophora_triticirepentis_OSC_100066:0.0021500062):0.0258103188):0.0120456748):0.0049786891,(((Cochliobolus_heterostrophus_CBS_134_39:0.0120315534,Cochliobolus_sativus_DAOM_226212:0.0144661219):0.0183066866,Setosphaeria_monoceras_AY016368:0.0054435963):0.0117811045,Pleospora_herbarum_CBS_191_86:0.0326784126):0.0160260614):0.0142837478,Pleospora_ambigua_CBS_113979:0.0437053553):0.0222802576,Phoma_betae_CBS_109410:0.0529144199):0.0155328392,Clathrospora_elynae_CBS_196_54:0.0949018217):0.0128960612,((((Camarosporium_quaternatum_CBS_483_95:0.0514707910,Coniothyrium_palmarum_CBS_400_71:0.0546912884):0.0088796271,Pyrenochaeta_nobilis_CBS_407_76:0.0556246009):0.0047997862,Neophaeosphaeria_filamentosa_CBS_102202:0.0551801667):0.0113012021,(((Leptosphaeria_biglobosa_CBS_303_51:0.0245976133,Leptosphearia_maculans_DAOM_229267:0.0827577427):0.0091722789,(Leptosphaeria_doliolum_CBS_505_75:0.0701601738,Leptosphaeria_dryadis_CBS_643_86:0.0346403904):0.0155718745):0.0139997948,Phoma_heteromorphospora_CBS_115_96:0.0554207591):0.0109081313):0.0141590681):0.0091401711,(((((Chaetosphaeronema_hispidulum_CBS_216_75:0.0291407968,Entodesmium_rude_CBS_650_86:0.0242965859):0.0389919388,Loratospora_aestuarii_JK_5535B:0.0380688863):0.0143020331,Phaeosphaeria_juncicola_CBS_595_86:0.0585178016):0.0109639587,Phoma_radicina_CBS_111_79:0.0403630627):0.0091575051,(((Ophiosphaerella_herpotricha_CBS_620_86:0.0330255549,((Phaeosphaeria_ammophilae_CBS_114595:0.0126632268,Phaeosphaeria_caricis_CBS_120249:0.0107530591):0.0051003671,Phaeosphaeria_luctuosa_CBS_308_79:0.0165814214):0.0040655221):0.0345910796,((Phaeosphaeria_avenaria_DAOM_226215:0.0019286152,Phaeosphaeria_eustoma_CBS_573_86:0.0000020539):0.0111271898,Phaeosphaeria_nodorum_Broad:0.0175706657):0.0465619996):0.0105338402,(Phaeosphaeriopsis_musae_CBS_120026:0.0348372899,Setomelanomma_holmii_CBS_110217:0.0627032298):0.0180868987):0.0104503230):0.0216940412):0.0185721443,(((Ascochyta_pisi_CBS_126_54:0.0236014088,((((Leptosphaerulina_argentinensis_CBS_569_94:0.0111405374,Saccothecium_sepincola_CBS_278_32:0.0076171132):0.0114439581,Leptosphaerulina_australis_CBS_317_83:0.0276665817):0.0279118716,Phoma_complanata_CBS_268_92:0.0395618177):0.0049956740,(Monascostroma_innumerosum_CBS_345_50:0.0013803487,Phoma_herbarum_CBS_276_37:0.0034116976):0.0297007878):0.0048231169):0.0122592281,(Didymella_exigua_CBS_183_55:0.0299759853,(Phoma_glomerata_CBS_528_66:0.0176642383,Phoma_zeaemaydis_CBS_588_69:0.0293989939):0.0073223720):0.0063143927):0.0070598284,(Didymella_bryoniae_CBS_133_96:0.0611727546,Phoma_exigua_CBS_431_74:0.0356973960):0.0159280724):0.0597377624):0.0416314064,((((((Asteromassaria_pulchra_CBS_124082:0.1111774830,((Falciformispora_lignatilis_BCC_21117:0.0000021622,Falciformispora_lignatilis_BCC_21118:0.0011219430):0.1216727426,(Halomassarina_thalassiae_JK_5262D:0.1955838592,Trematosphaeria_pertusa_CBS_122371:0.0759141307):0.0216440465):0.0319092412):0.0146423129,(Kirschsteiniothelia_elaterascus_HKUCC_7769:0.1043296130,(Morosphaeria_ramunculicola_BCC_18404:0.0000021622,Morosphaeria_ramunculicola_BCC_18405:0.0000021622):0.1100176319):0.0821776655):0.0192226886,Massaria_platani_CBS_221_37:0.0960388338):0.0146289755,((((Katumotoa_bambusicola_MAFF_239641:0.0301879878,Ophiosphaerella_sasicola_MAFF_239644:0.0435946101):0.0125721327,((Lentithecium_arundinaceum_CBS_619_86:0.0078192984,Stagonospora_macropycnidia_CBS_114202:0.0143146280):0.0413368002,Wettsteinina_lacustris_CBS_618_86:0.0248616500):0.0184978716):0.0114561588,(Lentithecium_aquaticum_CBS_123099:0.0400552468,Lentithecium_fluviatile_CBS_122367:0.0519853800):0.0074981943):0.0095024320,Keissleriella_cladophila_CBS_104_55:0.0893844445):0.0398752604):0.0129963434,(((Byssothecium_circinans_CBS_675_92:0.0602923077,Corynespora_olivacea_CBS_114450:0.0395974624):0.0263063258,(Massarina_eburnea_CBS_473_64:0.0743606562,Neottiosporina_paspali_CBS_331_37:0.0603893389):0.0196740400):0.0114586053,Massarina_igniaria_CBS_845_96:0.1446231913):0.0343156460):0.0129732191,(((((((Bimuria_novaezelandiae_CBS_107_79:0.0366468447,Tremoteia_halophila_JK_5517J:0.1143494357):0.0364728008,Phaeodothis_winteri_CBS_182_58:0.0420562525):0.0055642521,((Kalmusia_scabrispora_MAFF_239517:0.0024566462,Kalmusia_scabrispora_NBRC_106237:0.0006224152):0.0436750264,(Phaeosphaeria_brevispora_MAFF_239276:0.0000021622,Phaeosphaeria_brevispora_NBRC_106240:0.0004883757):0.0467370321):0.0275327261):0.0051440266,Didymocrea_sadasivanii_CBS_438_65:0.0071831747):0.0190771109,Montagnula_opulenta_CBS_168_34:0.0858743412):0.0052427578,(Letendraea_helminthicola_CBS_884_85:0.0025712532,Letendraea_padouk_CBS_485_70:0.0000021622):0.0235312632):0.0055649699,(Karstenula_rhodostoma_CBS_690_94:0.0240505141,Paraconiothyrium_minitans_CBS_122788:0.0302398939):0.0557674436):0.0575287995):0.0361207705):0.0145612938,((Corynespora_cassiicola_CBS_100822:0.0506466462,Corynespora_smithii_CABI_5649b:0.0524387819):0.0000021212,Corynespora_cassiicola_CCP:0.0000021622):0.0426612194):0.0047599098,(Julella_avicenniae_BCC_18422:0.0178290622,Julella_avicenniae_BCC_20173:0.0073685279):0.2466072926):0.0080370044,(Massariosphaeria_phaeospora_CBS_611_86:0.1261387136,Thyridaria_rubronotata_CBS_419_85:0.0945158124):0.0248365999):0.0147390549,((Beverwykella_pulmonaria_CBS_283_53:0.0368812982,(((Melanomma_pulvispyrius_CBS_371_75:0.0039167113,Melanomma_rhododendri_ANM_73:0.0722869238):0.0082833798,Melanomma_pulvispyrius_SMH_3291:0.0000023189):0.0302879868,Monotosporella_tuberculata_CBS_256_84:0.0605658558):0.0272189370):0.0195902770,Pleomassaria_siparia_CBS_279_74:0.0933540593):0.0474590307):0.0124279190,((Floricola_striata_JK_5678I:0.1453042782,((Lophiostoma_alpigenum_GKM_1091b:0.0427353790,Lophiostoma_fuckelii_GKM_1063:0.0550172686):0.0627220193,((Lophiostoma_arundinis_CBS_621_86:0.0117252161,Lophiostoma_caulium_CBS_624_86:0.0133449403):0.0037334652,((Lophiostoma_caulium_CBS_623_86:0.0219372310,Lophiostoma_compressum_IFRD_2014:0.0116995141):0.0035361858,Lophiostoma_crenatum_CBS_629_86:0.0130194053):0.0136618883):0.0495065617):0.0474438405):0.0181483987,(((Preussia_funiculata_CBS_659_74:0.0047187451,Preussia_terricola_DAOM_230091:0.0167055547):0.1032277993,(Preussia_lignicola_CBS_264_69:0.1043871808,Sporormiella_minima_CBS_524_50:0.1146512414):0.0192088277):0.0051851016,((Westerdykella_angulata_CBS_610_74:0.0211225300,Westerdykella_ornata_CBS_379_55:0.0371518146):0.0466271442,Westerdykella_cylindrica_CBS_454_72:0.1126246690):0.0562961643):0.0308029219):0.0161573856):0.0097916446,((((Amniculicola_parva_CBS_123092:0.0390408610,Massariosphaeria_typhicola_CBS_123126:0.0458898288):0.0068959037,Massariosphaeria_grandispora_CBS_613_86:0.0138806788):0.1083112055,Delitschia_winteri_CBS_225_62:0.2403703632):0.0149173977,(((((((((Anteaglonium_abbreviatum_ANM_925_1:0.0039443056,Anteaglonium_abbreviatum_GKM_1029:0.0027603583):0.0361603458,Anteaglonium_parvulum_SMH_5210:0.0296493508):0.0099417475,(Anteaglonium_globosum_ANM_925_2:0.0000021622,Anteaglonium_globosum_SMH_5283:0.0000021622):0.0575733890):0.0253258071,Anteaglonium_latirostrum_L100N_2:0.0408260872):0.0434686848,(Lophiotrema_bruneusporum_CBS_123095:0.0894204012,((Lophiotrema_lignicola_CBS_122364:0.0301751787,Lophiotrema_nucula_CBS_627_86:0.0328240290):0.0096719980,(Massarina_arundinariae_MAFF_239461:0.0009504984,Massarina_arundinariae_NBRC_106238:0.0023621063):0.0593934591):0.0222141835):0.0247069808):0.0210664003,Byssolophis_sphaerioides_IFRDCC2053:0.0782490247):0.0055806233,(((Polyplosphaeria_fusca_MAFF_239685:0.0674308090,Triplosphaeria_maxima_MAFF_239682:0.0326764330):0.0098684637,(Pseudotetraploa_curviappendiculata_MAFF_239495:0.0349121676,Tetraplosphaeria_sasicola_MAFF_239677:0.0527289071):0.0107613649):0.0140728074,Quadricrura_septentrionalis_CBS_125429:0.0185659098):0.0231829857):0.0105963540,((Lepidosphaeria_nicotiae_CBS_101341:0.0524050492,(Ulospora_bilgramii_CBS_110020:0.0430636117,Verruculina_enalia_JK_5253A:0.0626162375):0.0164871159):0.0114679270,Quintaria_lignatilis_CBS_117700:0.1355738000):0.0329488285):0.0206160343,((Arthopyrenia_salicis_1994_Coppins:0.0059495408,Arthopyrenia_salicis_CBS_368_94:0.0021809333):0.0457988599,(((Roussoella_hysterioides_CBS_125434:0.0235940895,Roussoella_hysterioides_MAFF_239636:0.0159279576):0.0164464833,Roussoellopsis_sp_MAFF_239638:0.0306433443):0.0088591149,Roussoella_pustulans_MAFF_239637:0.0264200534):0.0018044829):0.1270319113):0.0027186722):0.0094177019):0.0102988865,((Lindgomyces_breviappendiculata_HHUF_28193:0.0054406810,(Lindgomyces_ingoldianus_ATCC_200398:0.0109859768,Lindgomyces_rotundatus_HHUF_27999:0.0081883745):0.0026167059):0.0162395780,Massariosphaeria_typhicola_KT_797:0.0247856017):0.0418550496):0.0102055307,(((Mauritiania_rhizophorae_BCC_28866:0.0041267347,Mauritiania_rhizophorae_BCC_28867:0.0157604605):0.1378186381,Quintaria_submersa_CBS_115553:0.1091721338):0.0122211681,(Wicklowia_aquatica_AF289_1:0.0041488223,Wicklowia_aquatica_CBS_125634:0.0387537784):0.0547677755):0.0115168639):0.0064594973):0.0270956008):0.0259779808,(((((Gloniopsis_arciformis_GKM_L166A:0.0441743685,(Rhytidhysteron_rufulum_CBS_306_38:0.0069877674,Rhytidhysteron_rufulum_GKM_361A:0.0121767000):0.0439466537):0.0230819402,Hysterobrevium_mori_GKM_1013:0.0416668693):0.0124664839,((Gloniopsis_praelonga_CBS_112415:0.0090999591,Gloniopsis_praelonga_CBS_123337:0.0134501696):0.0359812168,Gloniopsis_subrugosa_CBS_123346:0.0548156946):0.0216132364):0.0156998741,((Oedohysterium_insidens_ANM_1443:0.0079811374,Oedohysterium_insidens_CBS_238_34:0.0049691415):0.0094541790,Oedohysterium_sinense_CBS_123345:0.0110372497):0.1130253440):0.0366654145,((Hysterium_angustatum_CBS_123334:0.0457980832,(Hysterium_barrianum_ANM_1442:0.0000021622,Hysterium_barrianum_ANM_1495:0.0059123356):0.1677954502):0.0291573660,(((Hysterobrevium_mori_CBS_123336:0.0051350487,Hysterobrevium_mori_SMH_5273:0.0224535734):0.0023927247,(Hysterobrevium_smilacis_CBS_114601:0.0048082108,Hysterobrevium_smilacis_SMH_5280:0.0135970696):0.0263053195):0.0471038032,((Psiloglonium_araucanum_CBS_112412:0.0245916335,Psiloglonium_simulans_CBS_206_34:0.0430164767):0.0532912266,(Psiloglonium_clavisporum_CBS_123338:0.0024251602,Psiloglonium_clavisporum_GKM_L172A:0.0066024631):0.0539617142):0.0198096977):0.0133174058):0.0321301668):0.0320049524):0.0168959770,(((Cenococcum_geophilum_10:0.0000021622,Cenococcum_geophilum_CGMONT:0.0000021622):0.0094657731,(Cenococcum_geophilum_HUNT_A1:0.0192622763,((Glonium_circumserpens_CBS_123342:0.0000021622,Glonium_circumserpens_CBS_123343:0.0000021622):0.0134293185,Glonium_stellatum_CBS_207_34:0.0117207671):0.0295497020):0.0000021621):0.0707190205,((Kirschsteiniothelia_maritima_CBS_221_60:0.0790620865,(Lophium_elegans_EB_0366:0.0901434981,((((Mytilinidion_acicola_EB_0349:0.0537664150,Mytilinidion_tortile_EB_0377:0.0613158426):0.0154274713,(Mytilinidion_andinense_CBS_123562:0.0074814892,Mytilinidion_thujarum_EB_0268:0.0085253184):0.0266049477):0.0444260517,Mytilinidion_californicum_EB_0385:0.0867955991):0.0123354430,Mytilinidion_mytilinellum_CBS_303_34:0.0266819367):0.0095706400):0.0124001800):0.0076970344,((Lophium_mytilinum_CBS_114111:0.0346640911,Lophium_mytilinum_CBS_269_34:0.0122934066):0.0146910110,((Mytilinidion_resinicola_CBS_304_34:0.0000021622,Mytilinidion_rhenanum_EB_0341:0.0109927149):0.0190311686,Mytilinidion_scolecosporum_CBS_305_34:0.0164743782):0.0240885175):0.0182696459):0.1122426711):0.0207111142):0.0745283379,((Bagnisiella_examinans_CBS_551_66:0.0907368183,((((Botryosphaeria_dothidea_CBS_115476:0.0335412670,Macrophomina_phaseolina_CBS_227_33:0.0485746395):0.0133859899,(Neofusicoccum_ribis_CBS_115475:0.0306318009,((Otthia_spiraeae_CBS_113091:0.0000021622,Otthia_spiraeae_CBS_114124:0.0038313844):0.0097252962,Spencermartinsia_viticola_CBS_117009:0.0184032971):0.0209828085):0.0114020252):0.0075709269,((Botryosphaeria_tsugae_CBS_418_64:0.0219564846,Diplodia_mutila_CBS_431_82:0.0049209419):0.0012173914,(Macrovalsaria_megalospora_178149:0.0029696093,Macrovalsaria_megalospora_178150:0.0000021622):0.0443726977):0.0388175195):0.0406185953,((Guignardia_bidwellii_CBS_237_48:0.0269927409,Guignardia_gaultheriae_CBS_447_70:0.0268453920):0.0198405223,Guignardia_citricarpa_CBS_102374:0.0295126380):0.0992188138):0.0315502259):0.0313429083,Saccharata_proteae_CBS_115206:0.1813922623):0.0593107505):0.0141738375,(((((((((Apiosporina_collinsii_CBS_118973:0.0570622711,Apiosporina_morbosa_dimosp:0.0488675847):0.0428880675,((Venturia_inaequalis_CBS_176_42:0.0000025735,Venturia_populina_CBS_256_38:0.0162366110):0.0021529807,(Venturia_inaequalis_CBS_594_70:0.0000021622,Venturia_inaequalis_CBS_815_69:0.0022854813):0.0189375366):0.0513309898):0.0096797725,Gibbera_conferta_CBS_191_53:0.0495753552):0.0136083248,Tyrannosorus_pinicola_CBS_124_88:0.0529196215):0.1584048514,(Microthyrium_microscopicum_CBS_115976:0.5972210996,(Phaeotrichum_benjaminii_CBS_541_72:0.1078955688,((Trichodelitschia_bisporula_CBS_262_69:0.0000021622,Trichodelitschia_bisporula_CBS_262_69v2:0.0000021622):0.0421986216,Trichodelitschia_munkii_Kruys201:0.0056011995):0.0529719322):0.1049006423):0.0310617041):0.0535198395,((((((Astrothelium_cinnamomeum_DUKE_0000007:0.0255037690,Cryptothelium_amazonum_47:0.0641803721):0.0266352421,Cryptothelium_pulchrum_63C:0.1303571855):0.0658095878,Trypethelium_nitidiusculum_139:0.1133133839):0.0545346444,Trypethelium_nitidiusculum_AFTOL_2099:0.0384712759):0.0580193322,Laurera_megasperma_AFTOL_2094:0.0851560014):0.3427423217,Trypethelium_tropicum_25:0.2685293861):0.4281475738):0.0126171185,(Opegrapha_dolomitica_DUKE_0047528:0.4603616180,Schismatomma_decolorans_DUKE_0047570:0.3558376551):0.1881738870):0.0159214199,((((((((((((((Aulographina_pinorum_CBS_174_90:0.0000021622,Aulographina_pinorum_CBS_302_71:0.0000021622):0.0236093934,Catenulostroma_abietis_CBS_459_93:0.0130545894):0.0491472793,((((Catenulostroma_elginense_CBS_111030:0.0302870887,Davidiellaceae_sp_TRN_43:0.0489210204):0.0197679241,((Friedmanniomyces_endolithicus_CCFEE_522:0.0587363847,Teratosphaeriaceae_sp_TRN_211:0.0000020536):0.0203310471,Friedmanniomyces_simplex_CBS_116775:0.0692502462):0.0635286333):0.0358653032,Teratosphaeriaceae_sp_TRN_123:0.0608806626):0.0262310661,Teratosphaeria_suberosa_CPC_11032:0.0601476187):0.0033075541):0.0209559826,(Devriesia_staurophora_CBS_375_81:0.0873326284,Teratosphaeria_associata_CBS_112224:0.0704970854):0.0270961307):0.0321637960,(Batcheloromyces_proteae_CBS_110696:0.0566529308,(Piedraia_hortae_CBS_480_64:0.2605016426,(Teratosphaeria_cryptica_CBS_110975:0.0221711540,((Teratosphaeria_fibrillosa_CBS_121707:0.0135498029,Teratosphaeria_fibrillosa_CPC_1876:0.0418624989):0.1044795577,Teratosphaeria_stellenboschiana_CBS_116428:0.0000021622):0.0073211937):0.0000027359):0.0273968955):0.0200611808):0.0087698167,(Hortaea_werneckii_CBS_100496:0.0168433490,Hortaea_werneckii_CBS_708_76:0.0093745879):0.1381510460):0.0131190532,(Capnobotryella_renispora_CBS_215_90:0.1021879140,Phacellium_paspali_CBS_113093:0.0930946930):0.0265204953):0.0226998704,(((((Capnodiales_sp_TRN_111:0.0986334899,Capnodiales_sp_TRN_137:0.0852923148):0.0623566621,Capnodiales_sp_TRN_138:0.1239938689):0.0192781596,Hortaea_acidophila_CBS_113389:0.1402984730):0.0075535776,(Cystocoleus_ebeneus_L315:0.1954430444,Mycosphaerella_eurypotami_JK_5586J:0.1458543091):0.0350943888):0.0209022670,(Capnodiales_sp_TRN_152:0.0850068021,Devriesia_strelitziae_CBS_122379:0.0867443897):0.0869929484):0.0342892311):0.0147395322,((((((((Cercospora_beticola_CBS_116456:0.0140283753,Mycosphaerella_latebrosa_CBS_687_94:0.0396491812):0.0152712472,(Mycosphaerella_heimii_CBS_110682:0.0134199866,(Phaeocryptopus_gaeumannii_CBS_244_38:0.0335753937,Phaeocryptopus_gaeumannii_CBS_267_37:0.0000022788):0.0093285575):0.0413276076):0.0169212086,((Pseudocercospora_fijiensis_OSC_100622:0.0317655326,Pseudocercospora_vitis_CPC_11595:0.0130724062):0.0124954620,Pseudocercospora_griseola_f_griseola_CPC_10461:0.0321905472):0.0318880523):0.0304721600,((Dissoconium_aciculare_CBS_204_89:0.0276393994,Ramichloridium_apiculatum_CBS_156_59:0.1209671886):0.0000028907,(Dissoconium_commune_CBS_110747:0.0225439192,Dissoconium_dekkeri_CBS_111282:0.0055092779):0.0362812263):0.1277199780):0.0129612178,((Ramichloridium_cerophilum_CBS_103_59:0.0285252586,Zasmidium_cellare_CBS_146_36:0.0892853400):0.0526956711,(Rasutoria_tsugae_ratstk:0.0329555198,Verrucisporota_daviesiae_CBS_116002:0.0191699437):0.0382893262):0.0635964273):0.0053041632,((((Dothistroma_septosporum_CBS_112498:0.0033867459,Dothistroma_septosporum_CBS_543_74:0.0315305099):0.0598263665,Mycosphaerella_endophytica_CBS_114662:0.0410896879):0.0205593008,((Mycosphaerella_graminicola_CBS_115943:0.0019369512,Mycosphaerella_graminicola_CBS_292_38:0.0424375045):0.0225712008,Mycosphaerella_punctiformis_CBS_113265:0.1256839665):0.0933653773):0.0170597500,Mycosphaerella_marksii_CBS_110942:0.1054730721):0.0119452533):0.0054642827,Polythrincium_trifolii_133:0.1683496917):0.0127554315,((Schizothyrium_pomi_CBS_228_57:0.0024943885,Schizothyrium_pomi_CBS_486_50:0.0000021622):0.0000021621,Schizothyrium_pomi_CBS_406_61:0.0024954089):0.1362425185):0.0225729519):0.0177527421,(((Capnodium_coffeae_CBS_147_52:0.0197353014,(Condioxyphium_gardeniorum_CPC_14327:0.0106291589,Microxyphium_aciculiforme_CBS_892_73:0.0041934708):0.0188967754):0.0498527708,((Leptoxyphium_fumago_CBS_123_26:0.0223106338,Microxyphium_citri_CBS_451_66:0.0271422389):0.0825720462,Microxyphium_theae_CBS_202_30:0.0559444134):0.0130723263):0.0997367739,(Capnodium_salicinum_CBS_131_34:0.0568804853,Scorias_spongiosa_CBS_325_33:0.0941481389):0.0277428510):0.0531740081):0.0278745898,(Cladosporium_cladosporioides_CBS_170_54:0.0131167178,(Cladosporium_herbarum_CBS_399_80:0.0000021177,Cladosporium_iridis_CBS_138_40:0.0000021622):0.0324855103):0.1425899245):0.0075963840,(Comminutispora_agavaciensis_CBS_619_95:0.1154718636,(Cystocoleus_ebeneus_L348:0.1624717248,(Racodium_rupestre_L423:0.0097429959,Racodium_rupestre_L424:0.0308983864):0.0361697082):0.0865412721):0.0291273094):0.0327300363,((((Aureobasidium_pullulans_CBS_584_75:0.0000021546,Columnosphaeria_fagi_CBS_171_93:0.0025369607):0.0287369258,Kabatiella_caulivora_CBS_242_64:0.0284008734):0.0844074110,(((Delphinella_strobiligena_CBS_735_71:0.0166549933,Sydowia_polyspora_CBS_116_29:0.0127920046):0.0548780737,((((Dothidea_hippophaes_CBS_188_58:0.0237055051,Stylodothis_puccinioides_CBS_193_58:0.0260196329):0.0027687024,Dothidea_insculpta_CBS_189_58:0.0270759494):0.0059212895,Dothidea_sambuci_DAOM_231303:0.0299603730):0.0434072152,(Dothiora_cannabinae_CBS_737_71:0.0262760676,Dothiora_ellyptica_CBS_736_71:0.0230204374):0.0403817191):0.0164638553):0.0028394267,Phaeocryptopus_nudus_CBS_268_37:0.0787954683):0.0339292619):0.0298692350,((((((Elsinoe_centrolobi_CBS_222_50:0.0348949260,Elsinoe_phaseoli_CBS_165_31:0.0633114717):0.0344128632,Elsinoe_veneta_CBS_150_27:0.0571512938):0.0296146848,(Myriangium_duriaei_CBS_260_36:0.0441821847,Myriangium_hispanicum_CBS_247_33:0.1331261707):0.1142376930):0.0248923304,Myriangiales_sp_TRN_235:0.1155525966):0.0152988579,(Endosporium_aviarium_UAMH_10530:0.0558079118,Endosporium_populitremuloidis_UAMH_10529:0.0156674677):0.0436686448):0.0130132901,Phaeosclera_dematioides_CBS_157_81:0.1058622013):0.0322828390):0.0422953127):0.0402956881,Catinella_olivacea_UAMH_10679:0.3071443906):0.0269811556):0.0141604205,((Hysteropatella_clavispora_CBS_247_34:0.0186701682,Hysteropatella_elliptica_CBS_958_97:0.0621696164):0.0767162723,(Patellaria_atrata_CBS_958_97:0.0063708932,(Patellaria_cf_atrata_BCC_28876:0.0210984162,Patellaria_cf_atrata_BCC_28877:0.0025286771):0.0280808811):0.1937898710):0.0684983757):0.0153151729):0.0173101057):0.1978022206,((Helicomyces_roseus_CBS_283_51:0.0181305419,Tubeufia_paludosa_CBS_120503:0.0186851702):0.0338308258,Tubeufia_paludosa_CBS_245_49:0.0456556129):0.0420200210):0.0433977232,Tubeufia_cerea_CBS_254_75:0.1424332519);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/dna_M4727_350_6464.phy/output_files/iqtree/inference/pars_5.treefile -m "GTR{1.69344,3.87826,1.44928,1.334,7.94365}+F{0.256212,0.241154,0.271002,0.231632}+R8{0.445454,0.0138591,0.168371,0.153256,0.107705,0.53017,0.0860056,1.13817,0.0731688,2.0114,0.0498277,3.40996,0.0426339,5.6409,0.0268336,9.51999}" --length 6464
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data3/dna_M4727_350_6464.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data3/dna_M4727_350_6464.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Sep 23 10:51:19 2025
+Total CPU time used: 18716 seconds (5h:11m:56s)
+Total wall-clock time used: 18745.5 seconds (5h:12m:25s)
+

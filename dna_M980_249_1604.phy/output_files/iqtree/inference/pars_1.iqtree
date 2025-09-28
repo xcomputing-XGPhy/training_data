@@ -1,0 +1,687 @@
+IQ-TREE 3.0.1 built Sep 14 2025
+
+Input file name: /home/suny/Downloads/VAN_TRAINING_DATA/data1/dna_M980_249_1604.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 1
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 249 sequences with 1604 nucleotide sites
+Number of constant sites: 812 (= 50.6234% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 812 (= 50.6234% of all sites)
+Number of parsimony informative sites: 614
+Number of distinct site patterns: 978
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+I+R4       -19499.370   40018.740 +        1   40495.611 +        1   42762.671 +    0.999
+TIM3+F+I+R4      -19514.038   40044.077 - 3.15e-06   40516.355 - 3.13e-05   42777.247 - 0.000683
+TIM2+F+I+R4      -19523.528   40063.056 - 2.38e-10   40535.333 - 2.37e-09   42796.226 - 5.17e-08
+TN+F+I+R4        -19537.886   40089.772 - 3.76e-16   40559.764 - 1.17e-14   42817.561 -  1.2e-12
+TIM+F+I+R4       -19536.963   40089.925 - 3.49e-16   40562.203 - 3.47e-15   42823.095 - 7.56e-14
+TVM+F+I+R4       -19557.312   40132.624 - 1.86e-25   40607.194 - 5.89e-25   42871.174 - 2.75e-24
+TPM3u+F+I+R4     -19568.770   40151.541 - 1.45e-29   40621.533 - 4.53e-28   42879.330 - 4.65e-26
+GTR+I+R4         -19580.685   40175.370 - 9.73e-35   40645.363 - 3.03e-33   42903.160 - 3.11e-31
+SYM+I+R4         -19580.724   40175.448 - 9.36e-35   40645.441 - 2.92e-33   42903.238 - 2.99e-31
+SYM+I+R4         -19580.724   40175.448 - 9.36e-35   40645.441 - 2.92e-33   42903.238 - 2.99e-31
+TPM2u+F+I+R4     -19584.132   40182.264 -  3.1e-36   40652.257 - 9.66e-35   42910.054 - 9.91e-33
+HKY+F+I+R4       -19595.280   40202.559 - 1.21e-40   40670.275 - 1.18e-38   42924.969 - 5.72e-36
+K3Pu+F+I+R4      -19594.364   40202.728 - 1.12e-40   40672.721 - 3.48e-39   42930.518 - 3.57e-37
+TVM+I+R4         -19610.926   40233.852 - 1.95e-47   40701.568 - 1.89e-45   42956.262 - 9.16e-43
+TVMe+I+R4        -19610.953   40233.907 - 1.89e-47   40701.623 - 1.84e-45   42956.316 - 8.91e-43
+TVMe+I+R4        -19610.953   40233.907 - 1.89e-47   40701.623 - 1.84e-45   42956.316 - 8.91e-43
+TIM3+I+R4        -19627.608   40265.216 - 3.01e-54   40730.662 - 9.11e-52   42982.245 - 2.09e-48
+TIM3e+I+R4       -19627.665   40265.331 - 2.84e-54   40730.777 -  8.6e-52   42982.360 - 1.97e-48
+TIM3e+I+R4       -19627.665   40265.331 - 2.84e-54   40730.777 -  8.6e-52   42982.360 - 1.97e-48
+TIM2+I+R4        -19648.177   40306.354 - 3.51e-63   40771.800 - 1.06e-60   43023.383 - 2.44e-57
+TIM2e+I+R4       -19648.216   40306.432 - 3.38e-63   40771.878 - 1.02e-60   43023.461 - 2.34e-57
+TIM2e+I+R4       -19648.216   40306.432 - 3.38e-63   40771.878 - 1.02e-60   43023.461 - 2.34e-57
+TPM3u+I+R4       -19656.047   40320.093 - 3.65e-66   40783.278 - 3.42e-63   43031.742 - 3.73e-59
+TPM3+I+R4        -19656.066   40320.132 - 3.58e-66   40783.316 - 3.35e-63   43031.781 - 3.66e-59
+TPM3+I+R4        -19656.066   40320.132 - 3.58e-66   40783.316 - 3.35e-63   43031.781 - 3.66e-59
+TPM2u+I+R4       -19677.718   40363.435 - 1.41e-75   40826.620 - 1.33e-72   43075.084 - 1.45e-68
+TPM2+I+R4        -19677.728   40363.457 -  1.4e-75   40826.641 - 1.31e-72   43075.106 - 1.43e-68
+TPM2+I+R4        -19677.728   40363.457 -  1.4e-75   40826.641 - 1.31e-72   43075.106 - 1.43e-68
+TN+I+R4          -19693.369   40394.738 - 2.25e-82   40857.923 - 2.11e-79   43106.387 -  2.3e-75
+TNe+I+R4         -19693.414   40394.828 - 2.16e-82   40858.013 - 2.02e-79   43106.477 -  2.2e-75
+TNe+I+R4         -19693.414   40394.828 - 2.16e-82   40858.013 - 2.02e-79   43106.477 -  2.2e-75
+TIM+I+R4         -19690.948   40391.897 - 9.33e-82   40857.343 - 2.82e-79   43108.926 - 6.48e-76
+TIMe+I+R4        -19690.984   40391.968 - 9.01e-82   40857.415 - 2.73e-79   43108.998 - 6.25e-76
+TIMe+I+R4        -19690.984   40391.968 - 9.01e-82   40857.415 - 2.73e-79   43108.998 - 6.25e-76
+HKY+I+R4         -19721.427   40448.854 -    4e-94   40909.785 - 1.16e-90   43155.122 - 6.02e-86
+K2P+I+R4         -19721.439   40448.877 - 3.95e-94   40909.808 - 1.14e-90   43155.146 - 5.95e-86
+K2P+I+R4         -19721.439   40448.877 - 3.95e-94   40909.808 - 1.14e-90   43155.146 - 5.95e-86
+K3Pu+I+R4        -19718.989   40445.978 - 1.68e-93   40909.163 - 1.58e-90   43157.627 - 1.72e-86
+K3P+I+R4         -19718.993   40445.985 - 1.68e-93   40909.170 - 1.57e-90   43157.634 - 1.72e-86
+K3P+I+R4         -19718.993   40445.985 - 1.68e-93   40909.170 - 1.57e-90   43157.634 - 1.72e-86
+F81+F+I+R4       -19866.434   40742.868 - 5.72e-158   41208.315 - 1.73e-155   43459.898 - 3.97e-152
+F81+I+R4         -19974.562   40953.125 - 1.26e-203   41411.809 - 1.12e-199   43654.013 - 2.8e-194
+JC+I+R4          -19974.600   40953.201 - 1.21e-203   41411.886 - 1.08e-199   43654.089 - 2.7e-194
+JC+I+R4          -19974.600   40953.201 - 1.21e-203   41411.886 - 1.08e-199   43654.089 - 2.7e-194
+JC+I+R5          -19974.626   40957.252 - 1.6e-204   41420.437 - 1.5e-201   43668.901 - 1.64e-197
+JC+I+R3          -19992.227   40984.454 - 1.99e-210   41438.670 - 1.65e-205   43674.582 - 9.57e-199
+JC+R4            -19990.788   40983.575 - 3.08e-210   41440.022 - 8.39e-206   43679.084 - 1.01e-199
+JC+R5            -19990.043   40986.086 - 8.78e-211   41447.016 - 2.54e-207   43692.354 - 1.32e-202
+JC+R3            -20049.969   41097.938 - 4.52e-235   41549.931 - 1.14e-229   43782.686 - 3.21e-222
+JC+I+G4          -20084.601   41163.202 - 3.04e-249   41610.771 - 7.02e-243   43837.189 - 4.69e-234
+JC+I+R2          -20083.047   41162.093 - 5.3e-249   41611.871 - 4.05e-243   43841.461 - 5.54e-235
+JC+G4            -20124.441   41240.882 - 4.12e-266   41686.251 - 2.86e-259   43909.488 - 9.36e-250
+JC+R2            -20261.560   41517.120 -        0   41964.689 - 9.86e-320   44191.107 - 6.59e-311
+JC+I             -20607.366   42206.731 -        0   42652.101 -        0   44875.338 -        0
+JC               -21624.458   44238.916 -        0   44682.093 -        0   46902.143 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+R4
+
+Rate parameter R:
+
+  A-C: 0.8845
+  A-G: 1.6598
+  A-T: 1.3439
+  C-G: 0.5757
+  C-T: 3.4060
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3092
+  pi(C) = 0.1943
+  pi(G) = 0.2237
+  pi(T) = 0.2728
+
+Rate matrix Q:
+
+  A   -0.8303    0.1568    0.3389    0.3346
+  C    0.2496    -1.215    0.1175     0.848
+  G    0.4683    0.1021   -0.8193     0.249
+  T    0.3792    0.6039    0.2042    -1.187
+
+Model of rate heterogeneity: Invar+FreeRate with 4 categories
+Proportion of invariable sites: 0.3558
+Site proportion and rates:  (0.3939,0.4949) (0.1663,1.746) (0.06542,4.135) (0.01857,13.15)
+
+ Category  Relative_rate  Proportion
+  0         0              0.3558
+  1         0.4949         0.3939
+  2         1.746          0.1663
+  3         4.135          0.06542
+  4         13.15          0.01857
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -19499.3213 (s.e. 661.3527)
+Unconstrained log-likelihood (without tree): -9195.4342
+Number of free parameters (#branches + #model parameters): 510
+Akaike information criterion (AIC) score: 40018.6426
+Corrected Akaike information criterion (AICc) score: 40495.5136
+Bayesian information criterion (BIC) score: 42762.5730
+
+Total tree length (sum of branch lengths): 3.2844
+Sum of internal branch lengths: 1.5501 (47.1972% of tree length)
+
+WARNING: 33 near-zero internal branches (<0.0006) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Cicer_arietinum' is drawn at root
+
++----------Cicer_arietinum
+|
+|                 +----Galega_officinalis
+|  +--------------|
+|  |              +--Galega_orientalis
++--|
+|  |           +--Lathyrus_laevigatus
+|  |        +--|
+|  |        |  +--Lathyrus_sativus
+|  |     +--|
+|  |     |  +---Pisum_sativum
+|  |  +--|
+|  |  |  |     +--Vicia_cracca
+|  |  |  |  +--|
+|  |  |  |  |  +--Vicia_villosa
+|  |  |  +--|
+|  |  |     +----------Vicia_sativa
+|  +--|
+|     |             +--Medicago_lupulina
+|     |        +----|
+|     |        |    |     +--Medicago_polymorpha
+|     |        |    |  +--|
+|     |        |    |  |  |  +--Medicago_sativa
+|     |        |    |  |  +--|
+|     |        |    |  |     +--Medicago_truncatula
+|     |        |    +--|
+|     |        |       +--Medicago_ruthenica
+|     |     +--|
+|     |     |  |       +--Melilotus_albus
+|     |     |  |    +--|
+|     |     |  |    |  +**Melilotus_officinalis
+|     |     |  +----|
+|     |     |       +--Trigonella_foenum_graecum
+|     |  +--|
+|     |  |  |                                                           +--Trifolium_abyssinicum_A
+|     |  |  |                                                        +--|
+|     |  |  |                                                        |  +--Trifolium_tembense
+|     |  |  |                                                     +--|
+|     |  |  |                                                     |  |     +--Trifolium_africanum
+|     |  |  |                                                     |  |  +--|
+|     |  |  |                                                     |  |  |  +**Trifolium_burchellianum
+|     |  |  |                                                     |  +--|
+|     |  |  |                                                     |     +--Trifolium_decorum_A
+|     |  |  |                                                  +--|
+|     |  |  |                                                  |  |     +--Trifolium_cryptopodium
+|     |  |  |                                                  |  |  +**|
+|     |  |  |                                                  |  |  |  +--Trifolium_rueppellianum
+|     |  |  |                                                  |  +--|
+|     |  |  |                                                  |     |  +--Trifolium_stolzii
+|     |  |  |                                                  |     +--|
+|     |  |  |                                                  |        +--Trifolium_usambarense
+|     |  |  |                                               +--|
+|     |  |  |                                               |  +--Trifolium_simense
+|     |  |  |                                            +**|
+|     |  |  |                                            |  |  +--Trifolium_lanceolatum
+|     |  |  |                                            |  +--|
+|     |  |  |                                            |     +--Trifolium_polystachyum
+|     |  |  |                                         +--|
+|     |  |  |                                         |  |           +--Trifolium_abyssinicum_B
+|     |  |  |                                         |  |        +--|
+|     |  |  |                                         |  |        |  +**Trifolium_baccarinii
+|     |  |  |                                         |  |     +--|
+|     |  |  |                                         |  |     |  |     +--Trifolium_decorum_B
+|     |  |  |                                         |  |     |  |  +--|
+|     |  |  |                                         |  |     |  |  |  +--Trifolium_multinerve
+|     |  |  |                                         |  |     |  +**|
+|     |  |  |                                         |  |     |     +--Trifolium_schimperi
+|     |  |  |                                         |  |  +--|
+|     |  |  |                                         |  |  |  |     +**Trifolium_lugardii
+|     |  |  |                                         |  |  |  |  +--|
+|     |  |  |                                         |  |  |  |  |  +--Trifolium_steudneri
+|     |  |  |                                         |  |  |  +--|
+|     |  |  |                                         |  |  |     +--Trifolium_quartinianum
+|     |  |  |                                         |  +--|
+|     |  |  |                                         |     |  +--Trifolium_mattirolianum
+|     |  |  |                                         |     +--|
+|     |  |  |                                         |        +--Trifolium_spananthum
+|     |  |  |                                      +--|
+|     |  |  |                                      |  +--Trifolium_purseglovei
+|     |  |  |                                   +--|
+|     |  |  |                                   |  |  +--Trifolium_bilineatum
+|     |  |  |                                   |  +--|
+|     |  |  |                                   |     +--Trifolium_pichisermollii
+|     |  |  |                                +--|
+|     |  |  |                                |  +--Trifolium_acaule
+|     |  |  |                             +--|
+|     |  |  |                             |  +--Trifolium_pseudostriatum
+|     |  |  |                          +**|
+|     |  |  |                          |  +--Trifolium_petitianum
+|     |  |  |                       +--|
+|     |  |  |                       |  |        +--Trifolium_cheranganiense
+|     |  |  |                       |  |     +--|
+|     |  |  |                       |  |     |  +--Trifolium_masaiense
+|     |  |  |                       |  |  +--|
+|     |  |  |                       |  |  |  +--Trifolium_semipilosum
+|     |  |  |                       |  +--|
+|     |  |  |                       |     +--Trifolium_somalense
+|     |  |  |                    +--|
+|     |  |  |                    |  |     +**Trifolium_bullatum
+|     |  |  |                    |  |  +--|
+|     |  |  |                    |  |  |  +--Trifolium_fragiferum
+|     |  |  |                    |  +--|
+|     |  |  |                    |     |     +--Trifolium_clusii
+|     |  |  |                    |     |  +--|
+|     |  |  |                    |     |  |  +--Trifolium_resupinatum
+|     |  |  |                    |     +--|
+|     |  |  |                    |        +--Trifolium_tomentosum
+|     |  |  |                 +--|
+|     |  |  |                 |  |        +--Trifolium_aintabense
+|     |  |  |                 |  |     +--|
+|     |  |  |                 |  |     |  +--Trifolium_argutum
+|     |  |  |                 |  |  +--|
+|     |  |  |                 |  |  |  |     +**Trifolium_mutabile
+|     |  |  |                 |  |  |  |  +--|
+|     |  |  |                 |  |  |  |  |  +**Trifolium_vesiculosum
+|     |  |  |                 |  |  |  +--|
+|     |  |  |                 |  |  |     +--Trifolium_spumosum
+|     |  |  |                 |  +**|
+|     |  |  |                 |     |  +--Trifolium_physodes
+|     |  |  |                 |     +--|
+|     |  |  |                 |        +--Trifolium_tumens
+|     |  |  |              +--|
+|     |  |  |              |  |        +--Trifolium_balansae
+|     |  |  |              |  |     +--|
+|     |  |  |              |  |     |  +--Trifolium_michelianum
+|     |  |  |              |  |  +--|
+|     |  |  |              |  |  |  +--Trifolium_ornithopodioides
+|     |  |  |              |  +--|
+|     |  |  |              |     +--Trifolium_hybridum
+|     |  |  |           +--|
+|     |  |  |           |  |                                      +--Trifolium_albopurpureum
+|     |  |  |           |  |                                   +**|
+|     |  |  |           |  |                                   |  +**Trifolium_dichotomum
+|     |  |  |           |  |                                +--|
+|     |  |  |           |  |                                |  +--Trifolium_amoenum
+|     |  |  |           |  |                             +--|
+|     |  |  |           |  |                             |  |  +--Trifolium_ciliolatum
+|     |  |  |           |  |                             |  +--|
+|     |  |  |           |  |                             |     |  +--Trifolium_gracilentum
+|     |  |  |           |  |                             |     +--|
+|     |  |  |           |  |                             |        +--Trifolium_palmeri
+|     |  |  |           |  |                          +--|
+|     |  |  |           |  |                          |  |  +**Trifolium_bifidum
+|     |  |  |           |  |                          |  +--|
+|     |  |  |           |  |                          |     +**Trifolium_oliganthum
+|     |  |  |           |  |                       +--|
+|     |  |  |           |  |                       |  |     +--Trifolium_microcephalum
+|     |  |  |           |  |                       |  |  +--|
+|     |  |  |           |  |                       |  |  |  +--Trifolium_vernum
+|     |  |  |           |  |                       |  +--|
+|     |  |  |           |  |                       |     +--Trifolium_microdon
+|     |  |  |           |  |                    +--|
+|     |  |  |           |  |                    |  |     +--Trifolium_andersonii
+|     |  |  |           |  |                    |  |  +--|
+|     |  |  |           |  |                    |  |  |  +--Trifolium_leibergii
+|     |  |  |           |  |                    |  +--|
+|     |  |  |           |  |                    |     |     +--Trifolium_howellii
+|     |  |  |           |  |                    |     |  +--|
+|     |  |  |           |  |                    |     |  |  +--Trifolium_macilentum
+|     |  |  |           |  |                    |     +--|
+|     |  |  |           |  |                    |        |  +--Trifolium_nanum
+|     |  |  |           |  |                    |        +--|
+|     |  |  |           |  |                    |           +--Trifolium_parryi
+|     |  |  |           |  |                 +--|
+|     |  |  |           |  |                 |  |  +--Trifolium_brandegei
+|     |  |  |           |  |                 |  +**|
+|     |  |  |           |  |                 |     +--Trifolium_dasyphyllum
+|     |  |  |           |  |              +**|
+|     |  |  |           |  |              |  |           +--Trifolium_argentinense
+|     |  |  |           |  |              |  |        +**|
+|     |  |  |           |  |              |  |        |  +--Trifolium_polymorphum
+|     |  |  |           |  |              |  |     +--|
+|     |  |  |           |  |              |  |     |  +**Trifolium_riograndense
+|     |  |  |           |  |              |  |  +**|
+|     |  |  |           |  |              |  |  |  |                 +**Trifolium_barbigerum
+|     |  |  |           |  |              |  |  |  |              +--|
+|     |  |  |           |  |              |  |  |  |              |  +**Trifolium_jokerstii
+|     |  |  |           |  |              |  |  |  |           +--|
+|     |  |  |           |  |              |  |  |  |           |  +**Trifolium_physanthum
+|     |  |  |           |  |              |  |  |  |        +--|
+|     |  |  |           |  |              |  |  |  |        |  +--Trifolium_cyathiferum
+|     |  |  |           |  |              |  |  |  |     +--|
+|     |  |  |           |  |              |  |  |  |     |  +--Trifolium_fucatum
+|     |  |  |           |  |              |  |  |  |  +**|
+|     |  |  |           |  |              |  |  |  |  |  |        +--Trifolium_buckwestiorum
+|     |  |  |           |  |              |  |  |  |  |  |     +--|
+|     |  |  |           |  |              |  |  |  |  |  |     |  |  +--Trifolium_polyodon
+|     |  |  |           |  |              |  |  |  |  |  |     |  +--|
+|     |  |  |           |  |              |  |  |  |  |  |     |     +**Trifolium_variegatum
+|     |  |  |           |  |              |  |  |  |  |  |  +--|
+|     |  |  |           |  |              |  |  |  |  |  |  |  +--Trifolium_wormskioldii
+|     |  |  |           |  |              |  |  |  |  |  +--|
+|     |  |  |           |  |              |  |  |  |  |     +**Trifolium_wigginsii
+|     |  |  |           |  |              |  |  |  +--|
+|     |  |  |           |  |              |  |  |     |        +--Trifolium_chilense
+|     |  |  |           |  |              |  |  |     |     +**|
+|     |  |  |           |  |              |  |  |     |     |  |  +--Trifolium_obtusiflorum
+|     |  |  |           |  |              |  |  |     |     |  +--|
+|     |  |  |           |  |              |  |  |     |     |     +**Trifolium_willdenovii
+|     |  |  |           |  |              |  |  |     |  +--|
+|     |  |  |           |  |              |  |  |     |  |  |  +--Trifolium_depauperatum
+|     |  |  |           |  |              |  |  |     |  |  +**|
+|     |  |  |           |  |              |  |  |     |  |     +--Trifolium_trichocalyx
+|     |  |  |           |  |              |  |  |     +--|
+|     |  |  |           |  |              |  |  |        |  +--Trifolium_monanthum
+|     |  |  |           |  |              |  |  |        +--|
+|     |  |  |           |  |              |  |  |           +--Trifolium_pinetorum
+|     |  |  |           |  |              |  +--|
+|     |  |  |           |  |              |     |        +--Trifolium_beckwithii
+|     |  |  |           |  |              |     |     +--|
+|     |  |  |           |  |              |     |     |  |  +**Trifolium_latifolium
+|     |  |  |           |  |              |     |     |  +--|
+|     |  |  |           |  |              |     |     |     |     +--Trifolium_longipes
+|     |  |  |           |  |              |     |     |     |  +--|
+|     |  |  |           |  |              |     |     |     |  |  |  +**Trifolium_rusbyi
+|     |  |  |           |  |              |     |     |     |  |  +--|
+|     |  |  |           |  |              |     |     |     |  |     +--Trifolium_rusbyi_ssp_oreganum
+|     |  |  |           |  |              |     |     |     +--|
+|     |  |  |           |  |              |     |     |        +**Trifolium_longipes_ssp_elmeri
+|     |  |  |           |  |              |     |  +--|
+|     |  |  |           |  |              |     |  |  |        +--Trifolium_bolanderi
+|     |  |  |           |  |              |     |  |  |     +**|
+|     |  |  |           |  |              |     |  |  |     |  +--Trifolium_lemmonii
+|     |  |  |           |  |              |     |  |  |  +--|
+|     |  |  |           |  |              |     |  |  |  |  +--Trifolium_kingii
+|     |  |  |           |  |              |     |  |  +**|
+|     |  |  |           |  |              |     |  |     +--Trifolium_owyheense
+|     |  |  |           |  |              |     +--|
+|     |  |  |           |  |              |        |        +--Trifolium_douglasii
+|     |  |  |           |  |              |        |     +--|
+|     |  |  |           |  |              |        |     |  +--Trifolium_eriocephalum
+|     |  |  |           |  |              |        |  +**|
+|     |  |  |           |  |              |        |  |  |  +--Trifolium_plumosum
+|     |  |  |           |  |              |        |  |  +--|
+|     |  |  |           |  |              |        |  |     +--Trifolium_thompsonii
+|     |  |  |           |  |              |        +--|
+|     |  |  |           |  |              |           +--Trifolium_macrocephalum
+|     |  |  |           |  |           +--|
+|     |  |  |           |  |           |  |           +**Trifolium_bejariense
+|     |  |  |           |  |           |  |        +**|
+|     |  |  |           |  |           |  |        |  +**Trifolium_reflexum
+|     |  |  |           |  |           |  |     +--|
+|     |  |  |           |  |           |  |     |  +--Trifolium_carolinianum
+|     |  |  |           |  |           |  |  +--|
+|     |  |  |           |  |           |  |  |  |  +--Trifolium_calcaricum
+|     |  |  |           |  |           |  |  |  +--|
+|     |  |  |           |  |           |  |  |     +**Trifolium_virginicum
+|     |  |  |           |  |           |  +--|
+|     |  |  |           |  |           |     +--Trifolium_stoloniferum
+|     |  |  |           |  |        +--|
+|     |  |  |           |  |        |  |  +--Trifolium_andinum
+|     |  |  |           |  |        |  +--|
+|     |  |  |           |  |        |     |  +--Trifolium_gymnocarpon
+|     |  |  |           |  |        |     +--|
+|     |  |  |           |  |        |        +--Trifolium_haydenii
+|     |  |  |           |  |     +--|
+|     |  |  |           |  |     |  |  +--Trifolium_amabile
+|     |  |  |           |  |     |  +--|
+|     |  |  |           |  |     |     +**Trifolium_peruvianum
+|     |  |  |           |  |  +--|
+|     |  |  |           |  |  |  +--Trifolium_breweri
+|     |  |  |           |  +--|
+|     |  |  |           |     |        +--Trifolium_ambiguum
+|     |  |  |           |     |     +--|
+|     |  |  |           |     |     |  +--Trifolium_montanum_ssp_humboldtianum
+|     |  |  |           |     |  +--|
+|     |  |  |           |     |  |  +--Trifolium_montanum_ssp_montanum
+|     |  |  |           |     +--|
+|     |  |  |           |        |        +--Trifolium_cernuum
+|     |  |  |           |        |     +**|
+|     |  |  |           |        |     |  |  +--Trifolium_glomeratum
+|     |  |  |           |        |     |  +--|
+|     |  |  |           |        |     |     |  +**Trifolium_parnassii
+|     |  |  |           |        |     |     +**|
+|     |  |  |           |        |     |        +**Trifolium_thalii
+|     |  |  |           |        |  +--|
+|     |  |  |           |        |  |  +--Trifolium_pallescens
+|     |  |  |           |        +--|
+|     |  |  |           |           |           +--Trifolium_isthmocarpum
+|     |  |  |           |           |        +--|
+|     |  |  |           |           |        |  |  +--Trifolium_nigrescens_ssp_meneghinianum
+|     |  |  |           |           |        |  +**|
+|     |  |  |           |           |        |     |     +--Trifolium_nigrescens_ssp_petrisavii
+|     |  |  |           |           |        |     |  +--|
+|     |  |  |           |           |        |     |  |  +--Trifolium_occidentale
+|     |  |  |           |           |        |     +--|
+|     |  |  |           |           |        |        +--Trifolium_uniflorum
+|     |  |  |           |           |     +**|
+|     |  |  |           |           |     |  +**Trifolium_retusum
+|     |  |  |           |           |  +--|
+|     |  |  |           |           |  |  |  +--Trifolium_nigrescens_ssp_nigrescens
+|     |  |  |           |           |  |  +**|
+|     |  |  |           |           |  |     +--Trifolium_suffocatum
+|     |  |  |           |           +--|
+|     |  |  |           |              +--Trifolium_repens
+|     |  |  |        +--|
+|     |  |  |        |  |                    +--Trifolium_affine
+|     |  |  |        |  |                 +--|
+|     |  |  |        |  |                 |  +--Trifolium_arvense
+|     |  |  |        |  |              +--|
+|     |  |  |        |  |              |  +--Trifolium_bocconei
+|     |  |  |        |  |           +--|
+|     |  |  |        |  |           |  |     +--Trifolium_dalmaticum
+|     |  |  |        |  |           |  |  +--|
+|     |  |  |        |  |           |  |  |  +--Trifolium_lucanicum
+|     |  |  |        |  |           |  +--|
+|     |  |  |        |  |           |     +--Trifolium_scabrum
+|     |  |  |        |  |        +--|
+|     |  |  |        |  |        |  |                          +--Trifolium_alpestre
+|     |  |  |        |  |        |  |                       +**|
+|     |  |  |        |  |        |  |                       |  +--Trifolium_longidentatum
+|     |  |  |        |  |        |  |                    +--|
+|     |  |  |        |  |        |  |                    |  +--Trifolium_medium
+|     |  |  |        |  |        |  |                 +**|
+|     |  |  |        |  |        |  |                 |  +--Trifolium_velebiticum
+|     |  |  |        |  |        |  |              +--|
+|     |  |  |        |  |        |  |              |  |  +--Trifolium_patulum
+|     |  |  |        |  |        |  |              |  +--|
+|     |  |  |        |  |        |  |              |     +**Trifolium_rubens
+|     |  |  |        |  |        |  |           +--|
+|     |  |  |        |  |        |  |           |  |  +--Trifolium_gemellum
+|     |  |  |        |  |        |  |           |  +--|
+|     |  |  |        |  |        |  |           |     +--Trifolium_phleoides
+|     |  |  |        |  |        |  |        +**|
+|     |  |  |        |  |        |  |        |  +--Trifolium_heldreichianum
+|     |  |  |        |  |        |  |     +--|
+|     |  |  |        |  |        |  |     |  |           +--Trifolium_andricum
+|     |  |  |        |  |        |  |     |  |        +--|
+|     |  |  |        |  |        |  |     |  |        |  +--Trifolium_diffusum
+|     |  |  |        |  |        |  |     |  |     +--|
+|     |  |  |        |  |        |  |     |  |     |  +--Trifolium_pallidum
+|     |  |  |        |  |        |  |     |  |  +--|
+|     |  |  |        |  |        |  |     |  |  |  +--Trifolium_pratense
+|     |  |  |        |  |        |  |     |  +--|
+|     |  |  |        |  |        |  |     |     |     +--Trifolium_barbeyi
+|     |  |  |        |  |        |  |     |     |  +--|
+|     |  |  |        |  |        |  |     |     |  |  +--Trifolium_lappaceum
+|     |  |  |        |  |        |  |     |     +--|
+|     |  |  |        |  |        |  |     |        +--Trifolium_squamosum
+|     |  |  |        |  |        |  |  +**|
+|     |  |  |        |  |        |  |  |  |        +--Trifolium_incarnatum
+|     |  |  |        |  |        |  |  |  |     +--|
+|     |  |  |        |  |        |  |  |  |     |  +--Trifolium_stellatum
+|     |  |  |        |  |        |  |  |  |  +--|
+|     |  |  |        |  |        |  |  |  |  |  |  +--Trifolium_latinum
+|     |  |  |        |  |        |  |  |  |  |  +--|
+|     |  |  |        |  |        |  |  |  |  |     +**Trifolium_striatum
+|     |  |  |        |  |        |  |  |  +**|
+|     |  |  |        |  |        |  |  |     +--Trifolium_ligusticum
+|     |  |  |        |  |        |  +--|
+|     |  |  |        |  |        |     +--Trifolium_noricum
+|     |  |  |        |  |     +--|
+|     |  |  |        |  |     |  |     +--Trifolium_cherleri
+|     |  |  |        |  |     |  |  +--|
+|     |  |  |        |  |     |  |  |  +--Trifolium_hirtum
+|     |  |  |        |  |     |  +--|
+|     |  |  |        |  |     |     +--Trifolium_haussknechtii
+|     |  |  |        |  |  +--|
+|     |  |  |        |  |  |  |                             +**Trifolium_alexandrinum
+|     |  |  |        |  |  |  |                          +--|
+|     |  |  |        |  |  |  |                          |  +**Trifolium_apertum
+|     |  |  |        |  |  |  |                       +--|
+|     |  |  |        |  |  |  |                       |  |  +--Trifolium_plebeium
+|     |  |  |        |  |  |  |                       |  +--|
+|     |  |  |        |  |  |  |                       |     +--Trifolium_scutatum
+|     |  |  |        |  |  |  |                    +--|
+|     |  |  |        |  |  |  |                    |  +--Trifolium_vavilovii
+|     |  |  |        |  |  |  |                 +**|
+|     |  |  |        |  |  |  |                 |  |  +--Trifolium_constantinopolitanum
+|     |  |  |        |  |  |  |                 |  +--|
+|     |  |  |        |  |  |  |                 |     |  +**Trifolium_echinatum
+|     |  |  |        |  |  |  |                 |     +--|
+|     |  |  |        |  |  |  |                 |        +**Trifolium_salmoneum
+|     |  |  |        |  |  |  |              +--|
+|     |  |  |        |  |  |  |              |  +--Trifolium_clypeatum
+|     |  |  |        |  |  |  |           +--|
+|     |  |  |        |  |  |  |           |  |  +--Trifolium_isodon
+|     |  |  |        |  |  |  |           |  +--|
+|     |  |  |        |  |  |  |           |     |     +--Trifolium_miegeanum
+|     |  |  |        |  |  |  |           |     |  +--|
+|     |  |  |        |  |  |  |           |     |  |  +**Trifolium_obscurum
+|     |  |  |        |  |  |  |           |     +**|
+|     |  |  |        |  |  |  |           |        +**Trifolium_squarrosum
+|     |  |  |        |  |  |  |        +--|
+|     |  |  |        |  |  |  |        |  +--Trifolium_trichocephalum
+|     |  |  |        |  |  |  |     +**|
+|     |  |  |        |  |  |  |     |  +--Trifolium_leucanthum
+|     |  |  |        |  |  |  |  +--|
+|     |  |  |        |  |  |  |  |  |           +--Trifolium_angustifolium
+|     |  |  |        |  |  |  |  |  |        +--|
+|     |  |  |        |  |  |  |  |  |        |  +--Trifolium_dichroanthum
+|     |  |  |        |  |  |  |  |  |     +--|
+|     |  |  |        |  |  |  |  |  |     |  +--Trifolium_palaestinum
+|     |  |  |        |  |  |  |  |  |  +--|
+|     |  |  |        |  |  |  |  |  |  |  |  +--Trifolium_dasyurum
+|     |  |  |        |  |  |  |  |  |  |  +--|
+|     |  |  |        |  |  |  |  |  |  |     +**Trifolium_purpureum
+|     |  |  |        |  |  |  |  |  +--|
+|     |  |  |        |  |  |  |  |     |     +--Trifolium_canescens
+|     |  |  |        |  |  |  |  |     |  +--|
+|     |  |  |        |  |  |  |  |     |  |  +--Trifolium_ochroleucum
+|     |  |  |        |  |  |  |  |     +--|
+|     |  |  |        |  |  |  |  |        +--Trifolium_caucasicum
+|     |  |  |        |  |  |  +--|
+|     |  |  |        |  |  |     +--Trifolium_pannonicum
+|     |  |  |        |  +--|
+|     |  |  |        |     |        +--Trifolium_batmanicum
+|     |  |  |        |     |     +--|
+|     |  |  |        |     |     |  +**Trifolium_globosum
+|     |  |  |        |     |  +--|
+|     |  |  |        |     |  |  |     +--Trifolium_subterraneum_ssp_brachycalycinum
+|     |  |  |        |     |  |  |  +--|
+|     |  |  |        |     |  |  |  |  +**Trifolium_subterraneum_ssp_yanninicum
+|     |  |  |        |     |  |  +--|
+|     |  |  |        |     |  |     +--Trifolium_subterraneum_ssp_subterraneum
+|     |  |  |        |     +--|
+|     |  |  |        |        |        +--Trifolium_eriosphaerum
+|     |  |  |        |        |     +--|
+|     |  |  |        |        |     |  +--Trifolium_meduseum
+|     |  |  |        |        |  +--|
+|     |  |  |        |        |  |  |  +--Trifolium_pauciflorum
+|     |  |  |        |        |  |  +--|
+|     |  |  |        |        |  |     +--Trifolium_pilulare
+|     |  |  |        |        +--|
+|     |  |  |        |           +--Trifolium_israeliticum
+|     |  |  |     +--|
+|     |  |  |     |  |     +--Trifolium_eximium
+|     |  |  |     |  |  +--|
+|     |  |  |     |  |  |  +**Trifolium_lupinaster
+|     |  |  |     |  +--|
+|     |  |  |     |     +--Trifolium_gordejevii
+|     |  |  |  +--|
+|     |  |  |  |  |     +--Trifolium_alpinum
+|     |  |  |  |  |  +--|
+|     |  |  |  |  |  |  +--Trifolium_polyphyllum
+|     |  |  |  |  +**|
+|     |  |  |  |     |  +--Trifolium_glanduliferum
+|     |  |  |  |     +--|
+|     |  |  |  |        +--Trifolium_strictum
+|     |  |  +--|
+|     |  |     |      +--Trifolium_aureum
+|     |  |     |   +--|
+|     |  |     |   |  |        +--Trifolium_badium
+|     |  |     |   |  |     +--|
+|     |  |     |   |  |     |  +--Trifolium_rytidosemium
+|     |  |     |   |  |  +**|
+|     |  |     |   |  |  |  +--Trifolium_spadiceum
+|     |  |     |   |  +--|
+|     |  |     |   |     +--Trifolium_sintenisii
+|     |  |     +---|
+|     |  |         |                  +--Trifolium_billardieri
+|     |  |         |               +--|
+|     |  |         |               |  |  +--Trifolium_erubescens
+|     |  |         |               |  +--|
+|     |  |         |               |     +--Trifolium_philistaeum
+|     |  |         |            +**|
+|     |  |         |            |  |  +**Trifolium_phitosianum
+|     |  |         |            |  +--|
+|     |  |         |            |     +--Trifolium_praetermissum
+|     |  |         |         +--|
+|     |  |         |         |  |  +--Trifolium_brutium
+|     |  |         |         |  +--|
+|     |  |         |         |     |  +--Trifolium_micranthum
+|     |  |         |         |     +--|
+|     |  |         |         |        +--Trifolium_patens
+|     |  |         |      +--|
+|     |  |         |      |  +--Trifolium_boissieri
+|     |  |         |   +--|
+|     |  |         |   |  +--Trifolium_campestre
+|     |  |         +---|
+|     |  |             +**Trifolium_grandiflorum
+|     +--|
+|        +------------------Ononis_mitissima
+|
+|                                                        +--Lotus_angustissimus
+|                                                     +--|
+|                                                     |  +--Lotus_pedunculatus
+|                                                  +--|
+|                                                  |  |   +**Lotus_corniculatus
+|                                                  |  +---|
+|                                                  |      |     +--Lotus_glaber
+|                                                  |      |  +--|
+|                                                  |      |  |  +**Lotus_glinoides
+|                                                  |      +--|
+|                                                  |         +--Lotus_japonicus
+|                                               +--|
+|                                               |  +--Lotus_parviflorus
+|                                        +------|
+|                                        |      |     +--Lotus_edulis
+|                                        |      |  +--|
+|                                        |      |  |  +--Lotus_suaveolens
+|                                        |      +--|
+|                                        |         +--Lotus_glaucus
+|   +------------------------------------|
+|   |                                    +---------------Lotus_unifoliolatus
++---|
+    +------------Parochetus_communis
+
+Tree in newick format:
+
+(Cicer_arietinum:0.0851732683,((Galega_officinalis:0.0391145541,Galega_orientalis:0.0248194091):0.1099653023,((((Lathyrus_laevigatus:0.0115870012,Lathyrus_sativus:0.0217140481):0.0016234899,Pisum_sativum:0.0321158337):0.0147496088,((Vicia_cracca:0.0072521571,Vicia_villosa:0.0143446102):0.0121195343,Vicia_sativa:0.0809646242):0.0054283816):0.0190199989,((((Medicago_lupulina:0.0195286970,((Medicago_polymorpha:0.0051493533,(Medicago_sativa:0.0088863766,Medicago_truncatula:0.0113499758):0.0010658405):0.0083187766,Medicago_ruthenica:0.0054438213):0.0030767056):0.0361683230,((Melilotus_albus:0.0024636942,Melilotus_officinalis:0.0000011528):0.0086598250,Trigonella_foenum_graecum:0.0165113529):0.0378396131):0.0045961423,((((((((((((((((((((Trifolium_abyssinicum_A:0.0015009963,Trifolium_tembense:0.0050442546):0.0014700062,((Trifolium_africanum:0.0009929623,Trifolium_burchellianum:0.0000011528):0.0060858069,Trifolium_decorum_A:0.0098168927):0.0009709277):0.0019176560,((Trifolium_cryptopodium:0.0041481111,Trifolium_rueppellianum:0.0050661586):0.0000013903,(Trifolium_stolzii:0.0020170466,Trifolium_usambarense:0.0063281570):0.0084478743):0.0021933518):0.0008821069,Trifolium_simense:0.0020121461):0.0016032657,(Trifolium_lanceolatum:0.0019438470,Trifolium_polystachyum:0.0009208947):0.0019392244):0.0004197252,((((Trifolium_abyssinicum_B:0.0048819838,Trifolium_baccarinii:0.0000014124):0.0019272570,((Trifolium_decorum_B:0.0009739663,Trifolium_multinerve:0.0010113720):0.0010257205,Trifolium_schimperi:0.0098627522):0.0000014124):0.0020488591,((Trifolium_lugardii:0.0000011528,Trifolium_steudneri:0.0009467481):0.0009614586,Trifolium_quartinianum:0.0028604042):0.0028559031):0.0009118261,(Trifolium_mattirolianum:0.0068628134,Trifolium_spananthum:0.0030503679):0.0020070120):0.0016149502):0.0020261533,Trifolium_purseglovei:0.0092017370):0.0058953921,(Trifolium_bilineatum:0.0031880239,Trifolium_pichisermollii:0.0027662363):0.0023361397):0.0010037148,Trifolium_acaule:0.0029647062):0.0020354085,Trifolium_pseudostriatum:0.0059558351):0.0010086967,Trifolium_petitianum:0.0091420508):0.0000014124,(((Trifolium_cheranganiense:0.0032708367,Trifolium_masaiense:0.0046869393):0.0028982749,Trifolium_semipilosum:0.0037438085):0.0033194260,Trifolium_somalense:0.0100803326):0.0008769816):0.0010902855,((Trifolium_bullatum:0.0000011528,Trifolium_fragiferum:0.0029342356):0.0009228841,((Trifolium_clusii:0.0009754161,Trifolium_resupinatum:0.0009780430):0.0009775396,Trifolium_tomentosum:0.0009773943):0.0010308686):0.0175312982):0.0031331726,(((Trifolium_aintabense:0.0024551052,Trifolium_argutum:0.0052678627):0.0049447731,((Trifolium_mutabile:0.0000011528,Trifolium_vesiculosum:0.0000011528):0.0019373797,Trifolium_spumosum:0.0030160213):0.0043289363):0.0073418965,(Trifolium_physodes:0.0062029714,Trifolium_tumens:0.0136662068):0.0043704451):0.0005672249):0.0032047034,(((Trifolium_balansae:0.0019829700,Trifolium_michelianum:0.0009213485):0.0049733481,Trifolium_ornithopodioides:0.0019280558):0.0023424926,Trifolium_hybridum:0.0036542295):0.0039462090):0.0020807571,(((((((((((((Trifolium_albopurpureum:0.0009257355,Trifolium_dichotomum:0.0000011528):0.0000011528,Trifolium_amoenum:0.0027838005):0.0226286033,(Trifolium_ciliolatum:0.0042962670,(Trifolium_gracilentum:0.0024039159,Trifolium_palmeri:0.0013242682):0.0009422624):0.0075770655):0.0045905138,(Trifolium_bifidum:0.0000011528,Trifolium_oliganthum:0.0000011528):0.0062454610):0.0046603280,((Trifolium_microcephalum:0.0047947641,Trifolium_vernum:0.0028979709):0.0068324364,Trifolium_microdon:0.0093610164):0.0098248958):0.0008628526,((Trifolium_andersonii:0.0158709446,Trifolium_leibergii:0.0055745699):0.0009565258,((Trifolium_howellii:0.0030302869,Trifolium_macilentum:0.0012421696):0.0014453866,(Trifolium_nanum:0.0032716676,Trifolium_parryi:0.0075075449):0.0009092827):0.0010021386):0.0012961931):0.0009002856,(Trifolium_brandegei:0.0038983499,Trifolium_dasyphyllum:0.0054962400):0.0000011528):0.0008961281,((((Trifolium_argentinense:0.0009735446,Trifolium_polymorphum:0.0048044110):0.0000011528,Trifolium_riograndense:0.0000011528):0.0046372722,((((((Trifolium_barbigerum:0.0000011528,Trifolium_jokerstii:0.0000011528):0.0072659145,Trifolium_physanthum:0.0000014124):0.0092216407,Trifolium_cyathiferum:0.0089295160):0.0008757310,Trifolium_fucatum:0.0055202167):0.0008804054,(((Trifolium_buckwestiorum:0.0029350595,(Trifolium_polyodon:0.0019105015,Trifolium_variegatum:0.0000011528):0.0068910682):0.0029130506,Trifolium_wormskioldii:0.0019168326):0.0009836361,Trifolium_wigginsii:0.0000011528):0.0009000360):0.0000011528,(((Trifolium_chilense:0.0027346069,(Trifolium_obtusiflorum:0.0018159870,Trifolium_willdenovii:0.0000011528):0.0009058657):0.0000011528,(Trifolium_depauperatum:0.0038067293,Trifolium_trichocalyx:0.0018270948):0.0000011528):0.0009287992,(Trifolium_monanthum:0.0027249680,Trifolium_pinetorum:0.0009043385):0.0027631095):0.0008769815):0.0073626809):0.0001988810,(((Trifolium_beckwithii:0.0009997466,(Trifolium_latifolium:0.0000011528,((Trifolium_longipes:0.0019693181,(Trifolium_rusbyi:0.0000011528,Trifolium_rusbyi_ssp_oreganum:0.0019663755):0.0019737701):0.0029418775,Trifolium_longipes_ssp_elmeri:0.0000011528):0.0023456104):0.0016169071):0.0019480328,(((Trifolium_bolanderi:0.0040114377,Trifolium_lemmonii:0.0036438852):0.0000011528,Trifolium_kingii:0.0088825039):0.0009760375,Trifolium_owyheense:0.0039705356):0.0000013363):0.0009695561,(((Trifolium_douglasii:0.0070356092,Trifolium_eriocephalum:0.0029726784):0.0009507664,(Trifolium_plumosum:0.0030164921,Trifolium_thompsonii:0.0076878580):0.0010005669):0.0000011528,Trifolium_macrocephalum:0.0079009670):0.0032537707):0.0011095562):0.0009312730):0.0000013457,((((Trifolium_bejariense:0.0000011528,Trifolium_reflexum:0.0000011528):0.0000011528,Trifolium_carolinianum:0.0008851523):0.0054501897,(Trifolium_calcaricum:0.0009579662,Trifolium_virginicum:0.0000011528):0.0009296977):0.0017921934,Trifolium_stoloniferum:0.0026359758):0.0026697568):0.0013271645,(Trifolium_andinum:0.0030503663,(Trifolium_gymnocarpon:0.0045889105,Trifolium_haydenii:0.0038947457):0.0027435586):0.0034598361):0.0036513171,(Trifolium_amabile:0.0019564806,Trifolium_peruvianum:0.0000011528):0.0045550537):0.0024127212,Trifolium_breweri:0.0144475367):0.0069379054,(((Trifolium_ambiguum:0.0026706534,Trifolium_montanum_ssp_humboldtianum:0.0008830063):0.0023408642,Trifolium_montanum_ssp_montanum:0.0116076982):0.0090364776,(((Trifolium_cernuum:0.0056138856,(Trifolium_glomeratum:0.0018923243,(Trifolium_parnassii:0.0000011528,Trifolium_thalii:0.0000011528):0.0000011528):0.0048096986):0.0000013390,Trifolium_pallescens:0.0038387862):0.0008850043,((((Trifolium_isthmocarpum:0.0045259916,(Trifolium_nigrescens_ssp_meneghinianum:0.0122109149,((Trifolium_nigrescens_ssp_petrisavii:0.0009492360,Trifolium_occidentale:0.0019187466):0.0013025330,Trifolium_uniflorum:0.0107881661):0.0022197438):0.0000027922):0.0010875583,Trifolium_retusum:0.0000011528):0.0000011528,(Trifolium_nigrescens_ssp_nigrescens:0.0043759700,Trifolium_suffocatum:0.0017792404):0.0000011528):0.0038299769,Trifolium_repens:0.0047662704):0.0010583017):0.0098815387):0.0113411258):0.0026053697):0.0056136620,(((((((Trifolium_affine:0.0151053076,Trifolium_arvense:0.0076320665):0.0055390528,Trifolium_bocconei:0.0230745308):0.0025156310,((Trifolium_dalmaticum:0.0018779519,Trifolium_lucanicum:0.0037809532):0.0020587040,Trifolium_scabrum:0.0045466726):0.0150852840):0.0073906307,(((((((((Trifolium_alpestre:0.0028741298,Trifolium_longidentatum:0.0009543633):0.0000011528,Trifolium_medium:0.0019097206):0.0009541713,Trifolium_velebiticum:0.0009439049):0.0000011528,(Trifolium_patulum:0.0009409602,Trifolium_rubens:0.0000011528):0.0009415289):0.0010908853,(Trifolium_gemellum:0.0010652905,Trifolium_phleoides:0.0061571579):0.0017926211):0.0007547960,Trifolium_heldreichianum:0.0048726068):0.0000011528,((((Trifolium_andricum:0.0021857099,Trifolium_diffusum:0.0047259571):0.0056029495,Trifolium_pallidum:0.0048251665):0.0035203671,Trifolium_pratense:0.0090341106):0.0055473036,((Trifolium_barbeyi:0.0016895066,Trifolium_lappaceum:0.0009906290):0.0036234883,Trifolium_squamosum:0.0010462670):0.0044410401):0.0017718610):0.0053508921,(((Trifolium_incarnatum:0.0059205277,Trifolium_stellatum:0.0185989206):0.0096386690,(Trifolium_latinum:0.0009567616,Trifolium_striatum:0.0000011528):0.0099556310):0.0074401858,Trifolium_ligusticum:0.0227976050):0.0004011027):0.0000014124,Trifolium_noricum:0.0058000043):0.0018025029):0.0058199094,((Trifolium_cherleri:0.0114699792,Trifolium_hirtum:0.0029135912):0.0237287912,Trifolium_haussknechtii:0.0207755164):0.0081139388):0.0007582667,((((((((((Trifolium_alexandrinum:0.0000011528,Trifolium_apertum:0.0000011528):0.0020210821,(Trifolium_plebeium:0.0008732317,Trifolium_scutatum:0.0017534865):0.0035169765):0.0018492247,Trifolium_vavilovii:0.0020383152):0.0008413766,(Trifolium_constantinopolitanum:0.0008609093,(Trifolium_echinatum:0.0000011528,Trifolium_salmoneum:0.0000011528):0.0017695231):0.0044156973):0.0000011528,Trifolium_clypeatum:0.0088149478):0.0009634755,(Trifolium_isodon:0.0008555723,((Trifolium_miegeanum:0.0008801343,Trifolium_obscurum:0.0000011528):0.0017618122,Trifolium_squarrosum:0.0000011528):0.0000011528):0.0019303330):0.0024162763,Trifolium_trichocephalum:0.0086611137):0.0011296999,Trifolium_leucanthum:0.0148755686):0.0000011528,((((Trifolium_angustifolium:0.0045287399,Trifolium_dichroanthum:0.0064715688):0.0029712519,Trifolium_palaestinum:0.0110858708):0.0029503542,(Trifolium_dasyurum:0.0009030170,Trifolium_purpureum:0.0000011528):0.0169280605):0.0053711157,((Trifolium_canescens:0.0009111432,Trifolium_ochroleucum:0.0018179952):0.0009009829,Trifolium_caucasicum:0.0073188769):0.0026494687):0.0010184856):0.0022632877,Trifolium_pannonicum:0.0103382192):0.0127719913):0.0026755248,(((Trifolium_batmanicum:0.0010482615,Trifolium_globosum:0.0000011528):0.0080535671,((Trifolium_subterraneum_ssp_brachycalycinum:0.0010526299,Trifolium_subterraneum_ssp_yanninicum:0.0000011528):0.0013052488,Trifolium_subterraneum_ssp_subterraneum:0.0029210405):0.0083572006):0.0065150000,(((Trifolium_eriosphaerum:0.0049938704,Trifolium_meduseum:0.0067008652):0.0030535858,(Trifolium_pauciflorum:0.0010406451,Trifolium_pilulare:0.0010445890):0.0067176650):0.0092699779,Trifolium_israeliticum:0.0100676869):0.0022702618):0.0169969728):0.0087139490):0.0109937301,((Trifolium_eximium:0.0009720424,Trifolium_lupinaster:0.0000011528):0.0009459940,Trifolium_gordejevii:0.0009520545):0.0058688342):0.0090389950,((Trifolium_alpinum:0.0049253214,Trifolium_polyphyllum:0.0029333991):0.0128936753,(Trifolium_glanduliferum:0.0077887606,Trifolium_strictum:0.0147360793):0.0233522721):0.0006179029):0.0090201853,((Trifolium_aureum:0.0183212878,(((Trifolium_badium:0.0009404267,Trifolium_rytidosemium:0.0009527530):0.0028582913,Trifolium_spadiceum:0.0048265334):0.0000011528,Trifolium_sintenisii:0.0028316290):0.0056042173):0.0100368050,((((((Trifolium_billardieri:0.0018664818,(Trifolium_erubescens:0.0037552544,Trifolium_philistaeum:0.0009393394):0.0018671910):0.0056813199,(Trifolium_phitosianum:0.0000011528,Trifolium_praetermissum:0.0008482130):0.0018597269):0.0000011528,(Trifolium_brutium:0.0056852379,(Trifolium_micranthum:0.0067017574,Trifolium_patens:0.0109988458):0.0079054393):0.0020721528):0.0006695150,Trifolium_boissieri:0.0061968755):0.0052689490,Trifolium_campestre:0.0040545411):0.0061129335,Trifolium_grandiflorum:0.0000023625):0.0329808340):0.0346626410):0.0080872492):0.0037964249,Ononis_mitissima:0.1383476930):0.0014341847):0.0125782319):0.0046447310,((((((Lotus_angustissimus:0.0224449848,Lotus_pedunculatus:0.0141250825):0.0064882394,(Lotus_corniculatus:0.0000011528,((Lotus_glaber:0.0009074397,Lotus_glinoides:0.0000011528):0.0018104577,Lotus_japonicus:0.0093220380):0.0018264195):0.0325620770):0.0117424764,Lotus_parviflorus:0.0279433336):0.0160205064,((Lotus_edulis:0.0200472001,Lotus_suaveolens:0.0172844763):0.0050991699,Lotus_glaucus:0.0258695732):0.0143054313):0.0555114410,Lotus_unifoliolatus:0.1152447442):0.2681463107,Parochetus_communis:0.0944667381):0.0357986941);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/dna_M980_249_1604.phy/output_files/iqtree/inference/pars_1.treefile -m "GTR{0.884538,1.65982,1.34388,0.575654,3.40602}+F{0.309164,0.194289,0.223739,0.272809}+I{0.355815}+R4{0.393942,0.494901,0.166252,1.74619,0.0654237,4.13464,0.0185669,13.1539}" --length 1604
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data1/dna_M980_249_1604.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data1/dna_M980_249_1604.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Sep 20 22:56:15 2025
+Total CPU time used: 168.002 seconds (0h:2m:48s)
+Total wall-clock time used: 168.475 seconds (0h:2m:48s)
+

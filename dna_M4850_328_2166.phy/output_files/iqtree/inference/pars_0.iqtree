@@ -1,0 +1,845 @@
+IQ-TREE 3.0.1 built Sep 14 2025
+
+Input file name: /home/suny/Downloads/VAN_TRAINING_DATA/data3/dna_M4850_328_2166.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 328 sequences with 2166 nucleotide sites
+Number of constant sites: 1218 (= 56.2327% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1218 (= 56.2327% of all sites)
+Number of parsimony informative sites: 620
+Number of distinct site patterns: 1415
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+I+R4       -23131.160   47598.319 +    0.993   48195.369 +     0.98   51392.985 +    0.895
+TVM+F+I+R4       -23137.148   47608.296 -  0.00677   48203.164 -   0.0199   51397.281 +    0.105
+TIM3+F+I+R4      -23180.906   47693.812 - 1.82e-21   48286.503 - 1.59e-20   51477.117 - 4.82e-19
+TPM3u+F+I+R4     -23186.437   47702.874 - 1.96e-23   48293.394 - 5.07e-22   51480.498 - 8.89e-20
+TIM+F+I+R4       -23195.638   47723.277 - 7.29e-28   48315.968 - 6.36e-27   51506.581 - 1.93e-25
+K3Pu+F+I+R4      -23205.010   47740.020 - 1.69e-31   48330.540 - 4.36e-30   51517.644 - 7.63e-28
+TN+F+I+R4        -23260.811   47851.622 - 9.84e-56   48442.142 - 2.54e-54   51629.246 - 4.45e-52
+TIM2+F+I+R4      -23257.303   47846.606 - 1.21e-54   48439.297 - 1.05e-53   51629.910 - 3.19e-52
+HKY+F+I+R4       -23270.099   47868.197 - 2.48e-59   48456.552 - 1.89e-57   51640.140 - 1.92e-54
+TPM2u+F+I+R4     -23267.331   47864.662 - 1.45e-58   48455.182 - 3.75e-57   51642.286 - 6.56e-55
+TVM+I+R4         -23344.322   48016.643 - 1.44e-91   48604.998 -  1.1e-89   51788.587 - 1.12e-86
+TVMe+I+R4        -23344.336   48016.673 - 1.42e-91   48605.027 - 1.08e-89   51788.616 -  1.1e-86
+TVMe+I+R4        -23344.336   48016.673 - 1.42e-91   48605.027 - 1.08e-89   51788.616 -  1.1e-86
+K3Pu+I+R4        -23353.835   48031.671 - 7.87e-95   48615.711 - 5.19e-92   51792.253 - 1.79e-87
+K3P+I+R4         -23353.838   48031.675 - 7.85e-95   48615.715 - 5.18e-92   51792.257 - 1.78e-87
+K3P+I+R4         -23353.838   48031.675 - 7.85e-95   48615.715 - 5.18e-92   51792.257 - 1.78e-87
+GTR+I+R4         -23344.215   48018.431 -  5.9e-92   48608.951 - 1.52e-90   51796.055 - 2.67e-88
+SYM+I+R4         -23344.218   48018.435 - 5.89e-92   48608.955 - 1.52e-90   51796.059 - 2.66e-88
+SYM+I+R4         -23344.218   48018.435 - 5.89e-92   48608.955 - 1.52e-90   51796.059 - 2.66e-88
+TIM+I+R4         -23353.720   48033.441 - 3.25e-95   48619.635 -  7.3e-93   51799.703 - 4.31e-89
+TIMe+I+R4        -23353.733   48033.467 - 3.21e-95   48619.661 -  7.2e-93   51799.729 - 4.25e-89
+TIMe+I+R4        -23353.733   48033.467 - 3.21e-95   48619.661 -  7.2e-93   51799.729 - 4.25e-89
+TPM2u+I+R4       -23393.472   48110.944 - 4.81e-112   48694.984 - 3.17e-109   51871.526 - 1.09e-104
+TPM2+I+R4        -23393.480   48110.961 - 4.77e-112   48695.000 - 3.15e-109   51871.542 - 1.08e-104
+TPM2+I+R4        -23393.480   48110.961 - 4.77e-112   48695.000 - 3.15e-109   51871.542 - 1.08e-104
+HKY+I+R4         -23400.199   48122.398 - 1.57e-114   48704.289 - 3.02e-111   51877.300 - 6.09e-106
+K2P+I+R4         -23400.204   48122.408 - 1.56e-114   48704.299 - 3.01e-111   51877.309 - 6.06e-106
+K2P+I+R4         -23400.204   48122.408 - 1.56e-114   48704.299 - 3.01e-111   51877.309 - 6.06e-106
+TIM2+I+R4        -23393.382   48112.764 - 1.94e-112   48698.959 - 4.35e-110   51879.027 - 2.57e-106
+TIM2e+I+R4       -23393.395   48112.789 - 1.91e-112   48698.984 - 4.29e-110   51879.052 - 2.53e-106
+TIM2e+I+R4       -23393.395   48112.789 - 1.91e-112   48698.984 - 4.29e-110   51879.052 - 2.53e-106
+TPM3u+I+R4       -23397.352   48118.705 - 9.93e-114   48702.745 - 6.55e-111   51879.287 - 2.25e-106
+TPM3+I+R4        -23397.378   48118.756 - 9.67e-114   48702.796 - 6.38e-111   51879.338 - 2.2e-106
+TPM3+I+R4        -23397.378   48118.756 - 9.67e-114   48702.796 - 6.38e-111   51879.338 - 2.2e-106
+TN+I+R4          -23400.063   48124.126 - 6.6e-115   48708.166 - 4.35e-112   51884.708 - 1.5e-107
+TNe+I+R4         -23400.074   48124.148 - 6.53e-115   48708.188 - 4.31e-112   51884.730 - 1.48e-107
+TNe+I+R4         -23400.074   48124.148 - 6.53e-115   48708.188 - 4.31e-112   51884.730 - 1.48e-107
+TIM3+I+R4        -23397.186   48120.371 - 4.31e-114   48706.566 - 9.69e-112   51886.634 - 5.72e-108
+TIM3e+I+R4       -23397.194   48120.389 - 4.28e-114   48706.583 - 9.61e-112   51886.651 - 5.67e-108
+TIM3e+I+R4       -23397.194   48120.389 - 4.28e-114   48706.583 - 9.61e-112   51886.651 - 5.67e-108
+F81+F+I+R4       -23752.290   48830.579 - 2.6e-268   49416.774 - 5.84e-266   52596.842 - 3.45e-262
+F81+I+R4         -23855.697   49031.394 - 6.44e-312   49611.142 - 3.63e-308   52780.615 - 4.29e-302
+JC+I+R4          -23855.708   49031.417 - 6.37e-312   49611.164 - 3.59e-308   52780.637 - 4.24e-302
+JC+I+R4          -23855.708   49031.417 - 6.37e-312   49611.164 - 3.59e-308   52780.637 - 4.24e-302
+JC+I+R5          -23854.411   49032.822 - 3.15e-312   49616.862 - 2.08e-309   52793.404 - 7.16e-305
+JC+I+R3          -23877.145   49070.290 - 2.3e-320   49645.767 - 1.1e-315   52808.150 - 4.5e-308
+JC+R4            -23873.710   49065.421 - 2.63e-319   49643.030 - 4.32e-315   52808.961 -   3e-308
+JC+R5            -23872.540   49067.079 - 1.15e-319   49648.970 - 2.22e-316   52821.981 - 4.46e-311
+JC+R3            -23902.756   49119.511 -        0   49692.861 -        0   52851.690 - 1.58e-317
+JC+I+R2          -23989.569   49291.137 -        0   49862.366 -        0   53017.636 -        0
+JC+I+G4          -24084.373   49478.745 -        0   50047.858 -        0   53199.563 -        0
+JC+G4            -24150.080   49608.160 -        0   50175.162 -        0   53323.297 -        0
+JC+R2            -24157.485   49624.970 -        0   50194.082 -        0   53345.787 -        0
+JC+I             -24568.541   50445.081 -        0   51012.083 -        0   54160.218 -        0
+JC               -25591.510   52489.019 -        0   53053.916 -        0   56198.475 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+R4
+
+Rate parameter R:
+
+  A-C: 1.8330
+  A-G: 3.6353
+  A-T: 0.4624
+  C-G: 1.2005
+  C-T: 2.9265
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2759
+  pi(C) = 0.1642
+  pi(G) = 0.1732
+  pi(T) = 0.3867
+
+Rate matrix Q:
+
+  A   -0.9353    0.2537    0.5308    0.1508
+  C    0.4264    -1.556    0.1753    0.9543
+  G    0.8457    0.1662    -1.338    0.3261
+  T    0.1076    0.4051     0.146   -0.6587
+
+Model of rate heterogeneity: Invar+FreeRate with 4 categories
+Proportion of invariable sites: 0.4086
+Site proportion and rates:  (0.4374,0.8537) (0.1349,2.961) (0.01769,10.19) (0.001485,31.64)
+
+ Category  Relative_rate  Proportion
+  0         0              0.4086
+  1         0.8537         0.4374
+  2         2.961          0.1349
+  3         10.19          0.01769
+  4         31.64          0.001485
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -23131.1576 (s.e. 751.4877)
+Unconstrained log-likelihood (without tree): -14350.4387
+Number of free parameters (#branches + #model parameters): 668
+Akaike information criterion (AIC) score: 47598.3153
+Corrected Akaike information criterion (AICc) score: 48195.3654
+Bayesian information criterion (BIC) score: 51392.9811
+
+Total tree length (sum of branch lengths): 1.4734
+Sum of internal branch lengths: 0.5254 (35.6613% of tree length)
+
+WARNING: 106 near-zero internal branches (<0.0005) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Acroceras_excavatum' is drawn at root
+
++--Acroceras_excavatum
+|
+|        +----Acroceras_tonkinense
+|     +--|
+|     |  |     +--------------Acroceras_zizanioides
+|     |  |  +**|
+|     |  |  |  +----------Ottochloa_nodosa
+|     |  +--|
+|     |     |                +----------Alloteropsis_angusta
+|     |     |             +--|
+|     |     |             |  |      +**Alloteropsis_semialata_subsp_eckloniana
+|     |     |             |  +------|
+|     |     |             |         +--Alloteropsis_semialata_subsp_semialata
+|     |     |        +----|
+|     |     |        |    |      +--Alloteropsis_cimicina
+|     |     |        |    +------|
+|     |     |        |           |  +**Alloteropsis_paniculata
+|     |     |        |           +--|
+|     |     |        |              +--Alloteropsis_papillosa
+|     |     |     +**|
+|     |     |     |  |                                              +-----------Altoparadisium_chapadense
+|     |     |     |  |                                  +-----------|
+|     |     |     |  |                                  |           +---Arthropogon_villosus
+|     |     |     |  |                               +**|
+|     |     |     |  |                               |  |          +-----Mesosetum_chaseae
+|     |     |     |  |                               |  +----------|
+|     |     |     |  |                               |             +--Tatianyx_arnacites
+|     |     |     |  |                            +--|
+|     |     |     |  |                            |  |    +---Homolepis_glutinosa
+|     |     |     |  |                            |  +----|
+|     |     |     |  |                            |       +---------Homolepis_isocalycia
+|     |     |     |  |                         +**|
+|     |     |     |  |                         |  |           +-------------Cyphonanthus_discrepans
+|     |     |     |  |                         |  |  +--------|
+|     |     |     |  |                         |  |  |        +------Streptostachys_ramosa
+|     |     |     |  |                         |  +--|
+|     |     |     |  |                         |     |           +--Panicum_caricoides
+|     |     |     |  |                         |     |        +--|
+|     |     |     |  |                         |     |        |  +---Panicum_mertensii
+|     |     |     |  |                         |     +--------|
+|     |     |     |  |                         |              +---------Panicum_stenodes
+|     |     |     |  |                      +--|
+|     |     |     |  |                      |  |           +-------Apochloa_animarum
+|     |     |     |  |                      |  |        +--|
+|     |     |     |  |                      |  |        |  |           +--Apochloa_chnoodes
+|     |     |     |  |                      |  |        |  |        +--|
+|     |     |     |  |                      |  |        |  |        |  +--Apochloa_lorea
+|     |     |     |  |                      |  |        |  |     +--|
+|     |     |     |  |                      |  |        |  |     |  +--Apochloa_molinioides
+|     |     |     |  |                      |  |        |  |  +--|
+|     |     |     |  |                      |  |        |  |  |  +--Apochloa_poliophylla
+|     |     |     |  |                      |  |        |  +--|
+|     |     |     |  |                      |  |        |     |     +--Apochloa_cipoensis
+|     |     |     |  |                      |  |        |     |  +--|
+|     |     |     |  |                      |  |        |     |  |  |  +--Apochloa_steyermarkii
+|     |     |     |  |                      |  |        |     |  |  +--|
+|     |     |     |  |                      |  |        |     |  |     +----Panicum_subtiramulosum
+|     |     |     |  |                      |  |        |     +--|
+|     |     |     |  |                      |  |        |        +---------Apochloa_euprepes
+|     |     |     |  |                      |  |     +--|
+|     |     |     |  |                      |  |     |  |       +--Canastra_aristella
+|     |     |     |  |                      |  |     |  |  +----|
+|     |     |     |  |                      |  |     |  |  |    +----Canastra_lanceolata
+|     |     |     |  |                      |  |     |  +**|
+|     |     |     |  |                      |  |     |     |         +--Panicum_anceps
+|     |     |     |  |                      |  |     |     |  +------|
+|     |     |     |  |                      |  |     |     |  |      |  +--Panicum_rigidulum
+|     |     |     |  |                      |  |     |     |  |      +--|
+|     |     |     |  |                      |  |     |     |  |         +---Panicum_tenerum
+|     |     |     |  |                      |  |     |     +--|
+|     |     |     |  |                      |  |     |        |  +**Panicum_petersonii
+|     |     |     |  |                      |  |     |        +--|
+|     |     |     |  |                      |  |     |           +--Panicum_prionitis
+|     |     |     |  |                      |  |  +--|
+|     |     |     |  |                      |  |  |  +--Phanopyrum_gymnocarpon
+|     |     |     |  |                      |  +--|
+|     |     |     |  |                      |     +------------------Oplismenopsis_najada
+|     |     |     |  |              +-------|
+|     |     |     |  |              |       |     +------------------Anthaenantia_lanata
+|     |     |     |  |              |       |  +--|
+|     |     |     |  |              |       |  |  |     +-------Hymenachne_amplexicaulis
+|     |     |     |  |              |       |  |  |  +--|
+|     |     |     |  |              |       |  |  |  |  |     +-------Hymenachne_donacifolia
+|     |     |     |  |              |       |  |  |  |  |  +--|
+|     |     |     |  |              |       |  |  |  |  |  |  |  +---Panicum_grumosum
+|     |     |     |  |              |       |  |  |  |  |  |  +--|
+|     |     |     |  |              |       |  |  |  |  |  |     +--Panicum_pernambucense
+|     |     |     |  |              |       |  |  |  |  +--|
+|     |     |     |  |              |       |  |  |  |     |     +------Otachyrium_versicolor
+|     |     |     |  |              |       |  |  |  |     |  +--|
+|     |     |     |  |              |       |  |  |  |     |  |  |     +--Steinchisma_decipiens
+|     |     |     |  |              |       |  |  |  |     |  |  |  +--|
+|     |     |     |  |              |       |  |  |  |     |  |  |  |  +--Steinchisma_laxa
+|     |     |     |  |              |       |  |  |  |     |  |  +--|
+|     |     |     |  |              |       |  |  |  |     |  |     |  +--Steinchisma_hians
+|     |     |     |  |              |       |  |  |  |     |  |     +--|
+|     |     |     |  |              |       |  |  |  |     |  |        +--Steinchisma_spathellosa
+|     |     |     |  |              |       |  |  |  |     +--|
+|     |     |     |  |              |       |  |  |  |        +-----Plagiantha_tenella
+|     |     |     |  |              |       |  |  +--|
+|     |     |     |  |              |       |  |     |  +-----Panicum_hylaeicum
+|     |     |     |  |              |       |  |     +--|
+|     |     |     |  |              |       |  |        +--Panicum_pilosum
+|     |     |     |  |              |       +**|
+|     |     |     |  |              |          |                       +---Anthaenantiopsis_rojasiana
+|     |     |     |  |              |          |                    +--|
+|     |     |     |  |              |          |                    |  +--Panicum_tuerckheimii
+|     |     |     |  |              |          |                 +--|
+|     |     |     |  |              |          |                 |  +--Panicum_validum
+|     |     |     |  |              |          |        +--------|
+|     |     |     |  |              |          |        |        |  +------Hopia_obtusa
+|     |     |     |  |              |          |        |        +--|
+|     |     |     |  |              |          |        |           |                          +-----Paspalum_arundinellum
+|     |     |     |  |              |          |        |           |                       +--|
+|     |     |     |  |              |          |        |           |                       |  +----Paspalum_haumanii
+|     |     |     |  |              |          |        |           |                    +--|
+|     |     |     |  |              |          |        |           |                    |  +**Paspalum_wettsteinii
+|     |     |     |  |              |          |        |           |                 +**|
+|     |     |     |  |              |          |        |           |                 |  +--Paspalum_malacophyllum
+|     |     |     |  |              |          |        |           |              +**|
+|     |     |     |  |              |          |        |           |              |  |        +--Paspalum_conspersum
+|     |     |     |  |              |          |        |           |              |  |     +**|
+|     |     |     |  |              |          |        |           |              |  |     |  +--Paspalum_remotum
+|     |     |     |  |              |          |        |           |              |  |  +**|
+|     |     |     |  |              |          |        |           |              |  |  |  +--Paspalum_paniculatum
+|     |     |     |  |              |          |        |           |              |  +--|
+|     |     |     |  |              |          |        |           |              |     +--Paspalum_dilatatum
+|     |     |     |  |              |          |        |           |           +--|
+|     |     |     |  |              |          |        |           |           |  |  +-----Thrasya_glaziovii
+|     |     |     |  |              |          |        |           |           |  +--|
+|     |     |     |  |              |          |        |           |           |     +--Thrasya_petrosa
+|     |     |     |  |              |          |        |           |        +--|
+|     |     |     |  |              |          |        |           |        |  +--Paspalum_quadrifarium
+|     |     |     |  |              |          |        |           |     +--|
+|     |     |     |  |              |          |        |           |     |  +--Paspalum_nutans
+|     |     |     |  |              |          |        |           |  +--|
+|     |     |     |  |              |          |        |           |  |  +---Paspalum_conjugatum
+|     |     |     |  |              |          |        |           +--|
+|     |     |     |  |              |          |        |              +--Paspalum_vaginatum
+|     |     |     |  |              |          |     +**|
+|     |     |     |  |              |          |     |  |     +-----------------------Echinolaena_inflexa
+|     |     |     |  |              |          |     |  |  +--|
+|     |     |     |  |              |          |     |  |  |  |         +--Panicum_chapadense
+|     |     |     |  |              |          |     |  |  |  |  +------|
+|     |     |     |  |              |          |     |  |  |  |  |      +-----Panicum_piauiense
+|     |     |     |  |              |          |     |  |  |  +--|
+|     |     |     |  |              |          |     |  |  |     +-----Panicum_stoloniferum
+|     |     |     |  |              |          |     |  +--|
+|     |     |     |  |              |          |     |     +--------Ichnanthus_panicoides
+|     |     |     |  |              |          |  +**|
+|     |     |     |  |              |          |  |  |                     +--Axonopus_anceps
+|     |     |     |  |              |          |  |  |                  +**|
+|     |     |     |  |              |          |  |  |                  |  +-------Ophiochloa_hydrolithica
+|     |     |     |  |              |          |  |  |      +-----------|
+|     |     |     |  |              |          |  |  |      |           +--Axonopus_fissifolius
+|     |     |     |  |              |          |  |  |  +---|
+|     |     |     |  |              |          |  |  |  |   +---------------Streptostachys_asperifolia
+|     |     |     |  |              |          |  |  +--|
+|     |     |     |  |              |          |  |     |           +--Renvoizea_acicularifolia
+|     |     |     |  |              |          |  |     |        +**|
+|     |     |     |  |              |          |  |     |        |  |  +--Renvoizea_marauensis
+|     |     |     |  |              |          |  |     |        |  +**|
+|     |     |     |  |              |          |  |     |        |     |  +**Renvoizea_restingae
+|     |     |     |  |              |          |  |     |        |     +**|
+|     |     |     |  |              |          |  |     |        |        +--Renvoizea_sacciolepoides
+|     |     |     |  |              |          |  |     |     +**|
+|     |     |     |  |              |          |  |     |     |  +--Renvoizea_trinii
+|     |     |     |  |              |          |  |     |  +--|
+|     |     |     |  |              |          |  |     |  |  +--Renvoizea_vaginiviscosa
+|     |     |     |  |              |          |  |     +--|
+|     |     |     |  |              |          |  |        +--Renvoizea_durifolia
+|     |     |     |  |              |          +--|
+|     |     |     |  |              |             |     +--Ichnanthus_pallens
+|     |     |     |  |              |             +-----|
+|     |     |     |  |              |                   +--Ichnanthus_vicinus
+|     |     |     |  |           +--|
+|     |     |     |  |           |  |                                             +--Andropogon_gerardii
+|     |     |     |  |           |  |                                          +**|
+|     |     |     |  |           |  |                                          |  +---Schizachyrium_scoparium
+|     |     |     |  |           |  |                                       +--|
+|     |     |     |  |           |  |                                       |  +--Hyparrhenia_hirta
+|     |     |     |  |           |  |                                    +--|
+|     |     |     |  |           |  |                                    |  |              +--Bothriochloa_bladhii
+|     |     |     |  |           |  |                                    |  |           +--|
+|     |     |     |  |           |  |                                    |  |           |  +------Dichanthium_aristatum
+|     |     |     |  |           |  |                                    |  |        +--|
+|     |     |     |  |           |  |                                    |  |        |  +--Bothriochloa_ischaemum
+|     |     |     |  |           |  |                                    |  |     +--|
+|     |     |     |  |           |  |                                    |  |     |  |  +--Bothriochloa_saccharoides
+|     |     |     |  |           |  |                                    |  |     |  +**|
+|     |     |     |  |           |  |                                    |  |     |     +--Capillipedium_parviflorum
+|     |     |     |  |           |  |                                    |  |  +**|
+|     |     |     |  |           |  |                                    |  |  |  +-------Heteropogon_contortus
+|     |     |     |  |           |  |                                    |  +**|
+|     |     |     |  |           |  |                                    |     |        +**Cymbopogon_citratus
+|     |     |     |  |           |  |                                    |     |     +**|
+|     |     |     |  |           |  |                                    |     |     |  +**Cymbopogon_jwarancusa
+|     |     |     |  |           |  |                                    |     |  +--|
+|     |     |     |  |           |  |                                    |     |  |  |  +**Cymbopogon_flexuosus
+|     |     |     |  |           |  |                                    |     |  |  +--|
+|     |     |     |  |           |  |                                    |     |  |     +--Cymbopogon_pospischilii
+|     |     |     |  |           |  |                                    |     +--|
+|     |     |     |  |           |  |                                    |        +--Cymbopogon_commutatus
+|     |     |     |  |           |  |                                 +--|
+|     |     |     |  |           |  |                                 |  |  +--Coix_aquatica
+|     |     |     |  |           |  |                                 |  +--|
+|     |     |     |  |           |  |                                 |     +--Coix_lacryma_jobi
+|     |     |     |  |           |  |                              +--|
+|     |     |     |  |           |  |                              |  +--Sorghastrum_nutans
+|     |     |     |  |           |  |                           +**|
+|     |     |     |  |           |  |                           |  |  +-----Apluda_mutica
+|     |     |     |  |           |  |                           |  +**|
+|     |     |     |  |           |  |                           |     |  +--Eulalia_aurea
+|     |     |     |  |           |  |                           |     +--|
+|     |     |     |  |           |  |                           |        +-----Microstegium_vimineum
+|     |     |     |  |           |  |                        +**|
+|     |     |     |  |           |  |                        |  |     +--Imperata_cylindrica
+|     |     |     |  |           |  |                        |  |  +--|
+|     |     |     |  |           |  |                        |  |  |  +--Pogonatherum_paniceum
+|     |     |     |  |           |  |                        |  +**|
+|     |     |     |  |           |  |                        |     |  +--Ischaemum_koleostachys
+|     |     |     |  |           |  |                        |     +--|
+|     |     |     |  |           |  |                        |        +-------Ischaemum_santapaui
+|     |     |     |  |           |  |                     +--|
+|     |     |     |  |           |  |                     |  |        +-----Microstegium_nudum
+|     |     |     |  |           |  |                     |  |     +**|
+|     |     |     |  |           |  |                     |  |     |  +----Saccharum_officinarum
+|     |     |     |  |           |  |                     |  |  +**|
+|     |     |     |  |           |  |                     |  |  |  |                  +--Sorghum_amplum
+|     |     |     |  |           |  |                     |  |  |  |               +--|
+|     |     |     |  |           |  |                     |  |  |  |               |  |        +**Sorghum_angustum
+|     |     |     |  |           |  |                     |  |  |  |               |  |     +**|
+|     |     |     |  |           |  |                     |  |  |  |               |  |     |  |  +--Sorghum_exstans
+|     |     |     |  |           |  |                     |  |  |  |               |  |     |  +**|
+|     |     |     |  |           |  |                     |  |  |  |               |  |     |     +**Sorghum_grande
+|     |     |     |  |           |  |                     |  |  |  |               |  |  +--|
+|     |     |     |  |           |  |                     |  |  |  |               |  |  |  +--Sorghum_bulbosum
+|     |     |     |  |           |  |                     |  |  |  |               |  +--|
+|     |     |     |  |           |  |                     |  |  |  |               |     +**Sorghum_intrans
+|     |     |     |  |           |  |                     |  |  |  |            +--|
+|     |     |     |  |           |  |                     |  |  |  |            |  |        +--Sorghum_ecarinatum
+|     |     |     |  |           |  |                     |  |  |  |            |  |     +--|
+|     |     |     |  |           |  |                     |  |  |  |            |  |     |  +**Sorghum_matarankense
+|     |     |     |  |           |  |                     |  |  |  |            |  |  +**|
+|     |     |     |  |           |  |                     |  |  |  |            |  |  |  +**Sorghum_interjectum
+|     |     |     |  |           |  |                     |  |  |  |            |  +**|
+|     |     |     |  |           |  |                     |  |  |  |            |     |  +--Sorghum_stipoideum
+|     |     |     |  |           |  |                     |  |  |  |            |     +**|
+|     |     |     |  |           |  |                     |  |  |  |            |        +--Sorghum_timorense
+|     |     |     |  |           |  |                     |  |  |  |         +--|
+|     |     |     |  |           |  |                     |  |  |  |         |  +--Sorghum_leiocladum
+|     |     |     |  |           |  |                     |  |  |  |     +---|
+|     |     |     |  |           |  |                     |  |  |  |     |   +--Sorghum_purpureosericeum
+|     |     |     |  |           |  |                     |  |  |  |  +**|
+|     |     |     |  |           |  |                     |  |  |  |  |  |     +--Sorghum_laxiflorum
+|     |     |     |  |           |  |                     |  |  |  |  |  |  +**|
+|     |     |     |  |           |  |                     |  |  |  |  |  |  |  +**Sorghum_nitidum
+|     |     |     |  |           |  |                     |  |  |  |  |  +--|
+|     |     |     |  |           |  |                     |  |  |  |  |     +---Sorghum_macrospermum
+|     |     |     |  |           |  |                     |  |  |  +**|
+|     |     |     |  |           |  |                     |  |  |     |           +--Sorghum_arundinaceum
+|     |     |     |  |           |  |                     |  |  |     |        +**|
+|     |     |     |  |           |  |                     |  |  |     |        |  +**Sorghum_halepense
+|     |     |     |  |           |  |                     |  |  |     |     +--|
+|     |     |     |  |           |  |                     |  |  |     |     |  +--Sorghum_bicolor
+|     |     |     |  |           |  |                     |  |  |     |  +--|
+|     |     |     |  |           |  |                     |  |  |     |  |  +--Sorghum_propinquum
+|     |     |     |  |           |  |                     |  |  |     +**|
+|     |     |     |  |           |  |                     |  |  |        +---Sorghum_versicolor
+|     |     |     |  |           |  |                     |  +--|
+|     |     |     |  |           |  |                     |     +--Miscanthus_japonicus
+|     |     |     |  |           |  |                  +--|
+|     |     |     |  |           |  |                  |  |     +---Chrysopogon_fulvus
+|     |     |     |  |           |  |                  |  |  +--|
+|     |     |     |  |           |  |                  |  |  |  |  +--Chrysopogon_gryllus
+|     |     |     |  |           |  |                  |  |  |  +--|
+|     |     |     |  |           |  |                  |  |  |     +--Vetiveria_zizanioides
+|     |     |     |  |           |  |                  |  +**|
+|     |     |     |  |           |  |                  |     +---Ischaemum_afrum
+|     |     |     |  |           |  |               +--|
+|     |     |     |  |           |  |               |  |  +------Coelorachis_selloana
+|     |     |     |  |           |  |               |  +**|
+|     |     |     |  |           |  |               |     +--Phacelurus_digitatus
+|     |     |     |  |           |  |            +--|
+|     |     |     |  |           |  |            |  |     +---------Arthraxon_lanceolatus
+|     |     |     |  |           |  |            |  |  +--|
+|     |     |     |  |           |  |            |  |  |  +-----------Chionachne_koenigii
+|     |     |     |  |           |  |            |  +**|
+|     |     |     |  |           |  |            |     |  +--------Elionurus_muticus
+|     |     |     |  |           |  |            |     +--|
+|     |     |     |  |           |  |            |        |  +--Tripsacum_dactyloides
+|     |     |     |  |           |  |            |        +--|
+|     |     |     |  |           |  |            |           +---Zea_mays
+|     |     |     |  |           |  +------------|
+|     |     |     |  |           |               |               +--------Arundinella_deppeana
+|     |     |     |  |           |               +---------------|
+|     |     |     |  |           |                               |   +----Arundinella_hirta
+|     |     |     |  |           |                               +---|
+|     |     |     |  |           |                                   +--Arundinella_nepalensis
+|     |     |     |  |      +----|
+|     |     |     |  |      |    |  +-----------------Chasmanthium_latifolium
+|     |     |     |  |      |    +--|
+|     |     |     |  |      |       +--Gynerium_sagittatum
+|     |     |     |  |   +--|
+|     |     |     |  |   |  |                      +--Digitaria_ciliaris
+|     |     |     |  |   |  |                +-----|
+|     |     |     |  |   |  |                |     +**Digitaria_sanguinalis
+|     |     |     |  |   |  +----------------|
+|     |     |     |  |   |                   |      +**Digitaria_didactyla
+|     |     |     |  |   |                   |   +--|
+|     |     |     |  |   |                   |   |  +--Digitaria_setigera
+|     |     |     |  |   |                   +---|
+|     |     |     |  |   |                       +----------Digitaria_radicosa
+|     |     |     |  +---|
+|     |     |     |      |                   +--------------------Brachiaria_longiflora
+|     |     |     |      |                +--|
+|     |     |     |      |                |  |                    +--Brachiaria_pseudodichotoma
+|     |     |     |      |                |  |                 +**|
+|     |     |     |      |                |  |                 |  +--Scutachne_dura
+|     |     |     |      |                |  |              +**|
+|     |     |     |      |                |  |              |  |      +--Brachiaria_serrata
+|     |     |     |      |                |  |              |  |   +--|
+|     |     |     |      |                |  |              |  |   |  +--Urochloa_holosericea
+|     |     |     |      |                |  |              |  +---|
+|     |     |     |      |                |  |              |      +--Urochloa_comata
+|     |     |     |      |                |  |           +**|
+|     |     |     |      |                |  |           |  |                                +-----------Chaetium_bromoides
+|     |     |     |      |                |  |           |  |                             +**|
+|     |     |     |      |                |  |           |  |                             |  |  +--Urochloa_meziana
+|     |     |     |      |                |  |           |  |                             |  +**|
+|     |     |     |      |                |  |           |  |                             |     +-------Urochloa_platynota
+|     |     |     |      |                |  |           |  |                          +**|
+|     |     |     |      |                |  |           |  |                          |  |        +**Urochloa_echinolaenoides
+|     |     |     |      |                |  |           |  |                          |  |     +--|
+|     |     |     |      |                |  |           |  |                          |  |     |  |  +--Urochloa_glumaris
+|     |     |     |      |                |  |           |  |                          |  |     |  +**|
+|     |     |     |      |                |  |           |  |                          |  |     |     +--Urochloa_setigera
+|     |     |     |      |                |  |           |  |                          |  |  +--|
+|     |     |     |      |                |  |           |  |                          |  |  |  +----Urochloa_mosambicensis
+|     |     |     |      |                |  |           |  |                          |  +**|
+|     |     |     |      |                |  |           |  |                          |     |      +**Urochloa_lata
+|     |     |     |      |                |  |           |  |                          |     |   +**|
+|     |     |     |      |                |  |           |  |                          |     |   |  +--Urochloa_rudis
+|     |     |     |      |                |  |           |  |                          |     +---|
+|     |     |     |      |                |  |           |  |                          |         +--Urochloa_panicoides
+|     |     |     |      |                |  |           |  |                       +--|
+|     |     |     |      |                |  |           |  |                       |  |                  +--Eriochloa_acuminata
+|     |     |     |      |                |  |           |  |                       |  |               +**|
+|     |     |     |      |                |  |           |  |                       |  |               |  +**Eriochloa_montevidensis
+|     |     |     |      |                |  |           |  |                       |  |            +**|
+|     |     |     |      |                |  |           |  |                       |  |            |  +--Eriochloa_nana
+|     |     |     |      |                |  |           |  |                       |  |         +**|
+|     |     |     |      |                |  |           |  |                       |  |         |  |  +**Eriochloa_polystachya
+|     |     |     |      |                |  |           |  |                       |  |         |  +**|
+|     |     |     |      |                |  |           |  |                       |  |         |     +**Eriochloa_setosa
+|     |     |     |      |                |  |           |  |                       |  |  +------|
+|     |     |     |      |                |  |           |  |                       |  |  |      +--Eriochloa_punctata
+|     |     |     |      |                |  |           |  |                       |  +--|
+|     |     |     |      |                |  |           |  |                       |     |   +----Urochloa_nigropedata
+|     |     |     |      |                |  |           |  |                       |     +---|
+|     |     |     |      |                |  |           |  |                       |         +--Urochloa_villosa
+|     |     |     |      |                |  |           |  |                    +**|
+|     |     |     |      |                |  |           |  |                    |  |        +**Urochloa_brizantha
+|     |     |     |      |                |  |           |  |                    |  |   +----|
+|     |     |     |      |                |  |           |  |                    |  |   |    +--Urochloa_decumbens
+|     |     |     |      |                |  |           |  |                    |  +---|
+|     |     |     |      |                |  |           |  |                    |      +-----Urochloa_ruziziensis
+|     |     |     |      |                |  |           |  |                 +--|
+|     |     |     |      |                |  |           |  |                 |  |      +---Urochloa_arrecta
+|     |     |     |      |                |  |           |  |                 |  |  +---|
+|     |     |     |      |                |  |           |  |                 |  |  |   |  +--Urochloa_discifera
+|     |     |     |      |                |  |           |  |                 |  |  |   +--|
+|     |     |     |      |                |  |           |  |                 |  |  |      +**Urochloa_platyphylla
+|     |     |     |      |                |  |           |  |                 |  +**|
+|     |     |     |      |                |  |           |  |                 |     +--Urochloa_leersioides
+|     |     |     |      |                |  |           |  |              +**|
+|     |     |     |      |                |  |           |  |              |  |          +--Urochloa_bovonei
+|     |     |     |      |                |  |           |  |              |  |       +**|
+|     |     |     |      |                |  |           |  |              |  |       |  +--Urochloa_subulifolia
+|     |     |     |      |                |  |           |  |              |  +-------|
+|     |     |     |      |                |  |           |  |              |          +**Urochloa_jubata
+|     |     |     |      |                |  |           |  |           +**|
+|     |     |     |      |                |  |           |  |           |  |               +**Megathyrsus_infestus
+|     |     |     |      |                |  |           |  |           |  |     +---------|
+|     |     |     |      |                |  |           |  |           |  |     |         +----Megathyrsus_maximus
+|     |     |     |      |                |  |           |  |           |  |  +**|
+|     |     |     |      |                |  |           |  |           |  |  |  |  +----------Urochloa_dura
+|     |     |     |      |                |  |           |  |           |  |  |  +--|
+|     |     |     |      |                |  |           |  |           |  |  |     |      +**Urochloa_dyctioneura
+|     |     |     |      |                |  |           |  |           |  |  |     +------|
+|     |     |     |      |                |  |           |  |           |  |  |            +--Urochloa_humidicola
+|     |     |     |      |                |  |           |  |           |  +**|
+|     |     |     |      |                |  |           |  |           |     +-----Urochloa_lachnantha
+|     |     |     |      |                |  |           |  |        +**|
+|     |     |     |      |                |  |           |  |        |  |        +**Eriochloa_meyeriana
+|     |     |     |      |                |  |           |  |        |  |  +-----|
+|     |     |     |      |                |  |           |  |        |  |  |     +----Urochloa_mutica
+|     |     |     |      |                |  |           |  |        |  +--|
+|     |     |     |      |                |  |           |  |        |     +-----Urochloa_deflexa
+|     |     |     |      |                |  |           |  |     +**|
+|     |     |     |      |                |  |           |  |     |  |     +--Urochloa_arizonica
+|     |     |     |      |                |  |           |  |     |  |  +**|
+|     |     |     |      |                |  |           |  |     |  |  |  +**Urochloa_mollis
+|     |     |     |      |                |  |           |  |     |  +--|
+|     |     |     |      |                |  |           |  |     |     +--Urochloa_fusca
+|     |     |     |      |                |  |           |  |  +--|
+|     |     |     |      |                |  |           |  |  |  +-------Eriochloa_sericea
+|     |     |     |      |                |  |           |  +**|
+|     |     |     |      |                |  |           |     +---Urochloa_foliosa
+|     |     |     |      |                |  |        +--|
+|     |     |     |      |                |  |        |  |  +--Urochloa_adspersa
+|     |     |     |      |                |  |        |  +**|
+|     |     |     |      |                |  |        |     |     +**Urochloa_distachya
+|     |     |     |      |                |  |        |     |  +--|
+|     |     |     |      |                |  |        |     |  |  +**Urochloa_subquadripara
+|     |     |     |      |                |  |        |     +--|
+|     |     |     |      |                |  |        |        +--Urochloa_plantaginea
+|     |     |     |      |                |  |     +--|
+|     |     |     |      |                |  |     |  |  +--Urochloa_lorentziana
+|     |     |     |      |                |  |     |  +--|
+|     |     |     |      |                |  |     |     |  +--Urochloa_oblita
+|     |     |     |      |                |  |     |     +**|
+|     |     |     |      |                |  |     |        |  +**Urochloa_paucispicata
+|     |     |     |      |                |  |     |        +**|
+|     |     |     |      |                |  |     |           +**Urochloa_texana
+|     |     |     |      |                |  |  +--|
+|     |     |     |      |                |  |  |  |        +----------Eriochloa_distachya
+|     |     |     |      |                |  |  |  |     +--|
+|     |     |     |      |                |  |  |  |     |  +--Panicum_deustum
+|     |     |     |      |                |  |  |  |  +**|
+|     |     |     |      |                |  |  |  |  |  |            +----Leucophrys_mesocoma
+|     |     |     |      |                |  |  |  |  |  |         +--|
+|     |     |     |      |                |  |  |  |  |  |         |  +--Tricholaena_monachne
+|     |     |     |      |                |  |  |  |  |  |   +-----|
+|     |     |     |      |                |  |  |  |  |  |   |     |  +---Melinis_minutiflora
+|     |     |     |      |                |  |  |  |  |  |   |     +--|
+|     |     |     |      |                |  |  |  |  |  |   |        +---Melinis_repens
+|     |     |     |      |                |  |  |  |  |  +---|
+|     |     |     |      |                |  |  |  |  |      |        +--Moorochloa_eruciformis
+|     |     |     |      |                |  |  |  |  |      +--------|
+|     |     |     |      |                |  |  |  |  |               +--Moorochloa_malacodes
+|     |     |     |      |                |  |  |  +--|
+|     |     |     |      |                |  |  |     |   +--Rupichloa_acuminata
+|     |     |     |      |                |  |  |     +---|
+|     |     |     |      |                |  |  |         +**Rupichloa_decidua
+|     |     |     |      |                |  +--|
+|     |     |     |      |                |     |         +**Thuarea_involuta
+|     |     |     |      |                |     +---------|
+|     |     |     |      |                |               +**Yvesia_madagascariensis
+|     |     |     |      |             +--|
+|     |     |     |      |             |  |                    +----Panicum_aquaticum
+|     |     |     |      |             |  |                 +**|
+|     |     |     |      |             |  |                 |  +-----------------Panicum_pedersenii
+|     |     |     |      |             |  |              +--|
+|     |     |     |      |             |  |              |  +**Panicum_dichotomiflorum
+|     |     |     |      |             |  |           +**|
+|     |     |     |      |             |  |           |  +--Panicum_laetum
+|     |     |     |      |             |  |        +**|
+|     |     |     |      |             |  |        |  |              +--Panicum_bergii
+|     |     |     |      |             |  |        |  |           +**|
+|     |     |     |      |             |  |        |  |           |  +--Panicum_miliaceum
+|     |     |     |      |             |  |        |  |        +--|
+|     |     |     |      |             |  |        |  |        |  |  +---------Panicum_fauriei
+|     |     |     |      |             |  |        |  |        |  +--|
+|     |     |     |      |             |  |        |  |        |     +------Panicum_nephelophilum
+|     |     |     |      |             |  |        |  |     +**|
+|     |     |     |      |             |  |        |  |     |  |  +--Panicum_capillare
+|     |     |     |      |             |  |        |  |     |  +**|
+|     |     |     |      |             |  |        |  |     |     +--Panicum_stramineum
+|     |     |     |      |             |  |        |  |  +--|
+|     |     |     |      |             |  |        |  |  |  +--Urochloa_venosa
+|     |     |     |      |             |  |        |  +**|
+|     |     |     |      |             |  |        |     |     +--Panicum_cervicatum
+|     |     |     |      |             |  |        |     |  +--|
+|     |     |     |      |             |  |        |     |  |  +--Panicum_rudgei
+|     |     |     |      |             |  |        |     +--|
+|     |     |     |      |             |  |        |        |           +--Panicum_chloroleucum
+|     |     |     |      |             |  |        |        |        +**|
+|     |     |     |      |             |  |        |        |        |  +--Panicum_tricholaenoides
+|     |     |     |      |             |  |        |        |     +**|
+|     |     |     |      |             |  |        |        |     |  +**Panicum_racemosum
+|     |     |     |      |             |  |        |        |  +--|
+|     |     |     |      |             |  |        |        |  |  +--Panicum_virgatum
+|     |     |     |      |             |  |        |        +--|
+|     |     |     |      |             |  |        |           |  +--Panicum_mystasipum
+|     |     |     |      |             |  |        |           +--|
+|     |     |     |      |             |  |        |              +--Panicum_olyroides
+|     |     |     |      |             |  |     +--|
+|     |     |     |      |             |  |     |  |   +**Panicum_coloratum
+|     |     |     |      |             |  |     |  +---|
+|     |     |     |      |             |  |     |      +------Panicum_repens
+|     |     |     |      |             |  +-----|
+|     |     |     |      |             |        +-------------Panicum_elephantipes
+|     |     |     |      |        +----|
+|     |     |     |      |        |    |                              +--Cenchrus_agrimonioides
+|     |     |     |      |        |    |                           +**|
+|     |     |     |      |        |    |                           |  +--Cenchrus_calyculatus
+|     |     |     |      |        |    |                        +**|
+|     |     |     |      |        |    |                        |  |     +**Cenchrus_echinatus
+|     |     |     |      |        |    |                        |  |  +--|
+|     |     |     |      |        |    |                        |  |  |  +**Cenchrus_myosuroides
+|     |     |     |      |        |    |                        |  +**|
+|     |     |     |      |        |    |                        |     +-----Cenchrus_pilosus
+|     |     |     |      |        |    |                     +--|
+|     |     |     |      |        |    |                     |  |  +--Cenchrus_ciliaris
+|     |     |     |      |        |    |                     |  +--|
+|     |     |     |      |        |    |                     |     +**Cenchrus_setigerus
+|     |     |     |      |        |    |                  +--|
+|     |     |     |      |        |    |                  |  +--Pennisetum_flaccidum
+|     |     |     |      |        |    |               +**|
+|     |     |     |      |        |    |               |  |  +--Pennisetum_longissimum
+|     |     |     |      |        |    |               |  +--|
+|     |     |     |      |        |    |               |     +----Pennisetum_montanum
+|     |     |     |      |        |    |            +--|
+|     |     |     |      |        |    |            |  |  +---Pennisetum_glaucum
+|     |     |     |      |        |    |            |  +--|
+|     |     |     |      |        |    |            |     +----Pennisetum_setaceum
+|     |     |     |      |        |    |         +--|
+|     |     |     |      |        |    |         |  |  +----Pennisetum_alopecuroides
+|     |     |     |      |        |    |         |  +**|
+|     |     |     |      |        |    |         |     +-----Pennisetum_villosum
+|     |     |     |      |        |    |      +--|
+|     |     |     |      |        |    |      |  |                    +---Ixophorus_unisetus
+|     |     |     |      |        |    |      |  |                 +--|
+|     |     |     |      |        |    |      |  |                 |  +---Zuloagaea_bulbosa
+|     |     |     |      |        |    |      |  |              +--|
+|     |     |     |      |        |    |      |  |              |  +--Setaria_grisebachii
+|     |     |     |      |        |    |      |  |           +--|
+|     |     |     |      |        |    |      |  |           |  +---Setaria_lachnea
+|     |     |     |      |        |    |      |  |        +**|
+|     |     |     |      |        |    |      |  |        |  |        +--Paspalidium_aversum
+|     |     |     |      |        |    |      |  |        |  |     +--|
+|     |     |     |      |        |    |      |  |        |  |     |  +**Paspalidium_distans
+|     |     |     |      |        |    |      |  |        |  |  +--|
+|     |     |     |      |        |    |      |  |        |  |  |  +--Paspalidium_jubiflorum
+|     |     |     |      |        |    |      |  |        |  +--|
+|     |     |     |      |        |    |      |  |        |     |        +**Setaria_italica
+|     |     |     |      |        |    |      |  |        |     |     +**|
+|     |     |     |      |        |    |      |  |        |     |     |  +--Setaria_verticillata
+|     |     |     |      |        |    |      |  |        |     +-----|
+|     |     |     |      |        |    |      |  |        |           +---Setaria_viridis
+|     |     |     |      |        |    |      |  |     +--|
+|     |     |     |      |        |    |      |  |     |  |  +--Paspalidium_geminatum
+|     |     |     |      |        |    |      |  |     |  +**|
+|     |     |     |      |        |    |      |  |     |     |     +--Stenotaphrum_dimidiatum
+|     |     |     |      |        |    |      |  |     |     +-----|
+|     |     |     |      |        |    |      |  |     |           +--Stenotaphrum_secundatum
+|     |     |     |      |        |    |      |  |  +**|
+|     |     |     |      |        |    |      |  |  |  |              +--Setaria_barbata
+|     |     |     |      |        |    |      |  |  |  |           +--|
+|     |     |     |      |        |    |      |  |  |  |           |  +**Setaria_poiretiana
+|     |     |     |      |        |    |      |  |  |  |        +**|
+|     |     |     |      |        |    |      |  |  |  |        |  |    +----Setaria_pumila
+|     |     |     |      |        |    |      |  |  |  |        |  +----|
+|     |     |     |      |        |    |      |  |  |  |        |       +-----Setaria_sphacelata
+|     |     |     |      |        |    |      |  |  |  |     +**|
+|     |     |     |      |        |    |      |  |  |  |     |  |  +--Setaria_geniculata
+|     |     |     |      |        |    |      |  |  |  |     |  +--|
+|     |     |     |      |        |    |      |  |  |  |     |     +-----Setaria_parviflora
+|     |     |     |      |        |    |      |  |  |  |  +--|
+|     |     |     |      |        |    |      |  |  |  |  |  |  +--Setaria_palmifolia
+|     |     |     |      |        |    |      |  |  |  |  |  +--|
+|     |     |     |      |        |    |      |  |  |  |  |     +--Setaria_plicata
+|     |     |     |      |        |    |      |  |  |  +**|
+|     |     |     |      |        |    |      |  |  |     |     +--Spinifex_littoreus
+|     |     |     |      |        |    |      |  |  |     |  +--|
+|     |     |     |      |        |    |      |  |  |     |  |  +**Spinifex_sericeus
+|     |     |     |      |        |    |      |  |  |     +--|
+|     |     |     |      |        |    |      |  |  |        +-----Zygochloa_paradoxa
+|     |     |     |      |        |    |      |  +**|
+|     |     |     |      |        |    |      |     +---------Panicum_antidotale
+|     |     |     |      |        |    +------|
+|     |     |     |      |        |           +------Pseudoraphis_paradoxa
+|     |     |     |      |     +**|
+|     |     |     |      |     |  |                    +**Dichanthelium_acuminatum
+|     |     |     |      |     |  |                 +--|
+|     |     |     |      |     |  |                 |  +**Dichanthelium_lanuginosum
+|     |     |     |      |     |  |              +--|
+|     |     |     |      |     |  |              |  +-----Dichanthelium_sabulorum
+|     |     |     |      |     |  |           +--|
+|     |     |     |      |     |  |           |  |  +-------Dichanthelium_clandestinum
+|     |     |     |      |     |  |           |  +**|
+|     |     |     |      |     |  |           |     +--Dichanthelium_koolauense
+|     |     |     |      |     |  |        +--|
+|     |     |     |      |     |  |        |  +----Panicum_cumbucana
+|     |     |     |      |     |  +--------|
+|     |     |     |      |     |           |        +--Panicum_adenophorum
+|     |     |     |      |     |           +--------|
+|     |     |     |      |     |                    +**Panicum_claytonii
+|     |     |     |      |  +**|
+|     |     |     |      |  |  +------Panicum_longipedicellatum
+|     |     |     |      +**|
+|     |     |     |         |  +--------Neurachne_alopecuroides
+|     |     |     |         +**|
+|     |     |     |            |                 +--Panicum_cyanescens
+|     |     |     |            |           +-----|
+|     |     |     |            |           |     |     +**Panicum_parvifolium
+|     |     |     |            |           |     |  +--|
+|     |     |     |            |           |     |  |  +--Panicum_schwackeanum
+|     |     |     |            |           |     +**|
+|     |     |     |            |           |        +**Panicum_wettsteinii
+|     |     |     |            |        +**|
+|     |     |     |            |        |  +----------Sacciolepis_indica
+|     |     |     |            |     +--|
+|     |     |     |            |     |  +-----Panicum_verrucosum
+|     |     |     |            |  +**|
+|     |     |     |            |  |  |  +--Panicum_millegrana
+|     |     |     |            |  |  +--|
+|     |     |     |            |  |     +--Panicum_sellowii
+|     |     |     |            +--|
+|     |     |     |               +------Panicum_trichanthum
+|     |     |  +--|
+|     |     |  |  |                    +--Echinochloa_chacoensis
+|     |     |  |  |                 +--|
+|     |     |  |  |                 |  |     +**Echinochloa_crus_galli
+|     |     |  |  |                 |  |  +**|
+|     |     |  |  |                 |  |  |  +**Echinochloa_crus_pavonis
+|     |     |  |  |                 |  +--|
+|     |     |  |  |                 |     +**Echinochloa_frumentacea
+|     |     |  |  +-----------------|
+|     |     |  |                    +----Echinochloa_colona
+|     |     +**|
+|     |        |     +--Panicum_cordovense
+|     |        |  +--|
+|     |        |  |  |     +----Panicum_missionum
+|     |        |  |  |  +**|
+|     |        |  |  |  |  +--Panicum_rhizogonum
+|     |        |  |  +**|
+|     |        |  |     +--Panicum_ovuliferum
+|     |        +--|
+|     |           |  +--Panicum_pantrichum
+|     |           +--|
+|     |              +--Panicum_penicillatum
+|  +--|
+|  |  |  +-----Cyrtococcum_patens
+|  |  +--|
+|  |     +----------Pseudechinolaena_polystachya
++--|
+|  |       +--Oplismenus_burmannii
+|  +-------|
+|          |     +**Oplismenus_compositus
+|          |  +--|
+|          |  |  +--Oplismenus_undulatifolius
+|          +--|
+|             +--Poecilostachys_bromoides
+|
+|        +**Lasiacis_divaricata
+|     +**|
+|     |  +**Lasiacis_ligulata
+|  +**|
+|  |  +--Lasiacis_rugelii
++--|
+   |  +--Lasiacis_ruscifolia
+   +**|
+      +-----Lasiacis_sorghoidea
+
+Tree in newick format:
+
+(Acroceras_excavatum:0.0004835373,(((Acroceras_tonkinense:0.0045870745,((Acroceras_zizanioides:0.0116003788,Ottochloa_nodosa:0.0085101805):0.0000021053,(((((Alloteropsis_angusta:0.0089064134,(Alloteropsis_semialata_subsp_eckloniana:0.0000010099,Alloteropsis_semialata_subsp_semialata:0.0004639163):0.0060049491):0.0016449189,(Alloteropsis_cimicina:0.0013814775,(Alloteropsis_paniculata:0.0000010099,Alloteropsis_papillosa:0.0016706640):0.0011075069):0.0058734934):0.0042801510,((((((((((Altoparadisium_chapadense:0.0095852472,Arthropogon_villosus:0.0038518386):0.0092813213,(Mesosetum_chaseae:0.0047492569,Tatianyx_arnacites:0.0022681399):0.0088308472):0.0001893127,(Homolepis_glutinosa:0.0034149269,Homolepis_isocalycia:0.0085002555):0.0044174457):0.0009642018,((Cyphonanthus_discrepans:0.0111163422,Streptostachys_ramosa:0.0055306747):0.0071433151,((Panicum_caricoides:0.0010300302,Panicum_mertensii:0.0036017483):0.0019087937,Panicum_stenodes:0.0084641417):0.0076016354):0.0007088393):0.0000010099,((((Apochloa_animarum:0.0068291373,((((Apochloa_chnoodes:0.0004899720,Apochloa_lorea:0.0019789148):0.0009756715,Apochloa_molinioides:0.0014664682):0.0004863474,Apochloa_poliophylla:0.0024432602):0.0004871529,((Apochloa_cipoensis:0.0014720120,(Apochloa_steyermarkii:0.0024429376,Panicum_subtiramulosum:0.0039996714):0.0009864678):0.0009624632,Apochloa_euprepes:0.0084383629):0.0005004232):0.0014606879):0.0028951885,((Canastra_aristella:0.0014704490,Canastra_lanceolata:0.0039376618):0.0043882333,((Panicum_anceps:0.0024864978,(Panicum_rigidulum:0.0011631615,Panicum_tenerum:0.0038090463):0.0009057089):0.0058750103,(Panicum_petersonii:0.0003414614,Panicum_prionitis:0.0020798418):0.0016283949):0.0029388848):0.0000010099):0.0009591774,Phanopyrum_gymnocarpon:0.0029338576):0.0004721608,Oplismenopsis_najada:0.0151327724):0.0004815141):0.0014390960,((Anthaenantia_lanata:0.0149467646,((Hymenachne_amplexicaulis:0.0063034803,((Hymenachne_donacifolia:0.0068010963,(Panicum_grumosum:0.0034158373,Panicum_pernambucense:0.0004776703):0.0011517154):0.0013104457,((Otachyrium_versicolor:0.0061519029,((Steinchisma_decipiens:0.0030043374,Steinchisma_laxa:0.0004743110):0.0004980544,(Steinchisma_hians:0.0004896989,Steinchisma_spathellosa:0.0014749778):0.0009729232):0.0014077596):0.0019823112,Plagiantha_tenella:0.0048556163):0.0009507201):0.0024454086):0.0005143967,(Panicum_hylaeicum:0.0049055973,Panicum_pilosum:0.0005739596):0.0014333522):0.0013099710):0.0024228862,((((((Anthaenantiopsis_rojasiana:0.0038470510,Panicum_tuerckheimii:0.0029289059):0.0016632381,Panicum_validum:0.0024648835):0.0015687930,(Hopia_obtusa:0.0059081248,(((((((((Paspalum_arundinellum:0.0051478428,Paspalum_haumanii:0.0039176656):0.0008356320,Paspalum_wettsteinii:0.0000010099):0.0018947296,Paspalum_malacophyllum:0.0009603917):0.0000010099,(((Paspalum_conspersum:0.0014596032,Paspalum_remotum:0.0009651863):0.0000010099,Paspalum_paniculatum:0.0014274522):0.0000010099,Paspalum_dilatatum:0.0004623162):0.0004623005):0.0000010099,(Thrasya_glaziovii:0.0053474708,Thrasya_petrosa:0.0009663184):0.0025445799):0.0004971532,Paspalum_quadrifarium:0.0027530376):0.0004674414,Paspalum_nutans:0.0009656118):0.0008869468,Paspalum_conjugatum:0.0032618152):0.0004914504,Paspalum_vaginatum:0.0009164279):0.0028640609):0.0008805255):0.0071157796,((Echinolaena_inflexa:0.0187654870,((Panicum_chapadense:0.0005291269,Panicum_piauiense:0.0048670037):0.0057561505,Panicum_stoloniferum:0.0054047816):0.0011893120):0.0017729550,Ichnanthus_panicoides:0.0071129668):0.0009289202):0.0000010099,((((Axonopus_anceps:0.0011206288,Ophiochloa_hydrolithica:0.0068121259):0.0002425623,Axonopus_fissifolius:0.0026419515):0.0094635829,Streptostachys_asperifolia:0.0124345440):0.0032668362,((((Renvoizea_acicularifolia:0.0004833111,(Renvoizea_marauensis:0.0004757699,(Renvoizea_restingae:0.0000010099,Renvoizea_sacciolepoides:0.0019907305):0.0000010099):0.0000787309):0.0003961607,Renvoizea_trinii:0.0019238628):0.0000010099,Renvoizea_vaginiviscosa:0.0009510861):0.0004740857,Renvoizea_durifolia:0.0009538434):0.0004805086):0.0004860548):0.0004538734,(Ichnanthus_pallens:0.0014529876,Ichnanthus_vicinus:0.0028423140):0.0052421424):0.0018853359):0.0000010099):0.0067269993,((((((((((((Andropogon_gerardii:0.0014616739,Schizachyrium_scoparium:0.0034315011):0.0000010099,Hyparrhenia_hirta:0.0024029008):0.0009515891,(((((Bothriochloa_bladhii:0.0014737726,Dichanthium_aristatum:0.0054848974):0.0004813855,Bothriochloa_ischaemum:0.0009584220):0.0004775296,(Bothriochloa_saccharoides:0.0009630115,Capillipedium_parviflorum:0.0019313334):0.0000010099):0.0019499778,Heteropogon_contortus:0.0064629794):0.0004530421,(((Cymbopogon_citratus:0.0000010099,Cymbopogon_jwarancusa:0.0000010099):0.0004611558,(Cymbopogon_flexuosus:0.0000024395,Cymbopogon_pospischilii:0.0009737991):0.0004922323):0.0009718547,Cymbopogon_commutatus:0.0024368622):0.0004722395):0.0000010099):0.0009513369,(Coix_aquatica:0.0024056406,Coix_lacryma_jobi:0.0014541911):0.0014590946):0.0004730778,Sorghastrum_nutans:0.0028793925):0.0004764789,(Apluda_mutica:0.0049447405,(Eulalia_aurea:0.0019414486,Microstegium_vimineum:0.0049770681):0.0009615221):0.0004589942):0.0000010099,((Imperata_cylindrica:0.0029428805,Pogonatherum_paniceum:0.0013929086):0.0014677610,(Ischaemum_koleostachys:0.0009517310,Ischaemum_santapaui:0.0065560474):0.0014361716):0.0000010099):0.0000010099,(((Microstegium_nudum:0.0053947362,Saccharum_officinarum:0.0039523003):0.0000010099,((((((Sorghum_amplum:0.0004920620,(((Sorghum_angustum:0.0000010099,(Sorghum_exstans:0.0004942984,Sorghum_grande:0.0000010099):0.0000010099):0.0000010099,Sorghum_bulbosum:0.0004736704):0.0004690690,Sorghum_intrans:0.0000010099):0.0009361460):0.0009393097,(((Sorghum_ecarinatum:0.0014902524,Sorghum_matarankense:0.0000010099):0.0004953798,Sorghum_interjectum:0.0000010099):0.0000010099,(Sorghum_stipoideum:0.0028850214,Sorghum_timorense:0.0014311283):0.0000010099):0.0000010099):0.0009618947,Sorghum_leiocladum:0.0014510845):0.0005153459,Sorghum_purpureosericeum:0.0015094072):0.0038031410,((Sorghum_laxiflorum:0.0009667230,Sorghum_nitidum:0.0000010099):0.0000010099,Sorghum_macrospermum:0.0033689518):0.0009687703):0.0004550073,((((Sorghum_arundinaceum:0.0004738012,Sorghum_halepense:0.0000010099):0.0000010099,Sorghum_bicolor:0.0009418034):0.0004698937,Sorghum_propinquum:0.0004920123):0.0014886249,Sorghum_versicolor:0.0034251532):0.0004066424):0.0000010099):0.0000010099,Miscanthus_japonicus:0.0014309091):0.0004745526):0.0004739132,((Chrysopogon_fulvus:0.0033684733,(Chrysopogon_gryllus:0.0009519562,Vetiveria_zizanioides:0.0024248887):0.0009594058):0.0014235299,Ischaemum_afrum:0.0034454182):0.0000010099):0.0004767262,(Coelorachis_selloana:0.0059015413,Phacelurus_digitatus:0.0023995208):0.0000010099):0.0014129956,((Arthraxon_lanceolatus:0.0083182291,Chionachne_koenigii:0.0098133316):0.0014736260,(Elionurus_muticus:0.0074590579,(Tripsacum_dactyloides:0.0024235277,Zea_mays:0.0033561646):0.0004742816):0.0004881342):0.0000010099):0.0028006701,(Arundinella_deppeana:0.0070044078,(Arundinella_hirta:0.0046291927,Arundinella_nepalensis:0.0013013622):0.0037032699):0.0125971672):0.0100985930):0.0004852275,(Chasmanthium_latifolium:0.0144335908,Gynerium_sagittatum:0.0028341515):0.0025267005):0.0043005373,((Digitaria_ciliaris:0.0014704875,Digitaria_sanguinalis:0.0000010099):0.0050141948,((Digitaria_didactyla:0.0000010099,Digitaria_setigera:0.0030454986):0.0012081690,Digitaria_radicosa:0.0090853279):0.0031899336):0.0132615952):0.0008014306,((((((Brachiaria_longiflora:0.0168374527,(((((((Brachiaria_pseudodichotoma:0.0028441857,Scutachne_dura:0.0009204059):0.0004496472,((Brachiaria_serrata:0.0023709096,Urochloa_holosericea:0.0028451916):0.0013832151,Urochloa_comata:0.0018617661):0.0037136756):0.0000010099,(((((((((((Chaetium_bromoides:0.0100244386,(Urochloa_meziana:0.0005050641,Urochloa_platynota:0.0065081753):0.0004209574):0.0000010099,(((Urochloa_echinolaenoides:0.0003388180,(Urochloa_glumaris:0.0007018775,Urochloa_setigera:0.0007013475):0.0003562053):0.0023289432,Urochloa_mosambicensis:0.0041666755):0.0011065468,((Urochloa_lata:0.0000010099,Urochloa_rudis:0.0004715320):0.0000010099,Urochloa_panicoides:0.0004861437):0.0032482183):0.0000010099):0.0000010099,(((((Eriochloa_acuminata:0.0010094095,Eriochloa_montevidensis:0.0000010099):0.0000010099,Eriochloa_nana:0.0004830971):0.0000010099,(Eriochloa_polystachya:0.0000010099,Eriochloa_setosa:0.0004608566):0.0004611980):0.0000010099,Eriochloa_punctata:0.0004698199):0.0054249384,(Urochloa_nigropedata:0.0040565141,Urochloa_villosa:0.0016699333):0.0032911309):0.0011041772):0.0023123964,((Urochloa_brizantha:0.0000010099,Urochloa_decumbens:0.0014318366):0.0042587963,Urochloa_ruziziensis:0.0047245175):0.0037445817):0.0000010099,((Urochloa_arrecta:0.0038013427,(Urochloa_discifera:0.0004743065,Urochloa_platyphylla:0.0000010099):0.0019073072):0.0037903643,Urochloa_leersioides:0.0018901597):0.0000010099):0.0004677767,((Urochloa_bovonei:0.0004757596,Urochloa_subulifolia:0.0020261255):0.0000010099,Urochloa_jubata:0.0000010099):0.0065945570):0.0004539410,(((Megathyrsus_infestus:0.0004590054,Megathyrsus_maximus:0.0039363345):0.0077547039,(Urochloa_dura:0.0088649397,(Urochloa_dyctioneura:0.0000010099,Urochloa_humidicola:0.0005297800):0.0054392439):0.0011509365):0.0003653533,Urochloa_lachnantha:0.0050122475):0.0003543776):0.0004571953,((Eriochloa_meyeriana:0.0000010099,Urochloa_mutica:0.0040184788):0.0049989230,Urochloa_deflexa:0.0048531110):0.0010651626):0.0000010099,((Urochloa_arizonica:0.0005203452,Urochloa_mollis:0.0000010099):0.0004609884,Urochloa_fusca:0.0004667466):0.0009197491):0.0000010099,Eriochloa_sericea:0.0062005446):0.0004616974,Urochloa_foliosa:0.0032284900):0.0004472923):0.0000019807,(Urochloa_adspersa:0.0023755466,((Urochloa_distachya:0.0000010099,Urochloa_subquadripara:0.0000010099):0.0028535884,Urochloa_plantaginea:0.0019116106):0.0024255895):0.0004540255):0.0022985515,(Urochloa_lorentziana:0.0024107106,(Urochloa_oblita:0.0028265164,(Urochloa_paucispicata:0.0004553715,Urochloa_texana:0.0000010099):0.0000020948):0.0000021320):0.0018497897):0.0013364864,(((Eriochloa_distachya:0.0085499124,Panicum_deustum:0.0019677129):0.0004675809,(((Leucophrys_mesocoma:0.0038868978,Tricholaena_monachne:0.0004693334):0.0004632873,(Melinis_minutiflora:0.0036191692,Melinis_repens:0.0038326964):0.0020762617):0.0047604194,(Moorochloa_eruciformis:0.0014665028,Moorochloa_malacodes:0.0009317284):0.0070957491):0.0031273175):0.0000010099,(Rupichloa_acuminata:0.0021316085,Rupichloa_decidua:0.0000010099):0.0036843039):0.0005578611):0.0009960784,(Thuarea_involuta:0.0000010099,Yvesia_madagascariensis:0.0000010099):0.0079969638):0.0010980613):0.0022642791,((((((Panicum_aquaticum:0.0043047454,Panicum_pedersenii:0.0139625598):0.0001450369,Panicum_dichotomiflorum:0.0000010099):0.0029026776,Panicum_laetum:0.0018901226):0.0000010099,(((((Panicum_bergii:0.0009523549,Panicum_miliaceum:0.0019071998):0.0000022770,(Panicum_fauriei:0.0080305145,Panicum_nephelophilum:0.0059902642):0.0022740100):0.0004685276,(Panicum_capillare:0.0014173299,Panicum_stramineum:0.0020438161):0.0000010099):0.0000010099,Urochloa_venosa:0.0023711526):0.0018419103,((Panicum_cervicatum:0.0004884432,Panicum_rudgei:0.0014844185):0.0029495267,((((Panicum_chloroleucum:0.0005096629,Panicum_tricholaenoides:0.0019326085):0.0000010099,Panicum_racemosum:0.0000010099):0.0000010099,Panicum_virgatum:0.0029825905):0.0029945392,(Panicum_mystasipum:0.0004961618,Panicum_olyroides:0.0021915925):0.0021985709):0.0029742029):0.0014862149):0.0000010099):0.0003767871,(Panicum_coloratum:0.0000010099,Panicum_repens:0.0060880063):0.0034440866):0.0008988996,Panicum_elephantipes:0.0108498213):0.0047822027):0.0019240422,(((((((((Cenchrus_agrimonioides:0.0009614689,Cenchrus_calyculatus:0.0019114361):0.0000010099,((Cenchrus_echinatus:0.0000010099,Cenchrus_myosuroides:0.0004598908):0.0013780186,Cenchrus_pilosus:0.0048518916):0.0004613788):0.0000010099,(Cenchrus_ciliaris:0.0014982913,Cenchrus_setigerus:0.0004498039):0.0023303244):0.0027645448,Pennisetum_flaccidum:0.0013847967):0.0016599665,(Pennisetum_longissimum:0.0017952101,Pennisetum_montanum:0.0045112521):0.0022549834):0.0000010099,(Pennisetum_glaucum:0.0035280351,Pennisetum_setaceum:0.0045916479):0.0009173892):0.0005148926,(Pennisetum_alopecuroides:0.0044719458,Pennisetum_villosum:0.0053058559):0.0003729078):0.0028723879,(((((((Ixophorus_unisetus:0.0037246311,Zuloagaea_bulbosa:0.0031984669):0.0008797308,Setaria_grisebachii:0.0016862260):0.0006722014,Setaria_lachnea:0.0034280752):0.0013256914,(((Paspalidium_aversum:0.0009833706,Paspalidium_distans:0.0004481937):0.0009760757,Paspalidium_jubiflorum:0.0004736741):0.0009614132,((Setaria_italica:0.0000010099,Setaria_verticillata:0.0009261418):0.0000010099,Setaria_viridis:0.0037616450):0.0046822634):0.0009041032):0.0000010099,(Paspalidium_geminatum:0.0029756953,(Stenotaphrum_dimidiatum:0.0009291697,Stenotaphrum_secundatum:0.0009542530):0.0047941605):0.0004359351):0.0009110191,(((((Setaria_barbata:0.0013955334,Setaria_poiretiana:0.0000010099):0.0018650845,(Setaria_pumila:0.0038698307,Setaria_sphacelata:0.0049211797):0.0043097147):0.0000010099,(Setaria_geniculata:0.0009425892,Setaria_parviflora:0.0047659586):0.0023261715):0.0004456895,(Setaria_palmifolia:0.0027932281,Setaria_plicata:0.0004632676):0.0009359357):0.0027924793,((Spinifex_littoreus:0.0004651623,Spinifex_sericeus:0.0000010099):0.0013925866,Zygochloa_paradoxa:0.0048222990):0.0018645742):0.0004600135):0.0000010099,Panicum_antidotale:0.0083263040):0.0004497315):0.0004878953,Pseudoraphis_paradoxa:0.0058098806):0.0056409206):0.0044549108,(((((Dichanthelium_acuminatum:0.0000010099,Dichanthelium_lanuginosum:0.0000010099):0.0008375612,Dichanthelium_sabulorum:0.0050210933):0.0005966556,(Dichanthelium_clandestinum:0.0065856328,Dichanthelium_koolauense:0.0014377100):0.0000010099):0.0019203199,Panicum_cumbucana:0.0044622425):0.0015563789,(Panicum_adenophorum:0.0015559993,Panicum_claytonii:0.0004603312):0.0073880382):0.0076077217):0.0001858908,Panicum_longipedicellatum:0.0058862059):0.0000010099,(Neurachne_alopecuroides:0.0076539038,(((((Panicum_cyanescens:0.0005102919,((Panicum_parvifolium:0.0000010099,Panicum_schwackeanum:0.0018577859):0.0004982969,Panicum_wettsteinii:0.0000010099):0.0000010099):0.0052954753,Sacciolepis_indica:0.0086978890):0.0001436684,Panicum_verrucosum:0.0046741190):0.0009864269,(Panicum_millegrana:0.0009493135,Panicum_sellowii:0.0014418403):0.0019143391):0.0000010099,Panicum_trichanthum:0.0059401076):0.0014498687):0.0004497367):0.0000010099):0.0032950037):0.0000010099,((Echinochloa_chacoensis:0.0024662682,((Echinochloa_crus_galli:0.0000010099,Echinochloa_crus_pavonis:0.0000010099):0.0000010099,Echinochloa_frumentacea:0.0000010099):0.0013842462):0.0013209657,Echinochloa_colona:0.0046087295):0.0143560109):0.0006579445,((Panicum_cordovense:0.0010246746,((Panicum_missionum:0.0042858838,Panicum_rhizogonum:0.0009747207):0.0000010099,Panicum_ovuliferum:0.0004660834):0.0000010099):0.0006283912,(Panicum_pantrichum:0.0016223352,Panicum_penicillatum:0.0022093166):0.0011817395):0.0026505962):0.0000010099):0.0021021056):0.0027826203,(Cyrtococcum_patens:0.0052795734,Pseudechinolaena_polystachya:0.0086965779):0.0008990810):0.0004737300,(Oplismenus_burmannii:0.0026037572,((Oplismenus_compositus:0.0000010099,Oplismenus_undulatifolius:0.0004635645):0.0009352704,Poecilostachys_bromoides:0.0028100880):0.0013624072):0.0067130003):0.0004708207,(((Lasiacis_divaricata:0.0000010099,Lasiacis_ligulata:0.0000010099):0.0000010099,Lasiacis_rugelii:0.0004756327):0.0000010099,(Lasiacis_ruscifolia:0.0019517076,Lasiacis_sorghoidea:0.0050376970):0.0004569338):0.0009521544);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/dna_M4850_328_2166.phy/output_files/iqtree/inference/pars_0.treefile -m "GTR{1.83298,3.63527,0.462441,1.20055,2.92651}+F{0.275918,0.164173,0.173174,0.386735}+I{0.40856}+R4{0.437352,0.853738,0.134917,2.96059,0.017686,10.1891,0.00148452,31.6448}" --length 2166
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data3/dna_M4850_328_2166.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data3/dna_M4850_328_2166.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Tue Sep 23 00:29:42 2025
+Total CPU time used: 405.397 seconds (0h:6m:45s)
+Total wall-clock time used: 407.037 seconds (0h:6m:47s)
+

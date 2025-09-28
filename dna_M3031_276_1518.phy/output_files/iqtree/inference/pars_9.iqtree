@@ -1,0 +1,827 @@
+IQ-TREE 3.0.1 built Sep 14 2025
+
+Input file name: /home/suny/Downloads/VAN_TRAINING_DATA/data2/dna_M3031_276_1518.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 9
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 276 sequences with 1518 nucleotide sites
+Number of constant sites: 934 (= 61.5283% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 934 (= 61.5283% of all sites)
+Number of parsimony informative sites: 425
+Number of distinct site patterns: 793
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM3+R5
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TIM3+R5          -20205.520   41531.041 -  0.00134   42187.592 +    0.135   44513.124 +    0.323
+TIM3e+R5         -20205.565   41531.130 -  0.00129   42187.682 +    0.129   44513.213 +    0.309
+TIM3e+R5         -20205.565   41531.130 -  0.00129   42187.682 +    0.129   44513.213 +    0.309
+TIM3+F+R5        -20196.616   41519.233 +    0.493   42184.918 +    0.514   44517.292 -   0.0401
+TIM3+I+R5        -20206.201   41534.402 - 0.000251   42193.987 -  0.00552   44521.810 -  0.00419
+TIM3e+I+R5       -20206.260   41534.520 - 0.000236   42194.106 -   0.0052   44521.929 -  0.00395
+TIM3e+I+R5       -20206.260   41534.520 - 0.000236   42194.106 -   0.0052   44521.929 -  0.00395
+TIM3+F+I+R5      -20196.156   41520.312 +    0.287   42189.063 +   0.0647   44523.696 -  0.00163
+TIM3+I+R4        -20214.871   41547.742 - 3.18e-07   42201.271 - 0.000145   44524.501 -  0.00109
+TIM3e+I+R4       -20214.877   41547.755 - 3.16e-07   42201.283 - 0.000144   44524.513 -  0.00109
+TIM3e+I+R4       -20214.877   41547.755 - 3.16e-07   42201.283 - 0.000144   44524.513 -  0.00109
+TPM3u+R5         -20215.377   41548.755 - 1.91e-07   42202.283 - 8.71e-05   44525.513 - 0.000658
+TPM3+R5          -20215.427   41548.855 - 1.82e-07   42202.383 - 8.29e-05   44525.613 - 0.000626
+TPM3+R5          -20215.427   41548.855 - 1.82e-07   42202.383 - 8.29e-05   44525.613 - 0.000626
+GTR+R5           -20205.074   41534.147 - 0.000285   42196.777 -  0.00137   44526.881 - 0.000332
+SYM+R5           -20205.090   41534.179 -  0.00028   42196.810 -  0.00134   44526.913 - 0.000327
+SYM+R5           -20205.090   41534.179 -  0.00028   42196.810 -  0.00134   44526.913 - 0.000327
+TPM3u+I+R4       -20221.166   41558.331 - 1.59e-09   42208.846 - 3.27e-06   44529.764 - 7.86e-05
+TPM3+I+R4        -20221.167   41558.335 - 1.59e-09   42208.850 - 3.27e-06   44529.768 - 7.84e-05
+TPM3+I+R4        -20221.167   41558.335 - 1.59e-09   42208.850 - 3.27e-06   44529.768 - 7.84e-05
+GTR+F+R5         -20195.931   41521.861 +    0.132   42193.689 -   0.0064   44530.570 - 5.25e-05
+TIM3+F+I+R4      -20208.455   41540.911 - 9.67e-06   42203.541 - 4.64e-05   44533.645 - 1.13e-05
+TPM3u+I+R5       -20215.795   41551.590 - 4.64e-08   42208.142 - 4.66e-06   44533.674 - 1.11e-05
+TPM3+I+R5        -20215.837   41551.674 - 4.45e-08   42208.225 - 4.47e-06   44533.757 - 1.07e-05
+TPM3+I+R5        -20215.837   41551.674 - 4.45e-08   42208.225 - 4.47e-06   44533.757 - 1.07e-05
+GTR+I+R5         -20205.565   41537.131 -  6.4e-05   42202.816 - 6.67e-05   44535.190 - 5.21e-06
+SYM+I+R5         -20205.616   41537.232 - 6.08e-05   42202.918 - 6.34e-05   44535.291 - 4.96e-06
+SYM+I+R5         -20205.616   41537.232 - 6.08e-05   42202.918 - 6.34e-05   44535.291 - 4.96e-06
+TN+F+R5          -20210.042   41544.083 - 1.98e-06   42206.714 - 9.51e-06   44536.817 - 2.31e-06
+GTR+F+I+R5       -20195.414   41522.827 +   0.0817   42197.742 - 0.000844   44536.861 - 2.26e-06
+TVM+R5           -20214.450   41550.900 - 6.55e-08   42210.486 - 1.44e-06   44538.309 -  1.1e-06
+GTR+I+R4         -20214.450   41550.901 - 6.55e-08   42210.486 - 1.44e-06   44538.309 -  1.1e-06
+SYM+I+R4         -20214.451   41550.901 - 6.55e-08   42210.487 - 1.44e-06   44538.310 -  1.1e-06
+SYM+I+R4         -20214.451   41550.901 - 6.55e-08   42210.487 - 1.44e-06   44538.310 -  1.1e-06
+TVMe+R5          -20214.498   41550.997 - 6.24e-08   42210.582 - 1.37e-06   44538.405 - 1.04e-06
+TVMe+R5          -20214.498   41550.997 - 6.24e-08   42210.582 - 1.37e-06   44538.405 - 1.04e-06
+TN+F+I+R5        -20209.375   41544.751 - 1.42e-06   42210.436 - 1.48e-06   44542.809 - 1.15e-07
+TIM+F+R5         -20209.423   41544.846 - 1.35e-06   42210.531 - 1.41e-06   44542.904 -  1.1e-07
+TIM2+F+R5        -20209.534   41545.069 - 1.21e-06   42210.754 - 1.26e-06   44543.128 - 9.85e-08
+TVM+I+R4         -20220.683   41561.366 -  3.5e-10   42217.917 - 3.51e-08   44543.449 - 8.39e-08
+TVMe+I+R4        -20220.691   41561.381 - 3.47e-10   42217.933 - 3.48e-08   44543.465 - 8.32e-08
+TVMe+I+R4        -20220.691   41561.381 - 3.47e-10   42217.933 - 3.48e-08   44543.465 - 8.32e-08
+TVM+I+R5         -20214.671   41553.341 - 1.93e-08   42215.971 - 9.29e-08   44546.075 - 2.26e-08
+TVMe+I+R5        -20214.718   41553.436 - 1.84e-08   42216.066 - 8.86e-08   44546.169 - 2.15e-08
+TVMe+I+R5        -20214.718   41553.436 - 1.84e-08   42216.066 - 8.86e-08   44546.169 - 2.15e-08
+GTR+F+I+R4       -20207.561   41543.123 -  3.2e-06   42211.874 -  7.2e-07   44546.507 - 1.82e-08
+TIM2+F+I+R5      -20208.515   41545.031 - 1.23e-06   42213.782 - 2.78e-07   44548.415 - 7.01e-09
+TIM+F+I+R5       -20208.567   41545.134 - 1.17e-06   42213.885 - 2.63e-07   44548.518 - 6.65e-09
+TN+F+I+R4        -20222.707   41567.413 -  1.7e-11   42226.999 - 3.74e-10   44554.822 - 2.84e-10
+TIM2+F+I+R4      -20221.967   41567.934 - 1.31e-11   42230.564 -  6.3e-11   44560.667 - 1.53e-11
+TIM+F+I+R4       -20222.154   41568.308 - 1.09e-11   42230.938 - 5.22e-11   44561.042 - 1.27e-11
+TN+R5            -20236.165   41590.330 - 1.79e-16   42243.859 - 8.17e-14   44567.089 - 6.17e-13
+TNe+R5           -20236.212   41590.425 - 1.71e-16   42243.953 - 7.79e-14   44567.183 - 5.89e-13
+TNe+R5           -20236.212   41590.425 - 1.71e-16   42243.953 - 7.79e-14   44567.183 - 5.89e-13
+TIM+R5           -20235.256   41590.512 - 1.64e-16   42247.064 - 1.64e-14   44572.596 - 3.93e-14
+TIMe+R5          -20235.313   41590.626 - 1.55e-16   42247.178 - 1.55e-14   44572.710 - 3.71e-14
+TIMe+R5          -20235.313   41590.626 - 1.55e-16   42247.178 - 1.55e-14   44572.710 - 3.71e-14
+TIM2+R5          -20235.793   41591.586 - 9.58e-17   42248.137 - 9.62e-15   44573.669 -  2.3e-14
+TIM2e+R5         -20235.843   41591.686 - 9.11e-17   42248.238 - 9.15e-15   44573.770 - 2.19e-14
+TIM2e+R5         -20235.843   41591.686 - 9.11e-17   42248.238 - 9.15e-15   44573.770 - 2.19e-14
+TN+I+R5          -20237.329   41594.658 - 2.06e-17   42251.209 - 2.07e-15   44576.741 - 4.95e-15
+TNe+I+R5         -20237.427   41594.854 - 1.87e-17   42251.406 - 1.88e-15   44576.937 - 4.48e-15
+TNe+I+R5         -20237.427   41594.854 - 1.87e-17   42251.406 - 1.88e-15   44576.937 - 4.48e-15
+TN+I+R4          -20244.827   41605.653 - 8.45e-20   42256.168 - 1.73e-16   44577.086 - 4.16e-15
+TNe+I+R4         -20244.902   41605.804 - 7.84e-20   42256.319 - 1.61e-16   44577.237 - 3.86e-15
+TNe+I+R4         -20244.902   41605.804 - 7.84e-20   42256.319 - 1.61e-16   44577.237 - 3.86e-15
+HKY+R5           -20245.509   41607.018 - 4.27e-20   42257.533 - 8.77e-17   44578.451 -  2.1e-15
+K2P+R5           -20245.639   41607.278 - 3.75e-20   42257.793 -  7.7e-17   44578.711 - 1.85e-15
+K2P+R5           -20245.639   41607.278 - 3.75e-20   42257.793 -  7.7e-17   44578.711 - 1.85e-15
+HKY+I+R4         -20250.489   41614.978 - 7.98e-22   42262.490 - 7.35e-18   44581.086 - 5.64e-16
+K2P+I+R4         -20250.499   41614.998 -  7.9e-22   42262.511 - 7.28e-18   44581.106 - 5.58e-16
+K2P+I+R4         -20250.499   41614.998 -  7.9e-22   42262.511 - 7.28e-18   44581.106 - 5.58e-16
+TIM+I+R5         -20235.934   41593.867 - 3.06e-17   42253.453 - 6.74e-16   44581.276 - 5.13e-16
+TIMe+I+R5        -20236.014   41594.029 - 2.82e-17   42253.614 - 6.22e-16   44581.437 - 4.73e-16
+TIMe+I+R5        -20236.014   41594.029 - 2.82e-17   42253.614 - 6.22e-16   44581.437 - 4.73e-16
+TIM2+I+R5        -20236.438   41594.877 - 1.85e-17   42254.463 - 4.07e-16   44582.285 - 3.09e-16
+TIM2e+I+R5       -20236.508   41595.016 - 1.72e-17   42254.602 -  3.8e-16   44582.424 - 2.89e-16
+TIM2e+I+R5       -20236.508   41595.016 - 1.72e-17   42254.602 -  3.8e-16   44582.424 - 2.89e-16
+TIM+I+R4         -20244.038   41606.076 - 6.84e-20   42259.604 - 3.11e-17   44582.834 - 2.35e-16
+TIMe+I+R4        -20244.092   41606.183 - 6.48e-20   42259.712 - 2.95e-17   44582.942 - 2.23e-16
+TIMe+I+R4        -20244.092   41606.183 - 6.48e-20   42259.712 - 2.95e-17   44582.942 - 2.23e-16
+K3Pu+R5          -20244.512   41607.023 - 4.26e-20   42260.551 - 1.94e-17   44583.781 - 1.46e-16
+TIM2+I+R4        -20244.608   41607.215 - 3.87e-20   42260.743 - 1.76e-17   44583.973 - 1.33e-16
+TIM2e+I+R4       -20244.608   41607.216 - 3.87e-20   42260.744 - 1.76e-17   44583.974 - 1.33e-16
+TIM2e+I+R4       -20244.608   41607.216 - 3.87e-20   42260.744 - 1.76e-17   44583.974 - 1.33e-16
+K3P+R5           -20244.643   41607.286 - 3.73e-20   42260.815 -  1.7e-17   44584.045 - 1.28e-16
+K3P+R5           -20244.643   41607.286 - 3.73e-20   42260.815 -  1.7e-17   44584.045 - 1.28e-16
+TPM2u+R5         -20245.149   41608.299 - 2.25e-20   42261.827 - 1.02e-17   44585.057 - 7.74e-17
+TPM2+R5          -20245.197   41608.394 - 2.15e-20   42261.923 - 9.76e-18   44585.153 - 7.38e-17
+TPM2+R5          -20245.197   41608.394 - 2.15e-20   42261.923 - 9.76e-18   44585.153 - 7.38e-17
+K3Pu+I+R4        -20249.692   41615.384 - 6.51e-22   42265.899 - 1.34e-18   44586.817 - 3.21e-17
+K3P+I+R4         -20249.705   41615.410 - 6.43e-22   42265.925 - 1.32e-18   44586.843 - 3.17e-17
+K3P+I+R4         -20249.705   41615.410 - 6.43e-22   42265.925 - 1.32e-18   44586.843 - 3.17e-17
+TPM2+I+R4        -20250.251   41616.502 - 3.72e-22   42267.017 - 7.64e-19   44587.935 - 1.83e-17
+TPM2+I+R4        -20250.251   41616.502 - 3.72e-22   42267.017 - 7.64e-19   44587.935 - 1.83e-17
+TPM2u+I+R4       -20250.252   41616.504 - 3.72e-22   42267.019 - 7.64e-19   44587.937 - 1.83e-17
+HKY+I+R5         -20246.920   41611.840 - 3.83e-21   42265.368 - 1.74e-18   44588.598 - 1.32e-17
+K2P+I+R5         -20246.970   41611.941 - 3.64e-21   42265.469 - 1.66e-18   44588.699 - 1.25e-17
+K2P+I+R5         -20246.970   41611.941 - 3.64e-21   42265.469 - 1.66e-18   44588.699 - 1.25e-17
+K3Pu+I+R5        -20245.174   41610.349 - 8.08e-21   42266.900 -  8.1e-19   44592.432 - 1.94e-18
+K3P+I+R5         -20245.235   41610.470 -  7.6e-21   42267.021 - 7.63e-19   44592.553 - 1.82e-18
+K3P+I+R5         -20245.235   41610.470 -  7.6e-21   42267.021 - 7.63e-19   44592.553 - 1.82e-18
+TPM2u+I+R5       -20245.560   41611.120 - 5.49e-21   42267.671 - 5.51e-19   44593.203 - 1.32e-18
+TPM2+I+R5        -20245.598   41611.195 - 5.29e-21   42267.747 - 5.31e-19   44593.279 - 1.27e-18
+TPM2+I+R5        -20245.598   41611.195 - 5.29e-21   42267.747 - 5.31e-19   44593.279 - 1.27e-18
+TPM3u+F+R5       -20246.386   41616.772 - 3.25e-22   42279.402 - 1.56e-21   44609.505 -  3.8e-22
+TPM3u+F+I+R4     -20250.144   41622.289 - 2.06e-23   42281.875 - 4.54e-22   44609.697 - 3.45e-22
+TPM3u+F+I+R5     -20246.433   41618.866 - 1.14e-22   42284.552 - 1.19e-22   44616.925 -  9.3e-24
+TVM+F+R5         -20245.262   41618.524 - 1.35e-22   42287.275 - 3.05e-23   44621.908 -  7.7e-25
+TVM+F+I+R4       -20249.175   41624.350 - 7.36e-24   42290.036 - 7.67e-24   44622.409 - 5.99e-25
+TVM+F+I+R5       -20244.950   41619.900 - 6.81e-23   42291.727 - 3.29e-24   44628.609 -  2.7e-26
+HKY+F+I+R4       -20265.247   41650.493 - 1.55e-29   42307.045 - 1.55e-27   44632.577 - 3.71e-27
+HKY+F+R5         -20261.804   41645.609 - 1.78e-28   42305.195 - 3.92e-27   44633.017 - 2.98e-27
+TPM2u+F+I+R4     -20264.473   41650.946 - 1.23e-29   42310.532 - 2.72e-28   44638.355 - 2.07e-28
+TPM2u+F+R5       -20260.870   41645.741 - 1.67e-28   42308.371 - 8.01e-28   44638.474 - 1.95e-28
+K3Pu+F+R5        -20261.057   41646.113 - 1.38e-28   42308.744 - 6.65e-28   44638.847 - 1.62e-28
+K3Pu+F+I+R4      -20264.724   41651.447 - 9.61e-30   42311.033 - 2.12e-28   44638.856 - 1.61e-28
+HKY+F+I+R5       -20262.254   41648.509 - 4.18e-29   42311.139 - 2.01e-28   44641.243 - 4.88e-29
+TPM2u+F+I+R5     -20260.869   41647.738 - 6.14e-29   42313.424 -  6.4e-29   44645.797 -    5e-30
+K3Pu+F+I+R5      -20261.261   41648.521 - 4.15e-29   42314.207 - 4.33e-29   44646.580 - 3.38e-30
+F81+R5           -21272.208   43658.416 -        0   44305.928 -        0   46624.524 -        0
+JC+R5            -21272.411   43658.822 -        0   44306.335 -        0   46624.930 -        0
+JC+R5            -21272.411   43658.822 -        0   44306.335 -        0   46624.930 -        0
+F81+I+R4         -21276.501   43665.002 -        0   44309.523 -        0   46625.785 -        0
+JC+I+R4          -21276.964   43665.928 -        0   44310.448 -        0   46626.711 -        0
+JC+I+R4          -21276.964   43665.928 -        0   44310.448 -        0   46626.711 -        0
+F81+I+R5         -21273.550   43663.101 -        0   44313.616 -        0   46634.534 -        0
+JC+I+R5          -21273.635   43663.270 -        0   44313.785 -        0   46634.703 -        0
+JC+I+R5          -21273.635   43663.270 -        0   44313.785 -        0   46634.703 -        0
+JC+R6            -21271.712   43661.425 -        0   44314.953 -        0   46638.183 -        0
+JC+R4            -21293.514   43697.028 -        0   44338.567 -        0   46652.486 -        0
+JC+I+R3          -21304.378   43716.757 -        0   44355.324 -        0   46666.889 -        0
+JC+R3            -21331.881   43769.762 -        0   44405.368 -        0   46714.569 -        0
+JC+I+G4          -21349.784   43801.568 -        0   44431.283 -        0   46735.725 -        0
+F81+F+R5         -21339.512   43799.024 -        0   44455.576 -        0   46781.107 -        0
+F81+F+I+R4       -21345.062   43808.124 -        0   44461.652 -        0   46784.882 -        0
+F81+F+I+R5       -21340.883   43803.765 -        0   44463.351 -        0   46791.174 -        0
+JC+I+R2          -21431.830   43967.661 -        0   44600.316 -        0   46907.143 -        0
+JC+G4            -21484.322   44068.644 -        0   44695.427 -        0   46997.475 -        0
+JC+R2            -21644.559   44391.118 -        0   45020.832 -        0   47325.275 -        0
+JC+I             -22605.708   46311.415 -        0   46938.199 -        0   49240.247 -        0
+JC               -24941.570   50981.140 -        0   51605.004 -        0   53904.647 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM3+F+R5
+
+Rate parameter R:
+
+  A-C: 0.6708
+  A-G: 3.2770
+  A-T: 1.0000
+  C-G: 0.6708
+  C-T: 6.4728
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2793
+  pi(C) = 0.1992
+  pi(G) = 0.2753
+  pi(T) = 0.2461
+
+Rate matrix Q:
+
+  A   -0.8217   0.08567    0.5783    0.1578
+  C    0.1201     -1.26    0.1184     1.021
+  G    0.5867   0.08567   -0.8301    0.1578
+  T     0.179    0.8266    0.1765    -1.182
+
+Model of rate heterogeneity: FreeRate with 5 categories
+Site proportion and rates:  (0.7008,0.0582) (0.1535,0.9552) (0.08623,3.529) (0.05247,7.509) (0.006969,16.39)
+
+ Category  Relative_rate  Proportion
+  1         0.0582         0.7008
+  2         0.9552         0.1535
+  3         3.529          0.08623
+  4         7.509          0.05247
+  5         16.39          0.006969
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -20196.3566 (s.e. 900.1983)
+Unconstrained log-likelihood (without tree): -8988.4282
+Number of free parameters (#branches + #model parameters): 563
+Akaike information criterion (AIC) score: 41518.7132
+Corrected Akaike information criterion (AICc) score: 42184.3987
+Bayesian information criterion (BIC) score: 44516.7721
+
+Total tree length (sum of branch lengths): 3.0452
+Sum of internal branch lengths: 1.4767 (48.4938% of tree length)
+
+WARNING: 40 near-zero internal branches (<0.0007) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Inocybe_acuta_Mart5434' is drawn at root
+
++--Inocybe_acuta_Mart5434
+|
+|                                                   +**Inocybe_acutella_Mart3095
+|                                               +---|
+|                                               |   +--Inocybe_acutella_Mart5428
+|                                            +--|
+|                                            |  |         +**Inocybe_napipes_AJ889955
+|                                            |  |      +--|
+|                                            |  |      |  |  +--Inocybe_napipes_Mart5415
+|                                            |  |      |  +**|
+|                                            |  |      |     +--Inocybe_napipes_Mart5417
+|                                            |  |   +--|
+|                                            |  |   |  +--Inocybe_napipes_Mart4290
+|                                            |  +---|
+|                                            |      +--Inocybe_napipes_Mart5427
+|                                         +--|
+|                                         |  |    +--Inocybe_umbrina_Mart3150
+|                                         |  +----|
+|                                         |       +--Inocybe_umbrina_Mart5377
+|                                      +--|
+|                                      |  +----Inocybe_acutella_Mart4284
+|                                   +--|
+|                                   |  +-------Inocybe_fibrosa_Mart3318
+|                                +**|
+|                                |  +----Inocybe_tenebrosa_Mart5033
+|                             +--|
+|                             |  |        +--Inocybe_curvipes_Mart3142
+|                             |  |     +--|
+|                             |  |     |  +--Inocybe_curvipes_Mart6001
+|                             |  |  +--|
+|                             |  |  |  |  +--Inocybe_impexa_Mart5381
+|                             |  |  |  +--|
+|                             |  |  |     +--Inocybe_lacera_Mart5430
+|                             |  +--|
+|                             |     |     +--Inocybe_lacera_Mart4285
+|                             |     |  +**|
+|                             |     |  |  |        +--Inocybe_lacera_Mart4289
+|                             |     |  |  |     +--|
+|                             |     |  |  |     |  +--Inocybe_lacera_Mart5440
+|                             |     |  |  |  +**|
+|                             |     |  |  |  |  |  +**Inocybe_lacera_Mart5442
+|                             |     |  |  |  |  +--|
+|                             |     |  |  |  |     +--Inocybe_lacera_Mart5458
+|                             |     |  |  +--|
+|                             |     |  |     +--Inocybe_lacera_Mart5446
+|                             |     +--|
+|                             |        +--Inocybe_maritima_Mart5219
+|                          +**|
+|                          |  |                             +---Inocybe_agardhii_Mart4329
+|                          |  |                          +--|
+|                          |  |                          |  |     +--Inocybe_arthrocystis_Mart5429
+|                          |  |                          |  |  +--|
+|                          |  |                          |  |  |  |  +--Inocybe_dulcamara_Mart5437
+|                          |  |                          |  |  |  +--|
+|                          |  |                          |  |  |     +--Inocybe_leucoblema_Mart5422
+|                          |  |                          |  +--|
+|                          |  |                          |     +--Inocybe_malenconii_Mart5058
+|                          |  |                       +--|
+|                          |  |                       |  |     +--Inocybe_dulcamara_Mart4274
+|                          |  |                       |  |  +--|
+|                          |  |                       |  |  |  +--Inocybe_fulvipes_Mart5431
+|                          |  |                       |  +--|
+|                          |  |                       |     |  +--Inocybe_lacera_Mart5216
+|                          |  |                       |     +--|
+|                          |  |                       |        +**Inocybe_leucoblema_Mart5043
+|                          |  |                    +--|
+|                          |  |                    |  |  +--Inocybe_dulcamara_Mart5449
+|                          |  |                    |  +--|
+|                          |  |                    |     +--Inocybe_dulcamara_Mart5457
+|                          |  |                 +--|
+|                          |  |                 |  +--Inocybe_terrigena_Mart4353
+|                          |  |           +-----|
+|                          |  |           |     |  +--Inocybe_dulcamara_Mart4335
+|                          |  |           |     +--|
+|                          |  |           |        +**Inocybe_gymnocarpa_Mart5045
+|                          |  |        +--|
+|                          |  |        |  +-----------Inocybe_cf._xanthomela_Mart5160
+|                          |  |     +--|
+|                          |  |     |  |                   +--Inocybe_flavella_Mart4327
+|                          |  |     |  |                +--|
+|                          |  |     |  |                |  +--Inocybe_flavella_Mart5021
+|                          |  |     |  |             +**|
+|                          |  |     |  |             |  |  +**Inocybe_flavella_Mart5036
+|                          |  |     |  |             |  +--|
+|                          |  |     |  |             |     +**Inocybe_flavella_Mart5476
+|                          |  |     |  |          +--|
+|                          |  |     |  |          |  |     +--Inocybe_flavella_Mart5095
+|                          |  |     |  |          |  |  +--|
+|                          |  |     |  |          |  |  |  +**Inocybe_flavella_Mart5410
+|                          |  |     |  |          |  +--|
+|                          |  |     |  |          |     +--Inocybe_squamata_Mart5226
+|                          |  |     |  |       +--|
+|                          |  |     |  |       |  |  +**Inocybe_squamata_Mart5022
+|                          |  |     |  |       |  +--|
+|                          |  |     |  |       |     |  +--Inocybe_squamata_Mart5224
+|                          |  |     |  |       |     +**|
+|                          |  |     |  |       |        +**Inocybe_squamata_Mart5225
+|                          |  |     |  |    +--|
+|                          |  |     |  |    |  |  +-----Inocybe_mimica_Mart5314
+|                          |  |     |  |    |  +--|
+|                          |  |     |  |    |     +--Inocybe_rimosa_Mart4302
+|                          |  |     |  +----|
+|                          |  |     |       |        +**Inocybe_obsoleta_Mart4287
+|                          |  |     |       |     +--|
+|                          |  |     |       |     |  +--Inocybe_obsoleta_Mart5018
+|                          |  |     |       |  +--|
+|                          |  |     |       |  |  |  +--Inocybe_perlata_Mart4312
+|                          |  |     |       |  |  +--|
+|                          |  |     |       |  |     +**Inocybe_perlata_Mart5023
+|                          |  |     |       +--|
+|                          |  |     |          |            +**Inocybe_rimosa_Mart4267
+|                          |  |     |          |         +--|
+|                          |  |     |          |         |  +--Inocybe_rimosa_Mart5464
+|                          |  |     |          |      +--|
+|                          |  |     |          |      |  +--Inocybe_rimosa_Mart4337
+|                          |  |     |          |   +--|
+|                          |  |     |          |   |  +--Inocybe_rimosa_Mart5149
+|                          |  |     |          +---|
+|                          |  |     |              |     +--Inocybe_rimosa_Mart4360
+|                          |  |     |              |  +--|
+|                          |  |     |              |  |  +--Inocybe_rimosa_Mart5114
+|                          |  |     |              +--|
+|                          |  |     |                 |        +**Inocybe_rimosa_Mart5015
+|                          |  |     |                 |     +**|
+|                          |  |     |                 |     |  +--Inocybe_rimosa_Mart5448
+|                          |  |     |                 |  +--|
+|                          |  |     |                 |  |  +**Inocybe_rimosa_Mart5421
+|                          |  |     |                 +--|
+|                          |  |     |                    +--Inocybe_rimosa_Mart5111
+|                          |  |  +--|
+|                          |  |  |  |           +--Inocybe_decipiens_Mart5109
+|                          |  |  |  |        +--|
+|                          |  |  |  |        |  +**Inocybe_oblectabilis_Mart5125
+|                          |  |  |  |     +**|
+|                          |  |  |  |     |  +**Inocybe_oblectabilis_Mart5129
+|                          |  |  |  |  +--|
+|                          |  |  |  |  |  +--Inocybe_dunensis_Mart5214
+|                          |  |  |  +--|
+|                          |  |  |     +--Inocybe_dunensis_Mart5025
+|                          |  +--|
+|                          |     |           +--Inocybe_alnea_Mart5003
+|                          |     |        +--|
+|                          |     |        |  |     +-----Inocybe_asterospora_Mart5408
+|                          |     |        |  |  +--|
+|                          |     |        |  |  |  |         +--Inocybe_castanea_Mart4271
+|                          |     |        |  |  |  |      +--|
+|                          |     |        |  |  |  |      |  +--Inocybe_castanea_Mart5035
+|                          |     |        |  |  |  |   +--|
+|                          |     |        |  |  |  |   |  +----Inocybe_praetervisa_Mart4363
+|                          |     |        |  |  |  +---|
+|                          |     |        |  |  |      +--Inocybe_xanthomelas_Mart5162
+|                          |     |        |  +--|
+|                          |     |        |     |  +---Inocybe_hirculus_Mart5048
+|                          |     |        |     +--|
+|                          |     |        |        |  +--Inocybe_rennyi_Mart3089
+|                          |     |        |        +--|
+|                          |     |        |           +--Inocybe_rennyi_Mart3182
+|                          |     |     +--|
+|                          |     |     |  +--Inocybe_salicis_Mart5439
+|                          |     |  +--|
+|                          |     |  |  +--Inocybe_diabolica_Mart5031
+|                          |     +--|
+|                          |        |  +---------Inocybe_calida_Mart5117
+|                          |        +--|
+|                          |           |  +**Inocybe_calospora_Mart3213
+|                          |           +--|
+|                          |              +--Inocybe_calospora_Mart5475
+|                       +--|
+|                       |  |                    +--Inocybe_albomarginata_Mart5118
+|                       |  |                 +--|
+|                       |  |                 |  +--Inocybe_glabipes_Mart5053
+|                       |  |              +**|
+|                       |  |              |  |        +--Inocybe_ambigua_Mart5004
+|                       |  |              |  |     +--|
+|                       |  |              |  |     |  |     +--Inocybe_nitidiuscula_AJ534934
+|                       |  |              |  |     |  |  +--|
+|                       |  |              |  |     |  |  |  +**Inocybe_sapinea_Mart3187
+|                       |  |              |  |     |  +--|
+|                       |  |              |  |     |     +--Inocybe_sapinea_Mart5461
+|                       |  |              |  |  +**|
+|                       |  |              |  |  |  |     +-------Inocybe_lanuginosa_Mart3151
+|                       |  |              |  |  |  |  +--|
+|                       |  |              |  |  |  |  |  +----Inocybe_sambucina_Mart5139
+|                       |  |              |  |  |  +--|
+|                       |  |              |  |  |     |   +--Inocybe_umbratica_Mart3188
+|                       |  |              |  |  |     +---|
+|                       |  |              |  |  |         +**Inocybe_umbratica_Mart5159
+|                       |  |              |  +--|
+|                       |  |              |     +---Inocybe_relicina_Mart3105
+|                       |  |           +--|
+|                       |  |           |  |     +--Inocybe_glabipes_Mart5412
+|                       |  |           |  |  +--|
+|                       |  |           |  |  |  +--Inocybe_leiocephala_Mart4310
+|                       |  |           |  +--|
+|                       |  |           |     |    +--Inocybe_melanopoda_Mart5220
+|                       |  |           |     +----|
+|                       |  |           |          |  +--Inocybe_melanopus_Mart5052
+|                       |  |           |          +--|
+|                       |  |           |             +--Inocybe_melanopus_Mart5112
+|                       |  |        +--|
+|                       |  |        |  |                 +--Inocybe_corydalina_Mart4358
+|                       |  |        |  |              +--|
+|                       |  |        |  |              |  |    +--Inocybe_erinaceomorpha_Mart5034
+|                       |  |        |  |              |  +----|
+|                       |  |        |  |              |       +--Inocybe_erinaceomorpha_Mart5378
+|                       |  |        |  |           +--|
+|                       |  |        |  |           |  +---Inocybe_tricolor_Mart5426
+|                       |  |        |  |        +--|
+|                       |  |        |  |        |  |     +--Inocybe_fraudans_Mart5037
+|                       |  |        |  |        |  |  +--|
+|                       |  |        |  |        |  |  |  +**Inocybe_fraudans_Mart5425
+|                       |  |        |  |        |  +--|
+|                       |  |        |  |        |     |  +--Inocybe_haemacta_Mart5039
+|                       |  |        |  |        |     +--|
+|                       |  |        |  |        |        +--Inocybe_malenconii_Mart5050
+|                       |  |        |  |     +--|
+|                       |  |        |  |     |  |        +**Inocybe_fraudans_AJ889953
+|                       |  |        |  |     |  |     +--|
+|                       |  |        |  |     |  |     |  +**Inocybe_fraudans_Mart5380
+|                       |  |        |  |     |  |  +--|
+|                       |  |        |  |     |  |  |  +**Inocybe_fraudans_Mart4359
+|                       |  |        |  |     |  +--|
+|                       |  |        |  |     |     +--Inocybe_fraudans_Mart4352
+|                       |  |        |  |  +--|
+|                       |  |        |  |  |  +--Inocybe_leptocystis_Mart3204
+|                       |  |        |  +--|
+|                       |  |        |     |     +--Inocybe_griseolilacina_Mart4305
+|                       |  |        |     |  +--|
+|                       |  |        |     |  |  +--Inocybe_subnudipes_Mart5147
+|                       |  |        |     +**|
+|                       |  |        |        |  +**Inocybe_griseoscabrosa_Mart5042
+|                       |  |        |        +--|
+|                       |  |        |           +--Inocybe_griseoscabrosa_Mart5094
+|                       |  |     +--|
+|                       |  |     |  +--Inocybe_obscurobadia_Mart5131
+|                       |  |  +**|
+|                       |  |  |  |        +--Inocybe_godeyi_Mart4332
+|                       |  |  |  |     +--|
+|                       |  |  |  |     |  +--Inocybe_godeyi_Mart5228
+|                       |  |  |  |  +**|
+|                       |  |  |  |  |  +----Inocybe_tjallingiorum_Mart5161
+|                       |  |  |  +--|
+|                       |  |  |     |   +**Inocybe_hystrix_Mart4336
+|                       |  |  |     +---|
+|                       |  |  |         |  +**Inocybe_hystrix_Mart5047
+|                       |  |  |         +--|
+|                       |  |  |            +--Inocybe_hystrix_Mart5467
+|                       |  +--|
+|                       |     |                 +--Inocybe_armeniaca_DQ974803
+|                       |     |              +--|
+|                       |     |              |  |   +--Inocybe_geophylla_Mart4299
+|                       |     |              |  +---|
+|                       |     |              |      +**Inocybe_geophylla_Mart5462
+|                       |     |           +**|
+|                       |     |           |  |  +--Inocybe_pudica_AY228341
+|                       |     |           |  +--|
+|                       |     |           |     |  +--Inocybe_pudica_Mart5135
+|                       |     |           |     +--|
+|                       |     |           |        +--Inocybe_pudica_Mart5382
+|                       |     |        +--|
+|                       |     |        |  |           +--Inocybe_geophylla_Mart4350
+|                       |     |        |  |        +--|
+|                       |     |        |  |        |  +--Inocybe_geophylla_Mart5414
+|                       |     |        |  |     +--|
+|                       |     |        |  |     |  +--Inocybe_geophylla_Mart5011
+|                       |     |        |  |  +**|
+|                       |     |        |  |  |  +---------Inocybe_posterula_Mart6004
+|                       |     |        |  +--|
+|                       |     |        |     +--Inocybe_geophylla_Mart5478
+|                       |     |     +--|
+|                       |     |     |  +--Inocybe_geophylla_Mart4304
+|                       |     |  +--|
+|                       |     |  |  +--Inocybe_geophylla_Mart5010
+|                       |     +--|
+|                       |        |     +--Inocybe_hirtella_Mart4345
+|                       |        |  +--|
+|                       |        |  |  |    +--Inocybe_hirtella_Mart5413
+|                       |        |  |  +----|
+|                       |        |  |       +--Inocybe_hirtella_Mart5469
+|                       |        +--|
+|                       |           |    +--Inocybe_pseudoasterospora_Mart3094
+|                       |           +----|
+|                       |                +**Inocybe_pseudoasterospora_Mart5121
+|                    +--|
+|                    |  |                                                     +----Inocybe_adaequata_Mart4346
+|                    |  |                                                  +--|
+|                    |  |                                                  |  +--Inocybe_adaequata_Mart5143
+|                    |  |                                             +----|
+|                    |  |                                             |    |            +**Inocybe_erubescens_Mart5020
+|                    |  |                                             |    |         +**|
+|                    |  |                                             |    |         |  +--Inocybe_erubescens_Mart5113
+|                    |  |                                             |    +---------|
+|                    |  |                                             |              +**Inocybe_erubescens_Mart5057
+|                    |  |                                         +---|
+|                    |  |                                         |   +----Inocybe_cookei_Mart4339
+|                    |  |                                      +--|
+|                    |  |                                      |  |                +**Inocybe_maculata_AJ534933
+|                    |  |                                      |  |             +--|
+|                    |  |                                      |  |             |  |  +**Inocybe_maculata_AJ966749
+|                    |  |                                      |  |             |  +**|
+|                    |  |                                      |  |             |     +**Inocybe_maculata_Mart5008
+|                    |  |                                      |  |        +----|
+|                    |  |                                      |  |        |    +--Inocybe_maculata_Mart4356
+|                    |  |                                      |  |     +--|
+|                    |  |                                      |  |     |  |    +--Inocybe_maculata_Mart5059
+|                    |  |                                      |  |     |  +----|
+|                    |  |                                      |  |     |       +--Inocybe_maculata_Mart5060
+|                    |  |                                      |  |  +--|
+|                    |  |                                      |  |  |  |  +-----Inocybe_maculata_Mart4348
+|                    |  |                                      |  |  |  +--|
+|                    |  |                                      |  |  |     +--------Inocybe_maculata_Mart5465
+|                    |  |                                      |  +--|
+|                    |  |                                      |     |      +**Inocybe_quietiodor_Mart4351
+|                    |  |                                      |     +------|
+|                    |  |                                      |            +**Inocybe_quietiodor_Mart5093
+|                    |  |                                   +--|
+|                    |  |                                   |  |               +--Inocybe_cookei_Mart5024
+|                    |  |                                   |  |            +--|
+|                    |  |                                   |  |            |  |  +--Inocybe_cookei_Mart5213
+|                    |  |                                   |  |            |  +--|
+|                    |  |                                   |  |            |     +--Inocybe_cookei_Mart5466
+|                    |  |                                   |  +------------|
+|                    |  |                                   |               +--Inocybe_cookei_Mart5313
+|                    |  |                         +---------|
+|                    |  |                         |         |        +--Inocybe_bongardii_Mart4303
+|                    |  |                         |         |     +**|
+|                    |  |                         |         |     |  +**Inocybe_bongardii_Mart4357
+|                    |  |                         |         |  +--|
+|                    |  |                         |         |  |  +--Inocybe_bongardii_Mart4307
+|                    |  |                         |         +--|
+|                    |  |                         |            |           +--Inocybe_calamistrata_Mart4286
+|                    |  |                         |            |        +--|
+|                    |  |                         |            |        |  |  +--Inocybe_calamistrata_Mart4362
+|                    |  |                         |            |        |  +--|
+|                    |  |                         |            |        |     +--Inocybe_calamistrata_Mart5274
+|                    |  |                         |            |     +--|
+|                    |  |                         |            |     |  +--Inocybe_cervicolor_Mart5012
+|                    |  |                         |            |  +--|
+|                    |  |                         |            |  |  |  +--Inocybe_calamistrata_Mart5406
+|                    |  |                         |            |  |  +--|
+|                    |  |                         |            |  |     +--Inocybe_calamistrata_Mart5454
+|                    |  |                         |            +--|
+|                    |  |                         |               |     +**Inocybe_cervicolor_AF347101
+|                    |  |                         |               |  +--|
+|                    |  |                         |               |  |  +**Inocybe_cervicolor_Mart3320
+|                    |  |                         |               +--|
+|                    |  |                         |                  +--Inocybe_cervicolor_Mart4266
+|                    |  |                  +------|
+|                    |  |                  |      |       +----------Inocybe_dulcamaroides_Mart5459
+|                    |  |                  |      +-------|
+|                    |  |                  |              +--Naucoria_submelinoides_Mart5116
+|                    |  |               +**|
+|                    |  |               |  |     +---------Inocybe_albomarginata_Mart5002
+|                    |  |               |  |  +--|
+|                    |  |               |  |  |  +-------Inocybe_pelargonium_Mart5148
+|                    |  |               |  +--|
+|                    |  |               |     +--Inocybe_cf._fuscidula_Mart5468
+|                    |  |            +--|
+|                    |  |            |  +------Inocybe_tenebrosa_Mart5157
+|                    |  |         +**|
+|                    |  |         |  |           +--Inocybe_amethystina_Mart5007
+|                    |  |         |  |        +**|
+|                    |  |         |  |        |  +--Inocybe_flocculosa_Mart4343
+|                    |  |         |  |     +--|
+|                    |  |         |  |     |  |  +--Inocybe_flocculosa_Mart4270
+|                    |  |         |  |     |  +**|
+|                    |  |         |  |     |     |  +**Inocybe_flocculosa_Mart4292
+|                    |  |         |  |     |     +**|
+|                    |  |         |  |     |        +**Inocybe_flocculosa_Mart4340
+|                    |  |         |  |  +--|
+|                    |  |         |  |  |  |        +-----Inocybe_cf._subnudipes_Mart5006
+|                    |  |         |  |  |  |     +--|
+|                    |  |         |  |  |  |     |  +----Inocybe_fuscidula_Mart5395
+|                    |  |         |  |  |  |  +--|
+|                    |  |         |  |  |  |  |  |  +--Inocybe_fuscidula_Mart3159
+|                    |  |         |  |  |  |  |  +--|
+|                    |  |         |  |  |  |  |     |  +**Inocybe_fuscidula_Mart4272
+|                    |  |         |  |  |  |  |     +**|
+|                    |  |         |  |  |  |  |        |     +--Inocybe_fuscidula_Mart5124
+|                    |  |         |  |  |  |  |        |  +**|
+|                    |  |         |  |  |  |  |        |  |  +--Inocybe_fuscidula_Mart5158
+|                    |  |         |  |  |  |  |        +--|
+|                    |  |         |  |  |  |  |           +**Inocybe_fuscidula_Mart5474
+|                    |  |         |  |  |  +--|
+|                    |  |         |  |  |     |  +--Inocybe_sindonia_Mart4331
+|                    |  |         |  |  |     +--|
+|                    |  |         |  |  |        +--Inocybe_sindonia_Mart5463
+|                    |  |         |  +--|
+|                    |  |         |     |           +--Inocybe_cf._leiocephal_Mart5420
+|                    |  |         |     |        +--|
+|                    |  |         |     |        |  |        +--Inocybe_flocculosa_AY228354
+|                    |  |         |     |        |  |     +**|
+|                    |  |         |     |        |  |     |  +**Inocybe_nitidiuscula_Mart5473
+|                    |  |         |     |        |  |  +--|
+|                    |  |         |     |        |  |  |  +--Inocybe_nitidiuscula_Mart4276
+|                    |  |         |     |        |  +--|
+|                    |  |         |     |        |     +---Inocybe_nitidiuscula_Mart4354
+|                    |  |         |     |     +--|
+|                    |  |         |     |     |  +---Inocybe_nitidiuscula_Mart5394
+|                    |  |         |     |  +--|
+|                    |  |         |     |  |  |    +--Inocybe_muricellata_Mart4294
+|                    |  |         |     |  |  +----|
+|                    |  |         |     |  |       |  +--Inocybe_muricellata_Mart5055
+|                    |  |         |     |  |       +--|
+|                    |  |         |     |  |          +**Inocybe_muricellata_Mart5056
+|                    |  |         |     +--|
+|                    |  |         |        |      +--Inocybe_langei_Mart43207
+|                    |  |         |        +------|
+|                    |  |         |               +--Inocybe_langei_Mart5472
+|                    |  |     +---|
+|                    |  |     |   |       +--Inocybe_alpigenes_Mart5456
+|                    |  |     |   |  +----|
+|                    |  |     |   |  |    +--Inocybe_muricellata_Mart5436
+|                    |  |     |   +--|
+|                    |  |     |      |                    +--Inocybe_egenula_Mart5452
+|                    |  |     |      |         +----------|
+|                    |  |     |      |         |          |  +-----Inocybe_nematoloma_Mart5126
+|                    |  |     |      |         |          +--|
+|                    |  |     |      |         |             +**Inocybe_nematoloma_Mart5477
+|                    |  |     |      +---------|
+|                    |  |     |                |      +--Inocybe_jacobi_Mart5044
+|                    |  |     |                |   +--|
+|                    |  |     |                |   |  |  +**Inocybe_petiginosa_AJ889956
+|                    |  |     |                |   |  +--|
+|                    |  |     |                |   |     |     +**Inocybe_petiginosa_Mart3183
+|                    |  |     |                |   |     |  +**|
+|                    |  |     |                |   |     |  |  +**Inocybe_petiginosa_Mart4288
+|                    |  |     |                |   |     +**|
+|                    |  |     |                |   |        +--Inocybe_petiginosa_Mart4306
+|                    |  |     |                +---|
+|                    |  |     |                    +--Inocybe_subexilis_Mart5146
+|                    |  |  +**|
+|                    |  |  |  |           +---------Inocybe_appendiculata_Mart5032
+|                    |  |  |  |        +--|
+|                    |  |  |  |        |  |     +--Inocybe_ochroalba_Mart4298
+|                    |  |  |  |        |  |  +**|
+|                    |  |  |  |        |  |  |  |  +**Inocybe_ochroalba_Mart4300
+|                    |  |  |  |        |  |  |  +--|
+|                    |  |  |  |        |  |  |     |  +**Inocybe_ochroalba_Mart4311
+|                    |  |  |  |        |  |  |     +**|
+|                    |  |  |  |        |  |  |        +--Inocybe_ochroalba_Mart4330
+|                    |  |  |  |        |  +--|
+|                    |  |  |  |        |     +--Inocybe_ochroalba_Mart4342
+|                    |  |  |  |     +--|
+|                    |  |  |  |     |  |      +**Inocybe_asterospora_AJ889951
+|                    |  |  |  |     |  |   +--|
+|                    |  |  |  |     |  |   |  +--Inocybe_asterospora_Mart4347
+|                    |  |  |  |     |  +---|
+|                    |  |  |  |     |      |  +**Inocybe_calida_Mart5026
+|                    |  |  |  |     |      +**|
+|                    |  |  |  |     |         +---Inocybe_inodora_Mart5038
+|                    |  |  |  |  +--|
+|                    |  |  |  |  |  +--Inocybe_fuscidula_Mart4278
+|                    |  |  |  +--|
+|                    |  |  |     |     +------Inocybe_hirtella_Mart4355
+|                    |  |  |     |  +--|
+|                    |  |  |     |  |  |        +**Inocybe_phaeocomis_Mart4275
+|                    |  |  |     |  |  |     +--|
+|                    |  |  |     |  |  |     |  |  +--Inocybe_phaeocomis_Mart4283
+|                    |  |  |     |  |  |     |  +--|
+|                    |  |  |     |  |  |     |     +--Inocybe_phaeocomis_Mart5424
+|                    |  |  |     |  |  |  +--|
+|                    |  |  |     |  |  |  |  |     +--Inocybe_phaeocomis_Mart4341
+|                    |  |  |     |  |  |  |  |  +--|
+|                    |  |  |     |  |  |  |  |  |  +--Inocybe_phaeocomis_Mart4361
+|                    |  |  |     |  |  |  |  +--|
+|                    |  |  |     |  |  |  |     +--Inocybe_phaeocomis_Mart5419
+|                    |  |  |     |  |  +--|
+|                    |  |  |     |  |     +--Inocybe_phaeodisca_Mart5054
+|                    |  |  |     +--|
+|                    |  |  |        |        +**Inocybe_lanuginosa_Mart3107
+|                    |  |  |        |     +**|
+|                    |  |  |        |     |  |  +**Inocybe_lanuginosa_Mart3152
+|                    |  |  |        |     |  +--|
+|                    |  |  |        |     |     +--Inocybe_lanuginosa_Mart5096
+|                    |  |  |        |  +--|
+|                    |  |  |        |  |  +--Inocybe_teraturgus_Mart3173
+|                    |  |  |        +--|
+|                    |  |  |           +--Inocybe_leptophylla_Mart3108
+|                    |  +--|
+|                    |     |            +--Inocybe_boltonii_Mart3184
+|                    |     |         +--|
+|                    |     |         |  +--Inocybe_boltonii_Mart5471
+|                    |     |      +--|
+|                    |     |      |  +--Inocybe_soluta_Mart4280
+|                    |     |  +---|
+|                    |     |  |   +--Inocybe_soluta_Mart3172
+|                    |     +--|
+|                    |        +---Inocybe_subporospora_Mart5144
+|                 +**|
+|                 |  +**Inocybe_glabipes_Mart5222
+|              +--|
+|              |  |              +--Inocybe_calida_Mart5029
+|              |  |           +--|
+|              |  |           |  +--Inocybe_fibrosoides_Mart4190
+|              |  |        +--|
+|              |  |        |  |     +---Inocybe_cryprocystis_Mart5028
+|              |  |        |  |  +--|
+|              |  |        |  |  |  |     +--Inocybe_devonensis_Mart5217
+|              |  |        |  |  |  +-----|
+|              |  |        |  |  |        +--Inocybe_vulpinella_Mart5164
+|              |  |        |  +--|
+|              |  |        |     +-------Inocybe_inodora_Mart5432
+|              |  |     +--|
+|              |  |     |  +--Inocybe_lanuginosa_DQ367905
+|              |  |  +**|
+|              |  |  |  +**Inocybe_godeyi_AJ889954
+|              |  +**|
+|              |     |  +---Inocybe_grammata_Mart5046
+|              |     +--|
+|              |        |  +--Inocybe_mixitilis_Mart3186
+|              |        +--|
+|              |           |        +**Inocybe_mixitilis_Mart4282
+|              |           |     +--|
+|              |           |     |  |  +--Inocybe_mixitilis_Mart4325
+|              |           |     |  +--|
+|              |           |     |     +**Inocybe_mixitilis_Mart4328
+|              |           |  +**|
+|              |           |  |  +**Inocybe_mixitilis_Mart4308
+|              |           +--|
+|              |              +--Inocybe_mixitilis_Mart4365
+|           +--|
+|           |  |        +--Inocybe_alpigenes_Mart5451
+|           |  |     +--|
+|           |  |     |  +--Inocybe_alpigenes_Mart5455
+|           |  |  +--|
+|           |  |  |  |  +--Inocybe_tetragonospora_Mart5438
+|           |  |  |  +--|
+|           |  |  |     +--Inocybe_tetragonospora_Mart5453
+|           |  +--|
+|           |     |   +--Inocybe_stellatospora_Mart3205
+|           |     +---|
+|           |         +--Inocybe_stellatospora_Mart4279
+|        +--|
+|        |  +**Inocybe_lacera_AB211269
+|     +--|
+|     |  |  +------Inocybe_putilla_Mart5140
+|     |  +**|
+|     |     +**Inocybe_soluta_Mart5027
+|  +--|
+|  |  |   +--Inocybe_aurea_Mart3092
+|  |  +---|
+|  |      +--Inocybe_aurea_Mart5411
++--|
+|  |  +--Inocybe_giacomi_Mart5423
+|  +**|
+|     +--Inocybe_rennyi_Mart3195
+|
+|  +--Inocybe_giacomi_Mart5433
++--|
+   +--Inocybe_giacomi_Mart5435
+
+Tree in newick format:
+
+(Inocybe_acuta_Mart5434:0.0012476766,(((((((((((((((((Inocybe_acutella_Mart3095:0.0005313464,Inocybe_acutella_Mart5428:0.0062165902):0.0134105893,(((Inocybe_napipes_AJ889955:0.0000021049,(Inocybe_napipes_Mart5415:0.0008047909,Inocybe_napipes_Mart5417:0.0040675016):0.0000018746):0.0008050887,Inocybe_napipes_Mart4290:0.0024339249):0.0007824302,Inocybe_napipes_Mart5427:0.0008479402):0.0122930055):0.0033336963,(Inocybe_umbrina_Mart3150:0.0016593698,Inocybe_umbrina_Mart5377:0.0015623351):0.0182267922):0.0024609445,Inocybe_acutella_Mart4284:0.0153422307):0.0070261481,Inocybe_fibrosa_Mart3318:0.0270570914):0.0030588175,Inocybe_tenebrosa_Mart5033:0.0171894395):0.0000022534,(((Inocybe_curvipes_Mart3142:0.0032717556,Inocybe_curvipes_Mart6001:0.0038972170):0.0011201885,(Inocybe_impexa_Mart5381:0.0048614192,Inocybe_lacera_Mart5430:0.0042380594):0.0032842819):0.0008809508,((Inocybe_lacera_Mart4285:0.0074937202,(((Inocybe_lacera_Mart4289:0.0027486176,Inocybe_lacera_Mart5440:0.0108668257):0.0024224457,(Inocybe_lacera_Mart5442:0.0000021049,Inocybe_lacera_Mart5458:0.0024419928):0.0008030577):0.0000021052,Inocybe_lacera_Mart5446:0.0016129490):0.0016323499):0.0006509980,Inocybe_maritima_Mart5219:0.0026926703):0.0033885985):0.0060688414):0.0018390681,(((((((((Inocybe_agardhii_Mart4329:0.0130856956,((Inocybe_arthrocystis_Mart5429:0.0055387459,(Inocybe_dulcamara_Mart5437:0.0064548638,Inocybe_leucoblema_Mart5422:0.0023536596):0.0016017820):0.0007757555,Inocybe_malenconii_Mart5058:0.0015865360):0.0013442163):0.0031274336,((Inocybe_dulcamara_Mart4274:0.0024318656,Inocybe_fulvipes_Mart5431:0.0040736533):0.0015757027,(Inocybe_lacera_Mart5216:0.0032541901,Inocybe_leucoblema_Mart5043:0.0000021049):0.0015997813):0.0010646277):0.0016502792,(Inocybe_dulcamara_Mart5449:0.0017143124,Inocybe_dulcamara_Mart5457:0.0009776775):0.0060065006):0.0016867537,Inocybe_terrigena_Mart4353:0.0020976388):0.0044832735,(Inocybe_dulcamara_Mart4335:0.0018880635,Inocybe_gymnocarpa_Mart5045:0.0000021049):0.0099548724):0.0197045600,Inocybe_cf._xanthomela_Mart5160:0.0380858413):0.0067986328,((((((Inocybe_flavella_Mart4327:0.0008614530,Inocybe_flavella_Mart5021:0.0008445357):0.0019191379,(Inocybe_flavella_Mart5036:0.0000021049,Inocybe_flavella_Mart5476:0.0000027872):0.0040145953):0.0000021052,((Inocybe_flavella_Mart5095:0.0016767849,Inocybe_flavella_Mart5410:0.0000021049):0.0046933633,Inocybe_squamata_Mart5226:0.0024516844):0.0019186914):0.0061775434,(Inocybe_squamata_Mart5022:0.0000021049,(Inocybe_squamata_Mart5224:0.0051040452,Inocybe_squamata_Mart5225:0.0003752982):0.0004753870):0.0066227594):0.0061333865,(Inocybe_mimica_Mart5314:0.0211078143,Inocybe_rimosa_Mart4302:0.0118729066):0.0052209593):0.0052549018,(((Inocybe_obsoleta_Mart4287:0.0000021049,Inocybe_obsoleta_Mart5018:0.0027714463):0.0055066839,(Inocybe_perlata_Mart4312:0.0016169680,Inocybe_perlata_Mart5023:0.0000021049):0.0082424112):0.0096631238,((((Inocybe_rimosa_Mart4267:0.0000021049,Inocybe_rimosa_Mart5464:0.0008077210):0.0016290553,Inocybe_rimosa_Mart4337:0.0016528797):0.0008137783,Inocybe_rimosa_Mart5149:0.0008271288):0.0035141502,((Inocybe_rimosa_Mart4360:0.0067839643,Inocybe_rimosa_Mart5114:0.0093106376):0.0031650356,(((Inocybe_rimosa_Mart5015:0.0000021049,Inocybe_rimosa_Mart5448:0.0049494366):0.0000022383,Inocybe_rimosa_Mart5421:0.0000021049):0.0016043181,Inocybe_rimosa_Mart5111:0.0102155239):0.0012728433):0.0021748046):0.0125217391):0.0099339267):0.0167499949):0.0054702820,((((Inocybe_decipiens_Mart5109:0.0022587002,Inocybe_oblectabilis_Mart5125:0.0000021049):0.0007489307,Inocybe_oblectabilis_Mart5129:0.0000021049):0.0000021052,Inocybe_dunensis_Mart5214:0.0046108200):0.0110648494,Inocybe_dunensis_Mart5025:0.0087868806):0.0049741663):0.0009296676,((((Inocybe_alnea_Mart5003:0.0071286529,((Inocybe_asterospora_Mart5408:0.0205810240,(((Inocybe_castanea_Mart4271:0.0015327418,Inocybe_castanea_Mart5035:0.0008037315):0.0079842829,Inocybe_praetervisa_Mart4363:0.0153803719):0.0061967140,Inocybe_xanthomelas_Mart5162:0.0095465437):0.0126092233):0.0021787352,(Inocybe_hirculus_Mart5048:0.0148711191,(Inocybe_rennyi_Mart3089:0.0017101247,Inocybe_rennyi_Mart3182:0.0015309453):0.0068934011):0.0008598788):0.0017402936):0.0011595575,Inocybe_salicis_Mart5439:0.0071905868):0.0098276415,Inocybe_diabolica_Mart5031:0.0049070485):0.0063189602,(Inocybe_calida_Mart5117:0.0328775128,(Inocybe_calospora_Mart3213:0.0000021049,Inocybe_calospora_Mart5475:0.0049777401):0.0111821356):0.0066753802):0.0063153094):0.0032142699):0.0004787274,(((((((Inocybe_albomarginata_Mart5118:0.0077639862,Inocybe_glabipes_Mart5053:0.0049337023):0.0042682809,(((Inocybe_ambigua_Mart5004:0.0060034341,((Inocybe_nitidiuscula_AJ534934:0.0029193661,Inocybe_sapinea_Mart3187:0.0000021049):0.0009106702,Inocybe_sapinea_Mart5461:0.0077743457):0.0048744072):0.0025049791,((Inocybe_lanuginosa_Mart3151:0.0269005800,Inocybe_sambucina_Mart5139:0.0158534493):0.0047501981,(Inocybe_umbratica_Mart3188:0.0008163795,Inocybe_umbratica_Mart5159:0.0000021049):0.0122418856):0.0044670222):0.0000021052,Inocybe_relicina_Mart3105:0.0133922550):0.0017297406):0.0000022290,((Inocybe_glabipes_Mart5412:0.0113095586,Inocybe_leiocephala_Mart4310:0.0094942110):0.0077005759,(Inocybe_melanopoda_Mart5220:0.0007826933,(Inocybe_melanopus_Mart5052:0.0017242981,Inocybe_melanopus_Mart5112:0.0043333862):0.0009187964):0.0183065344):0.0024917613):0.0009768921,((((((Inocybe_corydalina_Mart4358:0.0033166599,(Inocybe_erinaceomorpha_Mart5034:0.0030743182,Inocybe_erinaceomorpha_Mart5378:0.0021766523):0.0155679816):0.0025526661,Inocybe_tricolor_Mart5426:0.0122804149):0.0065495618,((Inocybe_fraudans_Mart5037:0.0009389506,Inocybe_fraudans_Mart5425:0.0000021049):0.0102378992,(Inocybe_haemacta_Mart5039:0.0006971767,Inocybe_malenconii_Mart5050:0.0119695783):0.0080374001):0.0017808976):0.0025746390,(((Inocybe_fraudans_AJ889953:0.0000021049,Inocybe_fraudans_Mart5380:0.0000021049):0.0055253950,Inocybe_fraudans_Mart4359:0.0000021049):0.0030516847,Inocybe_fraudans_Mart4352:0.0008009150):0.0083440672):0.0101858776,Inocybe_leptocystis_Mart3204:0.0045796138):0.0012839246,((Inocybe_griseolilacina_Mart4305:0.0102238165,Inocybe_subnudipes_Mart5147:0.0090202811):0.0050335124,(Inocybe_griseoscabrosa_Mart5042:0.0000021049,Inocybe_griseoscabrosa_Mart5094:0.0060113159):0.0112441894):0.0006158971):0.0009019034):0.0010791403,Inocybe_obscurobadia_Mart5131:0.0083246653):0.0011170658,(((Inocybe_godeyi_Mart4332:0.0030900703,Inocybe_godeyi_Mart5228:0.0114962570):0.0066944212,Inocybe_tjallingiorum_Mart5161:0.0168681549):0.0005964628,(Inocybe_hystrix_Mart4336:0.0000021049,(Inocybe_hystrix_Mart5047:0.0000021049,Inocybe_hystrix_Mart5467:0.0016506680):0.0016341682):0.0122474624):0.0018595578):0.0000022054,((((((Inocybe_armeniaca_DQ974803:0.0044599977,(Inocybe_geophylla_Mart4299:0.0019850147,Inocybe_geophylla_Mart5462:0.0000021049):0.0131741624):0.0030349724,(Inocybe_pudica_AY228341:0.0011535095,(Inocybe_pudica_Mart5135:0.0056313381,Inocybe_pudica_Mart5382:0.0023637648):0.0009365446):0.0046399142):0.0000026502,((((Inocybe_geophylla_Mart4350:0.0040575049,Inocybe_geophylla_Mart5414:0.0008012714):0.0009434706,Inocybe_geophylla_Mart5011:0.0048489307):0.0064494037,Inocybe_posterula_Mart6004:0.0321260090):0.0000024629,Inocybe_geophylla_Mart5478:0.0040309078):0.0008232023):0.0031929509,Inocybe_geophylla_Mart4304:0.0008455220):0.0023739261,Inocybe_geophylla_Mart5010:0.0057182417):0.0066793959,((Inocybe_hirtella_Mart4345:0.0074023532,(Inocybe_hirtella_Mart5413:0.0017862144,Inocybe_hirtella_Mart5469:0.0023151929):0.0168019170):0.0032903106,(Inocybe_pseudoasterospora_Mart3094:0.0057425130,Inocybe_pseudoasterospora_Mart5121:0.0000021049):0.0160252170):0.0046633101):0.0015109406):0.0032759544):0.0063763133,(((((((((((((Inocybe_adaequata_Mart4346:0.0176074253,Inocybe_adaequata_Mart5143:0.0111784658):0.0076826835,((Inocybe_erubescens_Mart5020:0.0000021049,Inocybe_erubescens_Mart5113:0.0007616066):0.0000021052,Inocybe_erubescens_Mart5057:0.0000021049):0.0330705085):0.0168496358,Inocybe_cookei_Mart4339:0.0154715188):0.0132117918,(((((Inocybe_maculata_AJ534933:0.0000021049,(Inocybe_maculata_AJ966749:0.0000021049,Inocybe_maculata_Mart5008:0.0000021049):0.0000021052):0.0059596157,Inocybe_maculata_Mart4356:0.0039060222):0.0163554813,(Inocybe_maculata_Mart5059:0.0015865684,Inocybe_maculata_Mart5060:0.0050073930):0.0157878499):0.0041289910,(Inocybe_maculata_Mart4348:0.0203828644,Inocybe_maculata_Mart5465:0.0289289078):0.0077630977):0.0086366106,(Inocybe_quietiodor_Mart4351:0.0000021049,Inocybe_quietiodor_Mart5093:0.0000021049):0.0236483425):0.0061669988):0.0038159023,((Inocybe_cookei_Mart5024:0.0037539809,(Inocybe_cookei_Mart5213:0.0076653810,Inocybe_cookei_Mart5466:0.0007844399):0.0007311857):0.0015071586,Inocybe_cookei_Mart5313:0.0007975041):0.0417620920):0.0106980805,(((Inocybe_bongardii_Mart4303:0.0032189083,Inocybe_bongardii_Mart4357:0.0000021049):0.0000021052,Inocybe_bongardii_Mart4307:0.0015876902):0.0107101871,((((Inocybe_calamistrata_Mart4286:0.0023480815,(Inocybe_calamistrata_Mart4362:0.0069660647,Inocybe_calamistrata_Mart5274:0.0052426737):0.0025326240):0.0040744289,Inocybe_cervicolor_Mart5012:0.0061158910):0.0027269095,(Inocybe_calamistrata_Mart5406:0.0058062964,Inocybe_calamistrata_Mart5454:0.0008006284):0.0009250097):0.0043275167,((Inocybe_cervicolor_AF347101:0.0000021049,Inocybe_cervicolor_Mart3320:0.0000021049):0.0054988796,Inocybe_cervicolor_Mart4266:0.0077389344):0.0042435738):0.0062641310):0.0121601282):0.0334208026,(Inocybe_dulcamaroides_Mart5459:0.0347682383,Naucoria_submelinoides_Mart5116:0.0107673224):0.0251426008):0.0234510896,((Inocybe_albomarginata_Mart5002:0.0331654369,Inocybe_pelargonium_Mart5148:0.0252589300):0.0018003320,Inocybe_cf._fuscidula_Mart5468:0.0116940119):0.0033737451):0.0000020754,Inocybe_tenebrosa_Mart5157:0.0240627431):0.0016375349,((((Inocybe_amethystina_Mart5007:0.0057452613,Inocybe_flocculosa_Mart4343:0.0019423450):0.0006514130,(Inocybe_flocculosa_Mart4270:0.0008194181,(Inocybe_flocculosa_Mart4292:0.0000021049,Inocybe_flocculosa_Mart4340:0.0005753483):0.0002453353):0.0000021052):0.0061207368,(((Inocybe_cf._subnudipes_Mart5006:0.0207603081,Inocybe_fuscidula_Mart5395:0.0153444108):0.0051643775,(Inocybe_fuscidula_Mart3159:0.0015577105,(Inocybe_fuscidula_Mart4272:0.0000021049,((Inocybe_fuscidula_Mart5124:0.0007776186,Inocybe_fuscidula_Mart5158:0.0072940251):0.0000021052,Inocybe_fuscidula_Mart5474:0.0000021049):0.0007784191):0.0000021052):0.0113934875):0.0008376104,(Inocybe_sindonia_Mart4331:0.0032392759,Inocybe_sindonia_Mart5463:0.0033378633):0.0119355376):0.0024648266):0.0046464129,((((Inocybe_cf._leiocephal_Mart5420:0.0042554584,(((Inocybe_flocculosa_AY228354:0.0024285045,Inocybe_nitidiuscula_Mart5473:0.0000021049):0.0000021052,Inocybe_nitidiuscula_Mart4276:0.0111495015):0.0010518678,Inocybe_nitidiuscula_Mart4354:0.0147295692):0.0112330081):0.0021180041,Inocybe_nitidiuscula_Mart5394:0.0139771040):0.0103749130,(Inocybe_muricellata_Mart4294:0.0014486073,(Inocybe_muricellata_Mart5055:0.0007381099,Inocybe_muricellata_Mart5056:0.0000021049):0.0008378000):0.0162117563):0.0011679455,(Inocybe_langei_Mart43207:0.0034223145,Inocybe_langei_Mart5472:0.0066441795):0.0222917666):0.0037939493):0.0040485970):0.0004604565,((Inocybe_alpigenes_Mart5456:0.0016041655,Inocybe_muricellata_Mart5436:0.0016061204):0.0160285027,((Inocybe_egenula_Mart5452:0.0035877089,(Inocybe_nematoloma_Mart5126:0.0207268989,Inocybe_nematoloma_Mart5477:0.0000021049):0.0111726874):0.0336515192,((Inocybe_jacobi_Mart5044:0.0028597528,(Inocybe_petiginosa_AJ889956:0.0000021049,((Inocybe_petiginosa_Mart3183:0.0000021049,Inocybe_petiginosa_Mart4288:0.0000021049):0.0000021052,Inocybe_petiginosa_Mart4306:0.0024818110):0.0000021052):0.0012886279):0.0036908363,Inocybe_subexilis_Mart5146:0.0042950079):0.0139183627):0.0331077828):0.0043014035):0.0130666508,((((Inocybe_appendiculata_Mart5032:0.0327454300,((Inocybe_ochroalba_Mart4298:0.0007808076,(Inocybe_ochroalba_Mart4300:0.0000021049,(Inocybe_ochroalba_Mart4311:0.0000021049,Inocybe_ochroalba_Mart4330:0.0039660111):0.0000010388):0.0007769322):0.0000021052,Inocybe_ochroalba_Mart4342:0.0039352074):0.0088697204):0.0083804610,((Inocybe_asterospora_AJ889951:0.0000021049,Inocybe_asterospora_Mart4347:0.0116109600):0.0055725388,(Inocybe_calida_Mart5026:0.0000021049,Inocybe_inodora_Mart5038:0.0141446870):0.0000021052):0.0136043408):0.0014832771,Inocybe_fuscidula_Mart4278:0.0114977131):0.0024781545,((Inocybe_hirtella_Mart4355:0.0226954168,(((Inocybe_phaeocomis_Mart4275:0.0000021049,(Inocybe_phaeocomis_Mart4283:0.0040131888,Inocybe_phaeocomis_Mart5424:0.0029007591):0.0018007913):0.0021668142,((Inocybe_phaeocomis_Mart4341:0.0015527917,Inocybe_phaeocomis_Mart4361:0.0015802743):0.0011646664,Inocybe_phaeocomis_Mart5419:0.0076444206):0.0038024965):0.0071283919,Inocybe_phaeodisca_Mart5054:0.0064762287):0.0117866770):0.0038764234,(((Inocybe_lanuginosa_Mart3107:0.0006205849,(Inocybe_lanuginosa_Mart3152:0.0000021049,Inocybe_lanuginosa_Mart5096:0.0089209833):0.0027655569):0.0003661111,Inocybe_teraturgus_Mart3173:0.0109370253):0.0099450741,Inocybe_leptophylla_Mart3108:0.0116581610):0.0074026543):0.0046999060):0.0021406785):0.0000020760,((((Inocybe_boltonii_Mart3184:0.0015970897,Inocybe_boltonii_Mart5471:0.0032337771):0.0014947284,Inocybe_soluta_Mart4280:0.0066282148):0.0026975767,Inocybe_soluta_Mart3172:0.0085137852):0.0125812015,Inocybe_subporospora_Mart5144:0.0123855247):0.0037125267):0.0037758756):0.0015349531,Inocybe_glabipes_Mart5222:0.0000021049):0.0000010590,(((((Inocybe_calida_Mart5029:0.0101991762,Inocybe_fibrosoides_Mart4190:0.0102857005):0.0059478435,((Inocybe_cryprocystis_Mart5028:0.0131337168,(Inocybe_devonensis_Mart5217:0.0032133504,Inocybe_vulpinella_Mart5164:0.0025165810):0.0199566870):0.0016460618,Inocybe_inodora_Mart5432:0.0248201953):0.0018499409):0.0082145209,Inocybe_lanuginosa_DQ367905:0.0106654787):0.0010038025,Inocybe_godeyi_AJ889954:0.0000021049):0.0000021502,(Inocybe_grammata_Mart5046:0.0134607622,(Inocybe_mixitilis_Mart3186:0.0060078278,(((Inocybe_mixitilis_Mart4282:0.0000021049,(Inocybe_mixitilis_Mart4325:0.0015730116,Inocybe_mixitilis_Mart4328:0.0000021049):0.0021143616):0.0010550738,Inocybe_mixitilis_Mart4308:0.0000021049):0.0000029058,Inocybe_mixitilis_Mart4365:0.0032188682):0.0037640251):0.0041260659):0.0110093563):0.0000021052):0.0076590954,(((Inocybe_alpigenes_Mart5451:0.0016388424,Inocybe_alpigenes_Mart5455:0.0025246594):0.0040515698,(Inocybe_tetragonospora_Mart5438:0.0042087049,Inocybe_tetragonospora_Mart5453:0.0016382442):0.0104899293):0.0021414392,(Inocybe_stellatospora_Mart3205:0.0015525714,Inocybe_stellatospora_Mart4279:0.0026105981):0.0145788250):0.0039478719):0.0011943203,Inocybe_lacera_AB211269:0.0000021049):0.0021182627,(Inocybe_putilla_Mart5140:0.0217475734,Inocybe_soluta_Mart5027:0.0000021049):0.0000023355):0.0084330658,(Inocybe_aurea_Mart3092:0.0009061795,Inocybe_aurea_Mart5411:0.0019725122):0.0131713070):0.0070365850,(Inocybe_giacomi_Mart5423:0.0008051475,Inocybe_rennyi_Mart3195:0.0016144011):0.0000021052):0.0011655838,(Inocybe_giacomi_Mart5433:0.0020686933,Inocybe_giacomi_Mart5435:0.0019659240):0.0008069126);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/dna_M3031_276_1518.phy/output_files/iqtree/inference/pars_9.treefile -m "TIM3{0.67082,3.27705,6.4728}+F{0.279312,0.199231,0.27532,0.246137}+R5{0.700803,0.0581959,0.153522,0.955244,0.0862333,3.52906,0.0524731,7.5087,0.00696912,16.392}" --length 1518
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data2/dna_M3031_276_1518.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data2/dna_M3031_276_1518.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Sep 21 02:43:52 2025
+Total CPU time used: 419.475 seconds (0h:6m:59s)
+Total wall-clock time used: 420.406 seconds (0h:7m:0s)
+

@@ -1,0 +1,705 @@
+IQ-TREE 3.0.1 built Sep 14 2025
+
+Input file name: /home/suny/Downloads/VAN_TRAINING_DATA/data2/dna_M4170_258_2559.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 10
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 258 sequences with 2559 nucleotide sites
+Number of constant sites: 1801 (= 70.3791% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1801 (= 70.3791% of all sites)
+Number of parsimony informative sites: 614
+Number of distinct site patterns: 832
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+I+R4       -16230.505   33517.010 +        1   33792.195 +        1   36604.423 +    0.995
+TIM2+F+I+R4      -16243.574   33539.149 - 1.56e-05   33811.986 - 5.04e-05   36614.867 -  0.00537
+TIM3+F+I+R4      -16263.032   33578.064 - 5.52e-14   33850.901 - 1.79e-13   36653.782 -  1.9e-11
+TIM+F+I+R4       -16270.415   33592.829 - 3.44e-17   33865.666 - 1.11e-16   36668.547 - 1.18e-14
+TN+F+I+R4        -16274.410   33598.820 - 1.72e-18   33870.487 - 9.98e-18   36668.690 -  1.1e-14
+TVM+F+I+R4       -16285.480   33624.959 - 3.62e-24   33898.968 - 6.52e-24   36706.524 - 6.71e-23
+TPM2u+F+I+R4     -16297.695   33645.391 - 1.33e-28   33917.058 -  7.7e-28   36715.261 -  8.5e-25
+TPM3u+F+I+R4     -16312.403   33674.807 - 5.43e-35   33946.474 - 3.15e-34   36744.677 - 3.48e-31
+HKY+F+I+R4       -16324.235   33696.471 - 1.07e-39   33966.972 - 1.12e-38   36760.494 - 1.28e-34
+K3Pu+F+I+R4      -16320.855   33691.710 - 1.16e-38   33963.377 - 6.73e-38   36761.580 - 7.44e-35
+GTR+I+R4         -16354.802   33759.604 -  2.1e-53   34031.272 - 1.22e-52   36829.474 - 1.34e-49
+SYM+I+R4         -16354.804   33759.608 - 2.09e-53   34031.275 - 1.21e-52   36829.478 - 1.34e-49
+SYM+I+R4         -16354.804   33759.608 - 2.09e-53   34031.275 - 1.21e-52   36829.478 - 1.34e-49
+TIM2+I+R4        -16376.928   33799.856 - 3.81e-62   34069.195 - 7.08e-61   36858.032 - 8.46e-56
+TIM2e+I+R4       -16376.946   33799.892 - 3.74e-62   34069.230 - 6.96e-61   36858.067 - 8.31e-56
+TIM2e+I+R4       -16376.946   33799.892 - 3.74e-62   34069.230 - 6.96e-61   36858.067 - 8.31e-56
+TVM+I+R4         -16419.457   33886.914 - 4.75e-81   34157.416 - 4.93e-80   36950.937 - 5.66e-76
+TVMe+I+R4        -16419.498   33886.997 - 4.56e-81   34157.498 - 4.74e-80   36951.020 - 5.43e-76
+TVMe+I+R4        -16419.498   33886.997 - 4.56e-81   34157.498 - 4.74e-80   36951.020 - 5.43e-76
+TPM2u+I+R4       -16438.368   33920.736 - 2.15e-88   34188.915 - 7.13e-87   36973.064 - 8.88e-81
+TPM2+I+R4        -16438.390   33920.780 -  2.1e-88   34188.959 - 6.98e-87   36973.108 - 8.68e-81
+TPM2+I+R4        -16438.390   33920.780 -  2.1e-88   34188.959 - 6.98e-87   36973.108 - 8.68e-81
+TIM3+I+R4        -16454.609   33955.217 - 6.99e-96   34224.556 -  1.3e-94   37013.393 - 1.55e-89
+TIM3e+I+R4       -16454.619   33955.239 - 6.92e-96   34224.577 - 1.29e-94   37013.414 - 1.54e-89
+TIM3e+I+R4       -16454.619   33955.239 - 6.92e-96   34224.577 - 1.29e-94   37013.414 - 1.54e-89
+TIM+I+R4         -16467.259   33980.517 - 2.24e-101   34249.856 - 4.17e-100   37038.693 - 4.98e-95
+TIMe+I+R4        -16467.316   33980.632 - 2.12e-101   34249.971 - 3.94e-100   37038.808 -  4.7e-95
+TIMe+I+R4        -16467.316   33980.632 - 2.12e-101   34249.971 - 3.94e-100   37038.808 -  4.7e-95
+TN+I+R4          -16474.631   33993.261 - 3.83e-104   34261.440 - 1.27e-102   37045.589 - 1.58e-96
+TNe+I+R4         -16474.690   33993.380 - 3.61e-104   34261.559 - 1.2e-102   37045.708 - 1.49e-96
+TNe+I+R4         -16474.690   33993.380 - 3.61e-104   34261.559 - 1.2e-102   37045.708 - 1.49e-96
+TPM3u+I+R4       -16519.802   34083.603 - 9.25e-124   34351.782 - 3.07e-122   37135.931 - 3.82e-116
+TPM3+I+R4        -16519.807   34083.614 - 9.19e-124   34351.793 - 3.05e-122   37135.942 - 3.8e-116
+TPM3+I+R4        -16519.807   34083.614 - 9.19e-124   34351.793 - 3.05e-122   37135.942 - 3.8e-116
+K3Pu+I+R4        -16530.514   34105.028 - 2.06e-128   34373.206 - 6.84e-127   37157.356 - 8.51e-121
+K3P+I+R4         -16530.520   34105.039 - 2.05e-128   34373.218 - 6.8e-127   37157.367 - 8.46e-121
+K3P+I+R4         -16530.520   34105.039 - 2.05e-128   34373.218 - 6.8e-127   37157.367 - 8.46e-121
+HKY+I+R4         -16538.228   34118.455 - 2.5e-131   34385.477 - 1.48e-129   37164.936 - 1.92e-122
+K2P+I+R4         -16538.254   34118.507 - 2.44e-131   34385.529 - 1.44e-129   37164.988 - 1.87e-122
+K2P+I+R4         -16538.254   34118.507 - 2.44e-131   34385.529 - 1.44e-129   37164.988 - 1.87e-122
+F81+F+I+R4       -16904.484   34854.968 - 2.93e-291   35124.307 - 5.44e-290   37913.144 - 6.49e-285
+JC+I+R4          -17034.587   35109.174 -        0   35375.042 -        0   38149.807 -        0
+JC+I+R4          -17034.587   35109.174 -        0   35375.042 -        0   38149.807 -        0
+F81+I+R4         -17034.607   35109.213 -        0   35375.082 -        0   38149.847 -        0
+JC+I+R5          -17034.270   35112.540 -        0   35380.718 -        0   38164.868 -        0
+JC+I+R3          -17051.589   35139.178 -        0   35402.748 -        0   38168.116 -        0
+JC+R4            -17087.540   35213.080 -        0   35477.798 -        0   38247.866 -        0
+JC+R5            -17083.926   35209.852 -        0   35476.874 -        0   38256.333 -        0
+JC+R3            -17120.307   35274.614 -        0   35537.040 -        0   38297.705 -        0
+JC+I+R2          -17213.191   35458.383 -        0   35719.668 -        0   38475.626 -        0
+JC+I+G4          -17309.314   35648.628 -        0   35908.775 -        0   38660.024 -        0
+JC+R2            -17395.459   35820.919 -        0   36081.066 -        0   38832.315 -        0
+JC+G4            -17422.427   35872.855 -        0   36131.867 -        0   38878.404 -        0
+JC+I             -17598.565   36225.130 -        0   36484.142 -        0   39230.680 -        0
+JC               -18810.546   38647.093 -        0   38904.972 -        0   41646.794 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+R4
+
+Rate parameter R:
+
+  A-C: 1.4320
+  A-G: 4.3711
+  A-T: 2.1331
+  C-G: 0.4452
+  C-T: 10.4597
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3497
+  pi(C) = 0.218
+  pi(G) = 0.1797
+  pi(T) = 0.2526
+
+Rate matrix Q:
+
+  A   -0.6756    0.1289    0.3243    0.2224
+  C    0.2067    -1.331   0.03303     1.091
+  G     0.631   0.04007   -0.7753    0.1043
+  T    0.3079    0.9414   0.07419    -1.324
+
+Model of rate heterogeneity: Invar+FreeRate with 4 categories
+Proportion of invariable sites: 0.5679
+Site proportion and rates:  (0.3023,0.5566) (0.1121,2.701) (0.01297,8.676) (0.004765,87.44)
+
+ Category  Relative_rate  Proportion
+  0         0              0.5679
+  1         0.5566         0.3023
+  2         2.701          0.1121
+  3         8.676          0.01297
+  4         87.44          0.004765
+
+STARTING TREE
+-------------
+
+Log-likelihood of the tree: -16230.5012 (s.e. 539.0264)
+Unconstrained log-likelihood (without tree): -10098.3392
+Number of free parameters (#branches + #model parameters): 528
+Akaike information criterion (AIC) score: 33517.0024
+Corrected Akaike information criterion (AICc) score: 33792.1866
+Bayesian information criterion (BIC) score: 36604.4147
+
+Total tree length (sum of branch lengths): 1.6913
+Sum of internal branch lengths: 1.1115 (65.7154% of tree length)
+
+WARNING: 90 near-zero internal branches (<0.0004) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Pseudacris_brachyphona_AL_Cleburne_JA0610' is drawn at root
+
++--Pseudacris_brachyphona_AL_Cleburne_JA0610
+|
+|              +**Pseudacris_brachyphona_AL_Elmore_ECM0111
+|           +--|
+|           |  +--Pseudacris_brachyphona_AL_Tallapoosa_ECM0040
+|        +--|
+|        |  |  +--Pseudacris_brachyphona_AL_Lawrence_ECM0452
+|        |  +**|
+|        |     +**Pseudacris_brachyphona_GA_Walker_ECM1131
+|     +--|
+|     |  +--Pseudacris_brachyphona_AL_Hale_JA0601
+|  +--|
+|  |  |                                        +**Pseudacris_brachyphona_KY_Bullitt_JTC3086
+|  |  |                                     +--|
+|  |  |                                     |  +--Pseudacris_triseriata_KY_Jefferson_JTC2709
+|  |  |                                  +--|
+|  |  |                                  |  |              +--Pseudacris_triseriata_CheckOtherData_JTC2715
+|  |  |                                  |  |           +**|
+|  |  |                                  |  |           |  +--Pseudacris_triseriata_IL_Lawrence_INHS1234
+|  |  |                                  |  |        +--|
+|  |  |                                  |  |        |  +--Pseudacris_triseriata_IL_Perry_INHS1207
+|  |  |                                  |  |     +**|
+|  |  |                                  |  |     |  |  +--Pseudacris_triseriata_IL_Saline_INHS1239
+|  |  |                                  |  |     |  +**|
+|  |  |                                  |  |     |     +--Pseudacris_triseriata_TN_Montgomery_JTC2611
+|  |  |                                  |  |  +--|
+|  |  |                                  |  |  |  +--Pseudacris_triseriata_KY_Daviess_JTC2594
+|  |  |                                  |  +**|
+|  |  |                                  |     |        +--Pseudacris_triseriata_MI_Berrien_J1
+|  |  |                                  |     |     +**|
+|  |  |                                  |     |     |  |  +--Pseudacris_triseriata_OH_Highland_JTC2604
+|  |  |                                  |     |     |  +--|
+|  |  |                                  |     |     |     +--Pseudacris_triseriata_OH_Preble_JTC2607
+|  |  |                                  |     |  +**|
+|  |  |                                  |     |  |  +**Pseudacris_triseriata_MI_Ingham_ECM0615
+|  |  |                                  |     +--|
+|  |  |                                  |        +--Pseudacris_triseriata_MI_Ingham_ECM0616
+|  |  |                               +**|
+|  |  |                               |  +--Pseudacris_triseriata_Ontario_Niagara_JTC2682
+|  |  |                            +**|
+|  |  |                            |  +**Pseudacris_triseriata_OH_Clinton_JTC2605
+|  |  |                         +--|
+|  |  |                         |  |                 +**Pseudacris_triseriata_IL_Wayne_INHS1581
+|  |  |                         |  |              +--|
+|  |  |                         |  |              |  |  +**Pseudacris_triseriata_IN_Marion_JTC2851
+|  |  |                         |  |              |  +--|
+|  |  |                         |  |              |     +--Pseudacris_triseriata_IN_Posey_Highton69234
+|  |  |                         |  |           +**|
+|  |  |                         |  |           |  |  +**Pseudacris_triseriata_IN_Jennings_JTC2723
+|  |  |                         |  |           |  +--|
+|  |  |                         |  |           |     +--Pseudacris_triseriata_OH_Logan_JTC2590
+|  |  |                         |  |        +--|
+|  |  |                         |  |        |  +--Pseudacris_triseriata_IN_Delaware_JTC2830
+|  |  |                         |  |     +--|
+|  |  |                         |  |     |  |        +--Pseudacris_triseriata_NY_Livingston_JTC2848
+|  |  |                         |  |     |  |     +**|
+|  |  |                         |  |     |  |     |  +**Pseudacris_triseriata_Ontario_Oxford_JTC2679
+|  |  |                         |  |     |  |  +**|
+|  |  |                         |  |     |  |  |  +**Pseudacris_triseriata_Ontario_Halton_JTC2678
+|  |  |                         |  |     |  +**|
+|  |  |                         |  |     |     +**Pseudacris_triseriata_NY_Niagara_JTC2639
+|  |  |                         |  |  +**|
+|  |  |                         |  |  |  +**Pseudacris_triseriata_Ontario_Waterloo_JTC2690
+|  |  |                         |  +**|
+|  |  |                         |     +--Pseudacris_triseriata_Ontario_Essex_ECM0662
+|  |  |                      +--|
+|  |  |                      |  |              +--Pseudacris_brachyphona_KY_Lincoln_Highton71747
+|  |  |                      |  |           +--|
+|  |  |                      |  |           |  +--Pseudacris_feriarum_KY_Lincoln_Highton71758
+|  |  |                      |  |        +--|
+|  |  |                      |  |        |  +--Pseudacris_feriarum_GA_Floyd_ECM0446
+|  |  |                      |  |     +--|
+|  |  |                      |  |     |  |        +--Pseudacris_brachyphona_MS_Itawamba_ECM0974
+|  |  |                      |  |     |  |     +--|
+|  |  |                      |  |     |  |     |  |        +--Pseudacris_feriarum_IL_Pulaski_INHS1196
+|  |  |                      |  |     |  |     |  |     +**|
+|  |  |                      |  |     |  |     |  |     |  |        +**Pseudacris_feriarum_KY_McCracken_JTC2615
+|  |  |                      |  |     |  |     |  |     |  |     +--|
+|  |  |                      |  |     |  |     |  |     |  |     |  +--Pseudacris_feriarum_TN_Weakley_ECM0129
+|  |  |                      |  |     |  |     |  |     |  |  +--|
+|  |  |                      |  |     |  |     |  |     |  |  |  +--Pseudacris_feriarum_MO_Dunklin_ECM0126
+|  |  |                      |  |     |  |     |  |     |  +**|
+|  |  |                      |  |     |  |     |  |     |     +--Pseudacris_feriarum_MS_Oktibbeha_ECM0970
+|  |  |                      |  |     |  |     |  |  +--|
+|  |  |                      |  |     |  |     |  |  |  +--Pseudacris_feriarum_KY_Calloway_F1
+|  |  |                      |  |     |  |     |  +**|
+|  |  |                      |  |     |  |     |     |  +**Pseudacris_feriarum_TN_Franklin_Highton61673
+|  |  |                      |  |     |  |     |     +--|
+|  |  |                      |  |     |  |     |        +--Pseudacris_feriarum_TN_Obion_ECM0135
+|  |  |                      |  |     |  |  +**|
+|  |  |                      |  |     |  |  |  |           +**Pseudacris_feriarum_AL_Choctaw_ECM0961
+|  |  |                      |  |     |  |  |  |        +--|
+|  |  |                      |  |     |  |  |  |        |  +**Pseudacris_feriarum_AL_Pickens_ECM0969
+|  |  |                      |  |     |  |  |  |     +--|
+|  |  |                      |  |     |  |  |  |     |  |     +--Pseudacris_feriarum_AL_Cullman_ECM0992
+|  |  |                      |  |     |  |  |  |     |  |  +**|
+|  |  |                      |  |     |  |  |  |     |  |  |  +--Pseudacris_feriarum_TN_Obion_ECM0131
+|  |  |                      |  |     |  |  |  |     |  +**|
+|  |  |                      |  |     |  |  |  |     |     +--Pseudacris_feriarum_AL_Morgan_JTC2740
+|  |  |                      |  |     |  |  |  |  +**|
+|  |  |                      |  |     |  |  |  |  |  +--Pseudacris_feriarum_TN_Chester_JTC2762
+|  |  |                      |  |     |  |  |  +**|
+|  |  |                      |  |     |  |  |     +--Pseudacris_feriarum_MS_Lafayette_ECM0971
+|  |  |                      |  |     |  +--|
+|  |  |                      |  |     |     |  +--Pseudacris_feriarum_AL_Conecuh_ECM0960
+|  |  |                      |  |     |     +--|
+|  |  |                      |  |     |        +--Pseudacris_feriarum_AL_Macon_ECM0400
+|  |  |                      |  |  +--|
+|  |  |                      |  |  |  |           +--Pseudacris_feriarum_AL_Elmore_ECM0122
+|  |  |                      |  |  |  |        +--|
+|  |  |                      |  |  |  |        |  +--Pseudacris_feriarum_AL_Macon_ECM0387
+|  |  |                      |  |  |  |     +**|
+|  |  |                      |  |  |  |     |  +--Pseudacris_feriarum_FL_Calhoun_ECM0368
+|  |  |                      |  |  |  |  +--|
+|  |  |                      |  |  |  |  |  +--Pseudacris_feriarum_AL_Henry_ECM0386
+|  |  |                      |  |  |  +**|
+|  |  |                      |  |  |     |              +--Pseudacris_feriarum_FL_Gasden_ECM0382
+|  |  |                      |  |  |     |           +--|
+|  |  |                      |  |  |     |           |  +--Pseudacris_feriarum_GA_Seminole_ECM0384
+|  |  |                      |  |  |     |        +--|
+|  |  |                      |  |  |     |        |  +**Pseudacris_feriarum_GA_Decatur_ECM0383
+|  |  |                      |  |  |     |     +--|
+|  |  |                      |  |  |     |     |  +--Pseudacris_feriarum_GA_Houston_ECM1130
+|  |  |                      |  |  |     |  +--|
+|  |  |                      |  |  |     |  |  |     +--Pseudacris_feriarum_FL_Liberty_ECM0232
+|  |  |                      |  |  |     |  |  |  +**|
+|  |  |                      |  |  |     |  |  |  |  +--Pseudacris_feriarum_GA_Banks_ECM0298
+|  |  |                      |  |  |     |  |  +--|
+|  |  |                      |  |  |     |  |     +--Pseudacris_feriarum_GA_Baker_ECM0402
+|  |  |                      |  |  |     +--|
+|  |  |                      |  |  |        +--Pseudacris_feriarum_GA_Heard_ECM0448
+|  |  |                      |  +--|
+|  |  |                      |     |           +--Pseudacris_feriarum_GA_Appling_ECM0602
+|  |  |                      |     |        +--|
+|  |  |                      |     |        |  |     +**Pseudacris_feriarum_GA_Greene_ECM1454
+|  |  |                      |     |        |  |  +--|
+|  |  |                      |     |        |  |  |  +--Pseudacris_feriarum_GA_Walton_ECM1125
+|  |  |                      |     |        |  +--|
+|  |  |                      |     |        |     +--Pseudacris_feriarum_GA_Oglethorpe_JTC2578
+|  |  |                      |     |     +--|
+|  |  |                      |     |     |  +--Pseudacris_feriarum_SC_Greenwood_ECM1435
+|  |  |                      |     |  +--|
+|  |  |                      |     |  |  |                          +--Pseudacris_feriarum_MD_AnneArundel_JTC2730
+|  |  |                      |     |  |  |                       +**|
+|  |  |                      |     |  |  |                       |  |  +--Pseudacris_feriarum_PA_Fulton_Highton62076
+|  |  |                      |     |  |  |                       |  +**|
+|  |  |                      |     |  |  |                       |     +--Pseudacris_feriarum_VA_York_ECM0481
+|  |  |                      |     |  |  |                    +**|
+|  |  |                      |     |  |  |                    |  +--Pseudacris_feriarum_VA_Mathews_ECM0486
+|  |  |                      |     |  |  |                 +**|
+|  |  |                      |     |  |  |                 |  +**Pseudacris_feriarum_WV_Berkeley_JTC2857
+|  |  |                      |     |  |  |              +**|
+|  |  |                      |     |  |  |              |  |     +**Pseudacris_feriarum_NC_Davie_ECM0464
+|  |  |                      |     |  |  |              |  |  +**|
+|  |  |                      |     |  |  |              |  |  |  +--Pseudacris_feriarum_NC_Lincoln_MHP10700
+|  |  |                      |     |  |  |              |  +--|
+|  |  |                      |     |  |  |              |     +--Pseudacris_feriarum_SC_Kershaw_Highton61551
+|  |  |                      |     |  |  |           +--|
+|  |  |                      |     |  |  |           |  +--Pseudacris_feriarum_VA_Southampton_ECM1076
+|  |  |                      |     |  |  |        +**|
+|  |  |                      |     |  |  |        |  |     +--Pseudacris_feriarum_NC_Chatham_ECM0189
+|  |  |                      |     |  |  |        |  |  +--|
+|  |  |                      |     |  |  |        |  |  |  +--Pseudacris_feriarum_VA_PrinceEdward_ECM1011
+|  |  |                      |     |  |  |        |  +--|
+|  |  |                      |     |  |  |        |     +--Pseudacris_feriarum_NC_Wake_ECM0181
+|  |  |                      |     |  |  |     +--|
+|  |  |                      |     |  |  |     |  +--Pseudacris_feriarum_SC_Dorchester_ECM0441
+|  |  |                      |     |  |  |  +--|
+|  |  |                      |     |  |  |  |  |     +--Pseudacris_feriarum_MD_Baltimore_ECM0632
+|  |  |                      |     |  |  |  |  |  +**|
+|  |  |                      |     |  |  |  |  |  |  |     +--Pseudacris_feriarum_MD_Harford_ECM0630
+|  |  |                      |     |  |  |  |  |  |  |  +**|
+|  |  |                      |     |  |  |  |  |  |  |  |  +--Pseudacris_feriarum_VA_Mathews_ECM0601
+|  |  |                      |     |  |  |  |  |  |  +**|
+|  |  |                      |     |  |  |  |  |  |     +--Pseudacris_feriarum_NC_Johnson_ECM0455
+|  |  |                      |     |  |  |  |  +--|
+|  |  |                      |     |  |  |  |     +--Pseudacris_feriarum_MD_PrinceGeorge_ECM0180
+|  |  |                      |     |  |  +--|
+|  |  |                      |     |  |     |  +--Pseudacris_feriarum_NC_Sampson_ECM0453
+|  |  |                      |     |  |     +--|
+|  |  |                      |     |  |        +--Pseudacris_feriarum_VA_PrinceGeorge_ECM0665
+|  |  |                      |     +--|
+|  |  |                      |        |     +--Pseudacris_feriarum_TN_Anderson_Highton88_43
+|  |  |                      |        |  +--|
+|  |  |                      |        |  |  +--Pseudacris_feriarum_TN_Blount_JTC2593
+|  |  |                      |        +--|
+|  |  |                      |           |  +**Pseudacris_feriarum_TN_Blount_Highton50960
+|  |  |                      |           +--|
+|  |  |                      |              +--Pseudacris_feriarum_TN_Hamilton_ECM0399
+|  |  |                   +--|
+|  |  |                   |  |           +--Pseudacris_kalmi_DE_NewCastle_Highton62083
+|  |  |                   |  |        +--|
+|  |  |                   |  |        |  |  +--Pseudacris_kalmi_MD_Kent_NJ1
+|  |  |                   |  |        |  +--|
+|  |  |                   |  |        |     +**Pseudacris_kalmi_MD_Wicomico_JTC2738
+|  |  |                   |  |     +--|
+|  |  |                   |  |     |  |        +--Pseudacris_kalmi_DE_Sussex_ECM1080
+|  |  |                   |  |     |  |     +--|
+|  |  |                   |  |     |  |     |  +--Pseudacris_kalmi_MD_Kent_ECM0162
+|  |  |                   |  |     |  |  +**|
+|  |  |                   |  |     |  |  |  |     +**Pseudacris_kalmi_NJ_Atlantic_ECM1115
+|  |  |                   |  |     |  |  |  |  +**|
+|  |  |                   |  |     |  |  |  |  |  +--Pseudacris_kalmi_NJ_Burlington_JTC2836
+|  |  |                   |  |     |  |  |  +--|
+|  |  |                   |  |     |  |  |     +**Pseudacris_kalmi_NJ_Salem_Highton62067
+|  |  |                   |  |     |  +**|
+|  |  |                   |  |     |     +--Pseudacris_kalmi_VA_Accomack_ECM1064
+|  |  |                   |  |  +--|
+|  |  |                   |  |  |  +--Pseudacris_nigrita_VA_York_ECM0482
+|  |  |                   |  +--|
+|  |  |                   |     +--Pseudacris_kalmi_VA_Northampton_ECM1067
+|  |  |                +--|
+|  |  |                |  |                               +--Pseudacris_nigrita_AL_Barbour_ECM0036
+|  |  |                |  |                            +--|
+|  |  |                |  |                            |  +**Pseudacris_nigrita_GA_Baker_ECM0422
+|  |  |                |  |                         +--|
+|  |  |                |  |                         |  +--Pseudacris_nigrita_GA_Liberty_ECM0603
+|  |  |                |  |                      +--|
+|  |  |                |  |                      |  +--Pseudacris_nigrita_GA_McIntosh_ECM1801
+|  |  |                |  |                   +--|
+|  |  |                |  |                   |  |  +**Pseudacris_nigrita_FL_Calhoun_ECM0215
+|  |  |                |  |                   |  +--|
+|  |  |                |  |                   |     +--Pseudacris_nigrita_FL_Franklin_ECM0371
+|  |  |                |  |                +--|
+|  |  |                |  |                |  +--Pseudacris_nigrita_MS_Harrison_ECM0290
+|  |  |                |  |             +--|
+|  |  |                |  |             |  |  +--Pseudacris_nigrita_FL_Jefferson_ECM0372
+|  |  |                |  |             |  +**|
+|  |  |                |  |             |     |  +--Pseudacris_nigrita_FL_Liberty_ECM0359
+|  |  |                |  |             |     +**|
+|  |  |                |  |             |        |  +--Pseudacris_nigrita_VA_PrinceGeorge_ECM0609
+|  |  |                |  |             |        +--|
+|  |  |                |  |             |           +--Pseudacris_nigrita_VA_Surrey_ECM1097
+|  |  |                |  |          +**|
+|  |  |                |  |          |  +--Pseudacris_nigrita_FL_Liberty_ECM0242
+|  |  |                |  |       +--|
+|  |  |                |  |       |  |  +--Pseudacris_nigrita_FL_Brevard_ECM0024
+|  |  |                |  |       |  +--|
+|  |  |                |  |       |     |     +--Pseudacris_nigrita_NC_Scotland_U1
+|  |  |                |  |       |     |  +--|
+|  |  |                |  |       |     |  |  +--Pseudacris_nigrita_SC_Barnwell_ECM0087
+|  |  |                |  |       |     +**|
+|  |  |                |  |       |        +--Pseudacris_nigrita_VA_Sussex_ECM0666
+|  |  |                |  |  +----|
+|  |  |                |  |  |    +--Pseudacris_nigrita_SC_Dorchester_ECM0442
+|  |  |                |  +--|
+|  |  |                |     |                 +--Pseudacris_nigrita_MS_Harrison_ECM0261
+|  |  |                |     |              +--|
+|  |  |                |     |              |  |              +**Pseudacris_spnov_AR_Perry_ECM0270
+|  |  |                |     |              |  |           +**|
+|  |  |                |     |              |  |           |  +--Pseudacris_spnov_MO_Ripley_JTC2829
+|  |  |                |     |              |  |        +--|
+|  |  |                |     |              |  |        |  +--Pseudacris_spnov_AR_Yell_ASUMZ27611
+|  |  |                |     |              |  |     +**|
+|  |  |                |     |              |  |     |  |  +--Pseudacris_spnov_AR_Sebastian_ASUMZ27612
+|  |  |                |     |              |  |     |  +--|
+|  |  |                |     |              |  |     |     +--Pseudacris_spnov_MS_Simpson_ECM0259
+|  |  |                |     |              |  |  +**|
+|  |  |                |     |              |  |  |  +--Pseudacris_spnov_TX_Liberty_ECM2295
+|  |  |                |     |              |  +**|
+|  |  |                |     |              |     |  +--Pseudacris_spnov_LA_StTammany_ECM0268
+|  |  |                |     |              |     +--|
+|  |  |                |     |              |        +--Pseudacris_spnov_MS_Marion_ECM0260
+|  |  |                |     |           +**|
+|  |  |                |     |           |  +--Pseudacris_spnov_LA_StTammany_ECM0264
+|  |  |                |     |        +--|
+|  |  |                |     |        |  |  +--Pseudacris_spnov_AR_Conway_ASUMZ27608
+|  |  |                |     |        |  +**|
+|  |  |                |     |        |     |           +--Pseudacris_spnov_AR_Craighead_ECM0011
+|  |  |                |     |        |     |        +--|
+|  |  |                |     |        |     |        |  +--Pseudacris_spnov_LA_EastBatonRouge_ECM0029
+|  |  |                |     |        |     |     +**|
+|  |  |                |     |        |     |     |  |  +--Pseudacris_spnov_LA_Washington_ECM0124
+|  |  |                |     |        |     |     |  +--|
+|  |  |                |     |        |     |     |     |  +**Pseudacris_spnov_OK_Love_JTC2860
+|  |  |                |     |        |     |     |     +--|
+|  |  |                |     |        |     |     |        +--Pseudacris_spnov_OK_Pittsburg_JTC2847
+|  |  |                |     |        |     |  +**|
+|  |  |                |     |        |     |  |  |  +--Pseudacris_spnov_LA_St._Martin_ECM2437
+|  |  |                |     |        |     |  |  +--|
+|  |  |                |     |        |     |  |     +--Pseudacris_spnov_OK_Osage_JTC2737
+|  |  |                |     |        |     +--|
+|  |  |                |     |        |        +--Pseudacris_spnov_MS_Simpson_ECM0258
+|  |  |                |     |     +--|
+|  |  |                |     |     |  +--Pseudacris_spnov_MS_Hancock_ECM0332
+|  |  |                |     |  +--|
+|  |  |                |     |  |  |           +--Pseudacris_spnov_LA_Beauregard_ECM0139
+|  |  |                |     |  |  |        +**|
+|  |  |                |     |  |  |        |  |  +--Pseudacris_spnov_TX_Lamar_JTC2586
+|  |  |                |     |  |  |        |  +--|
+|  |  |                |     |  |  |        |     +--Pseudacris_spnov_TX_Liberty_ECM2294
+|  |  |                |     |  |  |     +**|
+|  |  |                |     |  |  |     |  +**Pseudacris_spnov_LA_RedRiver_ECM1155
+|  |  |                |     |  |  |  +--|
+|  |  |                |     |  |  |  |  |  +--Pseudacris_spnov_OK_McCurtain_JTC2866
+|  |  |                |     |  |  |  |  +--|
+|  |  |                |     |  |  |  |     +--Pseudacris_spnov_TX_Jasper_ECM2293
+|  |  |                |     |  |  +--|
+|  |  |                |     |  |     +--Pseudacris_spnov_LA_Evangeline_ECM0137
+|  |  |                |     +--|
+|  |  |                |        +--Pseudacris_spnov_OK_LeFlore_Highton71204
+|  |  |             +--|
+|  |  |             |  |                                              +**Pseudacris_clarkii_KS_Barber_JTC2454
+|  |  |             |  |                                           +--|
+|  |  |             |  |                                           |  +--Pseudacris_clarkii_KS_Comanche_ECM0210
+|  |  |             |  |                                        +--|
+|  |  |             |  |                                        |  |     +**Pseudacris_clarkii_KS_Barber_JTC2455
+|  |  |             |  |                                        |  |  +--|
+|  |  |             |  |                                        |  |  |  +--Pseudacris_clarkii_TX_Cameron_JTC2828
+|  |  |             |  |                                        |  +**|
+|  |  |             |  |                                        |     +--Pseudacris_clarkii_OK_Garfield_ECM1133
+|  |  |             |  |                                     +--|
+|  |  |             |  |                                     |  +--Pseudacris_clarkii_TX_Swisher_ECM1143
+|  |  |             |  |                                  +**|
+|  |  |             |  |                                  |  |     +--Pseudacris_clarkii_KS_Chautauqua_Q1
+|  |  |             |  |                                  |  |  +--|
+|  |  |             |  |                                  |  |  |  +**Pseudacris_maculata_MO_Christian_MHP10467
+|  |  |             |  |                                  |  +--|
+|  |  |             |  |                                  |     |     +--Pseudacris_maculata_IA_Louisa_JTC2674
+|  |  |             |  |                                  |     |  +--|
+|  |  |             |  |                                  |     |  |  |     +--Pseudacris_maculata_IL_Effingham_JTC2805
+|  |  |             |  |                                  |     |  |  |  +--|
+|  |  |             |  |                                  |     |  |  |  |  |  +--Pseudacris_maculata_IL_Jersey_INHS1376
+|  |  |             |  |                                  |     |  |  |  |  +**|
+|  |  |             |  |                                  |     |  |  |  |     +--Pseudacris_maculata_Ontario_Frontenac_ECM0105
+|  |  |             |  |                                  |     |  |  +**|
+|  |  |             |  |                                  |     |  |     |     +--Pseudacris_maculata_KS_Kingman_K2
+|  |  |             |  |                                  |     |  |     |  +**|
+|  |  |             |  |                                  |     |  |     |  |  +--Pseudacris_maculata_OK_Cherokee_JTC2832
+|  |  |             |  |                                  |     |  |     +**|
+|  |  |             |  |                                  |     |  |        +--Pseudacris_maculata_NE_Douglas_JTC2862
+|  |  |             |  |                                  |     +**|
+|  |  |             |  |                                  |        |  +**Pseudacris_maculata_KS_Douglas_A1
+|  |  |             |  |                                  |        +--|
+|  |  |             |  |                                  |           +--Pseudacris_maculata_MO_Newton_MHP10268
+|  |  |             |  |                               +**|
+|  |  |             |  |                               |  +--Pseudacris_maculata_IL_Mercer_INHS203
+|  |  |             |  |                            +**|
+|  |  |             |  |                            |  |     +--Pseudacris_clarkii_TX_Caldwell_ECM2478
+|  |  |             |  |                            |  |  +**|
+|  |  |             |  |                            |  |  |  +--Pseudacris_maculata_CO_Gunnison_I1
+|  |  |             |  |                            |  +--|
+|  |  |             |  |                            |     |     +--Pseudacris_maculata_IA_Marion_ECM0604
+|  |  |             |  |                            |     |  +--|
+|  |  |             |  |                            |     |  |  +--Pseudacris_maculata_WI_StCroix_ECM0652
+|  |  |             |  |                            |     +--|
+|  |  |             |  |                            |        |  +--Pseudacris_maculata_IL_McDonough_JTC2843
+|  |  |             |  |                            |        +**|
+|  |  |             |  |                            |           +--Pseudacris_maculata_WI_Wood_DCC3851
+|  |  |             |  |                         +--|
+|  |  |             |  |                         |  +--Pseudacris_maculata_IN_Porter_INDU214
+|  |  |             |  |                      +--|
+|  |  |             |  |                      |  +--Pseudacris_maculata_MO_Dade_MHP10265
+|  |  |             |  |                   +**|
+|  |  |             |  |                   |  |     +--Pseudacris_maculata_IA_Boone_JTC2601
+|  |  |             |  |                   |  |  +--|
+|  |  |             |  |                   |  |  |  +--Pseudacris_maculata_MN_Fillmore_JTC2645
+|  |  |             |  |                   |  +--|
+|  |  |             |  |                   |     +--Pseudacris_maculata_MO_Cole_JTC2588
+|  |  |             |  |                +**|
+|  |  |             |  |                |  |     +--Pseudacris_clarkii_KS_Chautauqua_ECM2467
+|  |  |             |  |                |  |  +--|
+|  |  |             |  |                |  |  |  +**Pseudacris_maculata_KS_Ellis_ECM0204
+|  |  |             |  |                |  +--|
+|  |  |             |  |                |     +--Pseudacris_maculata_IL_Piatt_INHS1267
+|  |  |             |  |             +--|
+|  |  |             |  |             |  |        +--Pseudacris_maculata_IA_Butler_JTC2698
+|  |  |             |  |             |  |     +**|
+|  |  |             |  |             |  |     |  |     +--Pseudacris_maculata_IL_Cass_INHS1251
+|  |  |             |  |             |  |     |  |  +--|
+|  |  |             |  |             |  |     |  |  |  +--Pseudacris_maculata_MO_Adair_JTC2596
+|  |  |             |  |             |  |     |  +**|
+|  |  |             |  |             |  |     |     |     +**Pseudacris_maculata_IL_Madison_INHS1372
+|  |  |             |  |             |  |     |     |  +--|
+|  |  |             |  |             |  |     |     |  |  +--Pseudacris_maculata_KS_Cheyenne_D3
+|  |  |             |  |             |  |     |     +**|
+|  |  |             |  |             |  |     |        |  +--Pseudacris_maculata_MN_Rock_UMN14285
+|  |  |             |  |             |  |     |        +--|
+|  |  |             |  |             |  |     |           +**Pseudacris_maculata_MO_Boone_JTC2600
+|  |  |             |  |             |  |  +**|
+|  |  |             |  |             |  |  |  |  +**Pseudacris_maculata_Ontario_Frontenac_JTC2630
+|  |  |             |  |             |  |  |  +--|
+|  |  |             |  |             |  |  |     +**Pseudacris_maculata_Ontario_Wellington_JTC2687
+|  |  |             |  |             |  +**|
+|  |  |             |  |             |     +--Pseudacris_maculata_KS_Cherokee_MHP8159
+|  |  |             |  |          +--|
+|  |  |             |  |          |  |  +--Pseudacris_maculata_CO_Archuleta_I2
+|  |  |             |  |          |  +--|
+|  |  |             |  |          |     +--Pseudacris_maculata_NM_McKinley_N5
+|  |  |             |  |       +--|
+|  |  |             |  |       |  |           +**Pseudacris_maculata_Alberta_Athabasca_ECM2099
+|  |  |             |  |       |  |        +**|
+|  |  |             |  |       |  |        |  +--Pseudacris_maculata_KS_Wilson_JTC2650
+|  |  |             |  |       |  |     +**|
+|  |  |             |  |       |  |     |  |  +--Pseudacris_maculata_IA_Warren_ECM0634
+|  |  |             |  |       |  |     |  +--|
+|  |  |             |  |       |  |     |     +--Pseudacris_maculata_OK_Washington_JTC2760
+|  |  |             |  |       |  |  +**|
+|  |  |             |  |       |  |  |  +--Pseudacris_maculata_IA_Allamakee_JTC2613
+|  |  |             |  |       |  +--|
+|  |  |             |  |       |     |     +--Pseudacris_maculata_CO_Jackson_ECM0644
+|  |  |             |  |       |     |  +--|
+|  |  |             |  |       |     |  |  |  +--Pseudacris_maculata_SD_Lawrence_JTC2700
+|  |  |             |  |       |     |  |  +**|
+|  |  |             |  |       |     |  |     +**Pseudacris_maculata_UT_Cache_JRM4868
+|  |  |             |  |       |     +--|
+|  |  |             |  |       |        +--Pseudacris_maculata_CO_Weld_JTC2706
+|  |  |             |  |    +--|
+|  |  |             |  |    |  |     +**Pseudacris_maculata_MN_OtterTail_UMN14336
+|  |  |             |  |    |  |  +**|
+|  |  |             |  |    |  |  |  +**Pseudacris_maculata_MN_StLouis_03EKH001
+|  |  |             |  |    |  +--|
+|  |  |             |  |    |     |     +--Pseudacris_maculata_Manitoba_JPB13421
+|  |  |             |  |    |     |  +--|
+|  |  |             |  |    |     |  |  +--Pseudacris_maculata_ND_Ward_ECM1156
+|  |  |             |  |    |     +--|
+|  |  |             |  |    |        |  +**Pseudacris_maculata_Ontario_Fraleigh_JPB22607
+|  |  |             |  |    |        +--|
+|  |  |             |  |    |           +**Pseudacris_maculata_WI_Bayfield_ECM1140
+|  |  |             |  +----|
+|  |  |             |       |           +**Pseudacris_maculata_IA_Howard_JTC2708
+|  |  |             |       |        +**|
+|  |  |             |       |        |  +--Pseudacris_maculata_Ontario_EarFalls_R1
+|  |  |             |       |     +--|
+|  |  |             |       |     |  +**Pseudacris_maculata_MN_Itasca_ECM0209
+|  |  |             |       |  +**|
+|  |  |             |       |  |  +--Pseudacris_maculata_MN_LacquiParle_UMN14316
+|  |  |             |       +--|
+|  |  |             |          |        +--Pseudacris_maculata_MN_Cook_03BEJ007
+|  |  |             |          |     +**|
+|  |  |             |          |     |  +--Pseudacris_maculata_MN_Ramsey_ECM0645
+|  |  |             |          |  +**|
+|  |  |             |          |  |  +--Pseudacris_maculata_ND_Pembina_UMN14327
+|  |  |             |          +--|
+|  |  |             |             +**Pseudacris_maculata_MN_Wright_UMN14283
+|  |  |      +------|
+|  |  |      |      |                               +---------------Pseudacris_cadaverina_CA_SanBernardino_ECM0150
+|  |  |      |      |           +-------------------|
+|  |  |      |      |           |                   +---------Pseudacris_regilla_CA_SanBernardino_ECM0147
+|  |  |      |      |        +--|
+|  |  |      |      |        |  |                              +--Pseudacris_crucifer_AL_Barbour_ECM0039
+|  |  |      |      |        |  |                           +--|
+|  |  |      |      |        |  |                           |  |  +--Pseudacris_crucifer_FL_Lake_Y1
+|  |  |      |      |        |  |                           |  +--|
+|  |  |      |      |        |  |                           |     +--Pseudacris_crucifer_SC_Barnwell_ECM0083
+|  |  |      |      |        |  |          +----------------|
+|  |  |      |      |        |  |          |                +--Pseudacris_crucifer_MD_Kent_ECM0166
+|  |  |      |      |        |  +----------|
+|  |  |      |      |        |             |                 +**Pseudacris_ocularis_FL_Gulf_ECM0095
+|  |  |      |      |        |             +-----------------|
+|  |  |      |      |        |                               +--Pseudacris_ocularis_SC_Barnwell_ECM0045
+|  |  |      |      +--------|
+|  |  |      |               |                                            +--Pseudacris_illinoensis_AR_Clay_ECM0001
+|  |  |      |               |                                         +**|
+|  |  |      |               |                                         |  +**Pseudacris_streckeri_AR_Conway_JTC2581
+|  |  |      |               |                                      +**|
+|  |  |      |               |                                      |  +**Pseudacris_illinoensis_IL_Madison_INHS2003.9
+|  |  |      |               |                                   +--|
+|  |  |      |               |                                   |  +**Pseudacris_illinoensis_IL_Cass_INHS2003.3
+|  |  |      |               |                             +-----|
+|  |  |      |               |                             |     +--Pseudacris_illinoensis_MO_Scott_ECM0090
+|  |  |      |               |                    +--------|
+|  |  |      |               |                    |        +----Pseudacris_streckeri_TX_Travis_P2
+|  |  |      |               +--------------------|
+|  |  |      |                                    |            +--Pseudacris_ornata_AL_Barbour_ECM0033
+|  |  |      |                                    +------------|
+|  |  |      |                                                 +--Pseudacris_ornata_SC_Aiken_ECM0055
+|  |  |   +--|
+|  |  |   |  |        +--Pseudacris_brimleyi_NC_Craven_ECM0469
+|  |  |   |  |     +--|
+|  |  |   |  |     |  |        +--Pseudacris_brimleyi_NC_Pitt_ECM0079
+|  |  |   |  |     |  |     +**|
+|  |  |   |  |     |  |     |  +--Pseudacris_brimleyi_VA_PrinceGeorge_ECM0612
+|  |  |   |  |     |  |  +--|
+|  |  |   |  |     |  |  |  +--Pseudacris_brimleyi_VA_SuffolkCity_ECM1077
+|  |  |   |  |     |  +--|
+|  |  |   |  |     |     +--Pseudacris_brimleyi_VA_IsleofWight_ECM1100
+|  |  |   |  |  +--|
+|  |  |   |  |  |  +--Pseudacris_brimleyi_NC_Sampson_ECM0460
+|  |  |   |  +--|
+|  |  |   |     |  +--Pseudacris_brimleyi_SC_Hampton_Highton68852
+|  |  |   |     +--|
+|  |  |   |        +--Pseudacris_brimleyi_SC_Orangeburg_Highton67234
+|  |  +---|
+|  |      |                    +--Pseudacris_brachyphona_KY_Harlan_JTC3104
+|  |      |                 +**|
+|  |      |                 |  +--Pseudacris_brachyphona_WV_Harrison_JTC2669
+|  |      |              +--|
+|  |      |              |  +--Pseudacris_brachyphona_VA_Bland_Highton97_7
+|  |      |           +**|
+|  |      |           |  |           +--Pseudacris_brachyphona_KY_Laurel_JTC2457
+|  |      |           |  |        +**|
+|  |      |           |  |        |  +--Pseudacris_brachyphona_WV_Wetzel_JTC2834
+|  |      |           |  |     +--|
+|  |      |           |  |     |  +--Pseudacris_brachyphona_WV_Raleigh_Highton97_5
+|  |      |           |  |  +**|
+|  |      |           |  |  |  +--Pseudacris_brachyphona_WV_Wayne_JTC2705
+|  |      |           |  +--|
+|  |      |           |     +--Pseudacris_brachyphona_OH_Hocking_JTC2609
+|  |      |        +**|
+|  |      |        |  |  +**Pseudacris_brachyphona_OH_Adams_JTC3084
+|  |      |        |  +--|
+|  |      |        |     +--Pseudacris_brachyphona_OH_Washington_ECM2070
+|  |      |     +**|
+|  |      |     |  +**Pseudacris_brachyphona_TN_Sullivan_JTC3092
+|  |      |  +--|
+|  |      |  |  |  +--Pseudacris_brachyphona_KY_Madison_ECM0198
+|  |      |  |  +--|
+|  |      |  |     +--Pseudacris_brachyphona_KY_Powell_JTC2619
+|  |      +--|
+|  |         +--Pseudacris_brachyphona_KY_Taylor_JTC2616
++**|
+|  +**Pseudacris_brachyphona_NC_Cherokee_ECM1897
+|
++**Pseudacris_brachyphona_AL_Tallapoosa_ECM0041
+
+Tree in newick format:
+
+(Pseudacris_brachyphona_AL_Cleburne_JA0610:0.0007589909,(((((Pseudacris_brachyphona_AL_Elmore_ECM0111:0.0000017850,Pseudacris_brachyphona_AL_Tallapoosa_ECM0040:0.0035043551):0.0015151846,(Pseudacris_brachyphona_AL_Lawrence_ECM0452:0.0010334086,Pseudacris_brachyphona_GA_Walker_ECM1131:0.0000010461):0.0000010463):0.0015283342,Pseudacris_brachyphona_AL_Hale_JA0601:0.0026295355):0.0009558496,((((((((((((Pseudacris_brachyphona_KY_Bullitt_JTC3086:0.0000010461,Pseudacris_triseriata_KY_Jefferson_JTC2709:0.0007927428):0.0023878766,(((((Pseudacris_triseriata_CheckOtherData_JTC2715:0.0037541138,Pseudacris_triseriata_IL_Lawrence_INHS1234:0.0026025953):0.0000310817,Pseudacris_triseriata_IL_Perry_INHS1207:0.0021484854):0.0007325561,(Pseudacris_triseriata_IL_Saline_INHS1239:0.0029443155,Pseudacris_triseriata_TN_Montgomery_JTC2611:0.0011938709):0.0000010463):0.0000010463,Pseudacris_triseriata_KY_Daviess_JTC2594:0.0005399120):0.0035451748,(((Pseudacris_triseriata_MI_Berrien_J1:0.0007844165,(Pseudacris_triseriata_OH_Highland_JTC2604:0.0019585906,Pseudacris_triseriata_OH_Preble_JTC2607:0.0025739108):0.0011988748):0.0000332376,Pseudacris_triseriata_MI_Ingham_ECM0615:0.0000010461):0.0000010463,Pseudacris_triseriata_MI_Ingham_ECM0616:0.0023465842):0.0012854933):0.0000010463):0.0006803090,Pseudacris_triseriata_Ontario_Niagara_JTC2682:0.0011930390):0.0002558678,Pseudacris_triseriata_OH_Clinton_JTC2605:0.0000010461):0.0003466369,((((((Pseudacris_triseriata_IL_Wayne_INHS1581:0.0000010461,(Pseudacris_triseriata_IN_Marion_JTC2851:0.0000010461,Pseudacris_triseriata_IN_Posey_Highton69234:0.0023291626):0.0008189420):0.0067557859,(Pseudacris_triseriata_IN_Jennings_JTC2723:0.0000010461,Pseudacris_triseriata_OH_Logan_JTC2590:0.0006054859):0.0005646188):0.0000010463,Pseudacris_triseriata_IN_Delaware_JTC2830:0.0006747852):0.0007624339,(((Pseudacris_triseriata_NY_Livingston_JTC2848:0.0006268825,Pseudacris_triseriata_Ontario_Oxford_JTC2679:0.0000010461):0.0000010463,Pseudacris_triseriata_Ontario_Halton_JTC2678:0.0000010461):0.0000010463,Pseudacris_triseriata_NY_Niagara_JTC2639:0.0000010461):0.0000010463):0.0026026113,Pseudacris_triseriata_Ontario_Waterloo_JTC2690:0.0000010461):0.0000010463,Pseudacris_triseriata_Ontario_Essex_ECM0662:0.0005344586):0.0000010463):0.0092988150,(((((Pseudacris_brachyphona_KY_Lincoln_Highton71747:0.0009481769,Pseudacris_feriarum_KY_Lincoln_Highton71758:0.0019313653):0.0051452442,Pseudacris_feriarum_GA_Floyd_ECM0446:0.0022732132):0.0014189432,(((Pseudacris_brachyphona_MS_Itawamba_ECM0974:0.0013803312,(((Pseudacris_feriarum_IL_Pulaski_INHS1196:0.0006524034,(((Pseudacris_feriarum_KY_McCracken_JTC2615:0.0000010461,Pseudacris_feriarum_TN_Weakley_ECM0129:0.0040707591):0.0003917698,Pseudacris_feriarum_MO_Dunklin_ECM0126:0.0013822757):0.0010990336,Pseudacris_feriarum_MS_Oktibbeha_ECM0970:0.0034924460):0.0000010463):0.0000010463,Pseudacris_feriarum_KY_Calloway_F1:0.0023752220):0.0006952575,(Pseudacris_feriarum_TN_Franklin_Highton61673:0.0000010461,Pseudacris_feriarum_TN_Obion_ECM0135:0.0018608659):0.0005923453):0.0000010463):0.0005964378,((((Pseudacris_feriarum_AL_Choctaw_ECM0961:0.0000010461,Pseudacris_feriarum_AL_Pickens_ECM0969:0.0000010461):0.0007019912,((Pseudacris_feriarum_AL_Cullman_ECM0992:0.0023323887,Pseudacris_feriarum_TN_Obion_ECM0131:0.0025506388):0.0000010463,Pseudacris_feriarum_AL_Morgan_JTC2740:0.0022177061):0.0000010463):0.0016182503,Pseudacris_feriarum_TN_Chester_JTC2762:0.0013027982):0.0000010463,Pseudacris_feriarum_MS_Lafayette_ECM0971:0.0014294549):0.0000010463):0.0000010463,(Pseudacris_feriarum_AL_Conecuh_ECM0960:0.0020821570,Pseudacris_feriarum_AL_Macon_ECM0400:0.0031035124):0.0015392041):0.0027723518):0.0019369248,((((Pseudacris_feriarum_AL_Elmore_ECM0122:0.0020068863,Pseudacris_feriarum_AL_Macon_ECM0387:0.0020596819):0.0028687797,Pseudacris_feriarum_FL_Calhoun_ECM0368:0.0080870900):0.0000886298,Pseudacris_feriarum_AL_Henry_ECM0386:0.0034195021):0.0033362196,(((((Pseudacris_feriarum_FL_Gasden_ECM0382:0.0013495934,Pseudacris_feriarum_GA_Seminole_ECM0384:0.0032138777):0.0006551460,Pseudacris_feriarum_GA_Decatur_ECM0383:0.0000010461):0.0013486547,Pseudacris_feriarum_GA_Houston_ECM1130:0.0013795835):0.0006704614,((Pseudacris_feriarum_FL_Liberty_ECM0232:0.0016339640,Pseudacris_feriarum_GA_Banks_ECM0298:0.0047559899):0.0000021000,Pseudacris_feriarum_GA_Baker_ECM0402:0.0012895108):0.0021088867):0.0004564365,Pseudacris_feriarum_GA_Heard_ECM0448:0.0020112901):0.0029089753):0.0000010463):0.0043155668,((((Pseudacris_feriarum_GA_Appling_ECM0602:0.0034339831,((Pseudacris_feriarum_GA_Greene_ECM1454:0.0000010461,Pseudacris_feriarum_GA_Walton_ECM1125:0.0007671275):0.0007642362,Pseudacris_feriarum_GA_Oglethorpe_JTC2578:0.0015667234):0.0015626593):0.0016360791,Pseudacris_feriarum_SC_Greenwood_ECM1435:0.0093558370):0.0057969940,(((((((((Pseudacris_feriarum_MD_AnneArundel_JTC2730:0.0007952734,(Pseudacris_feriarum_PA_Fulton_Highton62076:0.0022004667,Pseudacris_feriarum_VA_York_ECM0481:0.0009461665):0.0000010463):0.0000010463,Pseudacris_feriarum_VA_Mathews_ECM0486:0.0008861415):0.0000010463,Pseudacris_feriarum_WV_Berkeley_JTC2857:0.0000010461):0.0000010463,((Pseudacris_feriarum_NC_Davie_ECM0464:0.0000010461,Pseudacris_feriarum_NC_Lincoln_MHP10700:0.0006654923):0.0000010463,Pseudacris_feriarum_SC_Kershaw_Highton61551:0.0018904222):0.0018876471):0.0000010463,Pseudacris_feriarum_VA_Southampton_ECM1076:0.0021059443):0.0029916478,((Pseudacris_feriarum_NC_Chatham_ECM0189:0.0010563595,Pseudacris_feriarum_VA_PrinceEdward_ECM1011:0.0008555403):0.0006397960,Pseudacris_feriarum_NC_Wake_ECM0181:0.0027514532):0.0006390381):0.0000010463,Pseudacris_feriarum_SC_Dorchester_ECM0441:0.0036231659):0.0007395321,((Pseudacris_feriarum_MD_Baltimore_ECM0632:0.0013978681,((Pseudacris_feriarum_MD_Harford_ECM0630:0.0018176152,Pseudacris_feriarum_VA_Mathews_ECM0601:0.0012870716):0.0000010463,Pseudacris_feriarum_NC_Johnson_ECM0455:0.0012581956):0.0000010463):0.0000010463,Pseudacris_feriarum_MD_PrinceGeorge_ECM0180:0.0007660775):0.0003953319):0.0012219975,(Pseudacris_feriarum_NC_Sampson_ECM0453:0.0006419340,Pseudacris_feriarum_VA_PrinceGeorge_ECM0665:0.0011175906):0.0012139825):0.0075355392):0.0056512569,((Pseudacris_feriarum_TN_Anderson_Highton88_43:0.0008439819,Pseudacris_feriarum_TN_Blount_JTC2593:0.0007647997):0.0045591522,(Pseudacris_feriarum_TN_Blount_Highton50960:0.0000010461,Pseudacris_feriarum_TN_Hamilton_ECM0399:0.0016987007):0.0016945180):0.0059942218):0.0113209910):0.0021376714):0.0036241493,((((Pseudacris_kalmi_DE_NewCastle_Highton62083:0.0005645437,(Pseudacris_kalmi_MD_Kent_NJ1:0.0012021219,Pseudacris_kalmi_MD_Wicomico_JTC2738:0.0000010461):0.0018122193):0.0011844479,(((Pseudacris_kalmi_DE_Sussex_ECM1080:0.0006344403,Pseudacris_kalmi_MD_Kent_ECM0162:0.0020327475):0.0010150094,((Pseudacris_kalmi_NJ_Atlantic_ECM1115:0.0000010461,Pseudacris_kalmi_NJ_Burlington_JTC2836:0.0013335529):0.0000010463,Pseudacris_kalmi_NJ_Salem_Highton62067:0.0000010461):0.0011281436):0.0000010463,Pseudacris_kalmi_VA_Accomack_ECM1064:0.0006564428):0.0000010463):0.0015630651,Pseudacris_nigrita_VA_York_ECM0482:0.0022708234):0.0007548159,Pseudacris_kalmi_VA_Northampton_ECM1067:0.0015143772):0.0053976567):0.0152255122,((((((((((Pseudacris_nigrita_AL_Barbour_ECM0036:0.0013863052,Pseudacris_nigrita_GA_Baker_ECM0422:0.0000010461):0.0005265476,Pseudacris_nigrita_GA_Liberty_ECM0603:0.0006916011):0.0005252822,Pseudacris_nigrita_GA_McIntosh_ECM1801:0.0007948905):0.0005269373,(Pseudacris_nigrita_FL_Calhoun_ECM0215:0.0000010461,Pseudacris_nigrita_FL_Franklin_ECM0371:0.0018222566):0.0005712919):0.0005381930,Pseudacris_nigrita_MS_Harrison_ECM0290:0.0048332965):0.0005204445,(Pseudacris_nigrita_FL_Jefferson_ECM0372:0.0017642412,(Pseudacris_nigrita_FL_Liberty_ECM0359:0.0026654113,(Pseudacris_nigrita_VA_PrinceGeorge_ECM0609:0.0014191267,Pseudacris_nigrita_VA_Surrey_ECM1097:0.0006973503):0.0021131459):0.0000010463):0.0000010463):0.0004882362,Pseudacris_nigrita_FL_Liberty_ECM0242:0.0010781003):0.0000010463,(Pseudacris_nigrita_FL_Brevard_ECM0024:0.0029874124,((Pseudacris_nigrita_NC_Scotland_U1:0.0011177913,Pseudacris_nigrita_SC_Barnwell_ECM0087:0.0022294764):0.0010092020,Pseudacris_nigrita_VA_Sussex_ECM0666:0.0006709670):0.0000010463):0.0011107089):0.0006141349,Pseudacris_nigrita_SC_Dorchester_ECM0442:0.0017490956):0.0276224240,((((((Pseudacris_nigrita_MS_Harrison_ECM0261:0.0023985098,(((((Pseudacris_spnov_AR_Perry_ECM0270:0.0000010461,Pseudacris_spnov_MO_Ripley_JTC2829:0.0006622911):0.0000010463,Pseudacris_spnov_AR_Yell_ASUMZ27611:0.0013151666):0.0007602397,(Pseudacris_spnov_AR_Sebastian_ASUMZ27612:0.0027061462,Pseudacris_spnov_MS_Simpson_ECM0259:0.0025699221):0.0005544129):0.0000010463,Pseudacris_spnov_TX_Liberty_ECM2295:0.0007797829):0.0000010463,(Pseudacris_spnov_LA_StTammany_ECM0268:0.0013476099,Pseudacris_spnov_MS_Marion_ECM0260:0.0005945962):0.0011372073):0.0000010463):0.0005366140,Pseudacris_spnov_LA_StTammany_ECM0264:0.0022560997):0.0000028194,(Pseudacris_spnov_AR_Conway_ASUMZ27608:0.0013149372,((((Pseudacris_spnov_AR_Craighead_ECM0011:0.0010606557,Pseudacris_spnov_LA_EastBatonRouge_ECM0029:0.0010671190):0.0012637034,(Pseudacris_spnov_LA_Washington_ECM0124:0.0019357912,(Pseudacris_spnov_OK_Love_JTC2860:0.0000010461,Pseudacris_spnov_OK_Pittsburg_JTC2847:0.0006797029):0.0012400255):0.0010469728):0.0000025731,(Pseudacris_spnov_LA_St._Martin_ECM2437:0.0031989960,Pseudacris_spnov_OK_Osage_JTC2737:0.0017500316):0.0008387950):0.0000010463,Pseudacris_spnov_MS_Simpson_ECM0258:0.0045940949):0.0018527980):0.0000021194):0.0006646800,Pseudacris_spnov_MS_Hancock_ECM0332:0.0030305853):0.0018165325,((((Pseudacris_spnov_LA_Beauregard_ECM0139:0.0025294428,(Pseudacris_spnov_TX_Lamar_JTC2586:0.0031796497,Pseudacris_spnov_TX_Liberty_ECM2294:0.0007825974):0.0007926312):0.0000020296,Pseudacris_spnov_LA_RedRiver_ECM1155:0.0000010461):0.0000010463,(Pseudacris_spnov_OK_McCurtain_JTC2866:0.0045068767,Pseudacris_spnov_TX_Jasper_ECM2293:0.0044621377):0.0008619099):0.0011435826,Pseudacris_spnov_LA_Evangeline_ECM0137:0.0028548184):0.0043640172):0.0010347340,Pseudacris_spnov_OK_LeFlore_Highton71204:0.0026431230):0.0187464451):0.0129122337):0.0048875603,(((((((((((((((Pseudacris_clarkii_KS_Barber_JTC2454:0.0000010461,Pseudacris_clarkii_KS_Comanche_ECM0210:0.0064385635):0.0011952536,((Pseudacris_clarkii_KS_Barber_JTC2455:0.0000010461,Pseudacris_clarkii_TX_Cameron_JTC2828:0.0038338958):0.0016613860,Pseudacris_clarkii_OK_Garfield_ECM1133:0.0013240189):0.0000010463):0.0018693393,Pseudacris_clarkii_TX_Swisher_ECM1143:0.0006435938):0.0051405512,((Pseudacris_clarkii_KS_Chautauqua_Q1:0.0006816909,Pseudacris_maculata_MO_Christian_MHP10467:0.0000010461):0.0027811404,((Pseudacris_maculata_IA_Louisa_JTC2674:0.0011060603,((Pseudacris_maculata_IL_Effingham_JTC2805:0.0038133069,(Pseudacris_maculata_IL_Jersey_INHS1376:0.0027486530,Pseudacris_maculata_Ontario_Frontenac_ECM0105:0.0029235667):0.0000010463):0.0011048443,((Pseudacris_maculata_KS_Kingman_K2:0.0013063347,Pseudacris_maculata_OK_Cherokee_JTC2832:0.0006708164):0.0000010463,Pseudacris_maculata_NE_Douglas_JTC2862:0.0006426879):0.0000010463):0.0000010463):0.0007231537,(Pseudacris_maculata_KS_Douglas_A1:0.0000010461,Pseudacris_maculata_MO_Newton_MHP10268:0.0013806639):0.0029217716):0.0000010463):0.0015562892):0.0000023541,Pseudacris_maculata_IL_Mercer_INHS203:0.0006755416):0.0000010463,((Pseudacris_clarkii_TX_Caldwell_ECM2478:0.0057605380,Pseudacris_maculata_CO_Gunnison_I1:0.0023249932):0.0000010463,((Pseudacris_maculata_IA_Marion_ECM0604:0.0005188098,Pseudacris_maculata_WI_StCroix_ECM0652:0.0004830902):0.0005393874,(Pseudacris_maculata_IL_McDonough_JTC2843:0.0012008527,Pseudacris_maculata_WI_Wood_DCC3851:0.0030820972):0.0000508201):0.0020949670):0.0015508985):0.0000010463,Pseudacris_maculata_IN_Porter_INDU214:0.0009842348):0.0010961415,Pseudacris_maculata_MO_Dade_MHP10265:0.0029341472):0.0005633609,((Pseudacris_maculata_IA_Boone_JTC2601:0.0012195354,Pseudacris_maculata_MN_Fillmore_JTC2645:0.0005907996):0.0005450923,Pseudacris_maculata_MO_Cole_JTC2588:0.0014207919):0.0005321842):0.0000010463,((Pseudacris_clarkii_KS_Chautauqua_ECM2467:0.0007696341,Pseudacris_maculata_KS_Ellis_ECM0204:0.0000010461):0.0005852923,Pseudacris_maculata_IL_Piatt_INHS1267:0.0005344956):0.0005313593):0.0000010463,(((Pseudacris_maculata_IA_Butler_JTC2698:0.0005553429,((Pseudacris_maculata_IL_Cass_INHS1251:0.0005979922,Pseudacris_maculata_MO_Adair_JTC2596:0.0005789802):0.0005123421,((Pseudacris_maculata_IL_Madison_INHS1372:0.0000666535,Pseudacris_maculata_KS_Cheyenne_D3:0.0015762600):0.0013809196,(Pseudacris_maculata_MN_Rock_UMN14285:0.0013499624,Pseudacris_maculata_MO_Boone_JTC2600:0.0000010461):0.0010446872):0.0000010463):0.0000010463):0.0000010463,(Pseudacris_maculata_Ontario_Frontenac_JTC2630:0.0000010461,Pseudacris_maculata_Ontario_Wellington_JTC2687:0.0000010461):0.0029233703):0.0000010463,Pseudacris_maculata_KS_Cherokee_MHP8159:0.0029966384):0.0000015379):0.0015203077,(Pseudacris_maculata_CO_Archuleta_I2:0.0015328787,Pseudacris_maculata_NM_McKinley_N5:0.0037949248):0.0025616097):0.0010252286,((((Pseudacris_maculata_Alberta_Athabasca_ECM2099:0.0000010461,Pseudacris_maculata_KS_Wilson_JTC2650:0.0050446427):0.0000010463,(Pseudacris_maculata_IA_Warren_ECM0634:0.0020549358,Pseudacris_maculata_OK_Washington_JTC2760:0.0015439599):0.0006808227):0.0000010463,Pseudacris_maculata_IA_Allamakee_JTC2613:0.0006739951):0.0000010463,((Pseudacris_maculata_CO_Jackson_ECM0644:0.0021768482,(Pseudacris_maculata_SD_Lawrence_JTC2700:0.0005179229,Pseudacris_maculata_UT_Cache_JRM4868:0.0000010461):0.0000010463):0.0015827752,Pseudacris_maculata_CO_Weld_JTC2706:0.0006119705):0.0005176386):0.0015404501):0.0010264180,((Pseudacris_maculata_MN_OtterTail_UMN14336:0.0000010461,Pseudacris_maculata_MN_StLouis_03EKH001:0.0000010461):0.0000010463,((Pseudacris_maculata_Manitoba_JPB13421:0.0006787526,Pseudacris_maculata_ND_Ward_ECM1156:0.0021433096):0.0012759266,(Pseudacris_maculata_Ontario_Fraleigh_JPB22607:0.0000010461,Pseudacris_maculata_WI_Bayfield_ECM1140:0.0000010461):0.0005940550):0.0006004682):0.0006048572):0.0008003578,((((Pseudacris_maculata_IA_Howard_JTC2708:0.0000010461,Pseudacris_maculata_Ontario_EarFalls_R1:0.0022646972):0.0000018170,Pseudacris_maculata_MN_Itasca_ECM0209:0.0000010461):0.0011008634,Pseudacris_maculata_MN_LacquiParle_UMN14316:0.0013042049):0.0000010463,(((Pseudacris_maculata_MN_Cook_03BEJ007:0.0006129765,Pseudacris_maculata_MN_Ramsey_ECM0645:0.0011239602):0.0000010463,Pseudacris_maculata_ND_Pembina_UMN14327:0.0005207520):0.0000010463,Pseudacris_maculata_MN_Wright_UMN14283:0.0000010461):0.0005577450):0.0012638872):0.0283233410):0.0077406144,(((Pseudacris_cadaverina_CA_SanBernardino_ECM0150:0.0827511507,Pseudacris_regilla_CA_SanBernardino_ECM0147:0.0530872970):0.1004944955,(((Pseudacris_crucifer_AL_Barbour_ECM0039:0.0046214340,(Pseudacris_crucifer_FL_Lake_Y1:0.0023211861,Pseudacris_crucifer_SC_Barnwell_ECM0083:0.0019422094):0.0033807976):0.0028755668,Pseudacris_crucifer_MD_Kent_ECM0166:0.0088837857):0.0866590312,(Pseudacris_ocularis_FL_Gulf_ECM0095:0.0000010461,Pseudacris_ocularis_SC_Barnwell_ECM0045:0.0031534748):0.0910394119):0.0593444869):0.0063500342,((((((Pseudacris_illinoensis_AR_Clay_ECM0001:0.0007788365,Pseudacris_streckeri_AR_Conway_JTC2581:0.0000010461):0.0000010463,Pseudacris_illinoensis_IL_Madison_INHS2003.9:0.0000010461):0.0000010463,Pseudacris_illinoensis_IL_Cass_INHS2003.3:0.0000010461):0.0023619446,Pseudacris_illinoensis_MO_Scott_ECM0090:0.0024869813):0.0305643220,Pseudacris_streckeri_TX_Travis_P2:0.0286658628):0.0461741492,(Pseudacris_ornata_AL_Barbour_ECM0033:0.0133888139,Pseudacris_ornata_SC_Aiken_ECM0055:0.0113452768):0.0672437367):0.1043511788):0.0478916107):0.0351083210,(((Pseudacris_brimleyi_NC_Craven_ECM0469:0.0031485614,(((Pseudacris_brimleyi_NC_Pitt_ECM0079:0.0023030512,Pseudacris_brimleyi_VA_PrinceGeorge_ECM0612:0.0020632728):0.0000010463,Pseudacris_brimleyi_VA_SuffolkCity_ECM1077:0.0007634609):0.0009311303,Pseudacris_brimleyi_VA_IsleofWight_ECM1100:0.0015366109):0.0008013581):0.0014651447,Pseudacris_brimleyi_NC_Sampson_ECM0460:0.0008630705):0.0153453754,(Pseudacris_brimleyi_SC_Hampton_Highton68852:0.0030527351,Pseudacris_brimleyi_SC_Orangeburg_Highton67234:0.0056726030):0.0187157802):0.0044399485):0.0041346671,(((((((Pseudacris_brachyphona_KY_Harlan_JTC3104:0.0007640408,Pseudacris_brachyphona_WV_Harrison_JTC2669:0.0031070108):0.0000010463,Pseudacris_brachyphona_VA_Bland_Highton97_7:0.0026910823):0.0006605289,((((Pseudacris_brachyphona_KY_Laurel_JTC2457:0.0017927889,Pseudacris_brachyphona_WV_Wetzel_JTC2834:0.0016697369):0.0000010463,Pseudacris_brachyphona_WV_Raleigh_Highton97_5:0.0016237823):0.0018446872,Pseudacris_brachyphona_WV_Wayne_JTC2705:0.0011101242):0.0000010463,Pseudacris_brachyphona_OH_Hocking_JTC2609:0.0021927385):0.0008516329):0.0000010463,(Pseudacris_brachyphona_OH_Adams_JTC3084:0.0000010461,Pseudacris_brachyphona_OH_Washington_ECM2070:0.0015403525):0.0007704884):0.0000010463,Pseudacris_brachyphona_TN_Sullivan_JTC3092:0.0000010461):0.0000022045,(Pseudacris_brachyphona_KY_Madison_ECM0198:0.0016351985,Pseudacris_brachyphona_KY_Powell_JTC2619:0.0014136376):0.0038638324):0.0024792830,Pseudacris_brachyphona_KY_Taylor_JTC2616:0.0019228174):0.0129734139):0.0199872113):0.0009781169,Pseudacris_brachyphona_NC_Cherokee_ECM1897:0.0000010461):0.0000010463,Pseudacris_brachyphona_AL_Tallapoosa_ECM0041:0.0000010461);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/dna_M4170_258_2559.phy/output_files/iqtree/inference/pars_10.treefile -m "GTR{1.43205,4.37108,2.13313,0.445192,10.4597}+F{0.349668,0.218016,0.179716,0.2526}+I{0.567936}+R4{0.302261,0.55657,0.112071,2.70057,0.0129677,8.67565,0.00476473,87.4368}" --length 2559
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data2/dna_M4170_258_2559.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data2/dna_M4170_258_2559.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Sep 21 03:05:35 2025
+Total CPU time used: 184.004 seconds (0h:3m:4s)
+Total wall-clock time used: 184.55 seconds (0h:3m:4s)
+

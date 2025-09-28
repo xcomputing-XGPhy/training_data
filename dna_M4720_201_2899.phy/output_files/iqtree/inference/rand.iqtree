@@ -1,0 +1,634 @@
+IQ-TREE 3.0.1 built Sep 14 2025
+
+Input file name: /home/suny/Downloads/VAN_TRAINING_DATA/data2/dna_M4720_201_2899.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 0
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 201 sequences with 2899 nucleotide sites
+Number of constant sites: 1321 (= 45.5674% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1321 (= 45.5674% of all sites)
+Number of parsimony informative sites: 1416
+Number of distinct site patterns: 1849
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM2+F+R5
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TIM2+F+R5        -53548.562  107923.124 -  0.00595  108060.735 -   0.0122  110389.610 +    0.699
+GTR+F+R5         -53541.444  107912.889 +    0.994  108051.946 +    0.987  110391.319 +    0.297
+TIM2+F+I+R4      -53558.436  107940.872 - 8.33e-07  108077.763 - 2.45e-06  110401.386 -  0.00194
+GTR+F+I+R4       -53550.849  107929.698 - 0.000223  108068.031 - 0.000318  110402.156 -  0.00132
+GTR+I+R4         -53776.270  108374.540 - 5.64e-101  108510.713 - 2.37e-100  110829.081 -  2.6e-96
+SYM+I+R4         -53776.275  108374.549 - 5.61e-101  108510.723 - 2.36e-100  110829.091 - 2.59e-96
+SYM+I+R4         -53776.275  108374.549 - 5.61e-101  108510.723 - 2.36e-100  110829.091 - 2.59e-96
+GTR+R5           -53772.583  108369.167 - 8.28e-100  108506.058 - 2.43e-99  110829.681 - 1.93e-96
+SYM+R5           -53772.712  108369.424 - 7.28e-100  108506.315 - 2.14e-99  110829.937 - 1.69e-96
+SYM+R5           -53772.712  108369.424 - 7.28e-100  108506.315 - 2.14e-99  110829.937 - 1.69e-96
+TIM2+I+R4        -53785.716  108389.432 - 3.29e-104  108524.177 - 2.83e-103  110832.029 - 5.95e-97
+TIM2e+I+R4       -53785.721  108389.441 - 3.28e-104  108524.186 - 2.81e-103  110832.039 - 5.92e-97
+TIM2e+I+R4       -53785.721  108389.441 - 3.28e-104  108524.186 - 2.81e-103  110832.039 - 5.92e-97
+TIM2+R5          -53782.525  108385.050 - 2.94e-103  108520.508 - 1.77e-102  110833.620 - 2.69e-97
+TIM2e+R5         -53782.730  108385.461 - 2.4e-103  108520.919 - 1.44e-102  110834.030 - 2.19e-97
+TIM2e+R5         -53782.730  108385.461 - 2.4e-103  108520.919 - 1.44e-102  110834.030 - 2.19e-97
+TPM2u+F+R5       -53862.284  108548.568 - 9.15e-139  108685.459 - 2.69e-138  111009.082 - 2.13e-135
+TVM+F+R5         -53855.338  108538.676 - 1.29e-136  108677.010 - 1.84e-136  111011.134 - 7.63e-136
+TPM2u+F+I+R4     -53874.301  108570.603 - 1.5e-143  108706.777 - 6.31e-143  111025.145 - 6.92e-139
+TVM+F+I+R4       -53867.540  108561.081 - 1.75e-141  108698.692 - 3.59e-141  111027.567 - 2.06e-139
+TIM+F+R5         -53905.032  108636.065 - 9.15e-158  108773.676 - 1.87e-157  111102.551 - 1.08e-155
+TIM3+F+R5        -53906.756  108639.512 - 1.63e-158  108777.123 - 3.35e-158  111105.998 - 1.92e-156
+TN+F+R5          -53913.932  108651.865 - 3.39e-161  108788.756 - 9.96e-161  111112.378 - 7.9e-158
+TIM+F+I+R4       -53920.715  108665.429 - 3.85e-164  108802.320 - 1.13e-163  111125.943 - 8.95e-161
+TIM3+F+I+R4      -53921.993  108667.986 - 1.07e-164  108804.878 - 3.14e-164  111128.500 - 2.49e-161
+TN+F+I+R4        -53929.613  108681.226 - 1.43e-167  108817.399 - 6.01e-167  111135.768 - 6.59e-163
+TVM+R5           -54150.857  109123.715 - 1.17e-263  109259.888 - 4.94e-263  111578.256 - 5.41e-259
+TVMe+R5          -54150.935  109123.871 - 1.09e-263  109260.045 - 4.56e-263  111578.413 -   5e-259
+TVMe+R5          -54150.935  109123.871 - 1.09e-263  109260.045 - 4.56e-263  111578.413 -   5e-259
+TPM2u+R5         -54159.923  109137.847 -   1e-266  109272.592 - 8.61e-266  111580.445 - 1.81e-259
+TPM2+R5          -54160.100  109138.201 - 8.4e-267  109272.946 - 7.21e-266  111580.798 - 1.52e-259
+TPM2+R5          -54160.100  109138.201 - 8.4e-267  109272.946 - 7.21e-266  111580.798 - 1.52e-259
+TVM+I+R4         -54158.768  109137.536 - 1.17e-266  109272.994 - 7.04e-266  111586.106 - 1.07e-260
+TVMe+I+R4        -54158.777  109137.553 - 1.16e-266  109273.011 - 6.98e-266  111586.123 - 1.06e-260
+TVMe+I+R4        -54158.777  109137.553 - 1.16e-266  109273.011 - 6.98e-266  111586.123 - 1.06e-260
+TPM2u+I+R4       -54166.770  109149.540 - 2.9e-269  109283.574 - 3.55e-268  111586.166 - 1.04e-260
+TPM2+I+R4        -54166.809  109149.617 - 2.79e-269  109283.651 - 3.41e-268  111586.243 - 9.98e-261
+TPM2+I+R4        -54166.809  109149.617 - 2.79e-269  109283.651 - 3.41e-268  111586.243 - 9.98e-261
+K3Pu+F+R5        -54185.326  109194.653 - 4.63e-279  109331.544 - 1.36e-278  111655.167 - 1.08e-275
+TPM3u+F+R5       -54187.604  109199.208 - 4.75e-280  109336.100 - 1.39e-279  111659.722 - 1.1e-276
+HKY+F+R5         -54194.313  109210.625 - 1.58e-282  109346.799 - 6.62e-282  111665.167 - 7.26e-278
+K3Pu+F+I+R4      -54198.182  109218.364 - 3.29e-284  109354.538 - 1.38e-283  111672.906 - 1.52e-279
+TPM3u+F+I+R4     -54200.579  109223.158 - 2.99e-285  109359.332 - 1.26e-284  111677.700 - 1.38e-280
+HKY+F+I+R4       -54207.095  109234.190 - 1.2e-287  109369.649 - 7.23e-287  111682.760 - 1.1e-281
+TIM+R5           -54498.090  109816.180 -        0  109951.638 -        0  112264.750 -        0
+TIMe+R5          -54498.115  109816.229 -        0  109951.687 -        0  112264.799 -        0
+TIMe+R5          -54498.115  109816.229 -        0  109951.687 -        0  112264.799 -        0
+TIM3e+R5         -54501.393  109822.786 -        0  109958.245 -        0  112271.356 -        0
+TIM3e+R5         -54501.393  109822.786 -        0  109958.245 -        0  112271.356 -        0
+TIM3+R5          -54501.402  109822.805 -        0  109958.263 -        0  112271.374 -        0
+TIM+I+R4         -54508.089  109834.177 -        0  109968.922 -        0  112276.775 -        0
+TIMe+I+R4        -54508.242  109834.483 -        0  109969.228 -        0  112277.081 -        0
+TIMe+I+R4        -54508.242  109834.483 -        0  109969.228 -        0  112277.081 -        0
+TN+R5            -54510.135  109838.270 -        0  109973.015 -        0  112280.868 -        0
+TNe+R5           -54510.152  109838.304 -        0  109973.049 -        0  112280.901 -        0
+TNe+R5           -54510.152  109838.304 -        0  109973.049 -        0  112280.901 -        0
+TIM3+I+R4        -54510.856  109839.713 -        0  109974.458 -        0  112282.310 -        0
+TIM3e+I+R4       -54510.907  109839.814 -        0  109974.559 -        0  112282.411 -        0
+TIM3e+I+R4       -54510.907  109839.814 -        0  109974.559 -        0  112282.411 -        0
+TN+I+R4          -54519.971  109855.942 -        0  109989.976 -        0  112292.568 -        0
+TNe+I+R4         -54520.130  109856.260 -        0  109990.294 -        0  112292.885 -        0
+TNe+I+R4         -54520.130  109856.260 -        0  109990.294 -        0  112292.885 -        0
+K3Pu+R5          -54890.557  110599.113 -        0  110733.858 -        0  113041.711 -        0
+K3P+R5           -54890.767  110599.533 -        0  110734.278 -        0  113042.131 -        0
+K3P+R5           -54890.767  110599.533 -        0  110734.278 -        0  113042.131 -        0
+K3Pu+I+R4        -54899.007  110614.014 -        0  110748.048 -        0  113050.640 -        0
+K3P+I+R4         -54899.037  110614.073 -        0  110748.107 -        0  113050.699 -        0
+K3P+I+R4         -54899.037  110614.073 -        0  110748.107 -        0  113050.699 -        0
+TPM3u+R5         -54895.540  110609.080 -        0  110743.824 -        0  113051.677 -        0
+TPM3+R5          -54895.747  110609.495 -        0  110744.240 -        0  113052.092 -        0
+TPM3+R5          -54895.747  110609.495 -        0  110744.240 -        0  113052.092 -        0
+HKY+R5           -54902.923  110621.847 -        0  110755.880 -        0  113058.472 -        0
+K2P+R5           -54903.162  110622.325 -        0  110756.358 -        0  113058.950 -        0
+K2P+R5           -54903.162  110622.325 -        0  110756.358 -        0  113058.950 -        0
+TPM3u+I+R4       -54904.004  110624.007 -        0  110758.041 -        0  113060.633 -        0
+TPM3+I+R4        -54904.030  110624.060 -        0  110758.093 -        0  113060.685 -        0
+TPM3+I+R4        -54904.030  110624.060 -        0  110758.093 -        0  113060.685 -        0
+HKY+I+R4         -54911.388  110636.775 -        0  110770.100 -        0  113067.429 -        0
+K2P+I+R4         -54911.438  110636.875 -        0  110770.200 -        0  113067.528 -        0
+K2P+I+R4         -54911.438  110636.875 -        0  110770.200 -        0  113067.528 -        0
+F81+F+R5         -57732.511  116285.023 -        0  116420.481 -        0  118733.592 -        0
+F81+F+I+R4       -57740.256  116298.511 -        0  116433.256 -        0  118741.109 -        0
+F81+R5           -57995.973  116805.946 -        0  116939.271 -        0  119236.600 -        0
+JC+R5            -57996.263  116806.525 -        0  116939.850 -        0  119237.178 -        0
+JC+R5            -57996.263  116806.525 -        0  116939.850 -        0  119237.178 -        0
+F81+I+R4         -58002.778  116817.555 -        0  116950.173 -        0  119242.236 -        0
+JC+I+R4          -58002.881  116817.761 -        0  116950.379 -        0  119242.442 -        0
+JC+I+R4          -58002.881  116817.761 -        0  116950.379 -        0  119242.442 -        0
+JC+R6            -57995.527  116809.053 -        0  116943.798 -        0  119251.651 -        0
+JC+I+R5          -58000.120  116816.240 -        0  116950.274 -        0  119252.866 -        0
+JC+R4            -58033.158  116876.316 -        0  117008.229 -        0  119295.025 -        0
+JC+I+G4          -58075.885  116953.769 -        0  117082.886 -        0  119348.590 -        0
+JC+I+R3          -58074.042  116956.083 -        0  117087.294 -        0  119368.820 -        0
+JC+R3            -58177.418  117160.836 -        0  117291.347 -        0  119567.601 -        0
+JC+G4            -58194.177  117188.354 -        0  117316.777 -        0  119577.203 -        0
+JC+I+R2          -58465.543  117735.085 -        0  117864.898 -        0  120135.878 -        0
+JC+R2            -58998.418  118798.836 -        0  118927.953 -        0  121193.657 -        0
+JC+I             -61196.554  123193.108 -        0  123321.531 -        0  125581.956 -        0
+JC               -65012.712  130823.424 -        0  130951.155 -        0  133206.301 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM2+F+R5
+
+Rate parameter R:
+
+  A-C: 5.1519
+  A-G: 13.2465
+  A-T: 5.1519
+  C-G: 1.0000
+  C-T: 33.5935
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.334
+  pi(C) = 0.2368
+  pi(G) = 0.1876
+  pi(T) = 0.2416
+
+Rate matrix Q:
+
+  A   -0.6752    0.1664    0.3389    0.1698
+  C    0.2348    -1.368   0.02559     1.107
+  G    0.6037    0.0323   -0.6689   0.03297
+  T    0.2348     1.085   0.02559    -1.346
+
+Model of rate heterogeneity: FreeRate with 5 categories
+Site proportion and rates:  (0.4503,0.0424) (0.2355,0.5123) (0.1721,1.544) (0.1182,3.555) (0.02389,7.301)
+
+ Category  Relative_rate  Proportion
+  1         0.0424         0.4503
+  2         0.5123         0.2355
+  3         1.544          0.1721
+  4         3.555          0.1182
+  5         7.301          0.02389
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -53550.2432 (s.e. 1229.6654)
+Unconstrained log-likelihood (without tree): -20198.8629
+Number of free parameters (#branches + #model parameters): 413
+Akaike information criterion (AIC) score: 107926.4865
+Corrected Akaike information criterion (AICc) score: 108064.0977
+Bayesian information criterion (BIC) score: 110392.9725
+
+Total tree length (sum of branch lengths): 9.2242
+Sum of internal branch lengths: 6.1788 (66.9849% of tree length)
+
+WARNING: 13 near-zero internal branches (<0.0003) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Amietia_angolensis_CAS191519' is drawn at root
+
++--Amietia_angolensis_CAS191519
+|
++--Amietia_angolensis_DQ019576
+|
+|      +---------Arthroleptella_villiersi_CR1073
+|   +--|
+|   |  |  +-----Cacosternum_boettgeri_ZFMK66727
+|   |  +--|
+|   |     +------Poyntonia_paludicola_VUB1066
++---|
+    |              +-------------------------------Cardioglossa_gracilis_MVZ234675
+    |           +--|
+    |           |  |     +-------------Conraua_crassipes_ZFMK75446
+    |           |  |  +--|
+    |           |  |  |  |                                             +--Phrynobatrachus_acridoides_BM2002.347
+    |           |  |  |  |                                          +--|
+    |           |  |  |  |                                          |  +--Phrynobatrachus_acridoides_MCZA-138214
+    |           |  |  |  |                                 +--------|
+    |           |  |  |  |                                 |        |  +--Phrynobatrachus_pakenhami_MCZ_A-138282
+    |           |  |  |  |                                 |        +--|
+    |           |  |  |  |                                 |           +**Phrynobatrachus_pakenhami_MCZ_A-138283
+    |           |  |  |  |                              +--|
+    |           |  |  |  |                              |  |                +--Phrynobatrachus_francisci_MORC8
+    |           |  |  |  |                              |  |             +--|
+    |           |  |  |  |                              |  |             |  +**Phrynobatrachus_francisci_ZMB73779
+    |           |  |  |  |                              |  |          +**|
+    |           |  |  |  |                              |  |          |  +--Phrynobatrachus_francisci_MVZ249545
+    |           |  |  |  |                              |  |  +-------|
+    |           |  |  |  |                              |  |  |       +--Phrynobatrachus_francisci_MVZ245148
+    |           |  |  |  |                              |  +--|
+    |           |  |  |  |                              |     |                    +--Phrynobatrachus_natalensis_AAUA2008-203
+    |           |  |  |  |                              |     |                 +--|
+    |           |  |  |  |                              |     |                 |  +--Phrynobatrachus_natalensis_AAUA2008-205
+    |           |  |  |  |                              |     |              +--|
+    |           |  |  |  |                              |     |              |  +--Phrynobatrachus_natalensis_AAUA2008-229
+    |           |  |  |  |                              |     |           +--|
+    |           |  |  |  |                              |     |           |  +--Phrynobatrachus_natalensis_MVZ234059
+    |           |  |  |  |                              |     |        +--|
+    |           |  |  |  |                              |     |        |  |     +--Phrynobatrachus_natalensis_MVZ245160
+    |           |  |  |  |                              |     |        |  |  +--|
+    |           |  |  |  |                              |     |        |  |  |  +**Phrynobatrachus_natalensis_MVZ245161
+    |           |  |  |  |                              |     |        |  +--|
+    |           |  |  |  |                              |     |        |     +--Phrynobatrachus_natalensis_ZMB73717
+    |           |  |  |  |                              |     |     +--|
+    |           |  |  |  |                              |     |     |  |        +--Phrynobatrachus_natalensis_BM2005.1189
+    |           |  |  |  |                              |     |     |  |     +--|
+    |           |  |  |  |                              |     |     |  |     |  |  +--Phrynobatrachus_natalensis_MCZA-138337
+    |           |  |  |  |                              |     |     |  |     |  +--|
+    |           |  |  |  |                              |     |     |  |     |     +--Phrynobatrachus_natalensis_ZMKMW10.2
+    |           |  |  |  |                              |     |     |  |  +--|
+    |           |  |  |  |                              |     |     |  |  |  |  +--Phrynobatrachus_natalensis_UTAA58262
+    |           |  |  |  |                              |     |     |  |  |  +--|
+    |           |  |  |  |                              |     |     |  |  |     +**Phrynobatrachus_natalensis_UTAA58263
+    |           |  |  |  |                              |     |     |  +--|
+    |           |  |  |  |                              |     |     |     |  +**Phrynobatrachus_natalensis_MCZA-138354
+    |           |  |  |  |                              |     |     |     +--|
+    |           |  |  |  |                              |     |     |        |     +**Phrynobatrachus_natalensis_PEMNi27
+    |           |  |  |  |                              |     |     |        |  +**|
+    |           |  |  |  |                              |     |     |        |  |  +--Phrynobatrachus_natalensis_PEMNi73
+    |           |  |  |  |                              |     |     |        +--|
+    |           |  |  |  |                              |     |     |           +--Phrynobatrachus_natalensis_PEMNi52
+    |           |  |  |  |                              |     |  +--|
+    |           |  |  |  |                              |     |  |  +--Phrynobatrachus_natalensis_ZFMK73452
+    |           |  |  |  |                              |     +--|
+    |           |  |  |  |                              |        +----Phrynobatrachus_natalensis_ES938
+    |           |  |  |  |                         +----|
+    |           |  |  |  |                         |    |     +--Phrynobatrachus_bullans_AAUA2008-032
+    |           |  |  |  |                         |    +-----|
+    |           |  |  |  |                         |          |     +**Phrynobatrachus_bullans_BM2005.1179
+    |           |  |  |  |                         |          |  +--|
+    |           |  |  |  |                         |          |  |  +--Phrynobatrachus_bullans_MVZ234151
+    |           |  |  |  |                         |          +--|
+    |           |  |  |  |                         |             +--Phrynobatrachus_bullans_MVZ238716
+    |           |  |  |  |                      +--|
+    |           |  |  |  |                      |  |               +--Phrynobatrachus_graueri_UTAA58270
+    |           |  |  |  |                      |  |  +------------|
+    |           |  |  |  |                      |  |  |            |  +**Phrynobatrachus_graueri_UTAA58273
+    |           |  |  |  |                      |  |  |            +**|
+    |           |  |  |  |                      |  |  |               +--Phrynobatrachus_graueri_UTAA58276
+    |           |  |  |  |                      |  +--|
+    |           |  |  |  |                      |     |        +--Phrynobatrachus_intermedius_ZMB71538
+    |           |  |  |  |                      |     |     +--|
+    |           |  |  |  |                      |     |     |  |     +--Phrynobatrachus_liberiensis_MORMTN130
+    |           |  |  |  |                      |     |     |  |  +--|
+    |           |  |  |  |                      |     |     |  |  |  +--Phrynobatrachus_liberiensis_ZMB73768
+    |           |  |  |  |                      |     |     |  +--|
+    |           |  |  |  |                      |     |     |     +--Phrynobatrachus_liberiensis_MORT5
+    |           |  |  |  |                      |     |  +--|
+    |           |  |  |  |                      |     |  |  |       +--Phrynobatrachus_tokba_MORA29
+    |           |  |  |  |                      |     |  |  |    +--|
+    |           |  |  |  |                      |     |  |  |    |  +--Phrynobatrachus_tokba_ZMB73766
+    |           |  |  |  |                      |     |  |  +----|
+    |           |  |  |  |                      |     |  |       |     +--Phrynobatrachus_tokba_MORFD90
+    |           |  |  |  |                      |     |  |       |  +--|
+    |           |  |  |  |                      |     |  |       |  |  |  +--Phrynobatrachus_tokba_ZMB73280
+    |           |  |  |  |                      |     |  |       |  |  +--|
+    |           |  |  |  |                      |     |  |       |  |     +--Phrynobatrachus_tokba_ZMB73776
+    |           |  |  |  |                      |     |  |       +--|
+    |           |  |  |  |                      |     |  |          +--Phrynobatrachus_tokba_ZMB73774
+    |           |  |  |  |                      |     +--|
+    |           |  |  |  |                      |        +-------Phrynobatrachus_kinangopensis_ZFMK83497
+    |           |  |  |  |                   +--|
+    |           |  |  |  |                   |  |                     +--Phrynobatrachus_africanus_CAS207779
+    |           |  |  |  |                   |  |                  +--|
+    |           |  |  |  |                   |  |                  |  +--Phrynobatrachus_africanus_MCZA-136756
+    |           |  |  |  |                   |  |               +--|
+    |           |  |  |  |                   |  |               |  +--Phrynobatrachus_africanus_MCZA-136731
+    |           |  |  |  |                   |  |            +--|
+    |           |  |  |  |                   |  |            |  |  +--Phrynobatrachus_africanus_MCZA-136800
+    |           |  |  |  |                   |  |            |  +--|
+    |           |  |  |  |                   |  |            |     +--Phrynobatrachus_africanus_MCZA-136839
+    |           |  |  |  |                   |  |     +------|
+    |           |  |  |  |                   |  |     |      |     +--Phrynobatrachus_africanus_MCZA-136944
+    |           |  |  |  |                   |  |     |      |  +--|
+    |           |  |  |  |                   |  |     |      |  |  +--Phrynobatrachus_africanus_MCZA-136945
+    |           |  |  |  |                   |  |     |      +--|
+    |           |  |  |  |                   |  |     |         |  +**Phrynobatrachus_africanus_ZMB73712
+    |           |  |  |  |                   |  |     |         +--|
+    |           |  |  |  |                   |  |     |            +**Phrynobatrachus_africanus_ZMB73715
+    |           |  |  |  |                   |  |  +--|
+    |           |  |  |  |                   |  |  |  |                 +**Phrynobatrachus_batesii_MCZA-136783
+    |           |  |  |  |                   |  |  |  |              +**|
+    |           |  |  |  |                   |  |  |  |              |  +**Phrynobatrachus_batesii_MCZA-136793
+    |           |  |  |  |                   |  |  |  |           +--|
+    |           |  |  |  |                   |  |  |  |           |  +--Phrynobatrachus_batesii_MCZA-136784
+    |           |  |  |  |                   |  |  |  |        +--|
+    |           |  |  |  |                   |  |  |  |        |  |              +--Phrynobatrachus_manengoubensis_MCZA-136923
+    |           |  |  |  |                   |  |  |  |        |  |           +**|
+    |           |  |  |  |                   |  |  |  |        |  |           |  +**Phrynobatrachus_manengoubensis_MCZA-136924
+    |           |  |  |  |                   |  |  |  |        |  |        +--|
+    |           |  |  |  |                   |  |  |  |        |  |        |  +--Phrynobatrachus_manengoubensis_MCZA-136943
+    |           |  |  |  |                   |  |  |  |        |  |     +--|
+    |           |  |  |  |                   |  |  |  |        |  |     |  +**Phrynobatrachus_manengoubensis_MCZA-136944
+    |           |  |  |  |                   |  |  |  |        |  |  +--|
+    |           |  |  |  |                   |  |  |  |        |  |  |  +--Phrynobatrachus_werneri_MVZ234835
+    |           |  |  |  |                   |  |  |  |        |  +--|
+    |           |  |  |  |                   |  |  |  |        |     +--Phrynobatrachus_werneri_MVZ253334
+    |           |  |  |  |                   |  |  |  |     +--|
+    |           |  |  |  |                   |  |  |  |     |  +--Phrynobatrachus_chukuchuku_MCZA-138124
+    |           |  |  |  |                   |  |  |  |  +--|
+    |           |  |  |  |                   |  |  |  |  |  |     +--Phrynobatrachus_steindachneri_MCZA-136875
+    |           |  |  |  |                   |  |  |  |  |  |  +--|
+    |           |  |  |  |                   |  |  |  |  |  |  |  +--Phrynobatrachus_steindachneri_MCZA-138135
+    |           |  |  |  |                   |  |  |  |  |  +--|
+    |           |  |  |  |                   |  |  |  |  |     |     +**Phrynobatrachus_steindachneri_MCZA-136892
+    |           |  |  |  |                   |  |  |  |  |     |  +--|
+    |           |  |  |  |                   |  |  |  |  |     |  |  |        +--Phrynobatrachus_steindachneri_MCZA-136903
+    |           |  |  |  |                   |  |  |  |  |     |  |  |     +--|
+    |           |  |  |  |                   |  |  |  |  |     |  |  |     |  |  +**Phrynobatrachus_steindachneri_MCZA-136904
+    |           |  |  |  |                   |  |  |  |  |     |  |  |     |  +--|
+    |           |  |  |  |                   |  |  |  |  |     |  |  |     |     +**Phrynobatrachus_steindachneri_MCZA-136909
+    |           |  |  |  |                   |  |  |  |  |     |  |  |  +--|
+    |           |  |  |  |                   |  |  |  |  |     |  |  |  |  +--Phrynobatrachus_steindachneri_MCZA-138064
+    |           |  |  |  |                   |  |  |  |  |     |  |  +--|
+    |           |  |  |  |                   |  |  |  |  |     |  |     |  +**Phrynobatrachus_steindachneri_MCZA-136927
+    |           |  |  |  |                   |  |  |  |  |     |  |     +--|
+    |           |  |  |  |                   |  |  |  |  |     |  |        +--Phrynobatrachus_steindachneri_MCZA-136928
+    |           |  |  |  |                   |  |  |  |  |     +--|
+    |           |  |  |  |                   |  |  |  |  |        +--Phrynobatrachus_steindachneri_MCZA-138104
+    |           |  |  |  |                   |  |  |  +--|
+    |           |  |  |  |                   |  |  |     |  +--Phrynobatrachus_cricogaster_MCZA-138030
+    |           |  |  |  |                   |  |  |     +--|
+    |           |  |  |  |                   |  |  |        +--Phrynobatrachus_cricogaster_ZMB71458
+    |           |  |  |  |                   |  +--|
+    |           |  |  |  |                   |     |                    +**Phrynobatrachus_auritus_CAS207932
+    |           |  |  |  |                   |     |                 +--|
+    |           |  |  |  |                   |     |                 |  +--Phrynobatrachus_auritus_CAS207937
+    |           |  |  |  |                   |     |              +--|
+    |           |  |  |  |                   |     |              |  +--Phrynobatrachus_auritus_MCZA-136736
+    |           |  |  |  |                   |     |     +--------|
+    |           |  |  |  |                   |     |     |        +--Phrynobatrachus_auritus_MCZA-136792
+    |           |  |  |  |                   |     +-----|
+    |           |  |  |  |                   |           |       +**Phrynobatrachus_plicatus_JPALa39
+    |           |  |  |  |                   |           +-------|
+    |           |  |  |  |                   |                   |     +--Phrynobatrachus_plicatus_MVZ245164
+    |           |  |  |  |                   |                   |  +--|
+    |           |  |  |  |                   |                   |  |  +**Phrynobatrachus_plicatus_MVZ245165
+    |           |  |  |  |                   |                   +--|
+    |           |  |  |  |                   |                      +--Phrynobatrachus_plicatus_ZMB73742
+    |           |  |  |  |                +--|
+    |           |  |  |  |                |  |                         +--Phrynobatrachus_aff_latifrons_BM2005.1185
+    |           |  |  |  |                |  |                      +--|
+    |           |  |  |  |                |  |                      |  +**Phrynobatrachus_aff_latifrons_BM2005.1203
+    |           |  |  |  |                |  |                   +--|
+    |           |  |  |  |                |  |                   |  |  +--Phrynobatrachus_aff_latifrons_MORCO5
+    |           |  |  |  |                |  |                   |  +--|
+    |           |  |  |  |                |  |                   |     +--Phrynobatrachus_aff_latifrons_ZMB73284
+    |           |  |  |  |                |  |       +-----------|
+    |           |  |  |  |                |  |       |           |   +**Phrynobatrachus_cf_hylaois_DS103
+    |           |  |  |  |                |  |       |           +---|
+    |           |  |  |  |                |  |       |               +--Phrynobatrachus_cf_hylaois_DS107
+    |           |  |  |  |                |  +-------|
+    |           |  |  |  |                |          |                    +--Phrynobatrachus_latifrons_GANBe13
+    |           |  |  |  |                |          |                 +--|
+    |           |  |  |  |                |          |                 |  +--Phrynobatrachus_latifrons_MVZ245150
+    |           |  |  |  |                |          |              +--|
+    |           |  |  |  |                |          |              |  +--Phrynobatrachus_latifrons_MORC10
+    |           |  |  |  |                |          +--------------|
+    |           |  |  |  |                |                         +--Phrynobatrachus_latifrons_ZMB73753
+    |           |  |  |  |             +--|
+    |           |  |  |  |             |  |                   +--Phrynobatrachus_alleni_MORGre67
+    |           |  |  |  |             |  |                +--|
+    |           |  |  |  |             |  |                |  +--Phrynobatrachus_alleni_MORT03.1
+    |           |  |  |  |             |  |           +----|
+    |           |  |  |  |             |  |           |    +--Phrynobatrachus_alleni_MVZ245171
+    |           |  |  |  |             |  |        +--|
+    |           |  |  |  |             |  |        |  |         +--Phrynobatrachus_ghanensis_MORAT48
+    |           |  |  |  |             |  |        |  |  +------|
+    |           |  |  |  |             |  |        |  |  |      +--Phrynobatrachus_ghanensis_ZMB70721
+    |           |  |  |  |             |  |        |  +--|
+    |           |  |  |  |             |  |        |     |   +--Phrynobatrachus_guineensis_MORT02.11
+    |           |  |  |  |             |  |        |     +---|
+    |           |  |  |  |             |  |        |         +**Phrynobatrachus_guineensis_MORT13
+    |           |  |  |  |             |  +--------|
+    |           |  |  |  |             |           |        +--Phrynobatrachus_phyllophilus_MORP10
+    |           |  |  |  |             |           |     +--|
+    |           |  |  |  |             |           |     |  +--Phrynobatrachus_phyllophilus_MORT03.3
+    |           |  |  |  |             |           +-----|
+    |           |  |  |  |             |                 +--Phrynobatrachus_phyllophilus_ZMB73763
+    |           |  |  |  |     +-------|
+    |           |  |  |  |     |       |                               +--Phrynobatrachus_aff_gutturosus_MORS01.38
+    |           |  |  |  |     |       |                            +--|
+    |           |  |  |  |     |       |                            |  |  +--Phrynobatrachus_maculiventris_ZMB71592
+    |           |  |  |  |     |       |                            |  +--|
+    |           |  |  |  |     |       |                            |     +**Phrynobatrachus_maculiventris_ZMB71593
+    |           |  |  |  |     |       |                         +--|
+    |           |  |  |  |     |       |                         |  |  +--Phrynobatrachus_aff_gutturosus_MORT33
+    |           |  |  |  |     |       |                         |  +--|
+    |           |  |  |  |     |       |                         |     +---Phrynobatrachus_spnov2_ZMB73708
+    |           |  |  |  |     |       |                      +--|
+    |           |  |  |  |     |       |                      |  |    +--Phrynobatrachus_fraterculus_ZMB73759
+    |           |  |  |  |     |       |                      |  +----|
+    |           |  |  |  |     |       |                      |       +--Phrynobatrachus_fraterculus_ZMB73761
+    |           |  |  |  |     |       |                   +--|
+    |           |  |  |  |     |       |                   |  |  +--------Phrynobatrachus_gutturosus_MORC11
+    |           |  |  |  |     |       |                   |  +--|
+    |           |  |  |  |     |       |                   |     +-------Phrynobatrachus_pintoi_ZMB70689
+    |           |  |  |  |     |       |                +--|
+    |           |  |  |  |     |       |                |  |       +--Phrynobatrachus_spnov3_ZMB73704
+    |           |  |  |  |     |       |                |  +-------|
+    |           |  |  |  |     |       |                |          +**Phrynobatrachus_spnov3_ZMB73707
+    |           |  |  |  |     |       |             +--|
+    |           |  |  |  |     |       |             |  |                 +**Phrynobatrachus_cf_uzungwensis_BM2005.181
+    |           |  |  |  |     |       |             |  |              +--|
+    |           |  |  |  |     |       |             |  |              |  +--Phrynobatrachus_uzungwensis_AC2065
+    |           |  |  |  |     |       |             |  |           +--|
+    |           |  |  |  |     |       |             |  |           |  |  +--Phrynobatrachus_rungwensis_BM2005.145
+    |           |  |  |  |     |       |             |  |           |  +--|
+    |           |  |  |  |     |       |             |  |           |     |  +**Phrynobatrachus_rungwensis_BM2005.858
+    |           |  |  |  |     |       |             |  |           |     +--|
+    |           |  |  |  |     |       |             |  |           |        +**Phrynobatrachus_rungwensis_BM2005.859
+    |           |  |  |  |     |       |             |  |        +**|
+    |           |  |  |  |     |       |             |  |        |  +--Phrynobatrachus_keniensis_MVZ226260
+    |           |  |  |  |     |       |             |  |     +--|
+    |           |  |  |  |     |       |             |  |     |  |     +--Phrynobatrachus_inexpectatus_AAUA2008-043
+    |           |  |  |  |     |       |             |  |     |  |  +--|
+    |           |  |  |  |     |       |             |  |     |  |  |  |     +--Phrynobatrachus_minutus_AAUA2008-059
+    |           |  |  |  |     |       |             |  |     |  |  |  |  +**|
+    |           |  |  |  |     |       |             |  |     |  |  |  |  |  |  +**Phrynobatrachus_minutus_AAUA2008-101
+    |           |  |  |  |     |       |             |  |     |  |  |  |  |  +**|
+    |           |  |  |  |     |       |             |  |     |  |  |  |  |     +**Phrynobatrachus_minutus_AAUA2008-103
+    |           |  |  |  |     |       |             |  |     |  |  |  +--|
+    |           |  |  |  |     |       |             |  |     |  |  |     +--Phrynobatrachus_minutus_AAUA2008-078
+    |           |  |  |  |     |       |             |  |     |  +--|
+    |           |  |  |  |     |       |             |  |     |     |  +--Phrynobatrachus_scheffleri_MVZ234062
+    |           |  |  |  |     |       |             |  |     |     +--|
+    |           |  |  |  |     |       |             |  |     |        +--Phrynobatrachus_scheffleri_MVZ234149
+    |           |  |  |  |     |       |             |  |  +--|
+    |           |  |  |  |     |       |             |  |  |  |        +**Phrynobatrachus_kakamikro_MHNG_2709.89
+    |           |  |  |  |     |       |             |  |  |  |     +--|
+    |           |  |  |  |     |       |             |  |  |  |     |  |  +**Phrynobatrachus_kakamikro_NMK_A_3924_1
+    |           |  |  |  |     |       |             |  |  |  |     |  +**|
+    |           |  |  |  |     |       |             |  |  |  |     |     +**Phrynobatrachus_kakamikro_NMK_A_3924_2
+    |           |  |  |  |     |       |             |  |  |  |  +--|
+    |           |  |  |  |     |       |             |  |  |  |  |  |  +**Phrynobatrachus_mababiensis_C_BM2005.119
+    |           |  |  |  |     |       |             |  |  |  |  |  +--|
+    |           |  |  |  |     |       |             |  |  |  |  |     |  +--Phrynobatrachus_mababiensis_C_MCZA-138322
+    |           |  |  |  |     |       |             |  |  |  |  |     +--|
+    |           |  |  |  |     |       |             |  |  |  |  |        +--Phrynobatrachus_mababiensis_C_MCZA-138330
+    |           |  |  |  |     |       |             |  |  |  +--|
+    |           |  |  |  |     |       |             |  |  |     |  +--Phrynobatrachus_parvulus_BM2005.308
+    |           |  |  |  |     |       |             |  |  |     +--|
+    |           |  |  |  |     |       |             |  |  |        |  +--Phrynobatrachus_parvulus_MCZA-137075
+    |           |  |  |  |     |       |             |  |  |        +--|
+    |           |  |  |  |     |       |             |  |  |           |  +--Phrynobatrachus_parvulus_MCZA-137076
+    |           |  |  |  |     |       |             |  |  |           +--|
+    |           |  |  |  |     |       |             |  |  |              +--Phrynobatrachus_parvulus_MCZA-137077
+    |           |  |  |  |     |       |             |  +--|
+    |           |  |  |  |     |       |             |     |              +--Phrynobatrachus_dispar_CAS219084
+    |           |  |  |  |     |       |             |     |           +--|
+    |           |  |  |  |     |       |             |     |           |  +--Phrynobatrachus_dispar_CAS219202
+    |           |  |  |  |     |       |             |     |        +**|
+    |           |  |  |  |     |       |             |     |        |  +--Phrynobatrachus_dispar_CAS219352
+    |           |  |  |  |     |       |             |     |     +--|
+    |           |  |  |  |     |       |             |     |     |  +**Phrynobatrachus_dispar_CAS219386
+    |           |  |  |  |     |       |             |     |  +--|
+    |           |  |  |  |     |       |             |     |  |  +--Phrynobatrachus_mababiensis_A_MV10.8
+    |           |  |  |  |     |       |             |     +--|
+    |           |  |  |  |     |       |             |        |  +**Phrynobatrachus_leveleve_CAS218894
+    |           |  |  |  |     |       |             |        +--|
+    |           |  |  |  |     |       |             |           +--Phrynobatrachus_leveleve_CAS218906
+    |           |  |  |  |     |       |          +--|
+    |           |  |  |  |     |       |          |  |                 +**Phrynobatrachus_annulatus_ZMB73744
+    |           |  |  |  |     |       |          |  |              +--|
+    |           |  |  |  |     |       |          |  |              |  +--Phrynobatrachus_annulatus_ZMB73745
+    |           |  |  |  |     |       |          |  |           +--|
+    |           |  |  |  |     |       |          |  |           |  |  +--Phrynobatrachus_calcaratus_MVZ245139
+    |           |  |  |  |     |       |          |  |           |  +--|
+    |           |  |  |  |     |       |          |  |           |     +--Phrynobatrachus_calcaratus_MVZ245140
+    |           |  |  |  |     |       |          |  |        +--|
+    |           |  |  |  |     |       |          |  |        |  +--Phrynobatrachus_annulatus_ZMB73746
+    |           |  |  |  |     |       |          |  |     +--|
+    |           |  |  |  |     |       |          |  |     |  |     +--Phrynobatrachus_villiersi_ZMB70740
+    |           |  |  |  |     |       |          |  |     |  |  +**|
+    |           |  |  |  |     |       |          |  |     |  |  |  +**Phrynobatrachus_villiersi_ZMB70743
+    |           |  |  |  |     |       |          |  |     |  +--|
+    |           |  |  |  |     |       |          |  |     |     +--Phrynobatrachus_villiersi_ZMB70746
+    |           |  |  |  |     |       |          |  |  +--|
+    |           |  |  |  |     |       |          |  |  |  |     +--Phrynobatrachus_calcaratus_MORC12
+    |           |  |  |  |     |       |          |  |  |  |  +--|
+    |           |  |  |  |     |       |          |  |  |  |  |  +**Phrynobatrachus_calcaratus_ZMB_71459
+    |           |  |  |  |     |       |          |  |  |  +--|
+    |           |  |  |  |     |       |          |  |  |     +--Phrynobatrachus_calcaratus_ZMB_71462
+    |           |  |  |  |     |       |          |  +--|
+    |           |  |  |  |     |       |          |     |        +--Phrynobatrachus_cornutus_CAS207799
+    |           |  |  |  |     |       |          |     |     +--|
+    |           |  |  |  |     |       |          |     |     |  +--Phrynobatrachus_cornutus_MCZA-136837
+    |           |  |  |  |     |       |          |     |  +--|
+    |           |  |  |  |     |       |          |     |  |  +--Phrynobatrachus_cornutus_CAS207877
+    |           |  |  |  |     |       |          |     +--|
+    |           |  |  |  |     |       |          |        +--Phrynobatrachus_cornutus_ZMB_73784
+    |           |  |  |  |     |       |       +--|
+    |           |  |  |  |     |       |       |  |        +--Phrynobatrachus_mababiensis_B_AC1258
+    |           |  |  |  |     |       |       |  |     +--|
+    |           |  |  |  |     |       |       |  |     |  +--Phrynobatrachus_mababiensis_B_PEMNi12
+    |           |  |  |  |     |       |       |  |  +--|
+    |           |  |  |  |     |       |       |  |  |  |  +**Phrynobatrachus_ukingensis_BM2005.144
+    |           |  |  |  |     |       |       |  |  |  +--|
+    |           |  |  |  |     |       |       |  |  |     +--Phrynobatrachus_ungujae_MCZA-138444
+    |           |  |  |  |     |       |       |  +--|
+    |           |  |  |  |     |       |       |     +-----Phrynobatrachus_pallidus_MVZ234153
+    |           |  |  |  |     |       +-------|
+    |           |  |  |  |     |               |       +**Phrynobatrachus_spnov1_AAUA2008-348
+    |           |  |  |  |     |               +-------|
+    |           |  |  |  |     |                       +--Phrynobatrachus_spnov1_AAUA2008-349
+    |           |  |  |  |  +--|
+    |           |  |  |  |  |  |             +--Phrynobatrachus_sandersoni_MCZA-136790
+    |           |  |  |  |  |  +-------------|
+    |           |  |  |  |  |                |  +**Phrynobatrachus_sandersoni_MCZA-136791
+    |           |  |  |  |  |                +--|
+    |           |  |  |  |  |                   +--Phrynobatrachus_sandersoni_MCZA-136794
+    |           |  |  |  +--|
+    |           |  |  |     |           +**Phrynobatrachus_acutirostris_EBG1314
+    |           |  |  |     |        +--|
+    |           |  |  |     |        |  +--Phrynobatrachus_acutirostris_EBG1317
+    |           |  |  |     |     +--|
+    |           |  |  |     |     |  +**Phrynobatrachus_acutirostris_EBG1315
+    |           |  |  |     |  +--|
+    |           |  |  |     |  |  |      +**Phrynobatrachus_dendrobates_CAS202049
+    |           |  |  |     |  |  |  +---|
+    |           |  |  |     |  |  |  |   +--Phrynobatrachus_dendrobates_CAS202051
+    |           |  |  |     |  |  +--|
+    |           |  |  |     |  |     |  +--Phrynobatrachus_petropedetoides_MCZA-138201
+    |           |  |  |     |  |     +--|
+    |           |  |  |     |  |        +--Phrynobatrachus_versicolor_CAS202007
+    |           |  |  |     +--|
+    |           |  |  |        |             +--Phrynobatrachus_krefftii_BM2002.323
+    |           |  |  |        |          +**|
+    |           |  |  |        |          |  +--Phrynobatrachus_krefftii_MCZA-138316
+    |           |  |  |        |       +--|
+    |           |  |  |        |       |  +--Phrynobatrachus_krefftii_BM2002.994
+    |           |  |  |        |    +--|
+    |           |  |  |        |    |  |  +--Phrynobatrachus_krefftii_MCZA-138317
+    |           |  |  |        |    |  +**|
+    |           |  |  |        |    |     +**Phrynobatrachus_krefftii_MCZA-138318
+    |           |  |  |        +----|
+    |           |  |  |             +--Phrynobatrachus_krefftii_MCZA-138315
+    |           |  +--|
+    |           |     |                       +--Ptychadena_mascareniensis_VUB0957
+    |           |     +-----------------------|
+    |           |                             |        +**Ptychadena_newtoni_CAS219249
+    |           |                             +--------|
+    |           |                                      +--Ptychadena_newtoni_CAS219250
+    |        +--|
+    |        |  |        +-----------Petropedetes_martiensseni_CR10898
+    |        |  +--------|
+    |        |           |              +--Petropedetes_parkeri_AY341628
+    |        |           +--------------|
+    |        |                          +--Petropedetes_parkeri_VUB0955
+    |     +--|
+    |     |  |           +-----Pyxicephalus_adspersus_AF206091
+    |     |  +-----------|
+    |     |              +--Pyxicephalus_adspersus_ZFMK66446
+    |  +--|
+    |  |  +-----------Natalobatrachus_bonebergi_ZFMK66443
+    +--|
+       |  +---------Strongylopus_fasciatus_ZFMK66444
+       +--|
+          |  +--Tomopterna_damarensis_ZFMK66403
+          +--|
+             +---Tomopterna_natalensis_ZFMK68815
+
+Tree in newick format:
+
+(Amietia_angolensis_CAS191519:0.0477543895,Amietia_angolensis_DQ019576:0.0148395730,((Arthroleptella_villiersi_CR1073:0.1247081896,(Cacosternum_boettgeri_ZFMK66727:0.0806488939,Poyntonia_paludicola_VUB1066:0.0919352196):0.0315220342):0.0249524096,(((((Cardioglossa_gracilis_MVZ234675:0.4035073806,((Conraua_crassipes_ZFMK75446:0.1761456005,(((((((((((Phrynobatrachus_acridoides_BM2002.347:0.0022969222,Phrynobatrachus_acridoides_MCZA-138214:0.0006151888):0.0195773396,(Phrynobatrachus_pakenhami_MCZ_A-138282:0.0021893128,Phrynobatrachus_pakenhami_MCZ_A-138283:0.0000026038):0.0251642984):0.1226500465,((((Phrynobatrachus_francisci_MORC8:0.0016359167,Phrynobatrachus_francisci_ZMB73779:0.0000021654):0.0005658238,Phrynobatrachus_francisci_MVZ249545:0.0009302948):0.0000026794,Phrynobatrachus_francisci_MVZ245148:0.0035920970):0.1040479703,(((((((Phrynobatrachus_natalensis_AAUA2008-203:0.0005092944,Phrynobatrachus_natalensis_AAUA2008-205:0.0005186959):0.0004665791,Phrynobatrachus_natalensis_AAUA2008-229:0.0005475312):0.0090245353,Phrynobatrachus_natalensis_MVZ234059:0.0052287747):0.0209881581,((Phrynobatrachus_natalensis_MVZ245160:0.0005082026,Phrynobatrachus_natalensis_MVZ245161:0.0000026994):0.0004949982,Phrynobatrachus_natalensis_ZMB73717:0.0011061025):0.0251743695):0.0149308543,(((Phrynobatrachus_natalensis_BM2005.1189:0.0017628166,(Phrynobatrachus_natalensis_MCZA-138337:0.0025637875,Phrynobatrachus_natalensis_ZMKMW10.2:0.0015405912):0.0013140237):0.0010210719,(Phrynobatrachus_natalensis_UTAA58262:0.0005106698,Phrynobatrachus_natalensis_UTAA58263:0.0000028952):0.0022799802):0.0069094922,(Phrynobatrachus_natalensis_MCZA-138354:0.0000019997,((Phrynobatrachus_natalensis_PEMNi27:0.0000022564,Phrynobatrachus_natalensis_PEMNi73:0.0005071612):0.0000020461,Phrynobatrachus_natalensis_PEMNi52:0.0020329331):0.0005065272):0.0060470229):0.0158095786):0.0263827527,Phrynobatrachus_natalensis_ZFMK73452:0.0313212205):0.0371132051,Phrynobatrachus_natalensis_ES938:0.0716129045):0.0311028061):0.0063234884):0.0094253524,(Phrynobatrachus_bullans_AAUA2008-032:0.0302968835,((Phrynobatrachus_bullans_BM2005.1179:0.0000028307,Phrynobatrachus_bullans_MVZ234151:0.0005011773):0.0027318187,Phrynobatrachus_bullans_MVZ238716:0.0028412179):0.0209585765):0.0779048276):0.0635900865,((Phrynobatrachus_graueri_UTAA58270:0.0014736256,(Phrynobatrachus_graueri_UTAA58273:0.0000022839,Phrynobatrachus_graueri_UTAA58276:0.0004929222):0.0000029177):0.1630233251,(((Phrynobatrachus_intermedius_ZMB71538:0.0265714661,((Phrynobatrachus_liberiensis_MORMTN130:0.0041345581,Phrynobatrachus_liberiensis_ZMB73768:0.0040930303):0.0035815444,Phrynobatrachus_liberiensis_MORT5:0.0038594895):0.0371935975):0.0212112006,((Phrynobatrachus_tokba_MORA29:0.0023742245,Phrynobatrachus_tokba_ZMB73766:0.0058581614):0.0127928291,((Phrynobatrachus_tokba_MORFD90:0.0102072088,(Phrynobatrachus_tokba_ZMB73280:0.0078019409,Phrynobatrachus_tokba_ZMB73776:0.0041203371):0.0030497852):0.0148053316,Phrynobatrachus_tokba_ZMB73774:0.0204101018):0.0045497498):0.0695423683):0.0333875081,Phrynobatrachus_kinangopensis_ZFMK83497:0.1052422833):0.0191827504):0.0145757679):0.0125656820,((((((Phrynobatrachus_africanus_CAS207779:0.0046180138,Phrynobatrachus_africanus_MCZA-136756:0.0034487399):0.0030738104,Phrynobatrachus_africanus_MCZA-136731:0.0020482435):0.0144524548,(Phrynobatrachus_africanus_MCZA-136800:0.0015143000,Phrynobatrachus_africanus_MCZA-136839:0.0031328613):0.0206521394):0.0123035119,((Phrynobatrachus_africanus_MCZA-136944:0.0004831042,Phrynobatrachus_africanus_MCZA-136945:0.0004979626):0.0085179545,(Phrynobatrachus_africanus_ZMB73712:0.0000028423,Phrynobatrachus_africanus_ZMB73715:0.0000022757):0.0083850362):0.0077307736):0.0966862079,((((((Phrynobatrachus_batesii_MCZA-136783:0.0000026923,Phrynobatrachus_batesii_MCZA-136793:0.0000022112):0.0000029295,Phrynobatrachus_batesii_MCZA-136784:0.0004892097):0.0333991133,(((((Phrynobatrachus_manengoubensis_MCZA-136923:0.0004974529,Phrynobatrachus_manengoubensis_MCZA-136924:0.0000027230):0.0000029428,Phrynobatrachus_manengoubensis_MCZA-136943:0.0004970363):0.0004970021,Phrynobatrachus_manengoubensis_MCZA-136944:0.0000020232):0.0122548077,Phrynobatrachus_werneri_MVZ234835:0.0119856208):0.0113275562,Phrynobatrachus_werneri_MVZ253334:0.0201930296):0.0133549681):0.0080155360,Phrynobatrachus_chukuchuku_MCZA-138124:0.0202087462):0.0110479910,((Phrynobatrachus_steindachneri_MCZA-136875:0.0004940029,Phrynobatrachus_steindachneri_MCZA-138135:0.0004979373):0.0088225501,((Phrynobatrachus_steindachneri_MCZA-136892:0.0000025279,(((Phrynobatrachus_steindachneri_MCZA-136903:0.0004931446,(Phrynobatrachus_steindachneri_MCZA-136904:0.0000027816,Phrynobatrachus_steindachneri_MCZA-136909:0.0000025896):0.0004938633):0.0005011981,Phrynobatrachus_steindachneri_MCZA-138064:0.0004875125):0.0020121308,(Phrynobatrachus_steindachneri_MCZA-136927:0.0000025855,Phrynobatrachus_steindachneri_MCZA-136928:0.0004935676):0.0004975543):0.0009976473):0.0085103325,Phrynobatrachus_steindachneri_MCZA-138104:0.0149019334):0.0052577665):0.0199567997):0.0103357353,(Phrynobatrachus_cricogaster_MCZA-138030:0.0004623227,Phrynobatrachus_cricogaster_ZMB71458:0.0026646024):0.0286902109):0.0303757725):0.0240240159,((((Phrynobatrachus_auritus_CAS207932:0.0000027399,Phrynobatrachus_auritus_CAS207937:0.0004978635):0.0004856014,Phrynobatrachus_auritus_MCZA-136736:0.0015247259):0.0094721834,Phrynobatrachus_auritus_MCZA-136792:0.0188407142):0.1140730998,(Phrynobatrachus_plicatus_JPALa39:0.0000021654,((Phrynobatrachus_plicatus_MVZ245164:0.0015413809,Phrynobatrachus_plicatus_MVZ245165:0.0000020049):0.0025798311,Phrynobatrachus_plicatus_ZMB73742:0.0015457470):0.0083387596):0.1100805972):0.0827039269):0.0035450034):0.0272656900,((((Phrynobatrachus_aff_latifrons_BM2005.1185:0.0009975518,Phrynobatrachus_aff_latifrons_BM2005.1203:0.0000025107):0.0081362321,(Phrynobatrachus_aff_latifrons_MORCO5:0.0012044120,Phrynobatrachus_aff_latifrons_ZMB73284:0.0005897127):0.0155821973):0.0247276771,(Phrynobatrachus_cf_hylaois_DS103:0.0000020197,Phrynobatrachus_cf_hylaois_DS107:0.0011527007):0.0527894964):0.1515669354,(((Phrynobatrachus_latifrons_GANBe13:0.0010189167,Phrynobatrachus_latifrons_MVZ245150:0.0010122096):0.0004819825,Phrynobatrachus_latifrons_MORC10:0.0020762090):0.0039641634,Phrynobatrachus_latifrons_ZMB73753:0.0024426418):0.1874757797):0.1090644239):0.0426637806,((((Phrynobatrachus_alleni_MORGre67:0.0013416547,Phrynobatrachus_alleni_MORT03.1:0.0014054531):0.0095522005,Phrynobatrachus_alleni_MVZ245171:0.0105194565):0.0627629130,((Phrynobatrachus_ghanensis_MORAT48:0.0016294914,Phrynobatrachus_ghanensis_ZMB70721:0.0008457039):0.0875617997,(Phrynobatrachus_guineensis_MORT02.11:0.0006449060,Phrynobatrachus_guineensis_MORT13:0.0000029317):0.0532090250):0.0086183901):0.0268596553,((Phrynobatrachus_phyllophilus_MORP10:0.0006203623,Phrynobatrachus_phyllophilus_MORT03.3:0.0057788622):0.0015660258,Phrynobatrachus_phyllophilus_ZMB73763:0.0003698849):0.0767674777):0.1232626448):0.0386895337,(((((((((Phrynobatrachus_aff_gutturosus_MORS01.38:0.0362789109,(Phrynobatrachus_maculiventris_ZMB71592:0.0020074008,Phrynobatrachus_maculiventris_ZMB71593:0.0003265012):0.0472530487):0.0250668559,(Phrynobatrachus_aff_gutturosus_MORT33:0.0415498274,Phrynobatrachus_spnov2_ZMB73708:0.0547716811):0.0200020621):0.0313856137,(Phrynobatrachus_fraterculus_ZMB73759:0.0043843787,Phrynobatrachus_fraterculus_ZMB73761:0.0042753007):0.0661327723):0.0241006139,(Phrynobatrachus_gutturosus_MORC11:0.1150181322,Phrynobatrachus_pintoi_ZMB70689:0.1049292085):0.0152697088):0.0147143029,(Phrynobatrachus_spnov3_ZMB73704:0.0006607610,Phrynobatrachus_spnov3_ZMB73707:0.0000028065):0.1008851101):0.0309757191,((((((Phrynobatrachus_cf_uzungwensis_BM2005.181:0.0000020889,Phrynobatrachus_uzungwensis_AC2065:0.0034799210):0.0037307412,(Phrynobatrachus_rungwensis_BM2005.145:0.0018880568,(Phrynobatrachus_rungwensis_BM2005.858:0.0000025861,Phrynobatrachus_rungwensis_BM2005.859:0.0000028451):0.0020218533):0.0028218858):0.0413524453,Phrynobatrachus_keniensis_MVZ226260:0.0413028549):0.0001240904,((Phrynobatrachus_inexpectatus_AAUA2008-043:0.0211796050,((Phrynobatrachus_minutus_AAUA2008-059:0.0026418822,(Phrynobatrachus_minutus_AAUA2008-101:0.0000029088,Phrynobatrachus_minutus_AAUA2008-103:0.0000022023):0.0000022164):0.0000024908,Phrynobatrachus_minutus_AAUA2008-078:0.0004952494):0.0205311053):0.0312772319,(Phrynobatrachus_scheffleri_MVZ234062:0.0116634073,Phrynobatrachus_scheffleri_MVZ234149:0.0054685820):0.0255893587):0.0187200170):0.0069363123,(((Phrynobatrachus_kakamikro_MHNG_2709.89:0.0000024130,(Phrynobatrachus_kakamikro_NMK_A_3924_1:0.0000025378,Phrynobatrachus_kakamikro_NMK_A_3924_2:0.0000020818):0.0000023344):0.0199291087,(Phrynobatrachus_mababiensis_C_BM2005.119:0.0002934566,(Phrynobatrachus_mababiensis_C_MCZA-138322:0.0011713417,Phrynobatrachus_mababiensis_C_MCZA-138330:0.0028820477):0.0009355469):0.0097712081):0.0449311850,(Phrynobatrachus_parvulus_BM2005.308:0.0185394915,(Phrynobatrachus_parvulus_MCZA-137075:0.0022406622,(Phrynobatrachus_parvulus_MCZA-137076:0.0009442976,Phrynobatrachus_parvulus_MCZA-137077:0.0015729536):0.0013693127):0.0063278629):0.0468607194):0.0103940479):0.0137293738,(((((Phrynobatrachus_dispar_CAS219084:0.0009902321,Phrynobatrachus_dispar_CAS219202:0.0033270326):0.0005596165,Phrynobatrachus_dispar_CAS219352:0.0009678167):0.0000024531,Phrynobatrachus_dispar_CAS219386:0.0000019760):0.0256563391,Phrynobatrachus_mababiensis_A_MV10.8:0.0231656943):0.0105716044,(Phrynobatrachus_leveleve_CAS218894:0.0000029478,Phrynobatrachus_leveleve_CAS218906:0.0009582715):0.0360114633):0.0166284234):0.0174064652):0.0175464068,((((((Phrynobatrachus_annulatus_ZMB73744:0.0000019782,Phrynobatrachus_annulatus_ZMB73745:0.0004880398):0.0103953156,(Phrynobatrachus_calcaratus_MVZ245139:0.0041158264,Phrynobatrachus_calcaratus_MVZ245140:0.0004738872):0.0215968255):0.0050176803,Phrynobatrachus_annulatus_ZMB73746:0.0101273842):0.0340845715,((Phrynobatrachus_villiersi_ZMB70740:0.0005123815,Phrynobatrachus_villiersi_ZMB70743:0.0000025084):0.0000023682,Phrynobatrachus_villiersi_ZMB70746:0.0014949086):0.0467366209):0.0059920891,((Phrynobatrachus_calcaratus_MORC12:0.0015055991,Phrynobatrachus_calcaratus_ZMB_71459:0.0000020395):0.0165202557,Phrynobatrachus_calcaratus_ZMB_71462:0.0266794910):0.0321404844):0.0127027940,(((Phrynobatrachus_cornutus_CAS207799:0.0004911141,Phrynobatrachus_cornutus_MCZA-136837:0.0014709271):0.0009867169,Phrynobatrachus_cornutus_CAS207877:0.0029545831):0.0056701120,Phrynobatrachus_cornutus_ZMB_73784:0.0156477682):0.0444696309):0.0399628958):0.0115147285,(((Phrynobatrachus_mababiensis_B_AC1258:0.0210459047,Phrynobatrachus_mababiensis_B_PEMNi12:0.0337549490):0.0321718046,(Phrynobatrachus_ukingensis_BM2005.144:0.0000027767,Phrynobatrachus_ungujae_MCZA-138444:0.0004851031):0.0451287220):0.0282960784,Phrynobatrachus_pallidus_MVZ234153:0.0821876781):0.0102564490):0.0195933062,(Phrynobatrachus_spnov1_AAUA2008-348:0.0000025275,Phrynobatrachus_spnov1_AAUA2008-349:0.0004874669):0.1008373725):0.1065798541):0.1014340928,(Phrynobatrachus_sandersoni_MCZA-136790:0.0005112827,(Phrynobatrachus_sandersoni_MCZA-136791:0.0000022779,Phrynobatrachus_sandersoni_MCZA-136794:0.0046850038):0.0004969566):0.1783928375):0.0211551627,((((Phrynobatrachus_acutirostris_EBG1314:0.0000023621,Phrynobatrachus_acutirostris_EBG1317:0.0005038406):0.0005037434,Phrynobatrachus_acutirostris_EBG1315:0.0000029221):0.0492342836,((Phrynobatrachus_dendrobates_CAS202049:0.0003095496,Phrynobatrachus_dendrobates_CAS202051:0.0026923845):0.0593943548,(Phrynobatrachus_petropedetoides_MCZA-138201:0.0463736008,Phrynobatrachus_versicolor_CAS202007:0.0288659936):0.0377466805):0.0401843021):0.0322817078,((((Phrynobatrachus_krefftii_BM2002.323:0.0004881172,Phrynobatrachus_krefftii_MCZA-138316:0.0009778859):0.0000028823,Phrynobatrachus_krefftii_BM2002.994:0.0005036885):0.0009770606,(Phrynobatrachus_krefftii_MCZA-138317:0.0009810813,Phrynobatrachus_krefftii_MCZA-138318:0.0000025271):0.0000028753):0.0329054546,Phrynobatrachus_krefftii_MCZA-138315:0.0312477558):0.0735461519):0.0378218543):0.0345431341):0.0256010495,(Ptychadena_mascareniensis_VUB0957:0.0308763101,(Ptychadena_newtoni_CAS219249:0.0000022707,Ptychadena_newtoni_CAS219250:0.0004666762):0.1225498487):0.2994520930):0.0126277942):0.0173049794,(Petropedetes_martiensseni_CR10898:0.1491591119,(Petropedetes_parkeri_AY341628:0.0259355249,Petropedetes_parkeri_VUB0955:0.0347419388):0.1899289167):0.1174000562):0.0172440060,(Pyxicephalus_adspersus_AF206091:0.0856530940,Pyxicephalus_adspersus_ZFMK66446:0.0347097655):0.1545865803):0.0293706612,Natalobatrachus_bonebergi_ZFMK66443:0.1601832872):0.0045145125,(Strongylopus_fasciatus_ZFMK66444:0.1324566445,(Tomopterna_damarensis_ZFMK66403:0.0220859663,Tomopterna_natalensis_ZFMK68815:0.0576745572):0.0299922856):0.0053581849):0.0274743000):0.0529865935);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t results/dna_M4720_201_2899.phy/output_files/iqtree/inference/rand.treefile -m "TIM2{5.15185,13.2465,33.5935}+F{0.334033,0.236771,0.187555,0.241641}+R5{0.450312,0.0423974,0.235509,0.512324,0.172107,1.54396,0.118185,3.55484,0.0238874,7.30078}" --length 2899
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data2/dna_M4720_201_2899.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/suny/Downloads/VAN_TRAINING_DATA/data2/dna_M4720_201_2899.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun Sep 21 07:27:07 2025
+Total CPU time used: 2032.74 seconds (0h:33m:52s)
+Total wall-clock time used: 2040.33 seconds (0h:34m:0s)
+

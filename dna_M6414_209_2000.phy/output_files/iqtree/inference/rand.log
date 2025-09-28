@@ -1,0 +1,603 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Sep 12 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    suny-Precision-5530 (AVX2, FMA3, 15 GB RAM)
+Command: /usr/local/bin/iqtree3 -s /home/suny/Downloads/VAN_TRAINING_DATA/data4/dna_M6414_209_2000.phy -pre results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand -seed 0 -t RANDOM -T 1 -redo -n 3 -ninit 20 -xgphy -xgphy_nni_count 3
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Sep 24 19:06:32 2025
+Kernel:  AVX+FMA - 1 threads (12 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 12 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file /home/suny/Downloads/VAN_TRAINING_DATA/data4/dna_M6414_209_2000.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.00962837 secs using 47.21% CPU
+Alignment has 209 sequences with 2000 columns, 1693 distinct patterns
+1205 parsimony-informative, 325 singleton sites, 470 constant sites
+                                            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00235122 secs using 99.82% CPU
+   1  Echis_carinatus_sochureki_01H01_ECS00036     80.65%    passed     87.51%
+   2  Echis_carinatus_sochureki_01H12_ECS00043     61.70%    passed     51.21%
+   3  Echis_carinatus_sochureki_02A10_ECS00035     82.60%    passed     83.22%
+   4  Echis_carinatus_sochureki_02B03_ECS00044     17.05%    passed     84.37%
+   5  Echis_carinatus_sochureki_02B07_ECS00012_2   27.55%    passed     91.18%
+   6  Echis_carinatus_sochureki_02B08_ECS00056     47.65%    passed     74.33%
+   7  Echis_carinatus_sochureki_03D02_ECS00120     44.50%    passed     42.80%
+   8  Echis_carinatus_sochureki_03D07_ECS00087     56.45%    passed      8.69%
+   9  Echis_carinatus_sochureki_03G02_ECS00053      8.80%    passed     99.74%
+  10  Echis_carinatus_sochureki_04B12_ECS00062      7.20%    passed     88.08%
+  11  Echis_carinatus_sochureki_04C05_ECS00177      8.40%    passed     97.64%
+  12  Echis_carinatus_sochureki_04H03_ECS00117     28.75%    passed     39.61%
+  13  Echis_carinatus_sochureki_05A09_ECS00012      7.65%    passed     85.21%
+  14  Echis_carinatus_sochureki_05F02_ECS00012_2   29.10%    passed     75.88%
+  15  Echis_carinatus_sochureki_05F05_ECS00213     38.15%    passed     88.23%
+  16  Echis_carinatus_sochureki_05F06_ECS00062     16.25%    passed     85.38%
+  17  Echis_carinatus_sochureki_05F08_ECS00253     71.90%    passed     72.03%
+  18  Echis_carinatus_sochureki_06D06_ECS00071     51.80%    passed     49.04%
+  19  Echis_carinatus_sochureki_06G08_ECS00053      8.85%    passed     91.68%
+  20  Echis_carinatus_sochureki_07A04_ECS00120     23.00%    passed     95.68%
+  21  Echis_carinatus_sochureki_07E05_ECS00086     62.60%    passed     87.06%
+  22  Echis_carinatus_sochureki_08H07_ECS00253     62.60%    passed     75.47%
+  23  Echis_carinatus_sochureki_08H11_ECS00120     62.05%    passed     30.08%
+  24  Echis_carinatus_sochureki_09A03_ECS00053      8.80%    passed     99.58%
+  25  Echis_carinatus_sochureki_09H12_ECS00456      8.45%    passed     92.84%
+  26  Echis_carinatus_sochureki_10B02_ECS00030     51.60%    passed     86.16%
+  27  Echis_carinatus_sochureki_10D01_ECS00062     36.65%    passed     99.94%
+  28  Echis_carinatus_sochureki_11A07_ECO00062      7.15%    passed     80.05%
+  29  Echis_carinatus_sochureki_11D10_ECS00087      8.05%    passed     75.08%
+  30  Echis_carinatus_sochureki_12C08_ECS00257     59.45%    passed     31.83%
+  31  Echis_carinatus_sochureki_12D05_ECS00117     28.75%    passed     39.61%
+  32  Echis_carinatus_sochureki_12F04_ECS00012     14.60%    passed     88.04%
+  33  Echis_carinatus_sochureki_13D11_ECS00044      8.20%    passed     90.36%
+  34  Echis_carinatus_sochureki_13F10_ECS00257     58.40%    passed     62.58%
+  35  Echis_carinatus_sochureki_13G05_ECO00053      8.80%    passed     86.08%
+  36  Echis_carinatus_sochureki_13H01_ECS00044      8.10%    passed     91.10%
+  37  Echis_carinatus_sochureki_13H10_ECS00062     42.10%    passed     77.65%
+  38  Echis_carinatus_sochureki_14F09_ECS00253     62.60%    passed     69.34%
+  39  Echis_carinatus_sochureki_14H12_ECS00678     62.85%    passed     92.92%
+  40  Echis_coloratus_01C06_ECO00034                8.35%    passed     97.60%
+  41  Echis_coloratus_01C08_ECO00044               26.65%    passed     96.17%
+  42  Echis_coloratus_01C09_ECO00002                8.35%    passed     96.71%
+  43  Echis_coloratus_01E09_ECO00011               34.00%    passed     89.71%
+  44  Echis_coloratus_01F08_ECO00023                7.80%    passed     99.98%
+  45  Echis_coloratus_01F12_ECO00011               28.60%    passed     97.90%
+  46  Echis_coloratus_01H11_ECO00002                8.40%    passed     95.90%
+  47  Echis_coloratus_01H12_ECO00001               23.30%    passed     82.43%
+  48  Echis_coloratus_02D07_ECO00020               28.60%    passed     95.67%
+  49  Echis_coloratus_02E06_ECO00017               25.75%    passed     47.38%
+  50  Echis_coloratus_02E10_ECO00004               13.40%    passed     91.96%
+  51  Echis_coloratus_02G05_ECO00010                8.40%    passed     90.19%
+  52  Echis_coloratus_02G09_ECO00067               12.95%    passed     93.70%
+  53  Echis_coloratus_03B02_ECO00002                8.35%    passed     95.89%
+  54  Echis_coloratus_03C03_ECO00002               32.80%    passed     99.22%
+  55  Echis_coloratus_03C08_ECO00024_DIS           80.65%    passed     98.34%
+  56  Echis_coloratus_03D08_ECO00011               28.65%    passed     95.23%
+  57  Echis_coloratus_03D11_ECO00012               13.80%    passed     47.58%
+  58  Echis_coloratus_03D12_ECO00020               30.70%    passed     94.00%
+  59  Echis_coloratus_03E09_ECO00050               12.80%    passed     91.40%
+  60  Echis_coloratus_03H03_ECO00023                7.75%    passed    100.00%
+  61  Echis_coloratus_03H12_ECO00020               31.95%    passed     93.82%
+  62  Echis_coloratus_04H10_ECO00144               12.55%    passed     98.86%
+  63  Echis_coloratus_04H12_ECO00007               16.75%    passed     99.91%
+  64  Echis_coloratus_05C10_ECO00004               30.50%    passed     97.01%
+  65  Echis_coloratus_05C12_ECO00001               42.85%    passed     32.73%
+  66  Echis_coloratus_05D10_ECO00047               38.35%    passed     83.75%
+  67  Echis_coloratus_05F11_ECO00192               15.95%    passed     63.53%
+  68  Echis_coloratus_05G01_ECO00061               26.05%    passed     82.19%
+  69  Echis_coloratus_05H05_ECO00002                8.70%    passed     95.65%
+  70  Echis_coloratus_06A07_ECO00007                9.70%    passed     93.58%
+  71  Echis_coloratus_06B07_ECO00047               38.40%    passed     83.80%
+  72  Echis_coloratus_06D12_ECO00010                8.45%    passed     86.92%
+  73  Echis_coloratus_06F04_ECO00034                8.35%    passed     94.82%
+  74  Echis_coloratus_06F05_ECO00012                8.20%    passed     41.27%
+  75  Echis_coloratus_06F08_ECO00010                8.35%    passed     90.79%
+  76  Echis_coloratus_06F11_ECO00047               38.55%    passed     83.38%
+  77  Echis_coloratus_06G01_ECO00010                8.45%    passed     91.17%
+  78  Echis_coloratus_06H08_ECO00017               25.75%    passed     48.58%
+  79  Echis_coloratus_06H09_ECO00012               12.55%    passed     55.56%
+  80  Echis_coloratus_06H11_ECO00002                8.35%    passed     96.71%
+  81  Echis_coloratus_07A11_ECO00010               14.20%    passed     74.30%
+  82  Echis_coloratus_07C02_ECO00011               28.60%    passed     97.79%
+  83  Echis_coloratus_07C04_ECO00009               64.90%    passed     13.62%
+  84  Echis_coloratus_07D04_ECO00275               16.85%    passed     84.56%
+  85  Echis_coloratus_07D09_ECO00002                8.40%    passed     95.90%
+  86  Echis_coloratus_07E09_ECO00017               43.20%    passed     71.79%
+  87  Echis_coloratus_07F01_ECO00007               26.60%    passed     81.61%
+  88  Echis_coloratus_07H11_ECO00004               16.80%    passed     89.06%
+  89  Echis_coloratus_08A05_ECO00009               55.65%    passed     32.29%
+  90  Echis_coloratus_08B09_ECO00023               10.90%    passed     99.95%
+  91  Echis_coloratus_08G02_ECO00011               32.10%    passed     99.91%
+  92  Echis_coloratus_08H07_ECO00144               17.65%    passed     92.84%
+  93  Echis_coloratus_09A07_ECO00011               28.60%    passed     97.44%
+  94  Echis_coloratus_09A11_ECO00275               19.30%    passed     98.99%
+  95  Echis_coloratus_09C04_ECO00010               11.10%    passed     89.21%
+  96  Echis_coloratus_09F10_ECO00023               10.75%    passed     99.84%
+  97  Echis_coloratus_09G05_ECO00020               26.65%    passed     95.18%
+  98  Echis_coloratus_09G06_ECO00020               26.65%    passed     95.18%
+  99  Echis_coloratus_09G08_ECO00044               34.00%    passed     96.93%
+ 100  Echis_coloratus_10B11_ECO00011               32.05%    passed     99.88%
+ 101  Echis_coloratus_10D02_ECO00023                8.05%    passed    100.00%
+ 102  Echis_coloratus_10D05_ECO00047               38.35%    passed     83.55%
+ 103  Echis_coloratus_10D06_ECO00047               38.45%    passed     83.76%
+ 104  Echis_coloratus_10F05_ECO00002               12.80%    passed     90.01%
+ 105  Echis_coloratus_10G09_ECO00007               10.95%    passed     96.38%
+ 106  Echis_coloratus_10G12_ECO00011               35.95%    passed     99.52%
+ 107  Echis_coloratus_10H12_ECO00020               31.90%    passed     94.19%
+ 108  Echis_coloratus_11C01_ECO00017               25.75%    passed     47.88%
+ 109  Echis_coloratus_12B07_ECO00023               20.25%    passed     98.24%
+ 110  Echis_coloratus_12B09_ECO00002                8.35%    passed     95.30%
+ 111  Echis_coloratus_12B10_ECO00020               26.70%    passed     94.75%
+ 112  Echis_coloratus_12B11_ECO00023                7.75%    passed     99.98%
+ 113  Echis_coloratus_12D01_ECO00406               24.10%    passed     90.46%
+ 114  Echis_coloratus_12D10_ECO00144               47.70%    passed     92.59%
+ 115  Echis_coloratus_12G09_ECO00017               64.65%    passed     53.08%
+ 116  Echis_coloratus_12G11_ECO00011               28.65%    passed     97.91%
+ 117  Echis_coloratus_13A01_ECO00011               28.60%    passed     95.93%
+ 118  Echis_coloratus_13A06_ECO00011               58.40%    passed     94.67%
+ 119  Echis_coloratus_13D01_ECO00012                8.20%    passed     41.27%
+ 120  Echis_coloratus_13D04_ECO00002                8.35%    passed     97.51%
+ 121  Echis_coloratus_13H10_ECO00007               69.75%    passed     17.18%
+ 122  Echis_coloratus_14A08_ECO00017               25.75%    passed     49.60%
+ 123  Echis_coloratus_14D05_ECO00023               42.90%    passed     17.11%
+ 124  Echis_coloratus_14F01_ECO00010                8.40%    passed     86.84%
+ 125  Echis_coloratus_14F02_ECO00007                9.00%    passed     93.53%
+ 126  Echis_coloratus_14G08_ECO00002                8.35%    passed     98.81%
+ 127  Echis_coloratus_14H11_ECO00144                8.25%    passed     99.29%
+ 128  Echis_coloratus_15A04_ECO00010                8.35%    passed     89.29%
+ 129  Echis_coloratus_15A07_ECO00011               30.10%    passed     99.59%
+ 130  Echis_coloratus_15B10_ECO00023                7.80%    passed    100.00%
+ 131  Echis_coloratus_15C08_ECO00023                7.80%    passed    100.00%
+ 132  Echis_ocellatus_EOC00001_83523625             7.60%    passed     99.77%
+ 133  Echis_ocellatus_EOC00006_83523629            25.75%    passed     68.15%
+ 134  Echis_ocellatus_EOC00013_83523633             8.35%    passed     89.49%
+ 135  Echis_ocellatus_EOC00022_83523635             7.90%    passed     97.19%
+ 136  Echis_ocellatus_EOC00024_83523637             7.90%    passed     98.78%
+ 137  Echis_ocellatus_EOC00028_83523639            31.30%    passed     91.36%
+ 138  Echis_ocellatus_EOC00063_83523627             8.35%    passed     90.73%
+ 139  Echis_ocellatus_EOC00071_Contig              55.60%    passed     67.38%
+ 140  Echis_ocellatus_EOC00073_Contig              50.15%    passed     87.25%
+ 141  Echis_ocellatus_EOC00086_Contig              64.85%    passed     61.84%
+ 142  Echis_ocellatus_EOC00089_83523641             7.45%    passed     98.62%
+ 143  Echis_ocellatus_EOC00095_83523631             8.45%    passed     96.26%
+ 144  Echis_ocellatus_EOC00186_83523643            12.15%    passed     99.83%
+ 145  Echis_ocellatus_EOC00404_83523645             6.55%    passed     88.83%
+ 146  Echis_pyramidum_leakeyi_01C04_EPL00040       38.65%    passed     70.96%
+ 147  Echis_pyramidum_leakeyi_01D08_EPL00005       26.65%    passed     60.65%
+ 148  Echis_pyramidum_leakeyi_01H08_EPL00005       26.65%    passed     68.75%
+ 149  Echis_pyramidum_leakeyi_02C03_EPL00008       40.30%    passed     52.37%
+ 150  Echis_pyramidum_leakeyi_02C09_EPL00005       26.65%    passed     59.28%
+ 151  Echis_pyramidum_leakeyi_03A03_EPL00006       25.80%    passed     90.17%
+ 152  Echis_pyramidum_leakeyi_03A10_EPL00097       26.65%    passed     63.07%
+ 153  Echis_pyramidum_leakeyi_03B08_EPL00097       26.65%    passed     62.49%
+ 154  Echis_pyramidum_leakeyi_03C10_EPL00005       26.65%    passed     65.68%
+ 155  Echis_pyramidum_leakeyi_03D03_EPL00004       43.00%    passed     58.12%
+ 156  Echis_pyramidum_leakeyi_03D06_EPL00005       45.90%    passed     71.63%
+ 157  Echis_pyramidum_leakeyi_03F11_EPL00005       60.65%    passed     79.95%
+ 158  Echis_pyramidum_leakeyi_03G05_EPL00005       26.65%    passed     70.00%
+ 159  Echis_pyramidum_leakeyi_03G09_EPL00005       26.65%    passed     60.00%
+ 160  Echis_pyramidum_leakeyi_03H12_EPL00097       26.70%    passed     67.25%
+ 161  Echis_pyramidum_leakeyi_04B09_EPL00006       26.20%    passed     84.99%
+ 162  Echis_pyramidum_leakeyi_05E09_EPL00005       26.65%    passed     73.50%
+ 163  Echis_pyramidum_leakeyi_05F05_EPL00006       25.95%    passed     83.09%
+ 164  Echis_pyramidum_leakeyi_05F12_EPL00159        9.50%    passed     84.46%
+ 165  Echis_pyramidum_leakeyi_06A10_EPL00005       50.80%    passed     74.00%
+ 166  Echis_pyramidum_leakeyi_06G11_EPL00006       25.75%    passed     82.20%
+ 167  Echis_pyramidum_leakeyi_07A09_EPL00005       26.65%    passed     57.70%
+ 168  Echis_pyramidum_leakeyi_07A10_EPL00005       28.10%    passed     63.92%
+ 169  Echis_pyramidum_leakeyi_07B02_EPL00006       65.50%    passed     44.94%
+ 170  Echis_pyramidum_leakeyi_07B05_EPL00005       38.60%    passed     64.16%
+ 171  Echis_pyramidum_leakeyi_07D02_EPL00006       33.65%    passed     67.98%
+ 172  Echis_pyramidum_leakeyi_07G05_EPL00061       65.20%    passed     94.03%
+ 173  Echis_pyramidum_leakeyi_07G06_EPL00055       67.50%    passed     48.48%
+ 174  Echis_pyramidum_leakeyi_07H04_EPL00032       19.85%    passed     86.07%
+ 175  Echis_pyramidum_leakeyi_08C06_EPL00005       60.70%    passed     88.41%
+ 176  Echis_pyramidum_leakeyi_09G06_EPL00005       51.60%    passed     82.52%
+ 177  Echis_pyramidum_leakeyi_09H10_EPL00006       42.05%    passed     67.50%
+ 178  Echis_pyramidum_leakeyi_10A06_EPL00159       23.60%    passed     73.75%
+ 179  Echis_pyramidum_leakeyi_10A11_EPL00006       37.50%    passed     73.35%
+ 180  Echis_pyramidum_leakeyi_10A12_EPL00029       16.85%    passed     49.15%
+ 181  Echis_pyramidum_leakeyi_10D06_EPL00005       33.30%    passed     83.87%
+ 182  Echis_pyramidum_leakeyi_10F10_EPL00005       59.85%    passed     83.17%
+ 183  Echis_pyramidum_leakeyi_11A02_EPL00005       68.35%    passed     94.13%
+ 184  Echis_pyramidum_leakeyi_11A09_EPL00006       47.65%    passed     77.29%
+ 185  Echis_pyramidum_leakeyi_11A12_EPL00004       55.15%    passed     63.05%
+ 186  Echis_pyramidum_leakeyi_11G11_EPL00396       33.40%    passed     74.24%
+ 187  Echis_pyramidum_leakeyi_11H09_EPL00006       30.00%    passed     98.57%
+ 188  Echis_pyramidum_leakeyi_12C04_EPL00006       25.80%    passed     90.64%
+ 189  Echis_pyramidum_leakeyi_12C10_EPL00008       49.65%    passed     22.70%
+ 190  Echis_pyramidum_leakeyi_12D02_EPL00006       42.10%    passed     96.36%
+ 191  Echis_pyramidum_leakeyi_12F08_EPL00006       66.35%    passed     46.33%
+ 192  Echis_pyramidum_leakeyi_12G10_EPL00006       25.75%    passed     85.11%
+ 193  Echis_pyramidum_leakeyi_12H07_EPL00008       43.60%    passed     28.77%
+ 194  Echis_pyramidum_leakeyi_13D11_EPL00005       61.60%    passed     98.14%
+ 195  Echis_pyramidum_leakeyi_13G03_EPL00032        7.35%    passed     93.66%
+ 196  Echis_pyramidum_leakeyi_13G12_EPL00019       32.50%    passed     90.01%
+ 197  Echis_pyramidum_leakeyi_13H02_EPL00005       28.50%    passed     66.35%
+ 198  Echis_pyramidum_leakeyi_14C06_EPL00005       41.75%    passed     70.75%
+ 199  Echis_pyramidum_leakeyi_14C07_EPL00004       51.30%    passed     71.92%
+ 200  Echis_pyramidum_leakeyi_14D09_EPL00005       70.75%    passed     68.69%
+ 201  Echis_pyramidum_leakeyi_14E09_EPL00006       27.85%    passed     76.55%
+ 202  Echis_pyramidum_leakeyi_14F09_EPL00005       50.85%    passed     79.78%
+ 203  Echis_pyramidum_leakeyi_15A03_EPL00044       61.40%    passed     32.45%
+ 204  Echis_pyramidum_leakeyi_15B05_EPL00002       45.55%    passed     88.48%
+ 205  Echis_pyramidum_leakeyi_15D12_EPL00040       24.60%    passed     85.36%
+ 206  Echis_pyramidum_leakeyi_15G05_EPL00396       34.95%    passed     66.13%
+ 207  Echis_pyramidum_leakeyi_15G08_EPL00004       48.00%    passed     48.36%
+ 208  Echis_pyramidum_leakeyi_15H04_EPL00006       25.75%    passed     88.81%
+ 209  Homo_sapiens_4583504                          2.80%    passed     48.08%
+WARNING: 39 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                        29.90%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Checking for duplicate sequences: done in 0.00221974 secs using 99.83% CPU
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.091 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -36744.882
+Optimal log-likelihood: -36744.591
+Rate parameters:  A-C: 1.71473  A-G: 2.90663  A-T: 1.21007  C-G: 1.88646  C-T: 3.06800  G-T: 1.00000
+Base frequencies:  A: 0.322  C: 0.187  G: 0.225  T: 0.266
+Proportion of invariable sites: 0.093
+Gamma shape alpha: 1.038
+Parameters optimization took 1 rounds (0.596 sec)
+Time for fast ML tree search: 6.153 seconds
+
+NOTE: ModelFinder requires 115 MB RAM!
+ModelFinder will test up to 968 DNA models (sample size: 2000 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            39018.475    415 78866.950    79084.930    81191.324
+  2  JC+I          38174.419    416 77180.837    77400.006    79510.813
+  3  JC+G4         37284.459    416 75400.919    75620.087    77730.894
+  4  JC+I+G4       37280.556    417 75395.112    75615.474    77730.688
+  5  JC+R2         37436.228    417 75706.457    75926.819    78042.033
+  6  JC+R3         37282.551    419 75403.101    75625.861    77749.879
+  7  JC+R4         37281.911    421 75405.821    75630.995    77763.801
+ 14  JC+I+R2       37326.080    418 75488.159    75709.718    77829.336
+ 15  JC+I+R3       37271.182    420 75382.364    75606.328    77734.743
+ 16  JC+I+R4       37263.613    422 75371.226    75597.613    77734.807
+ 25  JC+G4         37284.459    416 75400.919    75620.087    77730.894
+ 26  JC+I+G4       37280.556    417 75395.112    75615.474    77730.688
+ 37  JC+I+R3       37271.182    420 75382.364    75606.328    77734.743
+ 38  JC+I+R4       37263.613    422 75371.226    75597.613    77734.807
+ 47  F81+G4        37284.485    416 75400.970    75620.139    77730.946
+ 48  F81+I+G4      37280.450    417 75394.900    75615.261    77730.476
+ 59  F81+I+R3      37271.105    420 75382.210    75606.175    77734.590
+ 60  F81+I+R4      37263.277    422 75370.555    75596.941    77734.135
+ 69  F81+F+G4      37190.639    419 75219.277    75442.037    77566.056
+ 70  F81+F+I+G4    37186.736    420 75213.471    75437.436    77565.850
+ 81  F81+F+I+R3    37176.502    423 75199.005    75426.609    77568.186
+ 82  F81+F+I+R4    37168.510    425 75187.020    75417.071    77567.404
+ 91  K2P+G4        36907.899    417 74649.799    74870.160    76985.375
+ 92  K2P+I+G4      36903.744    418 74643.489    74865.047    76984.666
+103  K2P+I+R3      36893.828    421 74629.656    74854.829    76987.636
+104  K2P+I+R4      36885.655    423 74617.310    74844.914    76986.492
+113  K2P+G4        36907.899    417 74649.799    74870.160    76985.375
+114  K2P+I+G4      36903.744    418 74643.489    74865.047    76984.666
+125  K2P+I+R3      36893.828    421 74629.656    74854.829    76987.636
+126  K2P+I+R4      36885.655    423 74617.310    74844.914    76986.492
+135  HKY+G4        36907.883    417 74649.766    74870.128    76985.343
+136  HKY+I+G4      36903.710    418 74643.421    74864.979    76984.598
+147  HKY+I+R3      36893.810    421 74629.619    74854.793    76987.599
+148  HKY+I+R4      36885.540    423 74617.080    74844.684    76986.262
+157  HKY+F+G4      36816.368    420 74472.735    74696.700    76825.114
+158  HKY+F+I+G4    36812.130    421 74466.259    74691.433    76824.239
+169  HKY+F+I+R3    36801.566    424 74451.132    74679.958    76825.915
+170  HKY+F+I+R4    36793.462    426 74438.924    74670.204    76824.908
+179  TNe+G4        36898.840    418 74633.680    74855.239    76974.857
+180  TNe+I+G4      36894.196    419 74626.393    74849.152    76973.171
+191  TNe+I+R3      36884.733    422 74613.465    74839.852    76977.046
+192  TNe+I+R4      36876.883    424 74601.766    74830.592    76976.549
+201  TNe+G4        36898.840    418 74633.680    74855.239    76974.857
+202  TNe+I+G4      36894.196    419 74626.393    74849.152    76973.171
+213  TNe+I+R3      36884.733    422 74613.465    74839.852    76977.046
+214  TNe+I+R4      36876.883    424 74601.766    74830.592    76976.549
+223  TN+G4         36898.840    418 74633.680    74855.239    76974.857
+224  TN+I+G4       36894.189    419 74626.379    74849.138    76973.157
+235  TN+I+R3       36884.734    422 74613.467    74839.854    76977.048
+236  TN+I+R4       36876.848    424 74601.695    74830.521    76976.478
+245  TN+F+G4       36815.689    421 74473.379    74698.552    76831.359
+246  TN+F+I+G4     36811.535    422 74467.070    74693.457    76830.651
+257  TN+F+I+R3     36800.803    425 74451.606    74681.656    76831.989
+258  TN+F+I+R4     36792.367    427 74438.734    74671.248    76830.319
+267  K3P+G4        36904.440    418 74644.881    74866.439    76986.058
+268  K3P+I+G4      36900.232    419 74638.465    74861.224    76985.243
+279  K3P+I+R3      36890.378    422 74624.756    74851.143    76988.337
+280  K3P+I+R4      36881.758    424 74611.517    74840.342    76986.299
+289  K3P+G4        36904.440    418 74644.881    74866.439    76986.058
+290  K3P+I+G4      36900.232    419 74638.465    74861.224    76985.243
+301  K3P+I+R3      36890.378    422 74624.756    74851.143    76988.337
+302  K3P+I+R4      36881.758    424 74611.517    74840.342    76986.299
+311  K3Pu+G4       36904.439    418 74644.878    74866.437    76986.055
+312  K3Pu+I+G4     36900.220    419 74638.441    74861.200    76985.219
+323  K3Pu+I+R3     36890.384    422 74624.769    74851.155    76988.349
+324  K3Pu+I+R4     36881.731    424 74611.463    74840.288    76986.246
+333  K3Pu+F+G4     36815.195    421 74472.389    74697.563    76830.369
+334  K3Pu+F+I+G4   36810.890    422 74465.779    74692.166    76829.360
+345  K3Pu+F+I+R3   36800.402    425 74450.803    74680.854    76831.187
+346  K3Pu+F+I+R4   36792.010    427 74438.021    74670.535    76829.606
+355  TPM2+G4       36880.906    418 74597.812    74819.370    76938.989
+356  TPM2+I+G4     36876.719    419 74591.438    74814.197    76938.216
+367  TPM2+I+R3     36865.708    422 74575.417    74801.803    76938.997
+368  TPM2+I+R4     36857.317    424 74562.633    74791.458    76937.416
+377  TPM2+G4       36880.906    418 74597.812    74819.370    76938.989
+378  TPM2+I+G4     36876.719    419 74591.438    74814.197    76938.216
+389  TPM2+I+R3     36865.708    422 74575.417    74801.803    76938.997
+390  TPM2+I+R4     36857.317    424 74562.633    74791.458    76937.416
+399  TPM2u+G4      36880.905    418 74597.811    74819.369    76938.988
+400  TPM2u+I+G4    36876.704    419 74591.409    74814.168    76938.187
+411  TPM2u+I+R3    36865.706    422 74575.412    74801.799    76938.993
+412  TPM2u+I+R4    36857.285    424 74562.571    74791.396    76937.354
+421  TPM2u+F+G4    36815.980    421 74473.961    74699.134    76831.941
+422  TPM2u+F+I+G4  36811.689    422 74467.379    74693.765    76830.959
+433  TPM2u+F+I+R3  36801.109    425 74452.219    74682.270    76832.602
+434  TPM2u+F+I+R4  36792.701    427 74439.402    74671.916    76830.988
+443  TPM3+G4       36899.722    418 74635.444    74857.003    76976.622
+444  TPM3+I+G4     36895.451    419 74628.903    74851.662    76975.681
+455  TPM3+I+R3     36884.830    422 74613.661    74840.048    76977.242
+456  TPM3+I+R4     36876.436    424 74600.872    74829.697    76975.655
+465  TPM3+G4       36899.722    418 74635.444    74857.003    76976.622
+466  TPM3+I+G4     36895.451    419 74628.903    74851.662    76975.681
+477  TPM3+I+R3     36884.830    422 74613.661    74840.048    76977.242
+478  TPM3+I+R4     36876.436    424 74600.872    74829.697    76975.655
+487  TPM3u+G4      36899.722    418 74635.444    74857.003    76976.622
+488  TPM3u+I+G4    36895.439    419 74628.879    74851.638    76975.657
+499  TPM3u+I+R3    36884.827    422 74613.653    74840.040    76977.234
+500  TPM3u+I+R4    36876.423    424 74600.845    74829.670    76975.628
+509  TPM3u+F+G4    36755.217    421 74352.433    74577.607    76710.413
+510  TPM3u+F+I+G4  36750.993    422 74345.986    74572.373    76709.567
+521  TPM3u+F+I+R3  36738.371    425 74326.742    74556.793    76707.126
+522  TPM3u+F+I+R4  36730.388    427 74314.775    74547.289    76706.361
+531  TIMe+G4       36895.392    419 74628.783    74851.543    76975.561
+532  TIMe+I+G4     36890.721    420 74621.442    74845.406    76973.821
+543  TIMe+I+R3     36881.321    423 74608.642    74836.246    76977.823
+544  TIMe+I+R4     36873.098    425 74596.195    74826.246    76976.579
+553  TIMe+G4       36895.392    419 74628.783    74851.543    76975.561
+554  TIMe+I+G4     36890.721    420 74621.442    74845.406    76973.821
+565  TIMe+I+R3     36881.321    423 74608.642    74836.246    76977.824
+566  TIMe+I+R4     36873.098    425 74596.195    74826.246    76976.579
+575  TIM+G4        36895.391    419 74628.782    74851.542    76975.560
+576  TIM+I+G4      36890.721    420 74621.442    74845.407    76973.821
+587  TIM+I+R3      36881.323    423 74608.647    74836.251    76977.829
+588  TIM+I+R4      36873.079    425 74596.158    74826.209    76976.541
+597  TIM+F+G4      36814.515    422 74473.029    74699.416    76836.610
+598  TIM+F+I+G4    36810.314    423 74466.628    74694.232    76835.810
+609  TIM+F+I+R3    36799.668    426 74451.337    74682.617    76837.321
+610  TIM+F+I+R4    36790.966    428 74437.931    74671.683    76835.118
+619  TIM2e+G4      36871.286    419 74580.571    74803.331    76927.349
+620  TIM2e+I+G4    36866.581    420 74573.161    74797.126    76925.540
+631  TIM2e+I+R3    36856.065    423 74558.130    74785.734    76927.311
+632  TIM2e+I+R4    36848.189    425 74546.378    74776.429    76926.761
+641  TIM2e+G4      36871.286    419 74580.571    74803.331    76927.349
+642  TIM2e+I+G4    36866.581    420 74573.161    74797.126    76925.540
+653  TIM2e+I+R3    36856.065    423 74558.130    74785.734    76927.311
+654  TIM2e+I+R4    36848.189    425 74546.378    74776.429    76926.761
+663  TIM2+G4       36871.286    419 74580.572    74803.331    76927.350
+664  TIM2+I+G4     36866.581    420 74573.162    74797.126    76925.541
+675  TIM2+I+R3     36856.055    423 74558.109    74785.713    76927.291
+676  TIM2+I+R4     36848.139    425 74546.277    74776.328    76926.661
+685  TIM2+F+G4     36815.287    422 74474.574    74700.961    76838.155
+686  TIM2+F+I+G4   36811.125    423 74468.250    74695.854    76837.432
+697  TIM2+F+I+R3   36800.344    426 74452.687    74683.967    76838.672
+698  TIM2+F+I+R4   36791.669    428 74439.338    74673.089    76836.524
+707  TIM3e+G4      36890.493    419 74618.985    74841.745    76965.763
+708  TIM3e+I+G4    36885.737    420 74611.474    74835.438    76963.853
+719  TIM3e+I+R3    36875.553    423 74597.107    74824.711    76966.288
+720  TIM3e+I+R4    36867.686    425 74585.372    74815.423    76965.756
+729  TIM3e+G4      36890.493    419 74618.985    74841.745    76965.763
+730  TIM3e+I+G4    36885.737    420 74611.474    74835.438    76963.853
+741  TIM3e+I+R3    36875.553    423 74597.107    74824.711    76966.289
+742  TIM3e+I+R4    36867.686    425 74585.372    74815.423    76965.756
+751  TIM3+G4       36890.491    419 74618.981    74841.741    76965.760
+752  TIM3+I+G4     36885.734    420 74611.468    74835.433    76963.847
+763  TIM3+I+R3     36875.553    423 74597.106    74824.710    76966.288
+764  TIM3+I+R4     36867.680    425 74585.360    74815.411    76965.744
+773  TIM3+F+G4     36754.160    422 74352.320    74578.707    76715.901
+774  TIM3+F+I+G4   36750.078    423 74346.156    74573.760    76715.337
+785  TIM3+F+I+R3   36737.241    426 74326.483    74557.763    76712.467
+786  TIM3+F+I+R4   36728.995    428 74313.989    74547.741    76711.176
+795  TVMe+G4       36866.737    420 74573.474    74797.439    76925.853
+796  TVMe+I+G4     36862.419    421 74566.838    74792.011    76924.818
+807  TVMe+I+R3     36850.745    424 74549.491    74778.316    76924.273
+808  TVMe+I+R4     36842.363    426 74536.726    74768.007    76922.711
+817  TVMe+G4       36866.737    420 74573.474    74797.439    76925.853
+818  TVMe+I+G4     36862.419    421 74566.838    74792.011    76924.818
+829  TVMe+I+R3     36850.745    424 74549.491    74778.316    76924.273
+830  TVMe+I+R4     36842.363    426 74536.726    74768.007    76922.711
+839  TVM+G4        36866.733    420 74573.466    74797.431    76925.845
+840  TVM+I+G4      36862.417    421 74566.835    74792.008    76924.815
+851  TVM+I+R3      36850.752    424 74549.504    74778.330    76924.287
+852  TVM+I+R4      36842.344    426 74536.688    74767.969    76922.673
+861  TVM+F+G4      36748.851    423 74343.702    74571.306    76712.884
+862  TVM+F+I+G4    36744.599    424 74337.199    74566.024    76711.981
+873  TVM+F+I+R3    36731.865    427 74317.730    74550.244    76709.315
+874  TVM+F+I+R4    36723.787    429 74305.573    74540.567    76708.360
+883  SYM+G4        36856.916    421 74555.832    74781.006    76913.812
+884  SYM+I+G4      36852.121    422 74548.242    74774.629    76911.823
+895  SYM+I+R3      36840.860    425 74531.721    74761.772    76912.104
+896  SYM+I+R4      36833.155    427 74520.309    74752.823    76911.895
+905  SYM+G4        36856.916    421 74555.832    74781.006    76913.812
+906  SYM+I+G4      36852.121    422 74548.242    74774.629    76911.823
+917  SYM+I+R3      36840.860    425 74531.721    74761.772    76912.104
+918  SYM+I+R4      36833.155    427 74520.309    74752.823    76911.895
+927  GTR+G4        36856.916    421 74555.832    74781.006    76913.812
+928  GTR+I+G4      36852.122    422 74548.245    74774.632    76911.826
+939  GTR+I+R3      36840.869    425 74531.738    74761.789    76912.122
+940  GTR+I+R4      36833.140    427 74520.280    74752.794    76911.865
+949  GTR+F+G4      36747.775    424 74343.550    74572.376    76718.333
+950  GTR+F+I+G4    36743.670    425 74337.339    74567.390    76717.723
+961  GTR+F+I+R3    36730.723    428 74317.447    74551.198    76714.633
+962  GTR+F+I+R4    36722.393    430 74304.786    74541.026    76713.174
+Akaike Information Criterion:           GTR+F+I+R4
+Corrected Akaike Information Criterion: TVM+F+I+R4
+Bayesian Information Criterion:         TPM3u+F+I+R4
+Best-fit model: TPM3u+F+I+R4 chosen according to BIC
+
+All model information printed to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand.model.gz
+CPU time for ModelFinder: 436.825 seconds (0h:7m:16s)
+Wall-clock time for ModelFinder: 440.949 seconds (0h:7m:20s)
+
+NOTE: 46 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -36730.595
+2. Current log-likelihood: -36730.332
+Optimal log-likelihood: -36730.315
+Rate parameters:  A-C: 1.60051  A-G: 2.66532  A-T: 1.00000  C-G: 1.60051  C-T: 2.66532  G-T: 1.00000
+Base frequencies:  A: 0.322  C: 0.187  G: 0.225  T: 0.266
+Proportion of invariable sites: 0.109
+Site proportion and rates:  (0.385,0.290) (0.296,1.053) (0.188,2.485) (0.023,4.791)
+Parameters optimization took 2 rounds (2.179 sec)
+Log-likelihood of random tree: -126353.553
+IN UPDATE: new tree with score = -126353.553
+IN UPDATE: new tree with score = -126353.553
+Wrote distance file to... 
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Number of numNNITrees: 3
+Number of processes: 1
+Number of trees per process: 19
+Number of trees in candidate set: 1
+Total number of trees to be generated: 20
+Generating 19 random trees... Initial candidate tree set size: 1
+0.180 second
+Each tree will doNNISearch 3 times.
+Computing log-likelihood of 19 initial trees ... Estimate model parameters (epsilon = 0.100)
+Estimate model parameters (epsilon = 0.100)
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -36806.540
+BETTER TREE FOUND at iteration 1: -36806.540
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree0_xgphy.log
+21 unique trees added to candidate set. 0 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -36810.879
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree1_xgphy.log
+22 unique trees added to candidate set. 1 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -37015.715
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree2_xgphy.log
+23 unique trees added to candidate set. 2 trees had branch lengths optimized.
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -36777.092
+BETTER TREE FOUND at iteration 4: -36777.092
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree3_xgphy.log
+24 unique trees added to candidate set. 3 trees had branch lengths optimized.
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -36772.651
+BETTER TREE FOUND at iteration 5: -36772.651
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree4_xgphy.log
+25 unique trees added to candidate set. 4 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -36776.634
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree5_xgphy.log
+26 unique trees added to candidate set. 5 trees had branch lengths optimized.
+Estimate model parameters (epsilon = 0.100)
+Estimate model parameters (epsilon = 0.100)
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -36739.900
+BETTER TREE FOUND at iteration 7: -36739.900
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree6_xgphy.log
+27 unique trees added to candidate set. 6 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -36740.487
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree7_xgphy.log
+28 unique trees added to candidate set. 7 trees had branch lengths optimized.
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -36736.973
+BETTER TREE FOUND at iteration 9: -36736.973
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree8_xgphy.log
+29 unique trees added to candidate set. 8 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -36740.025
+Iteration 10 / LogL: -36740.025 / Time: 0h:13m:35s
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree9_xgphy.log
+30 unique trees added to candidate set. 9 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -36741.714
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree10_xgphy.log
+31 unique trees added to candidate set. 10 trees had branch lengths optimized.
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -36736.383
+BETTER TREE FOUND at iteration 12: -36736.383
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree11_xgphy.log
+32 unique trees added to candidate set. 11 trees had branch lengths optimized.
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -36735.967
+BETTER TREE FOUND at iteration 13: -36735.967
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree12_xgphy.log
+33 unique trees added to candidate set. 12 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -36749.452
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree13_xgphy.log
+34 unique trees added to candidate set. 13 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -36737.603
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree14_xgphy.log
+35 unique trees added to candidate set. 14 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -36738.202
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree15_xgphy.log
+36 unique trees added to candidate set. 15 trees had branch lengths optimized.
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -36734.503
+BETTER TREE FOUND at iteration 17: -36734.503
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree16_xgphy.log
+37 unique trees added to candidate set. 16 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -36738.541
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree17_xgphy.log
+38 unique trees added to candidate set. 17 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -36755.013
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree18_xgphy.log
+39 unique trees added to candidate set. 18 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -36736.019
+Iteration 20 / LogL: -36736.019 / Time: 0h:15m:23s
+Saved xgphy tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_tree19_xgphy.log
+40 unique trees added to candidate set. 19 trees had branch lengths optimized.
+479.715 seconds
+Current best score: -36734.503
+3.Score of best tree in CandidateSet: -36734.503
+2.Score of best tree in CandidateSet: -36735.967
+1.Score of best tree in CandidateSet: -36736.019
+
+Do NNI search on 3 best initial trees
+1
+Estimate model parameters (epsilon = 0.100)
+Saved xgphy best tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_bestTreeInitTree0_xgphy.treefile
+IN UPDATE: new tree with score = -36734.347
+BETTER TREE FOUND at iteration 1: -36734.347
+2
+Saved xgphy best tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_bestTreeInitTree1_xgphy.treefile
+IN UPDATE: new tree with score = -36736.038
+3
+Saved xgphy best tree to results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand_bestTreeInitTree2_xgphy.treefile
+IN UPDATE: new tree with score = -36736.040
+1.Score of best tree in CandidateSet: -36734.347
+Finish initializing candidate tree set (3)
+Current best tree score: -36734.347 / CPU time: 482.630
+Number of iterations: 3
+TREE SEARCH COMPLETED AFTER 3 ITERATIONS / Time: 0h:15m:26s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -36734.347
+2. Current log-likelihood: -36734.336
+Optimal log-likelihood: -36734.330
+Rate parameters:  A-C: 1.59954  A-G: 2.66974  A-T: 1.00000  C-G: 1.59954  C-T: 2.66974  G-T: 1.00000
+Base frequencies:  A: 0.322  C: 0.187  G: 0.225  T: 0.266
+Proportion of invariable sites: 0.115
+Site proportion and rates:  (0.402,0.304) (0.301,1.150) (0.171,2.748) (0.011,5.726)
+Parameters optimization took 2 rounds (1.625 sec)
+IN UPDATE: oldScore = -36734.347, newScore = -36734.330
+BEST SCORE FOUND : -36734.330
+Total tree length: 6.077
+
+Total number of iterations: 3
+CPU time used for tree search: 478.889 sec (0h:7m:58s)
+Wall-clock time used for tree search: 482.631 sec (0h:8m:2s)
+Total CPU time used: 919.806 sec (0h:15m:19s)
+Total wall-clock time used: 927.708 sec (0h:15m:27s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand.iqtree
+  Maximum-likelihood tree:       results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand.treefile
+  Screen log file:               results/dna_M6414_209_2000.phy/output_files/iqtree/inference/rand.log
+
+Date and Time: Wed Sep 24 19:22:00 2025
