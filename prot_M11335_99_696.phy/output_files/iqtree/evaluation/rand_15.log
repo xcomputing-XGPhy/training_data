@@ -1,24 +1,21 @@
-IQ-TREE version 3.0.1 for Linux x86 64-bit built Sep 12 2025
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Sep 23 2025
 Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
 Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
 Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
 
-Host:    vanvan-Latitude-9520 (AVX512, FMA3, 31 GB RAM)
-Command: /usr/local/bin/iqtree3 -s /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data4/prot_M11335_99_696.phy -m LG+G4+FO -pre training_data/prot_M11335_99_696.phy/output_files/iqtree/evaluation/rand_15 -te training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree15_xgphy.treefile -T 1 -seed 0 -redo
+Host:    cnode04.hpc.vast.vn (AVX512, FMA3, 125 GB RAM)
+Command: /datausers/ioit/thaontp/tranthanhvan235/iqtree3/build/iqtree3 -s /datausers/ioit/thaontp/tranthanhvan235/data_treebase/DIU_TRAINING_DATA/data4/prot_M11335_99_696.phy -m LG+G4+FO -pre training_data/prot_M11335_99_696.phy/output_files/iqtree/evaluation/rand_15 -te training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree15_xgphy.treefile -T 1 -seed 0 -redo -nt AUTO
 Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Sat Sep 20 20:58:44 2025
-Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+Time:    Sat Sep 27 02:07:35 2025
+Kernel:  AVX+FMA - auto-detect threads (56 CPU cores detected)
 
-HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
-HINT: -nt AUTO will automatically determine the best number of threads to use.
-
-Reading alignment file /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data4/prot_M11335_99_696.phy ... Phylip format detected
+Reading alignment file /datausers/ioit/thaontp/tranthanhvan235/data_treebase/DIU_TRAINING_DATA/data4/prot_M11335_99_696.phy ... Phylip format detected
 Alignment most likely contains protein sequences
-Constructing alignment: done in 0.00161682 secs using 81.15% CPU
+Constructing alignment: done in 0.00585953 secs using 1905% CPU
 Alignment has 99 sequences with 696 columns, 651 distinct patterns
 518 parsimony-informative, 66 singleton sites, 112 constant sites
                                                 Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 0.000233206 secs using 66.46% CPU
+Analyzing sequences: done in 0.0540003 secs using 1801% CPU
    1  Acaryochloris_marina_MBIC11017                   29.60%    passed     79.61%
    2  Afipia_sp._1NLS2                                 27.87%    passed     98.08%
    3  Ahrensia_sp._R2A130                              27.30%    passed     86.10%
@@ -119,39 +116,47 @@ Analyzing sequences: done in 0.000233206 secs using 66.46% CPU
   98  Thermomicrobium_roseum_DSM_5159                  24.71%    failed      1.16%
   99  Thermovibrio_ammonificans_HB-1                   30.75%    passed     49.76%
 ****  TOTAL                                            27.19%  35 sequences failed composition chi2 test (p-value<5%; df=19)
-Checking for duplicate sequences: done in 0.000421758 secs using 99.82% CPU
+Checking for duplicate sequences: done in 0.0536757 secs using 1864% CPU
 Reading input tree file training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree15_xgphy.treefile ...
 
 NOTE: 41 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 56 CPU cores
+Increase to 10 rounds for branch lengths
+8 trees examined
+Threads: 1 / Time: 56.886 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -75144
+Threads: 2 / Time: 53.046 sec / Speedup: 1.072 / Efficiency: 54% / LogL: -75144
+Threads: 3 / Time: 86.053 sec / Speedup: 0.661 / Efficiency: 22% / LogL: -75144
+Determining AUTO threadcount: done in 196.025 secs using 116.4% CPU
+BEST NUMBER OF THREADS: 2
+
 Estimate model parameters (epsilon = 0.010)
-1. Initial log-likelihood: -40907.965
-2. Current log-likelihood: -40681.958
-3. Current log-likelihood: -40672.434
-4. Current log-likelihood: -40668.830
-5. Current log-likelihood: -40667.595
-6. Current log-likelihood: -40667.040
-7. Current log-likelihood: -40666.697
-8. Current log-likelihood: -40666.443
-9. Current log-likelihood: -40666.251
-10. Current log-likelihood: -40666.122
-11. Current log-likelihood: -40666.048
-12. Current log-likelihood: -40666.013
-Optimal log-likelihood: -40666.002
-Gamma shape alpha: 0.751
-Parameters optimization took 12 rounds (213.644 sec)
+1. Initial log-likelihood: -40906.548
+2. Current log-likelihood: -40680.209
+3. Current log-likelihood: -40671.350
+4. Current log-likelihood: -40667.394
+5. Current log-likelihood: -40665.753
+6. Current log-likelihood: -40664.934
+7. Current log-likelihood: -40664.380
+8. Current log-likelihood: -40663.951
+9. Current log-likelihood: -40663.655
+10. Current log-likelihood: -40663.500
+11. Current log-likelihood: -40663.439
+Optimal log-likelihood: -40663.423
+Gamma shape alpha: 0.749
+Parameters optimization took 11 rounds (399.537 sec)
 Wrote distance file to... 
-BEST SCORE FOUND : -40666.002
-Total tree length: 29.389
+BEST SCORE FOUND : -40663.423
+Total tree length: 29.162
 
 Total number of iterations: 0
 CPU time used for tree search: 0.000 sec (0h:0m:0s)
 Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
-Total CPU time used: 213.606 sec (0h:3m:33s)
-Total wall-clock time used: 213.659 sec (0h:3m:33s)
+Total CPU time used: 663.760 sec (0h:11m:3s)
+Total wall-clock time used: 595.870 sec (0h:9m:55s)
 
 Analysis results written to: 
   IQ-TREE report:                training_data/prot_M11335_99_696.phy/output_files/iqtree/evaluation/rand_15.iqtree
   Maximum-likelihood tree:       training_data/prot_M11335_99_696.phy/output_files/iqtree/evaluation/rand_15.treefile
   Screen log file:               training_data/prot_M11335_99_696.phy/output_files/iqtree/evaluation/rand_15.log
 
-Date and Time: Sat Sep 20 21:02:18 2025
+Date and Time: Sat Sep 27 02:17:32 2025

@@ -1,0 +1,141 @@
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Sep 23 2025
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    cnode01.hpc.vast.vn (AVX512, FMA3, 125 GB RAM)
+Command: /datausers/ioit/thaontp/tranthanhvan235/iqtree3/build/iqtree3 -s /datausers/ioit/thaontp/tranthanhvan235/data_treebase/remainMSAs/prot_M4884_50_11827.phy -m LG+G4+FO -pre training_data/prot_M4884_50_11827.phy/output_files/iqtree/significance -z training_data/prot_M4884_50_11827.phy/output_files/iqtree/filteredEvalTrees.trees -te training_data/prot_M4884_50_11827.phy/output_files/iqtree/evaluation/BestEvalTree.tree -n 0 -zb 10000 -zw -au -nt 1 -seed 0
+Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sun Oct 12 08:11:04 2025
+Kernel:  AVX+FMA - 1 threads (56 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 56 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file /datausers/ioit/thaontp/tranthanhvan235/data_treebase/remainMSAs/prot_M4884_50_11827.phy ... Phylip format detected
+Alignment most likely contains protein sequences
+Constructing alignment: done in 0.0418625 secs using 55.99% CPU
+Alignment has 50 sequences with 11827 columns, 10520 distinct patterns
+5963 parsimony-informative, 1849 singleton sites, 4015 constant sites
+                      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00871988 secs using 99.67% CPU
+   1  Aplysia                35.04%    passed     46.79%
+   2  Arenicola              80.68%    passed     52.53%
+   3  Argopecten             22.59%    passed     57.97%
+   4  Barentsia              70.85%    passed     88.34%
+   5  Biomphalaria           22.58%    passed     51.22%
+   6  Bugula                 38.43%    passed     10.47%
+   7  Capitella              59.71%    passed     53.78%
+   8  Carinoma               92.89%    passed     24.30%
+   9  Cerebratulus            1.40%    passed     99.89%
+  10  Chaetoderma             5.56%    passed     99.85%
+  11  Chaetopleura           62.75%    passed     93.14%
+  12  Chaetopterus            6.48%    passed     99.81%
+  13  Chlamys                 9.30%    passed     99.97%
+  14  Crassostre             21.36%    passed     67.65%
+  15  Cristatella            84.10%    passed     78.72%
+  16  Dreissena              14.81%    passed     98.89%
+  17  Eiseniaandrei          86.19%    passed     15.12%
+  18  Eiseniafetida          52.62%    passed     80.22%
+  19  Euprymna                3.59%    passed     82.70%
+  20  Eurythoe               13.61%    passed     99.68%
+  21  Flustra                64.15%    failed      3.37%
+  22  Haementeria            41.69%    passed     86.74%
+  23  Haliotis                1.07%    passed     99.93%
+  24  Helix                   6.10%    passed     99.61%
+  25  Helobdella             56.40%    passed     28.26%
+  26  Hirudo                 31.26%    passed     99.05%
+  27  Idiosepi               19.02%    passed     88.23%
+  28  Lineus                 31.07%    passed     74.63%
+  29  Littorina               5.80%    passed     72.91%
+  30  Lumbricus              39.56%    passed     95.13%
+  31  Lymnaea                 7.20%    passed     99.57%
+  32  Mandarina              45.06%    passed     39.51%
+  33  Mytilus                42.27%    passed     79.45%
+  34  Myzostoma              59.71%    passed     23.65%
+  35  Myzostomacirriferrum    8.99%    passed     98.19%
+  36  Novocrania             42.36%    passed      7.35%
+  37  Pecten                  5.27%    passed     94.23%
+  38  Pedicellina            21.10%    passed     80.31%
+  39  Perionyx               10.19%    passed     97.15%
+  40  Phoronis               32.95%    passed     25.32%
+  41  Phoronismuelleri       15.02%    passed     61.95%
+  42  Physa                  34.13%    passed     83.04%
+  43  Platynerei             22.15%    passed     91.49%
+  44  Ridgeia                54.93%    passed     95.85%
+  45  Sipunculus             21.05%    passed     95.51%
+  46  Terebratalia           24.10%    passed     87.23%
+  47  Themiste                0.12%    passed     99.88%
+  48  Tubifex                63.37%    failed      4.79%
+  49  Urechis                72.95%    passed     40.15%
+  50  Venerupis              76.56%    passed     43.25%
+WARNING: 15 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                  34.80%  2 sequences failed composition chi2 test (p-value<5%; df=19)
+Checking for duplicate sequences: done in 0.00427516 secs using 98.85% CPU
+Reading input tree file training_data/prot_M4884_50_11827.phy/output_files/iqtree/evaluation/BestEvalTree.tree ...
+
+NOTE: 325 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -241868.644
+2. Current log-likelihood: -239639.236
+3. Current log-likelihood: -239618.345
+4. Current log-likelihood: -239618.293
+Optimal log-likelihood: -239618.289
+Gamma shape alpha: 0.489
+Parameters optimization took 4 rounds (1367.029 sec)
+Wrote distance file to... 
+BEST SCORE FOUND : -239618.289
+Total tree length: 6.913
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 1256.941 sec (0h:20m:56s)
+Total wall-clock time used: 1367.294 sec (0h:22m:47s)
+Reading trees in training_data/prot_M4884_50_11827.phy/output_files/iqtree/filteredEvalTrees.trees ...
+
+11 trees detected
+Note: 403.263 MB of RAM required!
+Creating 10000 bootstrap replicates...
+done
+Tree 1 / LogL: -239639.158
+Tree 2 / LogL: -239618.290
+Tree 3 / LogL: -239638.103
+Tree 4 / LogL: -239745.366
+Tree 5 / LogL: -239607.017
+Tree 6 / LogL: -239662.932
+Tree 7 / LogL: -239608.403
+Tree 8 / LogL: -239603.586
+Tree 9 / LogL: -239619.968
+Tree 10 / LogL: -239614.113
+Tree 11 / LogL: -239601.725
+Performing RELL-BP test...
+Performing KH and SH test...
+Computing pairwise logl difference variance ...
+Performing WKH and WSH test...
+Performing ELW test...
+Performing approximately unbiased (AU) test...
+8 MB required for AU test
+Generating 10 x 10000 multiscale bootstrap replicates... 27.706 seconds
+TreeID	AU	RSS	d	c
+1	0.222	5.768	1.112	0.346
+2	0.499	10.601	0.585	0.582
+3	0.222	4.577	1.155	0.391
+4	0.000	0.000	11.841	-3.598
+5	0.565	11.395	0.530	0.694
+6	0.025	10.876	2.342	0.373
+7	0.505	19.160	0.631	0.642
+8	0.554	13.996	0.521	0.657
+9	0.371	16.923	0.820	0.492
+10	0.436	12.167	0.581	0.419
+11	0.671	4.408	0.247	0.690
+Time for AU test: 27.708 seconds
+Time for evaluating all trees: 135.689 sec.
+
+Analysis results written to: 
+  IQ-TREE report:                training_data/prot_M4884_50_11827.phy/output_files/iqtree/significance.iqtree
+  Maximum-likelihood tree:       training_data/prot_M4884_50_11827.phy/output_files/iqtree/significance.treefile
+  Evaluated user trees:          training_data/prot_M4884_50_11827.phy/output_files/iqtree/significance.trees
+  Screen log file:               training_data/prot_M4884_50_11827.phy/output_files/iqtree/significance.log
+
+Date and Time: Sun Oct 12 08:36:07 2025

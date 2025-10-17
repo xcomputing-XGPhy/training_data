@@ -1,24 +1,21 @@
-IQ-TREE version 3.0.1 for Linux x86 64-bit built Sep 12 2025
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Sep 23 2025
 Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
 Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
 Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
 
-Host:    vanvan-Latitude-9520 (AVX512, FMA3, 31 GB RAM)
-Command: /usr/local/bin/iqtree3 -s /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data4/prot_M11013_55_8741.phy -pre training_data/prot_M11013_55_8741.phy/output_files/iqtree/inference/pars_3 -seed 3 -ninit 1 -T 1 -redo -n 0
+Host:    cnode01.hpc.vast.vn (AVX512, FMA3, 125 GB RAM)
+Command: /datausers/ioit/thaontp/tranthanhvan235/iqtree3/build/iqtree3 -s /datausers/ioit/thaontp/tranthanhvan235/data_treebase/DIU_TRAINING_DATA/data4/prot_M11013_55_8741.phy -pre training_data/prot_M11013_55_8741.phy/output_files/iqtree/inference/pars_3 -seed 3 -ninit 1 -T 1 -redo -n 0 -nt AUTO
 Seed:    3 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Sat Sep 20 23:42:08 2025
-Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+Time:    Tue Sep 23 20:56:24 2025
+Kernel:  AVX+FMA - auto-detect threads (56 CPU cores detected)
 
-HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
-HINT: -nt AUTO will automatically determine the best number of threads to use.
-
-Reading alignment file /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data4/prot_M11013_55_8741.phy ... Phylip format detected
+Reading alignment file /datausers/ioit/thaontp/tranthanhvan235/data_treebase/DIU_TRAINING_DATA/data4/prot_M11013_55_8741.phy ... Phylip format detected
 Alignment most likely contains protein sequences
-Constructing alignment: done in 0.0149774 secs using 90.74% CPU
+Constructing alignment: done in 0.0353771 secs using 1172% CPU
 Alignment has 55 sequences with 8741 columns, 7986 distinct patterns
 5425 parsimony-informative, 1199 singleton sites, 2117 constant sites
                                  Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 0.00201007 secs using 99.6% CPU
+Analyzing sequences: done in 0.0259333 secs using 3725% CPU
    1  Acanthamoeba_castellanii           2.72%    passed     34.18%
    2  Acidiphilium_cryptum               9.44%    failed      0.00%
    3  Arabidopsis_thaliana               8.41%    passed     84.75%
@@ -76,10 +73,29 @@ Analyzing sequences: done in 0.00201007 secs using 99.6% CPU
   55  Wolbachia_endosymbiont_of_Culex    8.05%    failed      0.00%
 WARNING: 4 sequences contain more than 50% gaps/ambiguity
 ****  TOTAL                             19.14%  33 sequences failed composition chi2 test (p-value<5%; df=19)
-Checking for duplicate sequences: done in 0.002414 secs using 98.8% CPU
+Checking for duplicate sequences: done in 0.0259756 secs using 3267% CPU
 
 
-Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.188 seconds
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.160 seconds
+Measuring multi-threading efficiency up to 56 CPU cores
+Increase to 10 rounds for branch lengths
+4 trees examined
+Threads: 1 / Time: 63.676 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -291407
+Threads: 2 / Time: 35.489 sec / Speedup: 1.794 / Efficiency: 90% / LogL: -291407
+Threads: 3 / Time: 29.161 sec / Speedup: 2.184 / Efficiency: 73% / LogL: -291407
+Threads: 4 / Time: 25.215 sec / Speedup: 2.525 / Efficiency: 63% / LogL: -291407
+Threads: 5 / Time: 21.331 sec / Speedup: 2.985 / Efficiency: 60% / LogL: -291407
+Threads: 6 / Time: 18.176 sec / Speedup: 3.503 / Efficiency: 58% / LogL: -291407
+Threads: 7 / Time: 16.311 sec / Speedup: 3.904 / Efficiency: 56% / LogL: -291407
+Threads: 8 / Time: 14.359 sec / Speedup: 4.435 / Efficiency: 55% / LogL: -291407
+Threads: 9 / Time: 13.309 sec / Speedup: 4.785 / Efficiency: 53% / LogL: -291407
+Threads: 10 / Time: 11.723 sec / Speedup: 5.432 / Efficiency: 54% / LogL: -291407
+Threads: 11 / Time: 10.873 sec / Speedup: 5.856 / Efficiency: 53% / LogL: -291407
+Threads: 12 / Time: 10.314 sec / Speedup: 6.174 / Efficiency: 51% / LogL: -291407
+Threads: 13 / Time: 10.831 sec / Speedup: 5.879 / Efficiency: 45% / LogL: -291407
+Determining AUTO threadcount: done in 280.801 secs using 491.3% CPU
+BEST NUMBER OF THREADS: 12
+
 Perform fast likelihood tree search using LG+I+G model...
 Estimate model parameters (epsilon = 5.000)
 Perform nearest neighbor interchange...
@@ -91,8 +107,8 @@ Estimate model parameters (epsilon = 1.000)
 Optimal log-likelihood: -247730.566
 Proportion of invariable sites: 0.141
 Gamma shape alpha: 1.247
-Parameters optimization took 4 rounds (28.817 sec)
-Time for fast ML tree search: 89.152 seconds
+Parameters optimization took 4 rounds (4.229 sec)
+Time for fast ML tree search: 13.167 seconds
 
 NOTE: ModelFinder requires 680 MB RAM!
 ModelFinder will test up to 1232 protein models (sample size: 8741 epsilon: 0.100) ...
@@ -103,15 +119,15 @@ ModelFinder will test up to 1232 protein models (sample size: 8741 epsilon: 0.10
   4  LG+I+G4       247729.094   109 495676.189   495678.967   496447.449
   5  LG+R2         248449.053   109 497116.105   497118.883   497887.365
   6  LG+R3         247636.370   111 495494.740   495497.621   496280.151
-  7  LG+R4         247575.204   113 495376.409   495379.395   496175.972
-  8  LG+R5         247575.213   115 495380.425   495383.519   496194.140
- 14  LG+I+R2       247885.013   110 495990.026   495992.856   496768.362
- 15  LG+I+R3       247596.703   112 495417.405   495420.339   496209.893
- 16  LG+I+R4       247577.383   114 495382.766   495385.806   496189.405
- 17  LG+I+R5       247576.683   116 495385.365   495388.513   496206.156
+  7  LG+R4         247575.204   113 495376.408   495379.395   496175.971
+  8  LG+R5         247575.217   115 495380.434   495383.527   496194.149
+ 14  LG+I+R2       247885.013   110 495990.026   495992.855   496768.361
+ 15  LG+I+R3       247596.649   112 495417.297   495420.231   496209.784
+ 16  LG+I+R4       247577.364   114 495382.728   495385.767   496189.366
+ 17  LG+I+R5       247576.668   116 495385.336   495388.484   496206.127
  29  LG+F+R4       246961.214   132 494186.427   494190.506   495120.430
  51  WAG+R4        251109.838   113 502445.677   502448.663   503245.240
- 73  WAG+F+R4      250021.544   132 500307.089   500311.168   501241.092
+ 73  WAG+F+R4      250021.544   132 500307.089   500311.168   501241.091
  95  JTT+R4        253145.876   113 506517.753   506520.739   507317.316
 117  JTT+F+R4      252836.474   132 505936.948   505941.027   506870.951
 139  Q.PFAM+R4     248202.936   113 496631.873   496634.859   497431.436
@@ -130,63 +146,63 @@ ModelFinder will test up to 1232 protein models (sample size: 8741 epsilon: 0.10
 425  JTTDCMUT+F+R4 252653.535   132 505571.070   505575.149   506505.073
 447  DCMUT+R4      254561.224   113 509348.449   509351.435   510148.012
 469  DCMUT+F+R4    252988.447   132 506240.894   506244.973   507174.897
-491  VT+R4         252340.212   113 504906.424   504909.410   505705.987
+491  VT+R4         252340.211   113 504906.421   504909.408   505705.984
 513  VT+F+R4       251655.308   132 503574.616   503578.695   504508.619
-535  PMB+R4        252757.623   113 505741.245   505744.232   506540.809
+535  PMB+R4        252757.622   113 505741.244   505744.230   506540.807
 557  PMB+F+R4      252771.024   132 505806.048   505810.127   506740.051
-579  BLOSUM62+R4   252223.320   113 504672.639   504675.625   505472.202
-601  BLOSUM62+F+R4 252308.844   132 504881.689   504885.768   505815.692
+579  BLOSUM62+R4   252223.320   113 504672.639   504675.626   505472.202
+601  BLOSUM62+F+R4 252308.845   132 504881.690   504885.769   505815.692
 623  DAYHOFF+R4    254532.989   113 509291.977   509294.964   510091.540
 645  DAYHOFF+F+R4  252965.710   132 506195.421   506199.500   507129.424
-667  MTREV+R4      261164.584   113 522555.167   522558.153   523354.730
-689  MTREV+F+R4    254619.623   132 509503.246   509507.325   510437.249
-711  MTART+R4      257150.681   113 514527.363   514530.349   515326.926
-733  MTART+F+R4    252915.606   132 506095.212   506099.291   507029.215
-755  MTZOA+R4      252746.701   113 505719.403   505722.389   506518.966
-777  MTZOA+F+R4    250503.869   132 501271.739   501275.818   502205.742
-799  MTMET+R4      259141.204   113 518508.408   518511.395   519307.971
-821  MTMET+F+R4    255207.322   132 510678.645   510682.724   511612.648
-843  MTVER+R4      265389.099   113 531004.198   531007.185   531803.761
-865  MTVER+F+R4    260915.648   132 522095.296   522099.375   523029.299
-887  MTINV+R4      257617.033   113 515460.065   515463.052   516259.628
-909  MTINV+F+R4    251908.863   132 504081.726   504085.805   505015.729
-931  MTMAM+R4      268404.271   113 537034.542   537037.529   537834.105
-953  MTMAM+F+R4    263469.167   132 527202.333   527206.412   528136.336
-975  FLAVI+R4      267859.421   113 535944.842   535947.828   536744.405
-997  FLAVI+F+R4    267904.712   132 536073.425   536077.504   537007.428
-1019  HIVB+R4       263157.326   113 526540.652   526543.638   527340.215
-1041  HIVB+F+R4     262251.915   132 524767.830   524771.909   525701.833
-1063  HIVW+R4       276535.256   113 553296.512   553299.498   554096.075
-1085  HIVW+F+R4     273804.891   132 547873.781   547877.860   548807.784
-1107  FLU+R4        259112.687   113 518451.374   518454.361   519250.937
-1129  FLU+F+R4      258515.628   132 517295.255   517299.334   518229.258
-1151  RTREV+R4      250550.343   113 501326.685   501329.672   502126.248
-1173  RTREV+F+R4    248165.402   132 496594.805   496598.884   497528.807
-1195  CPREV+R4      251972.156   113 504170.312   504173.299   504969.875
-1217  CPREV+F+R4    251038.721   132 502341.442   502345.521   503275.445
+667  MTREV+R4      261164.582   113 522555.164   522558.151   523354.727
+689  MTREV+F+R4    254619.621   132 509503.242   509507.321   510437.245
+711  MTART+R4      257150.675   113 514527.350   514530.336   515326.913
+733  MTART+F+R4    252915.609   132 506095.217   506099.296   507029.220
+755  MTZOA+R4      252746.701   113 505719.402   505722.388   506518.965
+777  MTZOA+F+R4    250503.876   132 501271.752   501275.831   502205.755
+799  MTMET+R4      259141.201   113 518508.402   518511.389   519307.965
+821  MTMET+F+R4    255207.325   132 510678.649   510682.728   511612.652
+843  MTVER+R4      265389.093   113 531004.186   531007.173   531803.749
+865  MTVER+F+R4    260915.649   132 522095.299   522099.378   523029.302
+887  MTINV+R4      257617.032   113 515460.063   515463.050   516259.626
+909  MTINV+F+R4    251908.860   132 504081.721   504085.800   505015.724
+931  MTMAM+R4      268404.268   113 537034.537   537037.523   537834.100
+953  MTMAM+F+R4    263469.168   132 527202.335   527206.414   528136.338
+975  FLAVI+R4      267859.421   113 535944.842   535947.829   536744.406
+997  FLAVI+F+R4    267904.712   132 536073.424   536077.503   537007.426
+1019  HIVB+R4       263157.324   113 526540.648   526543.634   527340.211
+1041  HIVB+F+R4     262251.913   132 524767.827   524771.906   525701.830
+1063  HIVW+R4       276535.259   113 553296.517   553299.504   554096.080
+1085  HIVW+F+R4     273804.892   132 547873.783   547877.862   548807.786
+1107  FLU+R4        259112.687   113 518451.374   518454.360   519250.937
+1129  FLU+F+R4      258515.641   132 517295.283   517299.362   518229.286
+1151  RTREV+R4      250550.344   113 501326.689   501329.675   502126.252
+1173  RTREV+F+R4    248165.401   132 496594.803   496598.882   497528.806
+1195  CPREV+R4      251972.155   113 504170.311   504173.297   504969.874
+1217  CPREV+F+R4    251038.721   132 502341.441   502345.520   503275.444
 Akaike Information Criterion:           LG+F+R4
 Corrected Akaike Information Criterion: LG+F+R4
 Bayesian Information Criterion:         LG+F+R4
 Best-fit model: LG+F+R4 chosen according to BIC
 
 All model information printed to training_data/prot_M11013_55_8741.phy/output_files/iqtree/inference/pars_3.model.gz
-CPU time for ModelFinder: 9082.384 seconds (2h:31m:22s)
-Wall-clock time for ModelFinder: 9110.680 seconds (2h:31m:50s)
+CPU time for ModelFinder: 17687.348 seconds (4h:54m:47s)
+Wall-clock time for ModelFinder: 1646.763 seconds (0h:27m:26s)
 
 NOTE: 272 MB RAM (0 GB) is required!
 Estimate model parameters (epsilon = 0.010)
-1. Initial log-likelihood: -246976.610
+1. Initial log-likelihood: -246976.611
 2. Current log-likelihood: -246962.357
 3. Current log-likelihood: -246961.558
 4. Current log-likelihood: -246961.332
 5. Current log-likelihood: -246961.236
-6. Current log-likelihood: -246961.185
+6. Current log-likelihood: -246961.186
 7. Current log-likelihood: -246961.164
 8. Current log-likelihood: -246961.154
 9. Current log-likelihood: -246961.143
 Optimal log-likelihood: -246961.136
 Site proportion and rates:  (0.270,0.055) (0.243,0.435) (0.238,1.244) (0.249,2.341)
-Parameters optimization took 9 rounds (136.140 sec)
+Parameters optimization took 9 rounds (20.163 sec)
 Wrote distance file to... 
 BEST SCORE FOUND : -246961.136
 Total tree length: 7.134
@@ -194,12 +210,15 @@ Total tree length: 7.134
 Total number of iterations: 0
 CPU time used for tree search: 0.000 sec (0h:0m:0s)
 Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
-Total CPU time used: 9218.527 sec (2h:33m:38s)
-Total wall-clock time used: 9247.290 sec (2h:34m:7s)
+Total CPU time used: 17928.331 sec (4h:58m:48s)
+Total wall-clock time used: 1667.000 sec (0h:27m:46s)
 
 Analysis results written to: 
   IQ-TREE report:                training_data/prot_M11013_55_8741.phy/output_files/iqtree/inference/pars_3.iqtree
   Maximum-likelihood tree:       training_data/prot_M11013_55_8741.phy/output_files/iqtree/inference/pars_3.treefile
   Screen log file:               training_data/prot_M11013_55_8741.phy/output_files/iqtree/inference/pars_3.log
 
-Date and Time: Sun Sep 21 02:16:16 2025
+Date and Time: Tue Sep 23 21:24:11 2025
+ee/inference/pars_3.log
+
+Date and Time: Tue Sep 23 21:24:11 2025

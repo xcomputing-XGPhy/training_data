@@ -3,19 +3,19 @@ Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
 Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
 Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
 
-Host:    head01.hpc.vast.vn (AVX512, FMA3, 125 GB RAM)
+Host:    cnode04.hpc.vast.vn (AVX512, FMA3, 125 GB RAM)
 Command: /datausers/ioit/thaontp/tranthanhvan235/iqtree3/build/iqtree3 -s /datausers/ioit/thaontp/tranthanhvan235/data_treebase/CMINH_TRAINING_DATA/dna_M11113_344_9778.phy -m GTR+G4+FO -pre training_data/dna_M11113_344_9778.phy/output_files/iqtree/evaluation/pars_13 -te training_data/dna_M11113_344_9778.phy/output_files/iqtree/inference/pars_13.treefile -T 1 -seed 0 -redo -nt AUTO
 Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Fri Sep 26 07:24:03 2025
+Time:    Mon Sep 29 15:17:59 2025
 Kernel:  AVX+FMA - auto-detect threads (56 CPU cores detected)
 
 Reading alignment file /datausers/ioit/thaontp/tranthanhvan235/data_treebase/CMINH_TRAINING_DATA/dna_M11113_344_9778.phy ... Phylip format detected
 Alignment most likely contains DNA/RNA sequences
-Constructing alignment: done in 0.108359 secs using 487.9% CPU
+Constructing alignment: done in 0.180855 secs using 428.8% CPU
 Alignment has 344 sequences with 9778 columns, 6740 distinct patterns
 4289 parsimony-informative, 854 singleton sites, 4635 constant sites
                                       Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 0.303906 secs using 549.3% CPU
+Analyzing sequences: done in 0.0723868 secs using 1978% CPU
    1  Acanthops_falcataria_MN112             13.30%    passed     56.13%
    2  Acanthops_sp._MN085                    14.23%    failed      3.53%
    3  Acontista_sp._MN111                    10.37%    passed     51.19%
@@ -362,51 +362,49 @@ Analyzing sequences: done in 0.303906 secs using 549.3% CPU
  344  Yersinia_mexicana_MN273                18.49%    passed      8.71%
 WARNING: 9 sequences contain more than 50% gaps/ambiguity
 ****  TOTAL                                  15.69%  83 sequences failed composition chi2 test (p-value<5%; df=3)
-Checking for duplicate sequences: done in 0.326655 secs using 467.9% CPU
+Checking for duplicate sequences: done in 0.0685378 secs using 2137% CPU
 Reading input tree file training_data/dna_M11113_344_9778.phy/output_files/iqtree/inference/pars_13.treefile ...
 
 NOTE: 300 MB RAM (0 GB) is required!
 Measuring multi-threading efficiency up to 56 CPU cores
 Increase to 10 rounds for branch lengths
-4 trees examined
-Threads: 1 / Time: 63.849 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -727332
-Threads: 2 / Time: 36.721 sec / Speedup: 1.739 / Efficiency: 87% / LogL: -727332
-Threads: 3 / Time: 29.353 sec / Speedup: 2.175 / Efficiency: 73% / LogL: -727332
-Threads: 4 / Time: 28.455 sec / Speedup: 2.244 / Efficiency: 56% / LogL: -727332
-Threads: 5 / Time: 36.527 sec / Speedup: 1.748 / Efficiency: 35% / LogL: -727332
-Determining AUTO threadcount: done in 195.392 secs using 256.9% CPU
-BEST NUMBER OF THREADS: 3
+3 trees examined
+Threads: 1 / Time: 84.689 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -727340
+Threads: 2 / Time: 64.579 sec / Speedup: 1.311 / Efficiency: 66% / LogL: -727340
+Threads: 3 / Time: 70.708 sec / Speedup: 1.198 / Efficiency: 40% / LogL: -727340
+Determining AUTO threadcount: done in 220.231 secs using 119.4% CPU
+BEST NUMBER OF THREADS: 2
 
 Estimate model parameters (epsilon = 0.010)
-1. Initial log-likelihood: -530752.240
-2. Current log-likelihood: -488885.163
-3. Current log-likelihood: -487269.137
-4. Current log-likelihood: -486360.925
-5. Current log-likelihood: -485901.885
-6. Current log-likelihood: -485843.775
-7. Current log-likelihood: -485830.753
-8. Current log-likelihood: -485821.797
-9. Current log-likelihood: -485820.206
-10. Current log-likelihood: -485820.036
-11. Current log-likelihood: -485820.023
-Optimal log-likelihood: -485820.009
-Rate parameters:  A-C: 0.68348  A-G: 6.26036  A-T: 1.54054  C-G: 1.56233  C-T: 6.13220  G-T: 1.00000
-Base frequencies:  A: 0.361  C: 0.124  G: 0.099  T: 0.416
+1. Initial log-likelihood: -530752.487
+2. Current log-likelihood: -488879.079
+3. Current log-likelihood: -487264.841
+4. Current log-likelihood: -486358.671
+5. Current log-likelihood: -485901.697
+6. Current log-likelihood: -485843.074
+7. Current log-likelihood: -485829.589
+8. Current log-likelihood: -485821.708
+9. Current log-likelihood: -485819.942
+10. Current log-likelihood: -485819.684
+11. Current log-likelihood: -485819.643
+Optimal log-likelihood: -485819.639
+Rate parameters:  A-C: 0.68213  A-G: 6.23615  A-T: 1.53653  C-G: 1.56421  C-T: 6.17987  G-T: 1.00000
+Base frequencies:  A: 0.363  C: 0.123  G: 0.099  T: 0.415
 Gamma shape alpha: 0.335
-Parameters optimization took 11 rounds (188.876 sec)
+Parameters optimization took 11 rounds (237.607 sec)
 Wrote distance file to... 
-BEST SCORE FOUND : -485820.009
-Total tree length: 44.030
+BEST SCORE FOUND : -485819.639
+Total tree length: 44.176
 
 Total number of iterations: 0
 CPU time used for tree search: 0.000 sec (0h:0m:0s)
 Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
-Total CPU time used: 1059.970 sec (0h:17m:39s)
-Total wall-clock time used: 384.794 sec (0h:6m:24s)
+Total CPU time used: 561.857 sec (0h:9m:21s)
+Total wall-clock time used: 458.223 sec (0h:7m:38s)
 
 Analysis results written to: 
   IQ-TREE report:                training_data/dna_M11113_344_9778.phy/output_files/iqtree/evaluation/pars_13.iqtree
   Maximum-likelihood tree:       training_data/dna_M11113_344_9778.phy/output_files/iqtree/evaluation/pars_13.treefile
   Screen log file:               training_data/dna_M11113_344_9778.phy/output_files/iqtree/evaluation/pars_13.log
 
-Date and Time: Fri Sep 26 07:30:30 2025
+Date and Time: Mon Sep 29 15:25:38 2025

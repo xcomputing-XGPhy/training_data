@@ -1,24 +1,21 @@
-IQ-TREE version 3.0.1 for Linux x86 64-bit built Sep 12 2025
+IQ-TREE version 3.0.1 for Linux x86 64-bit built Sep 23 2025
 Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
 Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
 Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
 
-Host:    vanvan-Latitude-9520 (AVX512, FMA3, 31 GB RAM)
-Command: /usr/local/bin/iqtree3 -s /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data4/prot_M11335_99_696.phy -pre training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand -seed 0 -t RANDOM -T 1 -redo -n 3 -ninit 20 -xgphy -xgphy_nni_count 3
+Host:    cnode04.hpc.vast.vn (AVX512, FMA3, 125 GB RAM)
+Command: /datausers/ioit/thaontp/tranthanhvan235/iqtree3/build/iqtree3 -s /datausers/ioit/thaontp/tranthanhvan235/data_treebase/DIU_TRAINING_DATA/data4/prot_M11335_99_696.phy -pre training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand -seed 0 -t RANDOM -T 1 -redo -n 3 -ninit 20 -xgphy -xgphy_nni_count 3 -nt AUTO
 Seed:    0 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Fri Sep 19 07:54:53 2025
-Kernel:  AVX+FMA - 1 threads (8 CPU cores detected)
+Time:    Fri Sep 26 16:48:20 2025
+Kernel:  AVX+FMA - auto-detect threads (56 CPU cores detected)
 
-HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
-HINT: -nt AUTO will automatically determine the best number of threads to use.
-
-Reading alignment file /home/vanvan/Downloads/data_treebase/DIU_TRAINING_DATA/data4/prot_M11335_99_696.phy ... Phylip format detected
+Reading alignment file /datausers/ioit/thaontp/tranthanhvan235/data_treebase/DIU_TRAINING_DATA/data4/prot_M11335_99_696.phy ... Phylip format detected
 Alignment most likely contains protein sequences
-Constructing alignment: done in 0.00100008 secs using 90.69% CPU
+Constructing alignment: done in 0.004651 secs using 1389% CPU
 Alignment has 99 sequences with 696 columns, 651 distinct patterns
 518 parsimony-informative, 66 singleton sites, 112 constant sites
                                                 Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 0.000150201 secs using 99.2% CPU
+Analyzing sequences: done in 0.0990109 secs using 1711% CPU
    1  Acaryochloris_marina_MBIC11017                   29.60%    passed     79.61%
    2  Afipia_sp._1NLS2                                 27.87%    passed     98.08%
    3  Ahrensia_sp._R2A130                              27.30%    passed     86.10%
@@ -119,10 +116,19 @@ Analyzing sequences: done in 0.000150201 secs using 99.2% CPU
   98  Thermomicrobium_roseum_DSM_5159                  24.71%    failed      1.16%
   99  Thermovibrio_ammonificans_HB-1                   30.75%    passed     49.76%
 ****  TOTAL                                            27.19%  35 sequences failed composition chi2 test (p-value<5%; df=19)
-Checking for duplicate sequences: done in 0.000369566 secs using 99.85% CPU
+Checking for duplicate sequences: done in 0.0430461 secs using 1771% CPU
 
 
-Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.031 seconds
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.183 seconds
+Measuring multi-threading efficiency up to 56 CPU cores
+Increase to 10 rounds for branch lengths
+6 trees examined
+Threads: 1 / Time: 56.710 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -75196
+Threads: 2 / Time: 56.699 sec / Speedup: 1.000 / Efficiency: 50% / LogL: -75196
+Threads: 3 / Time: 58.222 sec / Speedup: 0.974 / Efficiency: 32% / LogL: -75196
+Determining AUTO threadcount: done in 171.692 secs using 95.51% CPU
+BEST NUMBER OF THREADS: 1
+
 Perform fast likelihood tree search using LG+I+G model...
 Estimate model parameters (epsilon = 5.000)
 Perform nearest neighbor interchange...
@@ -131,8 +137,8 @@ Estimate model parameters (epsilon = 1.000)
 Optimal log-likelihood: -41174.484
 Proportion of invariable sites: 0.047
 Gamma shape alpha: 1.016
-Parameters optimization took 1 rounds (0.823 sec)
-Time for fast ML tree search: 9.472 seconds
+Parameters optimization took 1 rounds (3.254 sec)
+Time for fast ML tree search: 40.006 seconds
 
 NOTE: ModelFinder requires 102 MB RAM!
 ModelFinder will test up to 1232 protein models (sample size: 696 epsilon: 0.100) ...
@@ -379,8 +385,8 @@ Bayesian Information Criterion:         LG+F+R6
 Best-fit model: LG+F+R6 chosen according to BIC
 
 All model information printed to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand.model.gz
-CPU time for ModelFinder: 8822.254 seconds (2h:27m:2s)
-Wall-clock time for ModelFinder: 8837.863 seconds (2h:27m:17s)
+CPU time for ModelFinder: 14260.757 seconds (3h:57m:40s)
+Wall-clock time for ModelFinder: 26854.921 seconds (7h:27m:34s)
 
 NOTE: 61 MB RAM (0 GB) is required!
 Estimate model parameters (epsilon = 0.100)
@@ -391,10 +397,10 @@ Estimate model parameters (epsilon = 0.100)
 5. Current log-likelihood: -40791.578
 Optimal log-likelihood: -40791.545
 Site proportion and rates:  (0.126,0.034) (0.221,0.229) (0.283,0.529) (0.185,1.261) (0.149,2.271) (0.035,6.384)
-Parameters optimization took 5 rounds (28.116 sec)
-Log-likelihood of random tree: -75442.373
-IN UPDATE: new tree with score = -75442.373
-IN UPDATE: new tree with score = -75442.373
+Parameters optimization took 5 rounds (76.047 sec)
+Log-likelihood of random tree: -75938.409
+IN UPDATE: new tree with score = -75938.409
+IN UPDATE: new tree with score = -75938.409
 Wrote distance file to... 
 --------------------------------------------------------------------
 |             INITIALIZING CANDIDATE TREE SET                      |
@@ -405,128 +411,156 @@ Number of trees per process: 19
 Number of trees in candidate set: 1
 Total number of trees to be generated: 20
 Generating 19 random trees... Initial candidate tree set size: 1
-0.066 second
+0.204 second
 Each tree will doNNISearch 3 times.
 Computing log-likelihood of 19 initial trees ... Estimate model parameters (epsilon = 0.100)
 Estimate model parameters (epsilon = 0.100)
 Estimate model parameters (epsilon = 0.100)
-IN UPDATE: new tree with score = -40751.125
-BETTER TREE FOUND at iteration 1: -40751.125
+IN UPDATE: new tree with score = -40752.646
+BETTER TREE FOUND at iteration 1: -40752.646
+IN UPDATE: oldScore = -40752.646, newScore = -40752.646
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree0_xgphy.log
 21 unique trees added to candidate set. 0 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40754.200
+IN UPDATE: new tree with score = -40759.999
+IN UPDATE: oldScore = -40759.999, newScore = -40759.999
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree1_xgphy.log
 22 unique trees added to candidate set. 1 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40770.397
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -40742.208
+BETTER TREE FOUND at iteration 5: -40742.208
+IN UPDATE: oldScore = -40742.208, newScore = -40742.208
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree2_xgphy.log
 23 unique trees added to candidate set. 2 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40751.348
+IN UPDATE: new tree with score = -40769.178
+IN UPDATE: oldScore = -40769.178, newScore = -40769.178
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree3_xgphy.log
 24 unique trees added to candidate set. 3 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40751.348
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -40741.067
+BETTER TREE FOUND at iteration 9: -40741.067
+IN UPDATE: oldScore = -40741.067, newScore = -40741.067
+Iteration 10 / LogL: -40741.067 / Time: 8h:22m:3s
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree4_xgphy.log
 25 unique trees added to candidate set. 4 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40752.052
+IN UPDATE: new tree with score = -40742.349
+IN UPDATE: oldScore = -40742.349, newScore = -40742.349
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree5_xgphy.log
 26 unique trees added to candidate set. 5 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40751.140
+IN UPDATE: oldScore = -40741.067, newScore = -40741.067
+UPDATE BEST LOG-LIKELIHOOD: -40741.067
+IN UPDATE: oldScore = -40741.067, newScore = -40741.067
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree6_xgphy.log
-27 unique trees added to candidate set. 6 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40754.394
+26 unique trees added to candidate set. 6 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -40743.117
+IN UPDATE: oldScore = -40743.117, newScore = -40743.117
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree7_xgphy.log
-28 unique trees added to candidate set. 7 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40751.348
+27 unique trees added to candidate set. 7 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -40746.281
+IN UPDATE: oldScore = -40746.281, newScore = -40746.281
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree8_xgphy.log
-29 unique trees added to candidate set. 8 trees had branch lengths optimized.
-IN UPDATE: oldScore = -40751.348, newScore = -40751.348
-Iteration 10 / LogL: -40751.348 / Time: 2h:47m:36s
+28 unique trees added to candidate set. 8 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -40744.730
+IN UPDATE: oldScore = -40744.730, newScore = -40744.730
+Iteration 20 / LogL: -40744.730 / Time: 8h:30m:10s
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree9_xgphy.log
 29 unique trees added to candidate set. 9 trees had branch lengths optimized.
-Estimate model parameters (epsilon = 0.100)
-IN UPDATE: new tree with score = -40750.359
-BETTER TREE FOUND at iteration 11: -40750.359
+IN UPDATE: new tree with score = -40742.320
+IN UPDATE: oldScore = -40742.320, newScore = -40742.320
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree10_xgphy.log
 30 unique trees added to candidate set. 10 trees had branch lengths optimized.
-Estimate model parameters (epsilon = 0.100)
-IN UPDATE: new tree with score = -40749.424
-BETTER TREE FOUND at iteration 12: -40749.424
+IN UPDATE: new tree with score = -40742.673
+IN UPDATE: oldScore = -40742.673, newScore = -40742.673
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree11_xgphy.log
 31 unique trees added to candidate set. 11 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40751.852
+IN UPDATE: new tree with score = -40742.320
+IN UPDATE: oldScore = -40742.320, newScore = -40742.320
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree12_xgphy.log
 32 unique trees added to candidate set. 12 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40750.117
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -40740.626
+BETTER TREE FOUND at iteration 27: -40740.626
+IN UPDATE: oldScore = -40740.626, newScore = -40740.626
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree13_xgphy.log
 33 unique trees added to candidate set. 13 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40750.363
+IN UPDATE: oldScore = -40742.349, newScore = -40742.252
+IN UPDATE: oldScore = -40742.252, newScore = -40742.252
+Iteration 30 / LogL: -40742.252 / Time: 8h:38m:38s (-1h:-6m:-10s left)
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree14_xgphy.log
-34 unique trees added to candidate set. 14 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40750.874
+33 unique trees added to candidate set. 14 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -40741.282
+IN UPDATE: oldScore = -40741.282, newScore = -40741.282
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree15_xgphy.log
-35 unique trees added to candidate set. 15 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40750.566
+34 unique trees added to candidate set. 15 trees had branch lengths optimized.
+Estimate model parameters (epsilon = 0.100)
+IN UPDATE: new tree with score = -40740.480
+BETTER TREE FOUND at iteration 33: -40740.480
+IN UPDATE: oldScore = -40740.480, newScore = -40740.480
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree16_xgphy.log
-36 unique trees added to candidate set. 16 trees had branch lengths optimized.
-IN UPDATE: new tree with score = -40749.999
+35 unique trees added to candidate set. 16 trees had branch lengths optimized.
+IN UPDATE: oldScore = -40740.480, newScore = -40740.477
+UPDATE BEST LOG-LIKELIHOOD: -40740.477
+IN UPDATE: oldScore = -40740.477, newScore = -40740.477
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree17_xgphy.log
-37 unique trees added to candidate set. 17 trees had branch lengths optimized.
-Estimate model parameters (epsilon = 0.100)
-IN UPDATE: new tree with score = -40746.456
-BETTER TREE FOUND at iteration 19: -40746.456
+35 unique trees added to candidate set. 17 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -40741.598
+IN UPDATE: oldScore = -40741.598, newScore = -40741.598
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree18_xgphy.log
-38 unique trees added to candidate set. 18 trees had branch lengths optimized.
-Estimate model parameters (epsilon = 0.100)
-IN UPDATE: new tree with score = -40744.606
-BETTER TREE FOUND at iteration 20: -40744.606
-Iteration 20 / LogL: -40744.606 / Time: 2h:54m:15s
+36 unique trees added to candidate set. 18 trees had branch lengths optimized.
+IN UPDATE: new tree with score = -40740.478
+IN UPDATE: oldScore = -40740.478, newScore = -40740.478
+Iteration 40 / LogL: -40740.478 / Time: 8h:47m:2s (-1h:-15m:-24s left)
 Saved xgphy tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_tree19_xgphy.log
-39 unique trees added to candidate set. 19 trees had branch lengths optimized.
-1588.904 seconds
-Current best score: -40744.606
-3.Score of best tree in CandidateSet: -40744.606
-2.Score of best tree in CandidateSet: -40746.456
-1.Score of best tree in CandidateSet: -40749.424
+37 unique trees added to candidate set. 19 trees had branch lengths optimized.
+4689.820 seconds
+Current best score: -40740.477
+3.Score of best tree in CandidateSet: -40740.477
+2.Score of best tree in CandidateSet: -40740.478
+1.Score of best tree in CandidateSet: -40740.626
 
 Do NNI search on 3 best initial trees
 1
 Estimate model parameters (epsilon = 0.100)
 Saved xgphy best tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_bestTreeInitTree0_xgphy.treefile
-IN UPDATE: new tree with score = -40744.601
-BETTER TREE FOUND at iteration 1: -40744.601
+IN UPDATE: new tree with score = -40740.471
+BETTER TREE FOUND at iteration 1: -40740.471
 2
 Saved xgphy best tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_bestTreeInitTree1_xgphy.treefile
-IN UPDATE: new tree with score = -40744.620
+IN UPDATE: new tree with score = -40740.470
+BETTER TREE FOUND at iteration 2: -40740.470
 3
 Saved xgphy best tree to training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand_bestTreeInitTree2_xgphy.treefile
-IN UPDATE: new tree with score = -40749.475
-1.Score of best tree in CandidateSet: -40744.601
+IN UPDATE: new tree with score = -40740.640
+1.Score of best tree in CandidateSet: -40740.470
 Finish initializing candidate tree set (3)
-Current best tree score: -40744.601 / CPU time: 1602.673
+Current best tree score: -40740.470 / CPU time: 4724.542
 Number of iterations: 3
-TREE SEARCH COMPLETED AFTER 3 ITERATIONS / Time: 2h:54m:29s
+TREE SEARCH COMPLETED AFTER 3 ITERATIONS / Time: 8h:47m:37s
 
 --------------------------------------------------------------------
 |                    FINALIZING TREE SEARCH                        |
 --------------------------------------------------------------------
 Performs final model parameters optimization
 Estimate model parameters (epsilon = 0.010)
-1. Initial log-likelihood: -40744.601
-Optimal log-likelihood: -40744.597
-Site proportion and rates:  (0.125,0.033) (0.220,0.226) (0.286,0.523) (0.191,1.264) (0.142,2.278) (0.036,6.445)
-Parameters optimization took 1 rounds (3.963 sec)
-IN UPDATE: oldScore = -40744.601, newScore = -40744.597
-BEST SCORE FOUND : -40744.597
-Total tree length: 43.604
+1. Initial log-likelihood: -40740.470
+Optimal log-likelihood: -40740.463
+Site proportion and rates:  (0.125,0.033) (0.219,0.222) (0.286,0.512) (0.193,1.248) (0.141,2.259) (0.035,6.783)
+Parameters optimization took 1 rounds (12.300 sec)
+IN UPDATE: oldScore = -40740.470, newScore = -40740.463
+BEST SCORE FOUND : -40740.463
+Total tree length: 44.252
 
 Total number of iterations: 3
-CPU time used for tree search: 1601.495 sec (0h:26m:41s)
-Wall-clock time used for tree search: 1602.673 sec (0h:26m:42s)
-Total CPU time used: 10456.465 sec (2h:54m:16s)
-Total wall-clock time used: 10473.277 sec (2h:54m:33s)
+CPU time used for tree search: 2596.433 sec (0h:43m:16s)
+Wall-clock time used for tree search: 4724.542 sec (1h:18m:44s)
+Total CPU time used: 16906.085 sec (4h:41m:46s)
+Total wall-clock time used: 31669.615 sec (8h:47m:49s)
 
 Analysis results written to: 
   IQ-TREE report:                training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand.iqtree
   Maximum-likelihood tree:       training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand.treefile
   Screen log file:               training_data/prot_M11335_99_696.phy/output_files/iqtree/inference/rand.log
 
-Date and Time: Fri Sep 19 10:49:26 2025
+Date and Time: Sat Sep 27 01:36:11 2025
+tree/inference/rand.log
+
+Date and Time: Sat Sep 27 01:36:11 2025
